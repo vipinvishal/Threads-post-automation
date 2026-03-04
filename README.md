@@ -1,243 +1,161 @@
-# 𝕏 Viral Bot — Full Setup Guide
-**Stack:** Python · Gemini AI · X API v2 · Flask · Cron · Gmail**Host:** Your Hostinger VPS (or run locally)
+# X Post Automation
 
----
+An AI agent that researches trending topics, generates viral posts, and publishes them to X (Twitter) automatically — every day at 10 AM IST.
 
-## Quick start (local)
-
-1. **Copy env and add your keys:**
-   ```bash
-   cp .env.example .env
-   # Edit .env: add GEMINI_API_KEY (and X + email credentials for full flow)
-   ```
-
-2. **Install deps and run the bot:**
-   ```bash
-   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-   .venv/bin/python bot.py
-   ```
-   (Or use system Python: `pip install -r requirements.txt` then `python3 bot.py`.)
-   - With only `GEMINI_API_KEY`: research + tweet generation runs; you must add `EMAIL_*` and `SERVER_BASE_URL` to get the approval email.
-   - With X API keys + `POST_DIRECTLY=1`: research runs and the tweet is posted to X immediately (no email).
-   - **Generate 10 scroll-stopping hooks only:** `python3 bot.py --hooks` (AI infra / cloud / autonomous systems, &lt;12 words each).
-
-3. **Run the approval server** (for email flow):
-   ```bash
-   python3 approve.py
-   ```
-   Then open `http://localhost:5000/status` to confirm it’s running. Use `SERVER_BASE_URL=http://localhost:5000` in `.env` when testing locally.
+**No VPS needed. No manual work. Fully automated via GitHub Actions.**
 
 ---
 
 ## How It Works
 
 ```
-[Cron — daily 9AM]
-       ↓
-  bot.py runs
-       ↓
-  Tavily + Gemini research → Gemini writes viral tweet
-       ↓
-  Generate 1200×675 tweet card → save to cards/
-       ↓
-  ┌─ If POST_DIRECTLY=1: post tweet + image to X
-  └─ Else: email with inline card preview + [Approve] [Reject]
-       ↓
-  You click Approve → approve.py posts tweet + card image to X
+GitHub Actions (10 AM IST daily)
+        ↓
+Exa — neural web research on a random AI/tech topic
+        ↓
+Gemini — generates a viral, first-person post (280 chars)
+  └─ fallback: Gemini key #2 → Euron API
+        ↓
+Buffer — schedules and publishes to @YourHandle on X
 ```
 
 ---
 
-## Step 1 — Upload files to VPS
+## Tech Stack
 
-SSH into your Hostinger VPS:
-```bash
-ssh root@YOUR_VPS_IP
-```
-
-Create project folder and upload all files:
-```bash
-mkdir -p /root/x-viral-bot/logs /root/x-viral-bot/pending
-cd /root/x-viral-bot
-```
-
-Upload via SCP from your local machine:
-```bash
-scp -r ./x-viral-bot/* root@YOUR_VPS_IP:/root/x-viral-bot/
-```
+| Tool | Purpose |
+|---|---|
+| **GitHub Actions** | Daily scheduling (replaces VPS/cron) |
+| **Exa** | Real-time neural web research |
+| **Google Gemini** | Post generation (dual-key with quota rotation) |
+| **Euron API** | Fallback when all Gemini keys are exhausted |
+| **Buffer** | Schedules and publishes posts to X |
 
 ---
 
-## Step 2 — Install dependencies
+## Quick Start
+
+### 1. Clone the repo
 
 ```bash
-cd /root/x-viral-bot
-pip3 install -r requirements.txt
-# Tweet card image (required for 1200×675 card generation):
-pip3 install pillow
+git clone https://github.com/vipinvishal/X-Post-Automation.git
+cd X-Post-Automation
 ```
 
----
+### 2. Create a virtual environment and install dependencies
 
-## Step 3 — Configure your .env
+```bash
+python3 -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### 3. Set up your `.env` file
 
 ```bash
 cp .env.example .env
-nano .env   # or open .env in your editor
 ```
 
-**Required for research:** `GEMINI_API_KEY` (get at [aistudio.google.com/apikey](https://aistudio.google.com/apikey)).
+Fill in your API keys (see [Configuration](#configuration) below).
 
-Fill in all values:
-
-| Variable | Where to get it |
-|---|---|
-| `GEMINI_API_KEY` | aistudio.google.com → Get API Key |
-| `TAVILY_API_KEY` | tavily.com → API key (real-time web search for research) |
-| `X_API_KEY` / `X_API_SECRET` | developer.x.com → Your App → Keys & Tokens |
-| `X_ACCESS_TOKEN` / `X_ACCESS_SECRET` | developer.x.com → Your App → Generate |
-| `X_HANDLE` | Your X handle for the card (e.g. `@yourhandle`) |
-| `EMAIL_SENDER` | Your Gmail address |
-| `EMAIL_PASSWORD` | myaccount.google.com/apppasswords → Create App Password |
-| `SERVER_BASE_URL` | `http://YOUR_VPS_IP:5000` |
-
----
-
-## Step 4 — Open firewall port 5000
-
-On Hostinger VPS, allow incoming traffic on port 5000:
-```bash
-ufw allow 5000/tcp
-ufw reload
-```
-
----
-
-## Step 5 — Run the Flask approval server (permanently)
-
-Copy the systemd service file:
-```bash
-cp xviralbot.service /etc/systemd/system/
-systemctl daemon-reload
-systemctl enable xviralbot
-systemctl start xviralbot
-```
-
-Check it's running:
-```bash
-systemctl status xviralbot
-# Visit: http://YOUR_VPS_IP:5000/status
-```
-
----
-
-## Step 6 — Set up the cron job
-
-Open crontab:
-```bash
-crontab -e
-```
-
-Add this line to run every day at 9:00 AM:
-```
-0 9 * * * cd /root/x-viral-bot && /usr/bin/python3 bot.py >> logs/cron.log 2>&1
-```
-
-Save and exit. The bot now runs automatically every morning.
-
----
-
-## Tweet card image (VPS)
-
-The pipeline generates a 1200×675 dark-themed card, embeds it in the approval email, and attaches it to the X post when you approve.
-
-**On your VPS:**
-
-1. **Install Pillow** (if not already in requirements):
-   ```bash
-   pip3 install pillow
-   ```
-
-2. **Add your handle to `.env`:**
-   ```bash
-   X_HANDLE=@yourhandle
-   ```
-
-3. **Test the full flow (tweet + card):**
-   ```bash
-   python3 bot.py --preview
-   ```
-   → Generates tweet and saves card to `cards/*.png`.
-
-`approve.py` already passes `data.get("image_path")` to `post_to_x()`, so the card is attached when you click Approve.
-
----
-
-## Step 7 — Test it manually
+### 4. Test locally before going live
 
 ```bash
-cd /root/x-viral-bot
-python3 bot.py
-```
+# Preview a generated post without sending to Buffer
+python scripts/generate_and_schedule.py --preview
 
-You should receive an approval email within ~30 seconds. Click Approve — tweet goes live!
+# Run the full pipeline (research → generate → schedule to Buffer)
+python scripts/generate_and_schedule.py
+```
 
 ---
 
-## Useful Commands
+## Configuration
+
+Add these to your `.env` file:
+
+| Variable | Where to get it | Required |
+|---|---|---|
+| `GEMINI_API_KEY` | [aistudio.google.com/apikey](https://aistudio.google.com/apikey) | Yes |
+| `GEMINI_API_KEY_2` | Same — second Google account | Optional (quota fallback) |
+| `EURON_API_KEY` | [euron.one](https://euron.one) | Optional (last-resort fallback) |
+| `EXA_API_KEY` | [exa.ai](https://exa.ai) | Yes |
+| `BUFFER_API_KEY` | buffer.com → Settings → API | Yes |
+| `BUFFER_CHANNEL_ID` | Run `python scripts/get_buffer_channel.py` | Yes |
+
+### Finding your Buffer Channel ID
 
 ```bash
-# View bot logs
-tail -f /root/x-viral-bot/logs/bot.log
+# Make sure BUFFER_API_KEY is set in .env first
+python scripts/get_buffer_channel.py
+```
 
-# View server logs
-tail -f /root/x-viral-bot/logs/server.log
+Copy the ID for your X (Twitter) channel and paste it into `.env` as `BUFFER_CHANNEL_ID`.
 
-# View all pending/approved/rejected tweets
-ls /root/x-viral-bot/pending/
+---
 
-# Restart approval server
-systemctl restart xviralbot
+## GitHub Actions Setup (Automated Daily Posting)
 
-# Test approval server health
-curl http://localhost:5000/status
+### 1. Add secrets to your GitHub repo
+
+Go to **Settings → Secrets and variables → Actions → New repository secret** and add:
+
+- `GEMINI_API_KEY`
+- `GEMINI_API_KEY_2`
+- `EURON_API_KEY`
+- `EXA_API_KEY`
+- `BUFFER_API_KEY`
+- `BUFFER_CHANNEL_ID`
+
+### 2. The workflow runs automatically
+
+The workflow is defined in `.github/workflows/daily_post.yml` and triggers every day at **10:00 AM IST (04:30 UTC)**.
+
+You can also trigger it manually anytime:
+**GitHub repo → Actions → Daily X Post → Run workflow**
+
+---
+
+## Customizing Topics & Persona
+
+Edit `scripts/topics.json` to change:
+
+- **`niche`** — the content category
+- **`persona`** — the voice and style of the posts
+- **`topics`** — list of topics to randomly pick from each day
+- **`tones`** — list of tones to randomly apply
+
+---
+
+## Project Structure
+
+```
+├── scripts/
+│   ├── generate_and_schedule.py   # main pipeline
+│   ├── topics.json                # niche, topics, tones, persona
+│   └── get_buffer_channel.py      # one-time helper to find Buffer channel ID
+├── .github/
+│   └── workflows/
+│       └── daily_post.yml         # GitHub Actions workflow
+├── .env.example                   # template — copy to .env and fill in keys
+├── requirements.txt               # Python dependencies
+└── .gitignore
 ```
 
 ---
 
-## Gmail App Password Setup
+## Fallback Chain
 
-1. Go to myaccount.google.com
-2. Security → 2-Step Verification (must be ON)
-3. Security → App Passwords
-4. Select "Mail" + "Other" → name it "XViralBot"
-5. Copy the 16-character password → paste into `.env` as `EMAIL_PASSWORD`
+If Gemini hits its daily free-tier quota, the bot automatically falls back:
+
+```
+Gemini key #1 → Gemini key #2 → Euron API (gemini-2.0-flash)
+```
+
+No manual intervention needed.
 
 ---
 
-## X Developer App — Required Settings
+## License
 
-Make sure your X app has:
-- **App permissions:** Read and Write
-- **Type of App:** Web App (for OAuth)
-- Access Token & Secret generated with your **own account**
-
----
-
-## File Structure
-
-```
-x-viral-bot/
-├── bot.py            ← Main pipeline (run by cron)
-├── approve.py        ← Flask server (runs permanently)
-├── requirements.txt
-├── .env              ← Your secrets (never share this!)
-├── .env.example      ← Template
-├── xviralbot.service ← Systemd config
-├── logs/
-│   ├── bot.log       ← Pipeline logs
-│   ├── server.log    ← Flask server logs
-│   └── cron.log      ← Cron output
-└── pending/
-    └── *.json        ← Pending/approved/rejected tweets
-```
+MIT
