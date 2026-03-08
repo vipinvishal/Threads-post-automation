@@ -289,9 +289,27 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
 
     # Strip markdown formatting (X doesn't render it — shows as literal asterisks)
     import re as _re
-    post = _re.sub(r'\*{1,3}(.+?)\*{1,3}', r'\1', post)  # **bold**, *italic*, ***both***
-    post = _re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', post)     # _italic_, __bold__
+    post = _re.sub(r'\*{1,3}(.+?)\*{1,3}', r'\1', post)
+    post = _re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', post)
     post = post.strip()
+
+    # If over 280 chars, ask the model to shorten it (max 2 attempts)
+    for shorten_attempt in range(2):
+        if len(post) <= 280:
+            break
+        print(f"  Post is {len(post)} chars — asking model to shorten (attempt {shorten_attempt + 1}/2)...")
+        shorten_prompt = (
+            f"This X (Twitter) post is {len(post)} characters, which is over the 280-character limit.\n\n"
+            f"Shorten it to strictly under 275 characters while keeping the same structure, voice, and impact.\n"
+            f"Keep the hook, the story, the lesson, and the question. Cut filler words, not ideas.\n"
+            f"Plain text only — no markdown, no hashtags.\n\n"
+            f"Original post:\n{post}\n\n"
+            f"Output ONLY the shortened post. Nothing else."
+        )
+        post = generate_text(shorten_prompt, SYSTEM_PROMPT)
+        post = _re.sub(r'\*{1,3}(.+?)\*{1,3}', r'\1', post)
+        post = _re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', post)
+        post = post.strip()
 
     print(f"\n  Generated post:\n  {'─'*50}")
     for line in post.split("\n"):
@@ -300,7 +318,7 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
     print(f"  Character count: {len(post)}/280\n")
 
     if len(post) > 280:
-        raise ValueError(f"Post too long ({len(post)} chars). Aborting to avoid truncation on X.")
+        raise ValueError(f"Post still too long ({len(post)} chars) after shortening attempts.")
 
     return post
 
