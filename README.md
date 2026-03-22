@@ -1,6 +1,6 @@
-# X Post Automation
+# Threads Post Automation
 
-An AI agent that researches trending topics, generates viral posts, and publishes them to X (Twitter) automatically — every day at 10 AM IST.
+An AI agent that researches trending topics, generates engaging posts, and publishes them to Threads automatically — every day at 10 AM IST.
 
 **No VPS needed. No manual work. Fully automated via GitHub Actions.**
 
@@ -13,10 +13,10 @@ GitHub Actions (10 AM IST daily)
         ↓
 Exa — neural web research on a random AI/tech topic
         ↓
-Gemini — generates a viral, first-person post (280 chars)
+Gemini — generates an engaging, first-person post (500 chars)
   └─ fallback: Gemini key #2 → Euron API
         ↓
-Buffer — schedules and publishes to @YourHandle on X
+Buffer — schedules and publishes to @YourHandle on Threads
 ```
 
 ---
@@ -29,7 +29,7 @@ Buffer — schedules and publishes to @YourHandle on X
 | **Exa** | Real-time neural web research |
 | **Google Gemini** | Post generation (dual-key with quota rotation) |
 | **Euron API** | Fallback when all Gemini keys are exhausted |
-| **Buffer** | Schedules and publishes posts to X |
+| **Buffer** | Schedules and publishes posts to Threads |
 
 ---
 
@@ -38,8 +38,8 @@ Buffer — schedules and publishes to @YourHandle on X
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/vipinvishal/X-Post-Automation.git
-cd X-Post-Automation
+git clone https://github.com/vipinvishal/Threads-post-automation.git
+cd Threads-post-automation
 ```
 
 ### 2. Create a virtual environment and install dependencies

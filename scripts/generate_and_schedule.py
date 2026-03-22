@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-X Post Agent
-Pipeline: Exa (research) → Gemini (generate viral post) → Buffer (schedule to X)
+Threads Post Agent
+Pipeline: Exa (research) → Gemini (generate engaging post) → Buffer (schedule to Threads)
 
 Run locally : python scripts/generate_and_schedule.py
-GitHub Actions triggers this automatically every day at 9 AM IST.
+GitHub Actions triggers this automatically every day at 10 AM IST.
 """
 
 import os
@@ -51,16 +51,15 @@ TONES   = _config["tones"]
 # ══════════════════════════════════════════════════════════════════════════════
 
 SYSTEM_PROMPT = """
-You are a ghost-writer for a technical AI founder on X (Twitter).
-You write like someone who has actually shipped AI products — raw, specific, opinionated.
-You know that specificity beats inspiration, one sharp sentence beats a paragraph, and
-the audience (AI founders, ML engineers, CTOs) can spot generic AI hype instantly.
+You are a ghost-writer for a relatable AI enthusiast on Threads.
+You write like someone who shares quick, fun insights on AI/tech — accessible, engaging, and slightly provocative.
+You know that specificity beats inspiration, but keep it casual and conversational for a broader audience.
 """.strip()
 
 VIRAL_POST_PROMPT = """
-You are writing for an X account in the AI/tech space.
-The audience is: AI founders, ML engineers, technical builders, AI enthusiasts, CTOs.
-The goal: maximum views, comments, likes — leading to audience monetization.
+You are writing for a Threads account in the AI/tech space.
+The audience is: AI enthusiasts, creators, tech builders, and curious users interested in trends and tips.
+The goal: maximum engagement — likes, replies, shares — to build a community around AI/tech discussions.
 
 ━━━ INPUT ━━━
 Niche   : {niche}
@@ -68,54 +67,50 @@ Persona : {persona}
 Topic   : {topic}
 Tone    : {tone}
 
-Voice rule: Every post must sound like it came from someone who was personally in the room
-when this happened — not someone who read about it. Use "I", "we", "my team", "I shipped",
-"I broke", "I learned". First-person always. No exceptions.
+Voice rule: Keep it conversational and relatable. Use "I", "we", "my", but make it fun and accessible. First-person always. No exceptions.
 
 Research from the web (ground your post in this real data):
 {research}
 
 ━━━ VIRAL FRAMEWORKS — pick the best one for this topic ━━━
 
-Framework A — The Contrarian AI Take:
-  [Claim that goes against popular AI opinion]
-  [Specific technical reason why]
-  [What most people miss]
-  [Question that makes AI builders want to reply]
+Framework A — The Quick Tip:
+  [Share a simple, actionable AI/tech tip]
+  [Why it works or what to watch out for]
+  [Fun question to get replies]
 
-Framework B — The Builder War Story:
-  [What I tried / built / shipped]
-  [What actually happened — specific numbers or outcome]
-  [The uncomfortable lesson]
-  [Question inviting others to share their experience]
+Framework B — The Fun Observation:
+  [A surprising or relatable take on AI/tech]
+  [Back it with a quick example or data]
+  [Engaging question or call-to-action]
 
-Framework C — The Hype vs Reality:
-  [The thing everyone believes about AI]
-  [What actually happens in production]
-  [The specific gap nobody talks about]
-  [Sharp closing question or statement]
+Framework C — The Trend Share:
+  [What's trending in AI/tech right now]
+  [Your take or personal experience]
+  [Question to spark discussion]
 
 Framework D — The Prediction / Hot Take:
-  [Bold claim about where AI is going]
-  [3 specific signals that support it]
+  [Bold claim about where AI/tech is going]
+  [2-3 quick signals that support it]
+  [Who this affects and how]
+  [Question that sparks debate]
   [Who this affects and how]
   [Question that sparks debate]
 
 ━━━ RULES ━━━
-✓ Max 280 characters TOTAL
-✓ Line 1 MUST hook — contrarian, surprising, or provocative
-✓ Every line break must earn its place — no filler lines
-✓ Use specific technical terms (LLM, RAG, fine-tuning, inference, etc.) — the audience is technical
-✓ End with a question that a senior ML engineer or AI founder would genuinely want to answer
-✓ Sound like a builder who has actually shipped — not a tech journalist
-✗ NO hashtags
-✗ NO generic emojis like 🚀🔥💡
-✗ NO hype language ("game-changing", "revolutionary", "the future is here")
-✗ NO vague statements — every claim must be specific
-✗ NEVER cite external sources, tools, or companies as proof (no "See Devin", no "According to OpenAI") — all credibility must come from first-person experience or direct observation
-✗ NEVER write from a journalist or analyst perspective — always write as someone who personally built, shipped, broke, or fixed the thing
-✗ NEVER use corporate language ("this quarter", "leverage", "utilize", "use case", "ROI" as a standalone buzzword)
-✗ NEVER present 3 competing ideas in one post — pick ONE insight and go deep on it
+✓ Max 500 characters TOTAL
+✓ Line 1 MUST hook — surprising, fun, or relatable
+✓ Keep it conversational and engaging
+✓ Use specific terms but explain if needed for broader audience
+✓ End with a question or call-to-action that encourages replies/shares
+✓ Sound like a enthusiast sharing insights — not a corporate pitch
+✓ Allow 1-2 relevant hashtags (e.g., #AI #Tech)
+✓ Light emojis are okay if they fit (e.g., 🤖 for AI)
+✗ NO hype overload ("game-changing", "revolutionary")
+✗ NO vague statements — back claims with data or examples
+✗ NEVER cite external sources as proof — credibility from personal or observed insights
+✗ NEVER use corporate language ("leverage", "utilize", "ROI")
+✗ NEVER present competing ideas — pick ONE insight
 ✗ NO bold/italic markdown — plain text only
 
 ━━━ OUTPUT ━━━

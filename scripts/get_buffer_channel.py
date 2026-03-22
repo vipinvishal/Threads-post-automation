@@ -1,5 +1,5 @@
 """
-Run this once to find your Buffer Channel ID for X (Twitter).
+Run this once to find your Buffer Channel ID for Threads.
 Usage: python scripts/get_buffer_channel.py
 """
 import os
