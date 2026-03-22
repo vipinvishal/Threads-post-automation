@@ -106,28 +106,7 @@ Tone: {tone}
 
 Generate a Threads post based on the above research and topic. Focus on implications for builders, creators, and humans. Use one of the content pillars: HOT TAKES, HIDDEN GEM, REALITY CHECK, BUILDER FUEL, or BIG PICTURE.
 
-Start with a bold statement, surprising fact, counterintuitive take, or vivid analogy. Keep it under 500 characters total. End with a question or call-to-action. Use 1-2 hashtags at the end if relevant.
-""".strip()
-  [Who this affects and how]
-  [Question that sparks debate]
-
-━━━ RULES ━━━
-✓ Max 500 characters TOTAL
-✓ Start with a bold statement, surprising fact, counterintuitive take, or vivid analogy
-✓ Keep it confident, curious, direct — like a smart friend sharing a hot take
-✓ Use line breaks generously for readability
-✓ End with a strong opinion, punchy question, or call-to-action
-✓ 1–2 relevant hashtags max, at the end
-✓ Light emojis are okay if they fit
-✗ NO starting with "I"
-✗ NO robotic intros or vague statements
-✗ NO overused buzzwords ("game-changer", etc.)
-✗ NO hashtag spam
-✗ NO em-dashes excessively
-✗ NO bold/italic markdown — plain text only
-
-━━━ OUTPUT ━━━
-ONLY the post text. No quotes. No explanation. No preamble.
+Start with a bold statement, surprising fact, counterintuitive take, or vivid analogy. Keep it under 280 characters total. End with a question or call-to-action. Use 1-2 hashtags at the end if relevant.
 """.strip()
 
 
@@ -310,14 +289,14 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
     post = _re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', post)
     post = post.strip()
 
-    # If over 500 chars, ask the model to shorten it (max 2 attempts)
+    # If over 280 chars, ask the model to shorten it (max 2 attempts)
     for shorten_attempt in range(2):
-        if len(post) <= 500:
+        if len(post) <= 280:
             break
         print(f"  Post is {len(post)} chars — asking model to shorten (attempt {shorten_attempt + 1}/2)...")
         shorten_prompt = (
-            f"This Threads post is {len(post)} characters, which is over the 500-character limit.\n\n"
-            f"Shorten it to strictly under 495 characters while keeping the bold start, implications focus, and engaging end.\n"
+            f"This Threads post is {len(post)} characters, which is over the 280-character limit.\n\n"
+            f"Shorten it to strictly under 275 characters while keeping the bold start, implications focus, and engaging end.\n"
             f"Maintain the voice: confident, curious, direct. Use line breaks. No starting with 'I'.\n"
             f"Plain text only — no markdown.\n\n"
             f"Original post:\n{post}\n\n"
@@ -332,9 +311,9 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
     for line in post.split("\n"):
         print(f"  {line}")
     print(f"  {'─'*50}")
-    print(f"  Character count: {len(post)}/500\n")
+    print(f"  Character count: {len(post)}/280\n")
 
-    if len(post) > 500:
+    if len(post) > 280:
         raise ValueError(f"Post still too long ({len(post)} chars) after shortening attempts.")
 
     return post
