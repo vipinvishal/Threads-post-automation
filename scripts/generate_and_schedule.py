@@ -414,7 +414,7 @@ def main(preview: bool = False):
         post_id = schedule_to_buffer(post)
 
         print(f"{'='*60}")
-        print(f"  Done! Post queued in Buffer → will publish to X")
+        print(f"  Done! Post queued in Buffer → will publish to Threads")
         print(f"  Buffer ID : {post_id}")
         print(f"{'='*60}\n")
 
