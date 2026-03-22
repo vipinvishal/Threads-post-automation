@@ -288,16 +288,16 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
     post = _re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', post)
     post = post.strip()
 
-    # If over 280 chars, ask the model to shorten it (max 2 attempts)
+    # If over 500 chars, ask the model to shorten it (max 2 attempts)
     for shorten_attempt in range(2):
-        if len(post) <= 280:
+        if len(post) <= 500:
             break
         print(f"  Post is {len(post)} chars — asking model to shorten (attempt {shorten_attempt + 1}/2)...")
         shorten_prompt = (
-            f"This X (Twitter) post is {len(post)} characters, which is over the 280-character limit.\n\n"
-            f"Shorten it to strictly under 275 characters while keeping the same structure, voice, and impact.\n"
+            f"This Threads post is {len(post)} characters, which is over the 500-character limit.\n\n"
+            f"Shorten it to strictly under 495 characters while keeping the same structure, voice, and impact.\n"
             f"Keep the hook, the story, the lesson, and the question. Cut filler words, not ideas.\n"
-            f"Plain text only — no markdown, no hashtags.\n\n"
+            f"Plain text only — no markdown.\n\n"
             f"Original post:\n{post}\n\n"
             f"Output ONLY the shortened post. Nothing else."
         )
@@ -310,9 +310,9 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
     for line in post.split("\n"):
         print(f"  {line}")
     print(f"  {'─'*50}")
-    print(f"  Character count: {len(post)}/280\n")
+    print(f"  Character count: {len(post)}/500\n")
 
-    if len(post) > 280:
+    if len(post) > 500:
         raise ValueError(f"Post still too long ({len(post)} chars) after shortening attempts.")
 
     return post
@@ -391,7 +391,7 @@ def main(preview: bool = False):
     tone  = random.choice(TONES)
 
     print(f"\n{'='*60}")
-    print(f"  X Post Agent — {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}")
+    print(f"  Threads Post Agent — {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}")
     if preview:
         print(f"  MODE: PREVIEW (no Buffer scheduling)")
     print(f"{'='*60}")
