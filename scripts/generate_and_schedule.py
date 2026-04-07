@@ -307,14 +307,19 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
         post = _re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', post)
         post = post.strip()
 
+    # Last-resort truncation at a word boundary if still over limit
+    if len(post) > 280:
+        print(f"  Post still {len(post)} chars after shortening — truncating at word boundary...")
+        truncated = post[:275]
+        last_space = truncated.rfind(" ")
+        post = (truncated[:last_space] if last_space > 200 else truncated[:275]).rstrip(".,;:!?") + "…"
+        print(f"  Truncated to {len(post)} chars.")
+
     print(f"\n  Generated post:\n  {'─'*50}")
     for line in post.split("\n"):
         print(f"  {line}")
     print(f"  {'─'*50}")
     print(f"  Character count: {len(post)}/280\n")
-
-    if len(post) > 280:
-        raise ValueError(f"Post still too long ({len(post)} chars) after shortening attempts.")
 
     return post
 
@@ -374,6 +379,7 @@ def schedule_to_buffer(post_text: str) -> str:
         timeout=15,
     )
 
+    response.raise_for_status()
     data = response.json()
 
     if "errors" in data:
