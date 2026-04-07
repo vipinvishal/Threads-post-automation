@@ -340,19 +340,21 @@ def schedule_to_buffer(post_text: str) -> str:
 
     due_at = target_ist.astimezone(timezone.utc).isoformat()
 
+    # schedulingType: scheduled  → respect the exact dueAt time
+    # (schedulingType: automatic would ignore dueAt and use Buffer's own queue slots)
     mutation = """
     mutation CreatePost($text: String!, $channelId: ChannelId!, $dueAt: DateTime) {
       createPost(input: {
         text: $text,
         channelId: $channelId,
-        schedulingType: automatic,
-        mode: customScheduled,
+        schedulingType: scheduled,
         dueAt: $dueAt
       }) {
         ... on PostActionSuccess {
           post {
             id
             text
+            scheduledAt
           }
         }
         ... on MutationError {
@@ -384,6 +386,8 @@ def schedule_to_buffer(post_text: str) -> str:
             timeout=30,
         )
 
+        print(f"  [Buffer] HTTP {response.status_code} on attempt {attempt}")
+
         # --- HTTP-level rate limit ---
         if response.status_code == 429:
             if attempt < MAX_BUFFER_RETRIES:
@@ -396,6 +400,9 @@ def schedule_to_buffer(post_text: str) -> str:
 
         response.raise_for_status()
         data = response.json()
+
+        # Always print the raw response so we can debug issues
+        print(f"  [Buffer] Raw response: {json.dumps(data, indent=2)}")
 
         # --- GraphQL-level rate limit (Buffer returns 200 OK with errors in body) ---
         if "errors" in data:
@@ -412,14 +419,17 @@ def schedule_to_buffer(post_text: str) -> str:
             # Any other GraphQL error is a real error — raise immediately
             raise RuntimeError(f"Buffer API error: {errors}")
 
-        # --- Success path ---
+        # --- Check for MutationError in the union type ---
         result = data.get("data", {}).get("createPost", {})
         if "message" in result:
             raise RuntimeError(f"Buffer mutation error: {result['message']}")
 
-        post_id = result.get("post", {}).get("id", "unknown")
-        print(f"  Scheduled! Buffer Post ID: {post_id}")
-        print(f"  Publish time : {due_at}\n")
+        # --- Success ---
+        post = result.get("post", {})
+        post_id = post.get("id", "unknown")
+        scheduled_at = post.get("scheduledAt", due_at)
+        print(f"  Scheduled! Buffer Post ID : {post_id}")
+        print(f"  Publish time (UTC)        : {scheduled_at}\n")
         return post_id
 
     # All retries exhausted due to rate limiting — save post so it isn't lost
