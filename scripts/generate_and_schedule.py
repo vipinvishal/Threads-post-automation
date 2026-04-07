@@ -363,7 +363,7 @@ def schedule_to_buffer(post_text: str) -> str:
     """
 
     response = requests.post(
-        "https://api.bufferapp.com/graphql",
+        "https://api.buffer.com/graphql",
         headers={
             "Content-Type": "application/json",
             "Authorization": f"Bearer {BUFFER_API_KEY}",
