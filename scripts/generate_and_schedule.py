@@ -362,7 +362,11 @@ def schedule_to_buffer(post_text: str) -> str:
     }
     """
 
-    for attempt in range(1, 4):
+    MAX_BUFFER_RETRIES = 5
+    # Exponential backoff: 60s, 120s, 180s, 240s, 300s
+    BUFFER_BACKOFFS = [60, 120, 180, 240, 300]
+
+    for attempt in range(1, MAX_BUFFER_RETRIES + 1):
         response = requests.post(
             "https://api.buffer.com/graphql",
             headers={
@@ -377,30 +381,55 @@ def schedule_to_buffer(post_text: str) -> str:
                     "dueAt": due_at,
                 },
             },
-            timeout=15,
+            timeout=30,
         )
 
+        # --- HTTP-level rate limit ---
         if response.status_code == 429:
-            wait = 30 * attempt
-            print(f"  [Buffer] 429 rate limit on attempt {attempt}/3. Waiting {wait}s...")
-            time.sleep(wait)
-            continue
+            if attempt < MAX_BUFFER_RETRIES:
+                wait = BUFFER_BACKOFFS[attempt - 1]
+                print(f"  [Buffer] HTTP 429 on attempt {attempt}/{MAX_BUFFER_RETRIES}. Waiting {wait}s...")
+                time.sleep(wait)
+                continue
+            # Exhausted retries on HTTP 429
+            break
 
         response.raise_for_status()
-        break
-    data = response.json()
+        data = response.json()
 
-    if "errors" in data:
-        raise RuntimeError(f"Buffer API error: {data['errors']}")
+        # --- GraphQL-level rate limit (Buffer returns 200 OK with errors in body) ---
+        if "errors" in data:
+            errors = data["errors"]
+            error_codes = [e.get("extensions", {}).get("code", "") for e in errors]
+            if "RATE_LIMIT_EXCEEDED" in error_codes:
+                if attempt < MAX_BUFFER_RETRIES:
+                    wait = BUFFER_BACKOFFS[attempt - 1]
+                    print(f"  [Buffer] RATE_LIMIT_EXCEEDED on attempt {attempt}/{MAX_BUFFER_RETRIES}. Waiting {wait}s...")
+                    time.sleep(wait)
+                    continue
+                # Exhausted retries on rate limit — fall through to fallback
+                break
+            # Any other GraphQL error is a real error — raise immediately
+            raise RuntimeError(f"Buffer API error: {errors}")
 
-    result = data.get("data", {}).get("createPost", {})
-    if "message" in result:
-        raise RuntimeError(f"Buffer mutation error: {result['message']}")
+        # --- Success path ---
+        result = data.get("data", {}).get("createPost", {})
+        if "message" in result:
+            raise RuntimeError(f"Buffer mutation error: {result['message']}")
 
-    post_id = result.get("post", {}).get("id", "unknown")
-    print(f"  Scheduled! Buffer Post ID: {post_id}")
-    print(f"  Publish time : {due_at}\n")
-    return post_id
+        post_id = result.get("post", {}).get("id", "unknown")
+        print(f"  Scheduled! Buffer Post ID: {post_id}")
+        print(f"  Publish time : {due_at}\n")
+        return post_id
+
+    # All retries exhausted due to rate limiting — save post so it isn't lost
+    fallback_path = os.path.join(_script_dir, "..", "pending_post.txt")
+    with open(fallback_path, "w") as fh:
+        fh.write(f"DUE_AT: {due_at}\n\n{post_text}")
+    print(f"  [Buffer] All {MAX_BUFFER_RETRIES} attempts failed — Buffer rate limit (15-min window).")
+    print(f"  [Buffer] Post saved to pending_post.txt for manual scheduling or a re-run.")
+    print(f"  [Buffer] This is NOT a code error. Re-trigger the workflow in 15+ minutes.\n")
+    return "PENDING_RATE_LIMITED"
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -435,8 +464,12 @@ def main(preview: bool = False):
         post_id = schedule_to_buffer(post)
 
         print(f"{'='*60}")
-        print(f"  Done! Post queued in Buffer → will publish to Threads")
-        print(f"  Buffer ID : {post_id}")
+        if post_id == "PENDING_RATE_LIMITED":
+            print(f"  WARNING: Buffer was rate-limited. Post saved to pending_post.txt.")
+            print(f"  Re-trigger the workflow in 15+ minutes to retry.")
+        else:
+            print(f"  Done! Post queued in Buffer → will publish to Threads")
+            print(f"  Buffer ID : {post_id}")
         print(f"{'='*60}\n")
 
     except Exception as e:
