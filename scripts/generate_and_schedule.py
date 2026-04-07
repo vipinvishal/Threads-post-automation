@@ -362,24 +362,32 @@ def schedule_to_buffer(post_text: str) -> str:
     }
     """
 
-    response = requests.post(
-        "https://api.buffer.com/graphql",
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {BUFFER_API_KEY}",
-        },
-        json={
-            "query": mutation,
-            "variables": {
-                "text": post_text,
-                "channelId": BUFFER_CHANNEL_ID,
-                "dueAt": due_at,
+    for attempt in range(1, 4):
+        response = requests.post(
+            "https://api.buffer.com/graphql",
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {BUFFER_API_KEY}",
             },
-        },
-        timeout=15,
-    )
+            json={
+                "query": mutation,
+                "variables": {
+                    "text": post_text,
+                    "channelId": BUFFER_CHANNEL_ID,
+                    "dueAt": due_at,
+                },
+            },
+            timeout=15,
+        )
 
-    response.raise_for_status()
+        if response.status_code == 429:
+            wait = 30 * attempt
+            print(f"  [Buffer] 429 rate limit on attempt {attempt}/3. Waiting {wait}s...")
+            time.sleep(wait)
+            continue
+
+        response.raise_for_status()
+        break
     data = response.json()
 
     if "errors" in data:
