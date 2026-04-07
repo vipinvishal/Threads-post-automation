@@ -363,7 +363,7 @@ def schedule_to_buffer(post_text: str) -> str:
     """
 
     response = requests.post(
-        "https://api.buffer.com",
+        "https://api.bufferapp.com/graphql",
         headers={
             "Content-Type": "application/json",
             "Authorization": f"Bearer {BUFFER_API_KEY}",
@@ -432,7 +432,9 @@ def main(preview: bool = False):
         print(f"{'='*60}\n")
 
     except Exception as e:
+        import traceback
         print(f"\n  ERROR: {e}")
+        traceback.print_exc()
         raise SystemExit(1)
 
 
