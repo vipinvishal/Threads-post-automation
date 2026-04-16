@@ -355,7 +355,6 @@ def schedule_to_buffer(post_text: str) -> str:
           post {
             id
             text
-            scheduledAt
           }
         }
         ... on MutationError {
@@ -431,7 +430,7 @@ def schedule_to_buffer(post_text: str) -> str:
         # --- Success ---
         post = result.get("post", {})
         post_id = post.get("id", "unknown")
-        scheduled_at = post.get("scheduledAt", due_at)
+        scheduled_at = due_at
         print(f"  Scheduled! Buffer Post ID : {post_id}")
         print(f"  Publish time (UTC)        : {scheduled_at}\n")
         return post_id
