@@ -340,14 +340,15 @@ def schedule_to_buffer(post_text: str) -> str:
 
     due_at = target_ist.astimezone(timezone.utc).isoformat()
 
-    # schedulingType: scheduled  → respect the exact dueAt time
-    # (schedulingType: automatic would ignore dueAt and use Buffer's own queue slots)
+    # schedulingType: automatic + mode: customScheduled → respect the exact dueAt time
+    # (schedulingType: automatic alone would use Buffer's own queue slots)
     mutation = """
     mutation CreatePost($text: String!, $channelId: ChannelId!, $dueAt: DateTime) {
       createPost(input: {
         text: $text,
         channelId: $channelId,
-        schedulingType: scheduled,
+        schedulingType: automatic,
+        mode: customScheduled,
         dueAt: $dueAt
       }) {
         ... on PostActionSuccess {
