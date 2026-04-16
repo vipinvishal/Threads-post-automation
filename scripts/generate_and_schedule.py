@@ -399,6 +399,9 @@ def schedule_to_buffer(post_text: str) -> str:
             # Exhausted retries on HTTP 429
             break
 
+        # Print body BEFORE raise_for_status so 4xx errors show Buffer's error message
+        if response.status_code != 200:
+            print(f"  [Buffer] Error body: {response.text}")
         response.raise_for_status()
         data = response.json()
 
