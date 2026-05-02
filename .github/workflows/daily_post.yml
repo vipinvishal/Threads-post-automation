@@ -2,10 +2,10 @@ name: Daily Threads Post
 
 on:
   schedule:
-    - cron: '0 5 * * *'     # 10:30 AM IST
-    - cron: '30 9 * * *'    # 3:00 PM IST
-    - cron: '30 15 * * *'   # 9:00 PM IST
-  workflow_dispatch:        # allow manual trigger from GitHub Actions tab
+    - cron: '30 5 * * *'    # 11:00 AM IST
+    - cron: '30 9 * * *'    #  3:00 PM IST
+    - cron: '30 15 * * *'   #  9:00 PM IST
+  workflow_dispatch:         # allow manual trigger from GitHub Actions tab
 
 # Force Node.js 24 for all actions (suppresses Node.js 20 deprecation warning)
 env:

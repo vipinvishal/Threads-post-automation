@@ -329,16 +329,10 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
 # ══════════════════════════════════════════════════════════════════════════════
 
 def schedule_to_buffer(post_text: str) -> str:
-    """Push the post to Buffer via GraphQL. Schedules for 11:00 AM IST daily."""
+    """Push the post to Buffer via GraphQL. Schedules 5 minutes from now."""
     print("[ Step 3 ] Scheduling to Buffer...")
 
-    ist = timezone(timedelta(hours=5, minutes=30))
-    now_ist = datetime.now(ist)
-    target_ist = now_ist.replace(hour=11, minute=0, second=0, microsecond=0)
-    if now_ist >= target_ist:
-        target_ist += timedelta(days=1)
-
-    due_at = target_ist.astimezone(timezone.utc).isoformat()
+    due_at = (datetime.now(timezone.utc) + timedelta(minutes=5)).isoformat()
 
     # schedulingType: automatic + mode: customScheduled → respect the exact dueAt time
     # (schedulingType: automatic alone would use Buffer's own queue slots)
