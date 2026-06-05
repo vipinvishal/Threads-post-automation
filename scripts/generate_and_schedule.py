@@ -32,6 +32,7 @@ BUFFER_CHANNEL_ID = os.environ.get("BUFFER_CHANNEL_ID")
 
 GEMINI_MODEL           = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
 GEMINI_FALLBACK_MODELS = ["gemini-2.0-flash", "gemini-2.0-flash-001"]
+EURON_MODEL            = os.environ.get("EURON_MODEL", "gemini-2.5-flash")
 MAX_RETRIES            = 4
 RETRY_BASE_SECONDS     = 15
 
@@ -150,7 +151,7 @@ def _call_euron(prompt: str, system_instruction: str) -> str:
         resp = requests.post(
             "https://api.euron.one/api/v1/euri/chat/completions",
             headers={"Authorization": f"Bearer {EURON_API_KEY}", "Content-Type": "application/json"},
-            json={"model": "gemini-2.0-flash", "messages": messages},
+            json={"model": EURON_MODEL, "messages": messages},
             timeout=90,
         )
         if resp.status_code == 429:
@@ -158,7 +159,10 @@ def _call_euron(prompt: str, system_instruction: str) -> str:
             print(f"  [Euron] 429 rate limit, attempt {attempt}/3. Waiting {wait}s...")
             time.sleep(wait)
             continue
-        resp.raise_for_status()
+        if not resp.ok:
+            raise RuntimeError(
+                f"Euron API {resp.status_code} for model '{EURON_MODEL}': {resp.text[:300]}"
+            )
         return resp.json()["choices"][0]["message"]["content"].strip()
     raise RuntimeError("Euron API failed after 3 attempts.")
 
