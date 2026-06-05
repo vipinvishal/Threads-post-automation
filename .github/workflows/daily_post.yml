@@ -38,6 +38,8 @@ jobs:
       - name: Generate and schedule post
         run: python scripts/generate_and_schedule.py
         env:
+          GEMINI_MODEL:      gemini-2.5-flash
+          EURON_MODEL:       gemini-2.5-flash
           GEMINI_API_KEY:    ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_2:  ${{ secrets.GEMINI_API_KEY_2 }}
           EURON_API_KEY:     ${{ secrets.EURON_API_KEY }}
