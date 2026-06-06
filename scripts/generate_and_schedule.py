@@ -33,6 +33,53 @@ BUFFER_CHANNEL_ID = os.environ.get("BUFFER_CHANNEL_ID")
 GEMINI_MODEL           = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
 GEMINI_FALLBACK_MODELS = ["gemini-2.0-flash", "gemini-2.0-flash-001"]
 EURON_MODEL            = os.environ.get("EURON_MODEL", "gemini-2.5-flash")
+
+# ── News freshness ──────────────────────────────────────────────────────────────
+# Only pull articles published within this rolling window (hours). If the strict
+# window returns nothing, we widen to NEWS_FALLBACK_HOURS so the run never produces
+# an empty/garbage post.
+NEWS_WINDOW_HOURS   = int(os.environ.get("NEWS_WINDOW_HOURS", "48"))
+NEWS_FALLBACK_HOURS = int(os.environ.get("NEWS_FALLBACK_HOURS", "168"))  # 7 days
+
+# ── Brand promotion (soft mention appended to every post) ────────────────────────
+# Threads suppresses posts that contain external links, so we mention the BRAND by
+# name only (no clickable URL) — it builds recognition without a reach penalty.
+# Put the actual link (WEBSITE_URL) in your Threads BIO instead, not the post body.
+WEBSITE_URL = os.environ.get("WEBSITE_URL", "orbitailabs.in")  # belongs in your bio
+BRAND_NAME  = os.environ.get("BRAND_NAME", "OrbitAI Labs")
+PROMO_SIGNOFFS = [
+    f"this is the kind of thing we obsess over at {BRAND_NAME}",
+    f"building stuff like this at {BRAND_NAME}",
+    f"we test this kind of thing daily at {BRAND_NAME}",
+    f"more of this from the {BRAND_NAME} side",
+    f"this is exactly what we do at {BRAND_NAME}",
+    f"that's the whole reason i started {BRAND_NAME}",
+]
+
+# ── Topic tag ────────────────────────────────────────────────────────────────────
+# Threads turns the FIRST hashtag in a post into a native topic tag (only one is
+# allowed), and Meta confirms tagged posts get more views. We append exactly one
+# relevant tag, matched to the post's content. Keyword → tag, first match wins.
+TOPIC_TAG_RULES = [
+    (("chatgpt", "gpt-4", "gpt4", "openai", "gpt-5", "gpt5"), "#ChatGPT"),
+    (("claude", "anthropic"),                                  "#Claude"),
+    (("gemini", "notebooklm", "google ai"),                    "#Gemini"),
+    (("perplexity",),                                          "#Perplexity"),
+    (("cursor", "copilot", "replit", "coding", "code"),        "#AICoding"),
+    (("midjourney", "dall-e", "dalle", "ideogram", "image"),   "#AIArt"),
+    (("money", "earn", "income", "side hustle", "$", "revenue", "monetize"), "#MakeMoneyWithAI"),
+    (("productivity", "workflow", "automate", "automation", "hours"),        "#AIProductivity"),
+]
+DEFAULT_TOPIC_TAG = os.environ.get("DEFAULT_TOPIC_TAG", "#AI")
+
+
+def pick_topic_tag(text: str) -> str:
+    """Choose one relevant topic tag based on the post's content."""
+    lowered = text.lower()
+    for keywords, tag in TOPIC_TAG_RULES:
+        if any(k in lowered for k in keywords):
+            return tag
+    return DEFAULT_TOPIC_TAG
 MAX_RETRIES            = 4
 RETRY_BASE_SECONDS     = 15
 
@@ -95,22 +142,33 @@ Notice what these posts have in common:
 
 The post should feel like something a real person actually posted — not something that was generated.
 
+What makes posts spread on Threads (this matters most for reach):
+- The FIRST line is everything. It has to stop the scroll. Lead with the single most surprising, specific, or just-happened thing — never a slow setup or "so I was thinking about..."
+- Take a clear position. Honest opinions and hot takes get replies; neutral "here's some news" summaries get ignored. Say what most people are missing or getting wrong.
+- Threads rewards REPLIES more than likes. Write the kind of thing people feel they have to respond to — to agree, argue, or share their own version.
+- End on a real, specific question or open invitation tied to the post — not a generic "thoughts?" or "what do you think?". Make it easy and tempting to answer.
+- Never include links or URLs. Threads buries posts that link out.
+
 Output format:
 POST: [the post, plain text, with line breaks where natural]
 """.strip()
 
 VIRAL_POST_PROMPT = """
-Here's some real research on this topic — pull out anything specific and interesting (tool names, numbers, facts, surprising details):
+Here's FRESH research from the last 48 hours on this topic — these are recent news, announcements, and releases. Pull out anything specific and interesting (tool names, numbers, facts, surprising details). React like someone who just read the news today:
 {research}
 
 Topic: {topic}
 Vibe: {tone}
 
-Write one Threads post in the casual human voice from your instructions. Use something specific from the research if it's interesting — a real tool name, a real number, something that would make someone go "wait really?"
+Write one Threads post in the casual human voice from your instructions. Build it in three beats:
+- HOOK (line 1): open with the most surprising, specific, RECENT thing from the research — a real tool name, a real number, a just-happened announcement. Make someone go "wait, that just dropped?" No slow setup.
+- TAKE: give your honest reaction or opinion on it. Say what most people are missing or getting wrong. Have a spine.
+- ENGAGE (last line): end with a specific question or open invitation that makes people want to reply — their experience, their pick, agree or disagree. Tie it to the post, never a generic "thoughts?".
 
-The post should feel like a real person sharing something they genuinely found interesting or useful — not an AI summarizing a topic.
+The post should feel like a real person reacting to news they just saw — not an AI summarizing a topic.
 
-Keep it between 200 and 450 characters. Plain text only.
+Keep it between 180 and 380 characters (a short sign-off gets added after, so leave room). Plain text only.
+Do NOT add any links, URLs, hashtags, or a sign-off line — just the post itself.
 
 Output only the POST: line.
 """.strip()
@@ -223,30 +281,49 @@ def generate_text(prompt: str, system_instruction: str) -> str:
 # STEP 1 — Research with Exa
 # ══════════════════════════════════════════════════════════════════════════════
 
-def research_topic(topic: str, niche: str) -> str:
-    """Find 5 recent high-quality articles on the topic and return a research brief."""
-    print("\n[ Step 1 ] Researching topic with Exa...")
-
-    exa = Exa(api_key=EXA_API_KEY)
-    results = exa.search(
-        query=f"{topic} {niche} insights trends 2025",
+def _exa_search(exa, topic: str, niche: str, hours: int):
+    """Run an Exa news search restricted to the last `hours`."""
+    now   = datetime.now(timezone.utc)
+    start = (now - timedelta(hours=hours)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    end   = now.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    return exa.search(
+        query=f"latest {topic} news announcement update — {niche}",
         type="auto",
+        category="news",
         num_results=5,
-        start_published_date="2025-01-01",
+        start_published_date=start,
+        end_published_date=end,
         contents={
             "text": {"max_characters": 800},
             "highlights": {"num_sentences": 3},
         },
     )
 
+
+def research_topic(topic: str, niche: str) -> str:
+    """Find recent (last 48h) high-quality articles on the topic and return a research brief."""
+    print("\n[ Step 1 ] Researching topic with Exa...")
+
+    exa = Exa(api_key=EXA_API_KEY)
+    results = _exa_search(exa, topic, niche, NEWS_WINDOW_HOURS)
+    print(f"  Searched last {NEWS_WINDOW_HOURS}h — found {len(results.results)} sources.")
+
+    # If nothing fresh in the strict window, widen so we never post on stale/no research.
+    if len(results.results) < 2 and NEWS_FALLBACK_HOURS > NEWS_WINDOW_HOURS:
+        print(f"  Too few fresh sources — widening to last {NEWS_FALLBACK_HOURS}h.")
+        results = _exa_search(exa, topic, niche, NEWS_FALLBACK_HOURS)
+        print(f"  Found {len(results.results)} sources in widened window.")
+
     lines = []
     for i, result in enumerate(results.results, 1):
         title      = result.title or "Untitled"
         url        = result.url
+        published  = getattr(result, "published_date", None) or "recent"
         text       = (result.text or "")[:600].strip()
         highlights = result.highlights or []
 
         lines.append(f"Source {i}: {title}")
+        lines.append(f"Published: {published}")
         lines.append(f"URL: {url}")
         if highlights:
             lines.append(f"Key insight: {highlights[0]}")
@@ -255,7 +332,7 @@ def research_topic(topic: str, niche: str) -> str:
         lines.append("")
 
     brief = "\n".join(lines)
-    print(f"  Found {len(results.results)} sources.\n")
+    print()
     return brief
 
 
@@ -298,16 +375,24 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
     post = _re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', post)
     post = post.strip()
 
-    # Threads allows 500 chars. If over limit, ask model to shorten (max 2 attempts)
+    # Soft brand promotion + one topic tag for reach. Reserve room for both so the
+    # full post (body + sign-off + tag) stays under Threads' 500-char limit and
+    # nothing is truncated away. The tag is chosen from the body's content.
+    signoff    = random.choice(PROMO_SIGNOFFS)
+    topic_tag  = pick_topic_tag(post + " " + topic)
+    footer     = f"\n\n{signoff}\n\n{topic_tag}"
+    body_limit = 500 - len(footer)
+
+    # If the body is over its budget, ask model to shorten (max 2 attempts)
     for shorten_attempt in range(2):
-        if len(post) <= 500:
+        if len(post) <= body_limit:
             break
-        print(f"  Post is {len(post)} chars — asking model to shorten (attempt {shorten_attempt + 1}/2)...")
+        print(f"  Body is {len(post)} chars (limit {body_limit}) — asking model to shorten (attempt {shorten_attempt + 1}/2)...")
         shorten_prompt = (
-            f"This Threads post is {len(post)} characters, over the 500-character limit.\n\n"
-            f"Shorten it to strictly under 490 characters while keeping the hook, specific details, and engagement question.\n"
+            f"This Threads post body is {len(post)} characters, over the {body_limit}-character budget.\n\n"
+            f"Shorten it to strictly under {body_limit - 10} characters while keeping the hook, specific details, and engagement question.\n"
             f"Maintain the voice: confident, direct, personal. Use line breaks. No starting with 'I'.\n"
-            f"Plain text only — no markdown.\n\n"
+            f"Plain text only — no markdown, no links, no sign-off.\n\n"
             f"Original post:\n{post}\n\n"
             f"Output ONLY the shortened post. Nothing else."
         )
@@ -316,13 +401,16 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
         post = _re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', post)
         post = post.strip()
 
-    # Last-resort truncation at word boundary if still over limit
-    if len(post) > 500:
-        print(f"  Post still {len(post)} chars after shortening — truncating at word boundary...")
-        truncated = post[:495]
+    # Last-resort truncation at word boundary if the body is still over budget
+    if len(post) > body_limit:
+        print(f"  Body still {len(post)} chars after shortening — truncating at word boundary...")
+        truncated  = post[:body_limit - 1]
         last_space = truncated.rfind(" ")
-        post = (truncated[:last_space] if last_space > 400 else truncated[:495]).rstrip(".,;:!?") + "…"
-        print(f"  Truncated to {len(post)} chars.")
+        post = (truncated[:last_space] if last_space > body_limit * 0.8 else truncated).rstrip(".,;:!?") + "…"
+        print(f"  Truncated body to {len(post)} chars.")
+
+    # Append the soft website mention
+    post = post + footer
 
     print(f"\n  Generated post:\n  {'─'*50}")
     for line in post.split("\n"):
