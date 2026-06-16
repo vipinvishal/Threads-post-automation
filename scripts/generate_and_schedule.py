@@ -41,20 +41,37 @@ EURON_MODEL            = os.environ.get("EURON_MODEL", "gemini-2.5-flash")
 NEWS_WINDOW_HOURS   = int(os.environ.get("NEWS_WINDOW_HOURS", "48"))
 NEWS_FALLBACK_HOURS = int(os.environ.get("NEWS_FALLBACK_HOURS", "168"))  # 7 days
 
-# ── Brand promotion (soft mention appended to every post) ────────────────────────
+# ── Brand promotion + follow nudge (soft sign-off appended to every post) ─────────
 # Threads suppresses posts that contain external links, so we mention the BRAND by
 # name only (no clickable URL) — it builds recognition without a reach penalty.
 # Put the actual link (WEBSITE_URL) in your Threads BIO instead, not the post body.
+# We alternate two kinds of sign-off: a brand mention, and a follow-value line that
+# gives people a concrete reason to follow (the #1 lever for views -> followers).
 WEBSITE_URL = os.environ.get("WEBSITE_URL", "orbitailabs.in")  # belongs in your bio
 BRAND_NAME  = os.environ.get("BRAND_NAME", "OrbitAI Labs")
-PROMO_SIGNOFFS = [
+
+BRAND_SIGNOFFS = [
     f"this is the kind of thing we obsess over at {BRAND_NAME}",
     f"building stuff like this at {BRAND_NAME}",
     f"we test this kind of thing daily at {BRAND_NAME}",
-    f"more of this from the {BRAND_NAME} side",
     f"this is exactly what we do at {BRAND_NAME}",
     f"that's the whole reason i started {BRAND_NAME}",
 ]
+FOLLOW_SIGNOFFS = [
+    "i break down a new AI tool here every day — follow if that's useful",
+    "follow along — i post what's actually worth it in AI, daily",
+    "i test AI tools daily and post the verdict here. follow if you want in",
+    "new AI find every day on this page. follow so you don't miss it",
+    "i do this breakdown daily here — follow along",
+]
+# Weighted toward follow-value lines since growing followers is the current goal.
+FOLLOW_SIGNOFF_RATIO = float(os.environ.get("FOLLOW_SIGNOFF_RATIO", "0.6"))
+
+
+def pick_signoff() -> str:
+    """Alternate between a follow-value line and a brand mention."""
+    pool = FOLLOW_SIGNOFFS if random.random() < FOLLOW_SIGNOFF_RATIO else BRAND_SIGNOFFS
+    return random.choice(pool)
 
 # ── Topic tag ────────────────────────────────────────────────────────────────────
 # Threads turns the FIRST hashtag in a post into a native topic tag (only one is
@@ -148,6 +165,11 @@ What makes posts spread on Threads (this matters most for reach):
 - Threads rewards REPLIES more than likes. Write the kind of thing people feel they have to respond to — to agree, argue, or share their own version.
 - End on a real, specific question or open invitation tied to the post — not a generic "thoughts?" or "what do you think?". Make it easy and tempting to answer.
 - Never include links or URLs. Threads buries posts that link out.
+
+What turns a viewer into a FOLLOWER (the current priority — views are fine, follows are not):
+- You are ONE consistent person: someone who tests AI tools every day and reports what's actually worth it, calls out hype, and helps normal people save time and make money. Every post should sound like it came from that same person, so following feels like subscribing to that daily verdict.
+- Make it SAVE-WORTHY when the topic allows: a concrete tool name + what it replaces, an exact number, a tiny step-by-step, or a "free vs paid" verdict. People save useful posts, then check the profile, then follow. A clever take alone earns a like, not a follow.
+- Give specifics people can act on TODAY, not vague encouragement. Specific = memorable = followable.
 
 Output format:
 POST: [the post, plain text, with line breaks where natural]
@@ -378,7 +400,7 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
     # Soft brand promotion + one topic tag for reach. Reserve room for both so the
     # full post (body + sign-off + tag) stays under Threads' 500-char limit and
     # nothing is truncated away. The tag is chosen from the body's content.
-    signoff    = random.choice(PROMO_SIGNOFFS)
+    signoff    = pick_signoff()
     topic_tag  = pick_topic_tag(post + " " + topic)
     footer     = f"\n\n{signoff}\n\n{topic_tag}"
     body_limit = 500 - len(footer)
