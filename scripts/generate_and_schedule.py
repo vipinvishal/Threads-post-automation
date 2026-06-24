@@ -469,7 +469,7 @@ def schedule_to_buffer(post_text: str, image_url: str = None) -> str:
     # schedulingType: automatic + mode: customScheduled → respect the exact dueAt time
     # (schedulingType: automatic alone would use Buffer's own queue slots)
     # assets[].image.url attaches an image (only added when an image_url is given).
-    asset_decl  = ", $imageUrl: String" if image_url else ""
+    asset_decl  = ", $imageUrl: String!" if image_url else ""
     asset_field = "assets: [{ image: { url: $imageUrl } }]," if image_url else ""
     mutation = f"""
     mutation CreatePost($text: String!, $channelId: ChannelId!, $dueAt: DateTime{asset_decl}) {{
