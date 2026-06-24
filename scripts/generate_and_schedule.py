@@ -18,6 +18,8 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 
+import infographic
+
 # ── Load env (local dev; GitHub Actions injects env vars directly) ────────────
 load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env"))
 load_dotenv()
@@ -49,6 +51,11 @@ NEWS_FALLBACK_HOURS = int(os.environ.get("NEWS_FALLBACK_HOURS", "168"))  # 7 day
 # gives people a concrete reason to follow (the #1 lever for views -> followers).
 WEBSITE_URL = os.environ.get("WEBSITE_URL", "orbitailabs.in")  # belongs in your bio
 BRAND_NAME  = os.environ.get("BRAND_NAME", "OrbitAI Labs")
+
+# ── Infographic image ────────────────────────────────────────────────────────────
+# When on, each post gets a rendered infographic PNG attached (needs IMGBB_API_KEY
+# to host it for Buffer). Set INCLUDE_INFOGRAPHIC=0 to fall back to text-only.
+INCLUDE_INFOGRAPHIC = os.environ.get("INCLUDE_INFOGRAPHIC", "1") not in ("0", "false", "False", "")
 
 BRAND_SIGNOFFS = [
     f"this is the kind of thing we obsess over at {BRAND_NAME}",
@@ -447,34 +454,44 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
 # STEP 3 — Schedule to Buffer
 # ══════════════════════════════════════════════════════════════════════════════
 
-def schedule_to_buffer(post_text: str) -> str:
-    """Push the post to Buffer via GraphQL. Schedules 5 minutes from now."""
+def schedule_to_buffer(post_text: str, image_url: str = None) -> str:
+    """Push the post to Buffer via GraphQL. Schedules 5 minutes from now.
+
+    If image_url is given (a public URL), it is attached as a Threads image via
+    Buffer's assets field. Buffer cannot upload files — the URL must be public.
+    """
     print("[ Step 3 ] Scheduling to Buffer...")
+    if image_url:
+        print(f"  [Buffer] Attaching infographic: {image_url}")
 
     due_at = (datetime.now(timezone.utc) + timedelta(minutes=5)).isoformat()
 
     # schedulingType: automatic + mode: customScheduled → respect the exact dueAt time
     # (schedulingType: automatic alone would use Buffer's own queue slots)
-    mutation = """
-    mutation CreatePost($text: String!, $channelId: ChannelId!, $dueAt: DateTime) {
-      createPost(input: {
+    # assets[].image.url attaches an image (only added when an image_url is given).
+    asset_decl  = ", $imageUrl: String" if image_url else ""
+    asset_field = "assets: [{ image: { url: $imageUrl } }]," if image_url else ""
+    mutation = f"""
+    mutation CreatePost($text: String!, $channelId: ChannelId!, $dueAt: DateTime{asset_decl}) {{
+      createPost(input: {{
         text: $text,
         channelId: $channelId,
         schedulingType: automatic,
         mode: customScheduled,
+        {asset_field}
         dueAt: $dueAt
-      }) {
-        ... on PostActionSuccess {
-          post {
+      }}) {{
+        ... on PostActionSuccess {{
+          post {{
             id
             text
-          }
-        }
-        ... on MutationError {
+          }}
+        }}
+        ... on MutationError {{
           message
-        }
-      }
-    }
+        }}
+      }}
+    }}
     """
 
     MAX_BUFFER_RETRIES = 5
@@ -494,6 +511,7 @@ def schedule_to_buffer(post_text: str) -> str:
                     "text": post_text,
                     "channelId": BUFFER_CHANNEL_ID,
                     "dueAt": due_at,
+                    **({"imageUrl": image_url} if image_url else {}),
                 },
             },
             timeout=30,
@@ -559,6 +577,32 @@ def schedule_to_buffer(post_text: str) -> str:
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# STEP 2.5 — Infographic image (optional)
+# ══════════════════════════════════════════════════════════════════════════════
+
+def build_infographic_image(research: str, topic: str, preview: bool):
+    """Render the infographic and (unless preview) host it for Buffer.
+
+    Returns a public image URL (real run), a local PNG path (preview), or None if
+    anything fails — in which case the post falls back to text-only so a single
+    rendering hiccup never kills the daily post.
+    """
+    try:
+        print("\n[ Step 2.5 ] Building infographic image...")
+        content  = infographic.generate_infographic_content(research, topic, generate_text)
+        out_dir  = os.path.join(_script_dir, "..", "output")
+        os.makedirs(out_dir, exist_ok=True)
+        png_path = os.path.abspath(os.path.join(out_dir, "infographic.png"))
+        infographic.render_infographic(content, png_path)
+        if preview:
+            return png_path
+        return infographic.upload_to_imgbb(png_path)
+    except Exception as e:
+        print(f"  [Infographic] Skipped — {e}. Falling back to text-only post.")
+        return None
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 # MAIN
 # ══════════════════════════════════════════════════════════════════════════════
 
@@ -580,14 +624,20 @@ def main(preview: bool = False):
         research = research_topic(topic, NICHE)
         post     = generate_post(topic, tone, NICHE, PERSONA, research)
 
+        image_ref = None
+        if INCLUDE_INFOGRAPHIC:
+            image_ref = build_infographic_image(research, topic, preview)
+
         if preview:
             print(f"{'='*60}")
             print(f"  PREVIEW ONLY — post NOT sent to Buffer.")
+            if image_ref:
+                print(f"  Infographic saved at: {image_ref}")
             print(f"  Run without --preview to schedule it.")
             print(f"{'='*60}\n")
             return
 
-        post_id = schedule_to_buffer(post)
+        post_id = schedule_to_buffer(post, image_ref)
 
         print(f"{'='*60}")
         if post_id == "PENDING_RATE_LIMITED":
