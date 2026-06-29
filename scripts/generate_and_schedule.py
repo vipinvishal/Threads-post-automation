@@ -57,49 +57,27 @@ BRAND_NAME  = os.environ.get("BRAND_NAME", "OrbitAI Labs")
 # to host it for Buffer). Set INCLUDE_INFOGRAPHIC=0 to fall back to text-only.
 INCLUDE_INFOGRAPHIC = os.environ.get("INCLUDE_INFOGRAPHIC", "1") not in ("0", "false", "False", "")
 
-BRAND_SIGNOFFS = [
-    f"this is the kind of thing we obsess over at {BRAND_NAME}",
-    f"building stuff like this at {BRAND_NAME}",
-    f"we test this kind of thing daily at {BRAND_NAME}",
-    f"that's the whole reason i started {BRAND_NAME}",
-    f"solo founder in delhi. testing ai tools so you don't have to. that's {BRAND_NAME}",
-]
-FOLLOW_SIGNOFFS = [
-    "i test a new AI tool every day from delhi and post the honest verdict here — follow if that's useful",
-    "solo founder. limited budget. real tests. follow if you want the actual verdict, not the hype",
-    "i break this stuff down daily — what's worth it, what's not. follow so you don't miss it",
-    "i post what actually works for people who can't afford to waste money on the wrong tools — follow along",
-    "testing AI tools from india with zero budget. no sponsored takes. follow if that's your situation too",
-    "i do this every day — real tests, real numbers, india prices and all. follow along",
-]
-# Weighted toward follow-value lines since growing followers is the current goal.
-FOLLOW_SIGNOFF_RATIO = float(os.environ.get("FOLLOW_SIGNOFF_RATIO", "0.7"))
-
-
-def pick_signoff() -> str:
-    """Alternate between a follow-value line and a brand mention."""
-    pool = FOLLOW_SIGNOFFS if random.random() < FOLLOW_SIGNOFF_RATIO else BRAND_SIGNOFFS
-    return random.choice(pool)
+# ── Follow CTA ────────────────────────────────────────────────────────────────────
+# A clear, direct follow CTA is appended as the STANDALONE LAST LINE of every post.
+# Threads rewards posts that drive profile visits + follows, so this is explicit,
+# not buried in a sign-off. The India/solo-founder positioning lives in the post
+# body/persona; this line is the unmissable ask. Override via env without code edits.
+FOLLOW_CTA = os.environ.get("FOLLOW_CTA", "Follow @vipin.vishal for 1 AI insight/day.")
 
 # ── Topic tag ────────────────────────────────────────────────────────────────────
 # Threads turns the FIRST hashtag in a post into a native topic tag (only one is
-# allowed), and Meta confirms tagged posts get more views. We append exactly one
-# relevant tag, matched to the post's content. Keyword → tag, first match wins.
+# allowed). Tags are constrained to the account's PINNED INTERESTS so Threads routes
+# the post into the right topic feeds: AI, AgenticAI, CloudComputing.
+# Keyword → tag, first match wins; default is the broad #AI interest.
 TOPIC_TAG_RULES = [
-    (("chatgpt", "gpt-4", "gpt4", "openai", "gpt-5", "gpt5"), "#ChatGPT"),
-    (("claude", "anthropic"),                                  "#Claude"),
-    (("gemini", "notebooklm", "google ai"),                    "#Gemini"),
-    (("perplexity",),                                          "#Perplexity"),
-    (("cursor", "copilot", "replit", "coding", "code"),        "#AICoding"),
-    (("midjourney", "dall-e", "dalle", "ideogram", "image"),   "#AIArt"),
-    (("money", "earn", "income", "side hustle", "$", "revenue", "monetize"), "#MakeMoneyWithAI"),
-    (("productivity", "workflow", "automate", "automation", "hours"),        "#AIProductivity"),
+    (("agent", "agentic", "autonomous", "multi-agent", "tool use", "orchestrat"), "#AgenticAI"),
+    (("cloud", "aws", "azure", "gcp", "kubernetes", "serverless", "infrastructure", "datacenter", "data center"), "#CloudComputing"),
 ]
 DEFAULT_TOPIC_TAG = os.environ.get("DEFAULT_TOPIC_TAG", "#AI")
 
 
 def pick_topic_tag(text: str) -> str:
-    """Choose one relevant topic tag based on the post's content."""
+    """Choose one topic tag from the account's pinned interests, by content."""
     lowered = text.lower()
     for keywords, tag in TOPIC_TAG_RULES:
         if any(k in lowered for k in keywords):
@@ -174,7 +152,7 @@ What makes posts spread on Threads (this matters most for reach):
 - The FIRST line is everything. It has to stop the scroll. Lead with the single most surprising, specific, or just-happened thing — never a slow setup.
 - Take a clear position. Honest opinions and hot takes get replies; neutral "here's some news" summaries get ignored.
 - Threads rewards REPLIES more than likes. Write the kind of thing people feel they have to respond to — to agree, argue, or share their own version.
-- End on a real, specific question or open invitation tied to the post — not a generic "thoughts?" Make it easy and tempting to answer.
+- End on a SPECIFIC, BINARY question that takes one tap to answer — an either/or or a one-word reply, tied to the post. e.g. "ChatGPT or Gemini for coding in 2026?" or "Free tier or paid — which side are you on?". A binary question lowers the barrier, so more people reply, so the algorithm pushes it further. Avoid broad open-enders like "what's holding you back?" or "thoughts?".
 - Never include links or URLs. Threads buries posts that link out.
 
 What turns a viewer into a FOLLOWER (the current priority — views are fine, follows are not):
@@ -197,14 +175,14 @@ Vibe: {tone}
 Write one Threads post in the casual human voice from your instructions. Build it in three beats:
 - HOOK (line 1): open with the most surprising, specific, RECENT thing from the research — a real tool name, a real number, a just-happened announcement. Make someone go "wait, that just dropped?" No slow setup.
 - TAKE: give your honest reaction or opinion on it. Say what most people are missing or getting wrong. Have a spine.
-- ENGAGE (last line): end with a specific question or open invitation that makes people want to reply — their experience, their pick, agree or disagree. Tie it to the post, never a generic "thoughts?".
+- ENGAGE (last line): end with a SPECIFIC, BINARY question that takes one tap to answer — an either/or or a one-word reply, tied to the post. e.g. "ChatGPT or Gemini for this?", "Worth it or hype?", "Free tier or paid?". Lower the barrier so more people reply. Never a broad open-ender like "what's holding you back?" or "thoughts?".
 
 India angle: when the topic connects to cost, free tools, or making money with AI — mention the rupee equivalent or the Indian freelancer/founder reality. It's natural and relatable, not forced. Skip it for pure news-reaction posts.
 
 The post should feel like a real person in India reacting to news they just saw — not an AI summarizing a topic.
 
-Keep it between 180 and 380 characters (a short sign-off gets added after, so leave room). Plain text only.
-Do NOT add any links, URLs, hashtags, or a sign-off line — just the post itself.
+Keep it between 180 and 360 characters (a topic tag + follow CTA get added after, so leave room). Plain text only.
+Do NOT add any links, URLs, hashtags, a follow CTA, or a sign-off line — just the post body itself.
 
 Output only the POST: line.
 """.strip()
@@ -411,12 +389,11 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
     post = _re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', post)
     post = post.strip()
 
-    # Soft brand promotion + one topic tag for reach. Reserve room for both so the
-    # full post (body + sign-off + tag) stays under Threads' 500-char limit and
-    # nothing is truncated away. The tag is chosen from the body's content.
-    signoff    = pick_signoff()
+    # Trailing block: one pinned-interest topic tag, then a clear follow CTA as the
+    # STANDALONE LAST LINE. Reserve room so the full post stays under 500 chars and
+    # the CTA is never truncated. The tag is chosen from the body's content.
     topic_tag  = pick_topic_tag(post + " " + topic)
-    footer     = f"\n\n{signoff}\n\n{topic_tag}"
+    footer     = f"\n\n{topic_tag}\n\n{FOLLOW_CTA}"
     body_limit = 500 - len(footer)
 
     # If the body is over its budget, ask model to shorten (max 2 attempts)
