@@ -42,10 +42,11 @@ ICON_NAMES = [
 ]
 
 # ── Content prompt (adapted from Auto_infographics_system/content_api.py) ────────
-_SYSTEM = """You are an AI/Tech educator who designs single-image explainer infographics.
-You take fresh AI / Generative-AI / Agentic-AI research and reframe it into ONE
-evergreen "how it works" concept that can be explained in exactly 3 visual stages.
-You ONLY cover Artificial Intelligence, Generative AI, AI tools, or Agentic AI.
+_SYSTEM = """You are an AI/ML systems engineer who designs single-image explainer infographics.
+You take research on AI systems, infrastructure, or model architecture and reframe it
+into ONE "how it works" concept explained in exactly 3 visual stages. Cover AI, LLMs,
+model architecture, training, inference, GPUs/infrastructure, RAG, agents, and related
+systems topics. Be precise and technically accurate — never invent numbers or mechanisms.
 Write ALL text in ENGLISH ONLY. You return valid JSON only: no markdown, no prose."""
 
 _USER_TEMPLATE = """FRESH RESEARCH (last 48h, your inspiration — not the literal subject):
@@ -62,7 +63,8 @@ Reframe this into ONE evergreen, teachable AI concept that fits a 3-stage
 (e.g. a story about a new agent framework -> "How an AI Agent Decides Its Next Action").
 
 HARD RULES
-- Topic MUST be about AI, Generative AI, AI tools, or Agentic AI. Nothing else.
+- Topic MUST be about AI / ML systems: models, architecture, training, inference,
+  GPUs/infrastructure, RAG, agents, or related systems concepts. Be technically accurate.
 - EXACTLY 3 stages and EXACTLY 3 explainers.
 - Every value concrete and specific — no filler like "AI is powerful".
 - stage.title <= 22 characters. stage.subtitle <= 30 characters, one line.

@@ -1,48 +1,104 @@
 {
-  "niche": "AI tools, productivity, and making money in the AI era — tested by a solo founder in India",
+  "niche": "AI systems, infrastructure, and model architecture",
 
-  "persona": "A solo founder in Delhi, India who tests AI tools every single day, shares exactly what works and what doesn't, and calls out hype from someone with real budget constraints. Not a US tech influencer — a builder who has to make every rupee and every API call count.",
+  "persona": "A hands-on AI/ML systems engineer who explains how AI actually works under the hood — architecture, infrastructure, and hard-won technical lessons from building and running these systems. Precise, specific, technical. Writes to teach, not to pitch a company or chase a narrative.",
 
-  "topics": [
-    "The exact AI tools I use daily and what each one replaced",
-    "Free AI tools that do what $50/month tools charge for",
-    "ChatGPT vs Claude vs Gemini — which one wins for real work tasks",
-    "I tested the top 5 AI writing tools — only 1 is worth paying for",
-    "The AI workflow that saves me 15 hours a week — exact steps",
-    "Why most people fail with AI tools (and the one shift that fixes it)",
-    "5 ways to use AI to make real money this month — no coding required",
-    "The AI coding assistants ranked — Cursor vs GitHub Copilot vs Replit",
-    "Perplexity AI just made Google search feel outdated — here is why",
-    "The free AI tool that replaces a $500/month VA — and how to use it",
-    "What nobody tells you about using AI for content creation at scale",
-    "The AI prompt formula that generates better results every single time",
-    "The AI tools that are actually worth the subscription cost in 2026",
-    "The dark side of AI tools nobody posts about — real failure stories",
-    "I built an AI side hustle in a weekend — here is exactly how",
-    "The AI skill that will be worth $100k this year — and how to learn it free",
-    "How to use NotebookLM to learn faster than 99% of people",
-    "What separates people making money with AI from those just playing with it",
-    "The best AI tools you can use completely free in 2026 — tested list",
-    "How to replace expensive software subscriptions with free AI tools",
-    "What the latest AI model release actually means for normal people",
-    "The AI tools I switched to after cutting my software budget in half",
-    "What I learned building AI products with zero investment in India",
-    "The real cost of AI tools when you are not paying in dollars",
-    "How to use AI to do in one hour what used to take me a full day",
-    "What Indian creators and freelancers can do with AI tools right now",
-    "The free AI stack I use to run an entire business solo from Delhi",
-    "What working with AI tools looks like when every tool has to earn its keep",
-    "How to start using AI to make money even if you have zero budget"
-  ],
+  "content_slots": {
 
-  "tones": [
-    "Honest and direct — tell the truth most creators avoid",
-    "Practical and specific — give exact steps, not vague advice",
-    "Contrarian hot take — challenge what most people believe about AI",
-    "Tool review with real verdict — name it, test it, rate it",
-    "Personal story with a lesson — what you actually tried and what happened",
-    "List post that delivers real value — specific, scannable, immediately useful",
-    "India founder lens — real constraints, limited budget, tested from Delhi, not Silicon Valley",
-    "Beginner-friendly — assume the reader has tried AI but not figured out how to make it work yet"
-  ]
+    "news": {
+      "label": "New AI model / release, explained technically",
+      "topics": [
+        "The new LLM that just launched — what's actually different in its architecture",
+        "Comparing the latest model release against its predecessor: what really changed under the hood",
+        "The benchmark everyone is quoting for the new model release — and what it actually measures",
+        "What context window, parameter count, and training data changes in the new release mean in practice",
+        "The inference tricks the newest model release uses to run faster or cheaper",
+        "Open-weight vs closed model release: what's actually different in how you can run and fine-tune each",
+        "The quantization or distillation technique behind the newest small/efficient model release",
+        "Reading a new model's technical report: the details that matter more than the headline number"
+      ],
+      "tones": [
+        "Curiosity hook — a technical detail in the release most people are missing",
+        "Data-backed breakdown grounded in the technical report, not the hype",
+        "Contrarian take on what a benchmark number really tells you",
+        "Practical read from someone who will actually run/build with this model"
+      ]
+    },
+
+    "educational": {
+      "label": "AI educational post",
+      "topics": [
+        "RAG explained for engineers who are tired of vague explanations",
+        "How vector databases actually work — and when NOT to use one",
+        "LLM context windows: what the number means and why you are using it wrong",
+        "AI Agents: the architecture that works in production vs the demos",
+        "How to evaluate an LLM output without just eyeballing it",
+        "Embeddings explained: what they are and why every AI app needs them",
+        "What a GPU actually does during LLM training that a CPU can't",
+        "CUDA cores, tensor cores, and memory bandwidth: what actually limits training speed",
+        "How distributed training splits a model across hundreds of GPUs",
+        "Model quantization explained: how a model gets smaller without getting much dumber",
+        "Inference serving 101: what frameworks like vLLM actually optimize for",
+        "KV cache explained: the trick that makes chat with LLMs fast",
+        "How tokenization works and why it breaks in surprising ways",
+        "What actually happens inside a transformer during a single forward pass",
+        "Why training an LLM needs so much more memory than running one"
+      ],
+      "tones": [
+        "Curiosity hook — a surprising technical fact most people in AI do not know",
+        "Step-by-step builder insight from real production experience",
+        "Practical breakdown that gives immediate value to engineers",
+        "Data-backed insight that surprises technical readers"
+      ]
+    },
+
+    "personal": {
+      "label": "Personal learning / build-in-public",
+      "topics": [
+        "What I learned shipping an AI feature that nobody used",
+        "The AI mistake I made that cost us three weeks of engineering time",
+        "I built in public this week — here is what surprised me",
+        "What building AI products actually taught me about software engineering",
+        "The moment I realized I was building AI wrong",
+        "What I wish someone had told me before I built my first AI agent",
+        "The unglamorous side of shipping AI that nobody posts about",
+        "A week of building with AI — what worked, what broke, what I learned",
+        "What debugging a slow RAG pipeline taught me about my own assumptions",
+        "The infra bug that taught me more about AI systems than any course did"
+      ],
+      "tones": [
+        "Personal builder story with hard lesson",
+        "Brutally honest observation from shipping real AI systems",
+        "Vulnerable and relatable — sharing the failure, not just the win",
+        "Build-in-public energy — raw and unfiltered progress update"
+      ]
+    },
+
+    "advanced": {
+      "label": "Advanced AI concept",
+      "topics": [
+        "Why attention mechanisms are misunderstood by most people who use LLMs",
+        "The latency vs accuracy tradeoff in production AI nobody talks about honestly",
+        "Why inference optimization matters more than model selection at scale",
+        "The real difference between zero-shot, few-shot, and fine-tuned models in production",
+        "Agentic loops: where they break and how to build them to not",
+        "Why your RAG pipeline's retrieval step is the weakest link",
+        "The observability stack every serious AI system needs but most skip",
+        "Why AI system evals are harder than unit tests and how to approach them",
+        "How model parallelism, data parallelism, and pipeline parallelism actually differ",
+        "Why memory bandwidth, not compute, is the real bottleneck in LLM inference",
+        "How mixed precision training works and why it doesn't break model accuracy",
+        "What happens on the network (NVLink/InfiniBand) when you train across a GPU cluster",
+        "Why serving an LLM at scale is a systems problem, not a model problem",
+        "Speculative decoding explained: how models get inference speedups without changing weights"
+      ],
+      "tones": [
+        "Contrarian take with specific technical evidence",
+        "Deep technical insight from someone who has hit the same wall",
+        "Data-backed insight that surprises technical readers",
+        "Expert-level breakdown that makes senior engineers stop and think"
+      ]
+    }
+
+  }
 }

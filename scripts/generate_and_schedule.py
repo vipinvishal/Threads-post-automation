@@ -91,10 +91,40 @@ _script_dir = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(_script_dir, "topics.json"), "r") as f:
     _config = json.load(f)
 
-NICHE   = _config["niche"]
-PERSONA = _config["persona"]
-TOPICS  = _config["topics"]
-TONES   = _config["tones"]
+NICHE         = _config["niche"]
+PERSONA       = _config["persona"]
+CONTENT_SLOTS = _config["content_slots"]
+
+# Optional per-slot weighting (env: SLOT_WEIGHTS="news:2,educational:3,personal:1,advanced:2").
+# Defaults to equal weight across whatever slots exist.
+def _parse_slot_weights():
+    raw = os.environ.get("SLOT_WEIGHTS", "")
+    weights = {k: 1.0 for k in CONTENT_SLOTS}
+    for pair in raw.split(","):
+        if ":" in pair:
+            k, _, v = pair.partition(":")
+            k = k.strip()
+            if k in weights:
+                try:
+                    weights[k] = float(v)
+                except ValueError:
+                    pass
+    return weights
+
+SLOT_WEIGHTS = _parse_slot_weights()
+
+
+def pick_slot():
+    """Pick a content slot (weighted), then a topic + tone from it.
+
+    Returns (slot_key, slot_label, topic, tone).
+    """
+    keys = list(CONTENT_SLOTS.keys())
+    slot_key = random.choices(keys, weights=[SLOT_WEIGHTS[k] for k in keys], k=1)[0]
+    slot = CONTENT_SLOTS[slot_key]
+    topic = random.choice(slot["topics"])
+    tone  = random.choice(slot["tones"])
+    return slot_key, slot.get("label", slot_key), topic, tone
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -102,51 +132,39 @@ TONES   = _config["tones"]
 # ══════════════════════════════════════════════════════════════════════════════
 
 SYSTEM_PROMPT = """
-You write Threads posts for a solo founder in Delhi, India who tests AI tools every day and shares what actually works — casually, like texting a friend, not publishing an article.
+You write Threads posts for a hands-on AI/ML systems engineer who explains how AI actually works under the hood — architecture, infrastructure, and the hard-won lessons from building and running these systems. You write to TEACH, not to pitch a company or chase a narrative.
 
-The voice is relaxed and real. Short sentences. Personal. A little unpolished on purpose. Like someone who just tried something and had to tell people about it. The India angle is the unfair advantage — a solo founder with real budget constraints testing these tools, not a US tech influencer with sponsored deals.
+The voice is precise, specific, and technical — but still Threads-native: short sentences, punchy, conversational. You explain a real mechanism so clearly that a curious reader leaves thinking "oh, THAT's how it actually works." No hype, no fluff, no selling.
 
 Here are examples of the exact style to match:
 
 ---
-"nobody told me perplexity was this good. i've barely touched google in 2 weeks"
+"the KV cache is the whole reason chat feels fast. the model saves the attention keys and values for every token it already processed, so each new token is one step of work — not re-reading the entire conversation from scratch every time."
 ---
-"ok so i gave Claude a 40 page PDF and asked it to find every contradiction in the document. it found 11. my lawyer found 2. i don't know how to feel about this"
+"a context window isn't 'memory.' it's the number of tokens attention runs over at once. and attention cost grows with the SQUARE of that number. that's why 1M-token context is a hardware bill, not a config flag."
 ---
-"spent ₹0 last month on tools i used to pay ₹15,000/month for. free tier of claude, perplexity, and gamma do literally everything i need"
+"training an LLM needs way more memory than running one. inference holds the weights + KV cache. training also holds gradients, optimizer states, and every activation for backprop. easily 4-6x the memory footprint for the same model."
 ---
-"the people winning with AI right now aren't the ones with the best prompts. they're the ones who built systems around it. big difference"
+"quantization sounds lossy but int8 barely moves quality. you store each weight in 8 bits instead of 16 — half the memory, almost all the accuracy — because most of that extra precision was noise the model never used."
 ---
-"chatgpt vs claude honest take after using both daily for 6 months: claude for writing and thinking, chatgpt for quick lookups and code. that's it"
+"your RAG pipeline's weakest link is retrieval, not the LLM. if the right chunk never makes it into context, no model can save you. people tune prompts for days and never look at recall@k. that's backwards."
 ---
-"tried to explain what i do to my parents. 'i use AI to do things that used to take a team of people.' my dad said 'but who's paying you?' fair question honestly"
----
-"free AI tools that are genuinely good right now:
-- claude.ai (free tier is great)
-- perplexity (better than google for research)
-- gamma (decks in minutes)
-- notebooklm (reads your docs for you)
-
-been paying ₹0 for 3 weeks. no difference in my output"
----
-"hot take: most people using AI tools are just doing fancy copy paste. the ones actually making money have automated entire workflows. it's a totally different game"
----
-"solo founder thing: you realise how much of your day was just coordination overhead when AI removes it. i do in 3 hours what used to take a week with a team"
+"a GPU doesn't just 'go faster.' one forward pass is thousands of matrix multiplies, and a GPU runs them across thousands of cores at once. a CPU does a handful at a time. that parallelism IS the whole story."
 ---
 
 Notice what these posts have in common:
-- they sound like a real person discovered something and had to share it
-- specific tool names, specific numbers, specific reactions
-- the India/solo founder perspective shows up naturally (rupee amounts, real constraints, relatable life)
-- no bullet points with dashes unless it's a short practical list
-- lowercase feels more casual and authentic
-- ends with a genuine reaction, question, or offhand comment — not a scripted CTA
-- never uses words like: game-changer, revolutionize, groundbreaking, leverage, landscape, delve, realm
+- they lead with one concrete, specific technical detail — never a vague claim
+- real terms and real numbers: tokens, parameters, GB, ms, recall@k, FLOPs
+- they teach exactly ONE thing and make it click
+- accuracy above everything — never invent a mechanism or a number; if unsure, stay qualitative
+- no bullet points unless it's a short, genuinely useful list
+- ends with a genuine question or sharp take — not a scripted CTA
+- never uses hype words: game-changer, revolutionize, groundbreaking, leverage, unlock, landscape, delve, realm
 - never starts with "In today's world" or "As AI continues to"
 - no em-dashes used as a stylistic device
-- no hashtags at all, or at most one simple one like #AI at the very end
+- no hashtags in the body
 
-The post should feel like something a real person in India actually posted — not something that was generated by an AI in California.
+The post should read like a real engineer who understands the system explaining it plainly — not an AI summarizing a topic.
 
 What makes posts spread on Threads (this matters most for reach):
 - The FIRST line is everything. It has to stop the scroll. Lead with the single most surprising, specific, or just-happened thing — never a slow setup.
@@ -156,30 +174,56 @@ What makes posts spread on Threads (this matters most for reach):
 - Never include links or URLs. Threads buries posts that link out.
 
 What turns a viewer into a FOLLOWER (the current priority — views are fine, follows are not):
-- You are ONE consistent person: a solo founder in Delhi who tests AI tools every day, reports what's actually worth it with real constraints, and calls out hype with no sponsored angles. Every post should sound like it came from that same person.
-- Make it SAVE-WORTHY: a concrete tool name + what it replaces, an exact number, a tiny step-by-step, or a "free vs paid" verdict. People save useful posts, then check the profile, then follow.
-- The India angle is shareable in India and relatable everywhere: budget constraints, no-nonsense testing, solo founder hustle. Use it when it's natural.
-- Give specifics people can act on TODAY, not vague encouragement. Specific = memorable = followable.
+- You are ONE consistent person: an AI/ML systems engineer who explains how these systems actually work, from real experience. Every post should sound like it came from that same engineer, so following feels like subscribing to a daily "how it really works" breakdown.
+- Make it SAVE-WORTHY: one crisp mechanism, an exact number, a "here's the real reason", or a mental model people didn't have before. People save posts that taught them something, then check the profile, then follow.
+- Depth is the draw. A precise, correct explanation of something most people get wrong is far more followable than a hot take with no substance.
+- Give the reader an accurate takeaway they can repeat to someone else. Clear = memorable = followable.
 
 Output format:
 POST: [the post, plain text, with line breaks where natural]
 """.strip()
 
+# Per-slot guidance injected into the prompt so the voice matches the post type.
+SLOT_GUIDANCE = {
+    "news": (
+        "This is a NEWS post about a recent AI model or release. Lead with the concrete "
+        "TECHNICAL detail from the research that most people missed (architecture change, "
+        "a real number, an inference trick). Ground claims in the research; if it's thin, "
+        "explain the underlying mechanism accurately and NEVER invent specifics."
+    ),
+    "educational": (
+        "This is an EDUCATIONAL post. Teach how ONE mechanism actually works, from scratch, "
+        "so it clicks. You don't need news — the research is just supporting context. Build a "
+        "single clean 'oh, THAT's how it works' moment. Accuracy over drama."
+    ),
+    "personal": (
+        "This is a PERSONAL build-in-public post. Write a short, honest first-person story or "
+        "lesson from building/running AI systems — a concrete detail or number, what broke or "
+        "surprised you, and the real takeaway. Human and specific, not a mechanism lecture."
+    ),
+    "advanced": (
+        "This is an ADVANCED post for experienced engineers. Make a specific, technically "
+        "grounded point that makes a senior engineer stop and think. Depth over breadth. "
+        "Precise and correct — assume the reader already knows the basics."
+    ),
+}
+
 VIRAL_POST_PROMPT = """
-Here's FRESH research from the last 48 hours on this topic — these are recent news, announcements, and releases. Pull out anything specific and interesting (tool names, numbers, facts, surprising details). React like someone who just read the news today:
+Here's research/context on this topic (may include recent sources — use only what's specific and ACCURATE, never invent numbers or mechanisms):
 {research}
 
+Post type: {slot_label}
 Topic: {topic}
-Vibe: {tone}
+Angle: {tone}
 
-Write one Threads post in the casual human voice from your instructions. Build it in three beats:
-- HOOK (line 1): open with the most surprising, specific, RECENT thing from the research — a real tool name, a real number, a just-happened announcement. Make someone go "wait, that just dropped?" No slow setup.
-- TAKE: give your honest reaction or opinion on it. Say what most people are missing or getting wrong. Have a spine.
-- ENGAGE (last line): end with a SPECIFIC, BINARY question that takes one tap to answer — an either/or or a one-word reply, tied to the post. e.g. "ChatGPT or Gemini for this?", "Worth it or hype?", "Free tier or paid?". Lower the barrier so more people reply. Never a broad open-ender like "what's holding you back?" or "thoughts?".
+{slot_guidance}
 
-India angle: when the topic connects to cost, free tools, or making money with AI — mention the rupee equivalent or the Indian freelancer/founder reality. It's natural and relatable, not forced. Skip it for pure news-reaction posts.
+Write one Threads post in the technical systems-engineer voice from your instructions. Build it in three beats:
+- HOOK (line 1): open with the single most specific, concrete technical detail. A real mechanism, a real number, the "actual reason". No slow setup, no throat-clearing.
+- SUBSTANCE: explain it clearly and correctly. Teach the one thing. Say what most people get wrong. Have a spine, but never at the cost of accuracy.
+- ENGAGE (last line): end with a SPECIFIC, BINARY question that takes one tap to answer — an either/or or a one-word reply, tied to the post. e.g. "vLLM or TGI for serving?", "Bottleneck: compute or memory bandwidth?", "Fine-tune or RAG for this?". Lower the barrier so more people reply. Never a broad open-ender like "thoughts?".
 
-The post should feel like a real person in India reacting to news they just saw — not an AI summarizing a topic.
+The post should read like a real engineer explaining the system plainly — not an AI summarizing a topic.
 
 Keep it between 180 and 360 characters (a topic tag + follow CTA get added after, so leave room). Plain text only.
 Do NOT add any links, URLs, hashtags, a follow CTA, or a sign-off line — just the post body itself.
@@ -295,38 +339,48 @@ def generate_text(prompt: str, system_instruction: str) -> str:
 # STEP 1 — Research with Exa
 # ══════════════════════════════════════════════════════════════════════════════
 
-def _exa_search(exa, topic: str, niche: str, hours: int):
-    """Run an Exa news search restricted to the last `hours`."""
-    now   = datetime.now(timezone.utc)
-    start = (now - timedelta(hours=hours)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
-    end   = now.strftime("%Y-%m-%dT%H:%M:%S.000Z")
-    return exa.search(
-        query=f"latest {topic} news announcement update — {niche}",
+def _exa_search(exa, topic: str, niche: str, hours: int = None, fresh: bool = True):
+    """Run an Exa search.
+
+    fresh=True  → news mode: recent releases, restricted to the last `hours`.
+    fresh=False → evergreen mode: best explanatory sources, no date restriction.
+    """
+    kwargs = dict(
         type="auto",
-        category="news",
         num_results=5,
-        start_published_date=start,
-        end_published_date=end,
-        contents={
-            "text": {"max_characters": 800},
-            "highlights": {"num_sentences": 3},
-        },
+        contents={"text": {"max_characters": 800}, "highlights": {"num_sentences": 3}},
     )
+    if fresh:
+        now = datetime.now(timezone.utc)
+        kwargs["query"] = f"latest {topic} — {niche}"
+        kwargs["category"] = "news"
+        kwargs["start_published_date"] = (now - timedelta(hours=hours)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+        kwargs["end_published_date"]   = now.strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    else:
+        kwargs["query"] = f"{topic} — how it works, explained ({niche})"
+    return exa.search(**kwargs)
 
 
-def research_topic(topic: str, niche: str) -> str:
-    """Find recent (last 48h) high-quality articles on the topic and return a research brief."""
+def research_topic(topic: str, niche: str, fresh: bool = True) -> str:
+    """Return a research brief for the topic.
+
+    fresh=True (news slot): restrict to the last 48h, widen to 7d if too few.
+    fresh=False (evergreen slots): best explanatory sources, no date filter.
+    """
     print("\n[ Step 1 ] Researching topic with Exa...")
 
     exa = Exa(api_key=EXA_API_KEY)
-    results = _exa_search(exa, topic, niche, NEWS_WINDOW_HOURS)
-    print(f"  Searched last {NEWS_WINDOW_HOURS}h — found {len(results.results)} sources.")
-
-    # If nothing fresh in the strict window, widen so we never post on stale/no research.
-    if len(results.results) < 2 and NEWS_FALLBACK_HOURS > NEWS_WINDOW_HOURS:
-        print(f"  Too few fresh sources — widening to last {NEWS_FALLBACK_HOURS}h.")
-        results = _exa_search(exa, topic, niche, NEWS_FALLBACK_HOURS)
-        print(f"  Found {len(results.results)} sources in widened window.")
+    if not fresh:
+        results = _exa_search(exa, topic, niche, fresh=False)
+        print(f"  Evergreen search — found {len(results.results)} explanatory sources.")
+    else:
+        results = _exa_search(exa, topic, niche, NEWS_WINDOW_HOURS)
+        print(f"  Searched last {NEWS_WINDOW_HOURS}h — found {len(results.results)} sources.")
+        # If nothing fresh in the strict window, widen so we never post on stale/no research.
+        if len(results.results) < 2 and NEWS_FALLBACK_HOURS > NEWS_WINDOW_HOURS:
+            print(f"  Too few fresh sources — widening to last {NEWS_FALLBACK_HOURS}h.")
+            results = _exa_search(exa, topic, niche, NEWS_FALLBACK_HOURS)
+            print(f"  Found {len(results.results)} sources in widened window.")
 
     lines = []
     for i, result in enumerate(results.results, 1):
@@ -354,16 +408,17 @@ def research_topic(topic: str, niche: str) -> str:
 # STEP 2 — Generate Viral Post with Gemini
 # ══════════════════════════════════════════════════════════════════════════════
 
-def generate_post(topic: str, tone: str, niche: str, persona: str, research: str) -> str:
-    """Call Gemini with the viral post prompt + research brief."""
+def generate_post(topic: str, tone: str, niche: str, persona: str, research: str,
+                  slot_key: str = "educational", slot_label: str = "") -> str:
+    """Call Gemini with the slot-aware post prompt + research brief."""
     print("[ Step 2 ] Generating post with Gemini...")
 
     prompt = VIRAL_POST_PROMPT.format(
-        niche=niche,
-        persona=persona,
         topic=topic,
         tone=tone,
         research=research[:2000],
+        slot_label=slot_label or slot_key,
+        slot_guidance=SLOT_GUIDANCE.get(slot_key, SLOT_GUIDANCE["educational"]),
     )
 
     post = generate_text(prompt, SYSTEM_PROMPT)
@@ -591,8 +646,11 @@ def build_infographic_image(research: str, topic: str, preview: bool):
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main(preview: bool = False):
-    topic = random.choice(TOPICS)
-    tone  = random.choice(TONES)
+    slot_key, slot_label, topic, tone = pick_slot()
+    is_news  = slot_key == "news"
+    # An infographic is a "how it works in 3 stages" diagram — great for news/
+    # educational/advanced, but a personal build-in-public story isn't a mechanism.
+    wants_image = slot_key != "personal"
 
     print(f"\n{'='*60}")
     print(f"  Threads Post Agent — {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}")
@@ -600,17 +658,20 @@ def main(preview: bool = False):
         print(f"  MODE: PREVIEW (no Buffer scheduling)")
     print(f"{'='*60}")
     print(f"  Niche : {NICHE}")
+    print(f"  Slot  : {slot_key} — {slot_label}")
     print(f"  Topic : {topic}")
     print(f"  Tone  : {tone}")
     print(f"{'='*60}\n")
 
     try:
-        research = research_topic(topic, NICHE)
-        post     = generate_post(topic, tone, NICHE, PERSONA, research)
+        research = research_topic(topic, NICHE, fresh=is_news)
+        post     = generate_post(topic, tone, NICHE, PERSONA, research, slot_key, slot_label)
 
         image_ref = None
-        if INCLUDE_INFOGRAPHIC:
+        if INCLUDE_INFOGRAPHIC and wants_image:
             image_ref = build_infographic_image(research, topic, preview)
+        elif not wants_image:
+            print("  [Infographic] Skipped for personal slot (text-only post).")
 
         if preview:
             print(f"{'='*60}")
