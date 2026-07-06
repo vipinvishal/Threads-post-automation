@@ -32,7 +32,7 @@ _RENDER_PY  = _RENDERER / "render.py"
 # ── Config ──────────────────────────────────────────────────────────────────────
 # Handle shown on the infographic. Change to your brand without touching code,
 # e.g. INFOGRAPHIC_HANDLE="@orbitailabs".
-INFOGRAPHIC_HANDLE = os.environ.get("INFOGRAPHIC_HANDLE", "@VipinAIHub")
+INFOGRAPHIC_HANDLE = os.environ.get("INFOGRAPHIC_HANDLE", "@vipin.vishal")
 IMGBB_API_KEY      = os.environ.get("IMGBB_API_KEY", "")
 
 # Icons the renderer ships with (renderer/icons.py).
