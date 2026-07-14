@@ -33,6 +33,11 @@ _RENDER_PY  = _RENDERER / "render.py"
 # Handle shown on the infographic. Change to your brand without touching code,
 # e.g. INFOGRAPHIC_HANDLE="@orbitailabs".
 INFOGRAPHIC_HANDLE = os.environ.get("INFOGRAPHIC_HANDLE", "@vipin.vishal")
+# Portfolio URL shown in the infographic footer. Rendered as TEXT inside the PNG,
+# so it is NOT a clickable link and does NOT trigger Threads' link-reach penalty —
+# the safe way to promote a site on a link-hostile platform. Set to "" to hide it.
+# Displayed without the scheme so it stays short and clean.
+PORTFOLIO_URL      = os.environ.get("PORTFOLIO_URL", "vipin-vishal.onrender.com")
 IMGBB_API_KEY      = os.environ.get("IMGBB_API_KEY", "")
 
 # Icons the renderer ships with (renderer/icons.py).
@@ -147,6 +152,7 @@ def _coerce(data: dict) -> dict:
 
     data["sub_num"] = str(data.get("sub_num", "3"))
     data["handle"] = INFOGRAPHIC_HANDLE
+    data["portfolio"] = PORTFOLIO_URL   # deterministic; never model-generated
     for key in _REQUIRED_KEYS:
         data.setdefault(key, "")
     return data

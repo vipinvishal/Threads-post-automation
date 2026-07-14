@@ -122,6 +122,11 @@
     width:16px; height:16px; border:2.8px solid var(--ink); border-radius:50%; }
   .footer .ig::after{ content:''; position:absolute; right:4px; top:4px; width:3px; height:3px; background:var(--ink); border-radius:50%; }
   .footer .handle{ font-size:23px; font-weight:700; color:var(--ink); }
+  .footer .site{ margin-left:auto; display:flex; align-items:center; gap:8px;
+    font-size:19px; font-weight:700; color:var(--blue-dark);
+    background:var(--blue-fill); border:2.4px solid var(--blue); border-radius:10px;
+    padding:5px 14px; transform:rotate(-1deg); }
+  .footer .site svg{ width:19px; height:19px; flex:none; }
 </style>
 </head>
 <body>
@@ -196,7 +201,14 @@
     </svg>
 
     <!-- footer -->
-    <div class="footer"><div class="ig"></div><div class="handle">{{ handle }}</div></div>
+    <div class="footer">
+      <div class="ig"></div>
+      <div class="handle">{{ handle }}</div>
+      {% if portfolio %}<div class="site">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1565b0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>
+        <span>{{ portfolio }}</span>
+      </div>{% endif %}
+    </div>
   </div>
 </body>
 </html>
