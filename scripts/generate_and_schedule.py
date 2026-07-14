@@ -65,15 +65,19 @@ INCLUDE_INFOGRAPHIC = os.environ.get("INCLUDE_INFOGRAPHIC", "1") not in ("0", "f
 FOLLOW_CTA = os.environ.get("FOLLOW_CTA", "Follow @vipin.vishal for 1 AI insight/day.")
 
 # ── Portfolio link (clickable, appended to the post body) ──────────────────────────
-# Added as the standalone last line so Threads auto-links it into a DIRECTLY
-# CLICKABLE URL. Note: Threads reduces reach on posts that contain a link — this is
-# the accepted trade-off for a tappable link in every post. Set PORTFOLIO_URL="" to
-# disable (and keep the non-clickable URL that still shows inside the infographic).
+# REACH-FIRST DEFAULT: OFF. Threads down-ranks posts that contain a link, so by
+# default we do NOT put the URL in the post body. The portfolio URL still appears as
+# text on the infographic (zero penalty), and the clickable link belongs in your
+# Threads bio (clickable, no penalty). Set INCLUDE_PORTFOLIO_LINK=1 to append a
+# directly-clickable link to every post instead — trading some reach for a tappable
+# link. PORTFOLIO_URL itself is shared with the infographic (see infographic.py).
+INCLUDE_PORTFOLIO_LINK = os.environ.get("INCLUDE_PORTFOLIO_LINK", "0") not in ("0", "false", "False", "")
 _raw_portfolio = os.environ.get("PORTFOLIO_URL", "vipin-vishal.onrender.com").strip()
 PORTFOLIO_LINK = (
-    _raw_portfolio if _raw_portfolio.startswith(("http://", "https://"))
-    else f"https://{_raw_portfolio}"
-) if _raw_portfolio else ""
+    (_raw_portfolio if _raw_portfolio.startswith(("http://", "https://"))
+     else f"https://{_raw_portfolio}")
+    if (_raw_portfolio and INCLUDE_PORTFOLIO_LINK) else ""
+)
 
 # ── Topic tag ────────────────────────────────────────────────────────────────────
 # Threads turns the FIRST hashtag in a post into a native topic tag (only one is
