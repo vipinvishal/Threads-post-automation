@@ -33,11 +33,13 @@ _RENDER_PY  = _RENDERER / "render.py"
 # Handle shown on the infographic. Change to your brand without touching code,
 # e.g. INFOGRAPHIC_HANDLE="@orbitailabs".
 INFOGRAPHIC_HANDLE = os.environ.get("INFOGRAPHIC_HANDLE", "@vipin.vishal")
-# Portfolio URL shown in the infographic footer. Rendered as TEXT inside the PNG,
-# so it is NOT a clickable link and does NOT trigger Threads' link-reach penalty —
-# the safe way to promote a site on a link-hostile platform. Set to "" to hide it.
-# Displayed without the scheme so it stays short and clean.
-PORTFOLIO_URL      = os.environ.get("PORTFOLIO_URL", "vipin-vishal.onrender.com")
+# Portfolio URL shown in the infographic footer. Rendered as TEXT inside the PNG
+# (branding) — the clickable version is appended to the post body itself. Displayed
+# without the scheme / trailing slash so it stays short and clean. Set "" to hide.
+PORTFOLIO_URL      = (
+    os.environ.get("PORTFOLIO_URL", "vipin-vishal.onrender.com")
+    .strip().removeprefix("https://").removeprefix("http://").rstrip("/")
+)
 IMGBB_API_KEY      = os.environ.get("IMGBB_API_KEY", "")
 
 # Icons the renderer ships with (renderer/icons.py).

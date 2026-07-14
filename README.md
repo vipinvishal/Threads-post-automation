@@ -118,20 +118,20 @@ Add these to your `.env` (local) or GitHub **Actions secrets** (automation):
 | `EURON_MODEL` | `gemini-2.5-flash` | Euron fallback model |
 | `INCLUDE_INFOGRAPHIC` | `1` | Set `0` for text-only posts |
 | `INFOGRAPHIC_HANDLE` | `@vipin.vishal` | Handle shown on the infographic |
-| `PORTFOLIO_URL` | `vipin-vishal.onrender.com` | Portfolio shown in the infographic footer (rendered as text, not a link) |
+| `PORTFOLIO_URL` | `vipin-vishal.onrender.com` | Clickable link in the post body + text in the infographic footer (`""` disables the link) |
 | `FOLLOW_CTA` | `Follow @vipin.vishal for 1 AI insight/day.` | Standalone last line |
 | `SLOT_WEIGHTS` | equal | Bias the slot rotation |
 | `NEWS_WINDOW_HOURS` | `48` | Fresh-news window for the news slot |
 | `DEFAULT_TOPIC_TAG` | `#AI` | Fallback topic tag |
 
-### Promoting yourself without killing reach
+### Promoting your portfolio
 
-**Threads buries any post that contains a URL** (it even auto-links a bare `yoursite.com`), so the pipeline never puts a link in the post body. Instead:
+`PORTFOLIO_URL` is promoted two ways on **every** post:
 
-- **`PORTFOLIO_URL` is rendered as text inside the infographic footer** — it's pixels, not a link, so it appears on every image post with **zero reach penalty**.
-- The **`FOLLOW_CTA`** drives readers to your **profile**, where a clickable link is allowed — put your portfolio link in your **Threads bio** (one-time, manual).
+- **Clickable link in the post body** — appended as the last line so Threads auto-links it into a directly tappable URL.
+- **Text in the infographic footer** — visible branding on image posts.
 
-> The `personal` slot has no infographic, so those posts promote via the follow CTA / profile only.
+> **Trade-off:** Threads reduces the reach of posts that contain a link. A tappable link costs some views — that's the deliberate choice here. To avoid it, set `PORTFOLIO_URL=""` (which drops the clickable link but keeps the non-clickable URL on the infographic) and instead put your link in your **Threads bio**, which `FOLLOW_CTA` drives profile visits toward.
 
 ---
 

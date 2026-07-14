@@ -64,6 +64,17 @@ INCLUDE_INFOGRAPHIC = os.environ.get("INCLUDE_INFOGRAPHIC", "1") not in ("0", "f
 # body/persona; this line is the unmissable ask. Override via env without code edits.
 FOLLOW_CTA = os.environ.get("FOLLOW_CTA", "Follow @vipin.vishal for 1 AI insight/day.")
 
+# ── Portfolio link (clickable, appended to the post body) ──────────────────────────
+# Added as the standalone last line so Threads auto-links it into a DIRECTLY
+# CLICKABLE URL. Note: Threads reduces reach on posts that contain a link — this is
+# the accepted trade-off for a tappable link in every post. Set PORTFOLIO_URL="" to
+# disable (and keep the non-clickable URL that still shows inside the infographic).
+_raw_portfolio = os.environ.get("PORTFOLIO_URL", "vipin-vishal.onrender.com").strip()
+PORTFOLIO_LINK = (
+    _raw_portfolio if _raw_portfolio.startswith(("http://", "https://"))
+    else f"https://{_raw_portfolio}"
+) if _raw_portfolio else ""
+
 # ── Topic tag ────────────────────────────────────────────────────────────────────
 # Threads turns the FIRST hashtag in a post into a native topic tag (only one is
 # allowed). Tags are constrained to the account's PINNED INTERESTS so Threads routes
@@ -448,7 +459,9 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
     # STANDALONE LAST LINE. Reserve room so the full post stays under 500 chars and
     # the CTA is never truncated. The tag is chosen from the body's content.
     topic_tag  = pick_topic_tag(post + " " + topic)
-    footer     = f"\n\n{topic_tag}\n\n{FOLLOW_CTA}"
+    # Portfolio link goes last so Threads renders it as the tappable final line.
+    link_line  = f"\n\n{PORTFOLIO_LINK}" if PORTFOLIO_LINK else ""
+    footer     = f"\n\n{topic_tag}\n\n{FOLLOW_CTA}{link_line}"
     body_limit = 500 - len(footer)
 
     # If the body is over its budget, ask model to shorten (max 2 attempts)
