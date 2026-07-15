@@ -58,6 +58,7 @@ jobs:
           # 1 = append the clickable portfolio link as the post's last line (costs some
           # reach — Threads down-ranks link posts). Set to 0 to drop just the link.
           INCLUDE_PORTFOLIO_LINK: ${{ vars.INCLUDE_PORTFOLIO_LINK || '1' }}
-          PORTFOLIO_CTA:      ${{ vars.PORTFOLIO_CTA || 'to see my work, click here:' }}
+          # Note: '' escapes the apostrophe inside the Actions expression string.
+          PORTFOLIO_CTA:      ${{ vars.PORTFOLIO_CTA || 'See what I''ve been building →' }}
           # Must be the REAL handle, or Threads won't render a tappable mention.
           FOLLOW_CTA:         ${{ vars.FOLLOW_CTA || 'follow @vipinailabs for daily dose of information' }}

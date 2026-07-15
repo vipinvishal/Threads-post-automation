@@ -120,7 +120,7 @@ Add these to your `.env` (local) or GitHub **Actions secrets** (automation):
 | `INFOGRAPHIC_HANDLE` | `@vipinailabs` | Handle shown on the infographic (match your real account) |
 | `PORTFOLIO_URL` | `vipin-vishal.onrender.com` | Text in the infographic footer + the clickable link in the post |
 | `INCLUDE_PORTFOLIO_LINK` | `1` | `0` drops the clickable link from the post body (regains reach) |
-| `PORTFOLIO_CTA` | `to see my work, click here:` | Lead-in before the portfolio link |
+| `PORTFOLIO_CTA` | `See what I've been building →` | Lead-in before the portfolio link (controls its own trailing spacing) |
 | `FOLLOW_CTA` | `follow @vipinailabs for daily dose of information` | The follow ask (use the **real** handle — see below) |
 | `SLOT_WEIGHTS` | equal | Bias the slot rotation |
 | `NEWS_WINDOW_HOURS` | `48` | Fresh-news window for the news slot |
@@ -133,7 +133,7 @@ Add these to your `.env` (local) or GitHub **Actions secrets** (automation):
 
 follow @vipinailabs for daily dose of information
 
-to see my work, click here: https://vipin-vishal.onrender.com/
+See what I've been building →https://vipin-vishal.onrender.com/
 ```
 
 - **`FOLLOW_CTA`** — ⚠️ the handle **must be the real account handle**. Threads only renders a tappable mention when the handle resolves; a wrong one silently degrades to plain text and sends nobody anywhere.

@@ -73,7 +73,7 @@ FOLLOW_CTA = os.environ.get("FOLLOW_CTA", "follow @vipinailabs for daily dose of
 # (the URL still shows as text on the infographic, and your bio link stays clickable
 # with no penalty). PORTFOLIO_URL is shared with the infographic (see infographic.py).
 INCLUDE_PORTFOLIO_LINK = os.environ.get("INCLUDE_PORTFOLIO_LINK", "1") not in ("0", "false", "False", "")
-PORTFOLIO_CTA  = os.environ.get("PORTFOLIO_CTA", "to see my work, click here:")
+PORTFOLIO_CTA  = os.environ.get("PORTFOLIO_CTA", "See what I've been building →")
 _raw_portfolio = os.environ.get("PORTFOLIO_URL", "vipin-vishal.onrender.com").strip()
 PORTFOLIO_LINK = (
     (_raw_portfolio if _raw_portfolio.startswith(("http://", "https://"))
@@ -466,7 +466,9 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
     # the CTA is never truncated. The tag is chosen from the body's content.
     topic_tag  = pick_topic_tag(post + " " + topic)
     # Portfolio lead-in + link go last so Threads renders a tappable final line.
-    link_line  = f"\n\n{PORTFOLIO_CTA} {PORTFOLIO_LINK}".rstrip() if PORTFOLIO_LINK else ""
+    # No separator is inserted — PORTFOLIO_CTA controls its own trailing spacing
+    # (the default ends in "→" and butts straight up against the URL).
+    link_line  = f"\n\n{PORTFOLIO_CTA}{PORTFOLIO_LINK}" if PORTFOLIO_LINK else ""
     footer     = f"\n\n{topic_tag}\n\n{FOLLOW_CTA}{link_line}"
     body_limit = 500 - len(footer)
 
