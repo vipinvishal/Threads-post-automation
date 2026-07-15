@@ -58,20 +58,22 @@ BRAND_NAME  = os.environ.get("BRAND_NAME", "OrbitAI Labs")
 INCLUDE_INFOGRAPHIC = os.environ.get("INCLUDE_INFOGRAPHIC", "1") not in ("0", "false", "False", "")
 
 # ── Follow CTA ────────────────────────────────────────────────────────────────────
-# A clear, direct follow CTA is appended as the STANDALONE LAST LINE of every post.
+# A clear, direct follow CTA is appended as a STANDALONE LINE of every post.
 # Threads rewards posts that drive profile visits + follows, so this is explicit,
-# not buried in a sign-off. The India/solo-founder positioning lives in the post
-# body/persona; this line is the unmissable ask. Override via env without code edits.
-FOLLOW_CTA = os.environ.get("FOLLOW_CTA", "Follow @vipin.vishal for 1 AI insight/day.")
+# not buried in a sign-off. Override via env without code edits.
+# NOTE: the handle must be the REAL account handle (@vipinailabs) — Threads only
+# renders a tappable mention when the handle resolves; a wrong one degrades to
+# plain text and sends nobody anywhere.
+FOLLOW_CTA = os.environ.get("FOLLOW_CTA", "follow @vipinailabs for daily dose of information")
 
-# ── Portfolio link (clickable, appended to the post body) ──────────────────────────
-# REACH-FIRST DEFAULT: OFF. Threads down-ranks posts that contain a link, so by
-# default we do NOT put the URL in the post body. The portfolio URL still appears as
-# text on the infographic (zero penalty), and the clickable link belongs in your
-# Threads bio (clickable, no penalty). Set INCLUDE_PORTFOLIO_LINK=1 to append a
-# directly-clickable link to every post instead — trading some reach for a tappable
-# link. PORTFOLIO_URL itself is shared with the infographic (see infographic.py).
-INCLUDE_PORTFOLIO_LINK = os.environ.get("INCLUDE_PORTFOLIO_LINK", "0") not in ("0", "false", "False", "")
+# ── Portfolio link (clickable, appended as the post's last line) ───────────────────
+# ON by default: every post ends with a short lead-in + the directly-clickable URL
+# (Threads auto-links a full URL). Trade-off: Threads down-ranks posts containing a
+# link, so this costs some reach — set INCLUDE_PORTFOLIO_LINK=0 to drop the link
+# (the URL still shows as text on the infographic, and your bio link stays clickable
+# with no penalty). PORTFOLIO_URL is shared with the infographic (see infographic.py).
+INCLUDE_PORTFOLIO_LINK = os.environ.get("INCLUDE_PORTFOLIO_LINK", "1") not in ("0", "false", "False", "")
+PORTFOLIO_CTA  = os.environ.get("PORTFOLIO_CTA", "to see my work, click here:")
 _raw_portfolio = os.environ.get("PORTFOLIO_URL", "vipin-vishal.onrender.com").strip()
 PORTFOLIO_LINK = (
     (_raw_portfolio if _raw_portfolio.startswith(("http://", "https://"))
@@ -463,8 +465,8 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
     # STANDALONE LAST LINE. Reserve room so the full post stays under 500 chars and
     # the CTA is never truncated. The tag is chosen from the body's content.
     topic_tag  = pick_topic_tag(post + " " + topic)
-    # Portfolio link goes last so Threads renders it as the tappable final line.
-    link_line  = f"\n\n{PORTFOLIO_LINK}" if PORTFOLIO_LINK else ""
+    # Portfolio lead-in + link go last so Threads renders a tappable final line.
+    link_line  = f"\n\n{PORTFOLIO_CTA} {PORTFOLIO_LINK}".rstrip() if PORTFOLIO_LINK else ""
     footer     = f"\n\n{topic_tag}\n\n{FOLLOW_CTA}{link_line}"
     body_limit = 500 - len(footer)
 

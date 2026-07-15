@@ -53,8 +53,11 @@ jobs:
           # If the secret is unset, the run auto-falls back to a text-only post.
           IMGBB_API_KEY:      ${{ secrets.IMGBB_API_KEY }}
           INFOGRAPHIC_HANDLE: ${{ vars.INFOGRAPHIC_HANDLE || '@vipin.vishal' }}
-          # Portfolio URL: shown as text on the infographic (branding, no reach hit).
+          # Portfolio URL: text on the infographic + the clickable link in the post.
           PORTFOLIO_URL:      ${{ vars.PORTFOLIO_URL || 'vipin-vishal.onrender.com' }}
-          # Reach-first default (0): no link in the post body. Set to 1 to also append
-          # a clickable link to every post (trades some reach for a tappable link).
-          INCLUDE_PORTFOLIO_LINK: ${{ vars.INCLUDE_PORTFOLIO_LINK || '0' }}
+          # 1 = append the clickable portfolio link as the post's last line (costs some
+          # reach — Threads down-ranks link posts). Set to 0 to drop just the link.
+          INCLUDE_PORTFOLIO_LINK: ${{ vars.INCLUDE_PORTFOLIO_LINK || '1' }}
+          PORTFOLIO_CTA:      ${{ vars.PORTFOLIO_CTA || 'to see my work, click here:' }}
+          # Must be the REAL handle, or Threads won't render a tappable mention.
+          FOLLOW_CTA:         ${{ vars.FOLLOW_CTA || 'follow @vipinailabs for daily dose of information' }}

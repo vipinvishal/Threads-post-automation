@@ -118,21 +118,29 @@ Add these to your `.env` (local) or GitHub **Actions secrets** (automation):
 | `EURON_MODEL` | `gemini-2.5-flash` | Euron fallback model |
 | `INCLUDE_INFOGRAPHIC` | `1` | Set `0` for text-only posts |
 | `INFOGRAPHIC_HANDLE` | `@vipin.vishal` | Handle shown on the infographic |
-| `PORTFOLIO_URL` | `vipin-vishal.onrender.com` | Shown as text in the infographic footer (branding, no reach hit) |
-| `INCLUDE_PORTFOLIO_LINK` | `0` | `1` also appends a clickable link to every post (trades reach for a tappable link) |
-| `FOLLOW_CTA` | `Follow @vipin.vishal for 1 AI insight/day.` | Standalone last line |
+| `PORTFOLIO_URL` | `vipin-vishal.onrender.com` | Text in the infographic footer + the clickable link in the post |
+| `INCLUDE_PORTFOLIO_LINK` | `1` | `0` drops the clickable link from the post body (regains reach) |
+| `PORTFOLIO_CTA` | `to see my work, click here:` | Lead-in before the portfolio link |
+| `FOLLOW_CTA` | `follow @vipinailabs for daily dose of information` | The follow ask (use the **real** handle — see below) |
 | `SLOT_WEIGHTS` | equal | Bias the slot rotation |
 | `NEWS_WINDOW_HOURS` | `48` | Fresh-news window for the news slot |
 | `DEFAULT_TOPIC_TAG` | `#AI` | Fallback topic tag |
 
-### Promoting your portfolio (reach-first)
+### How every post ends
 
-**Default is tuned for maximum reach.** Threads down-ranks posts that contain a link, so by default the pipeline puts **no link in the post body**. Instead:
+```
+#AgenticAI
 
-- **Infographic footer** shows `PORTFOLIO_URL` as text — visible branding on every image post, **zero reach penalty**.
-- **`FOLLOW_CTA`** drives readers to your **profile**, where a clickable link is allowed — put your portfolio link in your **Threads bio** (one-time, manual). This is the reach-free way to be clickable.
+follow @vipinailabs for daily dose of information
 
-Want a tappable link *inside* every post anyway? Set **`INCLUDE_PORTFOLIO_LINK=1`** — it appends the URL as the last line (Threads auto-links it), at the cost of some reach.
+to see my work, click here: https://vipin-vishal.onrender.com/
+```
+
+- **`FOLLOW_CTA`** — ⚠️ the handle **must be the real account handle**. Threads only renders a tappable mention when the handle resolves; a wrong one silently degrades to plain text and sends nobody anywhere.
+- **`PORTFOLIO_CTA` + `PORTFOLIO_URL`** — the last line, auto-linked by Threads into a directly clickable URL.
+- The URL also appears as **text on the infographic** (branding, no reach cost).
+
+> **Reach trade-off:** Threads down-ranks posts containing a link, so the clickable link costs some views. Set `INCLUDE_PORTFOLIO_LINK=0` to drop it and regain reach — the infographic URL and your **Threads bio** link (clickable, penalty-free) still promote you.
 
 ---
 
