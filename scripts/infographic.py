@@ -32,7 +32,7 @@ _RENDER_PY  = _RENDERER / "render.py"
 # ── Config ──────────────────────────────────────────────────────────────────────
 # Handle shown on the infographic. Change to your brand without touching code,
 # e.g. INFOGRAPHIC_HANDLE="@orbitailabs".
-INFOGRAPHIC_HANDLE = os.environ.get("INFOGRAPHIC_HANDLE", "@vipin.vishal")
+INFOGRAPHIC_HANDLE = os.environ.get("INFOGRAPHIC_HANDLE", "@vipinailabs")
 # Portfolio URL shown in the infographic footer. Rendered as TEXT inside the PNG
 # (branding) — the clickable version is appended to the post body itself. Displayed
 # without the scheme / trailing slash so it stays short and clean. Set "" to hide.

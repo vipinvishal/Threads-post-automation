@@ -117,7 +117,7 @@ Add these to your `.env` (local) or GitHub **Actions secrets** (automation):
 | `GEMINI_MODEL` | `gemini-2.5-flash` | Primary model |
 | `EURON_MODEL` | `gemini-2.5-flash` | Euron fallback model |
 | `INCLUDE_INFOGRAPHIC` | `1` | Set `0` for text-only posts |
-| `INFOGRAPHIC_HANDLE` | `@vipin.vishal` | Handle shown on the infographic |
+| `INFOGRAPHIC_HANDLE` | `@vipinailabs` | Handle shown on the infographic (match your real account) |
 | `PORTFOLIO_URL` | `vipin-vishal.onrender.com` | Text in the infographic footer + the clickable link in the post |
 | `INCLUDE_PORTFOLIO_LINK` | `1` | `0` drops the clickable link from the post body (regains reach) |
 | `PORTFOLIO_CTA` | `to see my work, click here:` | Lead-in before the portfolio link |

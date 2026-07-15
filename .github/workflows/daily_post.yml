@@ -52,7 +52,7 @@ jobs:
           # Infographic image: IMGBB_API_KEY hosts the PNG so Buffer can attach it.
           # If the secret is unset, the run auto-falls back to a text-only post.
           IMGBB_API_KEY:      ${{ secrets.IMGBB_API_KEY }}
-          INFOGRAPHIC_HANDLE: ${{ vars.INFOGRAPHIC_HANDLE || '@vipin.vishal' }}
+          INFOGRAPHIC_HANDLE: ${{ vars.INFOGRAPHIC_HANDLE || '@vipinailabs' }}
           # Portfolio URL: text on the infographic + the clickable link in the post.
           PORTFOLIO_URL:      ${{ vars.PORTFOLIO_URL || 'vipin-vishal.onrender.com' }}
           # 1 = append the clickable portfolio link as the post's last line (costs some
