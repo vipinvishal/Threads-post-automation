@@ -49,24 +49,33 @@ ICON_NAMES = [
 ]
 
 # ── Content prompt (adapted from Auto_infographics_system/content_api.py) ────────
-_SYSTEM = """You are an AI/ML systems engineer who designs single-image explainer infographics.
-You take research on AI systems, infrastructure, or model architecture and reframe it
-into ONE "how it works" concept explained in exactly 3 visual stages. Cover AI, LLMs,
+_SYSTEM = """You are an engineer who is LEARNING AI/ML systems and designs single-image
+explainer infographics of what you figured out — clear and accurate, never a know-it-all
+lecture. You take research on AI systems, infrastructure, or model architecture and reframe
+it into ONE "how it works" concept explained in exactly 3 visual stages. Cover AI, LLMs,
 model architecture, training, inference, GPUs/infrastructure, RAG, agents, and related
-systems topics. Be precise and technically accurate — never invent numbers or mechanisms.
-Write ALL text in ENGLISH ONLY. You return valid JSON only: no markdown, no prose."""
+systems topics. Be precise and technically accurate — never invent numbers or mechanisms,
+never use hype words. Write ALL text in ENGLISH ONLY. You return valid JSON only: no markdown, no prose."""
 
-_USER_TEMPLATE = """FRESH RESEARCH (last 48h, your inspiration — not the literal subject):
+# The infographic is aligned to the post's style so image + text tell the same story.
+_STYLE_FRAMING = {
+    "style1": ("The post is PROBLEM -> SOLUTION. Frame the 3 stages as how the SOLUTION "
+               "actually works, so the diagram proves the fix. The headline names the solution."),
+    "style2": ("The post is SCENARIO/RISK -> SOLUTION. Frame the 3 stages as how the SOLUTION "
+               "works to remove that risk. The headline names the solution."),
+}
+
+_USER_TEMPLATE = """CONTEXT on this topic (reference material — use only what's accurate, never invent):
 Topic: "{topic}"
 
 SOURCES / CONTEXT:
 {research}
-
+{alignment}
 ---
 
 TASK
-Reframe this into ONE evergreen, teachable AI concept that fits a 3-stage
-"how it works" infographic. Prefer the underlying mechanism over the news headline
+Reframe this into ONE teachable AI concept that fits a 3-stage "how it works"
+infographic. Prefer the underlying mechanism over the headline
 (e.g. a story about a new agent framework -> "How an AI Agent Decides Its Next Action").
 
 HARD RULES
@@ -160,14 +169,30 @@ def _coerce(data: dict) -> dict:
     return data
 
 
-def generate_infographic_content(research: str, topic: str, generate_text_fn) -> dict:
+def generate_infographic_content(research: str, topic: str, generate_text_fn,
+                                 post: str = "", style_key: str = "style1") -> dict:
     """Build validated infographic content JSON, reusing the text-gen chain.
 
     generate_text_fn(prompt, system) -> str   (the Gemini/Euron chain from main)
+
+    `post` + `style_key` align the image to the post: same core solution/concept,
+    same style framing, so the infographic and the text tell one story.
     """
+    # Build the alignment block only when we have the post to mirror.
+    alignment = ""
+    if (post or "").strip():
+        framing = _STYLE_FRAMING.get(style_key, _STYLE_FRAMING["style1"])
+        alignment = (
+            "\nTHE POST THIS IMAGE ACCOMPANIES — build the infographic around the SAME "
+            "core solution/concept it centers on, so image and text match:\n"
+            f"\"\"\"\n{post.strip()[:900]}\n\"\"\"\n"
+            f"STYLE ALIGNMENT: {framing}\n"
+        )
+
     prompt = _USER_TEMPLATE.format(
         topic=topic,
         research=(research or "").strip()[:5500] or topic,
+        alignment=alignment,
         icons=", ".join(ICON_NAMES),
         handle=INFOGRAPHIC_HANDLE,
     )

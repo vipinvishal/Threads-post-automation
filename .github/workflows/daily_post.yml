@@ -62,3 +62,6 @@ jobs:
           PORTFOLIO_CTA:      ${{ vars.PORTFOLIO_CTA || 'See what I''ve been building →' }}
           # Must be the REAL handle, or Threads won't render a tappable mention.
           FOLLOW_CTA:         ${{ vars.FOLLOW_CTA || 'follow @vipinailabs for daily dose of information' }}
+          # Post structure: leave blank to auto-alternate Style 1 / Style 2 each run
+          # (for A/B view comparison). Force one with POST_STYLE=1 or 2.
+          POST_STYLE:         ${{ vars.POST_STYLE || '' }}

@@ -49,6 +49,21 @@ Bias the mix with the `SLOT_WEIGHTS` env/variable, e.g. `SLOT_WEIGHTS="news:2,ed
 
 ---
 
+## Post Styles (A/B test)
+
+The slot decides *what* a post is about; the **style** decides *how* it's structured. Every post uses **one of two fixed narrative structures**, and the pipeline **alternates them run-to-run** so you can compare which drives more views. The infographic is built in the same style, so image and text tell one story.
+
+| | **Style 1 — problem → solution** | **Style 2 — scenario → solution** |
+|---|---|---|
+| **Arc** | State the problem → emphasize it → introduce the solution by name → prove it with concrete capabilities → leave a thought | Imaginary scenario → why it's critical → the real risk → the solution in **5 tight bullets** → why it clicked → a question for the comments |
+| **Ends on** | A lingering thought | A comment-engagement question |
+
+Both are written in a **learning-engineer voice** — a curious engineer sharing what they figured out, not a senior architect lecturing. The follow CTA + portfolio link are appended automatically (the style never writes them).
+
+**Alternation** is deterministic (no state file): consecutive runs flip `1 → 2 → 1 → 2…`. Force one style with the `POST_STYLE` env/variable (`1` or `2`); leave it blank to auto-alternate. Defined in [`scripts/generate_and_schedule.py`](scripts/generate_and_schedule.py) (`STYLE_GUIDANCE`, `pick_style`).
+
+---
+
 ## Tech Stack
 
 | Tool | Purpose |
@@ -123,6 +138,7 @@ Add these to your `.env` (local) or GitHub **Actions secrets** (automation):
 | `PORTFOLIO_CTA` | `See what I've been building →` | Lead-in before the portfolio link (controls its own trailing spacing) |
 | `FOLLOW_CTA` | `follow @vipinailabs for daily dose of information` | The follow ask (use the **real** handle — see below) |
 | `SLOT_WEIGHTS` | equal | Bias the slot rotation |
+| `POST_STYLE` | _(blank)_ | Blank = alternate Style 1/2 each run; `1` or `2` forces one |
 | `NEWS_WINDOW_HOURS` | `48` | Fresh-news window for the news slot |
 | `DEFAULT_TOPIC_TAG` | `#AI` | Fallback topic tag |
 

@@ -225,6 +225,62 @@ SLOT_GUIDANCE = {
     ),
 }
 
+# ══════════════════════════════════════════════════════════════════════════════
+# POST STYLES  (the two structures we alternate to A/B test views)
+# ══════════════════════════════════════════════════════════════════════════════
+# Every post is written in ONE of these two fixed narrative structures. We alternate
+# them run-to-run (deterministically, see pick_style) so views can be compared style
+# vs style. In both, the "solution" is the specific technique/architecture/tool at
+# the heart of the topic (e.g. RAG, vLLM/PagedAttention, speculative decoding,
+# quantization) — never a generic "AI". The infographic is aligned to the same style.
+STYLE_LABELS = {
+    "style1": "Style 1 — problem → solution",
+    "style2": "Style 2 — scenario → solution (5 points)",
+}
+
+STYLE_GUIDANCE = {
+    "style1": (
+        "WRITE IN STYLE 1 — follow this exact narrative arc, one short beat per line/block:\n"
+        "1. Open by stating the PROBLEM plainly — the real pain engineers hit around this topic.\n"
+        "2. Emphasize the problem: make it concrete and urgent (a failure mode, a cost, a bottleneck, a number).\n"
+        "3. Pivot — signal there's a better way to handle it.\n"
+        "4. Introduce the SOLUTION by name — the specific technique/architecture/tool at the heart of the topic. Name it clearly.\n"
+        "5. Prove it: 2-3 concrete, correct capabilities of that solution that show it actually fixes the problem.\n"
+        "6. Close the body with a lingering THOUGHT that reframes how the reader should now see the problem.\n"
+        "Do NOT write a 'follow me' line, a handle, hashtags, or any link — those are appended automatically. End on the thought."
+    ),
+    "style2": (
+        "WRITE IN STYLE 2 — follow this exact narrative arc:\n"
+        "1. Open with a short IMAGINARY SCENARIO the reader can picture (e.g. 'It's 3am, traffic just 10x'd...').\n"
+        "2. Raise the stakes — why this is CRITICAL for teams/organizations running AI at scale.\n"
+        "3. Name the real RISK — a failure or security angle (data leakage, cascading failure, cost blowout, silent wrong answers). If a pure security angle doesn't fit, use the biggest TECHNICAL risk — never invent a fake vulnerability.\n"
+        "4. Introduce the SOLUTION by name — the specific technique/architecture at the heart of the topic.\n"
+        "5. Cover it in EXACTLY 5 ULTRA-SHORT bullet points, each starting with '- ' (a few words each — keep them tight so the whole post fits).\n"
+        "6. One honest line on why this genuinely clicked for you / why it matters for building these systems (earned, not hype).\n"
+        "7. End the body with a specific question that invites replies in the COMMENTS (not a generic 'thoughts?').\n"
+        "Do NOT write a 'follow me' line, a handle, hashtags, or any link — those are appended automatically."
+    ),
+}
+
+
+def pick_style() -> str:
+    """Choose Style 1 or Style 2. Override with POST_STYLE=1|2; otherwise alternate
+    deterministically across scheduled runs (no state file needed) so the two styles
+    stay ~50/50 for a clean view comparison."""
+    override = os.environ.get("POST_STYLE", "").strip().lower()
+    if override in ("1", "style1"):
+        return "style1"
+    if override in ("2", "style2"):
+        return "style2"
+    # Auto-alternate: build a global run ordinal from the date + which of the 3 daily
+    # slots we're in. Consecutive runs differ by 1, so ordinal % 2 flips every run.
+    now = datetime.now(timezone.utc)
+    h = now.hour + now.minute / 60.0
+    slot_of_day = 0 if h < 7.5 else (1 if h < 12.5 else 2)   # ~05:30 / 09:30 / 15:30 UTC runs
+    ordinal = now.toordinal() * 3 + slot_of_day
+    return "style1" if ordinal % 2 == 0 else "style2"
+
+
 VIRAL_POST_PROMPT = """
 Here's research/context on this topic (may include recent sources — use only what's specific and ACCURATE, never invent numbers or mechanisms):
 {research}
@@ -235,14 +291,17 @@ Angle: {tone}
 
 {slot_guidance}
 
-Write one Threads post in the technical systems-engineer voice from your instructions. Build it in three beats:
-- HOOK (line 1): open with the single most specific, concrete technical detail. A real mechanism, a real number, the "actual reason". No slow setup, no throat-clearing.
-- SUBSTANCE: explain it clearly and correctly. Teach the one thing. Say what most people get wrong. Have a spine, but never at the cost of accuracy.
-- ENGAGE (last line): end with a SPECIFIC, BINARY question that takes one tap to answer — an either/or or a one-word reply, tied to the post. e.g. "vLLM or TGI for serving?", "Bottleneck: compute or memory bandwidth?", "Fine-tune or RAG for this?". Lower the barrier so more people reply. Never a broad open-ender like "thoughts?".
+{style_guidance}
 
-The post should read like a real engineer explaining the system plainly — not an AI summarizing a topic.
+VOICE — write as an engineer who is LEARNING this, not a senior architect who knows everything:
+- Share it like something you recently dug into and understood, not a lecture from authority. "I've been trying to wrap my head around X and here's what finally clicked" energy.
+- Curious and honest. It's fine to admit what's still fuzzy or what surprised you. No guru tone, no "trust me", no talking down.
+- Still precise and correct — a learner who did the reading, not one who guesses. Never invent numbers or mechanisms.
+- Confidence comes from clarity, not from posturing. Skip hype words (game-changer, revolutionize, unlock) unless it's genuinely, specifically earned.
 
-Keep it between 180 and 360 characters (a topic tag + follow CTA get added after, so leave room). Plain text only.
+Write one Threads post in this learning-engineer voice, following the STYLE structure above EXACTLY — its beats and its ending govern the post's shape (this overrides any generic "end with a binary question" guidance). Keep every claim specific and correct; never invent numbers or mechanisms.
+
+Keep the body tight — 200 to 370 characters total (a topic tag + follow CTA + link get added after, so leave room). Use short lines and a blank line between beats. Plain text only.
 Do NOT add any links, URLs, hashtags, a follow CTA, or a sign-off line — just the post body itself.
 
 Output only the POST: line.
@@ -426,8 +485,9 @@ def research_topic(topic: str, niche: str, fresh: bool = True) -> str:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def generate_post(topic: str, tone: str, niche: str, persona: str, research: str,
-                  slot_key: str = "educational", slot_label: str = "") -> str:
-    """Call Gemini with the slot-aware post prompt + research brief."""
+                  slot_key: str = "educational", slot_label: str = "",
+                  style_key: str = "style1") -> str:
+    """Call Gemini with the slot-aware + style-aware post prompt + research brief."""
     print("[ Step 2 ] Generating post with Gemini...")
 
     prompt = VIRAL_POST_PROMPT.format(
@@ -436,6 +496,7 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
         research=research[:2000],
         slot_label=slot_label or slot_key,
         slot_guidance=SLOT_GUIDANCE.get(slot_key, SLOT_GUIDANCE["educational"]),
+        style_guidance=STYLE_GUIDANCE.get(style_key, STYLE_GUIDANCE["style1"]),
     )
 
     post = generate_text(prompt, SYSTEM_PROMPT)
@@ -640,8 +701,12 @@ def schedule_to_buffer(post_text: str, image_url: str = None) -> str:
 # STEP 2.5 — Infographic image (optional)
 # ══════════════════════════════════════════════════════════════════════════════
 
-def build_infographic_image(research: str, topic: str, preview: bool):
+def build_infographic_image(research: str, topic: str, preview: bool,
+                            post: str = "", style_key: str = "style1"):
     """Render the infographic and (unless preview) host it for Buffer.
+
+    `post` + `style_key` align the diagram to the post: it visualizes the SAME
+    solution/concept the post centers on, framed in the same style.
 
     Returns a public image URL (real run), a local PNG path (preview), or None if
     anything fails — in which case the post falls back to text-only so a single
@@ -649,7 +714,9 @@ def build_infographic_image(research: str, topic: str, preview: bool):
     """
     try:
         print("\n[ Step 2.5 ] Building infographic image...")
-        content  = infographic.generate_infographic_content(research, topic, generate_text)
+        content  = infographic.generate_infographic_content(
+            research, topic, generate_text, post=post, style_key=style_key,
+        )
         out_dir  = os.path.join(_script_dir, "..", "output")
         os.makedirs(out_dir, exist_ok=True)
         png_path = os.path.abspath(os.path.join(out_dir, "infographic.png"))
@@ -668,6 +735,7 @@ def build_infographic_image(research: str, topic: str, preview: bool):
 
 def main(preview: bool = False):
     slot_key, slot_label, topic, tone = pick_slot()
+    style_key = pick_style()
     is_news  = slot_key == "news"
     # An infographic is a "how it works in 3 stages" diagram — great for news/
     # educational/advanced, but a personal build-in-public story isn't a mechanism.
@@ -680,17 +748,18 @@ def main(preview: bool = False):
     print(f"{'='*60}")
     print(f"  Niche : {NICHE}")
     print(f"  Slot  : {slot_key} — {slot_label}")
+    print(f"  Style : {STYLE_LABELS.get(style_key, style_key)}")
     print(f"  Topic : {topic}")
     print(f"  Tone  : {tone}")
     print(f"{'='*60}\n")
 
     try:
         research = research_topic(topic, NICHE, fresh=is_news)
-        post     = generate_post(topic, tone, NICHE, PERSONA, research, slot_key, slot_label)
+        post     = generate_post(topic, tone, NICHE, PERSONA, research, slot_key, slot_label, style_key)
 
         image_ref = None
         if INCLUDE_INFOGRAPHIC and wants_image:
-            image_ref = build_infographic_image(research, topic, preview)
+            image_ref = build_infographic_image(research, topic, preview, post=post, style_key=style_key)
         elif not wants_image:
             print("  [Infographic] Skipped for personal slot (text-only post).")
 
