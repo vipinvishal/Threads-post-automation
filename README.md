@@ -32,6 +32,9 @@ Exa — neural web research
 Gemini — writes the post in the chosen style + learning-engineer voice
   └─ fallback: Gemini key #2 → Euron API
         ↓
+Humanize pass — rewrites the phrasing so it reads like a person, not an AI
+  (same meaning/numbers/claims — just less "AI slop", more natural rhythm)
+        ↓
 Infographic (skipped for the personal slot)
   Gemini → 3-stage JSON → Jinja2 → Playwright → 1800px PNG → hosted on imgbb
         ↓
@@ -167,6 +170,7 @@ python scripts/generate_and_schedule.py
 
 | Variable | Default | Effect |
 |---|---|---|
+| `HUMANIZE_POST` | `1` | Set `0` to skip the humanize rewrite pass and post Gemini's raw phrasing |
 | `INCLUDE_INFOGRAPHIC` | `1` | Set `0` for text-only posts |
 | `INFOGRAPHIC_HANDLE` | `@vipinailabs` | Handle shown on the infographic |
 | `PORTFOLIO_URL` | `vipin-vishal.onrender.com` | Text in the infographic footer + the clickable link in the post |

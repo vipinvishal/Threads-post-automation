@@ -10,6 +10,7 @@ GitHub Actions triggers this automatically every day at 10 AM IST.
 import os
 import json
 import random
+import re
 import time
 import requests
 from datetime import datetime, timezone, timedelta
@@ -56,6 +57,13 @@ BRAND_NAME  = os.environ.get("BRAND_NAME", "OrbitAI Labs")
 # When on, each post gets a rendered infographic PNG attached (needs IMGBB_API_KEY
 # to host it for Buffer). Set INCLUDE_INFOGRAPHIC=0 to fall back to text-only.
 INCLUDE_INFOGRAPHIC = os.environ.get("INCLUDE_INFOGRAPHIC", "1") not in ("0", "false", "False", "")
+
+# ── Humanize pass ─────────────────────────────────────────────────────────────────
+# After Gemini writes the post, run a second pass that rewrites the phrasing so it
+# reads like a specific person wrote it instead of an AI (strips "AI slop" phrasing,
+# varies rhythm) without touching the meaning, numbers, or claims. Uses the same
+# Gemini/Euron fallback chain as generation. Set HUMANIZE_POST=0 to skip it.
+HUMANIZE_POST = os.environ.get("HUMANIZE_POST", "1") not in ("0", "false", "False", "")
 
 # ── Follow CTA ────────────────────────────────────────────────────────────────────
 # A clear, direct follow CTA is appended as a STANDALONE LINE of every post.
@@ -309,6 +317,141 @@ Output only the POST: line.
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# HUMANIZER  (post-generation rewrite pass — same content, less "AI-sounding")
+# ══════════════════════════════════════════════════════════════════════════════
+
+HUMANIZER_SYSTEM_PROMPT = """
+You are an expert human editor.
+
+Your job is to rewrite the text below so it sounds like it was written by a real, thoughtful human — NOT by an AI.
+
+IMPORTANT:
+Do not merely replace words with synonyms. Rewrite the thinking, rhythm, sentence structure, and flow.
+
+### REMOVE AI SLOP
+
+Aggressively remove:
+
+* Generic introductions
+* "In today's fast-paced world..."
+* "In the ever-evolving landscape..."
+* "It's important to note that..."
+* "Whether you're a beginner or an expert..."
+* "Let's dive in..."
+* "Here's the thing..."
+* "The key takeaway is..."
+* "At the end of the day..."
+* "This isn't just X, it's Y"
+* "Not only X, but also Y"
+* Fake enthusiasm
+* Corporate/LinkedIn language
+* Unnecessary motivational language
+* Repetitive conclusions
+* Obvious summaries of what was just said
+* Excessive headings
+* Excessive bullet points
+* Artificial transitions
+* Overuse of em dashes
+* Overly polished sentences
+* Needless adjectives and adverbs
+* Repetitive sentence patterns
+* "Furthermore", "Moreover", "Additionally", "However" when they aren't genuinely needed
+* Generic claims such as "This can revolutionize..."
+* Empty phrases that sound impressive but say nothing
+
+### MAKE IT SOUND HUMAN
+
+Use:
+
+* Natural sentence lengths
+* Short sentences mixed with longer ones
+* Contractions where appropriate
+* Casual phrasing when the context allows it
+* Specific examples instead of vague claims
+* Opinions when the original writer clearly has one
+* Natural transitions
+* Slight imperfections in rhythm
+* Direct language
+* Concrete words
+* A conversational tone
+* Personality without forcing jokes
+* Confidence without sounding like a marketing brochure
+
+Don't make every sentence perfectly structured.
+
+Real people don't write like textbooks.
+
+### PRESERVE THE ORIGINAL THINKING
+
+Do NOT:
+
+* Change the meaning
+* Invent facts
+* Add information that wasn't there
+* Remove important technical details
+* Change numbers, names, examples, or claims
+* Turn a simple explanation into something complicated
+* Make the writing unnecessarily informal
+
+Keep the author's actual ideas.
+
+Improve how those ideas are expressed.
+
+### IMPORTANT RULE
+
+Don't try to "sound human" by deliberately adding mistakes.
+
+No fake typos.
+
+No unnecessary slang.
+
+No forced humor.
+
+No random "honestly", "literally", "basically", etc.
+
+Human writing comes from natural thought and clear expression — not manufactured imperfections.
+
+### STYLE TEST
+
+Before returning the final version, ask yourself:
+
+"If I saw this on the internet, would I immediately think an AI generated it?"
+
+If the answer is yes, rewrite it again.
+
+Then ask:
+
+"Does this sound like one specific person actually had something to say?"
+
+If not, rewrite it again.
+
+### FINAL OUTPUT
+
+Return ONLY the rewritten content.
+
+Do not explain what you changed.
+
+Do not mention AI detection.
+
+Do not mention this prompt.
+""".strip()
+
+HUMANIZER_USER_PROMPT = """
+Rewrite the text below following your instructions exactly.
+
+Two things specific to this text, since it's a short social media post and not an article:
+- Keep it roughly the same length — this is a length-budgeted Threads post, not free-form prose.
+- If it already contains a short list of "- " bullet points, keep exactly the same number of bullets (don't merge, drop, or expand them) — just make each line's wording sound more natural. Keep existing blank lines between beats/paragraphs; that spacing is intentional for how Threads renders short posts.
+- Do not add hashtags, links, a follow line, or any sign-off — none of those belong in this text.
+
+TEXT TO REWRITE:
+{text}
+
+Return ONLY the rewritten post text. Nothing else.
+""".strip()
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 # GEMINI RETRY + FALLBACK CHAIN  (key1 → key2 → Euron)
 # ══════════════════════════════════════════════════════════════════════════════
 
@@ -484,6 +627,36 @@ def research_topic(topic: str, niche: str, fresh: bool = True) -> str:
 # STEP 2 — Generate Viral Post with Gemini
 # ══════════════════════════════════════════════════════════════════════════════
 
+def _clean_model_output(text: str) -> str:
+    """Strip wrapping quotes and markdown emphasis markers models sometimes add."""
+    text = text.strip()
+    if text.startswith('"') and text.endswith('"'):
+        text = text[1:-1].strip()
+    if text.startswith("'") and text.endswith("'"):
+        text = text[1:-1].strip()
+    text = re.sub(r'\*{1,3}(.+?)\*{1,3}', r'\1', text)
+    text = re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', text)
+    return text.strip()
+
+
+def humanize_post(post: str) -> str:
+    """Rewrite the generated post so it reads like a specific person wrote it,
+    not an AI — same meaning, numbers, and claims, different phrasing/rhythm.
+
+    Runs through the same Gemini/Euron fallback chain as generation. If the
+    rewrite fails or comes back empty, the original post is kept as-is so a
+    humanizing hiccup never kills the daily post.
+    """
+    print("  Humanizing post...")
+    try:
+        rewritten = generate_text(HUMANIZER_USER_PROMPT.format(text=post), HUMANIZER_SYSTEM_PROMPT)
+    except Exception as e:
+        print(f"  [Humanize] Skipped — {e}. Keeping original phrasing.")
+        return post
+    rewritten = _clean_model_output(rewritten)
+    return rewritten if rewritten else post
+
+
 def generate_post(topic: str, tone: str, niche: str, persona: str, research: str,
                   slot_key: str = "educational", slot_label: str = "",
                   style_key: str = "style1") -> str:
@@ -502,25 +675,15 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
     post = generate_text(prompt, SYSTEM_PROMPT)
 
     # Parse the response to extract the POST content
-    import re
     post_match = re.search(r'POST:\s*(.+?)(?:\nPILLAR:|$)', post, re.DOTALL)
     if post_match:
         post = post_match.group(1).strip()
-    else:
-        # Fallback: if no POST:, take the whole response
-        pass
+    # else: fallback — no POST: found, take the whole response as-is
 
-    # Strip surrounding quotes Gemini might add
-    if post.startswith('"') and post.endswith('"'):
-        post = post[1:-1].strip()
-    if post.startswith("'") and post.endswith("'"):
-        post = post[1:-1].strip()
+    post = _clean_model_output(post)
 
-    # Strip markdown formatting (X doesn't render it — shows as literal asterisks)
-    import re as _re
-    post = _re.sub(r'\*{1,3}(.+?)\*{1,3}', r'\1', post)
-    post = _re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', post)
-    post = post.strip()
+    if HUMANIZE_POST:
+        post = humanize_post(post)
 
     # Trailing block: one pinned-interest topic tag, then a clear follow CTA as the
     # STANDALONE LAST LINE. Reserve room so the full post stays under 500 chars and
@@ -541,15 +704,13 @@ def generate_post(topic: str, tone: str, niche: str, persona: str, research: str
         shorten_prompt = (
             f"This Threads post body is {len(post)} characters, over the {body_limit}-character budget.\n\n"
             f"Shorten it to strictly under {body_limit - 10} characters while keeping the hook, specific details, and engagement question.\n"
-            f"Maintain the voice: confident, direct, personal. Use line breaks. No starting with 'I'.\n"
+            f"Maintain the voice: confident, direct, personal, natural human phrasing (not corporate or AI-sounding). Use line breaks. No starting with 'I'.\n"
             f"Plain text only — no markdown, no links, no sign-off.\n\n"
             f"Original post:\n{post}\n\n"
             f"Output ONLY the shortened post. Nothing else."
         )
         post = generate_text(shorten_prompt, SYSTEM_PROMPT)
-        post = _re.sub(r'\*{1,3}(.+?)\*{1,3}', r'\1', post)
-        post = _re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', post)
-        post = post.strip()
+        post = _clean_model_output(post)
 
     # Last-resort truncation at word boundary if the body is still over budget
     if len(post) > body_limit:
