@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2026-08-24T06:04:26.917265+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "That massive context window number? It's often misunderstood.",
+    "closing_line": "So, how do you usually test if your model is really using all the context you feed it?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "tag": "#AI",
+    "numeric_claims": [
+      "token 700,000",
+      "token 700"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "I usually try 'lost in the middle' evaluations, hiding a specific fact deep in the context and seeing if the model can retrieve it.",
+    "buffer_post_id": "6a8bdeeaa3b8277a83a69859"
+  }
+]
