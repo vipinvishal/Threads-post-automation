@@ -31,5 +31,26 @@
     "flagged_claims": [],
     "reply_seed": "Definitely the input validation and sanitization module.",
     "buffer_post_id": "6a8c182820501c33dcab52e3"
+  },
+  {
+    "timestamp": "2026-08-24T16:06:05.743229+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "Trying to make one LLM faster can actually slow down your *entire* AI system.",
+    "closing_line": "So, when you've tried to scale AI inference beyond a single model, what's been your biggest bottleneck?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "tag": "#AI",
+    "numeric_claims": [
+      "slower system",
+      "overpaying",
+      "reduced overall latency"
+    ],
+    "flagged_claims": [
+      "reduced overall latency"
+    ],
+    "reply_seed": "For me, it's been the cold start time for spinning up different models on demand. The routing decision is fast, but the model load can kill the latency gains.",
+    "buffer_post_id": "6a8c6bedffbcab8042c733fd"
   }
 ]
