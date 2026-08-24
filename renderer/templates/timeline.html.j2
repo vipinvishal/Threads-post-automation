@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  {{ font_css | safe }}
+  {% include "partials/_shared.css.j2" %}
+
+  .header{ display:flex; justify-content:space-between; align-items:flex-start; gap:20px; }
+  .headline{ flex:1; padding-top:16px; }
+  .headline h1{ font-size:42px; font-weight:700; line-height:1.2; color:var(--ink);
+    font-family:'Caveat',cursive; letter-spacing:.5px; }
+  .portrait{ width:150px; height:150px; flex:none; border-radius:14px; overflow:hidden; transform:rotate(2deg); }
+  .portrait img{ width:100%; height:100%; object-fit:cover; object-position:center top; }
+
+  .timeline{ position:relative; margin-top:170px; height:370px; }
+  .tl-line{ position:absolute; left:10px; right:10px; top:140px; height:3px; background:var(--ink); border-radius:2px; }
+  .tl-row{ display:flex; height:100%; position:relative; }
+  .tl-step{ flex:1; position:relative; }
+  .tl-step .dot{ position:absolute; left:50%; top:140px; transform:translate(-50%,-50%); width:26px; height:26px;
+    border-radius:50%; border:3px solid var(--ink); z-index:2; }
+  .tl-step .dot.c1{ background:var(--blue); } .tl-step .dot.c2{ background:var(--green); } .tl-step .dot.c3{ background:var(--pink); }
+  .tl-step .num{ position:absolute; left:50%; top:140px; transform:translate(-50%,-50%); width:26px; height:26px;
+    display:flex; align-items:center; justify-content:center; font-family:'Caveat',cursive; font-weight:700;
+    font-size:16px; color:#fff; z-index:3; }
+  .tl-step .stem{ position:absolute; left:50%; width:2.5px; background:var(--ink); transform:translateX(-1px); }
+  .tl-step.above .stem{ top:70px; height:70px; }
+  .tl-step.below .stem{ top:153px; height:70px; }
+  .tl-step .card{ position:absolute; left:50%; transform:translateX(-50%); width:158px; border:2.5px solid var(--ink);
+    border-radius:14px; padding:12px 14px; text-align:center; background:var(--yellow-note); }
+  .tl-step.above .card{ top:0; }
+  .tl-step.below .card{ top:223px; }
+  .tl-step .icon{ margin-bottom:4px; display:flex; justify-content:center; }
+  .tl-step .icon svg{ width:26px; height:26px; }
+  .tl-step .label{ font-size:16px; font-weight:700; color:var(--ink); line-height:1.2; }
+  .tl-step .detail{ font-size:13px; color:var(--muted); margin-top:4px; line-height:1.25; }
+
+  .closing{ position:relative; margin-top:38px; background:var(--yellow); border:3px solid var(--ink);
+    border-radius:18px; padding:22px 36px; transform:rotate(-.6deg); font-size:22px; font-weight:700; color:var(--ink); }
+</style>
+</head>
+<body>
+  <div class="page">
+    {% include "partials/_spiral.html.j2" %}
+
+    <div class="header">
+      <div class="headline">
+        <h1>{{ headline_pre }}<span class="hl">{{ headline_hl }}</span>{{ headline_post }}</h1>
+      </div>
+      <div class="portrait"><img src="data:image/png;base64,{{ portrait_b64 }}"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-line"></div>
+      <div class="tl-row">
+        {% for st in steps %}
+        {% set c = "c" ~ (((loop.index0 % 3) + 1)) %}
+        <div class="tl-step {{ 'above' if loop.index0 % 2 == 0 else 'below' }}">
+          <div class="stem"></div>
+          <div class="dot {{ c }}"></div>
+          <div class="num">{{ loop.index }}</div>
+          <div class="card">
+            {% if st.icon %}<div class="icon">{{ st.icon | safe }}</div>{% endif %}
+            <div class="label autofit" data-min-size="12" data-max-height="42">{{ st.label }}</div>
+            <div class="detail">{{ st.detail }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="closing">{{ closing_thought | safe }}</div>
+
+    {% include "partials/_bulb.html.j2" %}
+    {% include "partials/_footer.html.j2" %}
+  </div>
+</body>
+</html>

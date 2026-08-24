@@ -4,60 +4,81 @@
 Usage:
     python render.py data/sample_content.json output/infographic.png
 
-The auto-fit pass measures each stage title in the real browser and shrinks
-the font until it fits its box, so variable-length LLM output never overflows.
+The content dict picks which template to render via an internal
+"_template_name" key (set by scripts/infographic_templates.py, defaults to
+"three_stage_flow" for backward compatibility). The auto-fit pass measures
+every ".autofit" element in the real browser and shrinks its font-size until
+it fits its box, so variable-length LLM output never overflows — each
+template just tags its variable-length elements with class="autofit" plus
+data-min-size (and optionally data-max-height) instead of the renderer
+hardcoding per-template CSS selectors.
 """
-import sys, json, base64, pathlib
-from jinja2 import Template
+import sys, json, pathlib
+from jinja2 import Environment, FileSystemLoader
 from playwright.sync_api import sync_playwright
 from icons import get_icon
 
 ROOT = pathlib.Path(__file__).parent
-TEMPLATE = ROOT / "templates" / "infographic.html.j2"
+TEMPLATES_DIR = ROOT / "templates"
 PORTRAIT_B64 = (ROOT / "data" / "portrait_b64.txt").read_text().strip()
 FONT_CSS = (ROOT / "fonts" / "embedded_fonts.css").read_text()
 
+ENV = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)))
+
+TEMPLATE_FILES = {
+    "three_stage_flow": "three_stage_flow.html.j2",
+    "single_stat_hero": "single_stat_hero.html.j2",
+    "before_after": "before_after.html.j2",
+    "annotated_screenshot": "annotated_screenshot.html.j2",
+    "timeline": "timeline.html.j2",
+}
+
+
+def _resolve_icons(node):
+    """Recursively swap any dict's "icon" name field for its raw SVG markup.
+
+    Icon resolution happens in Python (not Jinja) so every template can just
+    do `{{ x.icon | safe }}` regardless of where in the content tree it sits.
+    """
+    if isinstance(node, dict):
+        if isinstance(node.get("icon"), str):
+            node["icon"] = get_icon(node["icon"])
+        for value in node.values():
+            _resolve_icons(value)
+    elif isinstance(node, list):
+        for value in node:
+            _resolve_icons(value)
+
 
 def build_html(content):
-    tpl = Template(TEMPLATE.read_text())
-    # inject icon SVGs into stages
-    for st in content["stages"]:
-        st["icon"] = get_icon(st.get("icon", "file"))
+    template_name = content.pop("_template_name", "three_stage_flow")
+    template_file = TEMPLATE_FILES.get(template_name, TEMPLATE_FILES["three_stage_flow"])
+    tpl = ENV.get_template(template_file)
+    _resolve_icons(content)
     content["portrait_b64"] = PORTRAIT_B64
     content["font_css"] = FONT_CSS
     return tpl.render(**content)
 
 
 def autofit(page):
-    """Shrink any .stage .t that overflows its container. Runs in-browser."""
+    """Shrink any `.autofit` element that overflows its box. Runs in-browser.
+
+    Each element opts in via class="autofit" plus data-min-size (px floor)
+    and, optionally, data-max-height (px ceiling) — the same generic contract
+    across all 5 templates instead of one hardcoded selector list per layout.
+    """
     page.evaluate("""() => {
-        document.querySelectorAll('.stage .txt .t').forEach(el => {
+        document.querySelectorAll('.autofit').forEach(el => {
+            const minSize = parseFloat(el.dataset.minSize || '10');
+            const maxHeight = el.dataset.maxHeight ? parseFloat(el.dataset.maxHeight) : null;
+            const box = el.parentElement;
             let size = parseFloat(getComputedStyle(el).fontSize);
-            const box = el.parentElement;            // .txt
-            while ((el.scrollWidth > box.clientWidth || el.scrollHeight > 60) && size > 13) {
+            while (size > minSize && (
+                    el.scrollWidth > box.clientWidth ||
+                    (maxHeight !== null && el.scrollHeight > maxHeight)
+                  )) {
                 size -= 1;
                 el.style.fontSize = size + 'px';
-            }
-        });
-        // shrink headline if it overflows its column
-        const h = document.querySelector('.headline h1');
-        const col = document.querySelector('.headline');
-        let hs = parseFloat(getComputedStyle(h).fontSize);
-        while (h.scrollWidth > col.clientWidth && hs > 30) {
-            hs -= 1; h.style.fontSize = hs + 'px';
-        }
-        // shrink sticky-note / terminal text until it fits its box
-        // (no horizontal overflow and a sane max height so notes never clip)
-        document.querySelectorAll('.sticky').forEach(el => {
-            const maxH = el.classList.contains('term') ? 78 : 96;
-            let size = parseFloat(getComputedStyle(el).fontSize);
-            const inner = el.querySelector('.cmd') || el;   // shrink the cmd line if present
-            let isz = parseFloat(getComputedStyle(inner).fontSize);
-            while ((el.scrollWidth > el.clientWidth || el.scrollHeight > maxH)
-                   && size > 9) {
-                size -= 1; isz -= 1;
-                el.style.fontSize = size + 'px';
-                if (inner !== el) inner.style.fontSize = Math.max(isz, 8) + 'px';
             }
         });
     }""")

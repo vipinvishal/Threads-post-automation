@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  {{ font_css | safe }}
+  {% include "partials/_shared.css.j2" %}
+
+  .header{ display:flex; justify-content:space-between; align-items:flex-start; gap:20px; }
+  .headline{ flex:1; padding-top:16px; }
+  .headline h1{ font-size:42px; font-weight:700; line-height:1.2; color:var(--ink);
+    font-family:'Caveat',cursive; letter-spacing:.5px; }
+  .portrait{ width:150px; height:150px; flex:none; border-radius:14px; overflow:hidden; transform:rotate(2deg); }
+  .portrait img{ width:100%; height:100%; object-fit:cover; object-position:center top; }
+
+  .cards{ display:flex; align-items:stretch; gap:0; margin-top:64px; position:relative; }
+  .card{ flex:1; border:3px solid; border-radius:20px; padding:26px 28px; min-height:280px; }
+  .card.before{ background:var(--red-fill); border-color:var(--red); transform:rotate(-1.2deg); margin-right:44px; }
+  .card.after{ background:var(--green-fill); border-color:var(--green); transform:rotate(1deg); }
+  .card .label{ display:inline-block; font-size:23px; font-weight:700; padding:4px 16px; border-radius:8px; margin-bottom:16px; }
+  .card.before .label{ background:var(--red-band); color:var(--red-dark); }
+  .card.after .label{ background:var(--green-band); color:var(--green-dark); }
+  .card ul{ list-style:none; }
+  .card li{ font-size:19px; line-height:1.4; color:var(--ink); margin-bottom:12px; padding-left:24px; position:relative; }
+  .card li::before{ content:'\2014'; position:absolute; left:0; color:var(--muted); }
+
+  .mid-arrow{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:74px; height:52px; z-index:3; }
+
+  .takeaway{ position:relative; margin-top:40px; background:var(--yellow); border:3px solid var(--ink);
+    border-radius:18px; padding:22px 36px; transform:rotate(-.6deg); font-size:23px; font-weight:700; color:var(--ink); }
+</style>
+</head>
+<body>
+  <div class="page">
+    {% include "partials/_spiral.html.j2" %}
+
+    <div class="header">
+      <div class="headline">
+        <h1>{{ headline_pre }}<span class="hl">{{ headline_hl }}</span>{{ headline_post }}</h1>
+      </div>
+      <div class="portrait"><img src="data:image/png;base64,{{ portrait_b64 }}"></div>
+    </div>
+
+    <div class="cards">
+      <div class="card before">
+        <span class="label">{{ before_label }}</span>
+        <ul>
+          {% for pt in before_points %}<li class="autofit" data-min-size="13" data-max-height="60">{{ pt }}</li>{% endfor %}
+        </ul>
+      </div>
+      <svg class="mid-arrow" viewBox="0 0 74 52"><path d="M4 26 C30 20, 45 32, 62 24" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/><path d="M50 14 C56 18, 60 21, 63 23 C60 27, 56 31, 51 36" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="card after">
+        <span class="label">{{ after_label }}</span>
+        <ul>
+          {% for pt in after_points %}<li class="autofit" data-min-size="13" data-max-height="60">{{ pt }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="takeaway">{{ takeaway | safe }}</div>
+
+    {% include "partials/_bulb.html.j2" %}
+    {% include "partials/_footer.html.j2" %}
+  </div>
+</body>
+</html>

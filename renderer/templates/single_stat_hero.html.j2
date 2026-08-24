@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  {{ font_css | safe }}
+  {% include "partials/_shared.css.j2" %}
+
+  .header{ display:flex; justify-content:space-between; align-items:flex-start; gap:20px; }
+  .eyebrow{ display:inline-flex; align-items:center; background:var(--yellow); border:3px solid var(--ink);
+    border-radius:20px; padding:8px 22px; font-size:20px; font-weight:700; transform:rotate(-1deg); margin-top:10px; }
+  .portrait{ width:150px; height:150px; flex:none; border-radius:14px; overflow:hidden; transform:rotate(2deg); }
+  .portrait img{ width:100%; height:100%; object-fit:cover; object-position:center top; }
+
+  .hero{ margin-top:56px; }
+  .stat-wrap{ position:relative; width:700px; margin-left:-6px; }
+  .stat-num{ font-family:'Caveat',cursive; font-weight:700; font-size:150px; line-height:1; color:var(--ink);
+    background:var(--blue-band); padding:14px 44px; border-radius:32px; border:4px solid var(--ink);
+    display:inline-block; transform:rotate(-1.5deg); white-space:nowrap; overflow:hidden; max-width:100%; }
+  .stat-label{ font-size:25px; font-weight:700; color:var(--blue-dark); margin-top:18px; margin-left:26px; max-width:640px; }
+
+  .squiggle{ margin:6px 0 0 30px; width:220px; height:16px; }
+
+  .context{ max-width:660px; margin-top:34px; }
+  .context p{ font-size:23px; line-height:1.5; color:var(--ink); margin-bottom:16px; }
+  .context .n{ color:var(--blue); font-weight:700; }
+  .context .h{ color:var(--pink); font-weight:700; }
+
+  .source-note{ margin-top:26px; margin-left:2px; font-size:14px; color:var(--muted); font-style:italic; }
+</style>
+</head>
+<body>
+  <div class="page">
+    {% include "partials/_spiral.html.j2" %}
+
+    <div class="header">
+      <div class="eyebrow">{{ eyebrow }}</div>
+      <div class="portrait"><img src="data:image/png;base64,{{ portrait_b64 }}"></div>
+    </div>
+
+    <div class="hero">
+      <div class="stat-wrap">
+        <div class="stat-num autofit" data-min-size="60">{{ stat_number }}</div>
+      </div>
+      <svg class="squiggle" viewBox="0 0 220 16"><path d="M2 10 C40 2, 80 16, 120 8 C150 2, 180 14, 218 6" fill="none" stroke="#1a1a1a" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <div class="stat-label">{{ stat_label }}</div>
+    </div>
+
+    <div class="context">
+      {% for line in context_lines %}<p>{{ line | safe }}</p>{% endfor %}
+    </div>
+
+    {% if source_note %}<div class="source-note">{{ source_note }}</div>{% endif %}
+
+    {% include "partials/_bulb.html.j2" %}
+    {% include "partials/_footer.html.j2" %}
+  </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  {{ font_css | safe }}
+  {% include "partials/_shared.css.j2" %}
+
+  .header{ display:flex; justify-content:space-between; align-items:flex-start; gap:20px; }
+  .headline{ flex:1; padding-top:16px; }
+  .headline h1{ font-size:42px; font-weight:700; line-height:1.2; color:var(--ink);
+    font-family:'Caveat',cursive; letter-spacing:.5px; }
+  .portrait{ width:150px; height:150px; flex:none; border-radius:14px; overflow:hidden; transform:rotate(2deg); }
+  .portrait img{ width:100%; height:100%; object-fit:cover; object-position:center top; }
+
+  .terminal{ position:relative; width:460px; margin:56px 0 0 6px; border:3px solid var(--ink); border-radius:14px;
+    overflow:visible; transform:rotate(-.6deg); box-shadow:2px 3px 6px rgba(0,0,0,.15); }
+  .term-titlebar{ display:flex; align-items:center; gap:8px; padding:10px 14px; background:#1f1f1d;
+    border-radius:11px 11px 0 0; }
+  .term-dot{ width:11px; height:11px; border-radius:50%; }
+  .term-dot.r{ background:#ff5f57; } .term-dot.y{ background:#febc2e; } .term-dot.g{ background:#28c840; }
+  .term-title{ margin-left:8px; font-family:monospace; font-size:13px; color:#9aa5ad; }
+  .term-body{ background:var(--term-bg); padding:14px 18px 18px; border-radius:0 0 11px 11px; }
+  .term-line{ position:relative; font-family:monospace; font-size:15px; line-height:1.4; color:#d8dee3;
+    padding:6px 0; white-space:pre-wrap; word-break:break-word; }
+  .term-line .ln-num{ color:#5c6570; margin-right:14px; user-select:none; }
+
+  .callout{ position:absolute; left:calc(100% + 20px); top:50%; transform:translateY(-50%);
+    background:var(--yellow-note); border:2px solid var(--yellow-edge); border-radius:8px; padding:7px 14px;
+    font-family:'Kalam',cursive; font-size:15px; font-weight:700; color:var(--ink); width:200px;
+    white-space:normal; box-shadow:1px 2px 4px rgba(0,0,0,.12); z-index:5; }
+  .callout::before{ content:''; position:absolute; left:-18px; top:50%; width:18px; height:2px;
+    background:var(--ink); transform:translateY(-50%); }
+
+  .lesson{ position:relative; margin-top:56px; background:var(--yellow); border:3px solid var(--ink);
+    border-radius:18px; padding:22px 36px; transform:rotate(-.6deg); font-size:22px; font-weight:700; color:var(--ink); }
+</style>
+</head>
+<body>
+  <div class="page">
+    {% include "partials/_spiral.html.j2" %}
+
+    <div class="header">
+      <div class="headline">
+        <h1>{{ headline_pre }}<span class="hl">{{ headline_hl }}</span>{{ headline_post }}</h1>
+      </div>
+      <div class="portrait"><img src="data:image/png;base64,{{ portrait_b64 }}"></div>
+    </div>
+
+    <div class="terminal">
+      <div class="term-titlebar">
+        <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+        <span class="term-title">{{ terminal_title }}</span>
+      </div>
+      <div class="term-body">
+        {% for line in terminal_lines %}
+        {% set idx = loop.index0 %}
+        <div class="term-line autofit" data-min-size="12" data-max-height="60">
+          <span class="ln-num">{{ "%02d"|format(idx+1) }}</span><span>{{ line }}</span>
+          {% for c in callouts %}{% if c.target_line == idx %}
+          <div class="callout">{{ c.label }}</div>
+          {% endif %}{% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="lesson">{{ lesson | safe }}</div>
+
+    {% include "partials/_bulb.html.j2" %}
+    {% include "partials/_footer.html.j2" %}
+  </div>
+</body>
+</html>

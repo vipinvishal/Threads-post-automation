@@ -1,0 +1,13 @@
+{
+  "_template_name": "single_stat_hero",
+  "eyebrow": "REAL COST CHECK",
+  "stat_number": "₹1,850",
+  "stat_label": "/month to self-host a 7B model on RunPod",
+  "context_lines": [
+    "That's a single RTX 4090 pod running 24/7 at RunPod's India-region hourly rate.",
+    "The <span class=\"n\">OpenAI API</span> equivalent for the same traffic came out <span class=\"h\">cheaper</span> below 2M tokens/day."
+  ],
+  "source_note": "Based on RunPod community-cloud pricing, checked Aug 2026.",
+  "handle": "@vipinailabs",
+  "portfolio": "vipin-vishal.onrender.com"
+}

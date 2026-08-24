@@ -1,27 +1,32 @@
-# VipinAIHub Daily Infographic System
+# VipinAIHub Infographic System
 
-Auto-generate branded, hand-drawn-style educational infographics for Instagram /
-Threads / LinkedIn — one per day, from a topic queue.
+Auto-generate branded, hand-drawn-style infographics for Threads, one per post,
+driven by the pipeline in `../scripts/generate_and_schedule.py`. Change the
+content JSON → get a correctly-laid-out PNG, every time, with no manual nudging.
 
-This package is **Step 1 (the foundation): a placeholder template + auto-fit
-renderer.** Change the content JSON → get a correctly-laid-out PNG, every time,
-with no manual nudging.
+5 templates share one renderer + one visual system (fonts, palette, spiral
+binding, footer) via `templates/partials/`. Each template has its own content
+schema, prompt, and coercion function in `../scripts/infographic_templates.py`.
 
 ## What's here
 
 ```
-infographic-system/
+renderer/
 ├── templates/
-│   └── infographic.html.j2     # the brand template (HTML/CSS + Jinja2 slots)
-├── icons.py                    # reusable SVG icons, picked by name per stage
-├── render.py                   # fills template → auto-fits text → PNG (Playwright)
+│   ├── three_stage_flow.html.j2       # sequential "how it works" (3 boxes + arrows)
+│   ├── single_stat_hero.html.j2       # one dominant real number
+│   ├── before_after.html.j2           # a trade-off / comparison, 2 cards
+│   ├── annotated_screenshot.html.j2   # stylized terminal/log + callouts
+│   ├── timeline.html.j2               # 3-5 ordered milestones
+│   └── partials/                      # shared spiral binding, footer, palette CSS
+├── icons.py                    # reusable SVG icons, picked by name
+├── render.py                   # Jinja2 Environment (5-template registry) → auto-fits text → PNG (Playwright)
 ├── fonts/
 │   ├── *.ttf                   # handwritten fonts (Kalam, Caveat, Gochi Hand)
 │   └── embedded_fonts.css      # fonts base64-embedded — NO network needed
 ├── data/
 │   ├── portrait_b64.txt        # your portrait, embedded into every render
-│   ├── sample_content.json     # the S3 example (the content schema)
-│   └── test_https.json         # a 2nd topic proving variable text auto-fits
+│   └── sample_*.json           # one example content JSON per template
 └── output/                     # rendered PNGs land here
 ```
 
@@ -57,69 +62,46 @@ titles ("Client Hello & Certificate") and they wrap cleanly with zero edits.
 pip install playwright jinja2 --break-system-packages
 python -m playwright install chromium
 
-cd infographic-system
-python render.py data/sample_content.json output/infographic.png
-python render.py data/test_https.json   output/test_https.png
+cd renderer
+python render.py data/sample_content.json          output/infographic.png
+python render.py data/sample_single_stat_hero.json  output/single_stat_hero.png
+python render.py data/sample_before_after.json      output/before_after.png
+python render.py data/sample_annotated_screenshot.json output/annotated_screenshot.png
+python render.py data/sample_timeline.json          output/timeline.png
 ```
 
-Output is 2x scale (~1800px wide) — crisp for social.
+Output is 2x scale (~1800px wide) — crisp for social. Which template renders is
+picked by the content JSON's own `_template_name` key (defaults to
+`three_stage_flow` if absent) — `render.py` isn't given a template name on the
+command line.
 
 ## The content schema (what the LLM must produce)
 
-Every field in `sample_content.json` is a slot. The generator's only job is to
-fill these for a new topic, respecting limits:
+Each template has its own schema — see the per-template `REQUIRED_KEYS` /
+`USER_TEMPLATE` in `../scripts/infographic_templates.py`, which is the single
+source of truth (kept in sync with each template's Jinja variables). A few
+fields are shared across every template and injected deterministically by
+`../scripts/infographic.py`, never by the model: `handle` (always
+`INFOGRAPHIC_HANDLE`) and `portfolio` (always `PORTFOLIO_URL`).
 
-| field                | guidance                                        |
-|----------------------|-------------------------------------------------|
-| headline_line1_*     | split so the highlighted word sits in `_hl`     |
-| headline_line2       | the blue second line                            |
-| sub_pre/num/post     | the yellow pill; num is the stage count         |
-| stages[].title       | <= ~22 chars ideal (auto-fit catches overflow)  |
-| stages[].subtitle    | <= ~30 chars, one line                          |
-| stages[].icon        | one of icons.py keys (upload, key, lock, ...)   |
-| stages[].arrow_note  | tiny label on the arrow ("" on the last stage)  |
-| explainers[].tag     | short heading; .body may use <span class=k1/k2/k3> and <b> |
-| sticky1 / sticky2    | short; <b> for the colored word                 |
-| terminal_cmd         | the fake shell command in the doodle            |
-| quote_main           | use <span class=n> for number, <span class=h> for highlight |
-| quote_sub            | one supporting line                             |
-| handle               | always @VipinAIHub                              |
+Available icon names (`icons.py`): upload, laptop, copies, database, lock,
+cloud, gear, file, search, key, network. Icon resolution (name → raw SVG) is
+generic in `render.py` — it recursively walks the content dict and swaps any
+`icon` key's value, so every template gets this for free.
 
-Available icon names: upload, laptop, copies, database, lock, cloud, gear,
-file, search, key, network.
+## Adding a 6th template
 
----
+1. Add `templates/<name>.html.j2`, pulling in `partials/_shared.css.j2` /
+   `_spiral.html.j2` / `_footer.html.j2` / `_bulb.html.j2` for the shared chrome.
+2. Tag any variable-length text with `class="autofit" data-min-size="N"`
+   (optionally `data-max-height="N"`) — `render.py`'s `autofit()` pass shrinks
+   those generically, no new JS needed.
+3. Register the file in `render.py`'s `TEMPLATE_FILES` dict.
+4. Add a spec (system prompt, user template, required keys, coerce function) to
+   `../scripts/infographic_templates.py`'s `TEMPLATE_SPECS`.
+5. Reference the new template name from `DAY_ROTATION` in
+   `../scripts/generate_and_schedule.py` wherever it should be an option.
 
-## Remaining build steps (the rest of the plan)
-
-**Step 2 — Content generator (Claude API).**
-Script: prompt Claude with a topic + this schema, demand JSON only, validate it
-(retry if a title is too long or a field is missing). Output → a content JSON.
-
-**Step 3 — Topic queue.**
-A `topics.json` (or Google Sheet / Airtable) of 30-40 ideas across your niches
-(AWS, Git, system design, Linux, networking...). Daily job pops the next unused
-one. Keeps you in editorial control; avoids the bot inventing something wrong.
-
-**Step 4 — Caption generator.**
-Second Claude call: turn the topic into a Hinglish caption + hashtags tuned per
-platform (IG vs LinkedIn vs Threads tone). This is where your India angle lives.
-
-**Step 5 — Schedule.**
-GitHub Actions cron (free) or Render cron. Runs daily: pop topic → generate
-content → render PNG → generate caption → drop both into an output folder or a
-Buffer queue.
-
-**Step 6 — Posting (start semi-manual).**
-Phase 1: system drops image+caption into Buffer; you tap approve. Phase 2: once
-you trust output, automate via Buffer/Make.com (IG Graph API and LinkedIn API
-need app approval; Buffer skips that pain). Threads now has an official API too.
-
-**Quality guardrails (important):**
-- Rotate 2-3 visual templates + vary topics so the feed doesn't look bot-made;
-  samey daily output *hurts* reach.
-- Always keep a human approval gate at first. One wrong technical claim posted
-  automatically can cost credibility.
-
-## Next action
-Step 2: build the Claude API content generator with strict JSON validation.
+**Quality guardrail:** always keep a human review pass at first on a new
+template or format — one wrong technical claim posted automatically can cost
+credibility. The pipeline's fact-check gate helps but isn't a substitute.

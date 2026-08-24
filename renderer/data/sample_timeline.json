@@ -1,0 +1,16 @@
+{
+  "_template_name": "timeline",
+  "headline_pre": "How a Request Moves Through an ",
+  "headline_hl": "AI Agent",
+  "headline_post": "",
+  "steps": [
+    {"label": "Receive Goal", "detail": "User task hits the planner", "icon": "upload"},
+    {"label": "Pick a Tool", "detail": "Planner selects one action", "icon": "gear"},
+    {"label": "Call Tool", "detail": "Executes against a real API", "icon": "network"},
+    {"label": "Observe Result", "detail": "Output feeds back to planner", "icon": "search"},
+    {"label": "Loop or Stop", "detail": "Repeats until goal is met", "icon": "file"}
+  ],
+  "closing_thought": "Most agent failures happen at step 4 — the planner never re-checks a bad result.",
+  "handle": "@vipinailabs",
+  "portfolio": "vipin-vishal.onrender.com"
+}

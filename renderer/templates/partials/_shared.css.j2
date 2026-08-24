@@ -1,0 +1,52 @@
+{# Shared reset, palette, page skeleton, spiral binding, footer, and highlight-span
+   styles reused by every infographic template. Layout-specific CSS stays in each
+   template file — only the chrome common to all 5 lives here. #}
+* { margin:0; padding:0; box-sizing:border-box; }
+
+:root{
+  --ink:#1a1a1a;
+  --blue:#1f8fff;        --blue-fill:#e3f3ff;   --blue-band:#bfe9ff;  --blue-dark:#1565b0;
+  --green:#2fa64a;       --green-fill:#e7f7e3;  --green-band:#c7f0c2; --green-dark:#1f7a33;
+  --pink:#d6418a;        --pink-fill:#ffe6f2;   --pink-band:#ffd6ea;  --pink-dark:#b32d6c;
+  --red:#d64545;         --red-fill:#fdeaea;    --red-band:#f7cccc;   --red-dark:#a52f2f;
+  --yellow:#fff2a8;      --yellow-note:#fff7c0; --yellow-edge:#d8c84a;
+  --muted:#4a5560;       --spiral:#3a4750;      --term-bg:#2c2c2a;
+}
+
+body{ font-family:'Kalam', cursive; background:#fff; }
+
+.page{
+  width:900px; min-height:1120px; background:#fff;
+  position:relative; padding:36px 48px 28px 96px; overflow:hidden;
+  display:flex; flex-direction:column;
+}
+
+/* spiral binding (left margin, notebook conceit) */
+.spiral-line{ position:absolute; left:56px; top:20px; bottom:20px; width:1.6px; background:var(--spiral); opacity:.5; }
+.spiral{ position:absolute; left:30px; top:34px; bottom:30px; width:60px; }
+.spiral .ring{ position:absolute; left:0; width:48px; height:18px; border:4.5px solid var(--spiral);
+  border-radius:50%; border-color:var(--spiral) transparent transparent transparent; transform:rotate(-18deg); }
+
+/* highlighter-marker text emphasis, reused across headlines/quotes/callouts */
+.hl{ background:var(--yellow); padding:0 8px; border-radius:6px; }
+.hl-blue{ color:var(--blue); display:inline-block; background:var(--blue-band); padding:0 8px; border-radius:6px; }
+.k1{ color:var(--blue); font-weight:700; }
+.k2{ color:var(--green); font-weight:700; }
+.k3{ color:var(--pink); font-weight:700; }
+
+/* footer: @handle + optional portfolio pill — margin-top:auto pins it to the
+   bottom of .page's min-height when content is shorter than the page floor,
+   and just follows content normally once content grows past that floor. */
+.footer{ display:flex; align-items:center; gap:12px; margin-top:auto; padding-top:26px; }
+.footer .ig{ width:32px; height:32px; border:2.8px solid var(--ink); border-radius:9px; position:relative; }
+.footer .ig::before{ content:''; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+  width:16px; height:16px; border:2.8px solid var(--ink); border-radius:50%; }
+.footer .ig::after{ content:''; position:absolute; right:4px; top:4px; width:3px; height:3px; background:var(--ink); border-radius:50%; }
+.footer .handle{ font-size:23px; font-weight:700; color:var(--ink); }
+.footer .site{ margin-left:auto; display:flex; align-items:center; gap:8px;
+  font-size:19px; font-weight:700; color:var(--blue-dark);
+  background:var(--blue-fill); border:2.4px solid var(--blue); border-radius:10px;
+  padding:5px 14px; transform:rotate(-1deg); }
+.footer .site svg{ width:19px; height:19px; flex:none; }
+
+.bulb{ position:absolute; right:30px; bottom:150px; width:54px; height:54px; }

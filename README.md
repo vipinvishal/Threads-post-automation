@@ -1,6 +1,6 @@
 # Threads Post Automation
 
-An AI agent that researches an AI-systems topic, writes a technical Threads post in one of two fixed styles, renders a matching hand-drawn infographic, and publishes both to Threads automatically — **3 times a day, fully automated via GitHub Actions.**
+An AI agent that researches a topic, writes a Threads post in the day's locked format, renders a matching hand-drawn infographic, runs it through a set of pipeline-level quality gates, and publishes to Threads automatically — **3 times a day, fully automated via GitHub Actions.**
 
 **No VPS needed. No manual work.**
 
@@ -8,12 +8,12 @@ An AI agent that researches an AI-systems topic, writes a technical Threads post
 
 ## What It Posts
 
-Pure AI-systems education, in a **learning-engineer voice** — a curious engineer sharing what they just figured out, not an architect lecturing. How LLMs, transformers, RAG, agents, GPUs, and inference actually work under the hood. No business content, no hype, no product reviews.
+The voice behind [@vipinailabs](https://www.threads.net/@vipinailabs): a builder who tests AI tools hands-on and reports real costs and real results, specifically for Indian developers deciding whether something is worth their time or money. LLM internals and agentic AI systems — mechanisms, not hype.
 
 Examples of the content direction:
-- *"the KV cache finally clicked for me: the first token is slow because the model reads your whole prompt at once, then caches every key/value so each next token only computes itself. that's why token 1 lags and the rest stream."*
-- *"spent a day confused why fine-tuning didn't add the facts i wanted. it doesn't — fine-tuning shifts the output style, RAG is what injects facts. mixing these up is an expensive mistake i almost shipped."*
-- *"quantization sounds like it should wreck a model. mostly it doesn't — int4 stores weights in 4 bits instead of 16, and the accuracy loss is tiny because the weights are noisy anyway. where does it start to hurt though?"*
+- *"the kv cache is why chat feels instant — not magic, just cached math. the model saves the attention keys/values for every token it already processed, so each new token is one step of work."*
+- *"quantization sounds like it should wreck a model. mostly it doesn't — int4 stores weights in 4 bits instead of 16, and the accuracy loss is tiny because the weights are noisy anyway."*
+- *"₹1,850/month to self-host a 7B model on RunPod. the OpenAI API equivalent for the same traffic came out cheaper below 2M tokens/day."*
 
 ---
 
@@ -22,29 +22,45 @@ Examples of the content direction:
 ```
 GitHub Actions (11 AM / 3 PM / 9 PM IST)
         ↓
-Pick a content SLOT   → news / educational / personal / advanced
-Pick a STYLE          → alternates Style 1 / Style 2 every run
+Day of week (IST) LOCKS the format for every run that day — see Format Rotation
         ↓
 Exa — neural web research
-  • news slot: last-48h fresh releases
-  • other slots: evergreen explanatory sources
+  • hot_take: last-48h fresh releases   • quote_react: a real recent claim to react to
+  • other formats: evergreen explanatory sources
         ↓
-Gemini — writes the post in the chosen style + learning-engineer voice
+Gemini — writes the post as JSON (hook, body, cta_included, tag, image_template,
+  numeric_claims, reply_seed) in the @vipinailabs voice
   └─ fallback: Gemini key #2 → Euron API
         ↓
 Humanize pass — rewrites the phrasing so it reads like a person, not an AI
-  (same meaning/numbers/claims — just less "AI slop", more natural rhythm)
         ↓
-Infographic (skipped for the personal slot)
-  Gemini → 3-stage JSON → Jinja2 → Playwright → 1800px PNG → hosted on imgbb
+Quality gates (pipeline code, not the prompt — see Quality Gates below)
+  • fact-check numeric_claims against the research brief, auto-soften if unsupported
+  • repetition check against the last 10 posts — regenerate the hook/closing if too close
+  • CTA cap — at most 1-in-8 posts gets the follow CTA + link, day-lock AND'd with a
+    rolling-history check
+  • image-template variety — force a swap if the same template was overused recently
+        ↓
+Infographic (skipped when image_template is "none")
+  Gemini → template-specific JSON → Jinja2 → Playwright → 1800px PNG → hosted on imgbb
         ↓
 Buffer — schedules post + attached infographic to Threads
+        ↓
+scripts/post_history.json — the run's record is appended and committed back to the
+  repo, so the quality gates above have real history on the next run
 ```
 
-Every post ends with one **topic tag**, a **follow CTA**, and the **portfolio link**:
+Every post ends with one **topic tag**; the follow CTA + portfolio link only appear on the rare gate-approved post (see [CTA Cap](#quality-gates)):
 
 ```
-#AgenticAI
+#AI
+```
+```
+speculative decoding is a neat trick.
+...
+how many tokens do you draft ahead?
+
+#AI
 
 follow @vipinailabs for daily dose of information
 
@@ -61,35 +77,46 @@ See what I've been building →https://vipin-vishal.onrender.com/
 | 3:00 PM | 09:30 | `30 9 * * *` |
 | 9:00 PM | 15:30 | `30 15 * * *` |
 
-3 posts per day, 7 days a week.
+3 runs a day, 7 days a week — Sunday's runs are a no-op (see below), so no post actually goes out that day.
 
 ---
 
-## Content Slots
+## Format Rotation
 
-Each run picks one slot (weighted), then a topic + tone from it. Defined in [`scripts/topics.json`](scripts/topics.json).
+The day of the week (IST) **locks** the format for every run that day — the model never picks its own format. Defined in `DAY_ROTATION` in [`scripts/generate_and_schedule.py`](scripts/generate_and_schedule.py).
 
-| Slot | What it posts | Research | Infographic |
+| Day | Format | Image template options | CTA-eligible |
 |---|---|---|---|
-| **news** | A new model / release, explained *technically* | Last 48h | ✅ |
-| **educational** | How one mechanism works (RAG, KV cache, GPUs…) | Evergreen | ✅ |
-| **personal** | Build-in-public lesson / story | Evergreen | ❌ (a story isn't a diagram) |
-| **advanced** | Deep take for senior engineers | Evergreen | ✅ |
+| Mon | `mechanism_explainer` | three_stage_flow / before_after | No |
+| Tue | `hot_take` | single_stat_hero | No |
+| Wed | `build_log` | annotated_screenshot / none | No |
+| Thu | `india_cost` | single_stat_hero | No |
+| Fri | `mechanism_explainer` | before_after / timeline | **Yes — the one CTA slot** |
+| Sat | `quote_react` | none | No |
+| Sun | — | — | **Off — reply-only day, no post generated** |
 
-Bias the mix with `SLOT_WEIGHTS`, e.g. `SLOT_WEIGHTS="news:2,educational:3,personal:1,advanced:2"`. Default = equal weight.
+- **mechanism_explainer** — a genuinely sequential concept gets `three_stage_flow`/`timeline`; a trade-off/comparison gets `before_after`. Topics come from `format_topics.mechanism_explainer` in [`scripts/topics.json`](scripts/topics.json).
+- **hot_take** — one real stat + one sentence of context + one question, sourced from last-48h research.
+- **build_log** — first-person, something that actually broke or surprised you today. Rendered as a stylized terminal/log window with hand-drawn callouts.
+- **india_cost** — must ground the post in a real ₹ figure or a named Indian cloud/hardware context (RunPod, AWS Mumbai, a consumer GPU price).
+- **quote_react** — Exa sources a real, recent AI opinion/claim; the model reacts to it (agree, disagree, add a missing angle). No image, no CTA.
+
+Monday and Friday share `mechanism_explainer` but get **different** image-template pools on purpose, so the two mechanism-explainer days don't default to looking the same.
 
 ---
 
-## Post Styles (A/B test)
+## Quality Gates
 
-The slot decides *what* a post is about; the **style** decides *how* it's structured. Every post uses one of two fixed structures, and the pipeline **alternates them run-to-run** so you can compare which drives more views. The infographic is built in the same style, so image and text tell one story.
+The system prompt (`POST_SYSTEM_PROMPT` in `scripts/generate_and_schedule.py`) sets the voice and the JSON output contract. Everything below runs **in pipeline code around the model call**, not as prompt instructions the model could drift away from:
 
-| | **Style 1 — problem → solution** | **Style 2 — scenario → solution** |
-|---|---|---|
-| **Arc** | State the problem → emphasize it → introduce the solution by name → prove it with concrete capabilities → leave a thought | Imaginary scenario → why it's critical → the real risk → the solution in **5 tight bullets** → why it clicked → a question for the comments |
-| **Ends on** | A lingering thought | A comment-engagement question |
+| Gate | What it does |
+|---|---|
+| **Fact-check** | Cross-checks every `numeric_claims` entry against the same Exa research brief the writer saw. If a number isn't supported, one more Gemini call rewrites just that number into a qualitative statement. Skipped entirely if every claim already matches. |
+| **Repetition check** | Fuzzy-compares the new hook/closing line against the last 10 posts (`scripts/post_history.json`), plus a hard check on 3 named recurring patterns ("it's not X, it's Y", etc.). On a match, asks the model to rewrite just the opening/closing — up to 2 attempts, then posts anyway with a warning rather than blocking the scheduled run. |
+| **CTA cap** | `cta_included` only ends up `true` if the model wanted it AND today is the CTA-eligible day AND none of the last 7 posts already had one. This is what keeps the real ratio near ~1-in-8 even across 3 runs/day on the Friday slot. |
+| **Template variety** | If the model's chosen `image_template` has been used more than 3 times in the last 8 posts, swaps to whichever allowed option for that day was used least recently. Skipped when a format only has one valid option (e.g. `quote_react` → always `none`). |
 
-Alternation is deterministic (no state file): consecutive runs flip `1 → 2 → 1 → 2…`. Force one with `POST_STYLE` (`1` or `2`); leave blank to auto-alternate. Defined in [`scripts/generate_and_schedule.py`](scripts/generate_and_schedule.py) (`STYLE_GUIDANCE`, `pick_style`).
+All four read `scripts/post_history.json` (a rolling 60-entry record) and the CTA/repetition/template gates write a new entry to it after a successful real (non-preview) run. Because GitHub Actions runs are stateless containers, the workflow commits that file back to the repo after each run so the *next* run has real history to check against.
 
 ---
 
@@ -97,11 +124,11 @@ Alternation is deterministic (no state file): consecutive runs flip `1 → 2 →
 
 | Tool | Purpose |
 |---|---|
-| **GitHub Actions** | Scheduling (replaces VPS/cron) |
-| **Exa** | Real-time neural web research |
-| **Google Gemini** | Post + infographic-content generation (dual-key quota rotation) |
+| **GitHub Actions** | Scheduling (replaces VPS/cron) + commits `post_history.json` back after each run |
+| **Exa** | Real-time neural web research + claim-sourcing for `quote_react` |
+| **Google Gemini** | Post JSON, humanize pass, fact-check pass, infographic-content generation (dual-key quota rotation) |
 | **Euron API** | Last-resort fallback when all Gemini keys are exhausted |
-| **Playwright + Jinja2** | Render the infographic HTML template → PNG |
+| **Playwright + Jinja2** | Render one of 5 infographic templates (HTML) → PNG |
 | **imgbb** | Hosts the PNG so Buffer can attach it |
 | **Buffer** | Schedules and publishes post + image to Threads |
 
@@ -136,10 +163,10 @@ Fill in your API keys (see [Configuration](#configuration) below).
 ### 4. Test locally
 
 ```bash
-# Preview — generates post + infographic, does NOT send to Buffer
+# Preview — generates post + infographic, does NOT send to Buffer or touch history
 python scripts/generate_and_schedule.py --preview
 
-# Full run — research → post → infographic → schedule to Buffer
+# Full run — research → post → quality gates → infographic → schedule to Buffer
 python scripts/generate_and_schedule.py
 ```
 
@@ -173,19 +200,16 @@ python scripts/generate_and_schedule.py
 | `HUMANIZE_POST` | `1` | Set `0` to skip the humanize rewrite pass and post Gemini's raw phrasing |
 | `INCLUDE_INFOGRAPHIC` | `1` | Set `0` for text-only posts |
 | `INFOGRAPHIC_HANDLE` | `@vipinailabs` | Handle shown on the infographic |
-| `PORTFOLIO_URL` | `vipin-vishal.onrender.com` | Text in the infographic footer + the clickable link in the post |
-| `INCLUDE_PORTFOLIO_LINK` | `1` | `0` drops the clickable link from the post body (regains reach) |
+| `PORTFOLIO_URL` | `vipin-vishal.onrender.com` | Text in the infographic footer + the clickable link on the rare CTA post |
 | `PORTFOLIO_CTA` | `See what I've been building →` | Lead-in before the portfolio link |
 | `FOLLOW_CTA` | `follow @vipinailabs for daily dose of information` | The follow ask — use the **real** handle |
-| `POST_STYLE` | _(blank)_ | Blank = alternate Style 1/2 each run; `1` or `2` forces one |
-| `SLOT_WEIGHTS` | equal | Bias the slot rotation |
 | `GEMINI_MODEL` | `gemini-2.5-flash` | Primary model |
-| `NEWS_WINDOW_HOURS` | `48` | Fresh-news window for the news slot |
-| `DEFAULT_TOPIC_TAG` | `#AI` | Fallback topic tag |
+| `NEWS_WINDOW_HOURS` | `48` | Fresh-news window for `hot_take` / `quote_react` |
+| `DEFAULT_TOPIC_TAG` | `#AI` | Fallback topic tag, used when the model's own `tag` doesn't resolve to a pinned interest |
 
 > **Handle must be real.** Threads renders a tappable `@mention` only when the handle resolves — a wrong one silently degrades to plain text.
 >
-> **Reach trade-off:** Threads down-ranks posts containing a link, so the in-post portfolio link costs some views. Set `INCLUDE_PORTFOLIO_LINK=0` to drop it — the infographic URL and your Threads **bio** link (clickable, penalty-free) still promote you.
+> **The CTA/link are already rare by design** — see [Quality Gates](#quality-gates) — so there's no separate on/off toggle for them beyond `FOLLOW_CTA`/`PORTFOLIO_URL` content.
 
 ### Finding your Buffer Channel ID
 
@@ -203,8 +227,8 @@ Copy the ID for your Threads channel and set it as `BUFFER_CHANNEL_ID`.
 1. **Add secrets** — Settings → Secrets and variables → Actions → Secrets:
    `GEMINI_API_KEY`, `GEMINI_API_KEY_2`, `EURON_API_KEY`, `EXA_API_KEY`,
    `BUFFER_API_KEY`, `BUFFER_CHANNEL_ID`, `IMGBB_API_KEY`.
-2. **(Optional) add variables** — `INFOGRAPHIC_HANDLE`, `PORTFOLIO_URL`, `POST_STYLE`, `SLOT_WEIGHTS`.
-3. The workflow ([`.github/workflows/daily_post.yml`](.github/workflows/daily_post.yml)) runs at **11 AM, 3 PM, 9 PM IST**. Manual trigger: **Actions → Daily Threads Post → Run workflow**.
+2. **(Optional) add variables** — `INFOGRAPHIC_HANDLE`, `PORTFOLIO_URL`, `PORTFOLIO_CTA`, `FOLLOW_CTA`.
+3. The workflow ([`.github/workflows/daily_post.yml`](.github/workflows/daily_post.yml)) runs at **11 AM, 3 PM, 9 PM IST**, and needs `permissions: contents: write` (already set) so it can commit `scripts/post_history.json` back after each run. Manual trigger: **Actions → Daily Threads Post → Run workflow**.
 
 ---
 
@@ -215,10 +239,9 @@ Edit [`scripts/topics.json`](scripts/topics.json):
 | Key | What it controls |
 |---|---|
 | `niche` | The content category fed to Exa for research |
-| `persona` | The voice/style context passed to Gemini |
-| `content_slots` | The four slots, each with its own `label`, `topics`, and `tones` |
+| `format_topics` | A topic seed list per format (`mechanism_explainer`, `hot_take`, `build_log`, `india_cost`) — `quote_react` has none, it's sourced live from a real claim |
 
-The two post styles live in `STYLE_GUIDANCE`, and the infographic template/fonts/portrait live in [`renderer/`](renderer/).
+The account voice + JSON output contract live in `POST_SYSTEM_PROMPT`, the day → format mapping lives in `DAY_ROTATION`, and the infographic templates/fonts/portrait live in [`renderer/`](renderer/) — one content schema per template in [`scripts/infographic_templates.py`](scripts/infographic_templates.py).
 
 ---
 
@@ -226,13 +249,21 @@ The two post styles live in `STYLE_GUIDANCE`, and the infographic template/fonts
 
 ```
 ├── scripts/
-│   ├── generate_and_schedule.py   # main pipeline (slots, styles, post, schedule)
-│   ├── infographic.py             # infographic content gen + imgbb upload
-│   ├── topics.json                # niche, persona, content_slots
+│   ├── generate_and_schedule.py   # main pipeline: rotation, post JSON, quality gates, schedule
+│   ├── infographic.py             # infographic content-gen dispatcher + imgbb upload
+│   ├── infographic_templates.py   # one schema/prompt/coercion per image template
+│   ├── topics.json                # niche, format_topics
+│   ├── post_history.json          # rolling record the quality gates read/write (git-tracked)
 │   └── get_buffer_channel.py      # one-time helper to find Buffer channel ID
 ├── renderer/
-│   ├── render.py                  # Playwright HTML → 1800px PNG
-│   ├── templates/infographic.html.j2
+│   ├── render.py                  # Jinja2 (5-template registry) → Playwright → 1800px PNG
+│   ├── templates/
+│   │   ├── three_stage_flow.html.j2
+│   │   ├── single_stat_hero.html.j2
+│   │   ├── before_after.html.j2
+│   │   ├── annotated_screenshot.html.j2
+│   │   ├── timeline.html.j2
+│   │   └── partials/              # shared spiral binding, footer, palette CSS
 │   └── fonts/  data/  icons.py
 ├── .github/workflows/daily_post.yml
 ├── .env.example
@@ -252,6 +283,7 @@ Gemini key #1
 
 - **Infographic fallback** — any render/upload failure or missing `IMGBB_API_KEY` → clean text-only post.
 - **Buffer rate limits** — retried with backoff; if still limited, the post is saved to `pending_post.txt` to re-run later.
+- **Quality-gate soft-fail** — repetition/fact-check retries are bounded (max 2 attempts); if still flagged, the pipeline posts anyway with a warning rather than skipping the scheduled post.
 
 No manual intervention needed on quota exhaustion.
 

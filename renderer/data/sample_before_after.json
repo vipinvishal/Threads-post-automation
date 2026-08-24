@@ -1,0 +1,21 @@
+{
+  "_template_name": "before_after",
+  "headline_pre": "Why Every LLM Server Needs a ",
+  "headline_hl": "KV Cache",
+  "headline_post": "",
+  "before_label": "No KV cache",
+  "before_points": [
+    "Re-reads the whole prompt for every new token",
+    "Cost grows with the square of context length",
+    "Token 1 and token 500 cost the same"
+  ],
+  "after_label": "With KV cache",
+  "after_points": [
+    "Keys/values from past tokens are stored, not recomputed",
+    "Each new token is one small step of work",
+    "This is why chat feels instant after the first token"
+  ],
+  "takeaway": "The first token is slow because it builds the cache. Every token after is nearly free.",
+  "handle": "@vipinailabs",
+  "portfolio": "vipin-vishal.onrender.com"
+}

@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-"""
-infographic.py — Turn the day's research into a branded hand-drawn-style
+"""infographic.py — Turn the day's research into a branded hand-drawn-style
 infographic PNG, then host it so Buffer can attach it to the Threads post.
 
 Pipeline (called from generate_and_schedule.py):
-    research brief  ->  content JSON (reuses the Gemini/Euron text chain)
+    research brief  ->  content JSON (reuses the Gemini/Euron text chain,
+                        schema/prompt/coercion picked by image_template name
+                        from scripts/infographic_templates.py)
                     ->  renderer/render.py  (Playwright -> 1800px PNG)
                     ->  imgbb  (public URL for Buffer's assets[].image.url)
 
-The renderer is the proven system from Auto_infographics_system (Jinja2 template
-+ embedded handwriting fonts + portrait). We only swap "email the PNG" for
-"upload it and return a public URL".
+The renderer is the proven system from Auto_infographics_system (Jinja2
+templates + embedded handwriting fonts + portrait). We only swap "email the
+PNG" for "upload it and return a public URL".
 """
 
 import base64
@@ -22,6 +23,8 @@ import sys
 import tempfile
 
 import requests
+
+import infographic_templates as templates
 
 # ── Paths ───────────────────────────────────────────────────────────────────────
 _SCRIPT_DIR = pathlib.Path(__file__).resolve().parent
@@ -42,92 +45,6 @@ PORTFOLIO_URL      = (
 )
 IMGBB_API_KEY      = os.environ.get("IMGBB_API_KEY", "")
 
-# Icons the renderer ships with (renderer/icons.py).
-ICON_NAMES = [
-    "cloud", "copies", "database", "file", "gear",
-    "key", "laptop", "lock", "network", "search", "upload",
-]
-
-# ── Content prompt (adapted from Auto_infographics_system/content_api.py) ────────
-_SYSTEM = """You are an engineer who is LEARNING AI/ML systems and designs single-image
-explainer infographics of what you figured out — clear and accurate, never a know-it-all
-lecture. You take research on AI systems, infrastructure, or model architecture and reframe
-it into ONE "how it works" concept explained in exactly 3 visual stages. Cover AI, LLMs,
-model architecture, training, inference, GPUs/infrastructure, RAG, agents, and related
-systems topics. Be precise and technically accurate — never invent numbers or mechanisms,
-never use hype words. Write ALL text in ENGLISH ONLY. You return valid JSON only: no markdown, no prose."""
-
-# The infographic is aligned to the post's style so image + text tell the same story.
-_STYLE_FRAMING = {
-    "style1": ("The post is PROBLEM -> SOLUTION. Frame the 3 stages as how the SOLUTION "
-               "actually works, so the diagram proves the fix. The headline names the solution."),
-    "style2": ("The post is SCENARIO/RISK -> SOLUTION. Frame the 3 stages as how the SOLUTION "
-               "works to remove that risk. The headline names the solution."),
-}
-
-_USER_TEMPLATE = """CONTEXT on this topic (reference material — use only what's accurate, never invent):
-Topic: "{topic}"
-
-SOURCES / CONTEXT:
-{research}
-{alignment}
----
-
-TASK
-Reframe this into ONE teachable AI concept that fits a 3-stage "how it works"
-infographic. Prefer the underlying mechanism over the headline
-(e.g. a story about a new agent framework -> "How an AI Agent Decides Its Next Action").
-
-HARD RULES
-- Topic MUST be about AI / ML systems: models, architecture, training, inference,
-  GPUs/infrastructure, RAG, agents, or related systems concepts. Be technically accurate.
-- EXACTLY 3 stages and EXACTLY 3 explainers.
-- Every value concrete and specific — no filler like "AI is powerful".
-- stage.title <= 22 characters. stage.subtitle <= 30 characters, one line.
-- stage.icon MUST be one of: {icons}
-- arrow_note is a tiny 1-3 word label; the LAST stage's arrow_note MUST be "".
-- explainer.body may use <span class='k1'>..</span>, <span class='k2'>..</span>,
-  <span class='k3'>..</span> to highlight a key term, and <b>..</b> for bold.
-- quote_main may use <span class='n'>NUMBER</span> and <span class='h'>highlight</span>.
-- handle MUST be exactly "{handle}".
-- terminal_cmd is a short, real-looking shell/CLI line, <= 18 chars, ideally
-  one token (e.g. "agent.run()", "rag.query()"). No long arguments.
-- sticky1 and sticky2 are <= 7 words each.
-
-Return a single JSON object with EXACTLY these keys:
-{{
-  "topic": "the evergreen concept title, plain text",
-  "headline_line1_pre": "text before the highlighted word, e.g. 'How '",
-  "headline_line1_hl": "the ONE highlighted word, e.g. 'RAG'",
-  "headline_line1_post": "text after it on line 1 (may be empty)",
-  "headline_line2": "the second headline line (blue)",
-  "sub_pre": "short lead, e.g. 'A Query Travels Through'",
-  "sub_num": "3",
-  "sub_post": "e.g. 'Stages'",
-  "stages": [
-    {{"title": "<=22 chars", "subtitle": "<=30 chars", "icon": "one of the icons", "arrow_note": "1-3 words"}},
-    {{"title": "<=22 chars", "subtitle": "<=30 chars", "icon": "one of the icons", "arrow_note": "1-3 words"}},
-    {{"title": "<=22 chars", "subtitle": "<=30 chars", "icon": "one of the icons", "arrow_note": ""}}
-  ],
-  "explainers": [
-    {{"tag": "short heading", "body": "1-2 sentences, may use <span class='k1'> and <b>"}},
-    {{"tag": "short heading", "body": "1-2 sentences, may use <span class='k2'> and <b>"}},
-    {{"tag": "short heading", "body": "1-2 sentences, may use <span class='k3'> and <b>"}}
-  ],
-  "sticky1": "short aha note, use <b> for the key word",
-  "terminal_cmd": "short CLI command",
-  "sticky2": "short aha note, use <b> for the key word",
-  "quote_main": "a punchy fact, use <span class='n'> for a number and <span class='h'> for highlight",
-  "quote_sub": "one supporting line",
-  "handle": "{handle}"
-}}"""
-
-_REQUIRED_KEYS = [
-    "topic", "headline_line1_pre", "headline_line1_hl", "headline_line1_post",
-    "headline_line2", "sub_pre", "sub_num", "sub_post", "stages", "explainers",
-    "sticky1", "terminal_cmd", "sticky2", "quote_main", "quote_sub", "handle",
-]
-
 
 def _parse_json(raw: str) -> dict:
     cleaned = raw.strip()
@@ -139,72 +56,33 @@ def _parse_json(raw: str) -> dict:
     return json.loads(cleaned)
 
 
-def _coerce(data: dict) -> dict:
-    """Fix structural issues so render.py never crashes."""
-    stages = data.get("stages") or []
-    while len(stages) < 3:
-        stages.append({"title": "", "subtitle": "", "icon": "file", "arrow_note": ""})
-    stages = stages[:3]
-    for i, st in enumerate(stages):
-        st.setdefault("title", "")
-        st.setdefault("subtitle", "")
-        icon = st.get("icon", "file")
-        st["icon"] = icon if icon in ICON_NAMES else "file"
-        st["arrow_note"] = "" if i == 2 else st.get("arrow_note", "")
-    data["stages"] = stages
-
-    exps = data.get("explainers") or []
-    while len(exps) < 3:
-        exps.append({"tag": "", "body": ""})
-    for ex in exps:
-        ex.setdefault("tag", "")
-        ex.setdefault("body", "")
-    data["explainers"] = exps[:3]
-
-    data["sub_num"] = str(data.get("sub_num", "3"))
-    data["handle"] = INFOGRAPHIC_HANDLE
-    data["portfolio"] = PORTFOLIO_URL   # deterministic; never model-generated
-    for key in _REQUIRED_KEYS:
-        data.setdefault(key, "")
-    return data
-
-
 def generate_infographic_content(research: str, topic: str, generate_text_fn,
-                                 post: str = "", style_key: str = "style1") -> dict:
-    """Build validated infographic content JSON, reusing the text-gen chain.
+                                 post: str = "", image_template: str = "three_stage_flow") -> dict:
+    """Build validated infographic content JSON for the given image_template,
+    reusing the text-gen chain.
 
     generate_text_fn(prompt, system) -> str   (the Gemini/Euron chain from main)
 
-    `post` + `style_key` align the image to the post: same core solution/concept,
-    same style framing, so the infographic and the text tell one story.
+    `post` aligns the image to the post: same core solution/concept, so the
+    infographic and the text tell one story.
     """
-    # Build the alignment block only when we have the post to mirror.
-    alignment = ""
-    if (post or "").strip():
-        framing = _STYLE_FRAMING.get(style_key, _STYLE_FRAMING["style1"])
-        alignment = (
-            "\nTHE POST THIS IMAGE ACCOMPANIES — build the infographic around the SAME "
-            "core solution/concept it centers on, so image and text match:\n"
-            f"\"\"\"\n{post.strip()[:900]}\n\"\"\"\n"
-            f"STYLE ALIGNMENT: {framing}\n"
-        )
+    if image_template not in templates.TEMPLATE_SPECS:
+        raise ValueError(f"Unknown image_template '{image_template}' — must be one of {list(templates.TEMPLATE_SPECS)}")
+    spec = templates.TEMPLATE_SPECS[image_template]
+    prompt = templates.build_prompt(image_template, topic, research, post)
 
-    prompt = _USER_TEMPLATE.format(
-        topic=topic,
-        research=(research or "").strip()[:5500] or topic,
-        alignment=alignment,
-        icons=", ".join(ICON_NAMES),
-        handle=INFOGRAPHIC_HANDLE,
-    )
     last_err = ""
     for attempt in range(1, 3):  # one retry
         user = prompt if attempt == 1 else prompt + f"\n\nPREVIOUS ATTEMPT FAILED: {last_err}\nReturn corrected JSON only."
-        raw = generate_text_fn(user, _SYSTEM)
+        raw = generate_text_fn(user, spec["system"])
         try:
-            data = _coerce(_parse_json(raw))
-            print(f"  [Infographic] Content ready — topic: {data.get('topic', '?')}")
+            data = spec["coerce"](_parse_json(raw))
+            data["handle"] = INFOGRAPHIC_HANDLE
+            data["portfolio"] = PORTFOLIO_URL   # deterministic; never model-generated
+            data["_template_name"] = image_template
+            print(f"  [Infographic] Content ready — template: {image_template}")
             return data
-        except (json.JSONDecodeError, KeyError, TypeError) as exc:
+        except (json.JSONDecodeError, KeyError, TypeError, ValueError) as exc:
             last_err = f"{type(exc).__name__}: {exc}"
             print(f"  [Infographic] Content parse failed (attempt {attempt}): {last_err}")
     raise RuntimeError(f"Infographic content generation failed: {last_err}")
