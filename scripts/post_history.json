@@ -16,5 +16,20 @@
     "flagged_claims": [],
     "reply_seed": "I usually try 'lost in the middle' evaluations, hiding a specific fact deep in the context and seeing if the model can retrieve it.",
     "buffer_post_id": "6a8bdeeaa3b8277a83a69859"
+  },
+  {
+    "timestamp": "2026-08-24T10:08:40.723286+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "Agentic AI demos can feel magical, but production systems are far more grounded.",
+    "closing_line": "It also logs every single action, which lets you track everything that happens.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "tag": "#AgenticAI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "Definitely the input validation and sanitization module.",
+    "buffer_post_id": "6a8c182820501c33dcab52e3"
   }
 ]
