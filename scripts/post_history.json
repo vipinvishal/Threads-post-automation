@@ -52,5 +52,25 @@
     ],
     "reply_seed": "For me, it's been the cold start time for spinning up different models on demand. The routing decision is fast, but the model load can kill the latency gains.",
     "buffer_post_id": "6a8c6bedffbcab8042c733fd"
+  },
+  {
+    "timestamp": "2026-08-25T05:59:28.209158+00:00",
+    "weekday_ist": 1,
+    "format": "hot_take",
+    "hook": "Nvidia's new Groq 3 LPX system just dropped its first benchmarks.",
+    "closing_line": "Keep in mind, though, this was for a 100,000-token input context, specifically targeting agentic use cases.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "3,400 tokens/second",
+      "4x faster",
+      "100,000-token input context",
+      "Gemma 4 31B"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Honestly, rarely. Most of my agentic loops are few-shot and keep context under 10k tokens, unless it's a deep dive RAG process.",
+    "buffer_post_id": "6a8d2f4066730ba07948712a"
   }
 ]
