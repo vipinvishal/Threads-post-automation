@@ -72,5 +72,24 @@
     "flagged_claims": [],
     "reply_seed": "Honestly, rarely. Most of my agentic loops are few-shot and keep context under 10k tokens, unless it's a deep dive RAG process.",
     "buffer_post_id": "6a8d2f4066730ba07948712a"
+  },
+  {
+    "timestamp": "2026-08-25T09:57:50.102009+00:00",
+    "weekday_ist": 1,
+    "format": "hot_take",
+    "hook": "3,400 output tokens/second on 100K context.",
+    "closing_line": "How much faster does this make your multi-step agent workflows feel, in practice?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "3,400 output tokens/second",
+      "100K context",
+      "Gemma 4 31B"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "For a complex code generation agent with multiple tools, I'd expect query-response latency to drop from minutes to seconds, making it feel interactive.",
+    "buffer_post_id": "6a8d671d857ac733a73072b0"
   }
 ]
