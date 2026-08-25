@@ -91,5 +91,25 @@
     "flagged_claims": [],
     "reply_seed": "For a complex code generation agent with multiple tools, I'd expect query-response latency to drop from minutes to seconds, making it feel interactive.",
     "buffer_post_id": "6a8d671d857ac733a73072b0"
+  },
+  {
+    "timestamp": "2026-08-25T16:09:03.882351+00:00",
+    "weekday_ist": 1,
+    "format": "hot_take",
+    "hook": "IBM's new Granite Speech 5.0 claims 20x faster transcription than its predecessors.",
+    "closing_line": "But does that raw speed come at the cost of accuracy for nuanced, mixed-language Indian audio?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "tag": "#AI",
+    "numeric_claims": [
+      "20x",
+      "5.0",
+      "12.5",
+      "50"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "My gut says the current approach struggles with code-switching or regional accents where context from a language model is crucial.",
+    "buffer_post_id": "6a8dbe1f611e4930d2d0a994"
   }
 ]
