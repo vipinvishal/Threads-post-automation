@@ -126,5 +126,20 @@
     "flagged_claims": [],
     "reply_seed": "For me, it was realizing how much state management and tool-use logic I needed outside the LLM itself.",
     "buffer_post_id": "6a8e814699f3f7567bc5a4a6"
+  },
+  {
+    "timestamp": "2026-08-26T10:03:43.445796+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "Debugging LLM outputs is a whole new ballgame.",
+    "closing_line": "So, how are you all approaching repeatable tests for agentic workflows?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#AgenticAI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "For simple RAG chains, I capture prompt/response pairs as golden sets. But for multi-step agents, I'm still mostly relying on manual spot checks.",
+    "buffer_post_id": "6a8eb9ff07fc773e52c71a86"
   }
 ]
