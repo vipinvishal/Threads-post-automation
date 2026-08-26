@@ -111,5 +111,20 @@
     "flagged_claims": [],
     "reply_seed": "My gut says the current approach struggles with code-switching or regional accents where context from a language model is crucial.",
     "buffer_post_id": "6a8dbe1f611e4930d2d0a994"
+  },
+  {
+    "timestamp": "2026-08-26T06:01:42.858456+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "My first AI agent felt like throwing prompts at a wall.",
+    "closing_line": "The real work \u2014 and the real solutions \u2014 live in the orchestration layer, memory management, and tool integration, not just prompt tweaks.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#AgenticAI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "For me, it was realizing how much state management and tool-use logic I needed outside the LLM itself.",
+    "buffer_post_id": "6a8e814699f3f7567bc5a4a6"
   }
 ]
