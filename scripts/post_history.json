@@ -141,5 +141,26 @@
     "flagged_claims": [],
     "reply_seed": "For simple RAG chains, I capture prompt/response pairs as golden sets. But for multi-step agents, I'm still mostly relying on manual spot checks.",
     "buffer_post_id": "6a8eb9ff07fc773e52c71a86"
+  },
+  {
+    "timestamp": "2026-08-26T16:36:26.520078+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "I thought building an agent was all about the prompt.",
+    "closing_line": "It's never just \"LLM + prompt\"; it's always an entire system. For those who've built one, what part of the agent infrastructure surprised you most?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "20% LLM",
+      "80% glue code"
+    ],
+    "flagged_claims": [
+      "20% LLM",
+      "80% glue code"
+    ],
+    "reply_seed": "For me, persistent memory that actually worked across multiple turns without blowing up context windows or becoming irrelevant. Way harder than I expected.",
+    "buffer_post_id": "6a8f160a82a386cc15a1dade"
   }
 ]
