@@ -162,5 +162,24 @@
     ],
     "reply_seed": "For me, persistent memory that actually worked across multiple turns without blowing up context windows or becoming irrelevant. Way harder than I expected.",
     "buffer_post_id": "6a8f160a82a386cc15a1dade"
+  },
+  {
+    "timestamp": "2026-08-27T16:39:46.875130+00:00",
+    "weekday_ist": 3,
+    "format": "india_cost",
+    "hook": "How much does your AI API bill really sting at the end of the month?",
+    "closing_line": "What's the smallest setup you've seen where API costs actually started to sting?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "tag": "#CloudComputing",
+    "numeric_claims": [
+      "1250",
+      "10000",
+      "3800"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "For me, anything above \u20b9500/month for a side project means I start looking hard at cheaper alternatives or self-hosting.",
+    "buffer_post_id": "6a906852f2b07e9a8f5cd6c9"
   }
 ]
