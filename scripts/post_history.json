@@ -202,5 +202,20 @@
     "flagged_claims": [],
     "reply_seed": "Honestly, for almost all LLM RAG use cases, 'good enough' approximation is perfectly fine. The latency reduction is usually worth it.",
     "buffer_post_id": "6a90d6df131acc54dbed0fa7"
+  },
+  {
+    "timestamp": "2026-08-28T17:39:57.767322+00:00",
+    "weekday_ist": 4,
+    "format": "mechanism_explainer",
+    "hook": "Eyeballing RAG answers for hallucinations is a losing battle.",
+    "closing_line": "Which Ragas metric was the first to really click for you when you were building something?",
+    "matched_patterns": [],
+    "cta_included": true,
+    "image_template": "before_after",
+    "tag": "#AgenticAI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "For me, it was 'Context Precision'. Understanding if my retriever *actually* pulled relevant info, not just top-k documents, was key.",
+    "buffer_post_id": "6a91c7edb0dda7f6a64c1470"
   }
 ]
