@@ -217,5 +217,22 @@
     "flagged_claims": [],
     "reply_seed": "For me, it was 'Context Precision'. Understanding if my retriever *actually* pulled relevant info, not just top-k documents, was key.",
     "buffer_post_id": "6a91c7edb0dda7f6a64c1470"
+  },
+  {
+    "timestamp": "2026-08-28T20:57:48.065502+00:00",
+    "weekday_ist": 5,
+    "format": "quote_react",
+    "hook": "MIT license on Z.ai's GLM-5.3-Flash? Good news for control, less so for wallets.",
+    "closing_line": "What does it actually take to make a model accessible at our scale?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#CloudComputing",
+    "numeric_claims": [
+      "306 GiB"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Definitely. I've been burned by 'open source' models that needed A100s for basic inference. Quantized builds are the only practical path for many.",
+    "buffer_post_id": "6a91f64b3388586634645edf"
   }
 ]
