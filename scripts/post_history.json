@@ -181,5 +181,26 @@
     "flagged_claims": [],
     "reply_seed": "For me, anything above \u20b9500/month for a side project means I start looking hard at cheaper alternatives or self-hosting.",
     "buffer_post_id": "6a906852f2b07e9a8f5cd6c9"
+  },
+  {
+    "timestamp": "2026-08-28T00:31:27.295644+00:00",
+    "weekday_ist": 4,
+    "format": "mechanism_explainer",
+    "hook": "Vector databases aren't just 'smart search'.",
+    "closing_line": "That speed, of course, means approximation. If you really need exact similarity on small, low-dimension data, plain SQL is often both faster and much simpler.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "tag": "#AI",
+    "numeric_claims": [
+      "O(N)",
+      "1536-dim",
+      "O(log N)",
+      "60,000x faster",
+      "1M vectors"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Honestly, for almost all LLM RAG use cases, 'good enough' approximation is perfectly fine. The latency reduction is usually worth it.",
+    "buffer_post_id": "6a90d6df131acc54dbed0fa7"
   }
 ]
