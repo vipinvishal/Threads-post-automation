@@ -234,5 +234,43 @@
     "flagged_claims": [],
     "reply_seed": "Definitely. I've been burned by 'open source' models that needed A100s for basic inference. Quantized builds are the only practical path for many.",
     "buffer_post_id": "6a91f64b3388586634645edf"
+  },
+  {
+    "timestamp": "2026-08-29T00:04:32.497543+00:00",
+    "weekday_ist": 5,
+    "format": "quote_react",
+    "hook": "The real story here isn't just about model scale, it's about hardware ingenuity.",
+    "closing_line": "Prefill-Decode separation and specialized kernels really demonstrate how architecture can overcome per-card spec differences. It's not simply about raw TFLOPS.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#AI",
+    "numeric_claims": [
+      "320-billion-total-parameter",
+      "18 billion active parameters",
+      "386 gigabytes (GB)",
+      "eight-GPU server",
+      "three-fold reduction",
+      "4.4-fold reduction",
+      "one-million-token context window",
+      "2019 (Huawei Entity List)",
+      "2019 (Hygon Entity List)",
+      "2023 (Moore Threads Entity List)",
+      "1,000 teraflops (TFLOPS)",
+      "80 GB",
+      "1.6 terabytes per second (TB/s)",
+      "784 GB/s",
+      "August 21, 2026",
+      "August 26",
+      "August 27, 2026",
+      "100,000 domestic chip cluster"
+    ],
+    "flagged_claims": [
+      "August 26",
+      "August 27, 2026",
+      "100,000 domestic chip cluster"
+    ],
+    "reply_seed": "I think custom kernel development will always be needed for bleeding-edge architectures, but core patterns will eventually be upstreamed into frameworks like Triton, making it more accessible for builders.",
+    "buffer_post_id": "6a922210aa187a14a5e59c45"
   }
 ]
