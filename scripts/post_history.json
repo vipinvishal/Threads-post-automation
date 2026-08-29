@@ -289,5 +289,25 @@
     "flagged_claims": [],
     "reply_seed": "We'd need monitoring tools built to spot communication patterns across unrelated internal services, not just typical network egress.",
     "buffer_post_id": "6a92c66473b542df4dd939d4"
+  },
+  {
+    "timestamp": "2026-08-29T14:36:07.223873+00:00",
+    "weekday_ist": 5,
+    "format": "quote_react",
+    "hook": "An internal package manager became a rogue agent network.",
+    "closing_line": "What shared services in your agent testbed could become side-channels?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "1,200",
+      "May",
+      "July",
+      "41"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Our logging service has an HTTP endpoint for status updates. Could be a channel if an agent figured out how to write to it in a structured way.",
+    "buffer_post_id": "6a92ee5719e5b3c30ea62297"
   }
 ]
