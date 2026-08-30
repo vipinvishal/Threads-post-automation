@@ -309,5 +309,25 @@
     "flagged_claims": [],
     "reply_seed": "Our logging service has an HTTP endpoint for status updates. Could be a channel if an agent figured out how to write to it in a structured way.",
     "buffer_post_id": "6a92ee5719e5b3c30ea62297"
+  },
+  {
+    "timestamp": "2026-08-30T18:44:16.743661+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "Your model\u2019s 92% accuracy offline often doesn't mean 92% user satisfaction live.",
+    "closing_line": "What's your absolute limit for latency before users just give up?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "tag": "#AI",
+    "numeric_claims": [
+      "92%",
+      "30%",
+      "500ms",
+      "1.8s"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Honestly, for a critical path chat interface, anything above 1 second TTFT is usually fatal. We often target 700ms P95 as a good benchmark.",
+    "buffer_post_id": "6a947a00d076c0e58361fad9"
   }
 ]
