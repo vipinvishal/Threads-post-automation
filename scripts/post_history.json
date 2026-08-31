@@ -347,5 +347,22 @@
     "flagged_claims": [],
     "reply_seed": "For me, small matrix multiplications or element-wise ops often hit the memory wall way before maxing out compute.",
     "buffer_post_id": "6a95697bb3d74210b0330b19"
+  },
+  {
+    "timestamp": "2026-08-31T17:09:16.137063+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "Unit tests are simple: input, check output. Agent evals? That's a different game.",
+    "closing_line": "Otherwise, you're just guessing if your agent improved or got worse with new changes. What's a surprising scenario you've hit in an agent eval?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "three_stage_flow",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "Opus 4.5"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "One time, an agent got stuck in an infinite loop calling a calculator tool, but the eval only checked the final output, not the intermediate steps, so it just timed out without giving useful debugging info.",
+    "buffer_post_id": "6a95b53c73f619a586fda2e2"
   }
 ]
