@@ -1,0 +1,368 @@
+[
+  {
+    "timestamp": "2026-08-24T06:04:26.917265+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "That massive context window number? It's often misunderstood.",
+    "closing_line": "So, how do you usually test if your model is really using all the context you feed it?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "tag": "#AI",
+    "numeric_claims": [
+      "token 700,000",
+      "token 700"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "I usually try 'lost in the middle' evaluations, hiding a specific fact deep in the context and seeing if the model can retrieve it.",
+    "buffer_post_id": "6a8bdeeaa3b8277a83a69859"
+  },
+  {
+    "timestamp": "2026-08-24T10:08:40.723286+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "Agentic AI demos can feel magical, but production systems are far more grounded.",
+    "closing_line": "It also logs every single action, which lets you track everything that happens.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "tag": "#AgenticAI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "Definitely the input validation and sanitization module.",
+    "buffer_post_id": "6a8c182820501c33dcab52e3"
+  },
+  {
+    "timestamp": "2026-08-24T16:06:05.743229+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "Trying to make one LLM faster can actually slow down your *entire* AI system.",
+    "closing_line": "So, when you've tried to scale AI inference beyond a single model, what's been your biggest bottleneck?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "tag": "#AI",
+    "numeric_claims": [
+      "slower system",
+      "overpaying",
+      "reduced overall latency"
+    ],
+    "flagged_claims": [
+      "reduced overall latency"
+    ],
+    "reply_seed": "For me, it's been the cold start time for spinning up different models on demand. The routing decision is fast, but the model load can kill the latency gains.",
+    "buffer_post_id": "6a8c6bedffbcab8042c733fd"
+  },
+  {
+    "timestamp": "2026-08-25T05:59:28.209158+00:00",
+    "weekday_ist": 1,
+    "format": "hot_take",
+    "hook": "Nvidia's new Groq 3 LPX system just dropped its first benchmarks.",
+    "closing_line": "Keep in mind, though, this was for a 100,000-token input context, specifically targeting agentic use cases.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "3,400 tokens/second",
+      "4x faster",
+      "100,000-token input context",
+      "Gemma 4 31B"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Honestly, rarely. Most of my agentic loops are few-shot and keep context under 10k tokens, unless it's a deep dive RAG process.",
+    "buffer_post_id": "6a8d2f4066730ba07948712a"
+  },
+  {
+    "timestamp": "2026-08-25T09:57:50.102009+00:00",
+    "weekday_ist": 1,
+    "format": "hot_take",
+    "hook": "3,400 output tokens/second on 100K context.",
+    "closing_line": "How much faster does this make your multi-step agent workflows feel, in practice?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "3,400 output tokens/second",
+      "100K context",
+      "Gemma 4 31B"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "For a complex code generation agent with multiple tools, I'd expect query-response latency to drop from minutes to seconds, making it feel interactive.",
+    "buffer_post_id": "6a8d671d857ac733a73072b0"
+  },
+  {
+    "timestamp": "2026-08-25T16:09:03.882351+00:00",
+    "weekday_ist": 1,
+    "format": "hot_take",
+    "hook": "IBM's new Granite Speech 5.0 claims 20x faster transcription than its predecessors.",
+    "closing_line": "But does that raw speed come at the cost of accuracy for nuanced, mixed-language Indian audio?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "tag": "#AI",
+    "numeric_claims": [
+      "20x",
+      "5.0",
+      "12.5",
+      "50"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "My gut says the current approach struggles with code-switching or regional accents where context from a language model is crucial.",
+    "buffer_post_id": "6a8dbe1f611e4930d2d0a994"
+  },
+  {
+    "timestamp": "2026-08-26T06:01:42.858456+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "My first AI agent felt like throwing prompts at a wall.",
+    "closing_line": "The real work \u2014 and the real solutions \u2014 live in the orchestration layer, memory management, and tool integration, not just prompt tweaks.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#AgenticAI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "For me, it was realizing how much state management and tool-use logic I needed outside the LLM itself.",
+    "buffer_post_id": "6a8e814699f3f7567bc5a4a6"
+  },
+  {
+    "timestamp": "2026-08-26T10:03:43.445796+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "Debugging LLM outputs is a whole new ballgame.",
+    "closing_line": "So, how are you all approaching repeatable tests for agentic workflows?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#AgenticAI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "For simple RAG chains, I capture prompt/response pairs as golden sets. But for multi-step agents, I'm still mostly relying on manual spot checks.",
+    "buffer_post_id": "6a8eb9ff07fc773e52c71a86"
+  },
+  {
+    "timestamp": "2026-08-26T16:36:26.520078+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "I thought building an agent was all about the prompt.",
+    "closing_line": "It's never just \"LLM + prompt\"; it's always an entire system. For those who've built one, what part of the agent infrastructure surprised you most?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "20% LLM",
+      "80% glue code"
+    ],
+    "flagged_claims": [
+      "20% LLM",
+      "80% glue code"
+    ],
+    "reply_seed": "For me, persistent memory that actually worked across multiple turns without blowing up context windows or becoming irrelevant. Way harder than I expected.",
+    "buffer_post_id": "6a8f160a82a386cc15a1dade"
+  },
+  {
+    "timestamp": "2026-08-27T16:39:46.875130+00:00",
+    "weekday_ist": 3,
+    "format": "india_cost",
+    "hook": "How much does your AI API bill really sting at the end of the month?",
+    "closing_line": "What's the smallest setup you've seen where API costs actually started to sting?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "tag": "#CloudComputing",
+    "numeric_claims": [
+      "1250",
+      "10000",
+      "3800"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "For me, anything above \u20b9500/month for a side project means I start looking hard at cheaper alternatives or self-hosting.",
+    "buffer_post_id": "6a906852f2b07e9a8f5cd6c9"
+  },
+  {
+    "timestamp": "2026-08-28T00:31:27.295644+00:00",
+    "weekday_ist": 4,
+    "format": "mechanism_explainer",
+    "hook": "Vector databases aren't just 'smart search'.",
+    "closing_line": "That speed, of course, means approximation. If you really need exact similarity on small, low-dimension data, plain SQL is often both faster and much simpler.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "tag": "#AI",
+    "numeric_claims": [
+      "O(N)",
+      "1536-dim",
+      "O(log N)",
+      "60,000x faster",
+      "1M vectors"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Honestly, for almost all LLM RAG use cases, 'good enough' approximation is perfectly fine. The latency reduction is usually worth it.",
+    "buffer_post_id": "6a90d6df131acc54dbed0fa7"
+  },
+  {
+    "timestamp": "2026-08-28T17:39:57.767322+00:00",
+    "weekday_ist": 4,
+    "format": "mechanism_explainer",
+    "hook": "Eyeballing RAG answers for hallucinations is a losing battle.",
+    "closing_line": "Which Ragas metric was the first to really click for you when you were building something?",
+    "matched_patterns": [],
+    "cta_included": true,
+    "image_template": "before_after",
+    "tag": "#AgenticAI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "For me, it was 'Context Precision'. Understanding if my retriever *actually* pulled relevant info, not just top-k documents, was key.",
+    "buffer_post_id": "6a91c7edb0dda7f6a64c1470"
+  },
+  {
+    "timestamp": "2026-08-28T20:57:48.065502+00:00",
+    "weekday_ist": 5,
+    "format": "quote_react",
+    "hook": "MIT license on Z.ai's GLM-5.3-Flash? Good news for control, less so for wallets.",
+    "closing_line": "What does it actually take to make a model accessible at our scale?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#CloudComputing",
+    "numeric_claims": [
+      "306 GiB"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Definitely. I've been burned by 'open source' models that needed A100s for basic inference. Quantized builds are the only practical path for many.",
+    "buffer_post_id": "6a91f64b3388586634645edf"
+  },
+  {
+    "timestamp": "2026-08-29T00:04:32.497543+00:00",
+    "weekday_ist": 5,
+    "format": "quote_react",
+    "hook": "The real story here isn't just about model scale, it's about hardware ingenuity.",
+    "closing_line": "Prefill-Decode separation and specialized kernels really demonstrate how architecture can overcome per-card spec differences. It's not simply about raw TFLOPS.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#AI",
+    "numeric_claims": [
+      "320-billion-total-parameter",
+      "18 billion active parameters",
+      "386 gigabytes (GB)",
+      "eight-GPU server",
+      "three-fold reduction",
+      "4.4-fold reduction",
+      "one-million-token context window",
+      "2019 (Huawei Entity List)",
+      "2019 (Hygon Entity List)",
+      "2023 (Moore Threads Entity List)",
+      "1,000 teraflops (TFLOPS)",
+      "80 GB",
+      "1.6 terabytes per second (TB/s)",
+      "784 GB/s",
+      "August 21, 2026",
+      "August 26",
+      "August 27, 2026",
+      "100,000 domestic chip cluster"
+    ],
+    "flagged_claims": [
+      "August 26",
+      "August 27, 2026",
+      "100,000 domestic chip cluster"
+    ],
+    "reply_seed": "I think custom kernel development will always be needed for bleeding-edge architectures, but core patterns will eventually be upstreamed into frameworks like Triton, making it more accessible for builders.",
+    "buffer_post_id": "6a922210aa187a14a5e59c45"
+  },
+  {
+    "timestamp": "2026-08-29T11:45:41.239635+00:00",
+    "weekday_ist": 5,
+    "format": "quote_react",
+    "hook": "The Hugging Face breach report from OpenAI points to a scary detail.",
+    "closing_line": "What happens when our dev environments become attack vectors?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "1200"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "We'd need monitoring tools built to spot communication patterns across unrelated internal services, not just typical network egress.",
+    "buffer_post_id": "6a92c66473b542df4dd939d4"
+  },
+  {
+    "timestamp": "2026-08-29T14:36:07.223873+00:00",
+    "weekday_ist": 5,
+    "format": "quote_react",
+    "hook": "An internal package manager became a rogue agent network.",
+    "closing_line": "What shared services in your agent testbed could become side-channels?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "1,200",
+      "May",
+      "July",
+      "41"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Our logging service has an HTTP endpoint for status updates. Could be a channel if an agent figured out how to write to it in a structured way.",
+    "buffer_post_id": "6a92ee5719e5b3c30ea62297"
+  },
+  {
+    "timestamp": "2026-08-30T18:44:16.743661+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "Your model\u2019s 92% accuracy offline often doesn't mean 92% user satisfaction live.",
+    "closing_line": "What's your absolute limit for latency before users just give up?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "tag": "#AI",
+    "numeric_claims": [
+      "92%",
+      "30%",
+      "500ms",
+      "1.8s"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Honestly, for a critical path chat interface, anything above 1 second TTFT is usually fatal. We often target 700ms P95 as a good benchmark.",
+    "buffer_post_id": "6a947a00d076c0e58361fad9"
+  },
+  {
+    "timestamp": "2026-08-31T11:46:03.753286+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "When we talk GPU speed, we usually fixate on FLOPs: CUDA or Tensor cores churning out calculations.",
+    "closing_line": "What's interesting is how many LLM operations actually hit that memory wall first.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "tag": "#AI",
+    "numeric_claims": [
+      "165 FLOP/byte",
+      "RTX 4090"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "For me, small matrix multiplications or element-wise ops often hit the memory wall way before maxing out compute.",
+    "buffer_post_id": "6a95697bb3d74210b0330b19"
+  },
+  {
+    "timestamp": "2026-08-31T17:09:16.137063+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "Unit tests are simple: input, check output. Agent evals? That's a different game.",
+    "closing_line": "Otherwise, you're just guessing if your agent improved or got worse with new changes. What's a surprising scenario you've hit in an agent eval?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "three_stage_flow",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "Opus 4.5"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "One time, an agent got stuck in an infinite loop calling a calculator tool, but the eval only checked the final output, not the intermediate steps, so it just timed out without giving useful debugging info.",
+    "buffer_post_id": "6a95b53c73f619a586fda2e2"
+  }
+]
