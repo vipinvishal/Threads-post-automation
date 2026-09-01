@@ -385,5 +385,31 @@
     "flagged_claims": [],
     "reply_seed": "EPD seems overlooked. It's about optimizing the *pipeline*, not just the model structure, which is critical for diverse hardware.",
     "buffer_post_id": "6a96a7277e2f22b3738fbb6b"
+  },
+  {
+    "timestamp": "2026-09-01T18:44:39.570861+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "12,000 database queries per API request. That's what happened when I let an LLM write a backend endpoint from scratch.",
+    "closing_line": "Beyond N+1, what's been your biggest performance headache from AI-generated code?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "annotated_screenshot",
+    "hook_style": "cold_open_stat",
+    "tag": "#AI",
+    "numeric_claims": [
+      "12,000",
+      "94%",
+      "847ms",
+      "$3,100",
+      "$47,000",
+      "three weeks",
+      "3"
+    ],
+    "flagged_claims": [
+      "$3,100"
+    ],
+    "reply_seed": "For me, it was missing indexes entirely. The AI generated a complex query without any CREATE INDEX statements, which killed performance even on small datasets.",
+    "buffer_post_id": "6a971d17aa5ae3a7c6af6115"
   }
 ]
