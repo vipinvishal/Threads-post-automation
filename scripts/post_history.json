@@ -364,5 +364,26 @@
     "flagged_claims": [],
     "reply_seed": "One time, an agent got stuck in an infinite loop calling a calculator tool, but the eval only checked the final output, not the intermediate steps, so it just timed out without giving useful debugging info.",
     "buffer_post_id": "6a95b53c73f619a586fda2e2"
+  },
+  {
+    "timestamp": "2026-09-01T10:21:27.879068+00:00",
+    "weekday_ist": 1,
+    "format": "hot_take",
+    "hook": "Everyone believes NVIDIA GPUs are non-negotiable for competitive AI inference. That's wrong.",
+    "closing_line": "So, will EPD become as critical as MoE for next-gen models?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "hook_style": "contrarian",
+    "tag": "#AI",
+    "numeric_claims": [
+      "11 trillion",
+      "three days",
+      "31%",
+      "100,000"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "EPD seems overlooked. It's about optimizing the *pipeline*, not just the model structure, which is critical for diverse hardware.",
+    "buffer_post_id": "6a96a7277e2f22b3738fbb6b"
   }
 ]
