@@ -3,19 +3,19 @@
   "headline_pre": "The Bug That Cost Me a ",
   "headline_hl": "Weekend",
   "headline_post": "",
-  "terminal_title": "orbitailabs — ingest.py",
+  "terminal_title": "pipeline — ingest.py",
   "terminal_lines": [
-    "[12:03:11] fetching batch (n=500)",
-    "[12:03:14] embedding batch... done",
-    "[12:03:14] ERROR: rate_limit_exceeded (429)",
-    "[12:03:14] retrying in 0s...",
-    "[12:03:14] ERROR: rate_limit_exceeded (429)"
+    "[12:03] fetching batch (n=500)",
+    "[12:03] embedding... done",
+    "[12:03] ERROR: rate_limited",
+    "[12:03] retrying in 0s...",
+    "[12:03] ERROR: rate_limited"
   ],
   "callouts": [
-    {"target_line": 3, "label": "no backoff — retried instantly, every time"},
-    {"target_line": 4, "label": "same call looped for 6 hours straight"}
+    {"target_line": 3, "label": "no backoff, retried instantly"},
+    {"target_line": 4, "label": "looped for 6 hours straight"}
   ],
-  "lesson": "A missing exponential backoff turned one rate limit into a 6-hour outage.",
+  "lesson": "A missing backoff turned one rate limit into a 6-hour outage.",
   "handle": "@vipinailabs",
   "portfolio": "vipin-vishal.onrender.com"
 }

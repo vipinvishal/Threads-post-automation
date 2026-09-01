@@ -1,5 +1,5 @@
 {
-  "topic": "How AWS S3 Actually Stores a File",
+  "_template_name": "three_stage_flow",
   "headline_line1_pre": "How ",
   "headline_line1_hl": "AWS",
   "headline_line1_post": " S3",
@@ -8,19 +8,19 @@
   "sub_num": "3",
   "sub_post": "Stages",
   "stages": [
-    { "title": "You Upload a File", "subtitle": "PUT request to a bucket", "icon": "upload", "arrow_note": "PUT object" },
-    { "title": "Split & Replicated", "subtitle": "Copied across 3+ AZs", "icon": "copies", "arrow_note": "store + index" },
-    { "title": "Stored as Object", "subtitle": "Key + value + metadata", "icon": "database", "arrow_note": "" }
+    { "title": "Upload File", "subtitle": "PUT to a bucket", "icon": "upload", "arrow_note": "PUT" },
+    { "title": "Split & Copy", "subtitle": "Copied 3+ AZs", "icon": "copies", "arrow_note": "index" },
+    { "title": "Stored as Object", "subtitle": "Key + value + meta", "icon": "database", "arrow_note": "" }
   ],
   "explainers": [
-    { "tag": "The Request", "body": "S3 is <span class='k1'>object storage</span>, not a file system. Each upload is a flat <b>key</b>, no real folders." },
-    { "tag": "Durability", "body": "Copies spread across many <span class='k2'>Availability Zones</span> = your data survives disk failures." },
-    { "tag": "Retrieval", "body": "Ask for the <span class='k3'>key</span> and S3 returns the nearest healthy copy. Fast & consistent." }
+    { "tag": "The Request", "body": "S3 is <span class='k1'>object storage</span>, not a file system." },
+    { "tag": "Durability", "body": "Copies span <span class='k2'>many zones</span> — disks can fail safely." },
+    { "tag": "Retrieval", "body": "Ask for the <span class='k3'>key</span>, get the nearest healthy copy." }
   ],
-  "sticky1": "Think of S3 as a giant <b>key-value store!</b>",
+  "sticky1": "Think: giant <b>key-value store!</b>",
   "terminal_cmd": "aws s3 cp",
-  "sticky2": "S3 stores <b>objects, not</b> files in folders!",
-  "quote_main": "S3 is designed for <span class='n'>99.999999999%</span> durability — that's <span class='h'>11 nines.</span>",
-  "quote_sub": "Lose 1 object? It'd take ~10 million years.",
-  "handle": "@VipinAIHub"
+  "sticky2": "<b>Objects</b>, not folders!",
+  "quote_main": "Built for <span class='n'>99.999999999%</span> durability — <span class='h'>11 nines.</span>",
+  "quote_sub": "Losing 1 object takes ~10 million years.",
+  "handle": "@vipinailabs"
 }

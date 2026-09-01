@@ -133,9 +133,9 @@ def pick_topic_for_format(format_key: str) -> str:
 # Sunday is a reply-only day: no research/generation/posting happens at all.
 DAY_ROTATION = {
     0: {"format": "mechanism_explainer", "image_templates": ["three_stage_flow", "before_after"], "cta_eligible": False},  # Mon
-    1: {"format": "hot_take",            "image_templates": ["single_stat_hero"],                  "cta_eligible": False},  # Tue
+    1: {"format": "hot_take",            "image_templates": ["single_stat_hero", "before_after"],  "cta_eligible": False},  # Tue
     2: {"format": "build_log",           "image_templates": ["annotated_screenshot", "none"],      "cta_eligible": False},  # Wed
-    3: {"format": "india_cost",          "image_templates": ["single_stat_hero"],                  "cta_eligible": False},  # Thu
+    3: {"format": "india_cost",          "image_templates": ["single_stat_hero", "before_after"],  "cta_eligible": False},  # Thu
     4: {"format": "mechanism_explainer", "image_templates": ["before_after", "timeline"],           "cta_eligible": True},   # Fri
     5: {"format": "quote_react",         "image_templates": ["none"],                               "cta_eligible": False},  # Sat
     6: None,  # Sun — reply-only day
@@ -172,6 +172,8 @@ VOICE RULES
 3. One idea per post. If you need three sub-points, that's a sign the idea needs a diagram, not more sentences.
 4. End most posts with a real, narrow question the author could actually answer if someone replied — not a rhetorical binary ("X or Y?") unless the format specifically calls for one.
 5. Do not include a follow CTA or a link unless the OUTPUT FORMAT below says this post is flagged for one. When in doubt, leave both out.
+6. Threads does NOT render Markdown — it shows literal characters. NEVER use **bold**, *italic*, _underscore_, or [label](url) link syntax anywhere in "body". Write emphasis through word choice and sentence rhythm, not symbols. If you reference a link, write the bare URL (https://...) as plain text — never as a labeled Markdown link.
+7. Never put a hashtag inside "body". This account uses exactly one native Threads topic tag (see "tag" below), appended after the body automatically — inline hashtags never appear in the post text itself.
 
 OUTPUT FORMAT
 Return JSON only:
@@ -188,8 +190,8 @@ Return JSON only:
 
 FORMAT-SPECIFIC RULES
 - mechanism_explainer: only use image_template "three_stage_flow" or "timeline" if the concept is genuinely sequential. If it's a trade-off or comparison, use "before_after" instead — do not force a 3-step shape onto a 2-sided idea.
-- build_log: first person, present tense, something that actually went wrong or surprised you today while building orbitailabs. image_template should usually be "annotated_screenshot" or "none".
-- hot_take: one stat, one sentence of context, one question. image_template "single_stat_hero" or "none". Keep under 400 characters.
+- build_log: first person, present tense, something that actually went wrong or surprised you today while building your own AI systems/tools. Never invent a project or company name. image_template should usually be "annotated_screenshot" or "none".
+- hot_take: one stat, one sentence of context, one question. image_template "single_stat_hero" for a standalone number, "before_after" if the take is really an old-vs-new comparison. Keep under 400 characters.
 - india_cost: must include an actual ₹ figure or a named Indian cloud/hardware context (RunPod India pricing, AWS Mumbai, a consumer GPU price in India, a comparison to a developer salary). image_template "single_stat_hero" or "before_after".
 - quote_react: written as a reaction to a specific claim (you will be given the source post's text as input) — agree, disagree, or add a missing angle. No image. No CTA.
 """.strip()
@@ -201,21 +203,84 @@ Here's research/context on this topic (may include recent sources — use only w
 LOCKED FORMAT for this post: {format}
 Topic: {topic}
 
+LOCKED HOOK STRUCTURE for this post — the opening line MUST use this structure exactly, so
+consecutive posts never open the same way:
+{hook_style_instruction}
+The first line has to work as a standalone hook if nothing else is read — put the single most
+surprising claim or number in line one, never buried in paragraph two.
+
 {cta_note}
 
 For "image_template", choose ONE of exactly these options (today's allowed set — never pick
 anything outside this list): {image_template_options}
 {extra_context}
 Follow the FORMAT-SPECIFIC RULES for "{format}" from your system prompt exactly, and the VOICE
-RULES throughout. Keep the body tight and Threads-native — short lines, a blank line between
-beats, plain text only, under 500 characters total including any CTA/link (those get appended
-after, so leave room if cta_included is true).
+RULES throughout — including Rules 6 and 7: no Markdown syntax anywhere (no **bold**, no
+[label](url) links — bare URLs only), and no inline hashtags in the body. Keep the body tight
+and Threads-native — short lines, a blank line between beats, plain text only, under 500
+characters total including any CTA/link (those get appended after, so leave room if
+cta_included is true).
 
 Return JSON only, exactly matching the OUTPUT FORMAT keys from your system prompt: format, hook,
 body, cta_included, tag, image_template, numeric_claims, reply_seed.
 """.strip()
 
 POST_REQUIRED_KEYS = ["format", "hook", "body", "cta_included", "tag", "image_template", "numeric_claims", "reply_seed"]
+
+# ── Hook-style rotation (pipeline-assigned, not model-chosen) ─────────────────────
+# Guarantees consecutive posts never open the same way: never repeats the immediately
+# previous post's hook style, and otherwise picks whichever style was used least
+# recently in history (see pick_hook_style / _least_recently_used below).
+HOOK_STYLES = {
+    "contrarian": (
+        "Contrarian hook. Open with the common belief, then flatly reject it: "
+        "\"Everyone does X. That's wrong. Here's why.\" State the belief in a few words, "
+        "say it's wrong in the next line, then explain."
+    ),
+    "cold_open_stat": (
+        "Cold-open stat. Line one is the single most surprising number/fact, with zero "
+        "preamble — no \"so\", no \"here's the thing\", just the number and what it means."
+    ),
+    "story_incident": (
+        "Story/incident hook. Open mid-action with something that actually broke or went "
+        "wrong: \"I broke prod doing X.\" Then give the 30-second root cause."
+    ),
+    "myth_bust": (
+        "Myth-bust hook. Name a term or concept people misuse, then correct it in the same "
+        "breath: \"X doesn't mean what you think it means.\""
+    ),
+    "question_first": (
+        "Question-first hook. Open with the actual question the post answers, then answer it "
+        "below — the question itself must be specific enough to stop the scroll, not generic."
+    ),
+}
+HOOK_STYLE_LABELS = {
+    "contrarian": "Contrarian",
+    "cold_open_stat": "Cold-Open Stat",
+    "story_incident": "Story/Incident",
+    "myth_bust": "Myth-Bust",
+    "question_first": "Question-First",
+}
+
+
+def _least_recently_used(options: list, key: str, history: list, window: int = 8) -> str:
+    """Among `options`, return whichever value of `entry[key]` was used least
+    recently in the trailing `window` history entries (never-used = most eligible)."""
+    recent = history[-window:]
+    last_seen = {}
+    for opt in options:
+        idxs = [i for i, e in enumerate(recent) if e.get(key) == opt]
+        last_seen[opt] = max(idxs) if idxs else -1
+    return min(options, key=lambda o: last_seen[o])
+
+
+def pick_hook_style(history: list) -> str:
+    """Pipeline-assigns today's hook style — never the immediately previous
+    post's style, otherwise whichever style was used least recently."""
+    all_styles = list(HOOK_STYLES)
+    previous = history[-1].get("hook_style") if history else None
+    candidates = [s for s in all_styles if s != previous] or all_styles
+    return _least_recently_used(candidates, "hook_style", history)
 
 NAMED_REPETITIVE_PATTERNS = [
     (r"\bit'?s not [^.!?]{1,40}, it'?s\b", "it's not X, it's Y"),
@@ -649,16 +714,49 @@ def research_claim_to_react_to(niche: str):
 # STEP 2 — Generate post (JSON) + quality gates
 # ══════════════════════════════════════════════════════════════════════════════
 
+MARKDOWN_LINK_RE = re.compile(r'\[([^\]\n]+)\]\((https?://[^\s)]+)\)')
+
+
 def _clean_model_output(text: str) -> str:
-    """Strip wrapping quotes and markdown emphasis markers models sometimes add."""
+    """Strip wrapping quotes and the common Markdown patterns models add —
+    Threads renders none of it, so it must never survive into a posted body.
+    [label](url) links become bare URLs; **bold**/*italic*/_underscore_ pairs
+    are unwrapped to plain text. This is meaning-preserving cleanup, not the
+    validation gate — see find_markdown_violations / force_strip_markdown for
+    the harder guarantee that runs right before a post is allowed out."""
     text = text.strip()
     if text.startswith('"') and text.endswith('"'):
         text = text[1:-1].strip()
     if text.startswith("'") and text.endswith("'"):
         text = text[1:-1].strip()
-    text = re.sub(r'\*{1,3}(.+?)\*{1,3}', r'\1', text)
-    text = re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', text)
+    text = MARKDOWN_LINK_RE.sub(r'\2', text)            # [label](url) -> bare url
+    text = re.sub(r'\*{1,3}(.+?)\*{1,3}', r'\1', text)  # **bold**/*italic* -> plain
+    text = re.sub(r'_{1,2}(.+?)_{1,2}', r'\1', text)    # _italic_/__bold__ -> plain
     return text.strip()
+
+
+def find_markdown_violations(text: str) -> list:
+    """Detect Markdown syntax that must never reach a Threads post — the
+    validation gate generate_post() checks before a draft is allowed to post."""
+    violations = []
+    if MARKDOWN_LINK_RE.search(text):
+        violations.append("markdown link [label](url)")
+    if re.search(r'\*{1,3}[^*\n]+\*{1,3}', text):
+        violations.append("bold/italic *markers*")
+    if re.search(r'(?<!\w)_[^_\n]+_(?!\w)', text):
+        violations.append("underscore _emphasis_ markers")
+    if re.search(r'[*_\[\]]', text):
+        violations.append("stray *, _, [, or ] character")
+    return violations
+
+
+def force_strip_markdown(text: str) -> str:
+    """Last-resort safety net: unconditionally remove any remaining Markdown
+    character, even outside a clean matched pair. Only used after the
+    regenerate-and-recheck loop in generate_post() is exhausted, so a
+    stubborn model can never get literal *, _, [, ] characters onto Threads."""
+    text = MARKDOWN_LINK_RE.sub(r'\2', text)
+    return re.sub(r'[*_\[\]]', '', text).strip()
 
 
 def _parse_json_response(raw: str) -> dict:
@@ -724,21 +822,16 @@ def pick_valid_template(model_choice: str, allowed_options: list, history: list)
     recently. No enforcement when the format only has one valid option."""
     if len(allowed_options) <= 1:
         return allowed_options[0] if allowed_options else model_choice
-    recent = history[-8:]
-    uses = sum(1 for e in recent if e.get("image_template") == model_choice)
+    uses = sum(1 for e in history[-8:] if e.get("image_template") == model_choice)
     if model_choice in allowed_options and uses <= 3:
         return model_choice
-    last_seen = {}
-    for opt in allowed_options:
-        idxs = [i for i, e in enumerate(recent) if e.get("image_template") == opt]
-        last_seen[opt] = max(idxs) if idxs else -1
-    swapped = min(allowed_options, key=lambda o: last_seen[o])
+    swapped = _least_recently_used(allowed_options, "image_template", history)
     print(f"  [TemplateVariety] '{model_choice}' overused/invalid recently — swapping to '{swapped}'.")
     return swapped
 
 
 def generate_post_json(format_key: str, topic: str, research: str, cta_eligible_today: bool,
-                        allowed_templates: list, extra_context: str = "") -> dict:
+                        allowed_templates: list, hook_style: str, extra_context: str = "") -> dict:
     """Call Gemini for the locked format, parse+validate the JSON output contract."""
     cta_note = (
         "This IS today's one CTA-eligible slot. You may set cta_included true if a follow "
@@ -751,6 +844,7 @@ def generate_post_json(format_key: str, topic: str, research: str, cta_eligible_
         research=research[:2500],
         format=format_key,
         topic=topic,
+        hook_style_instruction=HOOK_STYLES[hook_style],
         cta_note=cta_note,
         image_template_options=", ".join(allowed_templates),
         extra_context=("\n" + extra_context if extra_context else ""),
@@ -808,15 +902,17 @@ def build_final_post(body: str, tag: str, topic: str, cta_final: bool) -> tuple:
         body = (truncated[:last_space] if last_space > body_limit * 0.8 else truncated).rstrip(".,;:!?") + "…"
         print(f"  Truncated body to {len(body)} chars.")
 
-    return body + footer, topic_tag
+    # Final unconditional safety net: no path into this function may ever hand
+    # Buffer literal Markdown characters, regardless of which branch ran above.
+    return force_strip_markdown(body) + footer, topic_tag
 
 
 def generate_post(format_key: str, topic: str, research: str, cta_eligible_today: bool,
-                   allowed_templates: list, history: list, extra_context: str = "") -> dict:
+                   allowed_templates: list, history: list, hook_style: str, extra_context: str = "") -> dict:
     """Generate + gate-check one post. Returns everything needed to schedule it
     and to append a history record (see append_history)."""
     print("[ Step 2 ] Generating post with Gemini...")
-    data = generate_post_json(format_key, topic, research, cta_eligible_today, allowed_templates, extra_context)
+    data = generate_post_json(format_key, topic, research, cta_eligible_today, allowed_templates, hook_style, extra_context)
 
     body = _clean_model_output(str(data.get("body", "")))
     if HUMANIZE_POST:
@@ -848,6 +944,32 @@ def generate_post(format_key: str, topic: str, research: str, cta_eligible_today
         if repetitive:
             print(f"  [Repetition] Still flagged after retries — posting anyway. {reason}")
 
+    # Markdown validation gate — Threads renders none of this as literal characters,
+    # so a draft is never allowed to post with it present (item 1 of the fix list:
+    # this is a real "reject and regenerate" gate, not just silent stripping).
+    md_violations = find_markdown_violations(body)
+    if md_violations:
+        print(f"  [Markdown] Draft contains {md_violations} — rejecting, asking model to rewrite in plain text (up to 2 attempts)...")
+        for _ in range(2):
+            md_rewrite_prompt = (
+                f"This post body contains Markdown syntax Threads cannot render — it would show up as "
+                f"literal characters: {', '.join(md_violations)}.\n\n"
+                f"Rewrite it in PLAIN TEXT ONLY: no **bold**, no *italics*, no [label](url) links (use a "
+                f"bare https:// URL instead if a link is truly needed), no stray *, _, [, or ] characters "
+                f"anywhere. Keep the same meaning, structure, and length.\n\n"
+                f"Original post:\n{body}\n\n"
+                f"Output ONLY the corrected plain-text post. Nothing else."
+            )
+            body = _clean_model_output(generate_text(md_rewrite_prompt, POST_SYSTEM_PROMPT))
+            md_violations = find_markdown_violations(body)
+            if not md_violations:
+                break
+        if md_violations:
+            print(f"  [Markdown] Still present after retries ({md_violations}) — force-stripping before this can post.")
+            body = force_strip_markdown(body)
+            hook = body.split("\n")[0].strip() if body else hook
+            closing_line = get_closing_line(body)
+
     matched_patterns = find_matched_patterns(hook + " " + closing_line)
 
     cta_final = bool(data.get("cta_included")) and cta_eligible_today and cta_cap_allows(history)
@@ -855,7 +977,7 @@ def generate_post(format_key: str, topic: str, research: str, cta_eligible_today
 
     post_text, topic_tag = build_final_post(body, str(data.get("tag", "")), topic, cta_final)
 
-    print(f"\n  Generated post ({format_key}):\n  {'─'*50}")
+    print(f"\n  Generated post ({format_key} / {HOOK_STYLE_LABELS.get(hook_style, hook_style)}):\n  {'─'*50}")
     for line in post_text.split("\n"):
         print(f"  {line}")
     print(f"  {'─'*50}")
@@ -874,6 +996,7 @@ def generate_post(format_key: str, topic: str, research: str, cta_eligible_today
         "matched_patterns": matched_patterns,
         "cta_included": cta_final,
         "image_template": image_template,
+        "hook_style": hook_style,
         "tag": topic_tag,
         "numeric_claims": numeric_claims,
         "flagged_claims": flagged_claims,
@@ -1070,6 +1193,7 @@ def append_history(history: list, result: dict, post_id: str, weekday: int) -> l
         "matched_patterns": result["matched_patterns"],
         "cta_included": result["cta_included"],
         "image_template": result["image_template"],
+        "hook_style": result["hook_style"],
         "tag": result["tag"],
         "numeric_claims": result["numeric_claims"],
         "flagged_claims": result["flagged_claims"],
@@ -1115,6 +1239,8 @@ def main(preview: bool = False):
 
     try:
         history = load_history()
+        hook_style = pick_hook_style(history)
+        print(f"  Hook style: {hook_style} — {HOOK_STYLE_LABELS.get(hook_style, hook_style)}\n")
 
         extra_context = ""
         if format_key == "quote_react":
@@ -1126,7 +1252,7 @@ def main(preview: bool = False):
             if format_key == "india_cost":
                 extra_context = "Ground this in a REAL cost figure or a named Indian cloud/hardware context from the research above — never invent one."
 
-        result = generate_post(format_key, topic, research, cta_eligible_today, allowed_templates, history, extra_context)
+        result = generate_post(format_key, topic, research, cta_eligible_today, allowed_templates, history, hook_style, extra_context)
 
         image_ref = None
         if INCLUDE_INFOGRAPHIC and result["image_template"] != "none":

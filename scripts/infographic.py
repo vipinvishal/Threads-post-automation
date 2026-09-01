@@ -33,8 +33,10 @@ _RENDERER   = _REPO_ROOT / "renderer"
 _RENDER_PY  = _RENDERER / "render.py"
 
 # ── Config ──────────────────────────────────────────────────────────────────────
-# Handle shown on the infographic. Change to your brand without touching code,
-# e.g. INFOGRAPHIC_HANDLE="@orbitailabs".
+# Handle shown on the infographic. This is the ONE canonical brand identity for the
+# account — keep it in sync with FOLLOW_CTA in generate_and_schedule.py and never
+# let a different brand name leak into generated content (system prompt, examples,
+# fixtures). Change to your own brand without touching code, e.g. "@yourbrand".
 INFOGRAPHIC_HANDLE = os.environ.get("INFOGRAPHIC_HANDLE", "@vipinailabs")
 # Portfolio URL shown in the infographic footer. Rendered as TEXT inside the PNG
 # (branding) — the clickable version is appended to the post body itself. Displayed

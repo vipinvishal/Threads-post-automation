@@ -4,13 +4,13 @@
   "headline_hl": "AI Agent",
   "headline_post": "",
   "steps": [
-    {"label": "Receive Goal", "detail": "User task hits the planner", "icon": "upload"},
-    {"label": "Pick a Tool", "detail": "Planner selects one action", "icon": "gear"},
-    {"label": "Call Tool", "detail": "Executes against a real API", "icon": "network"},
-    {"label": "Observe Result", "detail": "Output feeds back to planner", "icon": "search"},
-    {"label": "Loop or Stop", "detail": "Repeats until goal is met", "icon": "file"}
+    {"label": "Receive Goal", "detail": "Task hits planner", "icon": "upload"},
+    {"label": "Pick a Tool", "detail": "Selects one action", "icon": "gear"},
+    {"label": "Call Tool", "detail": "Hits a real API", "icon": "network"},
+    {"label": "Observe", "detail": "Result feeds back", "icon": "search"},
+    {"label": "Loop or Stop", "detail": "Until goal is met", "icon": "file"}
   ],
-  "closing_thought": "Most agent failures happen at step 4 — the planner never re-checks a bad result.",
+  "closing_thought": "Most agent failures happen at step 4, not step 2.",
   "handle": "@vipinailabs",
   "portfolio": "vipin-vishal.onrender.com"
 }

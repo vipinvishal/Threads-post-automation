@@ -26,17 +26,17 @@
   .tl-step .stem{ position:absolute; left:50%; width:2.5px; background:var(--ink); transform:translateX(-1px); }
   .tl-step.above .stem{ top:70px; height:70px; }
   .tl-step.below .stem{ top:153px; height:70px; }
-  .tl-step .card{ position:absolute; left:50%; transform:translateX(-50%); width:158px; border:2.5px solid var(--ink);
-    border-radius:14px; padding:12px 14px; text-align:center; background:var(--yellow-note); }
+  .tl-step .card{ position:absolute; left:50%; transform:translateX(-50%); width:172px; border:2.5px solid var(--ink);
+    border-radius:14px; padding:14px 16px; text-align:center; background:var(--yellow-note); }
   .tl-step.above .card{ top:0; }
   .tl-step.below .card{ top:223px; }
   .tl-step .icon{ margin-bottom:4px; display:flex; justify-content:center; }
-  .tl-step .icon svg{ width:26px; height:26px; }
-  .tl-step .label{ font-size:16px; font-weight:700; color:var(--ink); line-height:1.2; }
-  .tl-step .detail{ font-size:13px; color:var(--muted); margin-top:4px; line-height:1.25; }
+  .tl-step .icon svg{ width:30px; height:30px; }
+  .tl-step .label{ font-size:22px; font-weight:700; color:var(--ink); line-height:1.2; }
+  .tl-step .detail{ font-size:18px; color:var(--muted); margin-top:5px; line-height:1.25; }
 
   .closing{ position:relative; margin-top:38px; background:var(--yellow); border:3px solid var(--ink);
-    border-radius:18px; padding:22px 36px; transform:rotate(-.6deg); font-size:22px; font-weight:700; color:var(--ink); }
+    border-radius:18px; padding:22px 36px; transform:rotate(-.6deg); font-size:28px; font-weight:700; color:var(--ink); }
 </style>
 </head>
 <body>
@@ -61,7 +61,7 @@
           <div class="num">{{ loop.index }}</div>
           <div class="card">
             {% if st.icon %}<div class="icon">{{ st.icon | safe }}</div>{% endif %}
-            <div class="label autofit" data-min-size="12" data-max-height="42">{{ st.label }}</div>
+            <div class="label autofit" data-min-size="16" data-max-height="52">{{ st.label }}</div>
             <div class="detail">{{ st.detail }}</div>
           </div>
         </div>

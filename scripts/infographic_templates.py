@@ -61,20 +61,24 @@ infographic. Only use this shape if the concept is genuinely SEQUENTIAL (step 1
 causes step 2 causes step 3) — prefer the underlying mechanism over the headline
 (e.g. a story about a new agent framework -> "How an AI Agent Decides Its Next Action").
 
-HARD RULES
+HARD RULES — SKIMMABLE IN UNDER 2 SECONDS, so every field is short:
 - Topic MUST be about AI / ML systems: models, architecture, training, inference,
   GPUs/infrastructure, RAG, agents, or related systems concepts. Be technically accurate.
 - EXACTLY 3 stages and EXACTLY 3 explainers.
 - Every value concrete and specific — no filler like "AI is powerful".
-- stage.title <= 22 characters. stage.subtitle <= 30 characters, one line.
+- stage.title <= 14 characters, 1-2 words. stage.subtitle <= 20 characters, one short phrase.
 - stage.icon MUST be one of: {icons}
-- arrow_note is a tiny 1-3 word label; the LAST stage's arrow_note MUST be "".
-- explainer.body may use <span class='k1'>..</span>, <span class='k2'>..</span>,
-  <span class='k3'>..</span> to highlight a key term, and <b>..</b> for bold.
-- quote_main may use <span class='n'>NUMBER</span> and <span class='h'>highlight</span>.
+- arrow_note is a tiny 1-2 word label; the LAST stage's arrow_note MUST be "".
+- explainer.body is ONE short sentence, <=70 characters — not two sentences. May use
+  <span class='k1'>..</span>, <span class='k2'>..</span>, <span class='k3'>..</span>
+  to highlight a key term, and <b>..</b> for bold.
+- quote_main is the single most surprising number/fact from the research — this is the
+  large headline-style stat banner, not a body sentence. May use <span class='n'>NUMBER</span>
+  and <span class='h'>highlight</span>.
+- quote_sub <=50 characters, one short supporting line.
 - terminal_cmd is a short, real-looking shell/CLI line, <= 18 chars, ideally
   one token (e.g. "agent.run()", "rag.query()"). No long arguments.
-- sticky1 and sticky2 are <= 7 words each.
+- sticky1 and sticky2 are <= 5 words each.
 
 Return a single JSON object with EXACTLY these keys:
 {{
@@ -86,20 +90,20 @@ Return a single JSON object with EXACTLY these keys:
   "sub_num": "3",
   "sub_post": "e.g. 'Stages'",
   "stages": [
-    {{"title": "<=22 chars", "subtitle": "<=30 chars", "icon": "one of the icons", "arrow_note": "1-3 words"}},
-    {{"title": "<=22 chars", "subtitle": "<=30 chars", "icon": "one of the icons", "arrow_note": "1-3 words"}},
-    {{"title": "<=22 chars", "subtitle": "<=30 chars", "icon": "one of the icons", "arrow_note": ""}}
+    {{"title": "<=14 chars", "subtitle": "<=20 chars", "icon": "one of the icons", "arrow_note": "1-2 words"}},
+    {{"title": "<=14 chars", "subtitle": "<=20 chars", "icon": "one of the icons", "arrow_note": "1-2 words"}},
+    {{"title": "<=14 chars", "subtitle": "<=20 chars", "icon": "one of the icons", "arrow_note": ""}}
   ],
   "explainers": [
-    {{"tag": "short heading", "body": "1-2 sentences, may use <span class='k1'> and <b>"}},
-    {{"tag": "short heading", "body": "1-2 sentences, may use <span class='k2'> and <b>"}},
-    {{"tag": "short heading", "body": "1-2 sentences, may use <span class='k3'> and <b>"}}
+    {{"tag": "short heading", "body": "ONE short sentence <=70 chars, may use <span class='k1'> and <b>"}},
+    {{"tag": "short heading", "body": "ONE short sentence <=70 chars, may use <span class='k2'> and <b>"}},
+    {{"tag": "short heading", "body": "ONE short sentence <=70 chars, may use <span class='k3'> and <b>"}}
   ],
   "sticky1": "short aha note, use <b> for the key word",
   "terminal_cmd": "short CLI command",
   "sticky2": "short aha note, use <b> for the key word",
-  "quote_main": "a punchy fact, use <span class='n'> for a number and <span class='h'> for highlight",
-  "quote_sub": "one supporting line"
+  "quote_main": "the single most surprising number/fact, use <span class='n'> for a number and <span class='h'> for highlight",
+  "quote_sub": "<=50 chars, one supporting line"
 }}"""
 
 _TSF_REQUIRED_KEYS = [
@@ -160,23 +164,21 @@ latency figure, a token price, a percentage) and build a single-stat hero infogr
 around it. The number must come directly from the post or research — never invent or
 estimate one.
 
-HARD RULES
+HARD RULES — SKIMMABLE IN UNDER 2 SECONDS:
 - stat_number is short: <=14 characters (e.g. "₹1,850", "40ms", "$0.002").
 - eyebrow is a short label, <=24 characters, all caps reads well (e.g. "REAL COST CHECK").
-- stat_label <=45 characters, explains what the number is per (e.g. "/month to
-  self-host a 7B model on RunPod").
-- context_lines: 1-2 short sentences of supporting context. May use
-  <span class="n">..</span> for a secondary number and <span class="h">..</span> to
-  highlight a phrase.
-- source_note: a tiny factual footnote, <=70 characters, or "" if nothing to cite.
+- stat_label <=32 characters, explains what the number is per (e.g. "/month, RunPod 7B model").
+- context_lines: exactly 1 short sentence, <=80 characters. May use <span class="n">..</span>
+  for a secondary number and <span class="h">..</span> to highlight a phrase.
+- source_note: a tiny factual footnote, <=50 characters, or "" if nothing to cite.
 
 Return a single JSON object with EXACTLY these keys:
 {{
   "eyebrow": "<=24 chars",
   "stat_number": "<=14 chars",
-  "stat_label": "<=45 chars",
-  "context_lines": ["1-2 short sentences"],
-  "source_note": "<=70 chars or empty string"
+  "stat_label": "<=32 chars",
+  "context_lines": ["exactly 1 short sentence, <=80 chars"],
+  "source_note": "<=50 chars or empty string"
 }}"""
 
 _SSH_REQUIRED_KEYS = ["eyebrow", "stat_number", "stat_label", "context_lines", "source_note"]
@@ -186,7 +188,7 @@ def _coerce_single_stat_hero(data: dict) -> dict:
     lines = data.get("context_lines") or []
     if isinstance(lines, str):
         lines = [lines]
-    data["context_lines"] = [str(l) for l in lines if str(l).strip()][:2] or [""]
+    data["context_lines"] = [str(l) for l in lines if str(l).strip()][:1] or [""]
     for key in _SSH_REQUIRED_KEYS:
         data.setdefault(key, "")
     return data
@@ -214,26 +216,33 @@ TASK
 Frame this as a BEFORE/AFTER comparison — without the technique/approach vs with it.
 Only use this shape for a genuine trade-off or comparison (not a sequential process).
 
-HARD RULES
+HARD RULES — SKIMMABLE IN UNDER 2 SECONDS:
 - headline_hl is the ONE highlighted word/phrase in the headline (e.g. the technique name).
-- before_label / after_label: <=20 characters each (e.g. "No KV cache" / "With KV cache").
-- before_points / after_points: 2-3 short, concrete lines each, <=55 characters, no filler.
-- takeaway: one sharp closing sentence, <=110 characters, may use <b>..</b> for emphasis.
+- hero_stat: IF the research/post centers on one standout number (a cost, a speedup, a
+  percentage), put it here as a large headline-style badge, <=10 characters (e.g. "10x",
+  "₹1,200", "40ms") — this is the single most surprising number, not buried in a bullet.
+  hero_stat_label: <=24 chars, what the number means (e.g. "faster than no cache"). Leave
+  both "" if there's no single standout number for this topic — never invent one.
+- before_label / after_label: <=16 characters each (e.g. "No KV cache" / "With KV cache").
+- before_points / after_points: exactly 2 short, concrete lines each, <=32 characters, no filler.
+- takeaway: one sharp closing sentence, <=70 characters, may use <b>..</b> for emphasis.
 
 Return a single JSON object with EXACTLY these keys:
 {{
   "headline_pre": "text before the highlighted word",
   "headline_hl": "the ONE highlighted word/phrase",
   "headline_post": "text after it (may be empty)",
-  "before_label": "<=20 chars",
-  "before_points": ["2-3 short lines"],
-  "after_label": "<=20 chars",
-  "after_points": ["2-3 short lines"],
-  "takeaway": "<=110 chars, may use <b>"
+  "hero_stat": "<=10 chars, or empty string if no standout number",
+  "hero_stat_label": "<=24 chars, or empty string",
+  "before_label": "<=16 chars",
+  "before_points": ["exactly 2 short lines, <=32 chars each"],
+  "after_label": "<=16 chars",
+  "after_points": ["exactly 2 short lines, <=32 chars each"],
+  "takeaway": "<=70 chars, may use <b>"
 }}"""
 
 _BA_REQUIRED_KEYS = [
-    "headline_pre", "headline_hl", "headline_post",
+    "headline_pre", "headline_hl", "headline_post", "hero_stat", "hero_stat_label",
     "before_label", "before_points", "after_label", "after_points", "takeaway",
 ]
 
@@ -243,7 +252,7 @@ def _coerce_before_after(data: dict) -> dict:
         pts = data.get(key) or []
         if isinstance(pts, str):
             pts = [pts]
-        data[key] = [str(p) for p in pts if str(p).strip()][:3]
+        data[key] = [str(p) for p in pts if str(p).strip()][:2]
     for key in _BA_REQUIRED_KEYS:
         data.setdefault(key, "")
     return data
@@ -272,13 +281,13 @@ TASK
 Recreate the moment this build-log post describes as a short terminal/log window (2-5
 lines) with 2-3 hand-drawn callouts pointing at the specific line(s) that show what broke.
 
-HARD RULES
-- terminal_title: a short file/path-like label, <=28 characters (e.g. "orbitailabs/ingest.py").
-- terminal_lines: 2-5 short lines, each <=48 characters, monospace-appropriate (timestamps,
+HARD RULES — SKIMMABLE IN UNDER 2 SECONDS:
+- terminal_title: a short file/path-like label, <=28 characters (e.g. "pipeline/ingest.py"). Never invent a project or company name.
+- terminal_lines: 2-5 short lines, each <=36 characters, monospace-appropriate (timestamps,
   log levels, short commands/output are good).
-- callouts: 2-3 items, each {{"target_line": <0-based index into terminal_lines>, "label": "<=60 chars"}}.
+- callouts: 2-3 items, each {{"target_line": <0-based index into terminal_lines>, "label": "<=40 chars"}}.
   target_line MUST be a valid index into terminal_lines.
-- lesson: one honest closing sentence, <=110 characters, may use <b>..</b> for emphasis.
+- lesson: one honest closing sentence, <=70 characters, may use <b>..</b> for emphasis.
 
 Return a single JSON object with EXACTLY these keys:
 {{
@@ -286,9 +295,9 @@ Return a single JSON object with EXACTLY these keys:
   "headline_hl": "the ONE highlighted word/phrase",
   "headline_post": "text after it (may be empty)",
   "terminal_title": "<=28 chars",
-  "terminal_lines": ["2-5 short lines"],
-  "callouts": [{{"target_line": 0, "label": "<=60 chars"}}],
-  "lesson": "<=110 chars, may use <b>"
+  "terminal_lines": ["2-5 short lines, <=36 chars each"],
+  "callouts": [{{"target_line": 0, "label": "<=40 chars"}}],
+  "lesson": "<=70 chars, may use <b>"
 }}"""
 
 _AS_REQUIRED_KEYS = [
@@ -342,10 +351,10 @@ SOURCES / CONTEXT:
 TASK
 Lay this out as an ordered timeline of 3-5 real milestones/steps.
 
-HARD RULES
-- steps: 3-5 items, each {{"label": "<=22 chars", "detail": "<=40 chars", "icon": "one of the icons"}}.
+HARD RULES — SKIMMABLE IN UNDER 2 SECONDS:
+- steps: 3-5 items, each {{"label": "<=16 chars", "detail": "<=26 chars", "icon": "one of the icons"}}.
 - icon MUST be one of: {icons}
-- closing_thought: one sharp closing sentence, <=110 characters, may use <b>..</b>.
+- closing_thought: one sharp closing sentence, <=70 characters, may use <b>..</b>.
 
 Return a single JSON object with EXACTLY these keys:
 {{
@@ -353,9 +362,9 @@ Return a single JSON object with EXACTLY these keys:
   "headline_hl": "the ONE highlighted word/phrase",
   "headline_post": "text after it (may be empty)",
   "steps": [
-    {{"label": "<=22 chars", "detail": "<=40 chars", "icon": "one of the icons"}}
+    {{"label": "<=16 chars", "detail": "<=26 chars", "icon": "one of the icons"}}
   ],
-  "closing_thought": "<=110 chars, may use <b>"
+  "closing_thought": "<=70 chars, may use <b>"
 }}"""
 
 _TL_REQUIRED_KEYS = ["headline_pre", "headline_hl", "headline_post", "steps", "closing_thought"]

@@ -13,21 +13,29 @@
   .portrait{ width:150px; height:150px; flex:none; border-radius:14px; overflow:hidden; transform:rotate(2deg); }
   .portrait img{ width:100%; height:100%; object-fit:cover; object-position:center top; }
 
-  .cards{ display:flex; align-items:stretch; gap:0; margin-top:64px; position:relative; }
-  .card{ flex:1; border:3px solid; border-radius:20px; padding:26px 28px; min-height:280px; }
+  /* the single most surprising number, as a large headline-style badge —
+     not buried as body text inside a comparison box */
+  .hero-stat-wrap{ margin-top:26px; display:flex; align-items:baseline; gap:18px; }
+  .hero-stat{ font-family:'Caveat',cursive; font-weight:700; font-size:110px; line-height:1; color:var(--ink);
+    background:var(--yellow); padding:6px 28px; border-radius:22px; border:4px solid var(--ink);
+    transform:rotate(-1deg); white-space:nowrap; }
+  .hero-stat-label{ font-size:23px; font-weight:700; color:var(--muted); max-width:260px; }
+
+  .cards{ display:flex; align-items:stretch; gap:0; margin-top:44px; position:relative; }
+  .card{ flex:1; border:3px solid; border-radius:20px; padding:26px 28px; min-height:240px; }
   .card.before{ background:var(--red-fill); border-color:var(--red); transform:rotate(-1.2deg); margin-right:44px; }
   .card.after{ background:var(--green-fill); border-color:var(--green); transform:rotate(1deg); }
-  .card .label{ display:inline-block; font-size:23px; font-weight:700; padding:4px 16px; border-radius:8px; margin-bottom:16px; }
+  .card .label{ display:inline-block; font-size:26px; font-weight:700; padding:4px 16px; border-radius:8px; margin-bottom:18px; }
   .card.before .label{ background:var(--red-band); color:var(--red-dark); }
   .card.after .label{ background:var(--green-band); color:var(--green-dark); }
   .card ul{ list-style:none; }
-  .card li{ font-size:19px; line-height:1.4; color:var(--ink); margin-bottom:12px; padding-left:24px; position:relative; }
+  .card li{ font-size:27px; line-height:1.35; color:var(--ink); margin-bottom:16px; padding-left:26px; position:relative; }
   .card li::before{ content:'\2014'; position:absolute; left:0; color:var(--muted); }
 
   .mid-arrow{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:74px; height:52px; z-index:3; }
 
   .takeaway{ position:relative; margin-top:40px; background:var(--yellow); border:3px solid var(--ink);
-    border-radius:18px; padding:22px 36px; transform:rotate(-.6deg); font-size:23px; font-weight:700; color:var(--ink); }
+    border-radius:18px; padding:22px 36px; transform:rotate(-.6deg); font-size:28px; font-weight:700; color:var(--ink); }
 </style>
 </head>
 <body>
@@ -41,18 +49,25 @@
       <div class="portrait"><img src="data:image/png;base64,{{ portrait_b64 }}"></div>
     </div>
 
+    {% if hero_stat %}
+    <div class="hero-stat-wrap">
+      <div class="hero-stat autofit" data-min-size="40">{{ hero_stat }}</div>
+      <div class="hero-stat-label">{{ hero_stat_label }}</div>
+    </div>
+    {% endif %}
+
     <div class="cards">
       <div class="card before">
         <span class="label">{{ before_label }}</span>
         <ul>
-          {% for pt in before_points %}<li class="autofit" data-min-size="13" data-max-height="60">{{ pt }}</li>{% endfor %}
+          {% for pt in before_points %}<li class="autofit" data-min-size="16" data-max-height="72">{{ pt }}</li>{% endfor %}
         </ul>
       </div>
       <svg class="mid-arrow" viewBox="0 0 74 52"><path d="M4 26 C30 20, 45 32, 62 24" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/><path d="M50 14 C56 18, 60 21, 63 23 C60 27, 56 31, 51 36" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <div class="card after">
         <span class="label">{{ after_label }}</span>
         <ul>
-          {% for pt in after_points %}<li class="autofit" data-min-size="13" data-max-height="60">{{ pt }}</li>{% endfor %}
+          {% for pt in after_points %}<li class="autofit" data-min-size="16" data-max-height="72">{{ pt }}</li>{% endfor %}
         </ul>
       </div>
     </div>
