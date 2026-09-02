@@ -433,5 +433,21 @@
     ],
     "reply_seed": "We've started using OpenTelemetry for tracing across service calls. It helps pinpoint exactly which component adds how much delay in our pipeline.",
     "buffer_post_id": "6a97f144c7542d9459dc577a"
+  },
+  {
+    "timestamp": "2026-09-02T13:45:09.418843+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "OpenAI-compatible API doesn't mean what you think it means.",
+    "closing_line": "What's been the most unexpected infrastructure headache you've run into taking an LLM from dev to prod?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "hook_style": "myth_bust",
+    "tag": "#AI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "Getting logging consistent across the serving layer, the inference engine (Triton), and the actual model output. Debugging silently dropped prompts is a nightmare.",
+    "buffer_post_id": "6a9828652ccce291db72c35f"
   }
 ]
