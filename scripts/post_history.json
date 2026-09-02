@@ -411,5 +411,27 @@
     ],
     "reply_seed": "For me, it was missing indexes entirely. The AI generated a complex query without any CREATE INDEX statements, which killed performance even on small datasets.",
     "buffer_post_id": "6a971d17aa5ae3a7c6af6115"
+  },
+  {
+    "timestamp": "2026-09-02T09:49:56.937242+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "I broke prod when a simple agentic workflow ended up with 1.5 seconds of pure overhead before the LLM even saw the prompt.",
+    "closing_line": "How do you debug cumulative latency in your agentic flows?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "hook_style": "story_incident",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "1.5 seconds",
+      "200-300ms",
+      "5 layers"
+    ],
+    "flagged_claims": [
+      "200-300ms"
+    ],
+    "reply_seed": "We've started using OpenTelemetry for tracing across service calls. It helps pinpoint exactly which component adds how much delay in our pipeline.",
+    "buffer_post_id": "6a97f144c7542d9459dc577a"
   }
 ]
