@@ -449,5 +449,33 @@
     "flagged_claims": [],
     "reply_seed": "Getting logging consistent across the serving layer, the inference engine (Triton), and the actual model output. Debugging silently dropped prompts is a nightmare.",
     "buffer_post_id": "6a9828652ccce291db72c35f"
+  },
+  {
+    "timestamp": "2026-09-02T18:52:21.035278+00:00",
+    "weekday_ist": 3,
+    "format": "india_cost",
+    "hook": "Is self-hosting an 8B LLM on an RTX 4090 cheaper than a managed API like Together AI?",
+    "closing_line": "What kind of monthly token volume do you think makes self-hosting an 8B model actually break even?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "hook_style": "question_first",
+    "tag": "#CloudComputing",
+    "numeric_claims": [
+      "8B",
+      "$0.060",
+      "1M",
+      "RTX 4090",
+      "$0.44/hr",
+      "$0.081",
+      "35%",
+      "4-8 hours/month",
+      "$150/hr",
+      "$600-$1200",
+      "70B"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Honestly, for an 8B model, with a $0.021/1M token difference in raw compute and assuming even $600 in engineering costs, you're looking at needing to process over 28 billion tokens a month to break even. Most low-to-mid volume projects won't hit that.",
+    "buffer_post_id": "6a98706495b9a473db4f50a5"
   }
 ]
