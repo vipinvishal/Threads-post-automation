@@ -497,5 +497,28 @@
     "flagged_claims": [],
     "reply_seed": "Many just look at list price. They don't factor in idle time on a dedicated instance, or the hidden cost of data egress/transfer.",
     "buffer_post_id": "6a9945977e6d6fadb15d7848"
+  },
+  {
+    "timestamp": "2026-09-03T13:41:22.218043+00:00",
+    "weekday_ist": 3,
+    "format": "india_cost",
+    "hook": "\u20b91195.20 a month. That's what it costs to keep a basic AI side project running on a 1 vCPU, 2GB RAM cloud VPS with backups.",
+    "closing_line": "But heads up: this budget only covers your server runtime. For local GPU inference or massive vector stores, you'll need a different setup.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "hook_style": "cold_open_stat",
+    "tag": "#CloudComputing",
+    "numeric_claims": [
+      "1195.20",
+      "1 vCPU",
+      "2 GB RAM",
+      "14.40 USD"
+    ],
+    "flagged_claims": [
+      "1195.20"
+    ],
+    "reply_seed": "I'm running a tiny agent worker that scrapes specific articles and summarizes them using Claude, running on a 512MB RAM instance.",
+    "buffer_post_id": "6a997902aac7e920f1d06373"
   }
 ]
