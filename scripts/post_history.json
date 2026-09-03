@@ -477,5 +477,25 @@
     "flagged_claims": [],
     "reply_seed": "Honestly, for an 8B model, with a $0.021/1M token difference in raw compute and assuming even $600 in engineering costs, you're looking at needing to process over 28 billion tokens a month to break even. Most low-to-mid volume projects won't hit that.",
     "buffer_post_id": "6a98706495b9a473db4f50a5"
+  },
+  {
+    "timestamp": "2026-09-03T10:01:59.243756+00:00",
+    "weekday_ist": 3,
+    "format": "india_cost",
+    "hook": "Everyone does a quick \u20b98,150/hour calculation for an H100 in Mumbai and assumes it's unaffordable. That's wrong. Here's why.",
+    "closing_line": "What's your biggest blind spot when estimating GPU costs?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "hook_style": "contrarian",
+    "tag": "#CloudComputing",
+    "numeric_claims": [
+      "\u20b98,150/hour",
+      "35%",
+      "\u20b923,400"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Many just look at list price. They don't factor in idle time on a dedicated instance, or the hidden cost of data egress/transfer.",
+    "buffer_post_id": "6a9945977e6d6fadb15d7848"
   }
 ]
