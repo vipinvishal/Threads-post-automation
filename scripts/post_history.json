@@ -536,5 +536,26 @@
     "flagged_claims": [],
     "reply_seed": "We're experimenting with vLLM's Prometheus metrics for kv_cache_usage and setting alerts based on a percentage threshold, usually around 85-90% to allow for burstiness.",
     "buffer_post_id": "6a9a94d2daf7c7188fd1916c"
+  },
+  {
+    "timestamp": "2026-09-04T13:37:46.911931+00:00",
+    "weekday_ist": 4,
+    "format": "mechanism_explainer",
+    "hook": "It's tempting to blame the LLM when RAG output goes awry, or to rework the prompt. But get this: 67% of top-20 chunk retrieval failures? Those were fixed by improving retrieval, not the generator. Anthropic even dropped their failure rate from 5.7% to 1.9% just by adding reranking. We're quick to blame the LLM, but often it's just dealing with crummy input.",
+    "closing_line": "So, how do you actually isolate retrieval quality from LLM generation in your RAG pipelines?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "hook_style": "myth_bust",
+    "tag": "#AI",
+    "numeric_claims": [
+      "67%",
+      "5.7%",
+      "1.9%",
+      "100%"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Mostly by using retrieval metrics like MRR or NDCG on a golden dataset. Or just a manual check of retrieved chunks for 10-20 known hard queries before touching the LLM.",
+    "buffer_post_id": "6a9ac9aa276284e541707836"
   }
 ]
