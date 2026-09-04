@@ -520,5 +520,21 @@
     ],
     "reply_seed": "I'm running a tiny agent worker that scrapes specific articles and summarizes them using Claude, running on a 512MB RAM instance.",
     "buffer_post_id": "6a997902aac7e920f1d06373"
+  },
+  {
+    "timestamp": "2026-09-04T09:52:18.384300+00:00",
+    "weekday_ist": 4,
+    "format": "mechanism_explainer",
+    "hook": "I broke prod today assuming high GPU util meant healthy inference. Turns out, KV Cache exhaustion was silently killing throughput, but traditional metrics didn't show it until users complained.",
+    "closing_line": "So, how do you actually keep an eye on KV Cache exhaustion in your LLM deployments before it becomes a problem?",
+    "matched_patterns": [],
+    "cta_included": true,
+    "image_template": "before_after",
+    "hook_style": "story_incident",
+    "tag": "#AI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "We're experimenting with vLLM's Prometheus metrics for kv_cache_usage and setting alerts based on a percentage threshold, usually around 85-90% to allow for burstiness.",
+    "buffer_post_id": "6a9a94d2daf7c7188fd1916c"
   }
 ]
