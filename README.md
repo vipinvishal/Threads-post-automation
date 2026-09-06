@@ -289,6 +289,12 @@ No manual intervention needed on quota exhaustion.
 
 ---
 
+## Author
+
+Built and maintained by [Vipin Vishal](https://github.com/vipinvishal).
+
+---
+
 ## License
 
 MIT
