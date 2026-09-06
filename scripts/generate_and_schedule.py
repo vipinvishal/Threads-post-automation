@@ -174,6 +174,7 @@ VOICE RULES
 5. Do not include a follow CTA or a link unless the OUTPUT FORMAT below says this post is flagged for one. When in doubt, leave both out.
 6. Threads does NOT render Markdown — it shows literal characters. NEVER use **bold**, *italic*, _underscore_, or [label](url) link syntax anywhere in "body". Write emphasis through word choice and sentence rhythm, not symbols. If you reference a link, write the bare URL (https://...) as plain text — never as a labeled Markdown link.
 7. Never put a hashtag inside "body". This account uses exactly one native Threads topic tag (see "tag" below), appended after the body automatically — inline hashtags never appear in the post text itself.
+8. Avoid AI-writing tells: no em dashes (—) as a stylistic device (use a period or comma instead), no "it's not just X, it's Y," no stacked hedges ("could potentially possibly"), no vague-authority phrases ("industry reports show," "experts argue"), no chatbot leftovers ("let me know," "hope this helps"). A second pass checks for these — writing clean the first time means less gets rewritten.
 
 OUTPUT FORMAT
 Return JSON only:
@@ -215,11 +216,12 @@ For "image_template", choose ONE of exactly these options (today's allowed set �
 anything outside this list): {image_template_options}
 {extra_context}
 Follow the FORMAT-SPECIFIC RULES for "{format}" from your system prompt exactly, and the VOICE
-RULES throughout — including Rules 6 and 7: no Markdown syntax anywhere (no **bold**, no
-[label](url) links — bare URLs only), and no inline hashtags in the body. Keep the body tight
-and Threads-native — short lines, a blank line between beats, plain text only, under 500
-characters total including any CTA/link (those get appended after, so leave room if
-cta_included is true).
+RULES throughout — including Rules 6-8: no Markdown syntax anywhere (no **bold**, no
+[label](url) links — bare URLs only), no inline hashtags in the body, and no AI-writing tells
+(em dashes as a stylistic device, hedging stacks, vague-authority phrases, chatbot leftovers).
+Keep the body tight and Threads-native — short lines, a blank line between beats, plain text
+only, under 500 characters total including any CTA/link (those get appended after, so leave
+room if cta_included is true).
 
 Return JSON only, exactly matching the OUTPUT FORMAT keys from your system prompt: format, hook,
 body, cta_included, tag, image_template, numeric_claims, reply_seed.
@@ -333,34 +335,60 @@ Do not merely replace words with synonyms. Rewrite the thinking, rhythm, sentenc
 
 ### REMOVE AI SLOP
 
-Aggressively remove:
+The watch-lists below are the 35 patterns from Wikipedia's "Signs of AI writing"
+(WikiProject AI Cleanup) — the most evidence-based catalogue of what makes text read as
+AI-generated. Check the draft against every category; fix what applies, ignore what doesn't.
 
-* Generic introductions
-* "In today's fast-paced world..."
-* "In the ever-evolving landscape..."
-* "It's important to note that..."
-* "Whether you're a beginner or an expert..."
-* "Let's dive in..."
-* "Here's the thing..."
-* "The key takeaway is..."
-* "At the end of the day..."
-* "This isn't just X, it's Y"
-* "Not only X, but also Y"
-* Fake enthusiasm
-* Corporate/LinkedIn language
-* Unnecessary motivational language
-* Repetitive conclusions
-* Obvious summaries of what was just said
-* Excessive headings
-* Excessive bullet points
-* Artificial transitions
-* Overuse of em dashes
-* Overly polished sentences
-* Needless adjectives and adverbs
-* Repetitive sentence patterns
-* "Furthermore", "Moreover", "Additionally", "However" when they aren't genuinely needed
-* Generic claims such as "This can revolutionize..."
-* Empty phrases that sound impressive but say nothing
+Content patterns:
+* Inflated-importance claims: stands/serves as, is a testament/reminder, a vital/pivotal/key
+  role, underscores its significance, marking a shift, evolving landscape, indelible mark
+* Name-dropping to prove importance: listing outlets/follower counts that add no real context
+* Shallow -ing-phrase analysis tacked onto a plain fact: highlighting..., reflecting...,
+  fostering..., showcasing...
+* Sales language: boasts a, vibrant, nestled, in the heart of, breathtaking, must-visit
+* Vague sources: "industry reports," "experts argue," "observers have cited" with no name
+* Formulaic "despite these challenges" / "future outlook" filler sections
+
+Language and grammar:
+* Overused AI words: actually, additionally, crucial, delve, enhance, fostering, garner,
+  highlight (verb), intricate, key (adj), landscape (abstract noun), pivotal, testament,
+  underscore (verb), tapestry, vibrant
+* Avoiding plain "is/are/has": serves as, stands as, boasts, features, offers
+* "It's not just X, it's Y" / "Not only X, but Y" / clipped negative endings ("no guessing")
+* Forced groups of three
+* Synonym-cycling for the same subject, or repeating the same sentence opener
+* False "from X to Y" ranges where X and Y aren't a real range
+* Passive voice / dropped subjects that hide who did what
+
+Style:
+* Em dashes (—) or en dashes (–) used as a stylistic device — replace with a period, comma,
+  colon, or parentheses instead. This is a hard rule, not a preference.
+* Excessive bold text or bold-mini-heading lists
+* Title Case In Headings; decorative emojis; curly “smart quotes” instead of straight ones
+
+Chatbot patterns:
+* Leftover chatbot voice: "I hope this helps," "Let me know," "Would you like me to..."
+* Knowledge-cutoff disclaimers or hedge-then-guess ("while details are limited, it appears...")
+* Overly agreeable openers: "Great question!", "You're absolutely right that..."
+
+Filler and hedging:
+* Filler phrases: "in order to," "due to the fact that," "at this point in time"
+* Stacked qualifiers: "could potentially possibly," "to be fair, it's also possible that"
+* Generic upbeat closers: "the future looks bright," "exciting times lie ahead"
+* Overused hyphenated pairs everywhere: cross-functional, data-driven, high-quality, real-time
+* Fake-depth phrases: "the real question is," "at its core," "what really matters"
+* Announcing the next point instead of making it: "let's dive in," "here's what you need to know"
+* A heading immediately restated as the first sentence under it
+* Forced one-word/short-fragment "punchlines" stacked in a row for false drama
+* Formulaic sayings that sound deep but say nothing: "X is the Y of Z," "X becomes a trap"
+* Fake-candid openers used as a hook: "Honestly?", "Look,", "Here's the thing," "Real talk"
+* Answering an objection nobody raised: "I'm not saying...", "to be clear, this isn't about..."
+* Introducing a fake alternative just to reject it: "a tempting approach would be... but"
+
+Also still remove, from the original brief for this account specifically:
+* "In today's fast-paced world...", "In the ever-evolving landscape...", "Whether you're a
+  beginner or an expert...", "At the end of the day...", corporate/LinkedIn language,
+  unnecessary motivational language, obvious summaries of what was just said
 
 ### MAKE IT SOUND HUMAN
 
@@ -399,6 +427,19 @@ Do NOT:
 Keep the author's actual ideas.
 
 Improve how those ideas are expressed.
+
+### DON'T OVER-CORRECT
+
+Not every polished sentence is AI slop. Do NOT flag or water down:
+* Precise technical language, exact numbers, or correct terminology — this account's whole
+  credibility rests on accuracy; never trade precision for a "more casual" feel.
+* One em dash used once — the hard rule above is about REPEATED stylistic use, not a single
+  instance that already reads naturally (though for this account's Threads-native voice,
+  prefer rewriting it out anyway when a comma or period works just as well).
+* A short sentence used for real emphasis — only flag several dramatic one-word fragments
+  stacked in a row.
+* A single "however" or "additionally" — only a problem when several transition words like
+  this pile up in the same short passage.
 
 ### IMPORTANT RULE
 

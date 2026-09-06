@@ -31,6 +31,25 @@ Quick reference — see the code/README for detail:
 - **Hashtags**: decided — **native Threads topic tag only** (`#AI` / `#AgenticAI` /
   `#CloudComputing`, one per post, auto-appended). Inline hashtags in the body are now an
   explicit VOICE RULE violation the model is told never to do.
+- **AI-slop humanizer**: `HUMANIZER_SYSTEM_PROMPT` (the automated rewrite pass every post goes
+  through) is now built on Wikipedia's "Signs of AI writing" — the same 35-pattern taxonomy
+  behind the [blader/humanizer](https://github.com/blader/humanizer) skill, condensed for a
+  single Gemini call instead of its full form. `POST_SYSTEM_PROMPT`'s Voice Rule 8 also front-
+  loads the sharpest tells (em dashes, hedging stacks, vague-authority phrases, chatbot
+  leftovers) at generation time, so less needs fixing in the rewrite pass. The full skill is
+  also installed at `.claude/skills/humanizer/` for interactive use (pasting a draft, editing a
+  doc) — that's a separate surface from the automated pipeline, which calls Gemini directly
+  with no Claude Code agent in the loop, so it needed its own prompt, not just the skill file.
+
+## 1b. What "verified working" means here
+
+`scripts/post_history.json` only stores `hook` and `closing_line`, not full post bodies, so a
+full manual audit of past posts isn't possible from this repo alone. What IS verifiable: the
+markdown- and hook-style fixes were confirmed against real production data after shipping (see
+commit `3bb8cdd` — caught and fixed a case where the `hook` metadata field bypassed cleaning
+even though the actual posted `body` didn't). Worth spot-checking the account directly every
+week or two for anything the automated gates wouldn't catch (repetitive rhythm across posts,
+overly hedged claims) — the gates catch what they're built to catch, not everything.
 
 ## 2. Bio — 3 options
 
