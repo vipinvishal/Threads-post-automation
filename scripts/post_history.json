@@ -364,5 +364,275 @@
     "flagged_claims": [],
     "reply_seed": "One time, an agent got stuck in an infinite loop calling a calculator tool, but the eval only checked the final output, not the intermediate steps, so it just timed out without giving useful debugging info.",
     "buffer_post_id": "6a95b53c73f619a586fda2e2"
+  },
+  {
+    "timestamp": "2026-09-01T10:21:27.879068+00:00",
+    "weekday_ist": 1,
+    "format": "hot_take",
+    "hook": "Everyone believes NVIDIA GPUs are non-negotiable for competitive AI inference. That's wrong.",
+    "closing_line": "So, will EPD become as critical as MoE for next-gen models?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "hook_style": "contrarian",
+    "tag": "#AI",
+    "numeric_claims": [
+      "11 trillion",
+      "three days",
+      "31%",
+      "100,000"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "EPD seems overlooked. It's about optimizing the *pipeline*, not just the model structure, which is critical for diverse hardware.",
+    "buffer_post_id": "6a96a7277e2f22b3738fbb6b"
+  },
+  {
+    "timestamp": "2026-09-01T18:44:39.570861+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "12,000 database queries per API request. That's what happened when I let an LLM write a backend endpoint from scratch.",
+    "closing_line": "Beyond N+1, what's been your biggest performance headache from AI-generated code?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "annotated_screenshot",
+    "hook_style": "cold_open_stat",
+    "tag": "#AI",
+    "numeric_claims": [
+      "12,000",
+      "94%",
+      "847ms",
+      "$3,100",
+      "$47,000",
+      "three weeks",
+      "3"
+    ],
+    "flagged_claims": [
+      "$3,100"
+    ],
+    "reply_seed": "For me, it was missing indexes entirely. The AI generated a complex query without any CREATE INDEX statements, which killed performance even on small datasets.",
+    "buffer_post_id": "6a971d17aa5ae3a7c6af6115"
+  },
+  {
+    "timestamp": "2026-09-02T09:49:56.937242+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "I broke prod when a simple agentic workflow ended up with 1.5 seconds of pure overhead before the LLM even saw the prompt.",
+    "closing_line": "How do you debug cumulative latency in your agentic flows?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "hook_style": "story_incident",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "1.5 seconds",
+      "200-300ms",
+      "5 layers"
+    ],
+    "flagged_claims": [
+      "200-300ms"
+    ],
+    "reply_seed": "We've started using OpenTelemetry for tracing across service calls. It helps pinpoint exactly which component adds how much delay in our pipeline.",
+    "buffer_post_id": "6a97f144c7542d9459dc577a"
+  },
+  {
+    "timestamp": "2026-09-02T13:45:09.418843+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "OpenAI-compatible API doesn't mean what you think it means.",
+    "closing_line": "What's been the most unexpected infrastructure headache you've run into taking an LLM from dev to prod?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "hook_style": "myth_bust",
+    "tag": "#AI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "Getting logging consistent across the serving layer, the inference engine (Triton), and the actual model output. Debugging silently dropped prompts is a nightmare.",
+    "buffer_post_id": "6a9828652ccce291db72c35f"
+  },
+  {
+    "timestamp": "2026-09-02T18:52:21.035278+00:00",
+    "weekday_ist": 3,
+    "format": "india_cost",
+    "hook": "Is self-hosting an 8B LLM on an RTX 4090 cheaper than a managed API like Together AI?",
+    "closing_line": "What kind of monthly token volume do you think makes self-hosting an 8B model actually break even?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "hook_style": "question_first",
+    "tag": "#CloudComputing",
+    "numeric_claims": [
+      "8B",
+      "$0.060",
+      "1M",
+      "RTX 4090",
+      "$0.44/hr",
+      "$0.081",
+      "35%",
+      "4-8 hours/month",
+      "$150/hr",
+      "$600-$1200",
+      "70B"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Honestly, for an 8B model, with a $0.021/1M token difference in raw compute and assuming even $600 in engineering costs, you're looking at needing to process over 28 billion tokens a month to break even. Most low-to-mid volume projects won't hit that.",
+    "buffer_post_id": "6a98706495b9a473db4f50a5"
+  },
+  {
+    "timestamp": "2026-09-03T10:01:59.243756+00:00",
+    "weekday_ist": 3,
+    "format": "india_cost",
+    "hook": "Everyone does a quick \u20b98,150/hour calculation for an H100 in Mumbai and assumes it's unaffordable. That's wrong. Here's why.",
+    "closing_line": "What's your biggest blind spot when estimating GPU costs?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "hook_style": "contrarian",
+    "tag": "#CloudComputing",
+    "numeric_claims": [
+      "\u20b98,150/hour",
+      "35%",
+      "\u20b923,400"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Many just look at list price. They don't factor in idle time on a dedicated instance, or the hidden cost of data egress/transfer.",
+    "buffer_post_id": "6a9945977e6d6fadb15d7848"
+  },
+  {
+    "timestamp": "2026-09-03T13:41:22.218043+00:00",
+    "weekday_ist": 3,
+    "format": "india_cost",
+    "hook": "\u20b91195.20 a month. That's what it costs to keep a basic AI side project running on a 1 vCPU, 2GB RAM cloud VPS with backups.",
+    "closing_line": "But heads up: this budget only covers your server runtime. For local GPU inference or massive vector stores, you'll need a different setup.",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "hook_style": "cold_open_stat",
+    "tag": "#CloudComputing",
+    "numeric_claims": [
+      "1195.20",
+      "1 vCPU",
+      "2 GB RAM",
+      "14.40 USD"
+    ],
+    "flagged_claims": [
+      "1195.20"
+    ],
+    "reply_seed": "I'm running a tiny agent worker that scrapes specific articles and summarizes them using Claude, running on a 512MB RAM instance.",
+    "buffer_post_id": "6a997902aac7e920f1d06373"
+  },
+  {
+    "timestamp": "2026-09-04T09:52:18.384300+00:00",
+    "weekday_ist": 4,
+    "format": "mechanism_explainer",
+    "hook": "I broke prod today assuming high GPU util meant healthy inference. Turns out, KV Cache exhaustion was silently killing throughput, but traditional metrics didn't show it until users complained.",
+    "closing_line": "So, how do you actually keep an eye on KV Cache exhaustion in your LLM deployments before it becomes a problem?",
+    "matched_patterns": [],
+    "cta_included": true,
+    "image_template": "before_after",
+    "hook_style": "story_incident",
+    "tag": "#AI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "We're experimenting with vLLM's Prometheus metrics for kv_cache_usage and setting alerts based on a percentage threshold, usually around 85-90% to allow for burstiness.",
+    "buffer_post_id": "6a9a94d2daf7c7188fd1916c"
+  },
+  {
+    "timestamp": "2026-09-04T13:37:46.911931+00:00",
+    "weekday_ist": 4,
+    "format": "mechanism_explainer",
+    "hook": "It's tempting to blame the LLM when RAG output goes awry, or to rework the prompt. But get this: 67% of top-20 chunk retrieval failures? Those were fixed by improving retrieval, not the generator. Anthropic even dropped their failure rate from 5.7% to 1.9% just by adding reranking. We're quick to blame the LLM, but often it's just dealing with crummy input.",
+    "closing_line": "So, how do you actually isolate retrieval quality from LLM generation in your RAG pipelines?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "hook_style": "myth_bust",
+    "tag": "#AI",
+    "numeric_claims": [
+      "67%",
+      "5.7%",
+      "1.9%",
+      "100%"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Mostly by using retrieval metrics like MRR or NDCG on a golden dataset. Or just a manual check of retrieved chunks for 10-20 known hard queries before touching the LLM.",
+    "buffer_post_id": "6a9ac9aa276284e541707836"
+  },
+  {
+    "timestamp": "2026-09-04T18:32:38.079732+00:00",
+    "weekday_ist": 5,
+    "format": "quote_react",
+    "hook": "Does GPT-6 Astra's internal symbolic world model make it more interpretable, or less?",
+    "closing_line": "What specific parts of a symbolic model's internals would be most useful for developers to understand and work with?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "hook_style": "question_first",
+    "tag": "#AI",
+    "numeric_claims": [
+      "99%",
+      "63%",
+      "96%"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Seeing the exact parse tree or knowledge graph created, and the transformation rules applied at each step, would be a game-changer for debugging. Like a symbolic debugger for the model's 'thoughts'.",
+    "buffer_post_id": "6a9b0ec52b22de0ef7441f18"
+  },
+  {
+    "timestamp": "2026-09-05T09:14:41.888515+00:00",
+    "weekday_ist": 5,
+    "format": "quote_react",
+    "hook": "Everyone is calling GPT-6 Astra's symbolic modeling a major breakthrough. That's missing the point. We still don't know *how* it builds those models.",
+    "closing_line": "So, how do we design tests to distinguish genuine symbolic understanding from just very advanced mimicry in LLMs?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "hook_style": "contrarian",
+    "tag": "#AI",
+    "numeric_claims": [
+      "63%",
+      "99%",
+      "96%"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Perhaps by introducing completely novel rulesets or requiring transfer learning to vastly different, abstract domains, not just variations on existing ones within ARC-AGI.",
+    "buffer_post_id": "6a9bdd817cbb189a59e0c781"
+  },
+  {
+    "timestamp": "2026-09-05T12:52:43.819755+00:00",
+    "weekday_ist": 5,
+    "format": "quote_react",
+    "hook": "96% of ARC-AGI-3 levels: That's where GPT-6 Astra surpasses human performance, according to the ARC Prize.",
+    "closing_line": "Without that internal visibility, how would you even start testing a dynamically built symbolic model for real-world use?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "hook_style": "cold_open_stat",
+    "tag": "#AI",
+    "numeric_claims": [
+      "96%"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "It's a tough one. You'd likely need extensive black-box adversarial testing, focusing on edge cases that break its 'symbolic' understanding. Or maybe probe for consistency in its internal state, if that's even accessible via API. Hard to say without any insight.",
+    "buffer_post_id": "6a9c109b086267e7c49b2712"
+  },
+  {
+    "timestamp": "2026-09-05T17:30:33.840951+00:00",
+    "weekday_ist": 5,
+    "format": "quote_react",
+    "hook": "My mental model of AGI progress just broke. The problem isn't the ARC-AGI scores, it's the black box behind them.",
+    "closing_line": "How are we supposed to build truly agentic systems if the foundational models are these opaque black boxes?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "hook_style": "story_incident",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "99%",
+      "63%"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "We'd need a way to inspect the internal representation of the symbolic model, perhaps via a dedicated introspection API, instead of just the final action.",
+    "buffer_post_id": "6a9c51b985ccb3a22c06f976"
   }
 ]
