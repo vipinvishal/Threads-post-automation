@@ -231,27 +231,51 @@ POST_REQUIRED_KEYS = ["format", "hook", "body", "cta_included", "tag", "image_te
 # Guarantees consecutive posts never open the same way: never repeats the immediately
 # previous post's hook style, and otherwise picks whichever style was used least
 # recently in history (see pick_hook_style / _least_recently_used below).
+#
+# Each style names its psychological trigger + curiosity-gap technique + a small
+# swipe-file of phrase patterns in the account's own learning-in-public voice — the
+# full reference (pattern interrupts, triggers, curiosity gaps, power phrases, and
+# extra structures beyond these 5) lives in docs/hook_matrix.md.
 HOOK_STYLES = {
     "contrarian": (
-        "Contrarian hook. Open with the common belief, then flatly reject it: "
-        "\"Everyone does X. That's wrong. Here's why.\" State the belief in a few words, "
-        "say it's wrong in the next line, then explain."
+        "Contrarian hook. Trigger: confirmation-violation — state a belief the reader already "
+        "holds, then break it in the same breath, forcing a mental double-take. Curiosity gap: "
+        "the reader needs the next line to resolve the contradiction you just created. "
+        "Pattern: \"Everyone does X. That's wrong.\" or \"X doesn't work the way you think.\" "
+        "State the common belief in a few plain words, reject it flatly in line two, then explain why. "
+        "Phrase bank: \"here's the part that surprised me\", \"i believed this too, until i tested it\"."
     ),
     "cold_open_stat": (
-        "Cold-open stat. Line one is the single most surprising number/fact, with zero "
-        "preamble — no \"so\", no \"here's the thing\", just the number and what it means."
+        "Cold-open stat. Trigger: authority-by-specificity — a precise, oddly exact number reads "
+        "as more credible and more alarming than a vague claim, so it demands a reaction. Curiosity "
+        "gap: the number alone raises \"wait, why?\" before any explanation is given. "
+        "Pattern: state the number and nothing else in line one — no \"so\", no \"here's the thing\", "
+        "no throat-clearing. Then explain what it means in line two. "
+        "Phrase bank: \"that number is not a typo\", \"i didn't believe this until i checked it myself\"."
     ),
     "story_incident": (
-        "Story/incident hook. Open mid-action with something that actually broke or went "
-        "wrong: \"I broke prod doing X.\" Then give the 30-second root cause."
+        "Story/incident hook. Trigger: identity mirroring + loss aversion — the reader has been in "
+        "this exact situation (or fears being in it), so they read to avoid the same mistake. "
+        "Curiosity gap: open mid-action with the failure already happening, withhold the root cause "
+        "until the next beat. Pattern: \"I broke [thing] doing [thing].\" or \"[time], and [system] just "
+        "died.\" Then give the 30-second root cause. "
+        "Phrase bank: \"here's the 30-second root cause\", \"took me an embarrassing amount of time to find\"."
     ),
     "myth_bust": (
-        "Myth-bust hook. Name a term or concept people misuse, then correct it in the same "
-        "breath: \"X doesn't mean what you think it means.\""
+        "Myth-bust hook. Trigger: pattern completion / cognitive itch — naming a familiar term and "
+        "immediately withholding its real meaning creates a mental gap the brain wants closed. "
+        "Curiosity gap: the reader has used this term and now doubts they understood it. "
+        "Pattern: \"[Term] doesn't mean what you think it means.\" Name the term first, plainly, then "
+        "correct it in the very next clause — don't make them wait a full sentence for the fix. "
+        "Phrase bank: \"here's what it actually means\", \"this broke my mental model of [X]\"."
     ),
     "question_first": (
-        "Question-first hook. Open with the actual question the post answers, then answer it "
-        "below — the question itself must be specific enough to stop the scroll, not generic."
+        "Question-first hook. Trigger: open loop — an unanswered, specific question is "
+        "psychologically uncomfortable to leave hanging, so the reader keeps going to close it. "
+        "Curiosity gap: the question must be answerable in the post but not obvious from the "
+        "question alone. Pattern: open with the exact, narrow question the post answers — never a "
+        "generic \"have you ever wondered...\" — then answer it below. "
+        "Phrase bank: \"here's the part nobody explains\", \"the answer surprised me too\"."
     ),
 }
 HOOK_STYLE_LABELS = {
@@ -1135,14 +1159,16 @@ def schedule_to_buffer(post_text: str, image_url: str = None) -> str:
 # STEP 2.5 — Infographic image (optional)
 # ══════════════════════════════════════════════════════════════════════════════
 
-def build_infographic_image(research: str, topic: str, preview: bool,
-                            post: str = "", image_template: str = "three_stage_flow"):
+def build_infographic_image(research: str, topic: str, preview: bool, post: str = "",
+                            image_template: str = "three_stage_flow", hook_style: str = ""):
     """Render the infographic and (unless preview) host it for Buffer.
 
     `post` aligns the diagram to the post: it visualizes the SAME solution/
     concept the post centers on. `image_template` picks which layout to build
     (see scripts/infographic_templates.py) — chosen by generate_post()'s
-    template-variety gate, not just the raw model output.
+    template-variety gate, not just the raw model output. `hook_style` makes the
+    image mirror the same scroll-stopping energy as the post's opening line (see
+    HOOK_STYLES above and infographic_templates.HOOK_STYLE_VISUAL_FRAMING).
 
     Returns a public image URL (real run), a local PNG path (preview), or None if
     anything fails — in which case the post falls back to text-only so a single
@@ -1151,7 +1177,8 @@ def build_infographic_image(research: str, topic: str, preview: bool,
     try:
         print("\n[ Step 2.5 ] Building infographic image...")
         content  = infographic.generate_infographic_content(
-            research, topic, generate_text, post=post, image_template=image_template,
+            research, topic, generate_text, post=post,
+            image_template=image_template, hook_style=hook_style,
         )
         out_dir  = os.path.join(_script_dir, "..", "output")
         os.makedirs(out_dir, exist_ok=True)
@@ -1256,7 +1283,8 @@ def main(preview: bool = False):
 
         image_ref = None
         if INCLUDE_INFOGRAPHIC and result["image_template"] != "none":
-            image_ref = build_infographic_image(research, topic, preview, post=result["post_text"], image_template=result["image_template"])
+            image_ref = build_infographic_image(research, topic, preview, post=result["post_text"],
+                                                image_template=result["image_template"], hook_style=hook_style)
         else:
             print(f"  [Infographic] Skipped (image_template={result['image_template']}).")
 

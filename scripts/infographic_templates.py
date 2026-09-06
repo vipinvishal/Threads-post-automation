@@ -19,15 +19,50 @@ ICON_NAMES = [
 ]
 
 
-def _post_alignment_block(post: str) -> str:
+# Visual-framing instruction per hook style, so the infographic mirrors the SAME
+# scroll-stopping energy as the post's opening line, whichever image_template ends
+# up being used. Keys match HOOK_STYLES in generate_and_schedule.py (duplicated as
+# plain strings, not imported, to avoid a circular import between the two modules).
+HOOK_STYLE_VISUAL_FRAMING = {
+    "contrarian": (
+        "This post opens with a CONTRARIAN hook (common belief -> flatly rejected). Frame the "
+        "headline/big-text element as the correction itself, not a neutral description — name "
+        "the wrong belief in a few words, then let the highlighted word or number BE the 'actually, no' moment."
+    ),
+    "cold_open_stat": (
+        "This post opens with a COLD-OPEN STAT (the number, zero preamble). The single number/fact "
+        "MUST be the largest, most dominant element on the page — bigger and bolder than every "
+        "other piece of text. Nothing should compete with it for the first glance."
+    ),
+    "story_incident": (
+        "This post opens with a STORY/INCIDENT hook (something broke). Frame the visual like "
+        "evidence from that exact moment — a real-feeling log line, error, or timestamp — not an "
+        "abstract diagram. It should feel like a screenshot of the incident, not an illustration of a concept."
+    ),
+    "myth_bust": (
+        "This post opens with a MYTH-BUST hook (a misused term, corrected in the same breath). "
+        "Frame the headline/comparison as the WRONG belief versus the CORRECT reality, side by "
+        "side or crossed-out — the correction should be unmistakable at a glance, before any body text is read."
+    ),
+    "question_first": (
+        "This post opens with a QUESTION-FIRST hook. Echo the same question (or a tightened "
+        "version of it) in the headline itself, so the image poses the question again visually "
+        "before the reader gets to the caption."
+    ),
+}
+
+
+def _post_alignment_block(post: str, hook_style: str = "") -> str:
     """Shared "align the image to the post" block, reused by every template."""
     post = (post or "").strip()
     if not post:
         return ""
+    framing = HOOK_STYLE_VISUAL_FRAMING.get(hook_style, "")
     return (
         "\nTHE POST THIS IMAGE ACCOMPANIES — build the image around the SAME "
         "core idea/number it centers on, so image and text tell one story:\n"
         f"\"\"\"\n{post[:900]}\n\"\"\"\n"
+        + (f"\n{framing}\n" if framing else "")
     )
 
 
@@ -431,13 +466,18 @@ TEMPLATE_SPECS = {
 }
 
 
-def build_prompt(template_name: str, topic: str, research: str, post: str) -> str:
-    """Fill in a template's user prompt with topic/research/post-alignment."""
+def build_prompt(template_name: str, topic: str, research: str, post: str, hook_style: str = "") -> str:
+    """Fill in a template's user prompt with topic/research/post-alignment.
+
+    `hook_style` (one of generate_and_schedule.py's HOOK_STYLES keys, or "") makes
+    the infographic mirror the same scroll-stopping energy as the post's opening
+    line — see HOOK_STYLE_VISUAL_FRAMING above.
+    """
     spec = TEMPLATE_SPECS[template_name]
     kwargs = dict(
         topic=topic,
         research=(research or "").strip()[:5500] or topic,
-        alignment=_post_alignment_block(post),
+        alignment=_post_alignment_block(post, hook_style),
     )
     if spec["needs_icons"]:
         kwargs["icons"] = ", ".join(ICON_NAMES)

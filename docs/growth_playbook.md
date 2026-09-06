@@ -17,6 +17,8 @@ Quick reference — see the code/README for detail:
 - **Hook variety**: 5 rotating hook styles (contrarian / cold-open-stat / story-incident /
   myth-bust / question-first), pipeline-assigned per post — never repeats the immediately
   previous post's style, full coverage every 5 posts. See `HOOK_STYLES` / `pick_hook_style()`.
+  The full trigger/curiosity-gap/phrase-bank reference behind these — plus how the infographic
+  now mirrors whichever hook is live — lives in `docs/hook_matrix.md`.
 - **Brand identity**: standardized on **@vipinailabs** everywhere (handle, portfolio link,
   system prompt). The `orbitailabs` reference that was leaking into build_log posts — a
   leftover from earlier dead code — is gone from every prompt, example, and fixture.

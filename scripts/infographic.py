@@ -59,19 +59,23 @@ def _parse_json(raw: str) -> dict:
 
 
 def generate_infographic_content(research: str, topic: str, generate_text_fn,
-                                 post: str = "", image_template: str = "three_stage_flow") -> dict:
+                                 post: str = "", image_template: str = "three_stage_flow",
+                                 hook_style: str = "") -> dict:
     """Build validated infographic content JSON for the given image_template,
     reusing the text-gen chain.
 
     generate_text_fn(prompt, system) -> str   (the Gemini/Euron chain from main)
 
     `post` aligns the image to the post: same core solution/concept, so the
-    infographic and the text tell one story.
+    infographic and the text tell one story. `hook_style` (one of
+    generate_and_schedule.py's HOOK_STYLES keys) makes the image mirror the same
+    scroll-stopping energy as the post's opening line — see
+    infographic_templates.HOOK_STYLE_VISUAL_FRAMING.
     """
     if image_template not in templates.TEMPLATE_SPECS:
         raise ValueError(f"Unknown image_template '{image_template}' — must be one of {list(templates.TEMPLATE_SPECS)}")
     spec = templates.TEMPLATE_SPECS[image_template]
-    prompt = templates.build_prompt(image_template, topic, research, post)
+    prompt = templates.build_prompt(image_template, topic, research, post, hook_style)
 
     last_err = ""
     for attempt in range(1, 3):  # one retry
