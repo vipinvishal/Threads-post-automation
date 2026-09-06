@@ -945,7 +945,12 @@ def generate_post(format_key: str, topic: str, research: str, cta_eligible_today
     numeric_claims = [str(c) for c in (data.get("numeric_claims") or [])]
     body, flagged_claims = fact_check_claims(numeric_claims, research, body)
 
-    hook = str(data.get("hook", "")).strip() or (body.split("\n")[0].strip() if body else "")
+    # Derive hook from the already-cleaned `body`, not the model's separate raw
+    # "hook" JSON field — that field never passes through _clean_model_output or
+    # the markdown gate below (only `body`, the thing actually posted, does), so
+    # using it directly here let stray Markdown leak into hook/history metadata
+    # even on runs where the real posted body was clean.
+    hook = (body.split("\n")[0].strip() if body else "") or _clean_model_output(str(data.get("hook", "")))
     closing_line = get_closing_line(body)
 
     repetitive, reason = is_repetitive(hook, closing_line, history)
