@@ -656,5 +656,21 @@
     "flagged_claims": [],
     "reply_seed": "INT8 consistently gives me a solid 1.5-2x improvement without too much accuracy hit on smaller models. FP8 is better but harder to get working perfectly.",
     "buffer_post_id": "6a9e94298e5e411798c6c415"
+  },
+  {
+    "timestamp": "2026-09-07T15:08:38.169484+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "You can't solve it with just one trick. You need three kinds of parallelism, what people often call \"3D parallelism,\" working together.",
+    "closing_line": "Which of these feels most critical for scaling smaller fine-tuning jobs on consumer cards?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "three_stage_flow",
+    "hook_style": "question_first",
+    "tag": "#AI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "Data parallelism, definitely. For typical fine-tuning, the model often fits, and splitting data boosts speed. Tensor and pipeline are overkill for smaller setups.",
+    "buffer_post_id": "6a9ed3752cb11f6e0e117239"
   }
 ]
