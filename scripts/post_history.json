@@ -634,5 +634,27 @@
     "flagged_claims": [],
     "reply_seed": "We'd need a way to inspect the internal representation of the symbolic model, perhaps via a dedicated introspection API, instead of just the final action.",
     "buffer_post_id": "6a9c51b985ccb3a22c06f976"
+  },
+  {
+    "timestamp": "2026-09-07T10:38:33.504425+00:00",
+    "weekday_ist": 0,
+    "format": "mechanism_explainer",
+    "hook": "Most chips come with thousands of CUDA cores that tackle general parallel work.",
+    "closing_line": "Which specific quantization format has given you the biggest real-world speedup on your own models?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "before_after",
+    "hook_style": "myth_bust",
+    "tag": "#AI",
+    "numeric_claims": [
+      "10",
+      "19",
+      "2",
+      "FP8",
+      "INT8"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "INT8 consistently gives me a solid 1.5-2x improvement without too much accuracy hit on smaller models. FP8 is better but harder to get working perfectly.",
+    "buffer_post_id": "6a9e94298e5e411798c6c415"
   }
 ]
