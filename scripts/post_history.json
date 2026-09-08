@@ -729,5 +729,24 @@
     "flagged_claims": [],
     "reply_seed": "Probably not irrelevant, but it shows you can get significant specialized gains without MoE complexity at this scale. For certain tasks, this might be a much lighter path.",
     "buffer_post_id": "6aa01132dd93c42f3b8c854c"
+  },
+  {
+    "timestamp": "2026-09-08T18:53:17.546144+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "This week, we updated our vLLM server on our DGX Spark, moving from qwen3.6-35b-a3b to qwen3.8-27b. The catch? Our app was still calling the old model name.",
+    "closing_line": "The main takeaway: local models are only \"local\" if your app actually knows what's running. How do you handle model discovery in your self-hosted setups?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "hook_style": "myth_bust",
+    "tag": "#AI",
+    "numeric_claims": [
+      "qwen3.6-35b-a3b",
+      "qwen3.8-27b"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "We typically hardcode a default model name but have a webhook to update it if the backend changes versions or preferred models.",
+    "buffer_post_id": "6aa0599d3cd1970865565e4f"
   }
 ]
