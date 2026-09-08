@@ -708,5 +708,26 @@
     "flagged_claims": [],
     "reply_seed": "For our internal eval, models using recurrent depth have definitely reduced prompt length by inferring more context from fewer cues. CoT is still useful for debugging though.",
     "buffer_post_id": "6a9fdc6714cfddcc09739915"
+  },
+  {
+    "timestamp": "2026-09-08T13:44:18.876009+00:00",
+    "weekday_ist": 1,
+    "format": "hot_take",
+    "hook": "It all comes down to On-Policy Distillation. They merged sixteen expert models, five of them agentic, into one small dense network.",
+    "closing_line": "Does this architecture-agnostic distillation method make Mixture-of-Experts irrelevant for smaller models?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "hook_style": "story_incident",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "2.5B",
+      "16",
+      "5",
+      "6.96"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "Probably not irrelevant, but it shows you can get significant specialized gains without MoE complexity at this scale. For certain tasks, this might be a much lighter path.",
+    "buffer_post_id": "6aa01132dd93c42f3b8c854c"
   }
 ]
