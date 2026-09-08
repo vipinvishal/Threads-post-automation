@@ -690,5 +690,23 @@
     "flagged_claims": [],
     "reply_seed": "For my internal tools, probably not. The speed is critical. But for debugging or user-facing agent systems where trust relies on transparency, it's a much harder choice.",
     "buffer_post_id": "6a9f0ea510a9768fbfe05bad"
+  },
+  {
+    "timestamp": "2026-09-08T09:59:03.564717+00:00",
+    "weekday_ist": 1,
+    "format": "hot_take",
+    "hook": "GPT-6 Astra holds a substantial amount of context.",
+    "closing_line": "So, does this mean the end of explicit CoT prompting as we know it?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "single_stat_hero",
+    "hook_style": "cold_open_stat",
+    "tag": "#AI",
+    "numeric_claims": [
+      "1.05 million"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "For our internal eval, models using recurrent depth have definitely reduced prompt length by inferring more context from fewer cues. CoT is still useful for debugging though.",
+    "buffer_post_id": "6a9fdc6714cfddcc09739915"
   }
 ]
