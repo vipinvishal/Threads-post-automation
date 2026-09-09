@@ -42,14 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-09-09 IST
+Last refreshed: 2026-09-10 IST
 
 Performance learning (manual data only):
 - Automatic performance collection is disabled; review live posts manually.
 
 Current ranked opportunities:
-- Why RAG quality often fails before retrieval starts | angle: Show how document cleaning and chunk boundaries corrupt otherwise good retrieval. | objective: share | score: 6.0 | sources: evergreen fallback
-- KV-cache pressure versus GPU utilization | angle: Explain why a busy GPU can still deliver poor inference throughput. | objective: reply | score: 5.5 | sources: evergreen fallback
+- Efficient LLM serving architectures for agent workloads | angle: Deep dive into techniques like W8A8 INT8 quantization and custom inference engines (e.g., llm-d, SGLang) designed to serve thousands of concurrent AI agents at lower cost and higher throughput. | objective: share | score: 8.83 | sources: b9732f0ab151, b71f1e330fc1, fb423c13fd98
+- Advanced retrieval models for AI agents | angle: Moving beyond basic RAG: How Databricks' Adaptive Instructed-Retriever improves AI agent performance by dynamically deciding search steps and leveraging metadata reasoning. | objective: share | score: 8.83 | sources: 4184f07c6cc0
+- Quantization strategies for local LLM deployment | angle: Comparing NVFP4, MXFP4, and INT8 quantization for running frontier models on available hardware. | objective: share | score: 8.67 | sources: fb423c13fd98, 50637228b781, b71f1e330fc1, 6268bc8169fc, 9c1facadca94, hn-49624823
+- Infrastructure demands of agentic AI workloads | angle: Explaining how agentic systems (context management, parallel sub-agents) differ from traditional chatbot inference and the challenges they pose for latency, memory, throughput, and cost. | objective: reply | score: 8.67 | sources: b9732f0ab151, 1a443133545b, e23d87731de2, e924570edc59, hn-49615537, hn-49623754
+- Continual learning and memory for AI agents | angle: How 'supermemory' systems like Learner-1 enable AI agents to accumulate and retain experience across sessions, providing persistent context and improving performance over time. | objective: reply | score: 8.5 | sources: 1a443133545b
+- Building multimodal AI agents with open models | angle: Practical applications and deployment considerations for new open multimodal agent models like Nex-N2.5 Mini and Ling-3.0-flash-VL for computer use and visual feedback workflows. | objective: share | score: 8.5 | sources: e924570edc59, 5056f1d875b9, hn-49615537, hn-49623754
+- Choosing GPUs for local AI agent development | angle: A practical guide on selecting between consumer-grade GPUs (e.g., RTX 5090) and professional inference accelerators (e.g., DGX Spark, H100) for running local AI agents. | objective: click | score: 8.33 | sources: 6268bc8169fc, fb423c13fd98, 50637228b781, e924570edc59, 9c1facadca94
+- Generative UI models for agent-driven interfaces | angle: Exploring OUI-1, the first model for Generative UI, and its promise for creating reliable, under-second, locally-runnable agent-driven software interfaces. | objective: follow | score: 8.0 | sources: 9c1facadca94
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
