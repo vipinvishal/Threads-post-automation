@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  {{ font_css | safe }}
+  {% include "partials/_shared.css.j2" %}
+
+  .page{ height:1125px; min-height:1125px; }
+  .top{ display:flex; align-items:center; justify-content:space-between; gap:18px; }
+  .eyebrow{ display:inline-block; padding:7px 16px; border:2.5px solid var(--ink);
+    border-radius:14px; background:var(--yellow); font-size:21px; font-weight:700;
+    transform:rotate(-1deg); }
+  .counter{ color:var(--muted); font-size:21px; font-weight:700; }
+  .headline{ margin-top:38px; max-width:710px; }
+  .headline h1{ font-family:'Caveat',cursive; color:var(--ink); font-size:68px;
+    line-height:1.04; letter-spacing:.2px; }
+  .headline .mark{ background:var(--yellow); border-radius:8px; padding:0 10px;
+    box-decoration-break:clone; -webkit-box-decoration-break:clone; }
+
+  .content{ margin-top:38px; display:grid; grid-template-columns:1fr 150px; gap:30px; }
+  .main{ min-width:0; }
+  .body-copy{ font-size:31px; line-height:1.38; color:var(--ink); max-width:560px; }
+  .portrait{ width:150px; height:150px; border-radius:22px; overflow:hidden;
+    border:3px solid var(--ink); transform:rotate(2deg); background:var(--blue-fill); }
+  .portrait img{ width:100%; height:100%; object-fit:cover; object-position:center top; }
+
+  .bullets{ list-style:none; margin-top:32px; display:flex; flex-direction:column; gap:17px; }
+  .bullets li{ position:relative; padding:16px 20px 14px 55px; border:2.5px solid var(--ink);
+    border-radius:16px; font-size:27px; line-height:1.2; background:var(--blue-fill); }
+  .bullets li:nth-child(2){ background:var(--green-fill); transform:rotate(.4deg); }
+  .bullets li:nth-child(3){ background:var(--pink-fill); transform:rotate(-.4deg); }
+  .bullets li::before{ content:'✓'; position:absolute; left:18px; top:11px; color:var(--green);
+    font-size:30px; font-weight:700; }
+
+  .callout{ margin-top:34px; padding:19px 25px; background:var(--yellow-note);
+    border:3px solid var(--yellow-edge); border-radius:16px; color:var(--ink);
+    font-size:27px; line-height:1.25; transform:rotate(-.5deg); }
+  .source{ margin-top:18px; color:var(--muted); font-size:16px; }
+  .swipe{ position:absolute; right:48px; bottom:98px; font-size:20px; color:var(--blue-dark); }
+
+  .kind-cover .headline{ margin-top:62px; }
+  .kind-cover .headline h1{ font-size:82px; line-height:1.02; }
+  .kind-cover .body-copy{ font-size:35px; }
+  .kind-takeaway .callout{ font-size:32px; border-color:var(--ink); }
+  .kind-takeaway .headline h1{ font-size:76px; }
+</style>
+</head>
+<body>
+  <div class="page kind-{{ kind }}">
+    {% include "partials/_spiral.html.j2" %}
+
+    <div class="top">
+      <div class="eyebrow">{{ eyebrow }}</div>
+      <div class="counter">{{ slide_number }} / {{ slide_total }}</div>
+    </div>
+
+    <div class="headline">
+      <h1 class="autofit" data-min-size="46" data-max-height="250">{{ title_pre }}<span class="mark">{{ title_hl }}</span>{{ title_post }}</h1>
+    </div>
+
+    <div class="content">
+      <div class="main">
+        {% if body %}<div class="body-copy autofit" data-min-size="23" data-max-height="170">{{ body }}</div>{% endif %}
+        {% if bullets %}
+        <ul class="bullets">
+          {% for bullet in bullets %}<li class="autofit" data-min-size="21" data-max-height="72">{{ bullet }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+        {% if callout %}<div class="callout autofit" data-min-size="22" data-max-height="120">{{ callout }}</div>{% endif %}
+        {% if source_note and kind == 'takeaway' %}<div class="source">Source: {{ source_note }}</div>{% endif %}
+      </div>
+      <div class="portrait"><img src="data:image/png;base64,{{ portrait_b64 }}" alt=""></div>
+    </div>
+
+    {% if slide_number < slide_total %}<div class="swipe">Swipe →</div>{% endif %}
+    {% include "partials/_footer.html.j2" %}
+  </div>
+</body>
+</html>

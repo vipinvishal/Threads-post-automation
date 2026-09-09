@@ -11,6 +11,10 @@ on:
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
+concurrency:
+  group: threads-growth-state
+  cancel-in-progress: false
+
 jobs:
   post:
     runs-on: ubuntu-latest
@@ -51,6 +55,7 @@ jobs:
           GEMINI_API_KEY_2:   ${{ secrets.GEMINI_API_KEY_2 }}
           EURON_API_KEY:      ${{ secrets.EURON_API_KEY }}
           EXA_API_KEY:        ${{ secrets.EXA_API_KEY }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           BUFFER_API_KEY:     ${{ secrets.BUFFER_API_KEY }}
           BUFFER_CHANNEL_ID:  ${{ secrets.BUFFER_CHANNEL_ID }}
           # Infographic image: IMGBB_API_KEY hosts the PNG so Buffer can attach it.
@@ -66,13 +71,13 @@ jobs:
           # Must be the REAL handle, or Threads won't render a tappable mention.
           FOLLOW_CTA:         ${{ vars.FOLLOW_CTA || 'follow @vipinailabs for daily dose of information' }}
 
-      - name: Commit updated post history
+      - name: Commit updated growth state
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add scripts/post_history.json
+          git add scripts/post_history.json scripts/account_insights.json scripts/pending_posts.json scripts/daily_intelligence.json skills/threads-growth/SKILL.md
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update post history [skip ci]"
+            git commit -m "chore: update Threads growth state [skip ci]"
             git push
           fi

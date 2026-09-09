@@ -1,0 +1,20 @@
+{
+  "_template_name": "educational_carousel",
+  "kind": "mechanism",
+  "eyebrow": "RAG DEBUGGING",
+  "title_pre": "Your RAG may fail ",
+  "title_hl": "before retrieval",
+  "title_post": " starts",
+  "body": "Bad extraction and arbitrary chunks can erase the evidence your retriever needs.",
+  "bullets": [
+    "Inspect parsed text first",
+    "Keep headings with their details",
+    "Test retrieval before prompts"
+  ],
+  "callout": "Prompt tuning cannot recover missing context.",
+  "source_note": "Retrieval pipeline field notes",
+  "slide_number": 3,
+  "slide_total": 5,
+  "handle": "@vipinailabs",
+  "portfolio": "vipin-vishal.onrender.com"
+}

@@ -423,6 +423,94 @@ def _coerce_timeline(data: dict) -> dict:
 
 
 # ══════════════════════════════════════════════════════════════════════════
+# educational_carousel — five 4:5 cards for a practical technical breakdown
+# ══════════════════════════════════════════════════════════════════════════
+
+_CAROUSEL_SYSTEM = """You are a technical visual editor for @vipinailabs. Create a
+five-card Threads carousel for Indian developers. Match the clean hand-drawn notebook
+language of the existing account, but use the account portrait rather than copied mascots.
+Every card has one reading target and must remain legible on a phone without zooming.
+Use only claims supported by the supplied post and sources. Return valid JSON only."""
+
+_CAROUSEL_USER_TEMPLATE = """TOPIC: {topic}
+
+SOURCES / CONTEXT:
+{research}
+{alignment}
+
+Create exactly five cards:
+1. Cover: a specific hook under 10 words and one short promise.
+2. Problem: the audience mistake or pain, with at most 3 bullets.
+3. Mechanism: the core technical explanation, with at most 3 steps.
+4. Example: a concrete before/after, diagnostic, or worked example.
+5. Takeaway: the useful rule plus one natural question or single CTA.
+
+HARD RULES:
+- No card may exceed 48 words total.
+- title_pre + title_hl + title_post must stay under 72 characters.
+- title_hl is the one highlighted phrase, 1-4 words.
+- eyebrow <=22 characters; body <=150 characters; callout <=70 characters.
+- bullets: 0-3 items, each <=48 characters.
+- Do not repeat the caption word-for-word.
+- No hashtags, URLs, unverifiable numbers, fake urgency, or generic motivation.
+- The last card asks one narrow question OR gives one follow/click CTA, never both.
+
+Return exactly:
+{{
+  "slides": [
+    {{
+      "kind": "cover | problem | mechanism | example | takeaway",
+      "eyebrow": "<=22 chars",
+      "title_pre": "text before highlight",
+      "title_hl": "highlighted phrase",
+      "title_post": "text after highlight",
+      "body": "<=150 chars",
+      "bullets": ["0-3 items, <=48 chars"],
+      "callout": "<=70 chars"
+    }}
+  ],
+  "source_note": "short source label <=55 chars",
+  "alt_text": "concise description of the five-card carousel <=300 chars"
+}}"""
+
+_CAROUSEL_REQUIRED_KEYS = ["slides", "source_note", "alt_text"]
+_CAROUSEL_KINDS = ["cover", "problem", "mechanism", "example", "takeaway"]
+
+
+def _clip(value, limit):
+    value = str(value or "").strip()
+    return value if len(value) <= limit else value[:limit - 1].rstrip() + "…"
+
+
+def _coerce_educational_carousel(data: dict) -> dict:
+    raw_slides = data.get("slides") or []
+    if not isinstance(raw_slides, list):
+        raw_slides = []
+    slides = []
+    for index, kind in enumerate(_CAROUSEL_KINDS):
+        raw = raw_slides[index] if index < len(raw_slides) and isinstance(raw_slides[index], dict) else {}
+        bullets = raw.get("bullets") or []
+        if isinstance(bullets, str):
+            bullets = [bullets]
+        slides.append({
+            "kind": kind,
+            "eyebrow": _clip(raw.get("eyebrow", kind), 22),
+            "title_pre": _clip(raw.get("title_pre", ""), 36),
+            "title_hl": _clip(raw.get("title_hl", ""), 30),
+            "title_post": _clip(raw.get("title_post", ""), 36),
+            "body": _clip(raw.get("body", ""), 150),
+            "bullets": [_clip(item, 48) for item in bullets if str(item).strip()][:3],
+            "callout": _clip(raw.get("callout", ""), 70),
+            "slide_number": index + 1,
+            "slide_total": 5,
+        })
+    data["slides"] = slides
+    data["source_note"] = _clip(data.get("source_note", ""), 55)
+    data["alt_text"] = _clip(data.get("alt_text", ""), 300)
+    return data
+
+
+# ══════════════════════════════════════════════════════════════════════════
 # Registry — keyed by image_template name (matches renderer/render.py's
 # TEMPLATE_FILES and the "image_template" values in the post-generation JSON)
 # ══════════════════════════════════════════════════════════════════════════
@@ -462,6 +550,13 @@ TEMPLATE_SPECS = {
         "required_keys": _TL_REQUIRED_KEYS,
         "coerce": _coerce_timeline,
         "needs_icons": True,
+    },
+    "educational_carousel": {
+        "system": _CAROUSEL_SYSTEM,
+        "user_template": _CAROUSEL_USER_TEMPLATE,
+        "required_keys": _CAROUSEL_REQUIRED_KEYS,
+        "coerce": _coerce_educational_carousel,
+        "needs_icons": False,
     },
 }
 

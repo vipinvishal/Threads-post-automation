@@ -1,0 +1,152 @@
+{
+  "date_ist": "2026-09-09",
+  "generated_at": "2026-09-09T17:36:23.935851+00:00",
+  "signal_count": 9,
+  "signals": [
+    {
+      "id": "hn-49615537",
+      "source": "hacker_news",
+      "title": "Muse – Meta’s personal AI agent",
+      "url": "https://ai.meta.com/muse",
+      "published_at": "2026-09-08T19:25:00+00:00",
+      "excerpt": "Hacker News: 604 points and 659 comments.",
+      "signal_score": 1592.5,
+      "community_metrics": {
+        "points": 604,
+        "comments": 659
+      }
+    },
+    {
+      "id": "hn-49623754",
+      "source": "hacker_news",
+      "title": "Claude, change the \"Add to Cart\" button to blue",
+      "url": "https://opusfived.dev",
+      "published_at": "2026-09-09T09:39:46+00:00",
+      "excerpt": "Hacker News: 701 points and 284 comments.",
+      "signal_score": 1127.0,
+      "community_metrics": {
+        "points": 701,
+        "comments": 284
+      }
+    },
+    {
+      "id": "hn-49624823",
+      "source": "hacker_news",
+      "title": "Desert Ant Labs: local, fast models that run on device",
+      "url": "https://desertant.com/blog/introducing-desert-ant-labs",
+      "published_at": "2026-09-09T11:39:46+00:00",
+      "excerpt": "Hacker News: 287 points and 77 comments.",
+      "signal_score": 402.5,
+      "community_metrics": {
+        "points": 287,
+        "comments": 77
+      }
+    },
+    {
+      "id": "hn-49627370",
+      "source": "hacker_news",
+      "title": "GPT-6 Astra, looped transformers, and hidden reasoning",
+      "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+      "published_at": "2026-09-09T14:37:47+00:00",
+      "excerpt": "Hacker News: 138 points and 41 comments.",
+      "signal_score": 199.5,
+      "community_metrics": {
+        "points": 138,
+        "comments": 41
+      }
+    },
+    {
+      "id": "hn-49627646",
+      "source": "hacker_news",
+      "title": "Show HN: Geiger – See every AI agent on your machine and what it can touch",
+      "url": "https://github.com/Atomburstofficial/geiger",
+      "published_at": "2026-09-09T14:54:49+00:00",
+      "excerpt": "Hacker News: 32 points and 16 comments.",
+      "signal_score": 56.0,
+      "community_metrics": {
+        "points": 32,
+        "comments": 16
+      }
+    },
+    {
+      "id": "hn-49628454",
+      "source": "hacker_news",
+      "title": "Better AI code comment detector",
+      "url": "https://entropicthoughts.com/better-ai-comment-classifier",
+      "published_at": "2026-09-09T15:45:43+00:00",
+      "excerpt": "Hacker News: 18 points and 14 comments.",
+      "signal_score": 39.0,
+      "community_metrics": {
+        "points": 18,
+        "comments": 14
+      }
+    },
+    {
+      "id": "hn-49629382",
+      "source": "hacker_news",
+      "title": "Muse's Social Media Handle Is Stolen by New Meta AI Tool",
+      "url": "https://www.realitytea.com/2026/09/09/muse-band-meta-ai-social-media-handle",
+      "published_at": "2026-09-09T16:43:35+00:00",
+      "excerpt": "Hacker News: 16 points and 4 comments.",
+      "signal_score": 22.0,
+      "community_metrics": {
+        "points": 16,
+        "comments": 4
+      }
+    },
+    {
+      "id": "hn-49627872",
+      "source": "hacker_news",
+      "title": "Show HN: Give your AI agent on-screen guides that show users where to click",
+      "url": "https://news.ycombinator.com/item",
+      "published_at": "2026-09-09T15:09:05+00:00",
+      "excerpt": "Hacker News: 7 points and 1 comments.",
+      "signal_score": 8.5,
+      "community_metrics": {
+        "points": 7,
+        "comments": 1
+      }
+    },
+    {
+      "id": "hn-49629118",
+      "source": "hacker_news",
+      "title": "Teaching an AI My Taste",
+      "url": "https://lonriesberg.com/posts/teaching-an-ai-my-taste",
+      "published_at": "2026-09-09T16:27:49+00:00",
+      "excerpt": "Hacker News: 5 points and 0 comments.",
+      "signal_score": 5.0,
+      "community_metrics": {
+        "points": 5,
+        "comments": 0
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "topic": "Why RAG quality often fails before retrieval starts",
+      "angle": "Show how document cleaning and chunk boundaries corrupt otherwise good retrieval.",
+      "audience_pain": "Developers tune prompts while their source chunks are already broken.",
+      "why_now": "Evergreen production failure with high practical value.",
+      "hook_seed": "Your RAG may be failing before retrieval starts.",
+      "format": "practical_tips",
+      "objective": "share",
+      "image_template": "educational_carousel",
+      "source_ids": [],
+      "score": 6.0,
+      "id": "fallback-1"
+    },
+    {
+      "topic": "KV-cache pressure versus GPU utilization",
+      "angle": "Explain why a busy GPU can still deliver poor inference throughput.",
+      "audience_pain": "Teams watch utilization but miss cache pressure and queueing.",
+      "why_now": "Useful mechanism for engineers operating LLM services.",
+      "hook_seed": "High GPU utilization can hide a dying inference service.",
+      "format": "mechanism_explainer",
+      "objective": "reply",
+      "image_template": "three_stage_flow",
+      "source_ids": [],
+      "score": 5.5,
+      "id": "fallback-2"
+    }
+  ]
+}

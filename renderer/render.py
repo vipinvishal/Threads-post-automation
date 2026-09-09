@@ -11,7 +11,7 @@ every ".autofit" element in the real browser and shrinks its font-size until
 it fits its box, so variable-length LLM output never overflows — each
 template just tags its variable-length elements with class="autofit" plus
 data-min-size (and optionally data-max-height) instead of the renderer
-hardcoding per-template CSS selectors.
+    hardcoding per-template CSS selectors.
 """
 import sys, json, pathlib
 from jinja2 import Environment, FileSystemLoader
@@ -31,6 +31,7 @@ TEMPLATE_FILES = {
     "before_after": "before_after.html.j2",
     "annotated_screenshot": "annotated_screenshot.html.j2",
     "timeline": "timeline.html.j2",
+    "educational_carousel": "educational_carousel.html.j2",
 }
 
 

@@ -94,9 +94,7 @@ def generate_infographic_content(research: str, topic: str, generate_text_fn,
     raise RuntimeError(f"Infographic content generation failed: {last_err}")
 
 
-def render_infographic(content: dict, out_path: str) -> str:
-    """Render the content JSON to a PNG via renderer/render.py (Playwright)."""
-    print("  [Infographic] Rendering PNG with Playwright...")
+def _render_one(content: dict, out_path: str) -> str:
     with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
         json.dump(content, fh)
         content_path = fh.name
@@ -107,8 +105,33 @@ def render_infographic(content: dict, out_path: str) -> str:
         )
     finally:
         os.unlink(content_path)
-    print(f"  [Infographic] Rendered -> {out_path}")
     return out_path
+
+
+def render_infographic(content: dict, out_path: str):
+    """Render one infographic or a five-card carousel via Playwright."""
+    print("  [Infographic] Rendering PNG with Playwright...")
+    if content.get("_template_name") != "educational_carousel":
+        result = _render_one(content, out_path)
+        print(f"  [Infographic] Rendered -> {result}")
+        return result
+
+    output = pathlib.Path(out_path)
+    rendered = []
+    for index, slide in enumerate(content.get("slides", []), 1):
+        card = dict(slide)
+        card.update({
+            "_template_name": "educational_carousel",
+            "handle": content.get("handle", INFOGRAPHIC_HANDLE),
+            "portfolio": content.get("portfolio", PORTFOLIO_URL),
+            "source_note": content.get("source_note", ""),
+        })
+        card_path = str(output.with_name(f"{output.stem}-{index:02d}{output.suffix}"))
+        rendered.append(_render_one(card, card_path))
+    if len(rendered) != 5:
+        raise RuntimeError(f"Carousel renderer expected 5 slides, produced {len(rendered)}")
+    print(f"  [Infographic] Rendered carousel -> {', '.join(rendered)}")
+    return rendered
 
 
 def upload_to_imgbb(png_path: str) -> str:
