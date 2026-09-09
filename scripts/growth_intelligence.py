@@ -15,7 +15,6 @@ import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from statistics import median
 from typing import Callable
 from urllib.parse import urlsplit, urlunsplit
 
@@ -26,7 +25,6 @@ from exa_py import Exa
 ROOT = Path(__file__).resolve().parent.parent
 SKILL_PATH = ROOT / "skills" / "threads-growth" / "SKILL.md"
 STATE_PATH = Path(__file__).resolve().parent / "daily_intelligence.json"
-ACCOUNT_INSIGHTS_PATH = Path(__file__).resolve().parent / "account_insights.json"
 IST = timezone(timedelta(hours=5, minutes=30))
 
 DAILY_START = "<!-- DAILY_INTELLIGENCE_START -->"
@@ -165,49 +163,6 @@ def collect_hacker_news(limit: int = 35, timeout: int = 12) -> list[dict]:
     return signals
 
 
-def collect_threads(keywords: list[str], timeout: int = 20) -> list[dict]:
-    """Collect native Threads demand when the optional search permission is configured."""
-    token = os.environ.get("THREADS_ACCESS_TOKEN", "").strip()
-    if not token:
-        return []
-    api_host = os.environ.get("THREADS_API_HOST", "https://graph.threads.net/v1.0").rstrip("/")
-    fields = "id,text,timestamp,permalink,username,has_replies,is_quote_post"
-    signals = []
-    for keyword in keywords[:6]:
-        for search_type in ("TOP", "RECENT"):
-            try:
-                response = requests.get(
-                    f"{api_host}/keyword_search",
-                    params={
-                        "q": keyword,
-                        "search_type": search_type,
-                        "fields": fields,
-                        "limit": 20,
-                        "access_token": token,
-                    },
-                    timeout=timeout,
-                )
-                response.raise_for_status()
-            except requests.RequestException as exc:
-                print(f"  [Intelligence] Threads search skipped for '{keyword}': {exc}")
-                continue
-            for rank, item in enumerate(response.json().get("data", []), 1):
-                text = str(item.get("text", "")).strip()
-                if not text:
-                    continue
-                signals.append({
-                    "id": f"threads-{item.get('id')}",
-                    "source": f"threads_{search_type.lower()}",
-                    "title": text.splitlines()[0][:180],
-                    "url": item.get("permalink", ""),
-                    "published_at": item.get("timestamp", ""),
-                    "excerpt": text[:700],
-                    "signal_score": max(1, 25 - rank) + (8 if search_type == "TOP" else 0),
-                    "community_metrics": {"search_type": search_type, "rank": rank, "keyword": keyword},
-                })
-    return signals
-
-
 def collect_exa(api_key: str, hours: int = 72) -> list[dict]:
     if not api_key:
         return []
@@ -278,7 +233,6 @@ def generate_candidates(generate_text_fn: Callable[[str, str], str], signals: li
             "topic": item.get("topic", ""),
             "hook": item.get("hook", ""),
             "format": item.get("format", ""),
-            "views": item.get("insights", {}).get("views") if isinstance(item.get("insights"), dict) else None,
         }
         for item in history[-20:]
     ]
@@ -357,51 +311,6 @@ Return JSON only:
     return sorted(cleaned, key=lambda x: x["score"], reverse=True)[:10]
 
 
-def performance_lessons(history: list) -> list[str]:
-    """Return only metric-backed lessons; never learn from generated confidence."""
-    rows = []
-    for entry in history:
-        insights = entry.get("benchmark_insights")
-        if not isinstance(insights, dict) or float(insights.get("views") or 0) <= 0:
-            continue
-        views = float(insights["views"])
-        amplification = sum(float(insights.get(k) or 0) for k in ("reposts", "quotes", "shares")) / views
-        conversation = float(insights.get("replies") or 0) / views
-        rows.append((entry, views, amplification, conversation))
-    if len(rows) < 6:
-        return ["Not enough completed insight snapshots yet; keep strategy exploratory."]
-
-    view_mid = median(v for _, v, _, _ in rows)
-    top = sorted(rows, key=lambda row: (row[2] + row[3], row[1]), reverse=True)[:3]
-    lessons = [f"Median measured views across {len(rows)} posts: {view_mid:.0f}."]
-    for entry, views, amplification, conversation in top:
-        lessons.append(
-            f"Strong measured pattern: {entry.get('format', 'unknown')} / "
-            f"{entry.get('hook_style', 'unknown')} / {entry.get('image_template', 'unknown')} "
-            f"at {views:.0f} views, {amplification:.2%} amplification, {conversation:.2%} reply rate."
-        )
-    return lessons
-
-
-def account_lessons(path: Path = ACCOUNT_INSIGHTS_PATH) -> list[str]:
-    try:
-        snapshots = json.loads(path.read_text(encoding="utf-8"))
-    except (FileNotFoundError, json.JSONDecodeError):
-        return []
-    if not isinstance(snapshots, list) or not snapshots:
-        return []
-    latest = snapshots[-1]
-    lessons = [
-        f"Latest first-party account window: {latest.get('views', 0)} views, "
-        f"{latest.get('clicks', 0)} clicks, {latest.get('followers_count', 0)} followers."
-    ]
-    if len(snapshots) >= 2:
-        before = snapshots[-2]
-        delta = float(latest.get("followers_count") or 0) - float(before.get("followers_count") or 0)
-        lessons.append(f"Follower change since the prior daily snapshot: {delta:+.0f}.")
-    return lessons
-
-
 def _render_daily_section(state: dict, history: list) -> str:
     candidates = state.get("candidates", [])[:8]
     lines = [
@@ -410,9 +319,9 @@ def _render_daily_section(state: dict, history: list) -> str:
         "",
         f"Last refreshed: {state.get('date_ist', 'unknown')} IST",
         "",
-        "Metric-backed learning:",
+        "Performance learning (manual data only):",
     ]
-    lines.extend(f"- {lesson}" for lesson in performance_lessons(history) + account_lessons())
+    lines.append("- Automatic performance collection is disabled; review live posts manually.")
     lines.extend(["", "Current ranked opportunities:"])
     for candidate in candidates:
         sources = ", ".join(candidate.get("source_ids", [])) or "evergreen fallback"
@@ -468,7 +377,6 @@ def refresh_daily_intelligence(generate_text_fn: Callable[[str, str], str], nich
     except Exception as exc:
         print(f"  [Intelligence] Hacker News unavailable: {exc}")
     signals.extend(collect_exa(os.environ.get("EXA_API_KEY", "")))
-    signals.extend(collect_threads(["AI", "LLM", "AI agents", "RAG", "inference", "open source AI"]))
     signals = dedupe_signals(signals)[:40]
     print(f"  [Intelligence] Retained {len(signals)} distinct AI signals.")
 

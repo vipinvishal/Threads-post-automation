@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Refresh metrics, trends, candidates, and skill memory
+      - name: Refresh trends, candidates, and skill memory
         run: python scripts/daily_learning.py
         env:
           GEMINI_MODEL:         gemini-2.5-flash
@@ -39,13 +39,12 @@ jobs:
           GEMINI_API_KEY_2:     ${{ secrets.GEMINI_API_KEY_2 }}
           EURON_API_KEY:        ${{ secrets.EURON_API_KEY }}
           EXA_API_KEY:          ${{ secrets.EXA_API_KEY }}
-          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
 
       - name: Commit refreshed intelligence
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add scripts/post_history.json scripts/account_insights.json scripts/daily_intelligence.json skills/threads-growth/SKILL.md
+          git add scripts/post_history.json scripts/daily_intelligence.json skills/threads-growth/SKILL.md
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh daily Threads intelligence [skip ci]"
             git push

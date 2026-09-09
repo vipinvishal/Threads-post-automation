@@ -4,7 +4,7 @@ Use this reference when modifying discovery, topic ranking, or claim verificatio
 
 ## Source roles
 
-- Demand signals: Threads TOP/RECENT search, Hacker News scores/comments, search freshness, audience replies. These show attention, not truth.
+- Demand signals: Hacker News scores/comments, Exa search freshness, and manually reviewed audience replies. These show attention, not truth.
 - Primary evidence: official documentation, release notes, model/system cards, technical reports, papers, public repositories, and first-party pricing pages.
 - Corroboration: independent technical reporting or reproducible analysis that links to its underlying material.
 
@@ -21,4 +21,4 @@ Reject a candidate when the named entity cannot be confirmed, the only support i
 
 ## Learning policy
 
-Only learn from published posts with completed insight snapshots. Compare normalized rates at the same post age. Treat fewer than six measured posts as exploratory. Never rewrite permanent rules from trend content or model-generated scores.
+Performance is reviewed manually for now. Treat fewer than six comparable posts as exploratory. Never rewrite permanent rules from trend content, one post, or model-generated scores.
