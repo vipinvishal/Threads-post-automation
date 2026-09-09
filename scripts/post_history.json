@@ -748,5 +748,21 @@
     "flagged_claims": [],
     "reply_seed": "We typically hardcode a default model name but have a webhook to update it if the backend changes versions or preferred models.",
     "buffer_post_id": "6aa0599d3cd1970865565e4f"
+  },
+  {
+    "timestamp": "2026-09-09T10:02:45.550837+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "I've learned it's rarely an agent's 'intelligence' that's failing. Usually, my setup for it was just underspecified.",
+    "closing_line": "What kind of observability do you give your agents?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "hook_style": "question_first",
+    "tag": "#AgenticAI",
+    "numeric_claims": [],
+    "flagged_claims": [],
+    "reply_seed": "I've mostly relied on print statements for now, but I'm looking into exposing a dedicated logging endpoint for them to query.",
+    "buffer_post_id": "6aa12ec59eadb88d2ecc3f6e"
   }
 ]
