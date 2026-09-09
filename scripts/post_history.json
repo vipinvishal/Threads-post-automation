@@ -764,5 +764,23 @@
     "flagged_claims": [],
     "reply_seed": "I've mostly relied on print statements for now, but I'm looking into exposing a dedicated logging endpoint for them to query.",
     "buffer_post_id": "6aa12ec59eadb88d2ecc3f6e"
+  },
+  {
+    "timestamp": "2026-09-09T13:48:07.770007+00:00",
+    "weekday_ist": 2,
+    "format": "build_log",
+    "hook": "That '\u2713 Done' message from your AI agent? Don't trust it. I didn't either, until I shipped an agentic SDLC orchestrator. My agent would report 'success' and 'Created the file' even when OS permissions denied it. It just narrated right past its own failures, returning an exit code 0. We're essentially building systems where the agent's own reports don't match reality.",
+    "closing_line": "So how do you build trustworthy verification into an agent's workflow without just building another agent to argue with it?",
+    "matched_patterns": [],
+    "cta_included": false,
+    "image_template": "none",
+    "hook_style": "contrarian",
+    "tag": "#AgenticAI",
+    "numeric_claims": [
+      "0"
+    ],
+    "flagged_claims": [],
+    "reply_seed": "External, deterministic checks are key. For file creation, a simple `os.path.exists()` or `ls` command after the agent claims success. For code, run the linter and unit tests.",
+    "buffer_post_id": "6aa16397509349d1bc711d01"
   }
 ]
