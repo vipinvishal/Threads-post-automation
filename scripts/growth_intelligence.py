@@ -495,18 +495,23 @@ def refresh_daily_intelligence(generate_text_fn: Callable[[str, str], str], nich
     return state
 
 
-def select_candidate(state: dict, history: list) -> dict:
-    """Pick the highest-ranked unused topic while avoiding immediate format repetition."""
+def candidate_queue(state: dict, history: list) -> list[dict]:
+    """Return ranked unused topics, preferring a format change for the first try."""
     recent_topics = {str(item.get("topic", "")).lower() for item in history[-30:]}
     previous_format = history[-1].get("format") if history else None
     candidates = state.get("candidates") or FALLBACK_CANDIDATES
-    for candidate in candidates:
-        if candidate.get("topic", "").lower() not in recent_topics and candidate.get("format") != previous_format:
-            return candidate
-    for candidate in candidates:
-        if candidate.get("topic", "").lower() not in recent_topics:
-            return candidate
-    return candidates[0]
+    fresh = [c for c in candidates if c.get("topic", "").lower() not in recent_topics]
+    if not fresh:
+        fresh = list(candidates)
+    different = [c for c in fresh if c.get("format") != previous_format]
+    repeated = [c for c in fresh if c.get("format") == previous_format]
+    return different + repeated
+
+
+def select_candidate(state: dict, history: list) -> dict:
+    """Pick the first candidate in the retryable evidence queue."""
+    queue = candidate_queue(state, history)
+    return queue[0]
 
 
 def sources_for_candidate(state: dict, candidate: dict) -> list[dict]:

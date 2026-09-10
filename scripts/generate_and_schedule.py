@@ -111,6 +111,7 @@ def validate_tag(model_tag: str, body: str, topic: str) -> str:
 
 MAX_RETRIES        = 4
 RETRY_BASE_SECONDS = 15
+MAX_CANDIDATE_ATTEMPTS = int(os.environ.get("MAX_CANDIDATE_ATTEMPTS", "4"))
 
 # ── Load topics config ────────────────────────────────────────────────────────
 _script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -1463,11 +1464,57 @@ def main(preview: bool = False):
     try:
         history = load_history()
         daily_state = growth_intelligence.refresh_daily_intelligence(generate_text, NICHE, history)
-        candidate = growth_intelligence.select_candidate(daily_state, history)
-        source_records = growth_intelligence.sources_for_candidate(daily_state, candidate)
+        candidate = None
+        source_records = []
+        evidence = None
+        research = ""
+        topic = ""
+        format_key = rotation["format"]
 
-        topic = candidate.get("topic") or pick_topic_for_format(rotation["format"])
-        format_key = candidate.get("format") or rotation["format"]
+        queue = growth_intelligence.candidate_queue(daily_state, history)
+        for attempt, proposed in enumerate(queue[:MAX_CANDIDATE_ATTEMPTS], 1):
+            proposed_topic = proposed.get("topic") or pick_topic_for_format(rotation["format"])
+            proposed_format = proposed.get("format") or rotation["format"]
+            proposed_sources = growth_intelligence.sources_for_candidate(daily_state, proposed)
+            print(
+                f"  [Candidate {attempt}/{min(len(queue), MAX_CANDIDATE_ATTEMPTS)}] "
+                f"Verifying: {proposed_topic}"
+            )
+            signal_brief = growth_intelligence.build_signal_brief(proposed_sources)
+            researched = research_topic(
+                proposed_topic, NICHE,
+                fresh=bool(proposed_sources) or proposed_format in ("hot_take", "quote_react", "india_cost"),
+            )
+            proposed_research = (
+                signal_brief + "\n\nVERIFICATION SEARCH:\n" + researched
+            ).strip()
+            fresh_evidence = (
+                proposed_format in ("hot_take", "quote_react", "india_cost")
+                or bool(proposed_sources)
+            )
+            try:
+                proposed_evidence = verify_research_evidence(
+                    proposed_topic,
+                    proposed.get("angle", ""),
+                    proposed_research,
+                    fresh=fresh_evidence,
+                )
+            except RuntimeError as exc:
+                print(f"  [Candidate] Rejected by evidence gate: {exc}\n")
+                continue
+            candidate = proposed
+            topic = proposed_topic
+            format_key = proposed_format
+            source_records = proposed_sources
+            research = proposed_research
+            evidence = proposed_evidence
+            break
+
+        if candidate is None or evidence is None:
+            raise RuntimeError(
+                f"No candidate passed evidence verification after {min(len(queue), MAX_CANDIDATE_ATTEMPTS)} attempts."
+            )
+
         # One visual identity only. Daily intelligence may choose the content
         # format, but it can never switch the art direction or create a carousel.
         allowed_templates = [INFOGRAPHIC_TEMPLATE]
@@ -1485,17 +1532,6 @@ def main(preview: bool = False):
 
         hook_style = pick_hook_style(history)
         print(f"  Hook style: {hook_style} — {HOOK_STYLE_LABELS.get(hook_style, hook_style)}\n")
-
-        signal_brief = growth_intelligence.build_signal_brief(source_records)
-        researched = research_topic(
-            topic, NICHE,
-            fresh=bool(source_records) or format_key in ("hot_take", "quote_react", "india_cost"),
-        )
-        research = (signal_brief + "\n\nVERIFICATION SEARCH:\n" + researched).strip()
-        fresh_evidence = format_key in ("hot_take", "quote_react", "india_cost") or bool(source_records)
-        evidence = verify_research_evidence(
-            topic, candidate.get("angle", ""), research, fresh=fresh_evidence
-        )
         extra_context = (
             f"CONTENT OBJECTIVE: {objective}. Earn this action; do not ask for a different action.\n"
             f"AUDIENCE PAIN: {candidate.get('audience_pain', '')}\n"

@@ -47,6 +47,17 @@ class GrowthIntelligenceTests(unittest.TestCase):
     def test_lessons_require_real_metrics(self):
         self.assertIn("Not enough", growth_intelligence.performance_lessons([{"insights": {}}])[0])
 
+    def test_candidate_queue_keeps_evidence_fallbacks(self):
+        state = {"candidates": [
+            {"topic": "first", "format": "hot_take"},
+            {"topic": "second", "format": "mechanism_explainer"},
+            {"topic": "third", "format": "practical_tips"},
+        ]}
+        queue = growth_intelligence.candidate_queue(
+            state, [{"topic": "old", "format": "hot_take"}]
+        )
+        self.assertEqual([item["topic"] for item in queue], ["second", "third", "first"])
+
 
 class ContentTests(unittest.TestCase):
     @patch("generate_and_schedule.generate_text")
