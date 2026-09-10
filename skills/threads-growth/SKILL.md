@@ -15,7 +15,7 @@ Build useful, credible Threads content for Indian developers evaluating AI syste
 4. Write a standalone hook under 10 words when natural. Deliver the promised insight immediately; use short visual beats and no fake suspense.
 5. Use one specific, honest CTA. A question counts as the CTA. Do not combine follow and click asks.
 6. Match the visual to the idea: carousel for a practical breakdown, comparison for trade-offs, timeline/flow only for genuinely sequential mechanisms, single-stat only for a verified number.
-7. Record source IDs, content choices, and publication state. Review real post performance manually before changing permanent strategy.
+7. Record source IDs, content choices, publication state, and insight snapshots so later runs can learn from outcomes.
 
 ## Evidence rules
 
@@ -44,8 +44,8 @@ Only the section between the managed markers may be updated automatically. Perma
 
 Last refreshed: 2026-09-10 IST
 
-Performance learning (manual data only):
-- Automatic performance collection is disabled; review live posts manually.
+Metric-backed learning:
+- Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
 - 4-bit quantization for local LLM deployment | angle: How 4-bit quantization, specifically NVFP4/MXFP4, enables large models like Qwen3.8-27B to run on consumer GPUs (e.g., RTX 4090), and the practical implications of choosing bit depths. | objective: share | score: 9.0 | sources: 6aa1a4c8eec9, 50637228b781, fb423c13fd98, hn-49624823

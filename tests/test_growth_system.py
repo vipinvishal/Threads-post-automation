@@ -1,10 +1,13 @@
+import json
 import tempfile
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import patch
 
 import growth_intelligence
 import infographic_templates
+import threads_insights
 from generate_and_schedule import build_final_post, extract_numeric_claims, fact_check_claims, schedule_to_buffer
 
 
@@ -34,6 +37,10 @@ class GrowthIntelligenceTests(unittest.TestCase):
         self.assertTrue(updated.startswith("stable\n"))
         self.assertTrue(updated.endswith("\nend\n"))
         self.assertIn("2026-09-09", updated)
+
+    def test_lessons_require_real_metrics(self):
+        self.assertIn("Not enough", growth_intelligence.performance_lessons([{"insights": {}}])[0])
+
 
 class ContentTests(unittest.TestCase):
     def test_carousel_is_exactly_five_bounded_cards(self):
@@ -76,6 +83,18 @@ class ContentTests(unittest.TestCase):
         variables = post.call_args.kwargs["json"]["variables"]
         self.assertEqual(variables["imageUrl0"], "https://i/1.png")
         self.assertEqual(variables["imageUrl1"], "https://i/2.png")
+
+
+class InsightTests(unittest.TestCase):
+    def test_match_thread_uses_text_and_time(self):
+        now = datetime.now(timezone.utc).isoformat()
+        entry = {"post_text": "RAG fails before retrieval starts. Here is why.", "timestamp": now}
+        thread = {"id": "1", "text": "RAG fails before retrieval starts. Here is why.\n#AI", "timestamp": now}
+        self.assertEqual(threads_insights.match_thread(entry, [thread])["id"], "1")
+
+    def test_metric_value_handles_values_shape(self):
+        self.assertEqual(threads_insights._metric_value({"values": [{"value": 42}]}), 42.0)
+        self.assertEqual(threads_insights._metric_value({"total_value": {"value": 51}}), 51.0)
 
 
 if __name__ == "__main__":

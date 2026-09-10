@@ -4,7 +4,7 @@ Research date: 9 September 2026 (IST)
 
 ## Executive conclusion
 
-The sample infographic direction can help, but the format alone cannot reliably create growth. The current system discovers audience demand, verifies the underlying claim, and publishes an original Threads-native explanation. Results will be reviewed manually before any native account-access or automated performance-learning layer is introduced. No honest system can guarantee followers, views, clicks, or revenue.
+The sample infographic direction can help, but the format alone cannot reliably create growth. The strongest system is a loop: discover current audience demand, verify the underlying claim, publish an original Threads-native explanation, measure first-party outcomes, then update the next day's choices. No honest system can guarantee followers, views, clicks, or revenue; it can improve the probability of those outcomes while protecting account trust.
 
 The implemented strategy prioritizes qualified follower growth, then replies and amplification, then portfolio clicks. It does not automate mass engagement or manufacture authority.
 
@@ -14,12 +14,15 @@ Meta's creator guidance reports that replies account for almost half of views on
 
 Meta also reports that posts with tagged topics generally receive more views, and eligible Threads posts may be recommended to people on Instagram and Facebook. Its newer Insights surfaces include interaction, follower-growth, and link-performance information.[^meta-topics]
 
+The official Threads API supports keyword discovery with TOP and RECENT modes,[^threads-search] post insights including views, likes, replies, reposts, quotes, and shares,[^threads-insights] and image/carousel publishing primitives.[^threads-carousel] That makes native demand discovery and first-party measurement possible when the account token and required permissions are configured.
+
 ## Design implications
 
 ### Topic discovery
 
-Use two signal classes because they answer different questions:
+Use three different signal classes because they answer different questions:
 
+- Threads TOP/RECENT search: what the native audience is discussing now.
 - Hacker News top stories: what technical builders are actively reading and debating. Its official API exposes top/new/best stories and story score/comment fields.[^hn-api]
 - Exa news search: wider recent coverage and source retrieval. Its official API supports date filters and returned text/highlights, while `numSentences` is deprecated in favor of highlights.[^exa-search]
 
@@ -65,16 +68,18 @@ Every card is capped at 48 words, uses at most three bullets, and is rendered at
 
 ### Learning loop
 
-The daily job runs before the first post and performs two operations:
+The daily job runs before the first post and performs four operations:
 
-1. Refresh internet/community signals and rank ten opportunities.
-2. Replace only the managed daily section of the repository skill.
+1. Reconcile Buffer history with actual published Threads posts.
+2. Collect cumulative first-party insight snapshots.
+3. Refresh internet/community signals and rank ten opportunities.
+4. Replace only the managed daily section of the repository skill.
 
-Permanent safety and quality rules cannot be rewritten by a retrieved webpage. For now, post performance is checked manually and generated scores never become proof of effectiveness.
+Permanent safety and quality rules cannot be rewritten by a retrieved webpage or by one unusually successful post. Performance lessons require at least six posts with real view data. This avoids self-reinforcing prompt drift and prevents the model from treating generated content as proof of effectiveness.
 
 ## Success metrics and experiments
 
-During manual review, use rates so posts with different reach can be compared:
+Use rates so posts with different reach can be compared:
 
 - Conversation rate: `replies / views`.
 - Amplification rate: `(reposts + quotes + shares) / views`.
@@ -97,7 +102,8 @@ The code currently supports rare click-objective CTAs and portfolio links. A ded
 
 ## Operational risks
 
-- Buffer may not expose Threads-native topic and alt-text controls. The current publisher keeps Buffer for continuity; direct Threads publishing can be reconsidered after the real posts are reviewed.
+- Platform/API permissions can expire; the insights job safely skips when no token is configured.
+- Buffer may not expose Threads-native topic and alt-text controls. The current publisher keeps Buffer for continuity; a later direct Threads publisher can add those native fields after token permissions are confirmed.
 - News snippets can be wrong or adversarial. Retrieved text is treated as untrusted, and publication fails closed when evidence is insufficient.
 - Three daily posts can become repetitive. Topic/format/history gates reduce this risk, but measured quality should determine whether frequency stays at three.
 - Revenue cannot be inferred from views. Click and conversion tracking must exist before monetization choices are learned.
@@ -106,5 +112,8 @@ The code currently supports rare click-objective CTAs and portfolio links. A ded
 
 [^meta-creator]: Meta, [Find Your Community With New Threads Educational Insights](https://about.fb.com/news/2024/10/find-your-community-with-new-threads-educational-insights/), 2024.
 [^meta-topics]: Meta, [New Threads Features for a More Personalized Experience You Control](https://about.fb.com/news/2025/03/new-threads-features-more-personalized-experience-you-control/), 2025.
+[^threads-search]: Meta Threads API, [Search for Threads posts](https://www.postman.com/meta/threads/request/m9j4i2x/search-for-threads-posts).
+[^threads-insights]: Meta Threads API, [Threads API official collection](https://www.postman.com/meta/threads/documentation/dht3nzz/threads-api).
+[^threads-carousel]: Meta Threads API, [Carousel publishing folder](https://www.postman.com/meta/threads/folder/34203612-c0bbd675-45cc-4a8e-b5b7-0d4d5d8600fe).
 [^hn-api]: Hacker News, [Official API documentation](https://github.com/HackerNews/API).
 [^exa-search]: Exa, [Search API reference](https://exa.ai/docs/reference/search).

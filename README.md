@@ -1,6 +1,6 @@
 # Threads Growth Automation
 
-An evidence-backed content system for [@vipinailabs](https://www.threads.net/@vipinailabs). It discovers current technical AI demand, verifies one topic, writes a retention-focused Threads caption, creates a branded infographic or five-card carousel, and schedules it through Buffer.
+An evidence-backed content system for [@vipinailabs](https://www.threads.net/@vipinailabs). It discovers current technical AI demand, verifies one topic, writes a retention-focused Threads caption, creates a branded infographic or five-card carousel, schedules it through Buffer, and learns from real Threads insights.
 
 No system can guarantee followers, views, clicks, or revenue. This one is designed to improve those outcomes without inventing facts, copying creators, or automating spam engagement.
 
@@ -8,9 +8,11 @@ No system can guarantee followers, views, clicks, or revenue. This one is design
 
 ```text
 8:30 AM IST: daily_learning.py
-  Hacker News + Exa
+  Threads TOP/RECENT + Hacker News + Exa
         ↓
   10 scored technical-AI opportunities
+        ↓
+  real Threads insight snapshots
         ↓
   managed daily section in skills/threads-growth/SKILL.md
 
@@ -32,13 +34,14 @@ The scheduled workflows share one concurrency group so their Git-backed learning
 
 ## What changed
 
-- Current-demand discovery combines Hacker News developer activity and recent Exa coverage.
+- Current-demand discovery combines native Threads search when configured, Hacker News developer activity, and recent Exa coverage.
 - Candidate ranking scores trend strength, relevance, practical value, originality, conversation potential, and evidence strength.
 - A second research pass verifies the selected premise. Fresh claims need two supporting URLs; unsupported premises block publication.
 - Captions target exactly one objective: reply, share, follow, or click. Follow and click asks cannot be combined.
 - Exact numeric claims are detected even when the model omits them from its own claim list. Unsupported numbers block production runs.
 - The new `educational_carousel` renders five 900×1125 cards (1800×2250 output) with strict mobile-readable copy limits.
 - Buffer rate-limit failures go to durable `scripts/pending_posts.json` and are not recorded as published.
+- The optional Threads token reconciles real post IDs and stores insight snapshots for views, likes, replies, reposts, quotes, and shares.
 - The daily skill update can replace only its managed section. Permanent safety/editorial rules do not drift with web content or a one-day result.
 
 See [the research and design rationale](docs/threads_growth_research.md).
@@ -83,7 +86,7 @@ The carousel follows the supplied infographic direction without copying another 
 
 | Job | IST | UTC cron |
 |---|---:|---:|
-| Intelligence refresh | 8:30 AM daily | `0 3 * * *` |
+| Intelligence + insights | 8:30 AM daily | `0 3 * * *` |
 | Post 1 | 11:00 AM daily | `30 5 * * *` |
 | Post 2 | 3:00 PM daily | `30 9 * * *` |
 | Post 3 | 9:00 PM daily | `30 15 * * *` |
@@ -108,6 +111,12 @@ Required production secrets:
 | `BUFFER_CHANNEL_ID` | Threads channel in Buffer |
 | `IMGBB_API_KEY` | Public image hosting for Buffer |
 
+Strongly recommended:
+
+| Variable | Purpose |
+|---|---|
+| `THREADS_ACCESS_TOKEN` | Native TOP/RECENT discovery and first-party insight snapshots |
+
 Optional: `GEMINI_API_KEY_2`, `EURON_API_KEY`, `INFOGRAPHIC_HANDLE`, `PORTFOLIO_URL`, `PORTFOLIO_CTA`, `FOLLOW_CTA`, `HUMANIZE_POST`, `INCLUDE_INFOGRAPHIC`, `STRICT_FACT_CHECK`, `NEWS_WINDOW_HOURS`, and `DEFAULT_TOPIC_TAG`.
 
 Add the secrets under GitHub repository Settings → Secrets and variables → Actions. Both workflows already have `contents: write`, which they need to commit refreshed state.
@@ -115,7 +124,7 @@ Add the secrets under GitHub repository Settings → Secrets and variables → A
 ## Run locally
 
 ```bash
-# Refresh research signals, candidate ranking, and skill memory
+# Refresh native metrics (when configured), research signals, candidate ranking, and skill memory
 python scripts/daily_learning.py
 
 # Generate a post and carousel without publishing or modifying post history
@@ -133,11 +142,12 @@ Preview mode still calls configured research/model services and may consume API 
 ## Learning state
 
 - `scripts/daily_intelligence.json`: today's source records and ranked candidates.
-- `scripts/post_history.json`: publication and content-choice history.
+- `scripts/account_insights.json`: daily follower, click, and account-level engagement snapshots.
+- `scripts/post_history.json`: publication metadata and real insight snapshots.
 - `scripts/pending_posts.json`: recoverable Buffer rate-limit failures.
 - `skills/threads-growth/SKILL.md`: stable editorial contract plus the managed daily intelligence block.
 
-Performance is reviewed manually for now. Generated topic scores help rank opportunities but never become proof that a post performed.
+Only metrics from actual Threads insights become performance lessons, and at least six measured posts are required. Generated self-scores help rank opportunities but never become proof that a post performed.
 
 ## Project structure
 
@@ -149,6 +159,7 @@ Performance is reviewed manually for now. Generated topic scores help rank oppor
 ├── scripts/
 │   ├── daily_learning.py
 │   ├── growth_intelligence.py
+│   ├── threads_insights.py
 │   ├── generate_and_schedule.py
 │   ├── infographic.py
 │   └── infographic_templates.py
@@ -164,7 +175,7 @@ Performance is reviewed manually for now. Generated topic scores help rank oppor
 
 ## Operational notes
 
-- Threads API access and automatic post-insight collection are intentionally disabled for now. Review the real posts before deciding whether to enable them later.
+- Without `THREADS_ACCESS_TOKEN`, publishing still works through Buffer, but native trend search and performance learning remain disabled.
 - If image rendering or hosting fails, the post falls back to text-only.
 - If Buffer remains rate-limited after retries, the content is saved as pending and the workflow reports the problem.
 - Buffer is retained for stable scheduling. Direct Threads publishing would be the next upgrade if native `topic_tag` and per-image alt text are required.

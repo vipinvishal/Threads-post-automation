@@ -1436,6 +1436,7 @@ def append_history(history: list, result: dict, post_id: str, weekday: int) -> l
         "reply_seed": result["reply_seed"],
         "buffer_post_id": post_id,
         "publish_status": "scheduled",
+        "insights": {},
     }
     history = history + [entry]
     history = history[-HISTORY_MAX_ENTRIES:]
