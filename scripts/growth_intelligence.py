@@ -56,7 +56,7 @@ FALLBACK_CANDIDATES = [
         "hook_seed": "Your RAG may be failing before retrieval starts.",
         "format": "practical_tips",
         "objective": "share",
-        "image_template": "educational_carousel",
+        "image_template": "handwritten_poster",
         "source_ids": [],
         "score": 6.0,
     },
@@ -68,7 +68,7 @@ FALLBACK_CANDIDATES = [
         "hook_seed": "High GPU utilization can hide a dying inference service.",
         "format": "mechanism_explainer",
         "objective": "reply",
-        "image_template": "three_stage_flow",
+        "image_template": "handwritten_poster",
         "source_ids": [],
         "score": 5.5,
     },
@@ -302,8 +302,8 @@ personal experience, price, or source. SOURCE_ID values must come from the suppl
 Score each candidate from 0-10 for trend_strength, audience_relevance, practical_value,
 originality, conversation_potential, and evidence_strength. The combined score is their
 arithmetic mean. Use one of these formats: hot_take, mechanism_explainer, practical_tips,
-india_cost, quote_react. Use one objective: reply, share, follow, click. Use one visual:
-educational_carousel, single_stat_hero, before_after, three_stage_flow, timeline, none.
+india_cost, quote_react. Use one objective: reply, share, follow, click. The visual is
+always handwritten_poster; do not propose a carousel or another template.
 
 Return JSON only:
 {{"candidates": [{{"topic":"", "angle":"", "audience_pain":"", "why_now":"",
@@ -320,7 +320,7 @@ Return JSON only:
     seen_topics = set()
     allowed_formats = {"hot_take", "mechanism_explainer", "practical_tips", "india_cost", "quote_react"}
     allowed_objectives = {"reply", "share", "follow", "click"}
-    allowed_visuals = {"educational_carousel", "single_stat_hero", "before_after", "three_stage_flow", "timeline", "none"}
+    allowed_visuals = {"handwritten_poster"}
     for index, candidate in enumerate(data.get("candidates", [])):
         if not isinstance(candidate, dict):
             continue
@@ -335,7 +335,7 @@ Return JSON only:
             numeric.append(max(0.0, min(10.0, float(match.group()) if match else 0.0)))
         fmt = str(candidate.get("format", "mechanism_explainer"))
         obj = str(candidate.get("objective", "reply"))
-        visual = str(candidate.get("image_template", "educational_carousel"))
+        visual = str(candidate.get("image_template", "handwritten_poster"))
         item = {
             "id": f"candidate-{now_ist().date().isoformat()}-{index + 1}",
             "topic": str(candidate.get("topic", "")).strip(),
@@ -345,7 +345,7 @@ Return JSON only:
             "hook_seed": " ".join(str(candidate.get("hook_seed", "")).split()[:10]),
             "format": fmt if fmt in allowed_formats else "mechanism_explainer",
             "objective": obj if obj in allowed_objectives else "reply",
-            "image_template": visual if visual in allowed_visuals else "educational_carousel",
+            "image_template": visual if visual in allowed_visuals else "handwritten_poster",
             "source_ids": ids,
             "scores": scores,
             "score": round(sum(numeric) / len(numeric), 2),

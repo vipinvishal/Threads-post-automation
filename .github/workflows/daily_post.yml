@@ -35,9 +35,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Install Playwright Chromium (for infographic rendering)
-        run: python -m playwright install --with-deps chromium
-
       - name: Debug — check secrets presence
         run: |
           echo "GEMINI_API_KEY set:    ${{ secrets.GEMINI_API_KEY != '' }}"
@@ -50,6 +47,10 @@ jobs:
         run: python scripts/generate_and_schedule.py
         env:
           GEMINI_MODEL:       gemini-2.5-flash
+          # The approved 9:16 handwritten poster is generated from the tracked
+          # mascot/style reference on every run. No carousel renderer is used.
+          GEMINI_IMAGE_MODEL: gemini-3.1-flash-image
+          GEMINI_IMAGE_SIZE:  2K
           EURON_MODEL:        gemini-2.5-flash
           GEMINI_API_KEY:     ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_2:   ${{ secrets.GEMINI_API_KEY_2 }}
@@ -58,9 +59,10 @@ jobs:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           BUFFER_API_KEY:     ${{ secrets.BUFFER_API_KEY }}
           BUFFER_CHANNEL_ID:  ${{ secrets.BUFFER_CHANNEL_ID }}
-          # Infographic image: IMGBB_API_KEY hosts the PNG so Buffer can attach it.
-          # If the secret is unset, the run auto-falls back to a text-only post.
+          # IMGBB_API_KEY hosts the required PNG so Buffer can attach it.
+          # If the secret is unset, production fails closed and does not post.
           IMGBB_API_KEY:      ${{ secrets.IMGBB_API_KEY }}
+          REQUIRE_INFOGRAPHIC: '1'
           INFOGRAPHIC_HANDLE: ${{ vars.INFOGRAPHIC_HANDLE || '@vipinailabs' }}
           # Portfolio URL: text on the infographic + the clickable link that appears
           # alongside FOLLOW_CTA on the rare gate-approved CTA post (see DAY_ROTATION

@@ -47,9 +47,12 @@ NEWS_WINDOW_HOURS   = int(os.environ.get("NEWS_WINDOW_HOURS", "48"))
 NEWS_FALLBACK_HOURS = int(os.environ.get("NEWS_FALLBACK_HOURS", "168"))  # 7 days
 
 # ── Infographic image ────────────────────────────────────────────────────────────
-# When on, each post gets a rendered infographic PNG attached (needs IMGBB_API_KEY
-# to host it for Buffer). Set INCLUDE_INFOGRAPHIC=0 to fall back to text-only.
+# Every production post uses the one approved AI-generated handwritten poster.
+# IMGBB hosts the PNG so Buffer can attach it. REQUIRE_INFOGRAPHIC defaults on so
+# an image-generation failure cannot silently publish a text-only post.
 INCLUDE_INFOGRAPHIC = os.environ.get("INCLUDE_INFOGRAPHIC", "1") not in ("0", "false", "False", "")
+REQUIRE_INFOGRAPHIC = os.environ.get("REQUIRE_INFOGRAPHIC", "1") not in ("0", "false", "False", "")
+INFOGRAPHIC_TEMPLATE = infographic.HANDWRITTEN_POSTER_TEMPLATE
 
 # ── Humanize pass ─────────────────────────────────────────────────────────────────
 # After Gemini writes the post, run a second pass that rewrites the phrasing so it
@@ -133,13 +136,13 @@ def pick_topic_for_format(format_key: str) -> str:
 # the format, objective, and visual from current signals while these pools enforce
 # valid combinations and keep the week varied.
 DAY_ROTATION = {
-    0: {"format": "mechanism_explainer", "image_templates": ["educational_carousel", "three_stage_flow", "before_after"], "cta_eligible": False},
-    1: {"format": "hot_take",            "image_templates": ["single_stat_hero", "before_after", "none"], "cta_eligible": False},
-    2: {"format": "practical_tips",       "image_templates": ["educational_carousel"], "cta_eligible": False},
-    3: {"format": "india_cost",           "image_templates": ["single_stat_hero", "before_after", "educational_carousel"], "cta_eligible": False},
-    4: {"format": "mechanism_explainer", "image_templates": ["educational_carousel", "before_after", "timeline"], "cta_eligible": True},
-    5: {"format": "quote_react",         "image_templates": ["none", "educational_carousel"], "cta_eligible": False},
-    6: {"format": "practical_tips",       "image_templates": ["educational_carousel", "none"], "cta_eligible": False},
+    0: {"format": "mechanism_explainer", "image_templates": [INFOGRAPHIC_TEMPLATE], "cta_eligible": False},
+    1: {"format": "hot_take",            "image_templates": [INFOGRAPHIC_TEMPLATE], "cta_eligible": False},
+    2: {"format": "practical_tips",       "image_templates": [INFOGRAPHIC_TEMPLATE], "cta_eligible": False},
+    3: {"format": "india_cost",           "image_templates": [INFOGRAPHIC_TEMPLATE], "cta_eligible": False},
+    4: {"format": "mechanism_explainer", "image_templates": [INFOGRAPHIC_TEMPLATE], "cta_eligible": True},
+    5: {"format": "quote_react",         "image_templates": [INFOGRAPHIC_TEMPLATE], "cta_eligible": False},
+    6: {"format": "practical_tips",       "image_templates": [INFOGRAPHIC_TEMPLATE], "cta_eligible": False},
 }
 FORMAT_LABELS = {
     "mechanism_explainer": "Mechanism Explainer",
@@ -150,12 +153,12 @@ FORMAT_LABELS = {
     "practical_tips": "Practical Playbook",
 }
 FORMAT_TEMPLATE_OPTIONS = {
-    "mechanism_explainer": ["educational_carousel", "three_stage_flow", "before_after", "timeline"],
-    "hot_take": ["single_stat_hero", "before_after", "none"],
-    "practical_tips": ["educational_carousel"],
-    "india_cost": ["single_stat_hero", "before_after", "educational_carousel"],
-    "quote_react": ["none", "educational_carousel"],
-    "build_log": ["annotated_screenshot", "none"],
+    "mechanism_explainer": [INFOGRAPHIC_TEMPLATE],
+    "hot_take": [INFOGRAPHIC_TEMPLATE],
+    "practical_tips": [INFOGRAPHIC_TEMPLATE],
+    "india_cost": [INFOGRAPHIC_TEMPLATE],
+    "quote_react": [INFOGRAPHIC_TEMPLATE],
+    "build_log": [INFOGRAPHIC_TEMPLATE],
 }
 WEEKDAY_LABELS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
@@ -196,18 +199,18 @@ Return JSON only:
   "cta_type": "none | reply | share | follow | click",
   "cta_text": "one natural CTA under 10 words, or empty string",
   "tag": "AI | AgenticAI | cloudcomputing | <other relevant single tag>",
-  "image_template": "educational_carousel | three_stage_flow | single_stat_hero | before_after | annotated_screenshot | timeline | none",
+  "image_template": "handwritten_poster",
   "numeric_claims": ["list every specific number/stat used in the post, for a fact-check pass before posting"],
   "reply_seed": "one honest, specific answer to your own closing question — used to seed the reply thread if no one answers within a few hours"
 }
 
 FORMAT-SPECIFIC RULES
-- mechanism_explainer: only use image_template "three_stage_flow" or "timeline" if the concept is genuinely sequential. If it's a trade-off or comparison, use "before_after" instead — do not force a 3-step shape onto a 2-sided idea.
-- build_log: first person, present tense, something that actually went wrong or surprised you today while building your own AI systems/tools. Never invent a project or company name. image_template should usually be "annotated_screenshot" or "none".
-- hot_take: one stat, one sentence of context, one question. image_template "single_stat_hero" for a standalone number, "before_after" if the take is really an old-vs-new comparison. Keep under 400 characters.
-- india_cost: must include an actual ₹ figure or a named Indian cloud/hardware context (RunPod India pricing, AWS Mumbai, a consumer GPU price in India, a comparison to a developer salary). image_template "single_stat_hero" or "before_after".
-- quote_react: written as a reaction to a specific claim (you will be given the source post's text as input) — agree, disagree, or add a missing angle. No image. No CTA.
-- practical_tips: 3-5 little-known, immediately usable checks for one narrow developer problem. Each item must work without extra context. Prefer educational_carousel. Do not write obvious advice or a generic listicle.
+- image_template is always "handwritten_poster". The pipeline generates one 9:16 image in the approved marker-lettered, blue-bird-mascot style; never request a carousel or another layout.
+- build_log: first person, present tense, something that actually went wrong or surprised you today while building your own AI systems/tools. Never invent a project or company name.
+- hot_take: one stat, one sentence of context, one question. Keep under 400 characters.
+- india_cost: must include an actual ₹ figure or a named Indian cloud/hardware context (RunPod India pricing, AWS Mumbai, a consumer GPU price in India, a comparison to a developer salary).
+- quote_react: written as a reaction to a specific claim (you will be given the source post's text as input) — agree, disagree, or add a missing angle. No conversion CTA.
+- practical_tips: 3-5 little-known, immediately usable checks for one narrow developer problem. Each item must work without extra context. Do not write obvious advice or a generic listicle.
 """.strip()
 
 POST_PROMPT_TEMPLATE = """
@@ -1360,36 +1363,31 @@ def schedule_to_buffer(post_text: str, image_url=None) -> str:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def build_infographic_image(research: str, topic: str, preview: bool, post: str = "",
-                            image_template: str = "three_stage_flow", hook_style: str = ""):
-    """Render the infographic and (unless preview) host it for Buffer.
-
-    `post` aligns the diagram to the post: it visualizes the SAME solution/
-    concept the post centers on. `image_template` picks which layout to build
-    (see scripts/infographic_templates.py) — chosen by generate_post()'s
-    template-variety gate, not just the raw model output. `hook_style` makes the
-    image mirror the same scroll-stopping energy as the post's opening line (see
-    HOOK_STYLES above and infographic_templates.HOOK_STYLE_VISUAL_FRAMING).
+                            image_template: str = INFOGRAPHIC_TEMPLATE, hook_style: str = ""):
+    """Generate the approved single handwritten poster and optionally host it.
 
     Returns a public image URL (real run), a local PNG path (preview), or None if
-    anything fails — in which case the post falls back to text-only so a single
-    rendering hiccup never kills the daily post.
+    optional image generation is disabled and fails. With REQUIRE_INFOGRAPHIC on
+    (the production default), a visual failure blocks publication.
     """
     try:
         print("\n[ Step 2.5 ] Building infographic image...")
-        content  = infographic.generate_infographic_content(
-            research, topic, generate_text, post=post,
-            image_template=image_template, hook_style=hook_style,
-        )
+        if image_template != INFOGRAPHIC_TEMPLATE:
+            raise ValueError(
+                f"Production visual must be '{INFOGRAPHIC_TEMPLATE}', got '{image_template}'"
+            )
         out_dir  = os.path.join(_script_dir, "..", "output")
         os.makedirs(out_dir, exist_ok=True)
         png_path = os.path.abspath(os.path.join(out_dir, "infographic.png"))
-        rendered = infographic.render_infographic(content, png_path)
+        rendered = infographic.generate_handwritten_poster(
+            research, topic, post, generate_text, png_path,
+        )
         if preview:
             return rendered
-        paths = rendered if isinstance(rendered, list) else [rendered]
-        urls = [infographic.upload_to_imgbb(path) for path in paths]
-        return urls if len(urls) > 1 else urls[0]
+        return infographic.upload_to_imgbb(rendered)
     except Exception as e:
+        if REQUIRE_INFOGRAPHIC:
+            raise RuntimeError(f"Required handwritten poster failed: {e}") from e
         print(f"  [Infographic] Skipped — {e}. Falling back to text-only post.")
         return None
 
@@ -1470,10 +1468,9 @@ def main(preview: bool = False):
 
         topic = candidate.get("topic") or pick_topic_for_format(rotation["format"])
         format_key = candidate.get("format") or rotation["format"]
-        preferred_template = candidate.get("image_template")
-        allowed_templates = FORMAT_TEMPLATE_OPTIONS.get(format_key, rotation["image_templates"])
-        if preferred_template in allowed_templates:
-            allowed_templates = [preferred_template] + [t for t in allowed_templates if t != preferred_template]
+        # One visual identity only. Daily intelligence may choose the content
+        # format, but it can never switch the art direction or create a carousel.
+        allowed_templates = [INFOGRAPHIC_TEMPLATE]
         objective = candidate.get("objective", "reply")
         if objective in ("follow", "click") and not cta_cap_allows(history):
             print(f"  [CTA] Conversion cap active; changing objective from {objective} to reply.")
@@ -1524,11 +1521,13 @@ def main(preview: bool = False):
         })
 
         image_ref = None
-        if INCLUDE_INFOGRAPHIC and result["image_template"] != "none":
+        if not INCLUDE_INFOGRAPHIC and REQUIRE_INFOGRAPHIC:
+            raise RuntimeError("REQUIRE_INFOGRAPHIC=1 cannot be combined with INCLUDE_INFOGRAPHIC=0")
+        if INCLUDE_INFOGRAPHIC:
             image_ref = build_infographic_image(research, topic, preview, post=result["post_text"],
                                                 image_template=result["image_template"], hook_style=hook_style)
         else:
-            print(f"  [Infographic] Skipped (image_template={result['image_template']}).")
+            print("  [Infographic] Disabled; continuing with an explicitly allowed text-only post.")
 
         if preview:
             print(f"{'='*60}")

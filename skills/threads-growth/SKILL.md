@@ -1,6 +1,6 @@
 ---
 name: threads-growth
-description: Research, create, publish, and improve evidence-backed technical AI content for the @vipinailabs Threads account. Use for daily topic discovery, Threads captions, infographics, carousels, engagement experiments, and performance-led content planning; do not use for unrelated social platforms.
+description: Research, create, publish, and improve evidence-backed technical AI content for the @vipinailabs Threads account. Use for daily topic discovery, Threads captions, branded handwritten infographics, engagement experiments, and performance-led content planning; do not use for unrelated social platforms.
 ---
 
 # Threads Growth
@@ -14,7 +14,7 @@ Build useful, credible Threads content for Indian developers evaluating AI syste
 3. Choose one narrow audience pain and one content objective: reply, share, follow, or click.
 4. Write a standalone hook under 10 words when natural. Deliver the promised insight immediately; use short visual beats and no fake suspense.
 5. Use one specific, honest CTA. A question counts as the CTA. Do not combine follow and click asks.
-6. Match the visual to the idea: carousel for a practical breakdown, comparison for trade-offs, timeline/flow only for genuinely sequential mechanisms, single-stat only for a verified number.
+6. Use exactly one 9:16 `handwritten_poster` image. Match the approved warm-paper, marker-lettered visual identity and recurring blue bird mascot. Change only the topic-specific copy, icons, diagram, highlights, and mascot pose. Never switch to a carousel or another template.
 7. Record source IDs, content choices, publication state, and insight snapshots so later runs can learn from outcomes.
 
 ## Evidence rules
@@ -31,8 +31,8 @@ Build useful, credible Threads content for Indian developers evaluating AI syste
 - Keep the main text within the platform limit and use plain text.
 - Attach a native topic tag through the publisher when supported.
 - Add alt text to every image.
-- Use original assets. Do not imitate another creator's mascot, logo, or distinctive illustration character.
-- A single image must be legible without zooming. Prefer a 4:5 five-card carousel when the explanation contains more than one major idea.
+- Use the project-owned mascot/style reference at `assets/handwritten-poster-reference.png`. Do not add third-party logos or screenshot UI.
+- The single poster must be legible without zooming: two-line hook, three short visual cards, one evidence beat, one warning, and one takeaway. Move extra detail into the caption instead of adding slides.
 - Do not automate mass replies, follows, likes, or generic engagement. Draft substantive replies for human approval.
 
 ## Daily learning boundary

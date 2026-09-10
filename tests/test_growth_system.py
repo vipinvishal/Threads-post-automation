@@ -6,7 +6,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 import growth_intelligence
-import infographic_templates
+import infographic
 import threads_insights
 from generate_and_schedule import (
     build_final_post,
@@ -59,27 +59,80 @@ class ContentTests(unittest.TestCase):
             "cta_type": "share",
             "cta_text": "Share this with a local-LLM builder",
             "tag": "AI",
-            "image_template": "educational_carousel",
+            "image_template": "handwritten_poster",
             "numeric_claims": [],
             "reply_seed": "Start with task-specific evaluation.",
         })
         result = generate_post_json(
             "practical_tips", "Local LLM quantization", "source", False,
-            ["educational_carousel"], "cold_open_stat", "share",
+            ["handwritten_poster"], "cold_open_stat", "share",
         )
         self.assertFalse(result["cta_included"])
 
-    def test_carousel_is_exactly_five_bounded_cards(self):
+    def test_handwritten_poster_copy_is_bounded(self):
         raw = {
-            "slides": [{"title_hl": "x" * 100, "bullets": ["y" * 100] * 5}],
-            "alt_text": "z" * 500,
+            "headline_line1": "one two three four five six seven eight",
+            "headline_line2": "quality breaks here today",
+            "context_line": "one benchmark compared these three formats",
+            "cards": [
+                {"label": "full precision baseline model", "value": "55 GB total model weights"},
+                {"label": "four bit", "value": "17 GB"},
+                {"label": "one bit", "value": "6.2 GB"},
+            ],
+            "evidence_line1": "matched full precision on coding tasks in this benchmark",
+            "evidence_line2": "under the reported evaluation conditions",
+            "warning": "one bit reasoning quality collapsed sharply",
+            "takeaway_line1": "use four bit first today",
+            "takeaway_line2": "before buying more gpu capacity",
         }
-        result = infographic_templates._coerce_educational_carousel(raw)
-        self.assertEqual([s["kind"] for s in result["slides"]],
-                         ["cover", "problem", "mechanism", "example", "takeaway"])
-        self.assertLessEqual(len(result["slides"][0]["title_hl"]), 30)
-        self.assertEqual(len(result["slides"][0]["bullets"]), 3)
-        self.assertLessEqual(len(result["alt_text"]), 300)
+        result = infographic._coerce_poster_copy(raw)
+        self.assertEqual(len(result["cards"]), 3)
+        self.assertLessEqual(len(result["headline_line1"].split()), 7)
+        self.assertTrue(all(len(card["label"].split()) <= 3 for card in result["cards"]))
+        self.assertTrue(all(len(card["value"].split()) <= 4 for card in result["cards"]))
+
+    def test_handwritten_prompt_keeps_exact_copy_and_mascot(self):
+        copy = {
+            "headline_line1": "Your model can shrink",
+            "headline_line2": "But quality has a floor",
+            "context_line": "One benchmark compared",
+            "cards": [
+                {"label": "BF16", "value": "55 GB"},
+                {"label": "4-bit", "value": "17 GB"},
+                {"label": "1-bit", "value": "6.2 GB"},
+            ],
+            "evidence_line1": "4-bit matched BF16",
+            "evidence_line2": "on coding tasks",
+            "warning": "1-bit reasoning collapsed",
+            "takeaway_line1": "Use 4-bit",
+            "takeaway_line2": "before buying GPUs",
+        }
+        prompt = infographic.build_handwritten_poster_prompt("quantization", copy)
+        self.assertIn('"4-bit matched BF16"', prompt)
+        self.assertIn("blue bird mascot", prompt)
+        self.assertIn("exactly three", prompt)
+
+    def test_poster_copy_rejects_invented_number(self):
+        response = json.dumps({
+            "headline_line1": "Latency dropped 99%",
+            "headline_line2": "But verify the workload",
+            "context_line": "One benchmark compared",
+            "cards": [
+                {"label": "Before", "value": "Slow"},
+                {"label": "Change", "value": "Cache"},
+                {"label": "After", "value": "Fast"},
+            ],
+            "evidence_line1": "Measure the same workload",
+            "evidence_line2": "under the same conditions",
+            "warning": "Do not trust vendor claims",
+            "takeaway_line1": "Benchmark your stack",
+            "takeaway_line2": "before changing architecture",
+        })
+        with self.assertRaises(RuntimeError):
+            infographic.generate_poster_copy(
+                "The measured latency improved.", "Caching", "Caching helped.",
+                lambda *_: response,
+            )
 
     def test_numeric_extractor_ignores_list_numbers(self):
         claims = extract_numeric_claims("1. Clean chunks\n2. Test retrieval\nLatency fell 35% to 80ms. Cost ₹120.")
@@ -100,15 +153,15 @@ class ContentTests(unittest.TestCase):
         self.assertLessEqual(len(text), 500)
 
     @patch("generate_and_schedule.requests.post")
-    def test_buffer_receives_all_carousel_assets(self, post):
+    def test_buffer_receives_single_poster_asset(self, post):
         response = post.return_value
         response.status_code = 200
         response.json.return_value = {"data": {"createPost": {"post": {"id": "buffer-1"}}}}
         response.raise_for_status.return_value = None
-        self.assertEqual(schedule_to_buffer("hello", ["https://i/1.png", "https://i/2.png"]), "buffer-1")
+        self.assertEqual(schedule_to_buffer("hello", "https://i/poster.png"), "buffer-1")
         variables = post.call_args.kwargs["json"]["variables"]
-        self.assertEqual(variables["imageUrl0"], "https://i/1.png")
-        self.assertEqual(variables["imageUrl1"], "https://i/2.png")
+        self.assertEqual(variables["imageUrl0"], "https://i/poster.png")
+        self.assertNotIn("imageUrl1", variables)
 
 
 class InsightTests(unittest.TestCase):
