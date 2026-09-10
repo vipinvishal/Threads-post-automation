@@ -1007,10 +1007,11 @@ def generate_post_json(format_key: str, topic: str, research: str, cta_eligible_
                 raise ValueError(f"format must remain locked to '{format_key}'")
             if str(data.get("cta_type", "none")).lower() != objective:
                 raise ValueError(f"cta_type must match the selected objective '{objective}'")
-            if objective in {"follow", "click"} and not bool(data.get("cta_included")):
-                raise ValueError(f"{objective} objective requires one earned conversion CTA")
-            if objective in {"reply", "share"} and bool(data.get("cta_included")):
-                raise ValueError("reply/share objectives must keep cta_included false")
+            # `cta_included` is an internal conversion-footer switch, not a
+            # judgment about whether a reply/share closing line is a CTA. Models
+            # understandably mark a share prompt as true, so normalize this
+            # deterministically instead of rejecting otherwise valid content.
+            data["cta_included"] = objective in {"follow", "click"}
             return data
         except (json.JSONDecodeError, ValueError, TypeError) as exc:
             last_err = f"{type(exc).__name__}: {exc}"

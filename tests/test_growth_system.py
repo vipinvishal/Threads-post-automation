@@ -8,7 +8,13 @@ from unittest.mock import patch
 import growth_intelligence
 import infographic_templates
 import threads_insights
-from generate_and_schedule import build_final_post, extract_numeric_claims, fact_check_claims, schedule_to_buffer
+from generate_and_schedule import (
+    build_final_post,
+    extract_numeric_claims,
+    fact_check_claims,
+    generate_post_json,
+    schedule_to_buffer,
+)
 
 
 class GrowthIntelligenceTests(unittest.TestCase):
@@ -43,6 +49,26 @@ class GrowthIntelligenceTests(unittest.TestCase):
 
 
 class ContentTests(unittest.TestCase):
+    @patch("generate_and_schedule.generate_text")
+    def test_share_cta_boolean_is_normalized(self, generate_text):
+        generate_text.return_value = json.dumps({
+            "format": "practical_tips",
+            "hook": "Three checks before quantizing",
+            "body": "Three checks before quantizing\n\nShare this with a local-LLM builder.",
+            "cta_included": True,
+            "cta_type": "share",
+            "cta_text": "Share this with a local-LLM builder",
+            "tag": "AI",
+            "image_template": "educational_carousel",
+            "numeric_claims": [],
+            "reply_seed": "Start with task-specific evaluation.",
+        })
+        result = generate_post_json(
+            "practical_tips", "Local LLM quantization", "source", False,
+            ["educational_carousel"], "cold_open_stat", "share",
+        )
+        self.assertFalse(result["cta_included"])
+
     def test_carousel_is_exactly_five_bounded_cards(self):
         raw = {
             "slides": [{"title_hl": "x" * 100, "bullets": ["y" * 100] * 5}],
