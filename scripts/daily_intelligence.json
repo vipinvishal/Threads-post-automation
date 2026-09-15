@@ -1,45 +1,45 @@
 {
   "date_ist": "2026-09-15",
-  "generated_at": "2026-09-14T19:55:31.733972+00:00",
-  "signal_count": 28,
+  "generated_at": "2026-09-15T08:21:56.075846+00:00",
+  "signal_count": 26,
   "signals": [
-    {
-      "id": "hn-49695876",
-      "source": "hacker_news",
-      "title": "OpenAI bots knew about the RubyGems caching vulnerability",
-      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
-      "published_at": "2026-09-14T12:40:57+00:00",
-      "excerpt": "Hacker News: 249 points and 225 comments.",
-      "signal_score": 586.5,
-      "community_metrics": {
-        "points": 249,
-        "comments": 225
-      }
-    },
     {
       "id": "hn-49700477",
       "source": "hacker_news",
       "title": "Pion, an agent designed to run any company autonomously",
       "url": "https://andonlabs.com/blog/why-we-built-pion",
       "published_at": "2026-09-14T17:16:06+00:00",
-      "excerpt": "Hacker News: 165 points and 158 comments.",
-      "signal_score": 402.0,
+      "excerpt": "Hacker News: 387 points and 472 comments.",
+      "signal_score": 1095.0,
       "community_metrics": {
-        "points": 165,
-        "comments": 158
+        "points": 387,
+        "comments": 472
       }
     },
     {
-      "id": "hn-49699373",
+      "id": "hn-49695876",
       "source": "hacker_news",
-      "title": "Claude is a Contrarian",
-      "url": "https://medium.com/@rdsubhas/claude-is-a-contrarian-dbce4de5cada",
-      "published_at": "2026-09-14T16:14:24+00:00",
-      "excerpt": "Hacker News: 91 points and 122 comments.",
-      "signal_score": 274.0,
+      "title": "OpenAI bots knew about the RubyGems caching vulnerability",
+      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+      "published_at": "2026-09-14T12:40:57+00:00",
+      "excerpt": "Hacker News: 445 points and 351 comments.",
+      "signal_score": 971.5,
       "community_metrics": {
-        "points": 91,
-        "comments": 122
+        "points": 445,
+        "comments": 351
+      }
+    },
+    {
+      "id": "hn-49706223",
+      "source": "hacker_news",
+      "title": "Ex-FTC boss Khan: break out the handcuffs for AI CEOs, citing 1934 precedent",
+      "url": "https://www.theregister.com/ai-and-ml/2026/09/14/ex-ftc-boss-khan-urges-uncle-sam-to-break-out-the-handcuffs-for-ai-ceos-citing-1934-precedent/5296325",
+      "published_at": "2026-09-15T00:40:14+00:00",
+      "excerpt": "Hacker News: 160 points and 90 comments.",
+      "signal_score": 295.0,
+      "community_metrics": {
+        "points": 160,
+        "comments": 90
       }
     },
     {
@@ -48,50 +48,37 @@
       "title": "Why don't machine learning research agents overfit?",
       "url": "https://www.amazon.science/blog/why-dont-machine-learning-research-agents-overfit",
       "published_at": "2026-09-14T16:32:23+00:00",
-      "excerpt": "Hacker News: 69 points and 35 comments.",
-      "signal_score": 121.5,
+      "excerpt": "Hacker News: 126 points and 69 comments.",
+      "signal_score": 229.5,
       "community_metrics": {
-        "points": 69,
-        "comments": 35
+        "points": 126,
+        "comments": 69
       }
     },
     {
-      "id": "hn-49697094",
+      "id": "hn-49697477",
       "source": "hacker_news",
-      "title": "Adversarial Fashion Makes a Statement on AI Panopticon",
-      "url": "https://spectrum.ieee.org/adversarial-fashion",
-      "published_at": "2026-09-14T14:04:53+00:00",
-      "excerpt": "Hacker News: 71 points and 31 comments.",
-      "signal_score": 117.5,
+      "title": "Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen)",
+      "url": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90",
+      "published_at": "2026-09-14T14:29:23+00:00",
+      "excerpt": "Hacker News: 100 points and 26 comments.",
+      "signal_score": 139.0,
       "community_metrics": {
-        "points": 71,
-        "comments": 31
+        "points": 100,
+        "comments": 26
       }
     },
     {
-      "id": "hn-49699590",
+      "id": "hn-49676425",
       "source": "hacker_news",
-      "title": "When LLM judges agree, should we believe them?",
-      "url": "https://www.amazon.science/blog/when-llm-judges-agree-should-we-believe-them",
-      "published_at": "2026-09-14T16:29:30+00:00",
-      "excerpt": "Hacker News: 38 points and 23 comments.",
-      "signal_score": 72.5,
+      "title": "Show HN: Redis City – Explore how Redis works in an interactive 3D model",
+      "url": "https://poltora.dev/redis",
+      "published_at": "2026-09-12T19:43:34+00:00",
+      "excerpt": "Hacker News: 63 points and 10 comments.",
+      "signal_score": 78.0,
       "community_metrics": {
-        "points": 38,
-        "comments": 23
-      }
-    },
-    {
-      "id": "hn-49638555",
-      "source": "hacker_news",
-      "title": "Trying to Make a Loop Auto-Vectorize",
-      "url": "https://jsgroth.dev/blog/posts/trying-to-make-a-loop-auto-vectorize",
-      "published_at": "2026-09-10T04:50:25+00:00",
-      "excerpt": "Hacker News: 41 points and 13 comments.",
-      "signal_score": 60.5,
-      "community_metrics": {
-        "points": 41,
-        "comments": 13
+        "points": 63,
+        "comments": 10
       }
     },
     {
@@ -108,12 +95,12 @@
       }
     },
     {
-      "id": "7780df50c33a",
+      "id": "74505697f0f5",
       "source": "exa_news",
-      "title": "What is Bolt Forge? Open-source AI building on Bolt.new",
-      "url": "https://bolt.new/blog/what-is-bolt-forge",
-      "published_at": "2026-09-14T00:00:00.000Z",
-      "excerpt": "What is Bolt Forge? Open-source AI building on Bolt.new\n...\n- Bolt Forge is a new open-model-sourced agent in the Bolt.new platform. It runs on multiple models: GLM 5.3 Flash by default, GLM 5.3 alongside it, and Kimi K3 and DeepSeek v4 Pro as experimental options.\n- Every individual Pro plan includes up to 50X more Forge usage at no extra cost through October 14, 2026.\n- On the Bolt Build Index, Forge's open models score 92.2 against 101.0 for the top paid model: 91% of the top score.\n- Training is always opt-in. Forge sessions are anonymized with secrets stripped, and they help train open-weight models with Arcee AI. The Standard and Max agents never train on your data.\n...\nBolt Forge is an agent in Bolt.new, the AI app builder, that runs on open-source AI models only. It launches on September 14, 2026 as a research preview, and it gives every individual Pro plan up to 50X more usage at no extra cost through October 14. The trade that makes it possible: builders who switch into Forge opt in to share anonymized build sessions, and those sessions help train new open-weight models.\n...\nForge is an agent, not a single model. It sits in the agent picker next to the Standard and Max agents you already use, and those stay private and untouched: Bolt never trains on anything you build outside Forge. Switch in and you're building on the open frontier. Switch back and everything is exactly as it was.\n...\n. It appears\n...\n4. Bolt anonymizes shared sessions before anything leaves its infrastructure, stripping secrets, sensitive data, and personal information by default, and validating the pipeline against seeded test data.\n...\n5. The data goes to work at Arcee AI, a U.S. open-model lab, under a signed data processing agreement, and the models it helps train publish their weights.\n...\nThe other reason is the models themselves. AI inference costs have dropped 280x in 18 months (Stanford HAI AI Index, 2025); that collapse is what makes an allocation this size possible. Open-source models also improve when they see how real software gets built, the one thing you can't scrape. Opted-in Forge sessions provide it, with consent and receipts.\n...\nForge runs open models you can see and select. As of September 2026 that means GLM 5.3 Flash by default, GLM 5.3 alongside it, and Kimi K3 and DeepSeek v4 Pro as experimental options. The lineup will evolve, and when a new open model drops, Forge is the first place in Bolt it lands.\n...\nTwo honest notes. These models are experimental inside Bolt, so duplicate your project before switching a serious build into Forge, and keep complex production work in Standard or Max. And they don't all cost the same to run: Kimi K3 and DeepSeek v4 Pro burn through usage faster than the GLM pair, so start on the default and reach for them when the work calls for it. Forge also can't take PDF uploads yet.\n...\nCapable enough that Bolt tested them before shipping them. The Forge lineup ran through the Bolt Build Index, Bolt's own benchmark for how well a model completes real Bolt projects, and came out at 91% of the top paid model's score (Claude Opus 5), as of September 2026.\n...\nYour Forge projects run in your browser on WebContainers, the technology StackBlitz built and Bolt runs on, so there's no server rented for every build. Builds stay fast and costs stay low. Between the reserved hardware and the browser runtime, the cost structure is the reason Forge's price works.\n...\nEvery individual Pro plan includes the Forge allocation at no extra cost through October 14: up to 50X more usage, drawn from a single monthly bar that resets on your renewal date. Every Pro tier gets the same allowance, and Forge usage is separate from your Standard and Max usage. There are no daily limits. When the bar hits 100%, Bolt switches you back to Standard rather than charging an overage.\n...\nTraining in Bolt Forge is opt-in, every time. Bolt never trains models unless you switch into Forge, and the Standard and Max agents never train on your data at all. A one-tap consent screen fires each time you enter Forge, so the trade stays visible instead of buried in terms you accepted once and forgot. The shared data is your prompts, your code, and the fix traces Bolt creates. Secrets and personal information are stripped and anonymized by default before anything leaves Bolt's infrastructure, and Bolt validates the pipeline against seeded test data.\n...\nThe training side runs through Arcee AI, the U.S. open-model lab behind the Apache 2.0-licensed Trinity model family. Bolt has partnered with Arcee to help train a trillion-parameter-class open-weight model. Sessions builders share during the preview window, September 14 to October 14, 2026, feed the first training run, which begins in October, and a signed data processing agreement governs every transfer.\n...\nWhat makes the corpus valuable is what's in it. The models learn from the work people do in Forge, and only there: starting projects, making edits, connecting databases, fixing errors. A model that has seen the job gets it right in fewer tries. And the weights publish when the work is done: what builders help train, they can download, inspect, and run, like anyone else.\n...\nAlready on Pro? You have Forge; there's nothing to buy, no line to stand in, and you can start building with Forge now. When the preview window closes on October 14, Forge continues in Bolt as an experimental open-source agent.\n...\nOn an individual Pro plan: open the agent picker, choose Bolt Forge, and take the one-tap opt-in. You're building on open models in under a minute.\n...\nNot on Pro yet? There are two doors. Join the Bolt Lite waitlist; codes go out in waves, and the first seats open by September 21, 2026. Or skip the line: Pro is $25 a month billed yearly and includes up to 50X Forge usage at no extra cost, no access code required.\n...\nThe Bolt Build Index is Bolt.new's own benchmark for how well a model completes real Bolt projects; higher is better. As of September 2026, Bolt Forge's open models score 92.2 against 101.0 for the top paid model in Bolt.\n...\nForge keeps going as an open-model lab. October 14 closes the research preview window: the up-to-50X allocation on Pro and the first training-data window with Arcee AI both run September 14 to October 14, and sign-ups for Bolt Lite close that day. What comes next depends on what the preview shows.\n...\nIs Bolt Forge good for production apps? \n\nForge's open models are experimental inside Bolt as of September 2026. Duplicate your project before switching a serious build into Forge, and keep complex production work in Bolt's Standard or Max agents.",
+      "title": "Iris-mini and Iris-pro are the strongest open-weight search agents in their class",
+      "url": "https://the-decoder.com/iris-mini-and-iris-pro-are-the-strongest-open-weight-search-agents-in-their-class",
+      "published_at": "2026-09-13T00:00:00.000Z",
+      "excerpt": "The AllSpark team has released Iris-mini and Iris-pro, two open-source search agents along with a full training recipe. According to the paper, the training data and models also improved performance on tasks they were never trained for, including general tool use and office work.\n...\nIn a new paper, Chinese lab AllSpark describes two search agents of different sizes. Iris-mini has 35 billion parameters, and Iris-pro has 397 billion. Both build on Qwen-series models (Qwen3.6-35B-A3B and Qwen3.5-397B-A17B), work with a 256,000-token context window, and deliver the strongest results among open-weight search agents in their respective size class, according to the team.\n...\nAfter that, the model is improved through reinforcement learning against a live web search. The judge model and result summaries run inside the training cluster, powered by the team's own large Qwen model so training doesn't depend on external services. Supervised fine-tuning and reinforcement learning alternate in a process the authors call \"\n...\n-RL climbing.\" The hardest\n...\ntasks and the most\n...\nsolution paths from each round feed back into the next\n...\nWith context management turned on, Iris-mini scores 82.2, 84.8, 86.9, and 52.3 according to the paper. Iris-pro reaches 88.6, 85.1, 92.9, and 56.4. In the smaller class, Iris-mini leads on three of four benchmarks and beats the next-best model, XYZ-Aquila-mini, on BrowseComp by 3.4 points, though it trails on DeepSearchQA. Iris-pro leads or ties in the larger class and sometimes approaches systems that need far more compute, according to the authors.\n...\nauthors report an unexpected side effect.\n...\ngenerated training data and\n...\nwere never trained for\n...\noffice work.\n...\nfoundational skill than\n...\nlearned behavior helps\n...\nThe model weights for Iris-mini and Iris-pro are available in a collection on Hugging Face, and the code is on GitHub. The release so far includes the Iris Harness with the agent loop, tools, context management strategies, and all four benchmarks with evaluation. The harness runs against any OpenAI-compatible endpoint. The team plans to release the data construction and training pipelines later.",
       "signal_score": 14.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -121,12 +108,12 @@
       }
     },
     {
-      "id": "0c6172f3af24",
+      "id": "2833a0af7f23",
       "source": "exa_news",
-      "title": "ReliefServe: Relieving GPU Pressure in Multi-Model Serving via Selective CPU Escape | Proceedings of the 55th International Conference on Parallel Processing",
-      "url": "https://dl.acm.org/doi/10.1145/3832810.3832827",
-      "published_at": "2026-09-14T01:01:25.000Z",
-      "excerpt": "# ReliefServe: Relieving GPU Pressure in Multi-Model Serving via Selective CPU Escape | Proceedings of the 55th International Conference on Parallel Processing\n...\nSharing GPUs among many deep learning models is crucial for cost-efficient inference, but bursty multi-model workloads can easily overwhelm GPU capacity, causing severe tail latency and SLO goodput drops. Existing solutions—whether traffic-aware scheduling or hardware-level resource partitioning—can only juggle contention inside the GPU pool and cannot relieve pressure when many models spike at once. We present ReliefServe, which leverages idle CPUs as interference relief paths to offload appropriate models from oversubscribed GPUs. The key is that migrating CPU-tolerant models to CPU during bursts can reduce overall GPU interference more than the local slowdown incurred, thus protecting performance-critical GPU models even with slower CPU execution. ReliefServe employs three mechanisms: (1) Escape Profiling, to identify viable offload candidates using each model’s CPU tolerance, GPU criticality, interference, and migration cost; (2) Pressure-Driven Escape Control, to monitor GPU pressure and trigger offload only if the projected interference reduction outweighs all costs; and (3) Relief-Oriented Cache Preparation, to proactively warm up high-value candidates in CPU memory for responsive migration. In a 12-server testbed with real workloads, ReliefServe reduces average inference latency by up to 27.05% and improves goodput by 39.74% under extreme burst conditions over state-of-the-art.\n...\nYinmin Zhong, Shengyu Liu, Junda Chen, Jianbo Hu, Yibo Zhu, Xuanzhe Liu, Xin Jin, and Hao Zhang. 2024. DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving. In USENIX OSDI. USENIX Association, USA, 193–210. https://www.usenix.org/conference/osdi24/presentation/zhong-yinmin",
+      "title": "Same bytes, closer to the original: two lines of AutoRound we had wrong",
+      "url": "https://huggingface.co/blog/FINAL-Bench/qwen-models",
+      "published_at": "2026-09-14T00:00:00.000Z",
+      "excerpt": "We publish GGUF quantizations under Archsloth. This post is about the part that is actually useful to you: two flags we had set wrong for months, and one input that turns out to decide the result even though the field treats it as neutral.\n...\nAutoRound takes a `--scheme`. We had been passing `W4A16` — the 4-bit-weight, 16-bit-activation scheme meant for GPU tensor cores — and then exporting with `--format gguf:q4_k_m`.\n...\nThose are not the same quantizer. `W4A16` and `Q4_K_M` group weights differently, derive scales differently, and place the zero point differently. So the rounding search was carefully minimizing error for a quantizer that was never the one used at export. The export then re-derived everything from scratch, and most of the search was thrown away.\n...\neasy to miss because nothing fails. You get a valid GGU\n...\n, the loss curve in the log goes down, and the file is a perfectly ordinary quantization. It is just not better\n...\n`llama-quantize`, and you have no reason to suspect why.\n...\n## The second thing: `--enable_alg_ext` existed and we had never turned it on\n...\n`--enable_alg_ext` selects the sign-gradient rounding search (SignRoundV2, arXiv:2512.04746). It is off by default. It costs roughly 1.7× the tuning time on a 4B — eleven minutes instead of six, on one H100.\n...\n## The lever nobody prices in:\n...\nnot neutral here\n...\n- An imatrix reweights which weights matter inside llama.cpp's own scale search. The search still runs; the matrix tilts it. Its influence is bounded by that search.\n- AutoRound's rounding search replaces that search. For each weight it decides up or down by minimizing reconstruction error on the calibration activations. There is no second procedure downstream to wash the choice out.\n...\nFor the 4B we built the same recipe at three rungs. All three are byte-for-byte the same size as the same-named comparison file:\n...\n| 4B rung | Korean | English |\n| --- | --- | --- |\n| `Q4_K_M` | −54.4 % | −33.2 % |\n| `Q6_K` | −41.5 % | −30.2 % |\n| `Q8_0` | −11.1 % | −8.7 % |\n...\n| Model, rung | vs the same-named file | Korean | English |\n| --- | --- | --- | --- |\n| Qwen3.5-9B `Q4_K_M` | unsloth `Q4_K_M` | −25.4 % | −11.4 % |\n| Qwen3.8-27B `Q6_K` | unsloth `UD-Q6_K` | −36.9 % | −15.0 % |\n...\nOur 27B `Q4_K_M` lost English, so it is not published. Against `Qwen3.8-27B-UD-Q4_K_M.gguf` it takes Korean by 12.8 % and gives English away by 15.8 %. A rung we do not win is a rung we do not ship. It returns when it wins.\n...\nno `Q5\n...\nK_M` anywhere\n...\ncollection. Our toolchain emits\n...\nQ5_K` with a\n...\n–6 % deviation between the optimized weights and\n...\npacked tensor — every\n...\nonly, on every model we tried. The resulting file scores worse than our own `Q4_K_M`.\n...\nPublished so nobody spends the compute twice. All measured on the 4B, on top of the corrected recipe:\n...\n| Knob | Result |\n| --- | --- |\n| 4× the calibration samples | no movement, 4× the cost |\n| 4096-token samples instead of 2048 | Korean −2 %, English +23 % |\n| Korean-only corpus | English +14 % |\n| The tool's default English corpus | Korean +76 %, English +9 % |\n| Quantization-aware healing on top of the rounding search | +57 % |\n| Extra bits on selected tensors, on top of the rounding search | 0 σ to +10 % |\n| Mixed precision at a matched size | a uniform bit increase was 10 % better |\n...\n```bash\nauto-round --model Qwen/Qwen3-4B \\\n  --scheme GGUF:Q4_K_M --enable_alg_ext \\\n  --iters 200 --nsamples 128 --seqlen 2048 \\\n  --dataset cal_archsloth.jsonl \\\n  --format gguf:q4_k_m --output_dir out\n...\nA note on the measuring stick: perplexity will not show you this. `llama-perplexity` reports both statistics in one run, so the comparison is in the logs we ship. On the Korean axis, against the same bf16 teacher (`eval/logs/WD_ko_*.log` in the 4B repo):\n...\n| | perplexity | KL divergence |\n| --- | --- | --- |\n| bf16 original | 8.605807 | — |\n| ARCHsloth `Q4_K_M` | 8.694627 | 0.024297 |\n| unsloth `Q4_K_M` | 8.948656 | 0.053290 |\n| gap between the two | 2.8 % | 54.4 % |\n...\nSame two files. Perplexity calls it a rounding error; KL divergence calls it a different model. Perplexity asks whether the model is still confident; KL divergence asks whether it is confident about the same things. For quantization the second question is the one that matters — and if you rank quantizations by perplexity you will mostly be ranking noise.\n...\n## The models\n...\nAll of them live in one collection: Archsloth MODELs.\n...\n- Archsloth/Qwen3-4B-GGUF — `Q4_K_M` / `Q6_K` / `Q8_0`, ten axes measured\n- Archsloth/Qwen3.5-9B-GGUF — `Q4_K_M` + vision\n- Archsloth/Qwen3.8-27B-GGUF — `Q6_K` + vision\n...\nApache-2.0, inherited from the base models. Quantized from the original weights, never from someone else's quantization. Stock `llama.cpp` — no fork, no custom format, nothing below 4 bits anywhere.",
       "signal_score": 14.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -147,12 +134,12 @@
       }
     },
     {
-      "id": "74505697f0f5",
+      "id": "131e3aec1d10",
       "source": "exa_news",
-      "title": "Iris-mini and Iris-pro are the strongest open-weight search agents in their class",
-      "url": "https://the-decoder.com/iris-mini-and-iris-pro-are-the-strongest-open-weight-search-agents-in-their-class",
-      "published_at": "2026-09-13T00:00:00.000Z",
-      "excerpt": "The AllSpark team has released Iris-mini and Iris-pro, two open-source search agents along with a full training recipe. According to the paper, the training data and models also improved performance on tasks they were never trained for, including general tool use and office work.\n...\nIn a new paper, Chinese lab AllSpark describes two search agents of different sizes. Iris-mini has 35 billion parameters, and Iris-pro has 397 billion. Both build on Qwen-series models (Qwen3.6-35B-A3B and Qwen3.5-397B-A17B), work with a 256,000-token context window, and deliver the strongest results among open-weight search agents in their respective size class, according to the team.\n...\nAfter that, the model is improved through reinforcement learning against a live web search. The judge model and result summaries run inside the training cluster, powered by the team's own large Qwen model so training doesn't depend on external services. Supervised fine-tuning and reinforcement learning alternate in a process the authors call \"\n...\n-RL climbing.\" The hardest\n...\ntasks and the most\n...\nsolution paths from each round feed back into the next\n...\nWith context management turned on, Iris-mini scores 82.2, 84.8, 86.9, and 52.3 according to the paper. Iris-pro reaches 88.6, 85.1, 92.9, and 56.4. In the smaller class, Iris-mini leads on three of four benchmarks and beats the next-best model, XYZ-Aquila-mini, on BrowseComp by 3.4 points, though it trails on DeepSearchQA. Iris-pro leads or ties in the larger class and sometimes approaches systems that need far more compute, according to the authors.\n...\nauthors report an unexpected side effect.\n...\ngenerated training data and\n...\nwere never trained for\n...\noffice work.\n...\nfoundational skill than\n...\nlearned behavior helps\n...\nThe model weights for Iris-mini and Iris-pro are available in a collection on Hugging Face, and the code is on GitHub. The release so far includes the Iris Harness with the agent loop, tools, context management strategies, and all four benchmarks with evaluation. The harness runs against any OpenAI-compatible endpoint. The team plans to release the data construction and training pipelines later.",
+      "title": "Open-source search agent Iris ships, context beats raw parameters - News - Cocoloop",
+      "url": "https://news.cocoloop.cn/en/2026/09/iris-open-search-agent",
+      "published_at": "2026-09-14T00:00:00.000Z",
+      "excerpt": "Open-source search agent Iris ships, context beats raw parameters - News - Cocoloop\n\n Open Source 2026-09 English \n\n# Open-source search agent Iris ships, context beats raw parameters\n...\nIris-mini has 35 billion total parameters with 3 billion active, and scores 82.2 on BrowseComp. Iris-pro has 397 billion total parameters with 17 billion active, and scores 88.6 on the same benchmark. The parameter counts differ by an order of magnitude; the score gap is 6.4 points.\n...\nAllSpark Research has put the weights for two search agents on Hugging Face, under the name Iris. The smaller one, Iris-mini, was post-trained from Qwen3.6-35B-A3B, with 35 billion total parameters and 3 billion activated at inference. The larger one, Iris-pro, is built on Qwen3.5-397B-A17B, with 397 billion total parameters and 17 billion activated. Both use a mixture-of-experts architecture with a 256K context window, and the weights are released under the Apache 2.0 license. The accompanying technical report went up on arXiv on September 3.\n...\nThe paper reports results on four benchmarks: BrowseComp, BrowseComp-ZH, DeepSearchQA, and HLE. Iris-mini scores 82.2, 84.8, 86.9, and 52.3; Iris-pro scores 88.6, 85.1, 92.9, and 56.4, with DeepSearchQA measured by F1. Both models post the best results among open-source search agents in their respective parameter classes, and the largest gap between them is on BrowseComp.\n...\nAnother comparison in the paper points more directly at what matters. The team tested three inference-time context management strategies: doing nothing; \"discard-all,\" which wipes the accumulated tool-call history and restarts from the original question once context passes a threshold; and \"retry,\" which summarizes discarded leads before continuing. Both models improved with context management turned on, and Iris-mini improved by more than Iris-pro did. In other words, for a smaller model, how well it manages a search history that keeps growing matters more than piling on parameters.\n...\nIris takes the opposite approach: starting from a seed page picked out of the hyperlink structure of a web corpus, it follows the outbound links to distill an entity graph, builds multi-hop chains on top of that graph, and finally rewrites the question so that no clue can be resolved by literal text matching.\n...\nTraining itself follows what the paper calls an \"SFT-RL climbing\"\n...\n, alternating supervised fine-tuning with reinforcement learning. The reinforcement-learning stage runs against live search rather than offline snapshots; the reward model used for scoring and the module that summarizes observations are both deployed inside the training cluster. That setup means every training step has to make real network requests — the engineering cost is not small.\n...\n## Open source finally has a real contender\n...\nZoomed out, open models have largely caught up with closed ones on general chat and coding; search is the area that has lagged furthest behind. The reason isn't hard to see: a search agent's capability is split evenly between the model itself and the scheduling framework of tools around it, and closed-source products tune both together, while the open-source side has often shipped only the model, not the framework.\n...\nThis time, Iris lays out the model weights, the context management strategy, and the data construction method all at once, with the training pipeline code marked \"coming soon.\" The GitHub repository credits MiroThinker, Relax, ms-swift, and slime among prior projects, the first two of which were open-source attempts at search agents over the past year.\n...\nFor anyone who wants to run their own deep-search setup, 35 billion parameters with 3 billion active is a workable size, and paired with the paper's context management approach, it can run on a single machine. The scope of the Apache 2.0 license also leaves plenty of room for commercial use.",
       "signal_score": 13.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -160,12 +147,12 @@
       }
     },
     {
-      "id": "2833a0af7f23",
+      "id": "0c6172f3af24",
       "source": "exa_news",
-      "title": "Same bytes, closer to the original: two lines of AutoRound we had wrong",
-      "url": "https://huggingface.co/blog/FINAL-Bench/qwen-models",
-      "published_at": "2026-09-14T00:00:00.000Z",
-      "excerpt": "We publish GGUF quantizations under Archsloth. This post is about the part that is actually useful to you: two flags we had set wrong for months, and one input that turns out to decide the result even though the field treats it as neutral.\n...\nAutoRound takes a `--scheme`. We had been passing `W4A16` — the 4-bit-weight, 16-bit-activation scheme meant for GPU tensor cores — and then exporting with `--format gguf:q4_k_m`.\n...\nThose are not the same quantizer. `W4A16` and `Q4_K_M` group weights differently, derive scales differently, and place the zero point differently. So the rounding search was carefully minimizing error for a quantizer that was never the one used at export. The export then re-derived everything from scratch, and most of the search was thrown away.\n...\neasy to miss because nothing fails. You get a valid GGU\n...\n, the loss curve in the log goes down, and the file is a perfectly ordinary quantization. It is just not better\n...\n`llama-quantize`, and you have no reason to suspect why.\n...\n## The second thing: `--enable_alg_ext` existed and we had never turned it on\n...\n`--enable_alg_ext` selects the sign-gradient rounding search (SignRoundV2, arXiv:2512.04746). It is off by default. It costs roughly 1.7× the tuning time on a 4B — eleven minutes instead of six, on one H100.\n...\n## The lever nobody prices in:\n...\nnot neutral here\n...\n- An imatrix reweights which weights matter inside llama.cpp's own scale search. The search still runs; the matrix tilts it. Its influence is bounded by that search.\n- AutoRound's rounding search replaces that search. For each weight it decides up or down by minimizing reconstruction error on the calibration activations. There is no second procedure downstream to wash the choice out.\n...\nFor the 4B we built the same recipe at three rungs. All three are byte-for-byte the same size as the same-named comparison file:\n...\n| 4B rung | Korean | English |\n| --- | --- | --- |\n| `Q4_K_M` | −54.4 % | −33.2 % |\n| `Q6_K` | −41.5 % | −30.2 % |\n| `Q8_0` | −11.1 % | −8.7 % |\n...\n| Model, rung | vs the same-named file | Korean | English |\n| --- | --- | --- | --- |\n| Qwen3.5-9B `Q4_K_M` | unsloth `Q4_K_M` | −25.4 % | −11.4 % |\n| Qwen3.8-27B `Q6_K` | unsloth `UD-Q6_K` | −36.9 % | −15.0 % |\n...\nOur 27B `Q4_K_M` lost English, so it is not published. Against `Qwen3.8-27B-UD-Q4_K_M.gguf` it takes Korean by 12.8 % and gives English away by 15.8 %. A rung we do not win is a rung we do not ship. It returns when it wins.\n...\nno `Q5\n...\nK_M` anywhere\n...\ncollection. Our toolchain emits\n...\nQ5_K` with a\n...\n–6 % deviation between the optimized weights and\n...\npacked tensor — every\n...\nonly, on every model we tried. The resulting file scores worse than our own `Q4_K_M`.\n...\nPublished so nobody spends the compute twice. All measured on the 4B, on top of the corrected recipe:\n...\n| Knob | Result |\n| --- | --- |\n| 4× the calibration samples | no movement, 4× the cost |\n| 4096-token samples instead of 2048 | Korean −2 %, English +23 % |\n| Korean-only corpus | English +14 % |\n| The tool's default English corpus | Korean +76 %, English +9 % |\n| Quantization-aware healing on top of the rounding search | +57 % |\n| Extra bits on selected tensors, on top of the rounding search | 0 σ to +10 % |\n| Mixed precision at a matched size | a uniform bit increase was 10 % better |\n...\n```bash\nauto-round --model Qwen/Qwen3-4B \\\n  --scheme GGUF:Q4_K_M --enable_alg_ext \\\n  --iters 200 --nsamples 128 --seqlen 2048 \\\n  --dataset cal_archsloth.jsonl \\\n  --format gguf:q4_k_m --output_dir out\n...\nA note on the measuring stick: perplexity will not show you this. `llama-perplexity` reports both statistics in one run, so the comparison is in the logs we ship. On the Korean axis, against the same bf16 teacher (`eval/logs/WD_ko_*.log` in the 4B repo):\n...\n| | perplexity | KL divergence |\n| --- | --- | --- |\n| bf16 original | 8.605807 | — |\n| ARCHsloth `Q4_K_M` | 8.694627 | 0.024297 |\n| unsloth `Q4_K_M` | 8.948656 | 0.053290 |\n| gap between the two | 2.8 % | 54.4 % |\n...\nSame two files. Perplexity calls it a rounding error; KL divergence calls it a different model. Perplexity asks whether the model is still confident; KL divergence asks whether it is confident about the same things. For quantization the second question is the one that matters — and if you rank quantizations by perplexity you will mostly be ranking noise.\n...\n## The models\n...\nAll of them live in one collection: Archsloth MODELs.\n...\n- Archsloth/Qwen3-4B-GGUF — `Q4_K_M` / `Q6_K` / `Q8_0`, ten axes measured\n- Archsloth/Qwen3.5-9B-GGUF — `Q4_K_M` + vision\n- Archsloth/Qwen3.8-27B-GGUF — `Q6_K` + vision\n...\nApache-2.0, inherited from the base models. Quantized from the original weights, never from someone else's quantization. Stock `llama.cpp` — no fork, no custom format, nothing below 4 bits anywhere.",
+      "title": "ReliefServe: Relieving GPU Pressure in Multi-Model Serving via Selective CPU Escape | Proceedings of the 55th International Conference on Parallel Processing",
+      "url": "https://dl.acm.org/doi/10.1145/3832810.3832827",
+      "published_at": "2026-09-14T01:01:25.000Z",
+      "excerpt": "# ReliefServe: Relieving GPU Pressure in Multi-Model Serving via Selective CPU Escape | Proceedings of the 55th International Conference on Parallel Processing\n...\nSharing GPUs among many deep learning models is crucial for cost-efficient inference, but bursty multi-model workloads can easily overwhelm GPU capacity, causing severe tail latency and SLO goodput drops. Existing solutions—whether traffic-aware scheduling or hardware-level resource partitioning—can only juggle contention inside the GPU pool and cannot relieve pressure when many models spike at once. We present ReliefServe, which leverages idle CPUs as interference relief paths to offload appropriate models from oversubscribed GPUs. The key is that migrating CPU-tolerant models to CPU during bursts can reduce overall GPU interference more than the local slowdown incurred, thus protecting performance-critical GPU models even with slower CPU execution. ReliefServe employs three mechanisms: (1) Escape Profiling, to identify viable offload candidates using each model’s CPU tolerance, GPU criticality, interference, and migration cost; (2) Pressure-Driven Escape Control, to monitor GPU pressure and trigger offload only if the projected interference reduction outweighs all costs; and (3) Relief-Oriented Cache Preparation, to proactively warm up high-value candidates in CPU memory for responsive migration. In a 12-server testbed with real workloads, ReliefServe reduces average inference latency by up to 27.05% and improves goodput by 39.74% under extreme burst conditions over state-of-the-art.\n...\nYinmin Zhong, Shengyu Liu, Junda Chen, Jianbo Hu, Yibo Zhu, Xuanzhe Liu, Xin Jin, and Hao Zhang. 2024. DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving. In USENIX OSDI. USENIX Association, USA, 193–210. https://www.usenix.org/conference/osdi24/presentation/zhong-yinmin",
       "signal_score": 13.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -186,12 +173,12 @@
       }
     },
     {
-      "id": "0be0bdac7e6c",
+      "id": "34e01721ccd8",
       "source": "exa_news",
-      "title": "Iris-mini and Iris-pro: New Open-Weight Search Agents | TPS",
-      "url": "https://tpsreport.news/news/iris-mini-iris-pro-open-weight-search-agents",
-      "published_at": "2026-09-13T00:00:00.000Z",
-      "excerpt": "Chinese lab AllSpark has released Iris-mini and Iris-pro, two open-weight search agents built on Qwen3 models that claim the top spot among open-weight systems in their size classes on four research benchmarks. The release includes model weights, an agent harness, and evaluation code, with training pipelines to follow.\n...\nAllSpark, a Chinese AI lab, has released two open-weight search agents — Iris-mini and Iris-pro — along with a full training recipe and evaluation harness. According to the team's paper, the models rank as the strongest open-weight search agents in their respective size classes across four benchmarks, and the underlying training data improved performance on tasks the models were never explicitly trained for, including general tool use and office work.\n...\nIris-mini has 35 billion parameters and builds on Qwen3.6-35B-A3B. Iris-pro has 397 billion parameters and builds on Qwen3.5-397B-A17B. Both use a 256,000-token context window. Pricing is not applicable since the weights are open and self-hostable; compute costs will depend on the deployment.\n...\nTraining alternates between supervised fine-tuning and reinforcement learning against live web search, a process the authors call \"SFT\n...\n.\" The judge model\n...\nsearch summarization run inside AllSpark's own training cluster using their own large Qwen model, avoiding dependence on\n...\nModel weights for both Iris-mini and Iris-pro are available on Hugging Face, and code is on GitHub. The current release includes the Iris Harness — the agent loop, tools, context management strategies, and all four benchmarks with evaluation scripts — which runs against any OpenAI-compatible endpoint. AllSpark says the data construction and training pipelines will be released later.\n...\nIris-mini and Iris-pro add to a small but growing set of open-weight systems purpose-built for autonomous web research rather than general chat. The paper's more interesting claim may be methodological: that context management scaffolding, not just model weights, drives much of the reported performance gap between search agents on standard benchmarks. If that holds up under independent testing, it complicates head-to-head comparisons across the field, since many published scores don't disclose how aggressively context was managed. The claimed transfer to unrelated tasks like tool use and office work is worth watching once the training pipeline itself is released — that would let outside teams verify whether the effect is real or an artifact of AllSpark's specific benchmark suite.",
+      "title": "Accio-Lab releases Occamy-1.0 — a 35B open agent-focused model with weights, code and deployment tools",
+      "url": "https://agentictribune.com/article/20260914-accio-lab-releases-occamy-1-0-a-35b-open-agent-focused-model-with-weights-code-and-deployment-tools",
+      "published_at": "2026-09-14T00:00:00.000Z",
+      "excerpt": "Accio-Lab releases Occamy-1.0 — a 35B open agent-focused model with weights, code and deployment tools\n...\nAccio-Lab has publicly released Occamy-1.0, an open-weight 35 billion-parameter AI model aimed at long, tool-using workflows, along with code and documentation for running it. The release is backed by a new paper, “Occamy-1.0: Open Pareto-frontier 35B Intelligence for Co-work,” posted to arXiv as 2609.11977. The arXiv record shows version 1 was submitted Sept. 4, 2026, and the PDF is dated Sept. 14, 2026.\n...\nThe pitch is practical rather than purely academic. The authors, identified in the PDF as the “Accio Team,” describe Occamy-1.0 as a model for “co-work agents” — systems built to carry out long workflows involving information gathering, tool use, coding and file manipulation across many model calls. In the paper’s abstract, the team says, “We release the model weights and a subset of the training data to support research on practical co-work agents and agentic post-training.”\n...\nOccamy-1.0 was not trained from scratch. It is a post-trained specialization of Qwen3.6-35B-A3B, an existing open model, with the new work centered on agent-focused fine-tuning, reinforcement learning and evaluation. According to the published technical details, the model has 35 billion total parameters but activates about 3 billion per token because it uses a mixture-of-experts design, a setup that routes each token through only part of the network. The architecture includes 40 layers, 256 experts, with eight routed experts plus one shared expert active at a time, and a base context length of 262,144 tokens. The model is available on Hugging Face under Accio-Lab/Occamy-1.0, and the supporting code repository is public on GitHub under Accio-Lab/occamy. Both are listed under Apache License 2.0.\n...\nWhat makes the release notable is that it is immediately usable. Alongside the weights and paper, Accio-Lab has published deployment guidance, including local and private serving options, and released the Dressage training stack used for rollout and reinforcement learning infrastructure. In a year defined by a push toward open, agent-focused models — systems designed to do multi-step work rather than simply answer chat prompts — that combination of open weights, permissive licensing and runnable tooling matters to researchers and developers who want to test or adapt the model themselves.",
       "signal_score": 12.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -212,51 +199,51 @@
       }
     },
     {
-      "id": "2dc86e6a7d88",
-      "source": "exa_news",
-      "title": "Sakana Fugu Ultra v2 lands and beats GPT-6 Astra without orchestrating it",
-      "url": "https://pasqualepillitteri.it/en/news/16195/sakana-fugu-ultra-v2-beats-gpt-6-astra",
-      "published_at": "2026-09-14T00:00:00.000Z",
-      "excerpt": "Sakana Fugu Ultra v2 lands and beats GPT-6 Astra without orchestrating it\n...\n##### Fugu Ultra v2 tops GPT-6 Astra on key benchmarks by orchestrating open models it doesn't even control, but it's still locked out of the EU.\n\n Pasquale Pillitteri 14/09/2026 10 min read \n\n Table of Contents\n...\nSakana Fugu Ultra v2 is the new orchestration model from Japanese AI lab Sakana AI, launched September 11, 2026 alongside its budget sibling Fugu Max. Fugu works more like a conductor than a single model, trained to route every request to a team of other models and stitch the answers back together. The detail making headlines sits in the benchmarks, where Fugu Ultra v2 beats GPT-6 Astra and Claude Fable 5.1 on several tests despite not having either one on its own team.\n...\nThe Tokyo startup, founded by Llion Jones (one of the architects behind the Transformer) and David Ha, put two models on the table at once. Fugu Ultra v2.0 pushes the orchestration capability ceiling higher, while Fugu Max chases value for money. Both ship as an API compatible with the OpenAI standard, so anyone already working with those libraries can hook them in by changing a single configuration line.\n...\nThe name carries over from the first version, which launched back in June, we covered it in Sakana Fugu, the Japanese AI orchestrating Claude, GPT and Gemini. The difference lies in the numbers and in the roster of models Fugu now commands, which has grown considerably with the addition of NVIDIA's open-weight Nemotron family.\n...\nIt's the principle Sakana has been repeating for months. For the company, intelligence is a distributed system rather than a single block. Stack enough specialized models together and you beat the one giant model. You send a request to a single API, and Fugu decides behind the scenes which models in its pool should handle it, then assembles the result.\n...\ntailored to the job. For easy stuff, it calls a lightweight model and wraps up fast; for a complex problem, it\n...\nThe number getting the most attention is the Chartography score, a visual-reasoning and data-reading test. Fugu Ultra v2 posts 48.3 against Opus 5's 27.3 from Anthropic and Fable 5's 29.5, a wide gap, nearly double, on a task where frontier models usually stumble. On DeepSWE, the software-engineering benchmark, Fugu Ultra v2 hits 74.3 and pulls ahead of models that cost three to five times as much per token.\n...\nOn the overall scoreboard, Sakana claims first place, outright or tied, on five of eight benchmarks (GDP.pdf, Chartography, SWEFish, DeepSWE and Toolathon), and a top-two finish on seven of eight. Here's the point splitting industry watchers: Fugu Ultra v2 beats GPT-6 Astra and both Claude Fable versions without having either in its pool, as both ITmedia and GIGAZINE confirm citing the spec sheet. In practice, it orchestrates open and specialized models and still manages to outscore the closed heavyweights it can't even call.\n...\nIf Ultra v2 plays for the top spot, Fugu Max plays for value. It costs $2 per million input tokens and $6 per million output tokens, a 40-60 percent cut on output pricing compared with rivals like Claude Sonnet 5, GPT-5.6 Terra and Kimi K3. The secret is the roster: Fugu Max folds in the widest pool of open-weight and specialized models yet, including for the first time NVIDIA's Nemotron family, the fruit of a collaboration between Sakana and the chipmaker.\n...\nHere, too, the results aren't small change. Fugu Max takes the top absolute score on six of ten benchmarks (including Terminal Bench 2.1, GPQA Diamond and AutomationBench) and pushes out the cost-performance frontier on seven of ten. Put simply, for plenty of real-world tasks you get flagship-tier quality for a fraction of the price. It's the same logic pushing so many developers toward the best local LLMs of 2026: you don't need the biggest model, you need the right one for the job.\n...\nFugu Ultra v2 costs $5 per million input tokens, $0.50 for cached inputs, and $30 per million output tokens. Web search runs $10 per thousand calls. The context window reaches one million tokens, max output tops out at 128,000, and the training cutoff is set at August 28, 2026. For those who'd rather subscribe, there are three monthly plans: $20 for Standard, $100 for Pro, and $200 for Max.\n...\nHere's the catch for readers in the EU. Fugu only exists as a cloud API, and Sakana isn't releasing weights for self-hosting. US and UK users can sign up and start calling the API today, no regional block applies there. But the service is not available in the EU or EEA. In plain terms, you can't legally wire it into production from inside the EU today without routing through infrastructure outside the European Economic Area, with all the personal-data and GDPR headaches that brings. The choice mirrors a caution several AI companies are showing toward Europe's regulatory framework. For an EU-based developer, it means one thing for now: look, don't touch.\n...\nSakana's bet runs against the mainstream. While OpenAI, Anthropic and Google keep pushing toward bigger, pricier models, as we saw at the launch of GPT-6 Astra, with its pricing and benchmarks, the Japanese company argues the value sits in coordinating many small, specialized models. It's the same philosophy that led NVIDIA to open up its Nemotron weights, a piece of the puzzle we touched on when Jensen Huang declared AGI had arrived while selling the chips it runs on.\n...\nDoes it hold up? If the benchmarks survive independent scrutiny, Fugu shows a well-trained orchestrator can beat a single giant model at a lower cost. Reliability remains the open question, since a system calling out to many models has that many more points where something can break. And keeping the EU locked out cuts off a massive market. Sakana chose a different path from\n...\nrest of the industry, now it's up to independent numbers to say whether it was right.\n...\nFugu Ultra v2 is Sakana AI's flagship orchestration model, released September 11, 2026. It doesn't generate answers on its own, it routes every request to a pool of open and specialized models and combines their results, offering it all behind a single OpenAI-compatible API.\n...\nFugu Max chases cost efficiency, Ultra v2 chases peak performance. Max costs $2 per million input tokens and $6 per million output tokens, with a pool that includes NVIDIA's open-weight Nemotron models. Ultra v2 costs more ($5 and $30) but posts the best scores on the toughest benchmarks.\n...\nOn some benchmarks, yes, according to Sakana's own data. Fugu Ultra v2 outperforms GPT-6 Astra and Claude Fable 5.1 on tests like DeepSWE, despite not having either model in its pool. The numbers come from the company, though, and still await confirmation from independent benchmarks.\n...\nNot directly, no. The service is only available as a cloud API and isn't accessible in the EU or EEA. There are no open weights for self-hosting, so for now EU-based developers can study it but can't run it in production without infrastructure outside Europe. It is reachable from the US and UK.\n...\n- Fugu Ultra v2 beats GPT-6 Astra and Fable 5.1 without having either in its pool. It wins with teams of open models against closed ones it can't even call, which makes the result more striking but still entirely unverified outside Sakana.\n...\n- It's off-limits in the EU. No availability in the EU or EEA, no open weights. European developers are stuck watching from the sidelines for now. Sakana's choice carries as much weight as the benchmarks.\n...\nSakana made a move the giants aren't making. Instead of a bigger model, a conductor commanding open and specialized models, capable on paper of beating the closed heavyweights it doesn't even use. The numbers come from the company and need confirming outside it. And the service stays off-limits in the EU, locked out of the EU and EEA. If independent benchmarks vindicate Fugu, the question for 2027 won't be which model is biggest, but who orchestrates it best.",
-      "signal_score": 11.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 4
-      }
-    },
-    {
-      "id": "131e3aec1d10",
-      "source": "exa_news",
-      "title": "Open-source search agent Iris ships, context beats raw parameters - News - Cocoloop",
-      "url": "https://news.cocoloop.cn/en/2026/09/iris-open-search-agent",
-      "published_at": "2026-09-14T00:00:00.000Z",
-      "excerpt": "Open-source search agent Iris ships, context beats raw parameters - News - Cocoloop\n\n Open Source 2026-09 English \n\n# Open-source search agent Iris ships, context beats raw parameters\n...\nIris-mini has 35 billion total parameters with 3 billion active, and scores 82.2 on BrowseComp. Iris-pro has 397 billion total parameters with 17 billion active, and scores 88.6 on the same benchmark. The parameter counts differ by an order of magnitude; the score gap is 6.4 points.\n...\nAllSpark Research has put the weights for two search agents on Hugging Face, under the name Iris. The smaller one, Iris-mini, was post-trained from Qwen3.6-35B-A3B, with 35 billion total parameters and 3 billion activated at inference. The larger one, Iris-pro, is built on Qwen3.5-397B-A17B, with 397 billion total parameters and 17 billion activated. Both use a mixture-of-experts architecture with a 256K context window, and the weights are released under the Apache 2.0 license. The accompanying technical report went up on arXiv on September 3.\n...\nThe paper reports results on four benchmarks: BrowseComp, BrowseComp-ZH, DeepSearchQA, and HLE. Iris-mini scores 82.2, 84.8, 86.9, and 52.3; Iris-pro scores 88.6, 85.1, 92.9, and 56.4, with DeepSearchQA measured by F1. Both models post the best results among open-source search agents in their respective parameter classes, and the largest gap between them is on BrowseComp.\n...\nAnother comparison in the paper points more directly at what matters. The team tested three inference-time context management strategies: doing nothing; \"discard-all,\" which wipes the accumulated tool-call history and restarts from the original question once context passes a threshold; and \"retry,\" which summarizes discarded leads before continuing. Both models improved with context management turned on, and Iris-mini improved by more than Iris-pro did. In other words, for a smaller model, how well it manages a search history that keeps growing matters more than piling on parameters.\n...\nIris takes the opposite approach: starting from a seed page picked out of the hyperlink structure of a web corpus, it follows the outbound links to distill an entity graph, builds multi-hop chains on top of that graph, and finally rewrites the question so that no clue can be resolved by literal text matching.\n...\nTraining itself follows what the paper calls an \"SFT-RL climbing\"\n...\n, alternating supervised fine-tuning with reinforcement learning. The reinforcement-learning stage runs against live search rather than offline snapshots; the reward model used for scoring and the module that summarizes observations are both deployed inside the training cluster. That setup means every training step has to make real network requests — the engineering cost is not small.\n...\n## Open source finally has a real contender\n...\nZoomed out, open models have largely caught up with closed ones on general chat and coding; search is the area that has lagged furthest behind. The reason isn't hard to see: a search agent's capability is split evenly between the model itself and the scheduling framework of tools around it, and closed-source products tune both together, while the open-source side has often shipped only the model, not the framework.\n...\nThis time, Iris lays out the model weights, the context management strategy, and the data construction method all at once, with the training pipeline code marked \"coming soon.\" The GitHub repository credits MiroThinker, Relax, ms-swift, and slime among prior projects, the first two of which were open-source attempts at search agents over the past year.\n...\nFor anyone who wants to run their own deep-search setup, 35 billion parameters with 3 billion active is a workable size, and paired with the paper's context management approach, it can run on a single machine. The scope of the Apache 2.0 license also leaves plenty of room for commercial use.",
-      "signal_score": 11.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 4
-      }
-    },
-    {
-      "id": "3b421af95656",
-      "source": "exa_news",
-      "title": "Cohere Releases North Small Translate Model | Let's Data Science",
-      "url": "https://letsdatascience.com/news/cohere-releases-north-small-translate-model-359d57e6",
-      "published_at": "2026-09-13T00:00:00.000Z",
-      "excerpt": "Cohere released North Small Translate on September 10, reporting an 83.6 WMT26 all-languages score for its open-weight sparse mixture-of-experts translation model covering 50 languages. The score exceeds the listed DeepL NextGen and Google Translate results, while the Hugging Face model card classifies the weights as for non-commercial research use. The original RSS item states that commercial use requires a Model Vault license.\n...\nCohere released North Small Translate on September\n...\n10, an open-weight machine translation model built as a sparse mixture-of-experts, or MoE, system. Cohere's announcement describes the model as covering 50 languages and reports a WMT26 all-languages score of 83.6. The Hugging Face model card identifies it as North-Small-Translate-1.0, with 218 billion total parameters and 25 billion active parameters per token.\n...\nThe release is a research and non-commercial weight distribution. Cohere's Hugging Face repository lists the license as CC-BY-NC-4.0 and requires users to accept access conditions before downloading model files. The original RSS description states that commercial use requires a Model Vault license, while MarkTechPost likewise reports that organizations can license the model for commercial deployment.\n...\nAccording to Cohere's announcement, the model accepts and produces text, supports 16,000 input tokens and 16,000 output tokens, and is optimized specifically for machine translation. MarkTechPost's account of the technical report describes a decoder-only sparse MoE Transformer with 128 experts, eight activated per token, shared experts, and a combination of sliding-window and\n...\nattention layers.\n...\nSparse activation lowers per-token computation relative to running all 218 billion parameters, but it does not eliminate the need to store the complete model during inference. Cohere's model card lists quantized deployment options ranging from one B200 or two H100 GPUs at the smallest listed configuration to four B200s or eight H100s for another variant. The card also recommends greedy decoding and notes that loading with automatic device placement can exhaust GPU memory if temporary buffers for MoE-layer fusion are not reserved.\n...\nFor ML platform teams, the release creates an option between API translation and self-hosted inference, but the practical distinction is substantial. Comparable MoE deployments commonly trade lower active compute for complex multi-GPU memory, routing, quantization, and serving requirements. The non-commercial weight license also means benchmark performance alone does not establish production eligibility for commercial workloads.\n...\nThis is a notable specialized multilingual model release with a strong vendor-reported benchmark result against major hosted translation services. It is particularly relevant to teams evaluating sovereign or self-hosted translation, although the large memory footprint, non-commercial weight license, and vendor-run evaluation limit immediate broad deployment impact.",
-      "signal_score": 11.0,
-      "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
-        "rank": 4
-      }
-    },
-    {
       "id": "c06ac50a16dd",
       "source": "exa_news",
       "title": "Fujitsu launches made-in-Japan next-generation CPU FUJITSU-MONAKA and Fujitsu MONAKA Server for sovereign AI infrastructure",
       "url": "https://www.prnewswire.com/news-releases/fujitsu-launches-made-in-japan-next-generation-cpu-fujitsu-monaka-and-fujitsu-monaka-server-for-sovereign-ai-infrastructure-302877394.html",
       "published_at": "2026-09-14T00:00:00.000Z",
       "excerpt": "Fujitsu launches made-in-Japan next-generation CPU FUJITSU-MONAKA and Fujitsu MONAKA Server for sovereign AI infrastructure\n...\nworld-class\n...\ninference performance through Japan-developed 2nm 3D-stacked CPU and server integrated, developed,\n...\nKAWASAKI, Japan, Sept. 14, 2026 /PRNewswire/ -- Fujitsu Limited today announced that it will begin global sales of its next-generation CPU, FUJITSU-MONAKA [1], designed and developed in Japan, starting November 2026. This will include sales of the processor as a standalone product to cloud and data center operators and server vendors. Additionally, the company will launch the made-in-Japan Fujitsu MONAKA Server equipped with the FUJITSU-MONAKA CPU, offering high reliability and power efficiency as a sovereign AI infrastructure. Fujitsu MONAKA Server will be made broadly available from November 2026 to data center operators, enterprises, and the academic and HPC sectors in Japan and Europe, contributing to national security.\n...\nThe FUJITSU-MONAKA CPU integrates Fujitsu's extensive expertise in processor and server development, achieving world-class computational performance and data supply capabilities with a maximum operating frequency of 3.8GHz and memory transfer speed of 8800MT/s. It delivers twice the AI inference throughput and superior power efficiency compared to other CPUs, effectively halving the number of servers and power consumption required for equivalent processing loads.\n...\nFujitsu MONAKA Server, powered by the FUJITSU-MONAKA CPU, enhances sovereign capabilities through domestic manufacturing, contributing to traceability and supply chain transparency. Furthermore, at a time when power and installation space are significant challenges for AI infrastructure expansion, this CPU server alone can build an AI inference platform. Its space-saving and power-efficient design allows for deployment in air-cooled data centers, significantly increasing customers' capacity for AI infrastructure expansion. Fujitsu MONAKA Server also supports future scalability through resource pooling technology and reduces cooling energy consumption with Fujitsu's long-cultivated cooling technologies.\n...\nNote [1] FUJITSU-MONAKA: This new technology applied to FUJITSU-MONAKA is based on results obtained from a project subsidized by the New Energy and Industrial Technology Development Organization (NEDO).",
+      "signal_score": 11.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 4
+      }
+    },
+    {
+      "id": "7780df50c33a",
+      "source": "exa_news",
+      "title": "What is Bolt Forge? Open-source AI building on Bolt.new",
+      "url": "https://bolt.new/blog/what-is-bolt-forge",
+      "published_at": "2026-09-14T00:00:00.000Z",
+      "excerpt": "What is Bolt Forge? Open-source AI building on Bolt.new\n...\n- Bolt Forge is a new open-model-sourced agent in the Bolt.new platform. It runs on multiple models: GLM 5.3 Flash by default, GLM 5.3 alongside it, and Kimi K3 and DeepSeek v4 Pro as experimental options.\n- Every individual Pro plan includes up to 50X more Forge usage at no extra cost through October 14, 2026.\n- On the Bolt Build Index, Forge's open models score 92.2 against 101.0 for the top paid model: 91% of the top score.\n- Training is always opt-in. Forge sessions are anonymized with secrets stripped, and they help train open-weight models with Arcee AI. The Standard and Max agents never train on your data.\n...\nBolt Forge is an agent in Bolt.new, the AI app builder, that runs on open-source AI models only. It launches on September 14, 2026 as a research preview, and it gives every individual Pro plan up to 50X more usage at no extra cost through October 14. The trade that makes it possible: builders who switch into Forge opt in to share anonymized build sessions, and those sessions help train new open-weight models.\n...\nForge is an agent, not a single model. It sits in the agent picker next to the Standard and Max agents you already use, and those stay private and untouched: Bolt never trains on anything you build outside Forge. Switch in and you're building on the open frontier. Switch back and everything is exactly as it was.\n...\n. It appears\n...\n4. Bolt anonymizes shared sessions before anything leaves its infrastructure, stripping secrets, sensitive data, and personal information by default, and validating the pipeline against seeded test data.\n...\n5. The data goes to work at Arcee AI, a U.S. open-model lab, under a signed data processing agreement, and the models it helps train publish their weights.\n...\nThe other reason is the models themselves. AI inference costs have dropped 280x in 18 months (Stanford HAI AI Index, 2025); that collapse is what makes an allocation this size possible. Open-source models also improve when they see how real software gets built, the one thing you can't scrape. Opted-in Forge sessions provide it, with consent and receipts.\n...\nForge runs open models you can see and select. As of September 2026 that means GLM 5.3 Flash by default, GLM 5.3 alongside it, and Kimi K3 and DeepSeek v4 Pro as experimental options. The lineup will evolve, and when a new open model drops, Forge is the first place in Bolt it lands.\n...\nTwo honest notes. These models are experimental inside Bolt, so duplicate your project before switching a serious build into Forge, and keep complex production work in Standard or Max. And they don't all cost the same to run: Kimi K3 and DeepSeek v4 Pro burn through usage faster than the GLM pair, so start on the default and reach for them when the work calls for it. Forge also can't take PDF uploads yet.\n...\nCapable enough that Bolt tested them before shipping them. The Forge lineup ran through the Bolt Build Index, Bolt's own benchmark for how well a model completes real Bolt projects, and came out at 91% of the top paid model's score (Claude Opus 5), as of September 2026.\n...\nYour Forge projects run in your browser on WebContainers, the technology StackBlitz built and Bolt runs on, so there's no server rented for every build. Builds stay fast and costs stay low. Between the reserved hardware and the browser runtime, the cost structure is the reason Forge's price works.\n...\nEvery individual Pro plan includes the Forge allocation at no extra cost through October 14: up to 50X more usage, drawn from a single monthly bar that resets on your renewal date. Every Pro tier gets the same allowance, and Forge usage is separate from your Standard and Max usage. There are no daily limits. When the bar hits 100%, Bolt switches you back to Standard rather than charging an overage.\n...\nTraining in Bolt Forge is opt-in, every time. Bolt never trains models unless you switch into Forge, and the Standard and Max agents never train on your data at all. A one-tap consent screen fires each time you enter Forge, so the trade stays visible instead of buried in terms you accepted once and forgot. The shared data is your prompts, your code, and the fix traces Bolt creates. Secrets and personal information are stripped and anonymized by default before anything leaves Bolt's infrastructure, and Bolt validates the pipeline against seeded test data.\n...\nThe training side runs through Arcee AI, the U.S. open-model lab behind the Apache 2.0-licensed Trinity model family. Bolt has partnered with Arcee to help train a trillion-parameter-class open-weight model. Sessions builders share during the preview window, September 14 to October 14, 2026, feed the first training run, which begins in October, and a signed data processing agreement governs every transfer.\n...\nWhat makes the corpus valuable is what's in it. The models learn from the work people do in Forge, and only there: starting projects, making edits, connecting databases, fixing errors. A model that has seen the job gets it right in fewer tries. And the weights publish when the work is done: what builders help train, they can download, inspect, and run, like anyone else.\n...\nAlready on Pro? You have Forge; there's nothing to buy, no line to stand in, and you can start building with Forge now. When the preview window closes on October 14, Forge continues in Bolt as an experimental open-source agent.\n...\nOn an individual Pro plan: open the agent picker, choose Bolt Forge, and take the one-tap opt-in. You're building on open models in under a minute.\n...\nNot on Pro yet? There are two doors. Join the Bolt Lite waitlist; codes go out in waves, and the first seats open by September 21, 2026. Or skip the line: Pro is $25 a month billed yearly and includes up to 50X Forge usage at no extra cost, no access code required.\n...\nThe Bolt Build Index is Bolt.new's own benchmark for how well a model completes real Bolt projects; higher is better. As of September 2026, Bolt Forge's open models score 92.2 against 101.0 for the top paid model in Bolt.\n...\nForge keeps going as an open-model lab. October 14 closes the research preview window: the up-to-50X allocation on Pro and the first training-data window with Arcee AI both run September 14 to October 14, and sign-ups for Bolt Lite close that day. What comes next depends on what the preview shows.\n...\nIs Bolt Forge good for production apps? \n\nForge's open models are experimental inside Bolt as of September 2026. Duplicate your project before switching a serious build into Forge, and keep complex production work in Bolt's Standard or Max agents.",
+      "signal_score": 11.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 4
+      }
+    },
+    {
+      "id": "ac319304af4e",
+      "source": "exa_news",
+      "title": "Meta Releases Muse Glimmer, an Open-Weight AI Model Designed to Run on Consumer Hardware",
+      "url": "https://lerenleren.net/meta-releases-muse-glimmer-an-open-weight-ai-model-designed-to-run-on-consumer-hardware",
+      "published_at": "2026-09-14T00:00:00.000Z",
+      "excerpt": "In a strategic pivot that signals a renewed dedication to the open-weight philosophy, technology conglomerate Meta has officially launched Muse Glimmer, a 30-billion-parameter artificial intelligence model explicitly engineered to operate locally on consumer-grade hardware. The announcement marks a significant turning point in the competitive landscape of generative AI, shifting the paradigm away from exclusively centralized, cloud-dependent architectures toward decentralized, user-controlled computing. Alongside the unveiling of Muse Glimmer, Meta leadership announced plans to distribute the weights for Muse Spark 1.2, the corporation’s latest high-performance foundational model.\n...\nAt the core of the Meta announcement is Muse Glimmer, a dense model containing approximately 30 billion parameters. Despite its substantial size and capacity, the model has been rigorously optimized to function efficiently on standard consumer computers without requiring enterprise-grade server infrastructure. According to technical documentation and insights shared by Meta’s artificial intelligence division, the engineering breakthrough relies heavily on advanced quantization techniques. These methods successfully compress the language model’s footprint to under 20 gigabytes, making it viable for execution on systems powered by a single consumer graphics processing unit (GPU).\n...\nHardware and software collaborations have played an instrumental role in bringing Muse Glimmer to consumer desktops. Nvidia, a dominant force in AI hardware manufacturing, has heavily optimized the model to run seamlessly on its proprietary consumer GPUs. In technical briefings, Nvidia confirmed that Muse Glimmer is uniquely purposed for coding environments and autonomous local workflows. Unlike traditional models that merely respond to single-turn text prompts, Glimmer is engineered to act as an autonomous agent. It possesses the capability to execute multi-step plans, invoke software tools, verify its own computational outputs, and autonomously recover from execution errors.\n...\nGlimmer\n...\nFor hardware manufacturers like Nvidia, AMD, and Apple, the shift toward local agentic AI validates the necessity of continually upgrading consumer-facing silicon. As consumer GPUs and neural processing units (NPUs) grow increasingly sophisticated, the demand for high-end personal computers capable of running dense local models will inevitably surge. Consumers and professionals will increasingly view local AI capabilities as a baseline requirement for modern productivity hardware.",
+      "signal_score": 11.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 4
+      }
+    },
+    {
+      "id": "587f37f41680",
+      "source": "exa_news",
+      "title": "Tencent releases open-sourced Tencent Hy4 preview – Upgrade Magazine",
+      "url": "http://www.upgrademag.com/web/2026/09/15/tencent-releases-open-sourced-tencent-hy4-preview",
+      "published_at": "2026-09-15T00:00:00.000Z",
+      "excerpt": "# Tencent releases open-sourced Tencent Hy4 preview\n\nHy4 preview is now available as an open-source model and can also be accessed globally through WorkBuddy and CodeBuddy, as well as Yuanbao, ima, and other Tencent products.\n\nBy\n\nUpgrade Staff\n\nPublished\n\n1 hour ago\n\n \n\nTencent has released and open-sourced Tencent Hy4 preview, a next-generation large language model with 770B total parameters, 49B active parameters, and a context window exceeding 1M tokens. It demonstrates outstanding capabilities across real-world productivity tasks spanning coding, office work, and scientific research.\n...\nHy4 preview is now available as an open-source model and can also be accessed globally through WorkBuddy and CodeBuddy, as well as Yuanbao, ima, and other Tencent products. Users can try the model directly through these applications or connect to it via API through Tencent Cloud TokenHub and OpenRouter.\n...\nHy4 preview was expanded significantly in model size, context length, and data volume, and the advances in both pre-training and post-training have led to a major leap in overall intelligence, placing the model among the top tier of open-source models.\n...\nHunyuan continuously works in deep co-design with products such as CodeBuddy and WorkBuddy, optimising the real-world user experience across productivity scenarios. In a blind evaluation conducted internally by Tencent involving 163 experts and 203 engineering tasks, Hy4 preview scored an average of 2.99 out of 4.00, slightly ahead of GLM-5.3 (2.92/4.00) and Kimi K3 (2.94/4.00).\n...\nNotably, Hy4 preview also contributed to its own development process, participating for the first time in the automated optimisation of training methods, data strategies, evaluation frameworks, and low-level operators. The model proposed approaches, ran experiments, and iterated based on the results, with the resulting code, logs, and feedback feeding into subsequent rounds of exploration. This established an early-stage recursive self-improvement loop.\n...\nHy4 preview has also autonomously analysed bottlenecks in its inference system and carried out multiple rounds of optimisation in areas such as operator fusion and communication optimisation. These improvements increased end-to-end throughput by 31.8% compared with the baseline, with consistent gains across different context lengths and concurrency levels. This demonstrates the model’s ability to autonomously optimise its own inference infrastructure.\n...\npreview continues to offer cost efficiency, helping\n...\nwidely accessible. API pricing is set at USD 0.834 per million input tokens, USD\n...\noutput tokens, and USD 0.0\n...\n2 per million tokens for cache hits.\n...\nThrough a preview-first approach followed by official releases, Hunyuan continuously incorporates real-world feedback into its research and development process, enabling its models to improve by solving real-world problems. The next batch of models in the Hy4 series is expected to roll out soon.",
       "signal_score": 10.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -264,25 +251,12 @@
       }
     },
     {
-      "id": "c61f7f14201b",
+      "id": "b8f29035ecc5",
       "source": "exa_news",
-      "title": "Power Up Your AI Agent With Live Web Search, for Fewer Tokens",
-      "url": "https://www.sitepoint.com/ai-agent-live-web-search-fewer-tokens",
-      "published_at": "2026-09-12T08:48:30.000Z",
-      "excerpt": "If you ask a large language model what happened this morning, it will tell you it doesn't know, or invent something plausible. That is not a bug you can prompt your way out of. The problem is that a model's knowledge is frozen at its training cutoff, with no built-in connection to the live web. If you're building anything that needs current data, like a research assistant, a support bot, or a market-monitoring agent, you have to bring the web to the model yourself.\n...\nThe technique is simpler than it looks. The catch is that fetching the data is only half the job. The other half is getting it into the model cheaply, because raw search results burn through your context window and your budget. This guide covers both halves along with the code.\n...\nRetrieval fixes both problems the same way: fetch the current facts and hand them to the model as context, then ask it to reason over what you gave it. The model stops being the source of truth and becomes the thing that reads it. This is the principle behind retrieval-augmented generation (RAG); web search is just RAG where the knowledge base is the whole internet.\n...\nModern LLM APIs support tool calling (also called function calling), which makes the fetch-then-reason retrieval flow easier to build. You describe a `search` tool to the model. When a question requires fresh information, the model doesn't answer directly; instead, it issues a request to call your tool with a query string. Your code runs the search, feeds the results back, and the model writes its answer grounded in what you returned.\n...\nLet's set up a basic version in Python. We'll use an OpenAI-style chat completion API for the model, because that tool-calling shape is the most widely recognized (swap in whichever model you have access to). The pattern is provider-agnostic, though: the same loop works with Google's Gemini, Anthropic's Claude, or a local model; only the SDK calls differ. For the search step, we'll use SerpApi as our web search API. You'll need to run `pip install openai requests` and set the API keys as environment variables.\n...\nThe model asks for a search, your code runs it, and the model answers. More advanced setups just repeat or extend those three steps: searching several times before answering, adding more tools, asking the model to cite its sources, or streaming the reply as it's written.\n...\nSerpApi added a Markdown Output mode for exactly this. You request it by adding `output=md` to the same call:\n...\nOnce the loop works, the same foundation scales. Nothing limits the `tools` list to one function: add a second and a third, and the model picks which to call and in what order. A search tool finds a promising article, then a scraper tool pulls its full text; a database tool looks up your own records when the question is about your data. You wrote `web_search` and `flight_search` above, and the model already chose between them. That is the whole mechanism, and it keeps working as you add more. You can also expose your search tool over the Model Context Protocol (MCP) so agent frameworks and desktop assistants can use it without custom glue. And you can fold web results into a broader RAG pipeline that blends live search with your own indexed documents.\n...\nMost agent frameworks already have a real-time search path, so you rarely start from zero. If you'd rather not hand-roll the tool definitions at all, serpapi-search-tools packages them for you: `pip install serpapi-search-tools`, then drop `web_search()`, `news_search()`, `flights_search()`, or `hotels_search()` straight into your agent. It detects your installed SDK automatically and supports the OpenAI Agents SDK, Pydantic AI, LangChain, CrewAI, LlamaIndex, the Claude Agent SDK, and Google ADK, or runs as plain Python functions with no framework at all.\n...\nWhich LLMs can search the web? None natively; a model alone has no live index. You can give any model search through a tool-calling loop like the one above. The \"browsing\" features in some chat products are just this pattern wired up for you.\n...\nCan I give a local LLM internet access? Yes. The architecture is identical for local models via Ollama or LM Studio: your code runs the search and feeds results back. The model never touches the network; your application does.",
-      "signal_score": 10.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 5
-      }
-    },
-    {
-      "id": "7ba7e71a5d6f",
-      "source": "exa_news",
-      "title": "Ant Group's Ling-3.0-flash-VL scores 25 on Intelligence Index with just 5.5B active parameters",
-      "url": "https://cryptobriefing.com/ant-group-ling-3-flash-vl-intelligence-index",
-      "published_at": "2026-09-11T00:00:00.000Z",
-      "excerpt": "Ant Group’s InclusionAI lab has released Ling-3.0-flash-VL, a multimodal AI model that scores 25 on the Artificial Analysis Intelligence Index while activating just 5.5 billion of its 124 billion total parameters per inference.\n...\nThe model, part of Ant Group’s Ling (Bailing) series, natively processes image, text, and video input. It’s been open-sourced under the MIT license, with BF16 and FP8 weights available on Hugging Face and ModelScope.\n...\nThe model houses 124 billion parameters in total but only activates 5.5 billion for any given inference call. This mixture-of-experts style design means the model can deliver strong results without requiring the full parameter set to fire every time a query comes in.\n...\nThe availability of FP8 weights alongside the standard BF16 format is a practical detail worth noting. FP8 quantization reduces memory requirements roughly in half compared to BF16, making the model accessible to organizations running on more modest GPU infrastructure.\n...\nThe model houses 124 billion\n...\nin total but only activates 5.5 billion for any given\n...\nThe availability of FP8 weights alongside the standard BF16 format is a practical detail worth noting. FP8 quantization reduces memory requirements roughly in half compared to BF16, making the model accessible to organizations running on more modest GPU infrastructure.",
+      "title": "Qwen3.6-35B-A3B-NVFP4 and Wan2.1-T2V-1.3B-Diffusers models now available on Amazon SageMaker JumpStart - AWS",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/qwen3.6-35b-a3b-nvfp4-wan2.1-t2v-1.3B-diffusers-jumpstart",
+      "published_at": "2026-09-14T00:00:00.000Z",
+      "excerpt": "NVIDIA's Qwen3.6-35B-A3B-NVFP4 and Alibaba's Wan2.1-T2V-1.3B-Diffusers models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models bring specialized capabilities spanning agentic coding with long-context reasoning and lightweight text-to-video generation, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure.\n...\nQwen3.6-35B-A3B-NVFP4 is optimized for agentic coding, multimodal reasoning, and long-context understanding as the NVIDIA-quantized variant of Alibaba's Qwen3.6-35B-A3B. This Mixture-of-Experts model contains 35B total parameters with only 3B activated per token (8 of 256 experts), supporting a 262K-token context window extendable to ~1M via YaRN scaling. Quantized to NVFP4 using NVIDIA's ModelOpt framework, it preserves thinking across conversation turns, multi-token prediction, and tool calling for multi-step agent pipelines—all at a significantly reduced memory footprint.",
       "signal_score": 10.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -290,12 +264,12 @@
       }
     },
     {
-      "id": "57807dfb9212",
+      "id": "a2e511b5d3bb",
       "source": "exa_news",
-      "title": "NVIDIA Open-Sources OSMO: One YAML Orchestrates Physical AI Training, Simulation, and Robot Testing - MarkTechPost",
-      "url": "https://www.marktechpost.com/2026/09/14/nvidia-open-sources-osmo-one-yaml-orchestrates-physical-ai-training-simulation-and-robot-testing",
-      "published_at": "2026-09-14T00:00:00.000Z",
-      "excerpt": "Robot developers do not have one compute problem. They have 3. A policy is trained on GB200 or H100 clusters, tested in Isaac Sim on RTX GPUs, then validated on a Jetson mounted inside a real robot. Each tier has its own cluster, its own scheduler, and its own glue scripts. NVIDIA OSMO is NVIDIA’s answer to that fragmentation: an open-source, Kubernetes-native workflow orchestrator that lets a team describe the whole pipeline in a single YAML file and run it across every tier without touching infrastructure code.\n...\nDeployable? Yes. OSMO is Apache-2.0 licensed, ships Helm charts and containers on NGC, and has a local quickstart that runs the full control plane on a workstation with KIND.\n...\nNVIDIA frames physical AI as a three computer problem. Training happens on data-center GPUs. Simulation, physics, and sensor rendering happen on workstation-class RTX hardware. Deployment and hardware-in-the-loop (HIL) testing happen on edge devices such as Jetson AGX Thor, usually on premises. Each tier usually gets its own tooling, and the handoffs are where custom scripts accumulate.\n...\nOSMO treats all 3 as backends of one control plane. Each backend is a Kubernetes cluster registered through the CLI. Workflows never name a cluster. They name a platform (for example `gb200`, `rtx-pro-6000`, or `jetson-agx-thor`) and OSMO routes the task to a pool that offers it.\n...\n- `simulation` runs an Isaac Sim container on `rtx-pro-6000`\n- `train-policy` runs a PyTorch container on `gb200` with 8 GPUs, taking the simulation task’s output as input\n- `evaluate-thor` runs a ROS app on `jetson-agx-thor`, consuming the trained policy and writing results to a named dataset\n...\n`outputs`, and\n...\n- Portability: The same YAML runs on a laptop (Docker/KIND) or on EKS, AKS, GKE, on-premise, or air-gapped clusters. The 6.3.0 release added a multi-provider `deploy-k8s.sh` that provisions OSMO on Azure AKS, AWS EKS, microk8s, or any existing cluster, with storage wiring for MinIO, Azure Blob, AWS S3, or bring-your-own S3.\n...\n- Scheduling: OSMO uses the NVIDIA KAI Scheduler by default. Release 6.2.8 added NVLink topology-aware placement for multi-GPU tasks. Release 6.3.0 made `exec_timeout` and `queue_timeout` per group, so a stalled simulation group no longer kills sibling training groups.\n...\nThe project describes\n...\nthat it claims can cut\n...\nNote that the\n...\nmanaged dataset outputs\n...\nthe replacement.\n...\n- Security and identity: Since 6.2.8 OSMO ships an RBAC authorization sidecar, OAuth2 proxy integration with device-code login, and identity-provider user mapping. Release 6.3.0 added TLS termination at the Envoy gateway and cloud workload identity (Azure Workload Identity, AWS IRSA/Pod Identity) so services no longer mount storage keys as Kubernetes Secrets. Release 6.3.1 tightened the default `osmo-user` role to the default pool.\n...\n- Agent integration: The repository ships an AGENTS.md, a skills directory, and an MCP deployment guide. At GTC 2026 NVIDIA said OSMO integrates with Claude Code, OpenAI Codex, and Cursor so coding agents can submit, monitor, and debug pipelines.\n...\n- OSMO orchestrates training, simulation, and edge HIL tasks from one YAML across heterogeneous Kubernetes clusters\n- Apache-2.0, Helm charts on NGC, latest release 6.3.1 (June 2026), local KIND quickstart available\n- KAI Scheduler default, NVLink-aware placement, per-group timeouts, RBAC and OAuth2 built in\n- Battle-tested on GR00T, Isaac Lab, Isaac Sim, and Isaac ROS; Azure and Nebius integrations exist\n- Dataset CLI is deprecated in 6.3 and removed in 6.4; plan migrations accordingly",
+      "title": "DeepSeek V4 Flash vs GLM-5.3 vs Qwen3.8 Flash: 53x Gap [2026]",
+      "url": "https://tech-insider.org/ca/deepseek-v4-flash-vs-glm-5-3-flash-vs-qwen3-8-flash-2026",
+      "published_at": "2026-09-15T00:21:05.728Z",
+      "excerpt": "Three new “flash tier” AI models shipped within roughly four weeks of each other this summer, and all three are chasing the same customer: developers who want near-frontier coding performance without frontier pricing. DeepSeek’s V4.1 Flash got a pricing overhaul on August 16, Alibaba’s Qwen3.8-Flash-Next dropped its research-preview label on September 2, and Z.ai’s GLM-5.3-Flash launched under an MIT licence on August 30. Each one claims to be the smartest cheap model on the market. They can’t all be right.\n...\nDeepSeek re-released its budget tier as V4.1 Flash (API model ID `deepseek-flash`) on July 31, 2026, then revised pricing again on August 16 at 16:00 UTC. The model runs a mixture-of-experts architecture with roughly 13 billion active parameters per token, according to DeepSeek’s own comparison tables; the company has not published a total parameter count for the underlying MoE, which is unusual restraint compared to how openly it discussed V3’s architecture.\n...\nOn benchmarks, DeepSeek-V4-Flash scores 56.0 on SWE-bench Pro, 45.1 on CoWorkBench (an office-agent task suite), and 41.3 on JobBench, according to a comparison table run against Qwen and Claude models. SWE-bench Multilingual results weren’t reported for this model in the same table, which is a gap worth flagging if your team codes in languages other than English. The model is hosted only through DeepSeek’s own OpenAI-compatible API, where the full peak/off-peak pricing table is published and updated in DeepSeek’s public change log; there’s no confirmation in DeepSeek’s documentation of first-party listings on Together AI, Fireworks, or OpenRouter for this specific Flash variant, though third-party proxies sometimes mirror it.\n...\nZ.ai (the renamed Zhipu AI) launched GLM-5.3-Flash in the last days of August 2026, with review coverage anchoring the release window to August 30-31. It’s a 320-billion-parameter MoE model with a 1-million-token context window and a 128K-token max output, and critically, Z.ai ships it under an MIT licence for the open weights. That’s the single biggest differentiator in this trio: neither DeepSeek nor Alibaba has published an explicit MIT or Apache tag for their Flash-tier weights in the sources reviewed for this piece, which makes GLM-5.3-Flash the clearer choice if your compliance team requires an unambiguous self-hosting licence.\n...\nThe tradeoff: none of the sources reviewed for this comparison publish a detailed SWE-bench, LiveCodeBench, or GPQA score for GLM-5.3-Flash. Z.ai’s own materials focus on context length, MoE size, and MIT licensing rather than head-to-head coding benchmarks, so if raw coding accuracy is your primary filter, you’re currently choosing GLM-5.3-Flash on architecture and licence terms rather than a published leaderboard position. Z.ai also hasn’t disclosed how many of the 320 billion total parameters activate per token, which makes direct efficiency comparisons against Qwen3.8-Flash-Next’s disclosed 6B-active design harder to make apples to apples.\n...\nAlibaba’s Qwen3.8-Flash-Next shipped as a research-preview MoE model around August 25-26, 2026, with a 125-billion total-parameter, 6-billion-active-parameter design. On September 2, Alibaba dropped the “-Next” research-preview label and confirmed the production, hosted version on QwenCloud, priced at $0.16 per million input tokens and $0.47 per million output tokens, with a 1-million-token context window by default. Unlike DeepSeek, Alibaba’s public pricing doesn’t list a separate cache-hit discount tier for this model.\n...\nWhat makes Qwen3.8-Flash-Next stand out is benchmark density. A comparison table run against Qwen’s own larger models and Claude Opus 4.6 shows Qwen3.8-Flash-Next scoring 62.5 on SWE-bench Pro (beating even Qwen’s 27-billion dense model at 61.7, and Claude Opus 4.6’s 53.4), 81.0 on SWE-bench Multilingual, 73.9 on CoWorkBench, and 55.7 on JobBench. A separate release tracker adds a 91.7 score on GPQA Diamond, a graduate-level reasoning benchmark, and 88.5% on RealWorldQA for visual understanding. That’s the widest published benchmark spread of the three models in this comparison, and it’s the main reason Qwen3.8-Flash-Next gets described in coverage as “the 6B model that matches a 397B” design.\n...\nThe most citation-heavy benchmark table in this comparison comes from a technical breakdown published by Zenn (a Japanese developer publishing platform), which independently ran Qwen3.8-Flash-Next against Qwen’s own 27B dense model, its 17B-active Qwen3.7-Plus, DeepSeek-V4-Flash, and Claude Opus 4.6 as reference points. DataCamp’s editorial coverage and Alibaba’s own release tracker both cite the same underlying numbers for the SWE-bench Pro and CoWorkBench results, which is why those figures carry weight here despite coming from a single benchmark run rather than three separate labs.\n...\n| Benchmark | Qwen3.8-Flash-Next (6B active) | Qwen3.8-27B (dense) | Qwen3.7-Plus (17B active) | DeepSeek-V4-Flash (13B active) | Claude Opus 4.6 |\n| --- | --- | --- | --- | --- | --- |\n| SWE-bench Pro | 62.5 | 61.7 | 55.8 | 56.0 | 53.4 |\n| SWE-bench Multilingual | 81.0 | 73.8 | 75.8 | Not reported | 77.5 |\n| CoWorkBench (office agent tasks) | 73.9 | 70.7 | 65.1 | 45.1 | 68.2 |\n| JobBench (professional tasks) | 55.7 | 33.4 | 27.6 | 41.3 | 36.6 |\n...\nThree things stand out reading this table straight. First, Qwen3.8-Flash-Next’s 6-billion active parameters outscore DeepSeek’s 13-billion-active model on every benchmark that both were tested on, roughly double the active-parameter budget and still losing the coding accuracy race. Second, Qwen3.8-Flash-Next and Qwen’s own 27B dense model both beat Claude Opus 4.6 on three of the four listed benchmarks, a considerably larger and more expensive model, which is the strongest evidence yet that the frontier-vs-budget gap on coding tasks specifically has narrowed faster than the gap on general reasoning. Third, GLM-5.3-Flash’s complete absence from every published benchmark table checked for this piece is a real gap in the public record, not a sign the model underperforms; Z.ai simply hasn’t released comparable numbers as of this writing, so treat any coding-accuracy claim about GLM-5.3-Flash as unverified until Z.ai or a third party publishes one.\n...\nThe headline gap in this comparison is architectural, not just financial. GLM-5.3-Flash carries roughly 320 billion total parameters in its MoE design. Qwen3.8-Flash-Next activates only about 6 billion parameters per token, a difference of roughly 53x when you set GLM’s total parameter count against Qwen’s active footprint. That’s not a fair apples-to-apples comparison in the strictest sense, Z.ai hasn’t disclosed how many of GLM’s 320 billion parameters activate per token, so the true active-to-active ratio could be much narrower. But it illustrates the two competing philosophies at play in flash-tier MoE design right now: Z.ai is betting on a larger total parameter pool with unpublished sparsity, while Alibaba is betting on aggressive sparsity with a small, disclosed active-parameter count and topping SWE-bench Pro anyway.\n...\nFor any Canadian organization with data-residency requirements, whether that’s a health tech company under provincial privacy law, a fintech under FINTRAC-adjacent compliance pressure, or simply an IT team that doesn’t want customer data touching a foreign API, licensing is often the deciding factor over benchmark scores. GLM-5.3-Flash is the clear leader here: Z.ai ships the weights under an MIT licence, which permits commercial use, modification, and self-hosting on your own infrastructure (AWS Canada Central, Azure Canada, or on-prem) with minimal legal friction.\n...\nand you can live with an API-only deployment, Qwen3.8-Flash-Next’s benchmark lead is wide enough (62.5 vs 56.0 SWE-bench Pro, and a 73.9 vs 45.1 gap on CoWorkBench against DeepSeek) that it’s the defensible",
       "signal_score": 9.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -303,12 +277,12 @@
       }
     },
     {
-      "id": "7d5064da1881",
+      "id": "db5e95e37823",
       "source": "exa_news",
-      "title": "Agentic RAG vs Traditional RAG in .NET (2026) — When Each Wins, Semantic Kernel Code, Production Metrics",
-      "url": "https://dev.to/kirandeepjassalcrypto/agentic-rag-vs-traditional-rag-in-net-2026-when-each-wins-semantic-kernel-code-production-3k6",
-      "published_at": "2026-09-14T12:24:13.000Z",
-      "excerpt": "# Agentic RAG vs Traditional RAG in .NET (2026) — When Each Wins, Semantic Kernel Code, Production Metrics\n...\nTraditional RAG is what every \"ChatGPT for your docs\" tutorial builds: embed the question, fetch top-k chunks, stuff them into a prompt, return the answer. It works beautifully for ~75% of the questions you'd ask a support assistant. Then someone asks \"My conversion rate dropped 18% last week — check my webhook logs, the dashboard error rate, related docs, and tell me what's wrong\" and traditional RAG falls over. That question needs log inspection, a SQL query, a doc lookup, a recent-events check, a hypothesis, and validation. That's an agent.\n...\nThe 2026 rule of thumb: use a router. Traditional RAG by default; agentic RAG when the question requires multiple tools, multiple knowledge sources, or iteration.\n...\nTraditional RAG = . Agentic RAG = — the agent decides what to retrieve, in what order, and stops only when it's confident.\n...\nThe four things only agents can do: decompose (\"compare Q1 to last year and recommend\") into sub-questions; iterate (reformulate if the first retrieval returned junk); choose tools ( for definitions, for numbers, for debugging); self-critique (judge whether the answer is grounded before returning). Need none of those four? Traditional RAG is the right choice.\n...\nThe four costs of going agentic: money (4–8 LLM calls/query), latency (sequential tool calls push p95 from 2s to 8s+), debuggability (a wrong agent means reading 6 prompts + 6 tool results + a plan tree), and failure modes that can't happen with traditional RAG (loop forever, stop too early, wrong tool).\n...\n• Loop — orchestration that keeps calling the LLM until done (Semantic Kernel's auto function-calling).\n...\nTools follow three rules: server-side identity ( from the JWT, never from the agent — the agent cannot access another tenant), read-only by default (mutations need explicit user confirmation), and rich attributes (the LLM reads them to choose tools; bad descriptions = bad choices).\n...\nThe router classifies each incoming query \"traditional\" or \"agentic\" and dispatches. It's a gpt-4o-mini classification call at temperature 0 with a JSON response — ~$0.0002/query, ~80ms p95.\n...\nThat's the\n...\nhighest-ROI\n...\nMattrx Help is traditional RAG (in-product docs assistant — \"how do I X\", \"what does error 4012 mean\"). Mattrx Insights is agentic RAG (analytical assistant — \"why did conversions drop\", \"debug my integration\") with six tools (docs search, analytics query, recent events, log search, config status, period compare); the agent picks 2–4 per query. A router sits in front. After 4 weeks running both:\n...\nRouted mode is strictly better than either alone: better accuracy than traditional (complex queries get the agent), cheaper than agentic-only (simple queries skip the agent), acceptable latency (only the 22% that need agentic pay 8s).\n...\nTraditional RAG is . Agentic RAG is . A router decides which to use. Three habits prevent 90% of the pain: build the router first (cheaper, saves money day one, you'll need it forever); treat tools as a public API (server-side identity, read-only by default, rich descriptions, multi-tenant tested); hard caps on iterations + cost + daily volume (agents will try to loop and will try to spend $5 on a $0.04 question).\n...\nThe full guide has the complete Semantic Kernel C# — traditional service, agentic service with the auto-function-calling loop and budget guards, the tool plugins, and the router + classifier — plus a step-by-step trace of an agent debugging a real conversion drop, the architecture diagram, and the full metrics:",
+      "title": "Updated Agent Sandbox Runtime and Upgrade Guidance Released for Self-Hosted AI Agent Platforms - lifestyle.cosmeticsurgeryinsider.com",
+      "url": "https://lifestyle.cosmeticsurgeryinsider.com/story/857944/updated-agent-sandbox-runtime-and-upgrade-guidance-released-for-self-hosted-ai-agent-platforms",
+      "published_at": "2026-09-14T00:00:00.000Z",
+      "excerpt": "HANGZHOU, China, Sept. 14, 2026 /PRNewswire/ — FastGPT has published consolidated Agent Sandbox runtime and deployment guidance covering changes introduced from v4.16.0 onward. Sandbox-reliant deployments must update the Agent-sandbox-proxy service, with optional PORT and PREVIEW_PORT configuration to split WebSocket and HTTP traffic if gateways lack unified port support. An https://{{host}}/health endpoint validates proxy connectivity, and image tags differ by component: fastgpt-app and fastgpt-pro move to v4.16.0, fastgpt-plugin to v1.1.0, and agent-sandbox- volume and agent-sandbox-proxy to v0.3.0.\n...\nAdministrators must adjust environment variables for fastgpt-app and fastgpt-pro services, adding AGENT_SANDBOX_PREVIEW_PROXY_URL plus the OpenSandbox volume-name prefix, listed as VM_VOLUME_NAME_PREFIX in the v4.16.0 upgrade note and as AGENT_SANDBOX_OPENSANDBOX_VOLUME_NAME_PREFIX in current environment-variable documentation; confirm the name against the documentation for the version being deployed. Deprecated variables include AGENT_SANDBOX_DISK_MB and all E2B-related configurations; existing E2B users must switch to opensandbox or sealosdevbox providers and remove AGENT_SANDBOX_E2B_API_KEY. New optional sandbox variables allow tuning of CPU count (default 1), memory limit (default 2048 MiB), storage capacity (default 1 GiB), auto-suspend time (default 60 minutes), and auto-archive time (default 7 days) with documented default values.\n...\nFastGPT is an open-source AI application platform offering RAG knowledge bases, visual workflows, agent orchestration, Skill, MCP and multi-channel publishing, available as a cloud service, community self-hosted, or commercial private deployment. As of Sept. 7, 2026, the GitHub repository labring/FastGPT has 29,592 stars and 7,301 forks across 275 releases, with v4.16.2 published on Sept. 3, 2026. Repository: github.com/labring/FastGPT\n\n View original content: https://www.prnewswire.com/news-releases/updated-agent-sandbox-runtime-and-upgrade-guidance-released-for-self-hosted-ai-agent-platforms-302877562.html",
       "signal_score": 9.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -316,12 +290,25 @@
       }
     },
     {
-      "id": "7521424fb6e6",
+      "id": "812bb3b0150f",
       "source": "exa_news",
-      "title": "OpenAI Unveils Codex Execution Technology 'Harness' — Igniting Agent Infrastructure Competition",
-      "url": "https://finance.biggo.com/news/b64d6f7e-581d-4fba-9fa5-951a6a80ae20",
-      "published_at": "2026-09-13T19:54:48.803Z",
-      "excerpt": "# OpenAI Unveils Codex Execution Technology 'Harness' — Igniting Agent Infrastructure Competition\n...\nOpenAI has launched its Agents API in public beta, opening up the execution technology behind its Codex coding agent — known as the \"harness\" — to external developers. The API offers automatic context compression for long-running tasks, tool discovery and parallel invocation, and multi-agent collaboration capabilities, with no charge for the API itself. Early customers have reported significant cost reductions and lower failure rates. Data residency is currently limited to the United States. The announcement signals a shift in the AI competitive landscape from model performance to agent execution infrastructure.\n...\nOpenAI announced on the 10th (local time) that it has launched the Agents API in public beta. Developers can use it to build environments where AI agents can operate and break down complex tasks into multiple steps. The centerpiece of this announcement is that OpenAI is making the \"harness\" technology it has applied to Codex available to developers. The harness is essentially an execution framework that manages task context, invokes necessary tools, and coordinates task sequencing so that AI can perform real work.\n...\nPreviously, developers building agents with AI models had to build these capabilities from scratch. With the Agents API, however, developers can leverage OpenAI-provided infrastructure for context management, tool invocation, and task orchestration. Notably, context management for long-running tasks has been automated. When the volume of information an AI must process approaches its limits, earlier content is automatically compressed to preserve key information while allowing work to continue.\n...\nComplex workloads can also be distributed across multiple agents. Multiple sub-agents work independently, with a primary agent aggregating their results. This enables simultaneous handling of research, analysis, coding, and other tasks. External tool integration has also been strengthened. Developers can selectively load only the tools they need, execute multiple operations concurrently, and process results programmatically. Web search, MCP (a standard method for connecting external programs to AI), and custom developer-built tools are all supported.\n...\nDevelopers can also choose the computing environment where agents will actually operate. They can use OpenAI-managed sandboxes or connect their own infrastructure. Sandbox environments from providers specializing in AI agent infrastructure are also supported, including Cloudflare, Daytona, DigitalOcean, E2B, Modal, Oracle, Runloop, and Vercel.\n...\nOpenAI plans to continuously improve the harness technology it has accumulated through developing and operating Codex. Even as new AI models are released, OpenAI will manage the harness alongside them, reducing the burden on developers who would otherwise need to rebuild agent execution infrastructure from scratch with each model change.\n...\nitself carries no separate usage fee. However, costs do accrue based on token usage of the underlying AI models, tools, and OpenAI-\n...\nsandboxes. Enterprises should also be aware of certain conditions. Data residency is currently limited to\n...\nUnited States, and\n...\nZero Data Retention (ZDR)\" is not offered\n...\nuse sensitive corporate data\n...\ndata processing and security requirements\n...\nEarly customer results were also disclosed. Safety management platform SafetyKit reduced per-case processing costs by 60% after migrating its case review process to the Agents API. Hypha separated its agent execution framework from its sandbox environment, lowering agent response failure rates by 86%. Technology company Cirridae saw evaluation scores rise from 0.71 to 0.85, with latency reduced fourfold. Logistics technology firm Nash has deployed thousands of long-running agents through the Agents API to manage hundreds of millions of delivery operations worldwide, with individual agent runtimes ranging from hours to days.\n...\nWith OpenAI now offering not just AI models but also the execution infrastructure that enables models to perform real work to the developer ecosystem, competition in the AI agent market is expected to intensify further. Going forward, the key differentiator will be not only which model is used, but how reliably AI can \"see the job through to completion.\"",
+      "title": "DeepSeek’s New Flash Model Shrinks the Cost of Long Context - Artiverse",
+      "url": "https://www.artiverse.ca/deepseeks-new-flash-model-shrinks-the-cost-of-long-context",
+      "published_at": "2026-09-14T00:00:00.000Z",
+      "excerpt": "DeepSeek released V4.1-Flash on September 14, 2026, introducing a model built around one central goal: making long-context artificial intelligence cheaper to run. The Chinese artificial intelligence startup redesigned both the model architecture and the inference stack, combining several changes that reduce the amount of computing and memory needed during use.\n...\nThe result is a 552B-parameter Mixture-of-Experts model with a 1-million-token context window. That size sounds enormous, but V4.1-Flash does not activate every parameter for every token. It uses 8B active parameters per token during prefill and 16B during decoding, while supporting both text and images.\n...\nMixture-of-Experts, or MoE, lets a model contain many parameters without using all of them for every part of a request. In V4.1-Flash, the full model contains 552B parameters, but the active count stays at 8B during prefill and rises to 16B during decoding. That split gives the model different operating costs at different stages of handling a prompt.\n...\nThe model also introduces a Causal Encoder-Decoder architecture with a 20-layer encoder and a 20-layer decoder. This design sits alongside MoE, cheaper prefill, and efficient decoding as part of DeepSeek’s broader effort to reduce the cost of long-context AI.\n...\nLong-context models need memory to keep track of the information they have already processed.\n...\nstored in a key-value, or KV,\n...\n. As the\n...\n, the cache\n...\na major part of the cost of running the\n...\nV4.1-Flash reduces its global KV cache to 890 bytes per token. For a full 1-million-token context, that equals roughly 890 MB of global KV data. The figure gives the model a way to support a very long context without requiring a much larger cache for every token.\n...\nDeepSeek says the global KV cache is roughly one-quarter the size of V4-Flash’s. The reduction comes from CSA2, which cuts duplication in the KV information. Instead of carrying the same information in repeated forms, the system is designed to store it with less duplication.\n...\nThat change matters because the context window and the cache are tied together. A 1-million-token window gives the model room to process a large amount of information, but the practical cost depends on how much memory the system needs to retain while doing so. V4.1-Flash addresses that cost directly through cache compression and the rest of its inference design.\n...\nV4.1-Flash brings several efficiency ideas into one open-source model release: Causal Encoder-Decoder architecture, MoE routing, KV cache compression, CSA2, cheaper prefill, and efficient decoding. Each part targets a different pressure point, from the parameters active for each token to the memory needed for a million-token context.\n...\nDeepSeek’s release arrives as the company prepares for an initial public offering on Shanghai’s STAR Market. The model therefore represents both a technical release and a clear statement about the startup’s approach: build large systems, then redesign the path from input to output so those systems cost less to run.\n...\nFor developers and organizations working with long-context AI, the key details are practical. V4.1-Flash offers a 1-million-token context window, 890 bytes of global KV data per token, and separate active-parameter counts for prefill and decoding. Together, those choices show how an open model can pursue scale without treating every parameter and every stored token as an equal operating expense.",
+      "signal_score": 9.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 6
+      }
+    },
+    {
+      "id": "2dc86e6a7d88",
+      "source": "exa_news",
+      "title": "Sakana Fugu Ultra v2 lands and beats GPT-6 Astra without orchestrating it",
+      "url": "https://pasqualepillitteri.it/en/news/16195/sakana-fugu-ultra-v2-beats-gpt-6-astra",
+      "published_at": "2026-09-14T00:00:00.000Z",
+      "excerpt": "Sakana Fugu Ultra v2 lands and beats GPT-6 Astra without orchestrating it\n...\n##### Fugu Ultra v2 tops GPT-6 Astra on key benchmarks by orchestrating open models it doesn't even control, but it's still locked out of the EU.\n\n Pasquale Pillitteri 14/09/2026 10 min read \n\n Table of Contents\n...\nSakana Fugu Ultra v2 is the new orchestration model from Japanese AI lab Sakana AI, launched September 11, 2026 alongside its budget sibling Fugu Max. Fugu works more like a conductor than a single model, trained to route every request to a team of other models and stitch the answers back together. The detail making headlines sits in the benchmarks, where Fugu Ultra v2 beats GPT-6 Astra and Claude Fable 5.1 on several tests despite not having either one on its own team.\n...\nThe Tokyo startup, founded by Llion Jones (one of the architects behind the Transformer) and David Ha, put two models on the table at once. Fugu Ultra v2.0 pushes the orchestration capability ceiling higher, while Fugu Max chases value for money. Both ship as an API compatible with the OpenAI standard, so anyone already working with those libraries can hook them in by changing a single configuration line.\n...\nThe name carries over from the first version, which launched back in June, we covered it in Sakana Fugu, the Japanese AI orchestrating Claude, GPT and Gemini. The difference lies in the numbers and in the roster of models Fugu now commands, which has grown considerably with the addition of NVIDIA's open-weight Nemotron family.\n...\nIt's the principle Sakana has been repeating for months. For the company, intelligence is a distributed system rather than a single block. Stack enough specialized models together and you beat the one giant model. You send a request to a single API, and Fugu decides behind the scenes which models in its pool should handle it, then assembles the result.\n...\ntailored to the job. For easy stuff, it calls a lightweight model and wraps up fast; for a complex problem, it\n...\nThe number getting the most attention is the Chartography score, a visual-reasoning and data-reading test. Fugu Ultra v2 posts 48.3 against Opus 5's 27.3 from Anthropic and Fable 5's 29.5, a wide gap, nearly double, on a task where frontier models usually stumble. On DeepSWE, the software-engineering benchmark, Fugu Ultra v2 hits 74.3 and pulls ahead of models that cost three to five times as much per token.\n...\nOn the overall scoreboard, Sakana claims first place, outright or tied, on five of eight benchmarks (GDP.pdf, Chartography, SWEFish, DeepSWE and Toolathon), and a top-two finish on seven of eight. Here's the point splitting industry watchers: Fugu Ultra v2 beats GPT-6 Astra and both Claude Fable versions without having either in its pool, as both ITmedia and GIGAZINE confirm citing the spec sheet. In practice, it orchestrates open and specialized models and still manages to outscore the closed heavyweights it can't even call.\n...\nIf Ultra v2 plays for the top spot, Fugu Max plays for value. It costs $2 per million input tokens and $6 per million output tokens, a 40-60 percent cut on output pricing compared with rivals like Claude Sonnet 5, GPT-5.6 Terra and Kimi K3. The secret is the roster: Fugu Max folds in the widest pool of open-weight and specialized models yet, including for the first time NVIDIA's Nemotron family, the fruit of a collaboration between Sakana and the chipmaker.\n...\nHere, too, the results aren't small change. Fugu Max takes the top absolute score on six of ten benchmarks (including Terminal Bench 2.1, GPQA Diamond and AutomationBench) and pushes out the cost-performance frontier on seven of ten. Put simply, for plenty of real-world tasks you get flagship-tier quality for a fraction of the price. It's the same logic pushing so many developers toward the best local LLMs of 2026: you don't need the biggest model, you need the right one for the job.\n...\nFugu Ultra v2 costs $5 per million input tokens, $0.50 for cached inputs, and $30 per million output tokens. Web search runs $10 per thousand calls. The context window reaches one million tokens, max output tops out at 128,000, and the training cutoff is set at August 28, 2026. For those who'd rather subscribe, there are three monthly plans: $20 for Standard, $100 for Pro, and $200 for Max.\n...\nHere's the catch for readers in the EU. Fugu only exists as a cloud API, and Sakana isn't releasing weights for self-hosting. US and UK users can sign up and start calling the API today, no regional block applies there. But the service is not available in the EU or EEA. In plain terms, you can't legally wire it into production from inside the EU today without routing through infrastructure outside the European Economic Area, with all the personal-data and GDPR headaches that brings. The choice mirrors a caution several AI companies are showing toward Europe's regulatory framework. For an EU-based developer, it means one thing for now: look, don't touch.\n...\nSakana's bet runs against the mainstream. While OpenAI, Anthropic and Google keep pushing toward bigger, pricier models, as we saw at the launch of GPT-6 Astra, with its pricing and benchmarks, the Japanese company argues the value sits in coordinating many small, specialized models. It's the same philosophy that led NVIDIA to open up its Nemotron weights, a piece of the puzzle we touched on when Jensen Huang declared AGI had arrived while selling the chips it runs on.\n...\nDoes it hold up? If the benchmarks survive independent scrutiny, Fugu shows a well-trained orchestrator can beat a single giant model at a lower cost. Reliability remains the open question, since a system calling out to many models has that many more points where something can break. And keeping the EU locked out cuts off a massive market. Sakana chose a different path from\n...\nrest of the industry, now it's up to independent numbers to say whether it was right.\n...\nFugu Ultra v2 is Sakana AI's flagship orchestration model, released September 11, 2026. It doesn't generate answers on its own, it routes every request to a pool of open and specialized models and combines their results, offering it all behind a single OpenAI-compatible API.\n...\nFugu Max chases cost efficiency, Ultra v2 chases peak performance. Max costs $2 per million input tokens and $6 per million output tokens, with a pool that includes NVIDIA's open-weight Nemotron models. Ultra v2 costs more ($5 and $30) but posts the best scores on the toughest benchmarks.\n...\nOn some benchmarks, yes, according to Sakana's own data. Fugu Ultra v2 outperforms GPT-6 Astra and Claude Fable 5.1 on tests like DeepSWE, despite not having either model in its pool. The numbers come from the company, though, and still await confirmation from independent benchmarks.\n...\nNot directly, no. The service is only available as a cloud API and isn't accessible in the EU or EEA. There are no open weights for self-hosting, so for now EU-based developers can study it but can't run it in production without infrastructure outside Europe. It is reachable from the US and UK.\n...\n- Fugu Ultra v2 beats GPT-6 Astra and Fable 5.1 without having either in its pool. It wins with teams of open models against closed ones it can't even call, which makes the result more striking but still entirely unverified outside Sakana.\n...\n- It's off-limits in the EU. No availability in the EU or EEA, no open weights. European developers are stuck watching from the sidelines for now. Sakana's choice carries as much weight as the benchmarks.\n...\nSakana made a move the giants aren't making. Instead of a bigger model, a conductor commanding open and specialized models, capable on paper of beating the closed heavyweights it doesn't even use. The numbers come from the company and need confirming outside it. And the service stays off-limits in the EU, locked out of the EU and EEA. If independent benchmarks vindicate Fugu, the question for 2027 won't be which model is biggest, but who orchestrates it best.",
       "signal_score": 8.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -329,29 +316,16 @@
       }
     },
     {
-      "id": "e3e5df42aabb",
+      "id": "b5fe04544804",
       "source": "exa_news",
-      "title": "Show HN: Spanda – Sub-microsecond LLM epistemic uncertainty in Rust — Web Pulse",
-      "url": "https://wpnews.pro/news/show-hn-spanda-sub-microsecond-llm-epistemic-uncertainty-in-rust",
-      "published_at": "2026-09-11T00:00:00.000Z",
-      "excerpt": "A Rust-based tool called Spanda computes LLM epistemic uncertainty in 652.1 nanoseconds (0.65 µs) per evaluation, roughly 90,000× faster than neural Semantic Entropy methods that add about 92.4 ms of GPU overhead per inference call, according to the project's Show HN release. Spanda's Exact-Match Normalized Entropy (R_sc) is a zero-parameter, zero-GPU metric that matches or exceeds DeBERTa-v3 NLI cross-encoder Semantic Entropy on structured reasoning across models from 1.5B to 120B parameters, the release states. The release also reports that at 120B scale on ungrounded factual recall (TriviaQA) the model exhibits \"Confident Mode Collapse,\" producing the same incorrect answer across samples for an inverted AUROC of 0.091, which the project says makes external grounding (RAG) mandatory in that regime.\n...\n0B frontier scale\n...\n), the model\n...\nCritical Safety Implication: Any system using self-consistency or agreement as a proxy for truth will be systematically deceived by frontier models on ungrounded factual recall. External grounding (RAG) is mandatory in this regime.\n...\nSpanda is lightweight and requires zero third-party dependencies (pure Python standard library).\n...\n```\ngit clone https\n...\ngithub.com/Adarshent/\n...\n.git\ncd\n...\nWrap any standard OpenAI, Groq, Ollama, or OpenAI-compatible client with transparent multi-path epistemic uncertainty quantification (\n...\nFor production microservices and non-Python languages (TypeScript, Go, Rust, Ruby, curl), run the standalone compiled Rust gateway:\n...\nAny application in any language can simply point `base_url=\"http://localhost:8080/v1\"` to receive automatic sub-microsecond epistemic verification, Prometheus `/metrics`, and headers:\n...\nFor mission-critical production pipelines, Spanda provides a 2-Tier Cascaded Guardrail that combines sub-millisecond consensus filtering with context grounding and tool-call safety:\n...\nSpanda connects into modern enterprise LLM pipelines with zero external dependencies:\n...\nfrom spanda.integrations.llamaindex import SpandaRAGGuardrail\n...\nguard = SpandaRAGGuardrail()\n...\nreceipt = guard.validate_\n...\n(\n    samples=[\"\n...\nA\", \"Result A\", \"\n...\nA\"],\n    context_str=\"Retrieved node knowledge...\"\n)\nprint(\n...\nsafe)\n...\nRun the standalone compiled Rust gateway in Docker or Kubernetes:\n...\nOperational Scope: Spanda is engineered for structured reasoning, math, code, agent tool-call arguments, SQL, and canonical factual RAG extraction where 90ms GPU cross-encoders are an unacceptable bottleneck. It is not designed for open-ended, free-form creative prose (e.g., essays or poetry), where synonymous phrasing is naturally diverse and requires heavy neural NLI.\n...\n| Use Case / Architecture | Recommendation | Rationale |\n| --- | --- | --- |\n| Math, Code & Structured QA (7B–70B) | ✅ Recommended | Coherence Scaling Law ensures exact-match matches neural SE at 0 cost. |\n| High-Throughput Production APIs | ✅ Recommended | 90,000x latency reduction without GPU requirements. |\n| Free-form Paraphrase QA (<7B) | Use Neural SE | Small models produce inconsistent surface phrasing. |\n| Ungrounded Facts on Frontier Models (>100B) | ❌ Do Not Use Alone | Subject to Confident Mode Collapse ; must combine with retrieval (RAG). |\n...\nSpanda adopts a developer-friendly dual-licensing model:\n...\n- Python SDK & Integrations (`spanda`) : Permissive** MIT License** . Free for all developers, commercial and open-source applications, with zero dependency friction.\n- Compiled Rust Core Engine & Gateway (`spnda`) : Business Source License 1.1 (BSL 1.1) . Free for developers, research, and internal production infrastructure. Prohibits offering Spanda as a competing commercial third-party managed service without an enterprise license from BRHMN Labs Private Limited. Automatically converts to Apache 2.0 on January 1, 2030.",
+      "title": "Poolside opens Laguna S 2.1 weights for coding agents – DailySynapse",
+      "url": "https://dailysynapse.com/news/poolside-opens-laguna-s-21-weights-for-coding-agents",
+      "published_at": "2026-09-15T00:00:00.000Z",
+      "excerpt": "Poolside released Laguna S 2.1, a 118-billion-parameter Mixture-of-Experts (MoE) coding model that activates only 8 billion parameters per token and supports a context window of up to 1 million tokens. The weights are available on Hugging Face under the permissive OpenMDW-1.1 license. Poolside says the model scores 70.2% on Terminal-Bench 2.1, 78.5% on SWE-Bench Multilingual, and 59.4% on SWE-Bench Pro’s public dataset.\n...\nThe release targets growing enterprise demand for open-weight systems that can run inside government, defense, and regulated environments. Poolside is positioning the model as a Western alternative to widely adopted Chinese open-weight systems, with a focus on self-hosting, lower inference costs, and faster iteration rather than frontier-scale training budgets.\n...\nPoolside also published the complete, unedited trajectory of every final benchmark trial, including reasoning steps, tool calls, and shell commands. The company disclosed reward-hacking issues seen during training and outlined mitigations such as prompt addenda, LLM-based judging calibrated against human labels, and expert review. Reported limitations include tool-schema brittleness, nested JSON errors, overthinking on competition math, and a large cost gap between thinking and non-thinking modes.",
       "signal_score": 8.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
         "rank": 7
-      }
-    },
-    {
-      "id": "fcc650f49b00",
-      "source": "exa_news",
-      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems | OpenAI",
-      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-      "published_at": "2026-09-14T00:00:00.000Z",
-      "excerpt": "Perplexity trusts GPT-6 Astra with end-to-end systems | OpenAI\n...\n# Perplexity trusts GPT‑6 Astra with end-to-end systems\n...\nPerplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.\n...\nBut the real challenge, according to Johnny, is taking those informational aspects and applying them to real-world systems. Something made easier with GPT‑6 Astra.\n...\nFor Johnny, one of the most useful applications of AI is testing code. With limited time to test manually, he asks GPT‑6 Astra to build a small testing program around an application.\n...\nThe model generates realistic responses like those another service would send, for example, a language model API or a connector. By standing in for those services, the model can check how the application responds and test the workflow from start to finish.\n...\n> “We’re actually able to trust it with full end-to-end systems and check in on it much less frequently than previous generations of models.”",
-      "signal_score": 7.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 8
       }
     },
     {
@@ -361,21 +335,45 @@
       "url": "https://news.aibase.com/news/31028",
       "published_at": "2026-09-14T00:00:00.000Z",
       "excerpt": "DeepSeek-V4.1-Flash has recently been launched on the Qwen AI platform, with API services and Token Plan now available. Developers can integrate the model into their systems via standard APIs, or directly use the Token Plan in tools such as Qoder, Qwen APP, and Codex for code, documentation, visual understanding, and agent tasks.\n...\nAccording to the platform announcement, this model is DeepSeek's new lightweight flagship, featuring a MoE architecture with 552B total parameters, using a Causal-Encoder-Decoder asymmetric structure, with input activation of about 8B and output activation of about 16B; it natively supports text and image understanding, with a maximum context length of 1 million tokens, and a maximum output of approximately 393K. The official stated that it has improved significantly over its predecessor in several Agent and code benchmarks, achieving high throughput and low latency with lower activation parameters.\n...\nThe cost side is a major focus of this release. The new generation of cache compression reduces the KV Cache demand for HBM to one-quarter of the previous generation and for SSD storage to one-eighth, saving more resources for long contexts and multi-turn tool calls. The Qwen page provides time-based pricing: 1 yuan per million tokens during off-peak hours for input and 4 yuan per million tokens for output; 2 yuan and 8 yuan respectively during peak hours. The rate limits are 15K RPM and 1M TPM, covering features such as prefix completion, function calls, caching, structured output, batch tasks, and online search.\n...\nIn terms of deployment, Alibaba Cloud BaiLian has collaborated with the vLLM open-source community to complete the adaptation, making it accessible on both the China site and international site, covering regions including Beijing, Singapore, and Global locations such as the United States, Germany, Japan, and Hong Kong. According to BaiLian documentation, the model supports multi-turn conversations, function calls, online search, context caching, and structured output, with a max_tokens limit of approximately 393,216, making it suitable for enterprises to migrate tasks such as long document parsing, customer service knowledge base, code repository Q&A, and multimodal order review to a single interface.\n...\nIndustry experts believe that by incorporating the combination of \"large parameters, small activation, strong caching\" into the Qwen ecosystem, V4.1-Flash will reduce the trial and error costs of long-context agents; for small teams, the low off-peak price combined with the Token Plan subscription allows for more flexible batch inference and prototype validation.",
-      "signal_score": 7.0,
+      "signal_score": 8.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
-        "rank": 8
+        "rank": 7
       }
     }
   ],
   "candidates": [
     {
-      "id": "candidate-2026-09-15-3",
-      "topic": "Quantization Workflow Gotchas: Beyond Bit-Width",
-      "angle": "Quantization fidelity and model behavior are highly sensitive to specific flags and calibration data. Mismatched quantizer schemes (e.g., W4A16 vs Q4_K_M) or suboptimal calibration can drastically affect performance without changing file size.",
-      "audience_pain": "Unexpected performance degradation or model drift when deploying quantized LLMs, despite using standard tools and formats.",
-      "why_now": "Archsloth's recent correction on AutoRound flags for Qwen3-4B highlights how easily subtle errors in quantization recipes can be missed, leading to suboptimal outcomes.",
-      "hook_seed": "Quantization recipes matter more than you think.",
+      "id": "candidate-2026-09-15-8",
+      "topic": "Flash Models: Frontier Performance, Budget Price?",
+      "angle": "The emergence of 'flash tier' models (e.g., DeepSeek-V4.1 Flash, GLM-5.3 Flash, Qwen3.8-Flash) promises near-frontier coding performance at significantly lower API costs, but developers must carefully evaluate their specific trade-offs for their applications.",
+      "audience_pain": "Balancing model performance requirements with API costs, especially for applications where 'good enough' is crucial but budget constraints are tight.",
+      "why_now": "Multiple 'flash' models have been released or updated recently, all aggressively competing for the 'smartest cheap model' market, making their comparative analysis critical for developers.",
+      "hook_seed": "Near-frontier AI, without the frontier price.",
+      "format": "practical_tips",
+      "objective": "click",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "fe17810eeade",
+        "812bb3b0150f"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 10,
+        "practical_value": 9,
+        "originality": 8,
+        "conversation_potential": 9,
+        "evidence_strength": 9
+      },
+      "score": 9.0
+    },
+    {
+      "id": "candidate-2026-09-15-1",
+      "topic": "Quantization Flags & Model Accuracy",
+      "angle": "Incorrect quantization flags or calibration data can significantly degrade model performance and accuracy, even if file size remains the same, highlighting common pitfalls in local LLM deployment workflows.",
+      "audience_pain": "Developers experience unexpected performance drops or accuracy issues after quantizing local LLMs, often unaware that subtle configuration details are the root cause.",
+      "why_now": "Recent revelations about critical errors in widely used quantization workflows (like AutoRound for Qwen) make this a timely warning for developers aiming for fidelity.",
+      "hook_seed": "Your LLM is quantized. Is it still accurate?",
       "format": "practical_tips",
       "objective": "reply",
       "image_template": "handwritten_poster",
@@ -395,133 +393,91 @@
     },
     {
       "id": "candidate-2026-09-15-10",
-      "topic": "Agentic RAG vs. Traditional RAG: Choosing the Right Approach",
-      "angle": "While traditional RAG excels at simple lookups, agentic RAG is crucial for complex, multi-step queries requiring reasoning, tool use (e.g., SQL, log inspection), and dynamic data access, suggesting a router approach for optimal system design.",
-      "audience_pain": "Choosing between standard RAG and more complex agentic RAG architectures, understanding their respective limitations and when to use each for specific application needs.",
-      "why_now": "A new guide explicitly details the trade-offs between traditional and agentic RAG, offering a practical 'rule of thumb for 2026' with code and production metrics.",
-      "hook_seed": "Agentic RAG: beyond simple lookups.",
+      "topic": "Securing Self-Hosted AI Agent Sandboxes",
+      "angle": "Deploying self-hosted AI agent platforms demands careful configuration of sandbox runtimes, proxy services, and environment variables to ensure secure and functional operations, preventing common security and operational pitfalls.",
+      "audience_pain": "Developers face significant challenges in securely deploying and managing self-hosted AI agents, especially when dealing with complex sandbox environments and frequent version updates.",
+      "why_now": "FastGPT's recent release of updated sandbox runtime and upgrade guidance highlights the ongoing complexity and critical security implications involved in self-hosting agent environments.",
+      "hook_seed": "Self-host agents? Secure your sandbox.",
       "format": "practical_tips",
-      "objective": "click",
+      "objective": "reply",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "7d5064da1881"
+        "db5e95e37823"
       ],
       "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 10,
+        "trend_strength": 8,
+        "audience_relevance": 9,
         "practical_value": 10,
-        "originality": 7,
-        "conversation_potential": 8,
+        "originality": 8,
+        "conversation_potential": 9,
         "evidence_strength": 9
       },
       "score": 8.83
     },
     {
-      "id": "candidate-2026-09-15-4",
-      "topic": "Orchestration Models vs. Monolithic LLMs",
-      "angle": "Sakana Fugu Ultra v2, an orchestration model, reportedly outperforms monolithic LLMs like GPT-6 Astra on certain benchmarks by intelligently routing requests to a team of specialized models rather than processing them directly.",
-      "audience_pain": "Choosing the optimal architecture for advanced AI systems: a single, large model or a modular system orchestrating smaller, specialized models.",
-      "why_now": "Sakana Fugu Ultra v2's benchmark results against a frontier model like GPT-6 Astra challenge prevailing assumptions about AI 'intelligence' and system design.",
-      "hook_seed": "An AI orchestrator beat GPT-6 Astra.",
-      "format": "hot_take",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "2dc86e6a7d88"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 7,
-        "originality": 9,
-        "conversation_potential": 9,
-        "evidence_strength": 8
-      },
-      "score": 8.5
-    },
-    {
-      "id": "candidate-2026-09-15-5",
-      "topic": "Context Window: A Better Performance Driver than Raw Parameters?",
-      "angle": "For specialized AI agents, especially open-weight search agents like Iris-mini/pro, effectively utilized context windows (e.g., 256,000 tokens) can yield disproportionately higher performance gains than simply scaling up raw model parameters.",
-      "audience_pain": "Deciding whether to prioritize model size or context window capacity when selecting or fine-tuning models for specific agentic tasks.",
-      "why_now": "The release of Iris-mini/pro directly makes the case that 'context beats raw parameters' with supporting benchmark data, providing a tangible example.",
-      "hook_seed": "Context window often beats raw parameters.",
+      "id": "candidate-2026-09-15-3",
+      "topic": "Agent Performance: Context Length Matters More",
+      "angle": "For specialized AI agents, an effectively utilized long context window (e.g., 256K-1M tokens) is proving more impactful for performance gains than simply increasing raw model parameters, offering a direct path to efficiency.",
+      "audience_pain": "Developers struggle with balancing model size, context length, and inference costs when selecting or designing models for agentic workflows.",
+      "why_now": "Recent open-source search agents (Iris-mini/pro) and agentic models (DeepSeek-V4.1-Flash, Atria Dawn, Tencent Hy4) are explicitly emphasizing and demonstrating the power of long context windows.",
+      "hook_seed": "Forget huge LLMs. Focus on context.",
       "format": "mechanism_explainer",
       "objective": "follow",
       "image_template": "handwritten_poster",
       "source_ids": [
         "74505697f0f5",
-        "131e3aec1d10"
+        "131e3aec1d10",
+        "fe17810eeade",
+        "7d763e2a3a63",
+        "812bb3b0150f",
+        "587f37f41680",
+        "b8f29035ecc5"
       ],
       "scores": {
         "trend_strength": 9,
         "audience_relevance": 9,
-        "practical_value": 8,
+        "practical_value": 9,
         "originality": 8,
         "conversation_potential": 8,
         "evidence_strength": 9
       },
-      "score": 8.5
+      "score": 8.67
     },
     {
-      "id": "candidate-2026-09-15-7",
-      "topic": "AI Agent Overfitting: A Hidden Reliability Risk?",
-      "angle": "While AI agents exhibit strong generalization and tool-use (e.g., discovering vulnerabilities), the question of overfitting in complex agentic workflows—especially when interacting with external systems or APIs—remains a critical, underexplored challenge for reliability and security.",
-      "audience_pain": "Ensuring the reliability, predictability, and security of AI agents deployed in production environments.",
-      "why_now": "Hacker News discussions on why ML research agents 'don't overfit' and reports of AI bots discovering vulnerabilities highlight the nuanced challenges of agentic behavior.",
-      "hook_seed": "Do agents overfit? It's complicated.",
-      "format": "mechanism_explainer",
-      "objective": "reply",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "hn-49699648",
-        "hn-49695876",
-        "7d5064da1881",
-        "74505697f0f5"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 8,
-        "originality": 8,
-        "conversation_potential": 9,
-        "evidence_strength": 8
-      },
-      "score": 8.5
-    },
-    {
-      "id": "candidate-2026-09-15-1",
-      "topic": "Mixture-of-Experts for Long-Running AI Agents",
-      "angle": "MoE architectures like DeepSeek-V4.1-Flash and InternLM Atria Dawn are specifically designed to address high memory and inference costs associated with long-running, stateful AI agents by optimizing prefill, KV caches, and context management.",
-      "audience_pain": "High operational costs and memory usage when deploying complex, long-running agentic AI systems.",
-      "why_now": "Recent open-weight MoE model releases (DeepSeek, InternLM, Ling) directly targeting agentic use cases highlight a growing trend towards efficient agent deployment.",
-      "hook_seed": "MoE handles agent state, slashes costs.",
+      "id": "candidate-2026-09-15-5",
+      "topic": "MoE for Cost-Efficient AI Agents",
+      "angle": "Mixture-of-Experts (MoE) architectures are becoming essential for building cost-effective, long-running AI agents by intelligently optimizing expensive prefill operations, KV caches, and context management to significantly reduce inference costs.",
+      "audience_pain": "High operational costs and substantial memory requirements often hinder the deployment of persistent AI agents that need to maintain state and handle extensive contexts.",
+      "why_now": "Recent MoE model releases like DeepSeek-V4.1-Flash and InternLM Atria Dawn Preview are explicitly designed to address these agent-specific efficiency challenges, making MoE a critical topic for developers.",
+      "hook_seed": "Reduce agent costs with MoE.",
       "format": "mechanism_explainer",
       "objective": "share",
       "image_template": "handwritten_poster",
       "source_ids": [
         "fe17810eeade",
         "7d763e2a3a63",
-        "7ba7e71a5d6f",
-        "3b421af95656"
+        "812bb3b0150f",
+        "e68d7c3316b0",
+        "b8f29035ecc5",
+        "587f37f41680"
       ],
       "scores": {
         "trend_strength": 9,
         "audience_relevance": 9,
-        "practical_value": 8,
-        "originality": 7,
+        "practical_value": 9,
+        "originality": 8,
         "conversation_potential": 8,
         "evidence_strength": 9
       },
-      "score": 8.33
+      "score": 8.67
     },
     {
-      "id": "candidate-2026-09-15-2",
-      "topic": "GPU/CPU Hybrid Serving for LLM Inference",
-      "angle": "Solutions like ReliefServe demonstrate that offloading 'CPU-tolerant' deep learning models to idle CPUs during GPU capacity bursts can significantly reduce tail latency and improve cost-efficiency in multi-model inference serving.",
-      "audience_pain": "Struggling with GPU capacity limits, high tail latency, and managing bursty multi-model inference workloads effectively and affordably.",
-      "why_now": "The ReliefServe paper details a practical approach to leveraging existing CPU resources to relieve GPU pressure, a critical problem for cost-efficient inference.",
-      "hook_seed": "CPUs can save your GPUs.",
+      "id": "candidate-2026-09-15-6",
+      "topic": "Offload LLMs: Hybrid GPU/CPU Serving",
+      "angle": "Implementing hybrid GPU/CPU serving, exemplified by solutions like ReliefServe, can significantly reduce tail latency and improve cost-efficiency for multi-model inference by dynamically offloading 'CPU-tolerant' models during GPU capacity bursts.",
+      "audience_pain": "Managing bursty inference workloads, reducing GPU infrastructure costs, and improving latency for diverse LLM applications in multi-model serving environments.",
+      "why_now": "New research such as ReliefServe provides a practical and evidence-backed strategy to relieve GPU pressure, a constant challenge for AI infrastructure engineers.",
+      "hook_seed": "Overloaded GPUs? Use your CPUs.",
       "format": "practical_tips",
       "objective": "share",
       "image_template": "handwritten_poster",
@@ -531,81 +487,106 @@
       "scores": {
         "trend_strength": 8,
         "audience_relevance": 9,
-        "practical_value": 9,
+        "practical_value": 10,
         "originality": 8,
-        "conversation_potential": 7,
+        "conversation_potential": 8,
         "evidence_strength": 9
       },
-      "score": 8.33
+      "score": 8.67
     },
     {
       "id": "candidate-2026-09-15-9",
-      "topic": "Unifying Physical AI Workflows with Orchestration",
-      "angle": "Developing 'physical AI' (robotics) often involves fragmented training, simulation, and real-world testing. Open-source orchestrators like NVIDIA OSMO unify these stages into a single, declarative YAML workflow, streamlining development.",
-      "audience_pain": "Managing complex, multi-stage AI development pipelines in robotics; fragmentation across different tools, clusters, and scheduling systems.",
-      "why_now": "NVIDIA's recent open-sourcing of OSMO directly addresses the 'three computer problem' in physical AI, offering a concrete solution for workflow fragmentation.",
-      "hook_seed": "One YAML to rule physical AI.",
-      "format": "practical_tips",
+      "topic": "Meta's Push for Local AI on Consumer Hardware",
+      "angle": "Meta's release of Muse Glimmer, a 30B-parameter model specifically engineered for consumer-grade hardware, signals a strategic pivot towards decentralized, user-controlled AI, challenging current cloud-dependent architectures.",
+      "audience_pain": "Developers and users desire to run powerful AI models locally without the expense of cloud APIs or high-end enterprise GPUs, often driven by privacy concerns or the need for offline functionality.",
+      "why_now": "Meta's announcement of Muse Glimmer and plans to distribute Muse Spark 1.2 weights represents a significant move by a major tech giant into the local-AI space, indicating a potential shift in the industry.",
+      "hook_seed": "Local AI on your device: Meta's bet.",
+      "format": "quote_react",
       "objective": "share",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "57807dfb9212"
+        "ac319304af4e"
       ],
       "scores": {
         "trend_strength": 8,
         "audience_relevance": 8,
-        "practical_value": 9,
-        "originality": 8,
-        "conversation_potential": 7,
+        "practical_value": 7,
+        "originality": 9,
+        "conversation_potential": 8,
         "evidence_strength": 9
       },
       "score": 8.17
     },
     {
-      "id": "candidate-2026-09-15-8",
-      "topic": "Accelerating Dropless MoE Training with Hardware",
-      "angle": "Maintaining full model quality in Mixture-of-Experts (MoE) training via 'dropless' methods is becoming significantly more efficient. NVIDIA's Transformer Engine with JAX, for example, delivers 10.4x throughput improvements on GB200 GPUs.",
-      "audience_pain": "High computational cost and time required to train large, high-quality MoE models, and concerns about preserving model quality with sparse training methods.",
-      "why_now": "NVIDIA's recent blog post directly details substantial performance gains for Dropless MoE training, making these advanced architectures more accessible.",
-      "hook_seed": "Dropless MoE training just got 10x faster.",
-      "format": "mechanism_explainer",
+      "id": "candidate-2026-09-15-2",
+      "topic": "Orchestration vs. Single-Model AI",
+      "angle": "Orchestration models, such as Sakana Fugu Ultra v2, are demonstrating superior performance on benchmarks by intelligently routing requests to specialized models rather than relying on a single monolithic LLM.",
+      "audience_pain": "Choosing between a large, single-model API and a more complex, multi-model agentic or orchestrated system for complex, diverse tasks.",
+      "why_now": "New orchestration models are showing benchmark wins against frontier monolithic models like GPT-6 Astra, prompting a re-evaluation of AI system design paradigms.",
+      "hook_seed": "Don't build one LLM. Orchestrate many.",
+      "format": "hot_take",
       "objective": "share",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "e68d7c3316b0"
+        "2dc86e6a7d88"
       ],
       "scores": {
         "trend_strength": 9,
         "audience_relevance": 8,
-        "practical_value": 8,
-        "originality": 7,
-        "conversation_potential": 7,
-        "evidence_strength": 9
+        "practical_value": 7,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 8
       },
       "score": 8.0
     },
     {
-      "id": "candidate-2026-09-15-6",
-      "topic": "Sovereign AI Infrastructure: The Rise of Custom CPUs",
-      "angle": "The global push for 'sovereign AI infrastructure' is driving nations to develop custom hardware like Fujitsu's FUJITSU-MONAKA CPU, promising world-class inference performance, power efficiency, and security for national AI deployments.",
-      "audience_pain": "Understanding the future landscape of AI hardware and infrastructure, and the strategic implications of national AI initiatives.",
-      "why_now": "Fujitsu's recent launch of their Japan-developed FUJITSU-MONAKA CPU and server for sovereign AI signals a significant shift in AI hardware strategy.",
-      "hook_seed": "Japan's new CPU targets sovereign AI.",
+      "id": "candidate-2026-09-15-4",
+      "topic": "Is Your AI Agent Overfitting?",
+      "angle": "Despite their strong generalization abilities, the potential for AI agents to overfit to specific training environments—especially when interacting with external systems or APIs—remains an underexplored but critical reliability risk.",
+      "audience_pain": "Agent failures in production where an agent performs well in testing but struggles with novel or slightly different real-world scenarios.",
+      "why_now": "A Hacker News discussion questioning why ML research agents *don't* overfit, coupled with signals about agents autonomously discovering vulnerabilities, highlights a crucial area for agent reliability and security.",
+      "hook_seed": "Your agent works. But is it overfit?",
       "format": "quote_react",
       "objective": "reply",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "hn-49699648",
+        "hn-49695876",
+        "74505697f0f5"
+      ],
+      "scores": {
+        "trend_strength": 8,
+        "audience_relevance": 8,
+        "practical_value": 7,
+        "originality": 9,
+        "conversation_potential": 9,
+        "evidence_strength": 7
+      },
+      "score": 8.0
+    },
+    {
+      "id": "candidate-2026-09-15-7",
+      "topic": "The Rise of Sovereign AI Hardware",
+      "angle": "The launch of locally developed CPUs and servers, such as Fujitsu's MONAKA for sovereign AI infrastructure, highlights a growing global trend towards national self-sufficiency in AI computing, balancing performance with reliability and power efficiency.",
+      "audience_pain": "Concerns about data sovereignty, supply chain reliability, and the geopolitical implications of relying on foreign AI infrastructure components.",
+      "why_now": "Fujitsu's global launch of a Japan-developed 2nm CPU and server explicitly for sovereign AI infrastructure makes this topic highly current and relevant to national AI strategies.",
+      "hook_seed": "AI hardware: made in your country?",
+      "format": "hot_take",
+      "objective": "follow",
       "image_template": "handwritten_poster",
       "source_ids": [
         "c06ac50a16dd"
       ],
       "scores": {
-        "trend_strength": 8,
+        "trend_strength": 7,
         "audience_relevance": 7,
         "practical_value": 6,
         "originality": 9,
-        "conversation_potential": 8,
+        "conversation_potential": 7,
         "evidence_strength": 9
       },
-      "score": 7.83
+      "score": 7.5
     }
   ]
 }
