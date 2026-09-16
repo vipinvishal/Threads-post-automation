@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-09-16 IST
+Last refreshed: 2026-09-17 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- AI Agent Frameworks | angle: Grab's LLM-Kit demonstrates that efficient AI agent production deployment comes from robust scaffolding like secret handling, tracing, and tool discovery, rather than solely the LLM's 'intelligence'. | objective: share | score: 8.5 | sources: a0ee6b6d7dff, 83f1b77a4ca3
-- Quantization Recipe Pitfalls | angle: Incorrect `AutoRound` quantization flags or calibration data can silently degrade model accuracy, even if the resulting file size is identical, posing a critical pitfall in local LLM deployment. | objective: reply | score: 8.5 | sources: 2833a0af7f23, 04b928b0198e
-- Local AI Inference Revolution | angle: The 'Inference Hardware Revolution of 2026' and NVIDIA's local AI acceleration efforts (M4 Mac Mini GPU drivers, RTX/DGX Spark) highlight the growing importance and capabilities of local and edge AI inference. | objective: share | score: 8.5 | sources: hn-49713024, hn-49717638, 059713ba8430, 342dd42697fc
-- MoE for Agent State Management | angle: Mixture-of-Experts (MoE) architectures, as seen in DeepSeek-V4.1-Flash and Atria Dawn Preview, are becoming essential for building cost-effective, long-running AI agents by optimizing expensive prefill operations and KV caches. | objective: share | score: 8.5 | sources: fe17810eeade, 7d763e2a3a63, b8f29035ecc5
-- Verifiable Agent Training | angle: Shanghai AI Lab's Atria Dawn Preview uses a 'Verifiable Experience Pipeline' where every training task connects to a real execution environment, allowing for verifiable and reproducible outcomes, addressing agent reliability. | objective: follow | score: 8.5 | sources: f541464e7e3a
-- Enterprise Model Specialization | angle: Salesforce's Koa, built on NVIDIA Nemotron, demonstrates how leveraging decades of proprietary synthetic CRM intelligence can effectively specialize a general foundation model for complex enterprise reasoning tasks, without full retraining. | objective: share | score: 8.5 | sources: 83f1b77a4ca3
-- Intelligence Per Watt | angle: 'Intelligence per Watt' is emerging as a critical metric for evaluating local AI systems, driven by concerns over energy efficiency and sustainability, particularly highlighted by NVIDIA's focus on 'Tokens Per Watt' for AI factories. | objective: reply | score: 8.0 | sources: hn-49694035, f90445b928ac
-- 4-Bit Post-Training for Diffusion | angle: FourTune proposes an end-to-end W4A4G4 paradigm for 4-bit efficient post-training of diffusion models, addressing prohibitive memory footprints and slow training speed by isolating quantization-sensitive outliers. | objective: follow | score: 8.0 | sources: 6db48afd1c70
+- AutoRound Quantization Mistakes | angle: Passing incorrect `AutoRound` flags, like `W4A16` instead of `Q4_K_M`, can silently waste quantization optimization efforts, leading to suboptimal model accuracy without immediate error signals. | objective: reply | score: 8.83 | sources: 2833a0af7f23
+- AI Agent Throughput per Watt | angle: NVIDIA's Vera Rubin NVL72 achieves up to 30x higher throughput per megawatt for agentic-coding inference compared to GB300 NVL72, directly addressing power constraints for scaling AI factories. | objective: share | score: 8.67 | sources: dd508271dfdc, aea9a6a91057, fb9fbd0e1cce
+- DeepSeek's Agent Efficiency Architecture | angle: DeepSeek-V4.1-Flash demonstrates how its Causal Encoder-Decoder architecture, MoE, KV cache compression, and CSA2 specifically optimize for long-running agents by tackling expensive prefill operations and managing huge KV caches. | objective: share | score: 8.67 | sources: fe17810eeade, hn-49725800
+- Managed AI Agent Orchestration | angle: OpenAI's formalization of the Codex Harness into a managed Agents API (and similar frameworks like Grab's LLM-Kit) shifts the burden from custom agent orchestration to consuming a service that handles session, tool, and state management. | objective: share | score: 8.5 | sources: b46e57464d9f, a0ee6b6d7dff, 390fa7993fe3, ce5245bb7ba0
+- Verifiable Agent Training Pipelines | angle: Shanghai AI Lab's Atria Dawn Preview utilizes a 'Verifiable Experience Pipeline' that connects agent training tasks to real execution environments, ensuring reproducible and verifiable outcomes from agent actions. | objective: follow | score: 8.5 | sources: f541464e7e3a
+- Are Your AI Models Outdated? | angle: A new tool surfaces the release age and training cutoff dates for over 20 popular AI models, revealing a critical, often-overlooked problem of model staleness that impacts performance and factual accuracy. | objective: reply | score: 8.5 | sources: hn-49726343
+- Vector Search Cost Optimization | angle: Pinterest slashed vector search costs by 20-30% and scaled to tens of billions of embeddings by migrating from memory-hungry HNSW indices to quantized representations and SSD-based SPANN serving. | objective: share | score: 8.33 | sources: 2e750c3d4ccf
+- Scaling AI Beyond Single Racks | angle: CoreWeave's production deployment of multi-rack NVIDIA Vera Rubin NVL72 systems reveals new infrastructure planning challenges for AI factories, including network capacity, power delivery, liquid cooling, and efficient storage at scale. | objective: follow | score: 8.33 | sources: 31073fa57343, fb9fbd0e1cce
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
