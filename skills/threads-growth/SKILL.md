@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-09-17 IST
+Last refreshed: 2026-09-18 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- AI Agent Throughput per Watt | angle: NVIDIA's Vera Rubin NVL72 achieves up to 30x higher throughput per megawatt for AI agent inference, directly addressing the industry's binding power constraint. | objective: share | score: 8.67 | sources: dd508271dfdc, aea9a6a91057, 63d8fe94d345, b6ed332b6d24
-- Low-Precision Quantization for Inference | angle: MXFP8 and NVFP4 quantization techniques, combined with FP8 KV cache and vLLM, are enabling significant throughput gains and extended context windows (e.g., 1M tokens for Qwen3.8-27B). | objective: share | score: 8.67 | sources: ceb26b86d3e9, 53461162bfeb
-- Managed AI Agent Orchestration | angle: New frameworks like Grab's LLM-Kit and WSO2 Agent Manager are standardizing and accelerating AI agent deployment, handling setup, tracing, and governance from weeks to hours. | objective: follow | score: 8.5 | sources: a0ee6b6d7dff, c45f956cefbf, 47fc7cae1f4e
-- Rust for GPU Programming | angle: Nvidia's announcement of native GPU programming in Rust offers a safer, high-performance alternative to CUDA C++ for developing AI-specific GPU kernels. | objective: reply | score: 8.33 | sources: hn-49724881
-- Browser Agent Architecture Innovation | angle: Jev Ultrafast's browser agent cuts time by 25% by moving from screenshot-per-decision loops to structured DOM parsing and indexed element tables, optimizing interaction with web environments. | objective: share | score: 8.33 | sources: hn-49735979, hn-49731282
-- Evaluating AI Agent 'Harness' Impact | angle: Research on 'HarnessTax' highlights how the surrounding agentic environment—tools, orchestration, and execution—critically impacts coding agent performance, often more than the core model. | objective: reply | score: 8.33 | sources: hn-49733726
-- Specialized AI Models for Enterprise | angle: Salesforce's Koa, a reasoning model optimized for enterprise work, and a 4B model for query plans show a trend towards domain-specific AI outperforming general-purpose models. | objective: reply | score: 8.17 | sources: 017103649d66, hn-49731285, ce5245bb7ba0
-- Multi-Rack AI Infrastructure Scaling | angle: CoreWeave's deployment of multi-rack NVIDIA Vera Rubin NVL72 systems introduces new infrastructure challenges, including network, power delivery, liquid cooling, and efficient storage. | objective: share | score: 7.83 | sources: 31073fa57343
+- Quantization for 1M Token Context Windows | angle: Combining NVFP4 quantization, FP8 KV cache, and vLLM can extend models like Qwen3.8-27B to 1 million tokens, demonstrating a practical path to massive context windows on NVIDIA hardware for inference. | objective: share | score: 8.67 | sources: 53461162bfeb, 2be09241cd55
+- Building Inference Infra on Challenging Hardware | angle: Z.ai's experience deploying GLM-5.3-Flash inference on a cluster of 100,000 Chinese-made accelerators highlights challenges with immature ecosystems, limited memory, and new architectures. | objective: reply | score: 8.5 | sources: e1eaf4346435, hn-49737922
+- Browser Agent Architecture Shift | angle: Jev Ultrafast's open-source browser agent cuts processing time by 25% by moving from screenshot-per-decision loops to structured DOM parsing and indexed element tables. | objective: share | score: 8.33 | sources: e146d6025c64
+- Context Memory Storage for LLM Inference | angle: Huawei's OceanStor M900 introduces PB-scale KV cache storage, breaking on-chip memory/DRAM bottlenecks for large context window LLMs and accelerating inference in hyperscale data centers. | objective: share | score: 8.17 | sources: 3a3a516b5853, 53461162bfeb, 2be09241cd55
+- Emergence of Open-Source Agentic Models | angle: Shanghai AI Lab's 744B Atria Dawn and Alibaba's 3B Occamy-1.0 are being released as open-weight agentic models, signaling a shift towards accessible, powerful agentic capabilities for 'co-work' tasks. | objective: share | score: 8.17 | sources: 45bb348d1c3f, ce5245bb7ba0
+- AMD's AI Software Stack for Data Center GPUs | angle: AMD's ROCm version 6.1 and beyond, with improved attention algorithms and libraries, is critical for the success of its next-gen MI325X/MI355X GPUs in large-scale LLM inference. Is it ready? | objective: reply | score: 8.17 | sources: 8973f3ffc95a, ff77ff05e8c4
+- AI Agent Throughput per Watt | angle: NVIDIA Vera Rubin NVL72 prioritizes performance per watt, delivering up to 3.7x higher throughput than GB300 NVL72 and strong performance per watt across diverse AI compute demands, crucial for scaling AI agent inference. | objective: share | score: 8.0 | sources: aea9a6a91057, b6ed332b6d24, c739f84e053d
+- Reliability for Local Agentic Systems | angle: Disco, a new self-hosted application, uses structural boundary engineering and minimalist context management to boost reliability in agentic loops for local, open-weight models. | objective: follow | score: 7.83 | sources: 47fc7cae1f4e
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
