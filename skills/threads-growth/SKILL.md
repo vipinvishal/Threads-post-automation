@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-09-19 IST
+Last refreshed: 2026-09-20 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Next-Gen LLM Quantization | angle: Analyzing the practical trade-offs and performance benefits of 4-bit (NVFP4, ShapeLearn) and ternary quantization (Bonsai 2, BITCOS) for efficient LLM inference. | objective: follow | score: 9.0 | sources: 2be09241cd55, 03998aa26f0e, 7f1bf6ba5fc6
-- Large-Scale Inference on Diverse Hardware | angle: Z.ai's engineering challenges building GLM-5.3-Flash inference on 100,000 Chinese AI accelerators, including kernel support and memory constraints in an immature ecosystem. | objective: share | score: 9.0 | sources: e1eaf4346435
-- Omni-Modal Agent Architectures | angle: Qwen3.8-Omni-Flash: how omni-modal agents integrate audio, video, text, and images for understanding, reasoning, and tool use in a unified system. | objective: follow | score: 9.0 | sources: 98f19216a4d5
-- PB-Scale KV Cache Solutions | angle: Huawei's OceanStor M900 Context Memory Storage and its PB-scale KV cache design to overcome on-chip memory bottlenecks in hyperscale AI inference. | objective: follow | score: 8.83 | sources: 3a3a516b5853
-- Tiny Automation Models | angle: Cactus Needle 3: how 8-29MB automation models are matching larger LLMs like DeepSeek V4 Flash for specific tasks, and the implications for local/edge AI. | objective: click | score: 8.83 | sources: hn-49748553
-- Agentic Workflow Reliability | angle: How isolated skill sandboxes and structured action spaces are boosting reliability for AI agents in enterprise RAG contexts. | objective: share | score: 8.67 | sources: 56ca02cb0cd4, 47fc7cae1f4e, e146d6025c64
-- Self-Maintaining RAG Systems | angle: How Tencent's WeKnora v0.8.0 'auto-Wiki' mode is transforming RAG from static chunking to editable, self-maintaining knowledge bases. | objective: share | score: 8.67 | sources: 56ca02cb0cd4
-- MLPerf Inference at Scale | angle: Key takeaways from MLPerf Inference v6.1: how NVIDIA Vera Rubin NVL72 and AMD Instinct MI355X perform in ultra-large-scale inference, and implications for throughput. | objective: share | score: 8.5 | sources: b6ed332b6d24, cc81b6a39a94
+- Omni-Modal Agent Architectures | angle: How models like Qwen3.8-Omni-Flash integrate multiple modalities (audio, video, text, image) and agentic capabilities for understanding, reasoning, and tool use within a unified system. | objective: follow | score: 8.83 | sources: 98f19216a4d5, c01f39e039f1, 0720fef5bc6b
+- AI Agent Memory Efficiency | angle: DeepSeek's new architecture (Causal Encoder-Decoder, FP4 quantization) significantly reducing KV cache memory footprint for AI agents, enabling 4x more sessions per GPU and addressing memory bottlenecks. | objective: share | score: 8.83 | sources: 4d2609dfe5dc, 0720fef5bc6b
+- Frontier Open-Weight Models in Enterprise | angle: The trend of multi-trillion (or near-trillion) parameter open-weight models (Kimi K3, Hy4, Atria Dawn) becoming available on enterprise cloud platforms like Amazon Bedrock, with features like prompt caching and large context windows. | objective: share | score: 8.83 | sources: eb6a6775f48d, 83590972d60f, 9a90e6914e51
+- Next-Gen LLM Quantization | angle: Analyzing the practical trade-offs and performance benefits of advanced quantization methods like ternary, mixed-integer training (SMIT), and QAT beyond basic 4-bit, for efficient LLM inference. | objective: follow | score: 8.67 | sources: a4af5fb55d21, a7cdd47f8174, 264f9ad9ac9d, 7b6cea18fb53, 7ec358f42275
+- AI Agent Governance | angle: WSO2 Agent Manager, an open-source control plane designed to govern, secure, and observe AI agents across diverse frameworks, models, and deployment environments, making them enterprise-ready. | objective: click | score: 8.67 | sources: 89c4f7ef69fa, ba285b5396da, hn-49772806
+- Computer-Operating VLMs | angle: The emergence of open-source Vision-Language Models (VLMs) like Xenon's Hunmin VLM 397B that can recognize computer screens and directly operate them (e.g., clicking buttons, inputting text), moving beyond mere question answering. | objective: follow | score: 8.67 | sources: 6bfd730ce23d
+- LLM Inference Benchmarking | angle: The evolution of LLM inference benchmarking tools, such as NVIDIA AIPerf, and the importance of preventing client bottlenecks with multiprocess architectures for accurate, high-concurrency, and realistic workload testing. | objective: follow | score: 8.33 | sources: e7aac8273066, 5b7ea132ce22
+- Low-Precision Training Quantization | angle: Static Mixed-Integer Training (SMIT), an empirical framework for end-to-end DNN training using fixed, heterogeneous bit-widths for weights, activations, and gradients, addressing instability and accuracy degradation of sub-8-bit training. | objective: share | score: 8.17 | sources: a7cdd47f8174
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
