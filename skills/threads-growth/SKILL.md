@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-09-20 IST
+Last refreshed: 2026-09-21 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Omni-Modal Agent Architectures | angle: How models like Qwen3.8-Omni-Flash integrate multiple modalities (audio, video, text, image) and agentic capabilities for understanding, reasoning, and tool use within a unified system. | objective: follow | score: 8.83 | sources: 98f19216a4d5, c01f39e039f1, 0720fef5bc6b
-- AI Agent Memory Efficiency | angle: DeepSeek's new architecture (Causal Encoder-Decoder, FP4 quantization) significantly reducing KV cache memory footprint for AI agents, enabling 4x more sessions per GPU and addressing memory bottlenecks. | objective: share | score: 8.83 | sources: 4d2609dfe5dc, 0720fef5bc6b
-- Frontier Open-Weight Models in Enterprise | angle: The trend of multi-trillion (or near-trillion) parameter open-weight models (Kimi K3, Hy4, Atria Dawn) becoming available on enterprise cloud platforms like Amazon Bedrock, with features like prompt caching and large context windows. | objective: share | score: 8.83 | sources: eb6a6775f48d, 83590972d60f, 9a90e6914e51
-- Next-Gen LLM Quantization | angle: Analyzing the practical trade-offs and performance benefits of advanced quantization methods like ternary, mixed-integer training (SMIT), and QAT beyond basic 4-bit, for efficient LLM inference. | objective: follow | score: 8.67 | sources: a4af5fb55d21, a7cdd47f8174, 264f9ad9ac9d, 7b6cea18fb53, 7ec358f42275
-- AI Agent Governance | angle: WSO2 Agent Manager, an open-source control plane designed to govern, secure, and observe AI agents across diverse frameworks, models, and deployment environments, making them enterprise-ready. | objective: click | score: 8.67 | sources: 89c4f7ef69fa, ba285b5396da, hn-49772806
-- Computer-Operating VLMs | angle: The emergence of open-source Vision-Language Models (VLMs) like Xenon's Hunmin VLM 397B that can recognize computer screens and directly operate them (e.g., clicking buttons, inputting text), moving beyond mere question answering. | objective: follow | score: 8.67 | sources: 6bfd730ce23d
-- LLM Inference Benchmarking | angle: The evolution of LLM inference benchmarking tools, such as NVIDIA AIPerf, and the importance of preventing client bottlenecks with multiprocess architectures for accurate, high-concurrency, and realistic workload testing. | objective: follow | score: 8.33 | sources: e7aac8273066, 5b7ea132ce22
-- Low-Precision Training Quantization | angle: Static Mixed-Integer Training (SMIT), an empirical framework for end-to-end DNN training using fixed, heterogeneous bit-widths for weights, activations, and gradients, addressing instability and accuracy degradation of sub-8-bit training. | objective: share | score: 8.17 | sources: a7cdd47f8174
+- Sparse MoE for LLM Efficiency | angle: How new models like Step5Preview (600B total, 27B active) and GLM-5.3-Flash (320B total, 18B active) use sparse Mixture-of-Experts (MoE) architectures to achieve high capability with significantly reduced active parameters, lowering inference cost. | objective: share | score: 9.17 | sources: d695e57d9ffc, a29593088e9d, 1055c1e80d61, 83590972d60f
+- Quantization for Consumer GPUs | angle: How 4-bit quantization and Quantization-Aware Training (QAT) allow larger models like China Telecom Xing4.0-29B-A4B and Gemma 4 to run efficiently on consumer GPUs (e.g., RTX 3090/4090, Tesla T4) with specific performance speedups. | objective: follow | score: 9.17 | sources: 5f55029183a2, 7ec358f42275, 625d6f8aad4e
+- Neutral LLM Inference Benchmarking | angle: The emergence of neutral benchmarking infrastructure (Vals AI) and advanced tools (NVIDIA AIPerf) to provide unbiased, high-concurrency evaluation of LLM inference performance, moving beyond vendor-controlled claims. | objective: follow | score: 8.83 | sources: e7aac8273066, 23fd5648e8c2, 9acee86d4bd0
+- Agent Skills in Model Weights | angle: Shanghai AI Lab's Atria Dawn Preview bakes agentic skills like multi-step planning, tool use, and failure recovery directly into the model weights, contrasting with purely external prompting or orchestration. | objective: reply | score: 8.83 | sources: 1055c1e80d61, 83590972d60f
+- Online Benchmarking for Agents | angle: The proposed NEEDLE benchmark evaluates agent search APIs using fresh, online queries instead of static datasets, offering a more realistic assessment of agent performance in dynamic environments. | objective: reply | score: 8.83 | sources: e8333d781922
+- Autonomous Coding Agents | angle: Ouroboros, a coding agent with a constitution and memory capable of committing to its own repository, showcases the increasing sophistication of AI in generating and self-correcting code, reflected also in Linux kernel patches. | objective: share | score: 8.83 | sources: e8333d781922, hn-49784366
+- Declarative Agent Orchestration | angle: How declarative orchestrators like Google AX are designed to run autonomous agent workloads at scale with sandboxed execution, simplifying complex multi-step workflows. | objective: follow | score: 8.67 | sources: hn-49780797, 4f5a18f8b50b, 275bccf8cda0
+- Graph-based RAG for Agents | angle: WeChat's WeKnora framework employs GraphRAG to extract entities and relationships, constructing a knowledge graph that significantly improves agent reliability when answering complex relational queries. | objective: share | score: 8.5 | sources: 275bccf8cda0
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
