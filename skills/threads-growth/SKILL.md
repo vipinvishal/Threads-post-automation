@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-09-22 IST
+Last refreshed: 2026-09-23 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- 1-Bit Quantization for Local LLMs | angle: Unsloth Dynamic V3 has shrunk Qwen3.8-27B to a 1-bit quantized version, enabling it to run efficiently on as little as 8GB of memory, dramatically lowering barriers for local large model deployment. | objective: share | score: 9.17 | sources: dae72bf48a6b
-- Transparency in LLM Training Costs | angle: Xiaomi's public disclosure of MiMo-V2.6's training costs ($3.47M for RL, $0.43 per million input tokens, $0.87 per million output) offers rare transparency into the real-world economics of developing frontier LLMs. | objective: share | score: 9.17 | sources: 13522b7bfba0, 8c0c4bfe5cbe
-- Agentic Skills Baked Into LLM Weights | angle: Shanghai AI Lab's Atria Dawn Preview introduces an agentic model that bakes multi-step planning, tool use, and failure recovery directly into its weights, departing from purely external orchestration for agentic capabilities. | objective: share | score: 8.67 | sources: 1055c1e80d61
-- CI/CD for AI Development | angle: As AI coding tools accelerate development, Continuous Integration (CI) pipelines become a bottleneck; some teams are reworking their CI/CD infrastructure to keep pace with AI-generated code volumes and new testing needs. | objective: reply | score: 8.5 | sources: hn-49792067
-- Autonomous AI Inference Optimization | angle: AMD's Hyperloom system automates full-stack inference tuning for GPUs, delivering significant speedups (e.g., 1.73x median on AMD Instinct) without manual human tuning, addressing the bottleneck of optimizing new models and hardware. | objective: follow | score: 8.5 | sources: 391f9625f0f9
-- Cost-Efficient Open-Source Agent Harnesses | angle: The AWS Strands Harness, an open-source general-purpose agent harness, allows developers to build robust AI agents with 28% lower token costs at comparable accuracy, making agent deployment more accessible. | objective: share | score: 8.5 | sources: 6614677e41be, 01e763185adc
-- GraphRAG for Executable Knowledge Bases | angle: WeChat's WeKnora framework employs GraphRAG to extract entities and relationships, constructing knowledge graphs that enable 'executable' knowledge bases and significantly improve agent reliability for relational queries. | objective: follow | score: 8.33 | sources: 275bccf8cda0
-- Databases Built for AI Agents | angle: SereneDB's Krummelanke is the first production-ready, open-source database designed specifically for AI agents, fusing ultra-fast full-text search and analytics to support machine-speed queries by agent fleets. | objective: click | score: 8.33 | sources: 50ecbba7db49
+- Lightweight Agentic Models | angle: China Telecom's Xing4.0-29B-A4B offers enterprise-grade agentic capabilities with only 4 billion activated parameters, allowing deployment on consumer-grade GPUs or in large-scale enterprise production. | objective: share | score: 9.17 | sources: 734b8f1f6fe1, hn-49803085, 275bccf8cda0, 126b58a13066
+- Efficient Local LLM Inference | angle: New integrations like Transformers support for GGUF models make running large language models on consumer GPUs and laptops much more accessible and efficient. | objective: share | score: 8.67 | sources: ef1f92402cba, 8e8b9ad6ec22, 734b8f1f6fe1
+- GraphRAG for Agentic Systems | angle: WeChat's WeKnora framework uses GraphRAG to build 'executable' knowledge bases, extracting entities and relationships to significantly improve agent reliability for complex relational queries in sandboxed environments. | objective: follow | score: 8.67 | sources: 275bccf8cda0, hn-49803683, 79385bb0947e
+- Multi-GPU TensorRT Inference | angle: NVIDIA Dynamo-Triton 26.07 enables multi-GPU TensorRT inference, allowing a single KIND_MODEL instance to serve distributed inference for generative AI workloads that outgrow one GPU. | objective: click | score: 8.5 | sources: ef9b5ffe19f2, hn-49803892, hn-49801324, 9a48249dc307
+- Autonomous AI Inference Optimization | angle: AMD's Hyperloom system automates full-stack inference tuning, achieving significant speedups (e.g., 1.73x median) on AMD Instinct GPUs without manual human tuning, solving a major deployment bottleneck. | objective: follow | score: 8.33 | sources: 391f9625f0f9, 9a48249dc307
+- AI for Code Optimization | angle: Agents are being used to iteratively make Rust code faster, demonstrating a new paradigm where AI not only generates but actively optimizes code performance. | objective: reply | score: 8.33 | sources: hn-49803085, 391f9625f0f9
+- Evaluating Enterprise AI Models | angle: Red Hat AI 3.5 introduces EvalHub for automated, auditable security and compliance reporting for custom models, RAG systems, and agents before deployment, reinforcing enterprise control. | objective: click | score: 8.17 | sources: 35069197c807, 275bccf8cda0, 126b58a13066
+- `gzip` as a Language Model | angle: The 'Can gzip be a language model?' exploration highlights the fundamental connection between compression and prediction, questioning core assumptions about LLM architecture and data efficiency. | objective: reply | score: 8.17 | sources: hn-49797323
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
