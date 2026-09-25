@@ -48,14 +48,8 @@ Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Live Serving vs. Local AI Agent Tests | angle: NVIDIA's SWE-Serve benchmark reveals that nearly one-third of AI agent patches that pass local tests fail when deployed in live serving environments, highlighting a critical testing gap. | objective: reply | score: 8.83 | sources: 18b1d46f0220
-- Streamlined Local LLM Inference with GGUF | angle: HuggingFace Transformers' new GGUF support significantly simplifies running large language models locally on consumer hardware, making powerful LLMs more accessible for development. | objective: share | score: 8.83 | sources: ef1f92402cba
-- Tokenomics: The New AI Efficiency Metric | angle: The benchmark for AI semiconductor performance is shifting from raw computing power (FLOPS) to token output, with 'tokens per watt' increasingly determining data center profitability. | objective: share | score: 8.83 | sources: 5bc0b75e97ea
-- Open-Source AI Agent Harnesses Reduce Costs | angle: AWS Strands Harness offers an open-source, general-purpose agent harness that achieves 28% lower token cost at comparable accuracy, simplifying agent development and deployment. | objective: click | score: 8.83 | sources: 6614677e41be, hn-49821438
-- AI Agent Security: Red Teaming Frameworks | angle: Open-source red teaming frameworks like AetherRed-Excalibur help evaluate LLMs, AI agents, and RAG systems against new threats like prompt injection and tool abuse. | objective: follow | score: 8.83 | sources: 94fd860156d1, hn-49793957
-- Specialized Models for Cost-Efficient AI | angle: New models like Ember-1 (Fireworks Research) and Claude Opus 5.5 (Anthropic) achieve frontier-grade quality with significantly fewer tokens and lower operational costs through specialized training. | objective: share | score: 8.67 | sources: 6f2d73690da5, 6720c75b233f
-- Data Infrastructure for AI Agent Swarms | angle: SereneDB Krummelanke is a new real-time search and analytics database designed from the ground up to handle the massive, high-speed data querying demands of AI agent fleets. | objective: follow | score: 8.5 | sources: 4f1ea7e0a1c3
-- Blackwell & NVFP4 for Efficient LLM Inference | angle: New Blackwell GPUs with native NVFP4 support enable highly memory-efficient and fast inference for quantized frontier models, optimizing performance for next-gen AI workloads. | objective: share | score: 8.5 | sources: cb16236a5d10, ff0495d1990a, 974d711ed127
+- Why RAG quality often fails before retrieval starts | angle: Show how document cleaning and chunk boundaries corrupt otherwise good retrieval. | objective: share | score: 6.0 | sources: evergreen fallback
+- KV-cache pressure versus GPU utilization | angle: Explain why a busy GPU can still deliver poor inference throughput. | objective: reply | score: 5.5 | sources: evergreen fallback
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
