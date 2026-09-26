@@ -48,8 +48,14 @@ Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Why RAG quality often fails before retrieval starts | angle: Show how document cleaning and chunk boundaries corrupt otherwise good retrieval. | objective: share | score: 6.0 | sources: evergreen fallback
-- KV-cache pressure versus GPU utilization | angle: Explain why a busy GPU can still deliver poor inference throughput. | objective: reply | score: 5.5 | sources: evergreen fallback
+- Cloud AI FinOps: Governing GPU and LLM Costs | angle: Introducing the concept of Cloud AI FinOps and benchmarks for governing rising costs associated with GPUs, foundation models, custom models, and token usage across major cloud providers. | objective: click | score: 9.17 | sources: 7133f7de1f20
+- Optimizing Large LLMs for Local Hardware via On-Device Quantization | angle: How to use memory-efficient quantization workflows (e.g., AMD Quark's W4A16, GGUF ladder) to fit and run large language models (e.g., 35B MoE) directly on consumer/edge devices. | objective: share | score: 9.0 | sources: 23d68c911ae4
+- Building Production RAG Agents with Open-Source Frameworks | angle: Deep dive into how modular, open-source frameworks like WeKnora (Tencent) and Kotaemon address challenges in building robust, production-grade RAG applications with agentic capabilities for enterprise data. | objective: click | score: 8.83 | sources: 74a393fb0416, 1aa43bb3f44c
+- Closing the Gap: Agent Tests That Fail in Live Serving | angle: Explaining why AI agents that pass local tests frequently fail in live serving environments, using examples from inference engineering tasks and discussing tools like SWE-Serve and LangSmith. | objective: share | score: 8.83 | sources: 71cdba82d35e, 1ca5d15349e1
+- 4-bit KV Cache for Agentic LLM Efficiency | angle: How 4-bit KV cache quantization (e.g., UltraQuant) specifically addresses the memory bottleneck for long-context, multi-turn agentic LLMs, enhancing throughput and reducing latency. | objective: follow | score: 8.67 | sources: 145d7b7b470b, 23d68c911ae4, cb16236a5d10
+- GPT-6 Astra: New Benchmarks in AI Reasoning & Context | angle: Beyond the 99.9% ARC-AGI score, focusing on the implications of GPT-6 Astra's 1.05 million-token workspace combined with advanced reasoning for complex, long-horizon tasks. | objective: follow | score: 8.5 | sources: f9c7e391d7c3
+- AI Agent Security: Preventing Malicious Actions | angle: The dangers of agents operating in unsupervised environments and how managed platforms/red teaming can mitigate risks, exemplified by a real-world hack. | objective: share | score: 8.33 | sources: hn-49849985, 1ca5d15349e1, 590196da35d1
+- AI Gateways for Kubernetes-Native LLM Inference Routing | angle: How new AI gateways and Kubernetes operators simplify managing LLM routing, policies, and traffic for scalable inference deployments, reducing latency and improving efficiency. | objective: share | score: 8.17 | sources: 095959a2fd68, 8ca21d283f36
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
