@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-09-26 IST
+Last refreshed: 2026-09-27 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Cloud AI FinOps: Governing GPU and LLM Costs | angle: Introducing the concept of Cloud AI FinOps and benchmarks for governing rising costs associated with GPUs, foundation models, custom models, and token usage across major cloud providers. | objective: click | score: 9.17 | sources: 7133f7de1f20
-- Optimizing Large LLMs for Local Hardware via On-Device Quantization | angle: How to use memory-efficient quantization workflows (e.g., AMD Quark's W4A16, GGUF ladder) to fit and run large language models (e.g., 35B MoE) directly on consumer/edge devices. | objective: share | score: 9.0 | sources: 23d68c911ae4
-- Building Production RAG Agents with Open-Source Frameworks | angle: Deep dive into how modular, open-source frameworks like WeKnora (Tencent) and Kotaemon address challenges in building robust, production-grade RAG applications with agentic capabilities for enterprise data. | objective: click | score: 8.83 | sources: 74a393fb0416, 1aa43bb3f44c
-- Closing the Gap: Agent Tests That Fail in Live Serving | angle: Explaining why AI agents that pass local tests frequently fail in live serving environments, using examples from inference engineering tasks and discussing tools like SWE-Serve and LangSmith. | objective: share | score: 8.83 | sources: 71cdba82d35e, 1ca5d15349e1
-- 4-bit KV Cache for Agentic LLM Efficiency | angle: How 4-bit KV cache quantization (e.g., UltraQuant) specifically addresses the memory bottleneck for long-context, multi-turn agentic LLMs, enhancing throughput and reducing latency. | objective: follow | score: 8.67 | sources: 145d7b7b470b, 23d68c911ae4, cb16236a5d10
-- GPT-6 Astra: New Benchmarks in AI Reasoning & Context | angle: Beyond the 99.9% ARC-AGI score, focusing on the implications of GPT-6 Astra's 1.05 million-token workspace combined with advanced reasoning for complex, long-horizon tasks. | objective: follow | score: 8.5 | sources: f9c7e391d7c3
-- AI Agent Security: Preventing Malicious Actions | angle: The dangers of agents operating in unsupervised environments and how managed platforms/red teaming can mitigate risks, exemplified by a real-world hack. | objective: share | score: 8.33 | sources: hn-49849985, 1ca5d15349e1, 590196da35d1
-- AI Gateways for Kubernetes-Native LLM Inference Routing | angle: How new AI gateways and Kubernetes operators simplify managing LLM routing, policies, and traffic for scalable inference deployments, reducing latency and improving efficiency. | objective: share | score: 8.17 | sources: 095959a2fd68, 8ca21d283f36
+- AI Agents as a New Attack Surface: Red Teaming Solutions | angle: The critical need for red teaming and systematic evaluation to secure AI agents against prompt injection, tool abuse, and RAG poisoning, especially given recent high-profile incidents involving agents. | objective: share | score: 9.67 | sources: hn-49849985, hn-49856665, 94fd860156d1, 1ca5d15349e1
+- Why AI Agents Fail in Production (Despite Passing Tests) | angle: Explaining the critical disconnect between passing local agent tests and failures in live serving environments, highlighting the need for specialized inference-engineering evaluation and proactive red teaming. | objective: share | score: 9.17 | sources: 71cdba82d35e, 1ca5d15349e1
+- Local LLM Quantization for Consumer GPUs | angle: How memory-efficient quantization (like GGUF precision ladders and W4A16) allows 27B+ parameter models to run on single consumer GPUs, making powerful LLMs accessible locally. | objective: share | score: 8.83 | sources: 23d68c911ae4, 31fca1cbcefc
+- Beyond Benchmarks: GPT-6 Astra's Reasoning & 1M Token Context | angle: Exploring the practical implications of GPT-6 Astra achieving 99.9% on ARC-AGI reasoning tasks and supporting a 1.05 million-token workspace for solving complex, long-horizon problems, moving beyond mere benchmark scores. | objective: reply | score: 8.67 | sources: f9c7e391d7c3
+- Software Optimization for 7x LLM Inference Throughput | angle: How software-hardware integration and optimization techniques (faster kernels, communication paths, parallelism separation, memory tuning) can dramatically boost LLM inference throughput on existing PCIe GPUs, like MetaStone's 6.87x gain on DeepSeek V4.1. | objective: share | score: 8.67 | sources: c91395d4fc2f
+- Open-Source Frameworks for Enterprise RAG Agents | angle: Deep dive into how modular, open-source frameworks like WeKnora (Tencent) and Kotaemon provide the production-grade foundation (multi-turn, tool calling, guardrails, eval) for RAG agents, moving beyond simple demos for enterprise use cases. | objective: click | score: 8.5 | sources: 74a393fb0416, 1aa43bb3f44c
+- Unleashing Agentic LLMs with 4-bit KV Cache | angle: How 4-bit Key-Value (KV) cache quantization (e.g., UltraQuant) specifically addresses the memory bottleneck in long-context, multi-turn agentic LLMs, significantly improving throughput and reducing latency under load. | objective: follow | score: 8.33 | sources: 145d7b7b470b
+- Kubernetes-Native AI Gateways for LLM Inference | angle: How specialized AI gateways and Kubernetes operators simplify LLM inference routing, policy management, and traffic optimization, reducing latency and improving efficiency in scalable deployments. | objective: click | score: 8.33 | sources: 095959a2fd68, 8ca21d283f36
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
