@@ -1,97 +1,58 @@
 {
-  "date_ist": "2026-09-27",
-  "generated_at": "2026-09-27T08:54:57.162675+00:00",
-  "signal_count": 27,
+  "date_ist": "2026-09-28",
+  "generated_at": "2026-09-27T19:10:15.677101+00:00",
+  "signal_count": 24,
   "signals": [
-    {
-      "id": "hn-49836579",
-      "source": "hacker_news",
-      "title": "How I changed teaching after AI managed to do all my homework assignments",
-      "url": "https://thelastsoftwareengineer.substack.com/p/how-i-changed-teaching-after-ai-managed",
-      "published_at": "2026-09-24T20:51:50+00:00",
-      "excerpt": "Hacker News: 197 points and 178 comments.",
-      "signal_score": 464.0,
-      "community_metrics": {
-        "points": 197,
-        "comments": 178
-      }
-    },
-    {
-      "id": "hn-49853137",
-      "source": "hacker_news",
-      "title": "An agent used DNS to reach an external chatbot",
-      "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot",
-      "published_at": "2026-09-26T04:14:11+00:00",
-      "excerpt": "Hacker News: 87 points and 91 comments.",
-      "signal_score": 223.5,
-      "community_metrics": {
-        "points": 87,
-        "comments": 91
-      }
-    },
-    {
-      "id": "hn-49857729",
-      "source": "hacker_news",
-      "title": "Drawgent: Coding agent on a live Excalidraw canvas",
-      "url": "https://tangled.org/yanndegat.tngl.sh/drawgent",
-      "published_at": "2026-09-26T15:56:34+00:00",
-      "excerpt": "Hacker News: 143 points and 41 comments.",
-      "signal_score": 204.5,
-      "community_metrics": {
-        "points": 143,
-        "comments": 41
-      }
-    },
-    {
-      "id": "hn-49839567",
-      "source": "hacker_news",
-      "title": "Evolving programming languages in the AI era",
-      "url": "https://dashbit.co/blog/evolving-ai-era",
-      "published_at": "2026-09-25T02:34:39+00:00",
-      "excerpt": "Hacker News: 88 points and 57 comments.",
-      "signal_score": 173.5,
-      "community_metrics": {
-        "points": 88,
-        "comments": 57
-      }
-    },
-    {
-      "id": "hn-49857656",
-      "source": "hacker_news",
-      "title": "Turning GLM-5.3-Flash into a Jev-like decision model",
-      "url": "https://www.privatemode.ai/blog/system-one-from-glm-flash",
-      "published_at": "2026-09-26T15:49:04+00:00",
-      "excerpt": "Hacker News: 87 points and 37 comments.",
-      "signal_score": 142.5,
-      "community_metrics": {
-        "points": 87,
-        "comments": 37
-      }
-    },
     {
       "id": "hn-49863864",
       "source": "hacker_news",
-      "title": "OpenAI Feared \"Optics\" of what might appear on Hacker News",
+      "title": "Unsealed Briefs in Authors’ Case v. Microsoft/OpenAI",
       "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal",
       "published_at": "2026-09-27T06:19:33+00:00",
-      "excerpt": "Hacker News: 75 points and 30 comments.",
-      "signal_score": 120.0,
+      "excerpt": "Hacker News: 578 points and 544 comments.",
+      "signal_score": 1394.0,
       "community_metrics": {
-        "points": 75,
-        "comments": 30
+        "points": 578,
+        "comments": 544
       }
     },
     {
-      "id": "hn-49851883",
+      "id": "hn-49868083",
       "source": "hacker_news",
-      "title": "Generate fonts where every LLM token is the same width",
-      "url": "https://ampdot.mesh.host/token-space-fonts.html",
-      "published_at": "2026-09-26T00:30:03+00:00",
-      "excerpt": "Hacker News: 58 points and 12 comments.",
-      "signal_score": 76.0,
+      "title": "There are no \"rogue\" AI agents",
+      "url": "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
+      "published_at": "2026-09-27T16:19:46+00:00",
+      "excerpt": "Hacker News: 213 points and 158 comments.",
+      "signal_score": 450.0,
       "community_metrics": {
-        "points": 58,
-        "comments": 12
+        "points": 213,
+        "comments": 158
+      }
+    },
+    {
+      "id": "hn-49868831",
+      "source": "hacker_news",
+      "title": "SNL Weekend Update: Anthropic CEO Dario Amodei on A.I.'S Threat to Humanity [video]",
+      "url": "https://www.youtube.com/watch",
+      "published_at": "2026-09-27T17:32:02+00:00",
+      "excerpt": "Hacker News: 124 points and 33 comments.",
+      "signal_score": 173.5,
+      "community_metrics": {
+        "points": 124,
+        "comments": 33
+      }
+    },
+    {
+      "id": "hn-49867775",
+      "source": "hacker_news",
+      "title": "Show HN: TinyAIArena watch AI agents battle it out",
+      "url": "https://tinyaiarena.com",
+      "published_at": "2026-09-27T15:51:28+00:00",
+      "excerpt": "Hacker News: 56 points and 31 comments.",
+      "signal_score": 102.5,
+      "community_metrics": {
+        "points": 56,
+        "comments": 31
       }
     },
     {
@@ -108,12 +69,12 @@
       }
     },
     {
-      "id": "74a393fb0416",
+      "id": "529eb3a0356d",
       "source": "exa_news",
-      "title": "腾讯开源的企业级知识库，20+ LLM、8种向量库、7个IM渠道，一条命令本地跑-平芜编程栈",
-      "url": "http://www.pwwt.cn/news/3360610",
+      "title": "Compass is coming to the cloud | Cohere",
+      "url": "https://cohere.com/blog/compass-cloud-beta",
       "published_at": "2026-09-25T00:00:00.000Z",
-      "excerpt": "WeKnora 是腾讯开源的 LLM 知识库框架，Go + Vue 3 编写。核心思路：一条命令本地部署，把散落在飞书/Notion/语雀/本地文件夹的文档统一接入，支持 RAG 问答、ReAct Agent 推理、自动 Wiki 生成，20+ LLM 和 8 种向量库随便换。\n\n- 腾讯官方出品——国内头部互联网公司背书\n- MIT 协议，完全自托管，数据不出内网\n- v0.6.3，最新的版本，新增网站嵌入 Widget，可把知识 Agent 接到官网、文档站或产品页；同时升级聊天体验，补齐 RSS 同步、Wiki 层级、文档标签、批量重解析和扫描 PDF OCR。\n...\n| 模式 | 作用 | 场景 |\n| --- | --- | --- |\n| Quick Q&A | RAG 检索 + 生成回答，带引用来源 | 日常知识查找 |\n| ReAct Agent | 多步推理，自动调用工具、搜索、检索 | 复杂问题分析 |\n| Wiki Mode | Agent 自动把文档生成结构化 Wiki + 知识图谱 | 文档自动整理 |\n...\nOpenAI、Azure、Anthropic、DeepSeek、通义千问、智谱、混元、豆包、Gemini、MiniMax、NVIDIA、SiliconFlow、OpenRouter、Ollama 等，随时切换。\n...\n企业微信、飞书、Slack、Telegram、钉钉、Mattermost、微信，直接在这些工具里问问题。\n...\n公司文档散落在飞书、Notion、语雀、本地 NAS。WeKnora 接入所有数据源，自动同步，员工在企业微信里直接问\"去年的 Q3 财报在哪里\"，RAG 检索给出准确答案 + 文档链接。\n...\n把产品文档、FAQ、历史工单导入 WeKnora，配置 ReAct Agent。用户在 Slack 里问\"怎么重置密码\"，Agent 自动检索知识库 + 调用重置工具 + 给出步骤，不需要人工介入。\n...\n### 上手：让 AI Agent 帮你装\n...\n```\n用 Docker 部署 WeKnora 企业知识库，参考 https://github.com/Tencent/WeKnora要求：1. git clone https://github.com/Tencent/WeKnora.git && cd WeKnora2. cp .env.example .env，配置 LLM API Key（推荐 DeepSeek 或通义千问）3. docker compose up -d 启动核心服务4. 打开 http://localhost 确认 Web UI 正常5. 创建一个知识库，上传 3 个 PDF 测试文档6. 测试 Quick Q&A 和 ReAct Agent 两种模式7. 配置企业微信/飞书机器人，测试 IM 渠道问答\n```\n...\nCLI 工具：\n\n```\nweknora auth login --host https://kb.example.comweknora kb listweknora doc upload notes.mdweknora chat \"总结这份设计文档\"weknora mcp serve # 启动 MCP Server\n```\n...\n| 维度 | WeKnora | Dify | FastGPT | AnythingLLM |\n| --- | --- | --- | --- | --- |\n| 定位 | 企业级 RAG + Agent + Wiki | LLM 应用开发平台 | 知识库问答 | 本地文档聊天 |\n| 数据源 | 飞书/Notion/语雀/RSS + 本地 | 有限 | 有限 | 本地为主 |\n| IM 渠道 | 7 个（企微/飞书/Slack等） | 部分 | 部分 | 无 |\n| Agent 模式 | ReAct 多步推理 | 工作流编排 | 简单 RAG | 无 |\n| Wiki 生成 | ✅ 自动 + 知识图谱 | ❌ | ❌ | ❌ |\n| 向量库 | 8 种 | 2-3 种 | 2-3 种 | 2-3 种 |\n| 企业安全 | RBAC + 审计 + 加密 | 基础 | 基础 | 基础 |\n| 部署 | Docker/K8s/本地 | Docker/云 | Docker/云 | Docker |\n| 开源协议 | MIT | Apache 2.0 | Apache 2.0 | MIT |\n\nDify 胜在应用编排和生态，FastGPT 胜在中文优化和易用性，AnythingLLM 胜在本地隐私。WeKnora 胜在企业级完整性：多数据源接入、7 个 IM 渠道、ReAct Agent、自动 Wiki、RBAC 安全体系，一套方案覆盖从文档接入到员工使用的全链路。\n...\n- 生产环境建议内网部署：腾讯官方建议不要直接暴露到公网，配好防火墙和访问控制\n- LLM API Key 成本：大文档库首次 embedding 消耗较多 Token，建议用低价模型或本地 Ollama\n- CVE 安全漏洞：2026 年初披露过租户权限绕过和 SQL 注入漏洞，建议升级到最新版本（v0.6.3+）\n- 文档解析耗时：大 PDF 或扫描件可能需要几分钟，后台 MQ 异步处理，可以关页面等通知\n...\n✅大模型基础认知—大模型核心原理、发展历程、主流模型（GPT、文心一言等）特点解析 ✅核心技术模块—RAG检索增强生成、Prompt工程实战、Agent智能体开发逻辑 ✅开发基础能力—Python进阶、API接口调用、大模型开发框架（LangChain等）实操 ✅应用场景开发—智能问答系统、企业知识库、AIGC内容生成工具、行业定制化大模型应用 ✅项目落地流程—需求拆解、技术选型、模型调优、测试上线、运维迭代 ✅面试求职冲刺—岗位JD解析、简历AI项目包装、高频面试题汇总、模拟面经",
+      "excerpt": "Compass is Cohere’s retrieval platform for developers building AI applications with their enterprise data. It surfaces the most relevant information from your company’s corpus for use in retrieval-augmented generation (RAG), search, and agentic workflows. Now, Compass is entering private beta as a managed offering - Compass Cloud.\n\nCompass was built for builders. It provides the retrieval foundation that developers can freely configure around their data and workflow requirements. Instead of assembling and operating the stack themselves, teams access Compass through its APIs, MCP server, or Python SDK to shape their desired end user experience.\n...\nWe’ve listened to those calls. Compass Cloud expands Compass to a broader market. It lets Cohere manage the full pipeline and model inference, so that our customers can focus even more on building. In parallel, self-hosted deployments remain available for privacy-constrained projects.\n...\nCompass exists to address each of these: 1) by providing relevant, governed context for generative workloads; 2) supporting both agentic and conventional search applications; and 3) consolidating the core retrieval stack into an integrated enterprise platform.\n...\nCompass packages document processing and retrieval into one configurable service. Teams can access a single interface instead of integrating and operating separate services.\n...\n: a governed ... connecting data sources to front ... parsing, embedding, hybrid search, and reranking\n...\nRetrieve: Combine search strategies in one request. Semantic, sparse, and keyword search can run independently or together, balancing recall and precision. Permissions are enforced during retrieval rather than left to the application.\n\nRerank: Send stronger evidence to the model. Cohere’s best-in-class reranker identifies the most relevant passages from a broad candidate set, reducing irrelevant context and the tokens required for generation.\n...\nThe core objective of Compass is simple: improve the relevance of information surfaced for enterprise knowledge applications, be that a RAG pipeline or an autonomous agent. That quality is rooted in Cohere's best-in-class search and document-processing models together with Compass's hybrid search: lexical, sparse, and dense retrieval, then rerank.\n...\n- Compass API: Best for teams building custom RAG and search applications. Use Compass APIs to integrate directly with the models and retrieval components that power Compass, giving developers more control over how content is represented, retrieved, ranked, and incorporated into their application.\n- Model Context Protocol (MCP): Best for agentic retrieval. Compass ships a dedicated, independently versioned MCP server that exposes retrieval as reusable tools through an open standard. MCP-compatible clients can discover and call those tools directly, making Compass portable across agent frameworks without a bespoke integration for each one.\n\nAgentic retrieval is an emerging approach at the intersection of large language models and information retrieval. Rather than relying on a single query-and-response retrieval step, an agent can decide what to look for, search for relevant information, evaluate the results, and refine its search before answering.\n\nThis is especially useful for tasks that cannot be resolved with a single lookup. With the Compass MCP server, agents can progressively narrow the retrieval corpus, reducing unnecessary context and making complex retrieval tasks faster and more token-efficient.\n...\nWe’re opening this private beta for teams building retrieval-heavy and agentic applications.",
       "signal_score": 14.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -147,55 +108,16 @@
       }
     },
     {
-      "id": "23d68c911ae4",
+      "id": "74a393fb0416",
       "source": "exa_news",
-      "title": "VeriLoop E2 Release: 27B Post-Trained Model and Full GGUF Precision Ladder from BF16 to IQ1_M - Models - Hugging Face Forums",
-      "url": "https://discuss.huggingface.co/t/veriloop-e2-release-27b-post-trained-model-and-full-gguf-precision-ladder-from-bf16-to-iq1-m/180723",
-      "published_at": "2026-09-24T00:00:00.000Z",
-      "excerpt": "VeriLoop E2 Release: 27B Post-Trained Model and Full GGUF Precision Ladder from BF16 to IQ1_M - Models - Hugging Face Forums\n...\nVeriLoop E2 is now publicly available: a 27B post-trained model built on Qwen3.8-27B for verifiable code, mathematics, scientific reasoning, and long-horizon agentic problem solving.\n...\nGGUF is a first-class release path\n\nAlongside the main checkpoint, we are releasing a full llama.cpp-oriented GGUF precision ladder from BF16 down to IQ1_M.\n\nThis is not a collection of one-shot quantizations. Every measured low-bit tier is built directly from the canonical BF16 GGUF rather than requantized from another low-bit artifact, and every tier is compared against the same frozen BF16 logit reference under one paired evaluation protocol.\n\nThe resulting deployment ladder is:\n\n| Tier | Main size | Reduction vs BF16 | PPL ratio vs BF16 | Mean KLD | Same top-p | Positioning |\n| --- | --- | --- | --- | --- | --- | --- |\n| BF16 | 50.113 GiB | — | 1.000000 | reference | 100% | Canonical reference |\n| Q8_0 | 26.632 GiB | 46.86% | 1.000643 | 0.002176 | 98.815% | High fidelity |\n| Q6_K | 20.566 GiB | 58.96% | 0.999605 | 0.004409 | 98.204% | Overall sweet spot |\n| Q5_K_M | 18.965 GiB | 62.16% | 1.004450 | 0.006919 | 97.251% | Memory-quality sweet spot |\n| Q4_K_M | 18.301 GiB | 63.48% | 1.004821 | 0.009700 | 96.786% | Balanced compact |\n| Q3_K_M | 16.826 GiB | 66.42% | 1.004090 | 0.014349 | 95.919% | Low-footprint alternative |\n| IQ2_S | 16.799 GiB | 66.48% | 1.003457 | 0.014023 | 95.516% | Lower-KLD low-footprint alternative |\n| IQ1_M | 16.790 GiB | 66.50% | 1.003191 | 0.014357 | 95.870% | Minimum-footprint sweet spot |\n\nThe most interesting result is at the low-footprint end.\n\nIQ1_M reaches 16.790078 GiB, a 66.4955% reduction from the BF16 reference, while the measured PPL ratio remains 1.003191 ± 0.002175 — only +0.3191% under the frozen paired quantization benchmark. Mean KLD is 0.014357 ± 0.001317, Same top-p is 95.870 ± 0.220%, and log-PPL correlation remains 99.62%.\n\nImportantly, VeriLoop-E2-IQ1_M.gguf is not a uniform 1-bit model. It is a deliberately protected mixed-precision artifact with:\n\n353 F32 + 1 IQ1_M + 2 IQ2_S + 64 Q4_K + 429 Q5_K + 2 Q6_K = 851 tensors, at an effective density of 5.36 BPW.\n\nThe transition from IQ2_S to IQ1_M changes only one selected tensor, blk.1.ffn_down.weight, from IQ2_S to IQ1_M. The protected higher-precision spine remains intact.\n\nThe IQ1_M release also passed the final stock llama.cpp runtime path and real MTP speculative-decoding validation. In the frozen runtime check, both main-only and main+MTP generation returned successful HTTP responses with non-empty output; the MTP path generated 104 draft tokens and accepted 76, corresponding to 73.0769% draft acceptance, and the main-only and MTP output hashes were identical in that run.\n\nThe frozen quantization-retention protocol uses WikiText-2 raw test, context 2048, 8 chunks, seed 42, F16/F16 KV cache, and the same BF16 logits across tiers. PPL, KLD, Same top-p, RMS probability drift, and log-PPL correlation are used together rather than reducing quantization quality to a single number.\n\nOne important boundary: these are quantization-retention measurements, not downstream benchmark-loss percentages. For example, IQ1_M’s +0.3191% PPL drift does not mean a 0.3191% drop on SWE-bench, Terminal-Bench, AIME, GPQA, or other downstream tasks. The parent nine-benchmark campaign was not independently rerun for every quantization tier.\n\nOur deployment recommendation is therefore straightforward: Q6_K for the strongest overall quality/footprint balance, Q5_K_M for memory-quality balance, and IQ1_M for the minimum practical footprint in this release. IQ2_S remains a useful adjacent option when slightly lower Mean KLD is preferred.\n...\nGGUF — VeriLoop E2 GGUF\n\n### tsinghua-sigs-robot ... lab/VeriLoop-E2-GGUF · Hugging Face\n...\nAdditional public materials accompanying this release include the task-level VeriLoop E2 Evaluation Evidence dataset, the Technical Report on OpenReview, and the Riemann ζ Research Artifact. These materials are referenced from the release repositories above and provide the corresponding evaluation records, technical documentation, derivations, computation, and reproducibility evidence.",
-      "signal_score": 13.0,
-      "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
-        "rank": 2
-      }
-    },
-    {
-      "id": "0e3391e3f8e8",
-      "source": "exa_news",
-      "title": "每日一个开源项目（第164篇）：毕昇（BISHENG）- 面向企业的开源 LLM DevOps 平台-郑州网页设计网站制作-尧图网站建设",
-      "url": "http://www.mhpq.cn/news/642355",
-      "published_at": "2026-09-27T00:00:00.000Z",
-      "excerpt": "# 每日一个开源项目（第164篇）：毕昇（BISHENG）- 面向企业的开源 LLM DevOps 平台\n\n 发布时间：2026/9/27 13:36:08 尧图网站建设 \n\n 引言“毕昇活字印刷术的发明者。BISHENG帮助企业把大模型的能力’活字排版’进自己的业务流程里。”这是每日一个开源项目系列的第164篇文章。今天的主角是毕昇BISHENG——DataElem 开源的企业级 LLM 应用 DevOps 平台。企业引入 LLM 的时候往往会遇到一个困境单一工具只解决一个点——有的专注 RAG、有的专注 Workflow、有的专注模型管理——但真实的企业场景需要这些能力全部打通还要有权限管理、审计日志、高可用部署。把这些工具拼在一起维护成本极高。BISHENG 的定位是一站式解决从文档解析、知识库构建、RAG 检索到可视化工作流编排、多 Agent 协作、模型微调管理、企业级权限治理全部在同一个平台里完成。你将学到什么AGLAgent Guidance Language框架如何把领域专家的经验编码给 AI Agent可视化工作流编排的 Human-in-the-Loop 设计高精度文档解析5 年私有数据训练的 OCR 能力企业 RAG 的典型场景从政策比对到简历筛选毕昇的技术架构Milvus Elasticsearch OnlyOffice LLaMA-Factoryv2.6.0 的 Linsight Task Mode 新能力前置知识了解企业 LLM 应用的基本概念RAG、Agent、工作流有企业内部 AI 系统建设需求或经验Docker 基础用于本地部署项目背景为什么叫毕昇项目以北宋毕昇活字印刷术发明者命名隐喻很贴切活字印刷把固定的雕版印刷变成了灵活可重组的活字——BISHENG 希望把同样的灵活性带给企业的 AI 能力建设不是固定流程的硬编码而是可重组、可编排、可迭代的模块化能力。作者/团队介绍公司: DataElem上海数巧信息技术有限公司License: Apache-2.0版本: v2.6.02026 年 7 月用户群: 财富 500 强和行业头部机构项目数据⭐ GitHub Stars:11,600 Forks: 1,900 Release: 73 个版本 License: Apache-2.0 语言: Python ~50% TypeScript ~47.5%核心功能Linsight AgentAGL 框架AGLAgent Guidance Language是 BISHENG 独有的 Agent 指导框架解决的是一个企业 AI 的核心问题如何把特定领域专家的经验、偏好和业务逻辑编码进 AI让它在专业场景里像专家一样工作。普通 LLM 做财务分析可能会给出技术上正确但业务上不合规的结论。AGL 框架允许你把财务合规专家的判断逻辑、常见的业务边界条件、行业特定的分析视角显式地嵌入 Agent 的决策过程。v2.6.0 引入的Linsight Task ModeAgent 不再只是回答问题而是可以主动规划和执行多步骤任务输出符合企业要求的格式化报告。可视化工作流编排这是 BISHENG 区别于很多同类产品的核心能力单一框架覆盖所有任务类型。很多平台把对话流和工作流分成两个独立模块接口不统一用起来割裂。BISHENG 用一套可视化工作流引擎处理所有场景。支持的流程控制循环Loop让 Agent 重复执行直到满足条件并行Parallelism多个分支同时运行提升处理效率批量处理Batch对列表里的每个元素执行相同流程条件分支Conditional根据中间结果走不同路径Human-in-the-Loop人工介入这是企业场景里不可或缺的能力工作流运行中... ↓ 执行到合同风险评估节点 ↓ 法务 Agent 输出初步评估 ↓ [暂停等待人工确认] ↓ 人工审核批准/修改/拒绝 ↓ 继续执行后续步骤这种设计允许在高风险决策点插入人工判断而不是让 AI 从头到尾全自动执行。对于合规要求严格的企业场景金融、法律、医疗这是刚需。高精度文档解析BISHENG 在文档解析上有独特优势——这不是集成的第三方工具而是 DataElem 基于5 年以上私有数据训练的专有模型能力覆盖印刷体文字识别常用字 生僻字手写体识别包括中文手写复杂表格识别含跨行跨列合并单元格文档版面分析多栏布局、嵌入图片、页眉页脚分离公章/印章识别图表识别部署方式完全私有化部署无需连接外部 API数据不出内网。这个能力在中国企业的文档处理场景里特别有价值大量纸质单据扫描件、手写审批单、印章文件是传统 OCR 工具的老大难问题BISHENG 的模型在这类数据上有专项优化。企业 RAG 知识库完整的企业知识库建设流程原始文档PDF/Word/Excel/扫描件 ↓ 文档解析高精度 OCR 版面分析 ↓ 文本分块 向量化Milvus ↓ 混合检索向量相似度 全文检索 Elasticsearch ↓ 知识库问答 / 引用溯源典型企业场景场景描述政策比对新版本政策和旧版本的差异逐条对比生成变更报告合同审查合同条款和公司标准条款自动比对标出风险点会议纪要会议录音/视频 → 结构化纪要动作项自动跟踪简历筛选候选人简历和岗位要求多维度匹配生成评分电话记录分析客服通话内容结构化分析提取关键信息非结构化数据治理企业历史文档分类、标签、知识图谱构建统一模型管理从模型选型到上线运营的完整生命周期管理模型接入OpenAI 兼容 API / 本地部署llama.cpp、vLLM 等数据集管理标注数据的版本管理和质量控制SFT 微调集成 LLaMA-Factory在私有数据上微调模型评测构建评测集量化模型在业务场景上的表现上线管理不同部门用不同模型版本流量控制和 A/B 测试企业级功能权限和安全RBAC基于角色的访问控制用户组管理不同部门不同权限SSO 单点登录支持 LDAP每组独立的流量控制配额运维和合规高可用部署方案漏洞扫描和安全补丁使用统计和审计日志可观测性监控文档编辑集成 OnlyOffice支持在线协作编辑 Word/Excel/PPT适合AI 生成草稿 → 人工在线编辑 → 最终输出的工作流快速部署系统要求CPU≥ 4 核推荐 18 vCPU内存≥ 16 GB推荐 48 GBDocker 19.03.9Docker Compose 1.25.1gitclone https://github.com/dataelement/bisheng.gitcdbisheng/dockerdockercompose-fdocker-compose.yml-pbisheng up-d访问http://IP:3001第一个注册用户自动成为系统管理员。技术架构前端React TypeScript ↓ 后端Python FastAPI ├── 工作流引擎基于 LangChain/Langflow 定制 ├── 文档解析私有 OCR 模型 ├── Agent 框架AGL 框架 └── 模型管理LLaMA-Factory 集成 ↓ 数据层 ├── Milvus向量存储 ├── Elasticsearch全文检索 ├── MySQL元数据 └── MinIO/S3文件存储致谢项目基于 LangChain、Langflow、Unstructured、LLaMA-Factory 构建在这些基础上添加了大量企业场景的定制化能力。项目地址与资源GitHub: dataelement/bisheng官网: bisheng.dataelem.com文档: github.com/dataelement/bisheng/wiki总结BISHENG 的核心价值是减少企业 AI 建设的集成复杂度。一个企业要建设 LLM 应用通常需要分别选型文档解析工具、RAG 框架、工作流编排平台、Agent 框架、模型管理工具、权限系统——然后把这些东西接在一起这个过程本身就要消耗大量工程资源。BISHENG 把这些全部集成进一个平台用统一的数据模型、统一的权限体系、统一的监控视图管理。高精度文档解析是一个被低估的差异化能力。在中国企业场景里大量关键信息仍然存在于扫描文档、手写单据、印章文件里这类数据的处理质量直接决定了知识库的可用性。DataElem 5 年的私有训练数据在这个维度上有真实优势。AGL 框架和 Human-in-the-Loop 工作流说明这个项目认真考虑过企业场景的特殊性不是所有决策都可以全自动化需要在合适的节点保留人工介入的空间。11.6k Stars 和财富 500 强的生产使用记录说明这不只是技术验证项目而是有实际交付价值的产品。探索 PrimeSkills —— 精选 AI Agent",
+      "title": "腾讯开源的企业级知识库，20+ LLM、8种向量库、7个IM渠道，一条命令本地跑-平芜编程栈",
+      "url": "http://www.pwwt.cn/news/3360610",
+      "published_at": "2026-09-25T00:00:00.000Z",
+      "excerpt": "WeKnora 是腾讯开源的 LLM 知识库框架，Go + Vue 3 编写。核心思路：一条命令本地部署，把散落在飞书/Notion/语雀/本地文件夹的文档统一接入，支持 RAG 问答、ReAct Agent 推理、自动 Wiki 生成，20+ LLM 和 8 种向量库随便换。\n\n- 腾讯官方出品——国内头部互联网公司背书\n- MIT 协议，完全自托管，数据不出内网\n- v0.6.3，最新的版本，新增网站嵌入 Widget，可把知识 Agent 接到官网、文档站或产品页；同时升级聊天体验，补齐 RSS 同步、Wiki 层级、文档标签、批量重解析和扫描 PDF OCR。\n...\n| 模式 | 作用 | 场景 |\n| --- | --- | --- |\n| Quick Q&A | RAG 检索 + 生成回答，带引用来源 | 日常知识查找 |\n| ReAct Agent | 多步推理，自动调用工具、搜索、检索 | 复杂问题分析 |\n| Wiki Mode | Agent 自动把文档生成结构化 Wiki + 知识图谱 | 文档自动整理 |\n...\nOpenAI、Azure、Anthropic、DeepSeek、通义千问、智谱、混元、豆包、Gemini、MiniMax、NVIDIA、SiliconFlow、OpenRouter、Ollama 等，随时切换。\n...\n企业微信、飞书、Slack、Telegram、钉钉、Mattermost、微信，直接在这些工具里问问题。\n...\n公司文档散落在飞书、Notion、语雀、本地 NAS。WeKnora 接入所有数据源，自动同步，员工在企业微信里直接问\"去年的 Q3 财报在哪里\"，RAG 检索给出准确答案 + 文档链接。\n...\n把产品文档、FAQ、历史工单导入 WeKnora，配置 ReAct Agent。用户在 Slack 里问\"怎么重置密码\"，Agent 自动检索知识库 + 调用重置工具 + 给出步骤，不需要人工介入。\n...\n### 上手：让 AI Agent 帮你装\n...\n```\n用 Docker 部署 WeKnora 企业知识库，参考 https://github.com/Tencent/WeKnora要求：1. git clone https://github.com/Tencent/WeKnora.git && cd WeKnora2. cp .env.example .env，配置 LLM API Key（推荐 DeepSeek 或通义千问）3. docker compose up -d 启动核心服务4. 打开 http://localhost 确认 Web UI 正常5. 创建一个知识库，上传 3 个 PDF 测试文档6. 测试 Quick Q&A 和 ReAct Agent 两种模式7. 配置企业微信/飞书机器人，测试 IM 渠道问答\n```\n...\nCLI 工具：\n\n```\nweknora auth login --host https://kb.example.comweknora kb listweknora doc upload notes.mdweknora chat \"总结这份设计文档\"weknora mcp serve # 启动 MCP Server\n```\n...\n| 维度 | WeKnora | Dify | FastGPT | AnythingLLM |\n| --- | --- | --- | --- | --- |\n| 定位 | 企业级 RAG + Agent + Wiki | LLM 应用开发平台 | 知识库问答 | 本地文档聊天 |\n| 数据源 | 飞书/Notion/语雀/RSS + 本地 | 有限 | 有限 | 本地为主 |\n| IM 渠道 | 7 个（企微/飞书/Slack等） | 部分 | 部分 | 无 |\n| Agent 模式 | ReAct 多步推理 | 工作流编排 | 简单 RAG | 无 |\n| Wiki 生成 | ✅ 自动 + 知识图谱 | ❌ | ❌ | ❌ |\n| 向量库 | 8 种 | 2-3 种 | 2-3 种 | 2-3 种 |\n| 企业安全 | RBAC + 审计 + 加密 | 基础 | 基础 | 基础 |\n| 部署 | Docker/K8s/本地 | Docker/云 | Docker/云 | Docker |\n| 开源协议 | MIT | Apache 2.0 | Apache 2.0 | MIT |\n\nDify 胜在应用编排和生态，FastGPT 胜在中文优化和易用性，AnythingLLM 胜在本地隐私。WeKnora 胜在企业级完整性：多数据源接入、7 个 IM 渠道、ReAct Agent、自动 Wiki、RBAC 安全体系，一套方案覆盖从文档接入到员工使用的全链路。\n...\n- 生产环境建议内网部署：腾讯官方建议不要直接暴露到公网，配好防火墙和访问控制\n- LLM API Key 成本：大文档库首次 embedding 消耗较多 Token，建议用低价模型或本地 Ollama\n- CVE 安全漏洞：2026 年初披露过租户权限绕过和 SQL 注入漏洞，建议升级到最新版本（v0.6.3+）\n- 文档解析耗时：大 PDF 或扫描件可能需要几分钟，后台 MQ 异步处理，可以关页面等通知\n...\n✅大模型基础认知—大模型核心原理、发展历程、主流模型（GPT、文心一言等）特点解析 ✅核心技术模块—RAG检索增强生成、Prompt工程实战、Agent智能体开发逻辑 ✅开发基础能力—Python进阶、API接口调用、大模型开发框架（LangChain等）实操 ✅应用场景开发—智能问答系统、企业知识库、AIGC内容生成工具、行业定制化大模型应用 ✅项目落地流程—需求拆解、技术选型、模型调优、测试上线、运维迭代 ✅面试求职冲刺—岗位JD解析、简历AI项目包装、高频面试题汇总、模拟面经",
       "signal_score": 13.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
         "rank": 2
-      }
-    },
-    {
-      "id": "f9c7e391d7c3",
-      "source": "exa_news",
-      "title": "GPT-6 Astra hit 99.9 percent on the reasoning benchmark that had defeated every previous model, and its 1.05 million-token workspace is the largest a flagship chat model from this lab has ever carried",
-      "url": "https://gcn.com/gpt-6-astra-hit-percent-reasoning/21940",
-      "published_at": "2026-09-25T00:00:00.000Z",
-      "excerpt": "GPT-6 Astra hit 99.9 percent on the reasoning benchmark that had defeated every previous model, and its 1.05 million-token workspace is the largest a flagship chat model from this lab has ever carried\n\n \n\n# GPT-6 Astra hit 99.9 percent on the reasoning benchmark that had defeated every previous model, and its 1.05 million-token workspace is the largest a flagship chat model from this lab has ever carried\n\nSeptember 25, 2026 · 3:30 PM 5 min read\n\n September 25, 2026 · 3:30 PM by Hugo Rojas\n...\nA single number sat at the top of the column: 99.9 percent. The test it referred to was one the entire ARC-AGI series had been designed to make hard, and every frontier model had failed it badly just months before. And the workspace this new model carried into each conversation was larger than anything a flagship chat model from this lab had ever held before. How did both records land on the same launch?\n...\nGPT-6 Astra carries a 1,050,000-token context window and a maximum output of 128,000 tokens. A million tokens maps to roughly 750,000 words, or about ten full-length novels read and held simultaneously. No previous flagship chat model from this lab had ever worked at that scale inside a single session.\n\n The mechanism that makes the window useful is how the model handles long agent runs without losing detail. In Codex, Astra introduces a new way to preserve and retrieve context when the context window fills. Historically, models used compaction to summarize work during long sessions; each compaction could leave out details about why a fix failed or how a component behaves. Astra can instead keep notes across context windows, preserving accumulated details without repeatedly compressing them into a single summary, and earlier context windows remain searchable. That shift matters most for developers debugging complex systems across hours of work.\n...\nThe context window is only one half of the story. Astra is built as a computer-use model, and it scored 72.6 percent on OSWorld 2.0, setting a new frontier on computer and browser use at roughly 47 percent less time per task than its predecessor GPT-5.6 Sol. That benchmark tests how reliably an AI can navigate a real desktop, opening applications, filling forms, and moving files without a human steering it turn by turn.\n...\nARC-AGI-3 formally launched on March 25, 2026, and where earlier ARC-AGI benchmarks tested fluid pattern abstraction on static grids, ARC-AGI-3 tests agentic intelligence: the ability to explore a strange world, build an internal model of how it behaves, infer what the goal might be, then plan and execute a working solution. At launch, frontier models from Anthropic, Google DeepMind, OpenAI and xAI all scored below 1 percent on the semi-private set, while untrained members of the public solved 100 percent of the environments. Astra’s 99.9 percent score was produced using OpenAI’s Provider Adapter harness; the ARC Prize Foundation’s own Standard harness put the same model at 62.7 percent , making it the highest verified score on the series either way.\n\nThe published benchmarks also include 97.6 percent on FrontierMath Tier 4 and a perfect score on ExploitBench. Epoch AI, which runs the benchmark, says OpenAI funded its development and has exclusive access to part of it , a caveat worth keeping in mind alongside the score. FrontierMath Tier 4 covers research-grade mathematics problems previously considered beyond any AI system.\n\n The model launched on September 3, ending months of speculation. Pricing reflects the step up in capability: $10 per million tokens for standard input and $50 per million tokens for output. That is 2.5 times higher than the previous flagship’s promotional rate. As global chip sales keep climbing, the software layer is where competitive pressure concentrates.\n...\nNot every capability is available to every user. The lab has adopted a two-track access mechanism: the public model refuses advanced cyber tasks such as proof-of-concept exploits, while looser safeguards go to vetted organizations through a separate program. This is the first model from the lab to reach the Critical level of cybersecurity capability under its Preparedness Framework. \n\nA perfect ExploitBench score means the model can, in principle, identify working software vulnerabilities end to end. Allowing that capability to anyone who pays the API price would hand that power to actors with no oversight.\n\nThis tension is becoming a defining pattern across frontier AI. The push to open large-scale data runs directly into this dynamic: openness and controlled deployment pull in opposite directions at the capability frontier. The lab’s formal dual-track deployment commitment is the most explicit any major AI developer has yet put in writing, a distinction other analysts have also drawn.\n...\nEven so, larger is not always better in practice. Once input crosses into long-context territory, the lab applies higher rates to the entire request, so a long-context workflow requires careful cost control. Sending an entire codebase when only three files matter is expensive and may dilute the model’s attention. The pricing structure is, in effect, a nudge toward precision.\n\nThe record benchmark scores and the record context length arriving together suggest the two advances are complementary. A model that reasons more reliably makes better use of a very large workspace, since it can maintain coherent goals across a much longer span of material. That combination is where the practical gap between these systems and the ones they replace becomes most visible.",
-      "signal_score": 12.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 3
-      }
-    },
-    {
-      "id": "529eb3a0356d",
-      "source": "exa_news",
-      "title": "Compass is coming to the cloud | Cohere",
-      "url": "https://cohere.com/blog/compass-cloud-beta",
-      "published_at": "2026-09-25T00:00:00.000Z",
-      "excerpt": "Compass is Cohere’s retrieval platform for developers building AI applications with their enterprise data. It surfaces the most relevant information from your company’s corpus for use in retrieval-augmented generation (RAG), search, and agentic workflows. Now, Compass is entering private beta as a managed offering - Compass Cloud.\n\nCompass was built for builders. It provides the retrieval foundation that developers can freely configure around their data and workflow requirements. Instead of assembling and operating the stack themselves, teams access Compass through its APIs, MCP server, or Python SDK to shape their desired end user experience.\n...\nWe’ve listened to those calls. Compass Cloud expands Compass to a broader market. It lets Cohere manage the full pipeline and model inference, so that our customers can focus even more on building. In parallel, self-hosted deployments remain available for privacy-constrained projects.\n...\nCompass exists to address each of these: 1) by providing relevant, governed context for generative workloads; 2) supporting both agentic and conventional search applications; and 3) consolidating the core retrieval stack into an integrated enterprise platform.\n...\nCompass packages document processing and retrieval into one configurable service. Teams can access a single interface instead of integrating and operating separate services.\n...\n: a governed ... connecting data sources to front ... parsing, embedding, hybrid search, and reranking\n...\nRetrieve: Combine search strategies in one request. Semantic, sparse, and keyword search can run independently or together, balancing recall and precision. Permissions are enforced during retrieval rather than left to the application.\n\nRerank: Send stronger evidence to the model. Cohere’s best-in-class reranker identifies the most relevant passages from a broad candidate set, reducing irrelevant context and the tokens required for generation.\n...\nThe core objective of Compass is simple: improve the relevance of information surfaced for enterprise knowledge applications, be that a RAG pipeline or an autonomous agent. That quality is rooted in Cohere's best-in-class search and document-processing models together with Compass's hybrid search: lexical, sparse, and dense retrieval, then rerank.\n...\n- Compass API: Best for teams building custom RAG and search applications. Use Compass APIs to integrate directly with the models and retrieval components that power Compass, giving developers more control over how content is represented, retrieved, ranked, and incorporated into their application.\n- Model Context Protocol (MCP): Best for agentic retrieval. Compass ships a dedicated, independently versioned MCP server that exposes retrieval as reusable tools through an open standard. MCP-compatible clients can discover and call those tools directly, making Compass portable across agent frameworks without a bespoke integration for each one.\n\nAgentic retrieval is an emerging approach at the intersection of large language models and information retrieval. Rather than relying on a single query-and-response retrieval step, an agent can decide what to look for, search for relevant information, evaluate the results, and refine its search before answering.\n\nThis is especially useful for tasks that cannot be resolved with a single lookup. With the Compass MCP server, agents can progressively narrow the retrieval corpus, reducing unnecessary context and making complex retrieval tasks faster and more token-efficient.\n...\nWe’re opening this private beta for teams building retrieval-heavy and agentic applications.",
-      "signal_score": 12.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 3
       }
     },
     {
@@ -205,10 +127,62 @@
       "url": "https://rocm.blogs.amd.com/artificial-intelligence/quark-strix-halo/README.html",
       "published_at": "2026-09-25T00:00:00.000Z",
       "excerpt": "# Local Quantization and Multi-Backend Deployment with AMD Quark on Strix Halo\n...\n# Local Quantization and Multi-Backend Deployment with AMD Quark on Strix Halo\n...\nFor local AI, running a model on the target device is only part of the deployment workflow. Model preparation, including quantization and export, is another important step. AMD Quark provides memory-efficient quantization workflows that make it possible to optimize large models directly on platforms such as AMD Strix Halo.\n\nIn this post, we quantize Qwen3.6-35B-A3B, a 35B-parameter Mixture-of-Experts model, from BF16 to W4A16 directly on a Strix Halo system with 128 GB of unified memory. Quantization reduces the model weights from roughly 70 GB to about 21 GB. We then export the quantized models into two deployment paths: GGUF for llama.cpp and safetensors for vLLM. We also validate the local application experience with Lemonade using the Quark-exported GGUF model.\n\nPrevious AMD Ryzen AI workflows demonstrated Quark quantization with ONNX Runtime GenAI. This post extends that deployment story into the broader open-source LLM ecosystem, covering quantization, export, backend validation, and application-level deployment on Strix Halo. Related AMD work includes AI inference on the Ryzen AI Max processor and Quark quantization on AMD Instinct MI350X/MI355X GPUs.\n...\nAMD Quark, llama.cpp, and vLLM can all be used on Strix Halo, enabling quantization and inference on the same target system.\n\nFor the experiments reported in this post, quantization, export, GGUF inference with llama.cpp, and the Lemonade application-level deployment check were performed directly on a single Strix Halo machine.\n...\nWe use Qwen3.6-35B-A3B as the validation model. It is a Mixture-of-Experts model with 35B language-model parameters and approximately 3B activated per token. Its size and MoE architecture make it a representative workload for evaluating local quantization and deployment on Strix Halo.\n...\n1. Quantize: use AMD Quark to apply W4A16 weight-only quantization to selected model layers, producing a quantized checkpoint while keeping selected components in higher precision.\n2. Export: export the quantized model into formats aligned with the target inference path, using GGUF for llama.cpp and safetensors with Quark quantization metadata for vLLM.\n3. Run: load the exported model with llama.cpp or vLLM for backend-level inference and evaluation. At the application layer, Lemonade can consume the same GGUF artifact through its llama.cpp backend for local interactive use.\n...\nWe apply W4A16 weight-only quantization using RTN (Round-To-Nearest), quantizing selected model linear layers to 4-bit while keeping activations and selected model components in higher precision. All variants are quantized directly on the Strix Halo system.\n...\nIn this experiment, GS32 is used for the GGUF path and llama.cpp-based inference, while GS128 is used for the safetensors path and vLLM-based inference. Within the GGUF path, the symmetric and asymmetric configurations map to Q4_0 and Q4_1, respectively.\n...\nAfter quantization, Quark exports the model into formats aligned with the intended inference path.\n\n- GGUF path (GS32): Quark exports the GS32 models to GGUF. The symmetric configuration maps to Q4_0 and the asymmetric configuration to Q4_1. These artifacts can be loaded directly by llama.cpp and can also be consumed by application layers such as Lemonade through its llama.cpp backend.\n- Safetensors path (GS128): Quark exports the GS128 models in safetensors format and stores the corresponding quantization metadata in `config.json`. vLLM uses this metadata to load and execute the quantized model through its Quark integration.\n...\n- llama.cpp path (GS32): The Quark-exported GGUF files are loaded directly by a ROCm-enabled llama.cpp HIP build.\n- vLLM path (GS128): The Quark-exported safetensors models are loaded through vLLM’s Quark integration using the quantization metadata stored in `config.json`. For the vLLM build used in this evaluation, we explicitly set `VLLM_USE_TRITON_AWQ=1` to use the Triton AWQ kernel, which supports the MoE expert layer shapes exercised by this model.\n\nAt the application layer, Lemonade provides a local deployment experience on top of supported inference backends. In this post, we validate the Lemonade path using a GS32 GGUF artifact with its llama.cpp backend on Strix Halo. Lemonade also supports other inference backend configurations, including vLLM, but those paths are outside the scope of this evaluation.\n...\nW4A16 quantization reduces the model artifact size from roughly 70 GB in 16-bit precision to about 21 GB, or approximately 30% of the original size. The result is larger than the theoretical 25% size of raw 4-bit weights because selected model components remain in higher precision and the quantized representation also includes per-group scales and metadata.\n...\nPeak memory is the peak GPU-visible unified memory (GTT) during quantization. Export time covers writing the deployable files; GS32 includes both the intermediate safetensors and the final GGUF. Peak memory stays within the system’s 128 GB of unified memory in all cases, so quantizing a 35B model that starts at roughly 70 GB in BF16 fits on a single Strix Halo machine.\n...\nThis section reports how well the quantized models preserve accuracy relative to the 16-bit baseline, so you can judge whether a given W4A16 configuration is good enough for your use case. We evaluate the quantized models with EleutherAI/lm-evaluation-harness, using the inference backend associated with each export path. The goal is to measure model quality relative to the 16-bit baseline, rather than to compare backend performance.\n...\nwith vLLM using `tensor_parallel_size=4`, `gpu_memory_utilization=0.90`, and `max_model_len=8192`. For the vLLM build used in this evaluation, `VLLM_USE_TRITON_AWQ=1` is\n...\nOverall, the results show that the impact of 4-bit weight quantization is task dependent. Several configurations remain close to, or occasionally exceed, the 16-bit baseline on individual metrics, while other tasks show more noticeable degradation. The results do not indicate a single quantization configuration that is uniformly best across all tasks.\n...\nTo validate the application-level deployment experience, we load a Quark-exported GS32 GGUF model in Lemonade on Strix Halo.\n\nFor this experiment, Lemonade uses its llama.cpp backend to load the GGUF artifact directly and run an interactive chat session. No additional model conversion or manual llama.cpp build is required. Lemonade also supports other inference backend configurations, but those paths are outside the scope of this post.\n...\nThis work shows that AMD Quark can support a complete local model workflow on Strix Halo, from quantization and export to inference and application-level deployment, while producing artifacts that integrate with established open-source runtimes.\n\nMore broadly, the results highlight an important deployment consideration: quantization is not an isolated preprocessing step. Quantization configuration, export format, and runtime support are closely connected, and treating them as part of the same deployment design can simplify the path from an original model checkpoint to a practical local AI application.\n...\n- Accelerate DeepSeek R1 Distilled Models Locally on AMD Ryzen AI NPU and iGPU: an earlier Quark-to-ONNX Runtime GenAI client deployment path on Ryzen AI. This post extends the Quark workflow to GGUF/llama.cpp and safetensors/vLLM.\n- AI Inference on AMD Ryzen AI Max Processor: large Qwen models running locally on Strix Halo using unified memory and GGUF-based inference. This post adds Quark-based quantization and export on the same platform.\n- Accelerating LLM Inference on AMD Instinct MI350X/MI355X with Eagle3 and AMD Quark: Quark in a data-center inference workflow on AMD Instinct GPUs, complementing the local deployment path shown here.",
+      "signal_score": 13.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 2
+      }
+    },
+    {
+      "id": "23d68c911ae4",
+      "source": "exa_news",
+      "title": "VeriLoop E2 Release: 27B Post-Trained Model and Full GGUF Precision Ladder from BF16 to IQ1_M - Models - Hugging Face Forums",
+      "url": "https://discuss.huggingface.co/t/veriloop-e2-release-27b-post-trained-model-and-full-gguf-precision-ladder-from-bf16-to-iq1-m/180723",
+      "published_at": "2026-09-24T00:00:00.000Z",
+      "excerpt": "VeriLoop E2 Release: 27B Post-Trained Model and Full GGUF Precision Ladder from BF16 to IQ1_M - Models - Hugging Face Forums\n...\nPost-Trained Model and Full\n...\nVeriLoop E2 is now publicly available: a 27B post-trained model built on Qwen3.8-27B for verifiable code, mathematics, scientific reasoning, and long-horizon agentic problem solving.\n...\nVeriLoop E2 was post-trained across 1,841,831 records spanning software engineering, code-agent trajectories, mathematics, scientific reasoning, and verifiable recurrence. The released checkpoint has completed nine public benchmark evaluations:\n\n• SWE-bench Pro — 76.2% • Terminal-Bench 2.1 — 88.8% • Terminal-Bench 3.0 — 29.7% • Terminal-Bench 4.0 — 37.9% • DeepSWE v1.1 — 64.6% • AIME 2026 — 98.3% • GPQA Diamond — 93.94% • MathArena Apex 2025 — 89.6% • ArXivMath — 98.3%\n\nWe release task-level evaluation evidence alongside aggregate scores. Where applicable, VeriLoop Harness provides the external execution and evidence-governance layer, while the E2 checkpoint remains responsible for proposal generation, abstraction, route selection, diagnosis, and replanning.\n...\nAlongside the main checkpoint, we are releasing a full llama.cpp-oriented GGUF precision ladder from BF16 down to IQ1_M.\n\nThis is not a collection of one-shot quantizations. Every measured low-bit tier is built directly from the canonical BF16 GGUF rather than requantized from another low-bit artifact, and every tier is compared against the same frozen BF16 logit reference under one paired evaluation protocol.\n\nThe resulting deployment ladder is:\n\n| Tier | Main size | Reduction vs BF16 | PPL ratio vs BF16 | Mean KLD | Same top-p | Positioning |\n| --- | --- | --- | --- | --- | --- | --- |\n| BF16 | 50.113 GiB | — | 1.000000 | reference | 100% | Canonical reference |\n| Q8_0 | 26.632 GiB | 46.86% | 1.000643 | 0.002176 | 98.815% | High fidelity |\n| Q6_K | 20.566 GiB | 58.96% | 0.999605 | 0.004409 | 98.204% | Overall sweet spot |\n| Q5_K_M | 18.965 GiB | 62.16% | 1.004450 | 0.006919 | 97.251% | Memory-quality sweet spot |\n| Q4_K_M | 18.301 GiB | 63.48% | 1.004821 | 0.009700 | 96.786% | Balanced compact |\n| Q3_K_M | 16.826 GiB | 66.42% | 1.004090 | 0.014349 | 95.919% | Low-footprint alternative |\n| IQ2_S | 16.799 GiB | 66.48% | 1.003457 | 0.014023 | 95.516% | Lower-KLD low-footprint alternative |\n| IQ1_M | 16.790 GiB | 66.50% | 1.003191 | 0.014357 | 95.870% | Minimum-footprint sweet spot |\n...\nIQ1_M reaches 16.790078 GiB, a 66.4955% reduction from the BF16 reference, while the measured PPL ratio remains 1.003191 ± 0.002175 — only +0.3191% under the frozen paired quantization benchmark. Mean KLD is 0.014357 ± 0.001317, Same top-p is 95.870 ± 0.220%, and log-PPL correlation remains 99.62%.\n\nImportantly, VeriLoop-E2-IQ1_M.gguf is not a uniform 1-bit model. It is a deliberately protected mixed-precision artifact with:\n...\nF32 + ... 1 tensors, at an effective ... of 5.36 BPW.\n...\nThe IQ1_M release also passed the final stock llama.cpp runtime path and real MTP speculative-decoding validation. In the frozen runtime check, both main-only and main+MTP generation returned successful HTTP responses with non-empty output; the MTP path generated 104 draft tokens and accepted 76, corresponding to 73.0769% draft acceptance, and the main-only and MTP output hashes were identical in that run.\n\nThe frozen quantization-retention protocol uses WikiText-2 raw test, context 2048, 8 chunks, seed 42, F16/F16 KV cache, and the same BF16 logits across tiers. PPL, KLD, Same top-p, RMS probability drift, and log-PPL correlation are used together rather than reducing quantization quality to a single number.\n\nOne important boundary: these are quantization-retention measurements, not downstream benchmark-loss percentages. For example, IQ1_M’s +0.3191% PPL drift does not mean a 0.3191% drop on SWE-bench, Terminal-Bench, AIME, GPQA, or other downstream tasks. The parent nine-benchmark campaign was not independently rerun for every quantization tier.\n\nOur deployment recommendation is therefore straightforward: Q6_K for the strongest overall quality/footprint balance, Q5_K_M for memory-quality balance, and IQ1_M for the minimum practical footprint in this release. IQ2_S remains a useful adjacent option when slightly lower Mean KLD is preferred.\n...\nE2 also includes a scientific-reasoning demonstration on the Riemann ζ function. The released work closes a reproducible 67.350003708785593% strict finite-dimensional computer-assisted certificate for the critical-line zero proportion under the stated framework.\n...\nMain model — VeriLoop E2\n...\n-lab/ ... · Hugging Face\n...\nAdditional public materials accompanying this release include the task-level VeriLoop E2 Evaluation Evidence dataset, the Technical Report on OpenReview, and the Riemann ζ Research Artifact. These materials are referenced from the release repositories above and provide the corresponding evaluation records, technical documentation, derivations, computation, and reproducibility evidence.\n\nIndependent llama.cpp runs, benchmark reproductions, GGUF comparisons, hardware measurements, bug reports, and technical criticism are welcome.",
+      "signal_score": 12.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 3
+      }
+    },
+    {
+      "id": "0e3391e3f8e8",
+      "source": "exa_news",
+      "title": "每日一个开源项目（第164篇）：毕昇（BISHENG）- 面向企业的开源 LLM DevOps 平台-郑州网页设计网站制作-尧图网站建设",
+      "url": "http://www.mhpq.cn/news/642355",
+      "published_at": "2026-09-27T00:00:00.000Z",
+      "excerpt": "# 每日一个开源项目（第164篇）：毕昇（BISHENG）- 面向企业的开源 LLM DevOps 平台\n\n 发布时间：2026/9/27 13:36:08 尧图网站建设 \n\n 引言“毕昇活字印刷术的发明者。BISHENG帮助企业把大模型的能力’活字排版’进自己的业务流程里。”这是每日一个开源项目系列的第164篇文章。今天的主角是毕昇BISHENG——DataElem 开源的企业级 LLM 应用 DevOps 平台。企业引入 LLM 的时候往往会遇到一个困境单一工具只解决一个点——有的专注 RAG、有的专注 Workflow、有的专注模型管理——但真实的企业场景需要这些能力全部打通还要有权限管理、审计日志、高可用部署。把这些工具拼在一起维护成本极高。BISHENG 的定位是一站式解决从文档解析、知识库构建、RAG 检索到可视化工作流编排、多 Agent 协作、模型微调管理、企业级权限治理全部在同一个平台里完成。你将学到什么AGLAgent Guidance Language框架如何把领域专家的经验编码给 AI Agent可视化工作流编排的 Human-in-the-Loop 设计高精度文档解析5 年私有数据训练的 OCR 能力企业 RAG 的典型场景从政策比对到简历筛选毕昇的技术架构Milvus Elasticsearch OnlyOffice LLaMA-Factoryv2.6.0 的 Linsight Task Mode 新能力前置知识了解企业 LLM 应用的基本概念RAG、Agent、工作流有企业内部 AI 系统建设需求或经验Docker 基础用于本地部署项目背景为什么叫毕昇项目以北宋毕昇活字印刷术发明者命名隐喻很贴切活字印刷把固定的雕版印刷变成了灵活可重组的活字——BISHENG 希望把同样的灵活性带给企业的 AI 能力建设不是固定流程的硬编码而是可重组、可编排、可迭代的模块化能力。作者/团队介绍公司: DataElem上海数巧信息技术有限公司License: Apache-2.0版本: v2.6.02026 年 7 月用户群: 财富 500 强和行业头部机构项目数据⭐ GitHub Stars:11,600 Forks: 1,900 Release: 73 个版本 License: Apache-2.0 语言: Python ~50% TypeScript ~47.5%核心功能Linsight AgentAGL 框架AGLAgent Guidance Language是 BISHENG 独有的 Agent 指导框架解决的是一个企业 AI 的核心问题如何把特定领域专家的经验、偏好和业务逻辑编码进 AI让它在专业场景里像专家一样工作。普通 LLM 做财务分析可能会给出技术上正确但业务上不合规的结论。AGL 框架允许你把财务合规专家的判断逻辑、常见的业务边界条件、行业特定的分析视角显式地嵌入 Agent 的决策过程。v2.6.0 引入的Linsight Task ModeAgent 不再只是回答问题而是可以主动规划和执行多步骤任务输出符合企业要求的格式化报告。可视化工作流编排这是 BISHENG 区别于很多同类产品的核心能力单一框架覆盖所有任务类型。很多平台把对话流和工作流分成两个独立模块接口不统一用起来割裂。BISHENG 用一套可视化工作流引擎处理所有场景。支持的流程控制循环Loop让 Agent 重复执行直到满足条件并行Parallelism多个分支同时运行提升处理效率批量处理Batch对列表里的每个元素执行相同流程条件分支Conditional根据中间结果走不同路径Human-in-the-Loop人工介入这是企业场景里不可或缺的能力工作流运行中... ↓ 执行到合同风险评估节点 ↓ 法务 Agent 输出初步评估 ↓ [暂停等待人工确认] ↓ 人工审核批准/修改/拒绝 ↓ 继续执行后续步骤这种设计允许在高风险决策点插入人工判断而不是让 AI 从头到尾全自动执行。对于合规要求严格的企业场景金融、法律、医疗这是刚需。高精度文档解析BISHENG 在文档解析上有独特优势——这不是集成的第三方工具而是 DataElem 基于5 年以上私有数据训练的专有模型能力覆盖印刷体文字识别常用字 生僻字手写体识别包括中文手写复杂表格识别含跨行跨列合并单元格文档版面分析多栏布局、嵌入图片、页眉页脚分离公章/印章识别图表识别部署方式完全私有化部署无需连接外部 API数据不出内网。这个能力在中国企业的文档处理场景里特别有价值大量纸质单据扫描件、手写审批单、印章文件是传统 OCR 工具的老大难问题BISHENG 的模型在这类数据上有专项优化。企业 RAG 知识库完整的企业知识库建设流程原始文档PDF/Word/Excel/扫描件 ↓ 文档解析高精度 OCR 版面分析 ↓ 文本分块 向量化Milvus ↓ 混合检索向量相似度 全文检索 Elasticsearch ↓ 知识库问答 / 引用溯源典型企业场景场景描述政策比对新版本政策和旧版本的差异逐条对比生成变更报告合同审查合同条款和公司标准条款自动比对标出风险点会议纪要会议录音/视频 → 结构化纪要动作项自动跟踪简历筛选候选人简历和岗位要求多维度匹配生成评分电话记录分析客服通话内容结构化分析提取关键信息非结构化数据治理企业历史文档分类、标签、知识图谱构建统一模型管理从模型选型到上线运营的完整生命周期管理模型接入OpenAI 兼容 API / 本地部署llama.cpp、vLLM 等数据集管理标注数据的版本管理和质量控制SFT 微调集成 LLaMA-Factory在私有数据上微调模型评测构建评测集量化模型在业务场景上的表现上线管理不同部门用不同模型版本流量控制和 A/B 测试企业级功能权限和安全RBAC基于角色的访问控制用户组管理不同部门不同权限SSO 单点登录支持 LDAP每组独立的流量控制配额运维和合规高可用部署方案漏洞扫描和安全补丁使用统计和审计日志可观测性监控文档编辑集成 OnlyOffice支持在线协作编辑 Word/Excel/PPT适合AI 生成草稿 → 人工在线编辑 → 最终输出的工作流快速部署系统要求CPU≥ 4 核推荐 18 vCPU内存≥ 16 GB推荐 48 GBDocker 19.03.9Docker Compose 1.25.1gitclone https://github.com/dataelement/bisheng.gitcdbisheng/dockerdockercompose-fdocker-compose.yml-pbisheng up-d访问http://IP:3001第一个注册用户自动成为系统管理员。技术架构前端React TypeScript ↓ 后端Python FastAPI ├── 工作流引擎基于 LangChain/Langflow 定制 ├── 文档解析私有 OCR 模型 ├── Agent 框架AGL 框架 └── 模型管理LLaMA-Factory 集成 ↓ 数据层 ├── Milvus向量存储 ├── Elasticsearch全文检索 ├── MySQL元数据 └── MinIO/S3文件存储致谢项目基于 LangChain、Langflow、Unstructured、LLaMA-Factory 构建在这些基础上添加了大量企业场景的定制化能力。项目地址与资源GitHub: dataelement/bisheng官网: bisheng.dataelem.com文档: github.com/dataelement/bisheng/wiki总结BISHENG 的核心价值是减少企业 AI 建设的集成复杂度。一个企业要建设 LLM 应用通常需要分别选型文档解析工具、RAG 框架、工作流编排平台、Agent 框架、模型管理工具、权限系统——然后把这些东西接在一起这个过程本身就要消耗大量工程资源。BISHENG 把这些全部集成进一个平台用统一的数据模型、统一的权限体系、统一的监控视图管理。高精度文档解析是一个被低估的差异化能力。在中国企业场景里大量关键信息仍然存在于扫描文档、手写单据、印章文件里这类数据的处理质量直接决定了知识库的可用性。DataElem 5 年的私有训练数据在这个维度上有真实优势。AGL 框架和 Human-in-the-Loop 工作流说明这个项目认真考虑过企业场景的特殊性不是所有决策都可以全自动化需要在合适的节点保留人工介入的空间。11.6k Stars 和财富 500 强的生产使用记录说明这不只是技术验证项目而是有实际交付价值的产品。探索 PrimeSkills —— 精选 AI Agent",
+      "signal_score": 12.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 3
+      }
+    },
+    {
+      "id": "8c2c892f6c5d",
+      "source": "exa_news",
+      "title": "Cohere Command A+ Goes Apache 2.0 — And Runs on Two GPUs — On The Wire",
+      "url": "https://onthewire.ai/article/cohere-command-a-plus-release",
+      "published_at": "2026-09-26T00:00:00.000Z",
+      "excerpt": "Cohere Command A+ Goes Apache 2.0 — And Runs on Two GPUs — On The Wire\n...\n# Cohere Command A+ Goes Apache 2.0 — And Runs on Two GPUs\n\nCohere's first fully open-licensed model folds four prior models into one 218B MoE that fits on two H100s, with native citations baked in for enterprise.\n...\n- 01 Cohere released Command A+ on 20 May 2026 — a 218B sparse MoE (25B active), and the company's first model under a fully permissive Apache 2.0 licence.\n- 02 Near-lossless quantization lets it run on as few as two H100 GPUs (or a single Blackwell B200), with a 128K context and support for 48 languages.\n- 03 It unifies four prior models — Command A, Command A Reasoning, Command A Vision, Command A Translate — into one, with native citation grounding for trustworthy enterprise output.\n\nCohere has always pitched itself at the enterprise rather than the consumer, and Command A+, released on 20 May 2026, is the clearest expression of that focus yet — plus a notable first: it's the company's first model under a fully permissive Apache 2.0 licence, with the weights free on Hugging Face.\n...\nUnder the hood it's a 218B sparse Mixture-of-Experts with roughly 25B active parameters — big total capacity, modest per-token cost. It supports a 128K context window and 48 languages.\n...\nThe number that got attention is the hardware footprint. Through near-lossless quantization, Command A+ runs on as few as two NVIDIA H100s — or a single Blackwell B200. That matters enormously for the buyers Cohere is courting: organisations that want a capable model on their own infrastructure for data-control or regulatory reasons, but can't justify a sprawling GPU cluster. A 218B-class model that fits on two H100s is the difference between 'theoretically self-hostable' and 'actually deployable by a normal enterprise IT team'.\n...\nships with native citation grounding ... to its sources ... part of generation\n...\nThe Apache 2.0 licence is a calculated wager on sovereign AI — the growing demand from governments and enterprises for capable models they can run entirely within their own borders and control. By giving away the weights under the most permissive licence it's ever used, Cohere is trading some control for reach, betting that the deployment story (on-prem, two GPUs, citations, 48 languages) wins the enterprise even when the raw benchmarks don't top the closed frontier.\n...\nCommand A+ isn't trying to win the 'smartest model' contest. It's engineered to win the 'which model can I actually deploy in my regulated, sovereignty-conscious organisation' contest — and on that axis, Apache 2.0 weights, a two-GPU footprint, and native citations are a genuinely strong hand.",
       "signal_score": 12.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
         "rank": 3
+      }
+    },
+    {
+      "id": "c91395d4fc2f",
+      "source": "exa_news",
+      "title": "MetaStone Says Software Optimization Boosted DeepSeek V4.1 Throughput Nearly 7x on PCIe GPUs | AI Industry Today",
+      "url": "https://aiindustrytoday.com/news/metastone-says-software-optimization-boosted-deepseek-v4-1-throughput-nearly-7x-on-pcie-gpus",
+      "published_at": "2026-09-25T00:00:00.000Z",
+      "excerpt": "ed DeepSeek\n...\nMetaStone says its Meta-Infer software stack increased DeepSeek-V4.1-Flash input throughput on an eight-GPU PCIe-only system from 1,932 to 13,274 tokens per second, a 6.87x gain over an early community baseline. The improvement came from enabling faster kernels, rebuilding communication paths, separating prefill and decode parallelism, and retuning memory and caching rather than changing the model itself. The results are vendor-provided and not independently validated, and high-end B300 systems remain several times faster on LLM inference. The more important takeaway is that as AI inference spreads beyond tightly optimized flagship clusters, software-hardware integration can become a major determinant of usable compute and inference economics.\n...\nChinese AI infrastructure company MetaStone says it increased DeepSeek-V4.1-Flash input throughput by nearly sevenfold on an eight-GPU PCIe-only server through software optimization, highlighting how much inference performance can depend on the serving stack rather than accelerator specifications alone.\n\nIn benchmark results published by QbitAI with authorization from MetaStone, DeepSeek-V4.1-Flash input throughput rose from a community “Day 0” baseline of 1,932 tokens per second to 13,274 tokens per second after a series of kernel, communication, parallelism and memory optimizations. That corresponds to a reported 6.87-fold improvement.\n\nThe figures are company-provided benchmarks and have not been independently reproduced. They also compare MetaStone’s optimized software stack with an early community deployment baseline rather than showing that the underlying GPU hardware itself became 6.87 times faster.\n...\nMetaStone’s Meta-Infer engine addresses that gap at several layers. The company said its first stage focused on enabling performance paths that the default framework was failing to use, including a sparse-MLA prefill path, a faster FP8 GEMM implementation and broader use of a PCIe IPC communication fast path.\n\nThose changes lifted DeepSeek-V4.1-Flash input throughput from 1,932 to 5,850 tokens per second before more aggressive serving optimizations were applied. MetaStone characterized this stage primarily as hardware and framework adaptation rather than the introduction of a new inference algorithm.\n\nThe second stage targeted the structural limitations of PCIe-only multi-GPU systems. MetaStone fused attention and projection operations, overlapped computation with collective communication and rewrote parts of the communication path around the lower inter-GPU bandwidth available over PCIe.\n\nIt also configured prefill and decode independently instead of using a single parallelism strategy for both stages. Memory allocation and KV-cache parameters were retuned to avoid out-of-memory conditions and slow fallback paths, while speculative decoding settings were adjusted to the target workload.\n\nAfter those changes, the company said DeepSeek-V4.1-Flash input throughput reached 13,274 tokens per second while retaining support for a 1-million-token context window.\n\nThe context figure is consistent with DeepSeek’s official specification for V4.1-Flash, which lists a 1-million-token context length. DeepSeek also says the model’s redesigned architecture cuts KV-cache HBM requirements to one-quarter and SSD requirements to one-eighth of the previous generation, making memory and serving efficiency a central part of the model’s design.\n\nSoftware support for the new model is still evolving. SGLang’s current DeepSeek-V4.1 deployment guide says support has not yet reached a regular SGLang release and requires a preview container. Its published recipes currently focus on systems including NVIDIA H200, B200, B300 and GB300 as well as AMD MI350X.\n...\nMetaStone reported similar, though smaller, gains on other language models. DeepSeek-V4-Flash input throughput increased from 14,546 to 22,584 tokens per second, or 1.55 times, while GLM-5.3 increased from 3,236.78 to 6,222.72 tokens per second. For GLM-5.3, the company also said P95 time to first token fell from 141.6 seconds to 46.6 seconds and supported context increased from roughly 270,000 to 1.05 million tokens.\n\nThe performance gap with NVIDIA’s top-end data-center accelerators nevertheless remains substantial for large-language-model inference. MetaStone’s comparison found that an eight-GPU B300 system delivered roughly 4.9 to 5.6 times the input throughput of its eight-GPU PCIe system on DeepSeek-V4-Flash at matched concurrency points, while the gap on GLM-5.3 was roughly 3.5 to 4.7 times.\n...\nMetaStone said its broader optimization method also applies to domestic Chinese accelerators. Because many such chips sit outside the main validation matrices of widely used open-source frameworks, engineers may need to explicitly select hardware-specific attention kernels, disable incompatible fused operations and configure communication differently between prefill and decode.\n\nIn one company-reported test, separating shared and routed expert computation into parallel streams and overlapping them with communication improved throughput by 11.26% across 35 paired runs on a Chinese GPU platform.\n\nThe results point to a broader change in AI inference economics. Accelerator performance is increasingly determined not only by peak FLOPS or memory bandwidth, but also by whether serving frameworks can make full use of the hardware through optimized kernels, communication, scheduling, quantization and caching.\n\nThat creates an opportunity for lower-cost or more widely available accelerators, particularly when an application does not require the absolute performance of the most expensive GPU systems. But it does not eliminate the hardware gap: MetaStone’s own language-model benchmarks still show B300 systems several times ahead in raw throughput.\n\nThe practical implication is that “can run the model” and “can operate the model efficiently in production” are increasingly different engineering milestones. As organizations deploy larger open models across a more heterogeneous GPU market, optimization of the inference software stack may become an important part of both capacity planning and total cost",
+      "signal_score": 11.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 4
       }
     },
     {
@@ -225,25 +199,12 @@
       }
     },
     {
-      "id": "8c2c892f6c5d",
+      "id": "f9c7e391d7c3",
       "source": "exa_news",
-      "title": "Cohere Command A+ Goes Apache 2.0 — And Runs on Two GPUs — On The Wire",
-      "url": "https://onthewire.ai/article/cohere-command-a-plus-release",
-      "published_at": "2026-09-26T00:00:00.000Z",
-      "excerpt": "Cohere Command A+ Goes Apache 2.0 — And Runs on Two GPUs — On The Wire\n...\n# Cohere Command A+ Goes Apache 2.0 — And Runs on Two GPUs\n\nCohere's first fully open-licensed model folds four prior models into one 218B MoE that fits on two H100s, with native citations baked in for enterprise.\n...\n- 01 Cohere released Command A+ on 20 May 2026 — a 218B sparse MoE (25B active), and the company's first model under a fully permissive Apache 2.0 licence.\n- 02 Near-lossless quantization lets it run on as few as two H100 GPUs (or a single Blackwell B200), with a 128K context and support for 48 languages.\n- 03 It unifies four prior models — Command A, Command A Reasoning, Command A Vision, Command A Translate — into one, with native citation grounding for trustworthy enterprise output.\n\nCohere has always pitched itself at the enterprise rather than the consumer, and Command A+, released on 20 May 2026, is the clearest expression of that focus yet — plus a notable first: it's the company's first model under a fully permissive Apache 2.0 licence, with the weights free on Hugging Face.\n...\nUnder the hood it's a 218B sparse Mixture-of-Experts with roughly 25B active parameters — big total capacity, modest per-token cost. It supports a 128K context window and 48 languages.\n...\nThe number that got attention is the hardware footprint. Through near-lossless quantization, Command A+ runs on as few as two NVIDIA H100s — or a single Blackwell B200. That matters enormously for the buyers Cohere is courting: organisations that want a capable model on their own infrastructure for data-control or regulatory reasons, but can't justify a sprawling GPU cluster. A 218B-class model that fits on two H100s is the difference between 'theoretically self-hostable' and 'actually deployable by a normal enterprise IT team'.\n...\nships with native citation grounding ... to its sources ... part of generation\n...\nThe Apache 2.0 licence is a calculated wager on sovereign AI — the growing demand from governments and enterprises for capable models they can run entirely within their own borders and control. By giving away the weights under the most permissive licence it's ever used, Cohere is trading some control for reach, betting that the deployment story (on-prem, two GPUs, citations, 48 languages) wins the enterprise even when the raw benchmarks don't top the closed frontier.\n...\nCommand A+ isn't trying to win the 'smartest model' contest. It's engineered to win the 'which model can I actually deploy in my regulated, sovereignty-conscious organisation' contest — and on that axis, Apache 2.0 weights, a two-GPU footprint, and native citations are a genuinely strong hand.",
-      "signal_score": 11.0,
-      "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
-        "rank": 4
-      }
-    },
-    {
-      "id": "095959a2fd68",
-      "source": "exa_news",
-      "title": "Introducing Kong Operator 2.3: AI Gateway & More  | Kong Inc.",
-      "url": "https://konghq.com/blog/product-releases/kong-operator-2-3",
+      "title": "GPT-6 Astra hit 99.9 percent on the reasoning benchmark that had defeated every previous model, and its 1.05 million-token workspace is the largest a flagship chat model from this lab has ever carried",
+      "url": "https://gcn.com/gpt-6-astra-hit-percent-reasoning/21940",
       "published_at": "2026-09-25T00:00:00.000Z",
-      "excerpt": "Introducing Kong Operator 2.3: AI Gateway & More | Kong Inc.\n\nSeptember 25, 2026\n\n# # Introducing Kong Operator 2.3: AI Gateway & More\n...\nToday we're announcing Kong Operator 2.3. Building on 2.2's expansion into supporting Event Gateway and Dev Portal, this release significantly broadens our feature set. While 2.2 introduced foundational event-driven capabilities, 2.3 brings Kong ** AI Gateway** fully into the Kubernetes-native fold, enabling teams to manage LLM routing and policies through familiar GitOps workflows. This update also rounds out Gateway API coverage with ``TCPRoute``, ``UDPRoute``, and ``GRPCRoute``.\n...\nWe have full Kubernetes CRD support for Kong AI Gateway. You can now declare an entire AI Gateway deployment; control plane, providers, models, policies, authentication, and consumers as Kubernetes resources, and manage it with the same GitOps workflows you already use for the rest of your Kong estate.\n...\nA ``KonnectAIGateway`` provisions the AI Gateway control plane in Konnect and acts as the controller for everything else. From there, ``AIGatewayModelProvider`` and ``AIGatewayModel`` connect upstream LLM providers; OpenAI, Anthropic, Azure, Bedrock, Gemini, and a dozen others and exposes them as routes, with support for weighted round-robin, priority, latency usage-based, and semantic load balancing across targets:\n...\nBecause Kong Operator natively understands these AI Gateway CRDs, you can easily configure provider-specific rules, such as setting up Azure OpenAI latency-based load balancing or configuring dynamic Bedrock model routing directly within your Kubernetes manifests.\n\n``AIGatewayPolicy`` applies guardrails like prompt injection detection and topic allowlisting before a request ever reaches a model. AIGatewayAuthStrategy and the ``AIGatewayConsumer`` family add per-team API key authentication, consumer grouping, and usage attribution, all enforced at the Gateway.\n...\nKong Operator has supported ``HTTPRoute`` and ``TLSRoute`` for a while. 2.3 fills out the rest of the Gateway API route kinds, ``TCPRoute``, ``UDPRoute``, and ``GRPCRoute `` are now supported both for on-prem gateways and for Konnect based Gateway deployments.\n...\netc. and that tag now\n...\nRunning AI Gateway and Event Gateway data planes in production means being able to scale them the same way you'd scale anything else in Kubernetes. 2.3 adds native ``HorizontalPodAutoscaler`` support for AI and Event Gateway Dataplanes. Just set ``spec.deployment.scaling.horizontal``, and the operator creates and manages the HPA for you, removing it cleanly if you switch back to a static replica count, which prevents the common issue where the Kong Operator HPA gets deleted or orphaned when replicas are fixed manually.\n...\nWith 2.3, Kong Operator now manages API Gateway, AI Gateway, Event Gateway, and Dev Portal resources through the same declarative, Kubernetes-native model, version-controlled, reviewed, and deployed through the same GitOps pipelines you already run everything else through. \n\nWhether you're routing HTTP, TCP, UDP, or gRPC traffic, proxying to an LLM, or exposing MCP tools, it's all the same operational pattern within Kubernetes.\n...\n** Q: How do I deploy Kong AI Gateway on Kubernetes?** A: Deploying Kong AI Gateway on Kubernetes is done via the Kong Operator. You apply Custom Resource Definitions (CRDs) like ``AIGatewayModel`` and ``AIGatewayPolicy `` to define your control plane, providers, and models. For full instructions, refer to our [ _ AI Gateway on Kubernetes get-started guide_](https://developer.konghq.com/operator/get-started/ai-gateway/install/) _ AI Gateway on Kubernetes get-started guide_.\n\n** Q: What are the main differences between Kong Operator 2.2 vs 2.3?** A: While Kong Operator 2.2 introduced support for Event Gateway and Dev Portal, version 2.3 expands heavily into AI and advanced routing. The biggest differences in 2.3 are native Kubernetes AI Gateway support (enabling GitOps for LLM routing) and full Gateway API protocol coverage, including TCPRoute, UDPRoute, and GRPCRoute.\n...\n** Q: What is semantic load balancing in an LLM gateway?** A: Semantic load balancing is an advanced routing strategy where Kong AI Gateway analyzes the actual meaning or context of an incoming prompt—not just traditional HTTP metrics—to route the request to the most appropriate, cost-effective, or performant LLM target.\n\n** Q: How do I fix a \"Gateway API GRPCRoute unsupported\" error in Kong Operator?** A: This error occurs when using an older version of the Kong Operator that only supported HTTPRoute and TLSRoute. To fix it, upgrade to Kong Operator 2.3, which introduces full native support for GRPCRoute, as well as TCPRoute and UDPRoute.",
+      "excerpt": "GPT-6 Astra hit 99.9 percent on the reasoning benchmark that had defeated every previous model, and its 1.05 million-token workspace is the largest a flagship chat model from this lab has ever carried\n\n \n\n# GPT-6 Astra hit 99.9 percent on the reasoning benchmark that had defeated every previous model, and its 1.05 million-token workspace is the largest a flagship chat model from this lab has ever carried\n\nSeptember 25, 2026 · 3:30 PM 5 min read\n\n September 25, 2026 · 3:30 PM by Hugo Rojas\n...\nA single number sat at the top of the column: 99.9 percent. The test it referred to was one the entire ARC-AGI series had been designed to make hard, and every frontier model had failed it badly just months before. And the workspace this new model carried into each conversation was larger than anything a flagship chat model from this lab had ever held before. How did both records land on the same launch?\n...\nGPT-6 Astra carries a 1,050,000-token context window and a maximum output of 128,000 tokens. A million tokens maps to roughly 750,000 words, or about ten full-length novels read and held simultaneously. No previous flagship chat model from this lab had ever worked at that scale inside a single session.\n\n The mechanism that makes the window useful is how the model handles long agent runs without losing detail. In Codex, Astra introduces a new way to preserve and retrieve context when the context window fills. Historically, models used compaction to summarize work during long sessions; each compaction could leave out details about why a fix failed or how a component behaves. Astra can instead keep notes across context windows, preserving accumulated details without repeatedly compressing them into a single summary, and earlier context windows remain searchable. That shift matters most for developers debugging complex systems across hours of work.\n...\nThe context window is only one half of the story. Astra is built as a computer-use model, and it scored 72.6 percent on OSWorld 2.0, setting a new frontier on computer and browser use at roughly 47 percent less time per task than its predecessor GPT-5.6 Sol. That benchmark tests how reliably an AI can navigate a real desktop, opening applications, filling forms, and moving files without a human steering it turn by turn.\n...\nARC-AGI-3 formally launched on March 25, 2026, and where earlier ARC-AGI benchmarks tested fluid pattern abstraction on static grids, ARC-AGI-3 tests agentic intelligence: the ability to explore a strange world, build an internal model of how it behaves, infer what the goal might be, then plan and execute a working solution. At launch, frontier models from Anthropic, Google DeepMind, OpenAI and xAI all scored below 1 percent on the semi-private set, while untrained members of the public solved 100 percent of the environments. Astra’s 99.9 percent score was produced using OpenAI’s Provider Adapter harness; the ARC Prize Foundation’s own Standard harness put the same model at 62.7 percent , making it the highest verified score on the series either way.\n\nThe published benchmarks also include 97.6 percent on FrontierMath Tier 4 and a perfect score on ExploitBench. Epoch AI, which runs the benchmark, says OpenAI funded its development and has exclusive access to part of it , a caveat worth keeping in mind alongside the score. FrontierMath Tier 4 covers research-grade mathematics problems previously considered beyond any AI system.\n\n The model launched on September 3, ending months of speculation. Pricing reflects the step up in capability: $10 per million tokens for standard input and $50 per million tokens for output. That is 2.5 times higher than the previous flagship’s promotional rate. As global chip sales keep climbing, the software layer is where competitive pressure concentrates.\n...\nNot every capability is available to every user. The lab has adopted a two-track access mechanism: the public model refuses advanced cyber tasks such as proof-of-concept exploits, while looser safeguards go to vetted organizations through a separate program. This is the first model from the lab to reach the Critical level of cybersecurity capability under its Preparedness Framework. \n\nA perfect ExploitBench score means the model can, in principle, identify working software vulnerabilities end to end. Allowing that capability to anyone who pays the API price would hand that power to actors with no oversight.\n\nThis tension is becoming a defining pattern across frontier AI. The push to open large-scale data runs directly into this dynamic: openness and controlled deployment pull in opposite directions at the capability frontier. The lab’s formal dual-track deployment commitment is the most explicit any major AI developer has yet put in writing, a distinction other analysts have also drawn.\n...\nEven so, larger is not always better in practice. Once input crosses into long-context territory, the lab applies higher rates to the entire request, so a long-context workflow requires careful cost control. Sending an entire codebase when only three files matter is expensive and may dilute the model’s attention. The pricing structure is, in effect, a nudge toward precision.\n\nThe record benchmark scores and the record context length arriving together suggest the two advances are complementary. A model that reasons more reliably makes better use of a very large workspace, since it can maintain coherent goals across a much longer span of material. That combination is where the practical gap between these systems and the ones they replace becomes most visible.",
       "signal_score": 10.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -264,12 +225,12 @@
       }
     },
     {
-      "id": "c91395d4fc2f",
+      "id": "095959a2fd68",
       "source": "exa_news",
-      "title": "MetaStone Says Software Optimization Boosted DeepSeek V4.1 Throughput Nearly 7x on PCIe GPUs | AI Industry Today",
-      "url": "https://aiindustrytoday.com/news/metastone-says-software-optimization-boosted-deepseek-v4-1-throughput-nearly-7x-on-pcie-gpus",
+      "title": "Introducing Kong Operator 2.3: AI Gateway & More  | Kong Inc.",
+      "url": "https://konghq.com/blog/product-releases/kong-operator-2-3",
       "published_at": "2026-09-25T00:00:00.000Z",
-      "excerpt": "ed DeepSeek\n...\nMetaStone says its Meta-Infer software stack increased DeepSeek-V4.1-Flash input throughput on an eight-GPU PCIe-only system from 1,932 to 13,274 tokens per second, a 6.87x gain over an early community baseline. The improvement came from enabling faster kernels, rebuilding communication paths, separating prefill and decode parallelism, and retuning memory and caching rather than changing the model itself. The results are vendor-provided and not independently validated, and high-end B300 systems remain several times faster on LLM inference. The more important takeaway is that as AI inference spreads beyond tightly optimized flagship clusters, software-hardware integration can become a major determinant of usable compute and inference economics.\n...\nChinese AI infrastructure company MetaStone says it increased DeepSeek-V4.1-Flash input throughput by nearly sevenfold on an eight-GPU PCIe-only server through software optimization, highlighting how much inference performance can depend on the serving stack rather than accelerator specifications alone.\n\nIn benchmark results published by QbitAI with authorization from MetaStone, DeepSeek-V4.1-Flash input throughput rose from a community “Day 0” baseline of 1,932 tokens per second to 13,274 tokens per second after a series of kernel, communication, parallelism and memory optimizations. That corresponds to a reported 6.87-fold improvement.\n\nThe figures are company-provided benchmarks and have not been independently reproduced. They also compare MetaStone’s optimized software stack with an early community deployment baseline rather than showing that the underlying GPU hardware itself became 6.87 times faster.\n...\nMetaStone’s Meta-Infer engine addresses that gap at several layers. The company said its first stage focused on enabling performance paths that the default framework was failing to use, including a sparse-MLA prefill path, a faster FP8 GEMM implementation and broader use of a PCIe IPC communication fast path.\n\nThose changes lifted DeepSeek-V4.1-Flash input throughput from 1,932 to 5,850 tokens per second before more aggressive serving optimizations were applied. MetaStone characterized this stage primarily as hardware and framework adaptation rather than the introduction of a new inference algorithm.\n\nThe second stage targeted the structural limitations of PCIe-only multi-GPU systems. MetaStone fused attention and projection operations, overlapped computation with collective communication and rewrote parts of the communication path around the lower inter-GPU bandwidth available over PCIe.\n\nIt also configured prefill and decode independently instead of using a single parallelism strategy for both stages. Memory allocation and KV-cache parameters were retuned to avoid out-of-memory conditions and slow fallback paths, while speculative decoding settings were adjusted to the target workload.\n\nAfter those changes, the company said DeepSeek-V4.1-Flash input throughput reached 13,274 tokens per second while retaining support for a 1-million-token context window.\n\nThe context figure is consistent with DeepSeek’s official specification for V4.1-Flash, which lists a 1-million-token context length. DeepSeek also says the model’s redesigned architecture cuts KV-cache HBM requirements to one-quarter and SSD requirements to one-eighth of the previous generation, making memory and serving efficiency a central part of the model’s design.\n\nSoftware support for the new model is still evolving. SGLang’s current DeepSeek-V4.1 deployment guide says support has not yet reached a regular SGLang release and requires a preview container. Its published recipes currently focus on systems including NVIDIA H200, B200, B300 and GB300 as well as AMD MI350X.\n...\nMetaStone reported similar, though smaller, gains on other language models. DeepSeek-V4-Flash input throughput increased from 14,546 to 22,584 tokens per second, or 1.55 times, while GLM-5.3 increased from 3,236.78 to 6,222.72 tokens per second. For GLM-5.3, the company also said P95 time to first token fell from 141.6 seconds to 46.6 seconds and supported context increased from roughly 270,000 to 1.05 million tokens.\n\nThe performance gap with NVIDIA’s top-end data-center accelerators nevertheless remains substantial for large-language-model inference. MetaStone’s comparison found that an eight-GPU B300 system delivered roughly 4.9 to 5.6 times the input throughput of its eight-GPU PCIe system on DeepSeek-V4-Flash at matched concurrency points, while the gap on GLM-5.3 was roughly 3.5 to 4.7 times.\n...\nMetaStone said its broader optimization method also applies to domestic Chinese accelerators. Because many such chips sit outside the main validation matrices of widely used open-source frameworks, engineers may need to explicitly select hardware-specific attention kernels, disable incompatible fused operations and configure communication differently between prefill and decode.\n\nIn one company-reported test, separating shared and routed expert computation into parallel streams and overlapping them with communication improved throughput by 11.26% across 35 paired runs on a Chinese GPU platform.\n\nThe results point to a broader change in AI inference economics. Accelerator performance is increasingly determined not only by peak FLOPS or memory bandwidth, but also by whether serving frameworks can make full use of the hardware through optimized kernels, communication, scheduling, quantization and caching.\n\nThat creates an opportunity for lower-cost or more widely available accelerators, particularly when an application does not require the absolute performance of the most expensive GPU systems. But it does not eliminate the hardware gap: MetaStone’s own language-model benchmarks still show B300 systems several times ahead in raw throughput.\n\nThe practical implication is that “can run the model” and “can operate the model efficiently in production” are increasingly different engineering milestones. As organizations deploy larger open models across a more heterogeneous GPU market, optimization of the inference software stack may become an important part of both capacity planning and total cost",
+      "excerpt": "Introducing Kong Operator 2.3: AI Gateway & More | Kong Inc.\n\nSeptember 25, 2026\n\n# # Introducing Kong Operator 2.3: AI Gateway & More\n...\nToday we're announcing Kong Operator 2.3. Building on 2.2's expansion into supporting Event Gateway and Dev Portal, this release significantly broadens our feature set. While 2.2 introduced foundational event-driven capabilities, 2.3 brings Kong ** AI Gateway** fully into the Kubernetes-native fold, enabling teams to manage LLM routing and policies through familiar GitOps workflows. This update also rounds out Gateway API coverage with ``TCPRoute``, ``UDPRoute``, and ``GRPCRoute``.\n...\nWe have full Kubernetes CRD support for Kong AI Gateway. You can now declare an entire AI Gateway deployment; control plane, providers, models, policies, authentication, and consumers as Kubernetes resources, and manage it with the same GitOps workflows you already use for the rest of your Kong estate.\n...\nA ``KonnectAIGateway`` provisions the AI Gateway control plane in Konnect and acts as the controller for everything else. From there, ``AIGatewayModelProvider`` and ``AIGatewayModel`` connect upstream LLM providers; OpenAI, Anthropic, Azure, Bedrock, Gemini, and a dozen others and exposes them as routes, with support for weighted round-robin, priority, latency usage-based, and semantic load balancing across targets:\n...\nBecause Kong Operator natively understands these AI Gateway CRDs, you can easily configure provider-specific rules, such as setting up Azure OpenAI latency-based load balancing or configuring dynamic Bedrock model routing directly within your Kubernetes manifests.\n\n``AIGatewayPolicy`` applies guardrails like prompt injection detection and topic allowlisting before a request ever reaches a model. AIGatewayAuthStrategy and the ``AIGatewayConsumer`` family add per-team API key authentication, consumer grouping, and usage attribution, all enforced at the Gateway.\n...\nKong Operator has supported ``HTTPRoute`` and ``TLSRoute`` for a while. 2.3 fills out the rest of the Gateway API route kinds, ``TCPRoute``, ``UDPRoute``, and ``GRPCRoute `` are now supported both for on-prem gateways and for Konnect based Gateway deployments.\n...\netc. and that tag now\n...\nRunning AI Gateway and Event Gateway data planes in production means being able to scale them the same way you'd scale anything else in Kubernetes. 2.3 adds native ``HorizontalPodAutoscaler`` support for AI and Event Gateway Dataplanes. Just set ``spec.deployment.scaling.horizontal``, and the operator creates and manages the HPA for you, removing it cleanly if you switch back to a static replica count, which prevents the common issue where the Kong Operator HPA gets deleted or orphaned when replicas are fixed manually.\n...\nWith 2.3, Kong Operator now manages API Gateway, AI Gateway, Event Gateway, and Dev Portal resources through the same declarative, Kubernetes-native model, version-controlled, reviewed, and deployed through the same GitOps pipelines you already run everything else through. \n\nWhether you're routing HTTP, TCP, UDP, or gRPC traffic, proxying to an LLM, or exposing MCP tools, it's all the same operational pattern within Kubernetes.\n...\n** Q: How do I deploy Kong AI Gateway on Kubernetes?** A: Deploying Kong AI Gateway on Kubernetes is done via the Kong Operator. You apply Custom Resource Definitions (CRDs) like ``AIGatewayModel`` and ``AIGatewayPolicy `` to define your control plane, providers, and models. For full instructions, refer to our [ _ AI Gateway on Kubernetes get-started guide_](https://developer.konghq.com/operator/get-started/ai-gateway/install/) _ AI Gateway on Kubernetes get-started guide_.\n\n** Q: What are the main differences between Kong Operator 2.2 vs 2.3?** A: While Kong Operator 2.2 introduced support for Event Gateway and Dev Portal, version 2.3 expands heavily into AI and advanced routing. The biggest differences in 2.3 are native Kubernetes AI Gateway support (enabling GitOps for LLM routing) and full Gateway API protocol coverage, including TCPRoute, UDPRoute, and GRPCRoute.\n...\n** Q: What is semantic load balancing in an LLM gateway?** A: Semantic load balancing is an advanced routing strategy where Kong AI Gateway analyzes the actual meaning or context of an incoming prompt—not just traditional HTTP metrics—to route the request to the most appropriate, cost-effective, or performant LLM target.\n\n** Q: How do I fix a \"Gateway API GRPCRoute unsupported\" error in Kong Operator?** A: This error occurs when using an older version of the Kong Operator that only supported HTTPRoute and TLSRoute. To fix it, upgrade to Kong Operator 2.3, which introduces full native support for GRPCRoute, as well as TCPRoute and UDPRoute.",
       "signal_score": 9.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -290,16 +251,29 @@
       }
     },
     {
-      "id": "31fca1cbcefc",
+      "id": "ad2e609cadff",
       "source": "exa_news",
-      "title": "Xing4.0-29B: A Versatile Agentic Large Model That Runs on a",
-      "url": "https://www.globenewswire.com/news-release/2026/09/24/3368528/0/en/xing4-0-29b-a-versatile-agentic-large-model-that-runs-on-a-single-gpu-now-officially-released.html",
-      "published_at": "2026-09-24T00:00:00.000Z",
-      "excerpt": "Beijing, Sept. 24, 2026 (GLOBE NEWSWIRE) -- China Telecom Artificial Intelligence Technology Co., Ltd. (China Telecom AI) recently officially released Xing4.0-29B-A4B, its next-generation lightweight agentic large model. With 29 billion total parameters and just 4 billion activated parameters, the model provides enterprise-grade agentic capabilities at an extremely low compute threshold: it can be deployed in large-scale enterprise production environments or run locally on a personal consumer-grade graphics card, offering developers and enterprises a highly cost-effective AI agent solution.\n...\nUsing low-bit quantization and memory optimization techniques, Xing4.0-29B-A4B requires only 15 GB of GPU memory, which means it can run locally on a single consumer-grade graphics card. This dramatically lowers the infrastructure barrier for developers and enterprises building AI agent applications, eliminating the need to invest in expensive multi-GPU server clusters.\n...\nFollowing its open-ecosystem strategy, China Telecom AI has released Xing4.0-29B-A4B on major open-source communities such as GitHub and Hugging Face. The model is compatible with mainstream open-source training, inference, and agent development frameworks, and has been validated across a range of domestic and mainstream AI chip platforms. \"We believe the future of AI lies not in ever-larger models, but in making powerful intelligence accessible to everyone, affordable, and deployable anywhere,\" said a spokesperson for China Telecom AI. \"Xing4.0-29B-A4B proves that a compact model can also deliver agentic capabilities on par with far larger models — whether on a developer's desktop or in an enterprise production environment.\"\n...\nXing4.0-29B-A4B is now officially available, and developers can access the model through the following platforms:\n...\nTelecom AI said it ... advance the Xing4 ... plans to release larger-parameter models in the coming months, further pushing the boundaries of what compact, ... AI architectures can achieve in real-world applications.",
-      "signal_score": 9.0,
+      "title": "Meituan Launches LongCat-2.5-Preview, Targets Long-Horizon Tasks - News - Cocoloop",
+      "url": "https://news.cocoloop.cn/en/2026/09/longcat-25-preview-1m-context",
+      "published_at": "2026-09-27T00:00:00.000Z",
+      "excerpt": "-2.5\n...\nTotal parameters run about 1.6 trillion, with roughly 48 billion activated per inference, a 1-million-token context window, and up to 128K tokens of output per call. Existing users get a 5-million-token trial quota, and the overseas coding tool OpenCode is offering two weeks of free access.\n\nMeituan’s LongCat team launched LongCat-2.5-Preview on its own API platform on September 25. It’s the next generation after LongCat-2.0, which was open-sourced in late June, and the official pitch boils it down to two words: long-horizon tasks and multimodal.\n\nA day later, the overseas ... coding tool OpenCode announced it\n...\nLongCat-2.5-Preview sticks with the mixture-of-experts (MoE) approach, with total parameters around 1.6 trillion and roughly 48 billion activated per inference — the same tier as the 2.0 release. It natively supports a 1-million-token context window, with a maximum single output of 128K tokens.\n\nThe changes cluster in two areas. First, image understanding is new: the model can parse image content for cross-modal Q&A, content summarization, and visual reasoning. Second, it’s built for \"long-workflow\" tasks — Meituan lists scenarios including terminals, browsers, desktop software, spreadsheets, and design tools, meaning the model can operate across multiple interfaces continuously within a single task.\n\nCoding is the centerpiece of this launch. Meituan says the model stands out at code generation, code comprehension, and automated programming tasks, and it’s compatible with mainstream coding tools including Claude Code, OpenCode, OpenClaw, Hermes, and Kilo Code. The API supports both OpenAI and Anthropic formats.\n\nMeituan hasn’t published any benchmark scores so far, so there’s no comparable data yet on how much it has improved over 2.0 on GUI operation and long-workflow tasks. This release is labeled \"Preview,\" and the company hasn’t said whether it will open-source the weights the way it did with 2.0.\n...\nThe most immediate benefit is low switching cost. Because the API is compatible with the Anthropic format, developers used to Claude Code can swap the backend to LongCat just by changing an API endpoint and key, without rewriting their workflow. For teams in China where calling overseas models isn’t convenient, that amounts to a ready-made alternative backend.\n...\nThe combination of ... context and long workflows is ... at codebase-level work. A million tokens can roughly hold the main source code of a mid-sized project, letting the model read it all before making changes — saving ... lot of the hassle of stitching context together from fragments. How many steps a multi-step operation can sustain before drifting off ... developers actually put it through real use.\n...\nLongCat’s path so far has a discernible pattern. Before the 2.0 release was open-sourced, it was quietly offered for free on OpenRouter under the codename Owl Alpha, and usage briefly topped the platform’s charts before its identity was revealed and it was open-sourced under the MIT license; Meituan says both training and inference run on domestic chip clusters.\n\nWith 2.5-Preview, the company has again chosen to go free first and figure out pricing later: a trial quota on its own platform, and a two-week free period through an overseas tool. Real-world usage volume and developer feedback from those two weeks on OpenCode will likely shape the eventual pricing.",
+      "signal_score": 8.0,
       "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
-        "rank": 6
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 7
+      }
+    },
+    {
+      "id": "ec579313e80b",
+      "source": "exa_news",
+      "title": "Kotaemon公司注册流程指导：工商手续办理-郑州网页设计网站制作-尧图网站建设",
+      "url": "http://www.mhpq.cn/news/124634",
+      "published_at": "2026-09-25T00:00:00.000Z",
+      "excerpt": "## Kotaemon： ... 高可靠智能体的\n...\n正是在这样的背景下，Kotaemon 这个专注于可复现、可评估、可维护的智能代理框架应运而生。它不追求炫技式的功能堆砌，而是从工程落地的真实需求出发，为开发者提供一套真正能在企业环境中稳定运行的技术方案。\n\n### 从单次问答到持续交互：RAG 智能体的核心突破\n\n传统问答系统往往基于规则或检索匹配，面对复杂语义时表现僵硬；而纯生成式模型虽然灵活，却容易产生幻觉。Kotaemon 的核心思路是：让每一次回答都有据可依，同时保留语言模型的理解与表达能力。\n\n这背后的关键技术就是检索增强生成（RAG）。不同于简单地把文档片段拼接到提示词里，Kotaemon 构建了一个闭环的工作流：\n\n1. 用户提问 →\n2. 系统将问题向量化，在向量数据库中查找最相关的知识片段 →\n3. 把原始问题 + 检索结果组合成结构化提示 →\n4. 输入大模型生成最终回复 →\n5. 记录全过程用于后续分析与优化\n...\n为此，Kotaemon 提供了模块化的处理链路：\n\n```\nfrom kotaemon.rag import RetrievalAugmentedGenerator from kotaemon.embeddings import HuggingFaceEmbedding from kotaemon.retrievers import VectorDBRetriever from kotaemon.llms import HFTextGenerationModel # 初始化组件 embedding_model = HuggingFaceEmbedding(model_name=\"all-MiniLM-L6-v2\") retriever = VectorDBRetriever(embedding=embedding_model, db_path=\"./vector_db\") llm = HFTextGenerationModel(model_name=\"google/flan-t5-large\") # 构建RAG管道 rag_pipeline = RetrievalAugmentedGenerator( retriever=retriever, generator=llm, prompt_template=\"Based on the following context:\\n{context}\\nAnswer: {question}\" ) # 执行查询 response = rag_pipeline(\"What is the capital of France?\") print(response.text)\n...\n- 使用`all-MiniLM-L6-v2`这类轻量级嵌入模型，是为了在准确率和推理延迟之间取得平衡；\n- `VectorDBRetriever`支持多种后端（FAISS、Chroma、Pinecone），便于根据数据规模选择合适存储；\n- `prompt_template`可自定义，避免不同场景下提示词格式混乱导致效果波动。\n\n更重要的是，所有这些组件都通过标准化接口连接，意味着你可以轻松替换某个部分而不影响整体流程——比如把本地 FAISS 换成云端 Pinecone，或者将 Flan-T5 升级为 Llama3，整个系统依然能正常工作。\n\n这种解耦设计，正是 Kotaemon 区别于许多“玩具级”开源项目的关键所在。\n...\nKotaemon 的做法是引入对话状态机（Dialogue State Tracker）和工具调用机制（Function Calling），构建一个具备主动行为能力的智能代理。\n\n```\nfrom kotaemon.agents import DialogAgent from kotaemon.tools import ToolRegistry from kotaemon.llms import OpenAIChatModel @ToolRegistry.register( name=\"get_order_status\", description=\"Retrieve current status of an order by ID\" ) def get_order_status(order_id: str): return {\"order_id\": order_id, \"status\": \"shipped\", \"estimated_delivery\": \"2025-04-10\"} agent = DialogAgent( llm=OpenAIChatModel(model=\"gpt-4\"), tools=ToolRegistry.get_tools(), enable_retrieval=True, knowledge_base=\"company_kb_index\" ) conversation = agent.start_new_session() response = conversation.send(\"我的订单#12345现在在哪？\") print(response.text) # 输出示例：\"您的订单#12345已发货，预计2025年4月10日送达。\"\n...\n- 工具函数通过装饰器注册后，会被自动暴露给LLM，模型可以根据语义决定是否调用；\n- 调用结果会作为上下文反馈回模型，参与下一步决策；\n- 整个会话的状态由`ConversationManager`统一维护，即使服务重启也能恢复上下文（配合外部存储时）；\n...\n### 企业级\n...\n很多AI项目失败的原因，并非技术本身不行，而是缺乏面向生产的工程支撑。Kotaemon 在架构设计之初就考虑到了这一点，其典型部署结构如下：\n\n```\n[用户端] ↓ (HTTP/WebSocket) [NLU 接入层] → [会话管理器] ←→ [工具执行器] ↓ ↓ ↑ [意图识别] [状态跟踪] [API网关] ↓ ↓ ↓ [对话策略] → [RAG引擎] → [向量数据库] ↓ [LLM推理服务] ↓ [响应生成与输出]\n```\n...\n每一层只负责特定任务，便于独立优化与替换。例如 NLU 层可以用 Rasa 或 Spark NLP 替代，只要输出符合约定格式即可。\n...\n工具执行器与外部系统的交互必须经过 API 网关，实施统一的身份认证、权限校验和调用审计。我们曾见过有团队直接允许LLM调用内部API，结果一条“帮我删掉所有测试数据”的请求差点酿成事故。\n...\n所有关键节点都会输出结构化日志，包括： - 检索命中了哪些文档？ - 工具调用是否成功？ - 生成耗时多少？置信度如何？\n\n结合 Prometheus + Grafana，运维人员可以实时监控 QPS、延迟、错误率等指标，及时发现异常。\n...\n新版本上线前，可通过流量切片机制先在小范围用户中验证效果。如果发现生成内容偏离预期，系统会自动降级到旧策略或触发人工审核流程。\n...\n对于高频查询（如“退货政策”、“营业时间”），启用 Redis 缓存可显著降低向量检索压力。实验数据显示，在典型电商客服场景下，合理缓存能使平均响应时间下降约 40%。\n...\n大模型推理尤其是闭源API调用成本高昂。可以通过以下方式优化： - 在前端设置关键词拦截，简单问题由规则引擎直接回答，不走LLM； - 启用批处理模式，合并多个请求一次性处理； - 使用较小但专用的微调模型替代通用大模型。\n...\nKotaemon 正是朝着这个方向努力：它不追求成为最大的模型或最快的推理引擎，而是致力于打造一个可复现、可测试、可扩展的开发框架。无论是金融行业的合规咨询、医疗领域的初步问诊辅助，还是制造业的知识传承，它都能帮助企业把 AI 从“演示Demo”变成“可用产品”。\n\n未来的智能系统不会是单一模型的独角戏，而是一个由检索、推理、工具、记忆共同构成的协作网络。而 Kotaemon 所做的，就是为这张网络提供坚实的连接件和稳定的运行底座。",
+      "signal_score": 8.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 7
       }
     },
     {
@@ -309,10 +283,10 @@
       "url": "https://traictory.com/news/2026-09-25-astra-ksp-time-horizon-index",
       "published_at": "2026-09-25T00:00:00.000Z",
       "excerpt": "s KSP index puts GPT-6 Astra ... | Traictory\n...\nVals AI's Time Horizon Index gives an agent five days in Kerbal Space Program. GPT-6 Astra scored 90.50%, 27 points clear, and lost only Eve's return.\n...\nVals AI put GPT-6 Astra alone at the top of its Time Horizon Index on September 23. The benchmark hands an agent five days of active time, 120 hours, to build and fly a space program inside Kerbal Space Program, then scores it against a fixed list of 30 missions. Astra finished at 90.50%. The next best model, Claude Fable 5.1, finished at 63.33%, a gap of 27.17 points on a ladder where one completed rung is worth 3.33%. The post announcing the result states the shape of it: \"GPT-6 Astra landed on every planet and moon in KSP with a surface (14 worlds) and flew a kerbal home from 13 of them. Only Eve's return stopped it. It scored 90.5% on KSP-bench.\"\n...\nThe protocol is narrow and published in full. One campaign per model, 120 active hours, one fixed sequence of 30 missions across 11 systems. Rungs 1 through 28 are land-and-return pairs for the same Kerbal: Mun, Minmus, Duna, Ike, Gilly, Dres, Eeloo, Moho, Vall, Bop, Pol, Laythe, Tylo and Eve. Fourteen worlds, two missions each. Rung 29 is an asteroid capture, rung 30 a single-Kerbal grand tour. Every rung is worth 3.33%, so a return leg counts as much as the landing before it.\n...\nEvery number below was measured by the benchmarker running the models under one fixed protocol, not self-reported by the labs selling them. Vals recorded API spend alongside each score, and the ranking breaks against that column.\n\n| Model | Score | Recorded API cost | Mapped human-hours |\n| --- | --- | --- | --- |\n| GPT-6 Astra | 90.50% | $4,206.59 | 85h 41m to 113h 32m |\n| Claude Fable 5.1 | 63.33% | $4,655.01 | 57h 36m to 75h 15m |\n| GPT-5.6 Sol | 23.83% | $2,027.20 | 15h 43m to 18h 8m |\n| Gemini 3.8 Flash | 18.83% | $543.14 | 11h 16m to 12h 4m |\n| Claude Opus 5 | 18.83% | $1,348.77 | 11h 16m to 12h 4m |\n| Claude Opus 4.8 | 11.83% | $1,499.32 | n/a |\n| Muse Spark 1.1 | 1.67% | $144.92 | n/a |\n\nFable 5.1 spent $449 more than Astra and scored 27 points lower. Below both, Muse Spark 1.1 reached 1.67% for $144.92 and Kimi K3 hit 10.50% for $216.43, about half what GPT 5.5 paid for 8.33%. Costs cover successful requests only: failed, interrupted and unresolved requests are excluded, as is hosting, so these are subtotals rather than full campaign bills. The low spend at the bottom is not efficiency, it is early exit.\n...\nRead the leaderboard as one campaign: one run per model, five days each, no repeats and no error bars, so both the gap and the costs under it rest on a single draw per row. Vals notes that the September runs used a repaired time-warp infrastructure, with credited infrastructure downtime excluded from the 120-hour clock, and that these results replace the earlier Opus 5, GPT-5.6 Sol and Kimi K3 campaigns while adding Astra, Fable 5.1 and Gemini 3.8 Flash. Earlier numbers stay on the page for comparison, so a score is only comparable within one release.\n\nThis is the same evaluator's second long-horizon game result to reach this site. The earlier Astra claim, on Factorio: Space Age, arrived with no protocol, no cost and no replay attached. This one comes with a fixed rubric and a spend column. Everything else about the harness is still unstated: neither the benchmark nor OpenAI has said whether mods, shared blueprints, console commands or save-file access were available, and no per-mission replay or run log has been published.\n...\n, comes from a True ... : 31 responses in ... July 2026 snapshot, rank ... at the 75th percentile of the 60 to 80 ... bucket, with ... used and the same ... added. Then the ... : \"No one has ... this exact 28-rung sequence yet. These are two proxy estimates, not lower and upper bounds, a confidence interval, or a measured human.\" Asteroids and the grand tour sit outside the human reference, so ... 's mapped band describes a task that stops where the proxies stop.\n...\nEve is the hardest return in the stock system, and Astra's failure there was not a physics failure. \"Astra was very cautious, and it's caution cost it Eve. Many Eve flights ended with the rocket intact because its own safety checks stopped them. One was aborted above the atmosphere over a 3.47 degree pointing error against its self-set 3 degree limit, with all 228 parts and Jeb unharmed.\" That is a 0.47 degree overshoot on a tolerance the model set itself, and the abort preserved the vehicle.\n...\nThree things would move this from a result to a benchmark: re-runs, so the gap has a spread instead of a single number; a second campaign per model, which would test whether caution is a policy Astra holds or a mood it was in; and per-mission replays or logs, so someone outside Vals could check that the 30 rungs were flown in the game rather than around it. Whether the repaired time-warp infrastructure held for all five days on every curve is a question the page answers only in aggregate.\n...\nscrutiny. The screenshot reached ... 24,",
-      "signal_score": 8.0,
+      "signal_score": 7.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 7
+        "rank": 8
       }
     },
     {
@@ -322,73 +296,108 @@
       "url": "http://www.mhpq.cn/news/10964",
       "published_at": "2026-09-25T00:00:00.000Z",
       "excerpt": "文章介绍了基于Qwen3-Coder、RAG和Iflow实现的LLM代码评审Agent实践，通过百炼Embedding构建知识索引，在CI流水线中自动触发AI评审。该方案在C3级安全仓库中成功落地，已累计执行上千次评审，有效发现并发缺陷、资源泄漏等传统CR易忽略的逻辑风险，成功拦截数十次高危缺陷，显著提升评审效率与质量，具备高度通用性。\n...\n本文介绍在C3级代码仓库中落地LLM代码评审的Agent实践。针对C3仓库禁用闭源模型的安全要求，基于Qwen3-Coder、RAG、Iflow实现，通过百炼Embedding构建知识索引，RAG知识库与生产代码同仓管理，文档与代码共生命周期保障一致性，AI辅助人工代码评审。\n\n在CI流水线监听代码修改自动触发AI评审，LLM进行代码解释、逻辑分析和识别并发缺陷、资源泄漏、边界错误、性能瓶颈及规范问题。以块存储C/C++百万行大库为例，已累计执行上千次评审，并部署至存储统一代码门禁平台，支持平台接入所有仓库。\n\n实践表明，AI可有效发现传统CR易忽略的逻辑风险，已数十次成功拦截高危缺陷，显著提升评审效率与质量。当前持续优化准确性、误报率、采纳率，增强上下文感知，探索修复建议生成。该实践可复用于各类代码门禁平台或AI辅助编程工具。\n...\n1.RAG（Retrieval-Augmented Generation）：是一种融合检索与生成的技术，通过从外部知识库（如文档、数据库）获取信息并注入提示（Prompt），使大语言模型基于最新、可信数据生成回答，提升准确性与实时性，缓解知识局限、幻觉和安全风险，广泛应用于私域知识问答场景。\n\n2.Iflow CLI：基于Gemini CLI改造，模型均集团内部部署，完美适配Kimi-K2, Qwen3 Coder模型，可使用在C3代码。\n\n3.Qwen3-Coder：一个480B 参数、35B有效参数、原生支持256K上下文的开源 MoE 智能编程引擎。\n...\n同时，团队主仓库为 C3 级安全等级，无法使用 Cursor、Qoder 等工具。团队基于 Qwen3-Coder 构建评审 Agent，通过 RAG 注入私域知识（如设计文档、历史缺陷），增强 LLM 的上下文感知能力，并结合 Iflow 实现自动化工作流。Agent 部署于 CI 流水线，代码提交后自动触发评审，如下图所示，辅助开发者完成逻辑检查与风险分析，提升代码评审效率与质量。\n...\nQwen3-\n...\n流程：Webhook代码监听 → 知识库向量检索 → Promp引导拼接 → 输入LLM → 输出返回结果；\n\n实现：RAG + Iflow + Qwen3-Coder，RAG使用的是百炼的 text-embedding-v4 模型进向量数据库索引；\n...\n从零撰 ... 了团队多年沉 ... 、编码规范、测试规范、测试设计模版等高质量 ... 图转文字均\n...\n输入给LLM之前进行RAG检索的时候，是从Agent服务所在的本地向量数据库faiss消费数据，并非从git仓库实时获取；git仓库管理知识库只是作为人与人之间方便共享、知识库与代码之间同步的远程存储工具；所以RAG每次检索并非git仓库最新的版本，而是离线定时更新Word2Vec到本地向量知识库（该实现机制和Cursor的Code2Vec和Word2Vec后台向量知识库更新一致）。\n...\n我们与存储代码门禁平台团队合作，将AI Agent工作流嵌入到门禁平台，支持平台所有接入仓库，不同角色的实现交互：\n...\n代码评审聚合“在线上下文”（短期记忆）和“离线知识库”（长期记忆）信息，构建成一个完整的Prompt输入给大模型作为决策依据。\n...\n钉钉文档 ... Log Message如下图所示：\n...\n1.累计使用次数：已在EBS仓库代码门禁触发上千次LLM代码评审，日均 1W 次模型调用、5 亿 Token 使用量；\n\n2.评审效率：10 分钟/次：从PR创建到收到AI首轮评论，大幅缩短了 ... 评审的等待周期；\n\n3.发现问题多样性：不限于编码错误，多次识别出深层次的并发问题、边界场景和资源泄漏等。\n...\n一次企业级安全要求 RAG+开源LLM代码评审探索，该方法具备高度的通用性和扩展性：\n\n1.“LLM评审功能” 横向复用： 将当前AI Agent封装为标准化的原子能力，嵌入到代码门禁平台或作为IDE插件，让其他团队仅需维护自己的知识库即可“开箱即用”。\n\n2.“RAG+开源LLM” 纵向拓展： 知识库不仅能服务于代码评审，亦可辅助 Feature 测试设计、用例生成、故障模式分析等，实现“一次沉淀，多次复用”。\n...\n维护经验表明，提升AI评审质量并非依赖单一技巧 ... 而是必须建立系统化的调优流程。核心在于构建“反馈-评估-优化”闭环，依托固定评测集和量化指标，系统性排查知识库质量、向量切片策略、RAG检索精度、Prompt引导方式及LLM能力边界等关键因素。",
-      "signal_score": 8.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 7
-      }
-    },
-    {
-      "id": "43accca1e564",
-      "source": "exa_news",
-      "title": "Liquid AI Releases LFM2.5 2.6B Model for Edge Devices",
-      "url": "https://ai-newspaper.com/articles/liquid-ai-launches-lfm2-5",
-      "published_at": "2026-09-27T00:00:00.000Z",
-      "excerpt": "Liquid AI Releases LFM2.5 2.6B Model for Edge Devices\n...\n# Liquid AI Launches LFM2.5-2.6B Model Optimized for Edge Computing\n\nThe release, announced via MarkTechPost, positions a sub-3B-parameter checkpoint against models nearly four times its size on instruction-following and tool-use benchmarks, while shipping open…\n...\nLiquid AI has shipped LFM2.5-2.6B, a 2.69-billion-parameter agentic model architected entirely for on-device inference — from Raspberry Pi to laptops and robots. The release, announced via MarkTechPost, positions a sub-3B-parameter checkpoint against models nearly four times its size on instruction-following and tool-use benchmarks, while shipping open weights across GGUF, MLX, and ONNX formats on day one. In a week when Tencent, DeepSeek, and Ant Group each pushed MoE heavyweights into the open, Liquid AI is betting that the frontier for agentic workloads runs through memory-constrained edge hardware, not server racks.\n\n## Architecture: 30 Layers, Two Block Types, 34T Tokens\n\nThe stack is 22 double-gated short convolution blocks plus 8 grouped-query attention blocks across 30 layers total. Vocabulary was doubled to 128,000 tokens by extending the existing tokenizer in place rather than retraining from scratch — a cost-saving measure that keeps embedding matrices aligned with prior checkpoints. A dedicated mid-training phase extends the context window to 131,072 tokens, covering 16 languages in a text-only modality.\n\nPre-training consumed approximately 34 trillion tokens. Two checkpoints ship: LFM2.5-2.6B-Base for fine-tuning and LFM2.5-2.6B post-trained for agentic workloads. Both are published on Hugging Face under the lfm1.0 license with immediate support in llama.cpp, vLLM, SGLang, and LM Studio.\n\n## Benchmark Positioning: Tool-Use Leader at 2.69B\n\nLiquid AI compared the model against gemma-4-E2B-it (5.1B parameters), gemma-4-E4B-it (8B), Qwen3.5-4B (4.7B), and Qwen3.5-9B (9.7B). LFM2.5-2.6B leads every reported instruction-following benchmark and nearly every tool-use benchmark, trailing Qwen3.5-9B only on BFCLv4. Coding remains where larger models hold an edge: LiveCodeBenchv6 scores 59.41 for Liquid AI versus 69.86 for Qwen3.5-9B — a meaningful gap for developers evaluating the model for code-generation pipelines.\n\nBecause inference stays local, data never leaves the device and the marginal cost per run ... . For agentic ... , API orchestration —\n...\nContextualizing LFM2.5-2.6B against this week's other open releases sharpens the positioning. Tencent's Hy3 arrives with 295 billion total parameters (21B active) under Apache 2.0, optimized for cloud and enterprise deployment with API pricing starting at $0.1288 per million input tokens on OpenRouter. DeepSeek-V4-Flash-0731 ships as a 284B-total-parameter sparse MoE (13B active) targeting coding and agentic workflows — a direct competitor on the agentic front but orders of magnitude heavier. Ant Group's inclusionAI open-sourced Ling-3.0-Flash at 124B total parameters with 5.1B active per token, emphasizing long-horizon task stability.\n\nNone of these models run on a Raspberry Pi. Liquid AI's thesis is that agentic capability does not require MoE sparsity or hundreds of billions of dormant weights — it requires architecture choices optimized for latency and memory bandwidth on consumer silicon. The 2.69B parameter count puts LFM2.5-2.6B in a deployment class where a single quantized checkpoint fits entirely in on-device DRAM, eliminating the PCIe bottleneck that dominates server-side inference economics.\n\nFor developers building autonomous agents at the edge — robotics controllers, mobile task planners, offline assistants — the model to evaluate this week is not the largest open release. It is the smallest one that can plan, call tools, and close the loop without a network round-trip.",
       "signal_score": 7.0,
       "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
+        "query": "latest LLM agents RAG inference open source developer tool",
         "rank": 8
       }
     },
     {
-      "id": "e0498e06cc76",
+      "id": "6678ec253a68",
       "source": "exa_news",
-      "title": "Saddle — 让 AI/MLOps 真正“能落地“的可视化任务流平台-北京尧图网络科技有限公司",
-      "url": "http://m.lsln.cn/news/93848",
-      "published_at": "2026-09-26T00:00:00.000Z",
-      "excerpt": "简单。你要做的是拉数据 → 清洗 → 切分 → 训练 → 评估 → 上线 → 监控 → 漂移检测 → 触发重训加上合规、审计、知识库检索、Agent 编排、PLC 对接……还要让业务、财务、法务、风控都能看懂流程、签字背书传统做法是 Python 脚本 Jupyter 各种 CLI问题是痛点 传统做法 用 Saddle一行改错全盘崩溃 散落的脚本 可视化 DAG单算子可重跑流程只有写代码的人才懂 代码评审 业务也能看懂图合规/审计靠补文档 事后追写 节点级审计 证据包自动产出模型从实验到上线隔一道墙 研发自己造 同一画布贯穿探索 → 发布 → 回滚接生产设备/工单/MQTT 风险高 一不小心真下发 默认 dry-run审批门禁白名单一句话定位Saddle 是一块画布即流水线——把数据、模型、Agent、设备、合规全部在同一张可视化图里拉通。二、Saddle 是什么Saddle 是由 sicurrent.com 推出的 可视化 AI/MLOps 任务流编排平台前端基于 ReactFlow 的拖拽式画布画节点、连算子、编参数、实跑出结果后端Go 高性能调度器节点级依赖、DAG 并行执行、确定性审计日志模型层内置 本地大模型支持GPT-2 / Qwen3 / Whisper / OpenMed / YOLO 等所有项目离线可跑不依赖外网集成层原生适配 MQTT dry-run、ERP CSV、PLC Modbus、BM25 知识库、Agent 编排最关键的一点你不需要另外写工程代码——打开画布拖算子、连线、配参数、跑看结果。三、谁应该用 Saddle按我们已观察到的真实案例以下人群最能立刻看到价值 制造业 / 工业 AI 团队 视觉质检工程师——缺陷检测、PPE 识别、厂区人车距离、滑窗大图检测⚙️ 设备运维 / 预测性维护——报警 RAG 处置闭环、工业动态误差补偿 OT/IT 集成工程师——PLC Modbus 沙箱默认 dry-run接真实设备有白名单联锁 企业知识工作 / 数字化团队 法务、合规、风控——合同双视图 RAG Agent 复核、合规证据包、风控告警生成 采购、财务——采购三单PO/收货单/发票匹配与异常审批 客服、运营——客服质检与辅导闭环、BANKING77 路由、风险短信识别 AI 研发团队 算法工程师 / MLOps——MNIST 6 模型对比、LightGBM 训练、AdCTR 预测、XGBoost 漂移监测 大模型工程师——GPT-2 LoRA 微调、知识蒸馏、剪枝 ONNX INT8 量化 多模态工程师——DeepShot 视频镜头 Whisper 语音转写 时间线合并 RAG 应用开发者——法律 RAG 一键构建、企业知识库全生命周期治理、增量同步 中小企业 AI 化推动者没有专门的 ML Platform 团队但要让业务人员也能复用一个 AI 流水线模板需要可审计、可签字、可解释的 AI 流程特别是受监管行业四、Saddle 已经能做什么—— 73 个真实案例全景你下载安装后用 assist / assist 登录 Projects 模块全部 73 个项目可以直接打开、查看、运行。下面是按场景精选的导览️ 视觉与图像38 个项目项目 解决什么手写字符 6 模型效果对比 同一任务多模型横评可视化OpenIVS 大图滑窗缺陷检测 1280×1280 拼接大图 → 滑窗 YOLO → 跨窗口去重多摄像头厂区安全PPE禁区人车距离 多路检测、多规则合并视觉质检主动学习队列 低置信度样本导出 → 人工复核 → 重训请求dry-runTest_YOLOv8 / Test_RFDETR / Test_Kornia 各主流检测模型的即插即跑模板 适用制造业视觉质检、视频 AI、智能巡检。 NLP 与大模型27 个项目项目 解决什么模型卡与合规证据包 自动合并 loss/perplexity/数据谱系/治理政策→模型卡 PDF会议纪要与行动项治理 文本会议纪要 → Qwen3 Embedding Reranker → 责任人与截止日期双知识库 RAG 金丝雀观测 A/B 双知识库并行比对不自动晋级大模型安全红队实验室 提示注入 / 密钥外泄 / 跨租户风险识别dry-runLLM 路由与成本治理 隐私/时延/成本 → 自动选模型预算事件 dry-run企业 RAG 发布流水线 文档解析 → 草稿 → 显式发布 → BM25 验收 → Mock 复核 → CSV 审计模型发布与自动回滚演练 真实 PyTorch YOLO 推理 缺陷门禁 → 发布/回滚建议客服质检与辅导闭环 脱敏转写 → 评分 → 制度引用 → 辅导任务不处罚不写回设备报警 RAG 处置闭环 遥测 BM25 手册 → 报警处置工单dry-run法律 RAG 一键构建与上线 一个画布三条链路全量链 / 增量同步 / 在线服务合同审查双视图 RAG 双 Agent 复核 制度要求 整改审批双路检索Mock Agent 输出带引用的复核材料企业法务知识库全生命周期治理 草稿新增 / 同文档更新 / 删除 / 显式发布 / 停用 / 恢复 / 只读检索DeepShot 视频镜头与语音时间线 镜头切分 Whisper 转写 timeline.json 合并GPT-2 剪枝 ONNX INT8 / 知识蒸馏 / LoRA 微调 完整的大模型轻量化三条路径BC5CDR 医学 NER66M PyTorch 真实公开数据集 实体抽取 数据血缘LLM 批量列生成 / 风控规则生成 通用的按行调 LLM 生成新列模板 适用企业 RAG、法务/合规/客服质检、大模型工程、多模态应用。 数据建模与分析7 个项目项目 解决什么采购三单匹配与异常审批 PO 收货单 发票 → 两次 Merge → 差异计算 → 异常审批MQTT dry-run不写回 ERP乳腺癌数据处理和二分类识别 URL 取数 数据过滤 LightGBM 建模完整管线工业动态误差智能补偿 18 个设备状态特征 → 8 个补偿量预测映射为可下发的 applied__ 列AdCTR 广告点击预测 LightGBM 端到端建模模型监控M01_ModelMonitoring 训练后接漂移检测PSI / KS / Wasserstein 数据质量 持久化 适用数据分析师、风控建模、MLOps 工程。 工业与设备联动1 个项目 — 但很重要项目 解决什么PLC 通用数据下达交互沙箱 无 PLC 硬件也能跑向模拟寄存器 100 写值 120、向模拟线圈 5 写启动命令 1全部回读校验。接真实 TCP/RTU 前必须改用白名单人工确认联锁规则 适用OT/IT 集成、产线工程师、自动化供应商。五、Saddle 的核心价值 — 6 个不可替代的能力1️⃣ 业务可读 — 画布即文档节点就是步骤连线就是流向业务/合规/管理都能签字不再是代码评审才能懂的暗箱2️⃣ 工程可控 — 单算子可重跑、可恢复任意节点断点续跑失败回滚到指定节点算子级别版本管理节点级审计日志3️⃣ AI 全栈 — 数据 → 模型 → Agent → 设备一画贯之同一画布内同时使用CSV / SQL / Python / LLM / Agent / 视觉模型 / MQTT / Modbus / BM25涵盖实验与生产不必另起炉灶做上线4️⃣ 本地优先 — 内置开源模型全部离线可跑没有任何强制联网节点即使大模型也支持本地缓存权重离线 LLM / 离线 Embedding / 离线 Whisper / 离线 YOLO适合数据不能出网的合规场景5️⃣ 安全合规 — 默认 dry-run 审批门禁 证据包所有写动作MQTT / PLC / CRM / ERP默认 dry-run真实下发必经白名单 人工确认 联锁规则自动产出审计 CSV / 模型卡 / 数据血缘 / 治理证据包6️⃣ 模板即案例 — 73 个真实项目直接可改不是hello world演示是已经在产线上验证过的真实模板打开 → 修改参数 → 替换数据 → 直接跑你的业务六、上手 Saddle 的 5 步下载安装访问 https://www.sicurrent.com/soft 获取安装包启动服务本地启动 Saddle按提示打开浏览器画布登录演示账号assist / assist打开 Projects任意挑一个案例比如 assist-legal-rag-one-click-lab 或 OpenIVS_Sliding_Window_Inspection_Demo跑一遍、看一眼、换你的数据10 分钟内拿到第一个属于你的 AI 流水线七、结语选 Saddle 的三个理由看得到 —— 流程图即真相业务方敢签字管得住 —— 默认 dry-run 审计 证据包合规团队敢放行跑得通 —— 73 个真实案例从视觉到 NLP 到",
+      "title": "Moonshot AI’s Kimi K3 tops coding benchmark – DailySynapse",
+      "url": "https://dailysynapse.com/news/moonshot-ai-kimi-k3-tops-coding-benchmark",
+      "published_at": "2026-09-24T00:00:00.000Z",
+      "excerpt": "Beijing-based Moonshot AI has released Kimi K3, a 2.8 trillion parameter model it describes as the world’s first open 3T-class system and the largest open-weight AI model to date. Moonshot said the model still trails Anthropic’s Claude Fable 5 and OpenAI’s GPT 5.6 Sol overall, but beat other models in its evaluation suite across coding and agentic benchmarks.\n...\nMoonshot attributed performance gains to Kimi Delta Attention, Attention Residuals, and quantization-aware training using MXFP4 weights and MXFP8 activations. Its blog references Nvidia’s H200, Nvidia L20, and an unnamed alternative GPU vendor, underscoring how Chinese labs are navigating export constraints. Published results remain unverified until the weights are made public on July 27.",
       "signal_score": 7.0,
       "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
+        "query": "AI systems GPU serving quantization research release",
         "rank": 8
       }
     }
   ],
   "candidates": [
     {
-      "id": "candidate-2026-09-27-1",
-      "topic": "Running powerful LLMs on consumer GPUs",
-      "angle": "How low-bit quantization techniques (like GGUF precision ladders, MXFP4, W4A16, IQ1_M) enable 27B+ parameter models, including powerful AI agents, to run efficiently on single consumer-grade GPUs, democratizing local inference.",
-      "audience_pain": "High VRAM requirements and prohibitive costs typically prevent developers from running large, powerful LLMs locally on consumer hardware.",
-      "why_now": "Recent releases like VeriLoop E2 (GGUF ladder from BF16 to IQ1_M), Xing4.0-29B (15GB GPU memory), and AMD Quark (W4A16 on Strix Halo) showcase practical implementations of these techniques.",
-      "hook_seed": "Big models, small GPUs? Yes.",
+      "id": "candidate-2026-09-28-4",
+      "topic": "Open-source frameworks for enterprise RAG and agents",
+      "angle": "Deep dive into modular, open-source frameworks like Tencent's WeKnora, Kotaemon, and DataElem's BISHENG, which provide production-grade foundations for RAG agents, addressing complex enterprise needs such as multi-turn dialogue, tool calling, guardrails, and evaluation, moving beyond simple demos.",
+      "audience_pain": "Building robust RAG solutions, integrating various tools, managing data silos, and meeting enterprise requirements for security and scalability.",
+      "why_now": "Recent releases and updates of these comprehensive frameworks for enterprise LLM application development.",
+      "hook_seed": "Enterprise RAG solutions just got easier.",
+      "format": "practical_tips",
+      "objective": "follow",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "74a393fb0416",
+        "1aa43bb3f44c",
+        "0e3391e3f8e8",
+        "ec579313e80b"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 9,
+        "practical_value": 9,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 9
+      },
+      "score": 8.67
+    },
+    {
+      "id": "candidate-2026-09-28-5",
+      "topic": "Running large MoE models on consumer hardware via quantization",
+      "angle": "How advanced quantization techniques like W4A16 (AMD Quark) and GGUF precision ladders (VeriLoop E2) enable large Mixture-of-Experts (MoE) models (e.g., Qwen3.6-35B-A3B) to run efficiently on consumer-grade platforms like AMD Strix Halo, democratizing access to powerful models without massive VRAM.",
+      "audience_pain": "High VRAM requirements for large models, inability to run MoE locally, seeking cost-effective ways to experiment with advanced models.",
+      "why_now": "AMD Quark's release for Strix Halo and VeriLoop E2's GGUF precision ladder.",
+      "hook_seed": "MoE models on your local GPU.",
       "format": "practical_tips",
       "objective": "share",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "23d68c911ae4",
-        "31fca1cbcefc",
         "d0d66a080c25",
-        "145d7b7b470b"
+        "23d68c911ae4"
       ],
       "scores": {
         "trend_strength": 9,
-        "audience_relevance": 10,
-        "practical_value": 10,
-        "originality": 7,
+        "audience_relevance": 9,
+        "practical_value": 9,
+        "originality": 8,
         "conversation_potential": 8,
         "evidence_strength": 9
       },
-      "score": 8.83
+      "score": 8.67
     },
     {
-      "id": "candidate-2026-09-27-9",
+      "id": "candidate-2026-09-28-9",
+      "topic": "Practical impact of million-token context models",
+      "angle": "Moving beyond mere benchmark scores to discuss the practical implications of GPT-6 Astra's 1.05 million-token workspace for solving complex, long-horizon problems, as demonstrated by its 90.50% performance in the Kerbal Space Program Time Horizon Index, showcasing true agentic capability and long-term planning.",
+      "audience_pain": "Understanding how large context windows translate to real-world capability and what 'long-horizon' problems actually mean in practice.",
+      "why_now": "New reasoning benchmark and workspace size for GPT-6 Astra, with concrete examples like KSP.",
+      "hook_seed": "1M tokens: How Astra solves hard problems.",
+      "format": "mechanism_explainer",
+      "objective": "reply",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "f9c7e391d7c3",
+        "059e87191d13"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 9,
+        "practical_value": 8,
+        "originality": 8,
+        "conversation_potential": 9,
+        "evidence_strength": 9
+      },
+      "score": 8.67
+    },
+    {
+      "id": "candidate-2026-09-28-1",
       "topic": "Real-world LLM inference speed: TPUs vs. GPUs",
       "angle": "A direct comparison of Google's TPU v7 (Ironwood) against Nvidia's GB200, demonstrating how TPU v7 achieves 57% faster single-stream decoding with Moonshot AI's Kimi K3, despite lower theoretical BF16 compute, underscoring the importance of full-stack optimization and software-hardware synergy over raw specs.",
-      "audience_pain": "Confusion over the disparity between theoretical hardware benchmarks and actual, real-world LLM inference performance, making informed infrastructure investment decisions difficult.",
-      "why_now": "Inferact's recent benchmark report, featuring a head-to-head comparison of TPU v7 and GB200 with specific token-per-second results for Kimi K3, provides fresh, practical data.",
-      "hook_seed": "TPU v7 beats GB200: 57% faster.",
+      "audience_pain": "Choosing the right hardware for inference, understanding true performance beyond theoretical specs, optimizing for specific workloads.",
+      "why_now": "Recent benchmark by Inferact for Moonshot AI's Kimi K3 comparing TPU v7 and GB200.",
+      "hook_seed": "TPU v7 beats GB200 by 57%.",
       "format": "mechanism_explainer",
       "objective": "share",
       "image_template": "handwritten_poster",
@@ -398,46 +407,20 @@
       "scores": {
         "trend_strength": 9,
         "audience_relevance": 9,
-        "practical_value": 9,
-        "originality": 8,
-        "conversation_potential": 9,
-        "evidence_strength": 9
-      },
-      "score": 8.83
-    },
-    {
-      "id": "candidate-2026-09-27-3",
-      "topic": "Building production-grade RAG agents for enterprises",
-      "angle": "Deep dive into modular, open-source frameworks like Tencent's WeKnora and Kotaemon, which provide the production-grade foundation for RAG agents, addressing complex enterprise needs such as multi-turn dialogue, tool calling, guardrails, and evaluation, moving beyond simple demos.",
-      "audience_pain": "Struggling to transition RAG agent prototypes into scalable, reliable, and secure production environments for enterprise use cases.",
-      "why_now": "Recent releases of enterprise-focused open-source frameworks (WeKnora, Kotaemon, BISHENG) directly address the gap between RAG agent demos and robust production deployments.",
-      "hook_seed": "RAG agents in prod? Try these.",
-      "format": "practical_tips",
-      "objective": "click",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "74a393fb0416",
-        "1aa43bb3f44c",
-        "0e3391e3f8e8",
-        "529eb3a0356d"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 9,
+        "practical_value": 8,
         "originality": 8,
         "conversation_potential": 8,
         "evidence_strength": 9
       },
-      "score": 8.67
+      "score": 8.5
     },
     {
-      "id": "candidate-2026-09-27-5",
+      "id": "candidate-2026-09-28-2",
       "topic": "Optimizing agentic LLM memory with 4-bit KV Cache",
       "angle": "Explaining how Key-Value (KV) cache quantization, specifically 4-bit (e.g., UltraQuant), directly tackles the memory bottleneck in long-context, multi-turn agentic LLMs, leading to significant improvements in decode throughput and reduced latency under heavy load.",
-      "audience_pain": "High memory consumption and performance degradation in agentic LLMs with extensive context windows or many conversational turns, particularly under concurrency.",
-      "why_now": "UltraQuant's recent benchmark on AMD Instinct GPUs, showing significant improvements for agentic serving of Qwen3.8-MXFP4 by shrinking the KV cache to 4-bit, highlights this critical optimization.",
-      "hook_seed": "Long context agents slow? Shrink KV cache.",
+      "audience_pain": "High memory usage in long-context agents, slow decode throughput due to KV cache, struggling to run complex agents efficiently.",
+      "why_now": "AMD's blog post detailing UltraQuant for agentic serving on Instinct GPUs.",
+      "hook_seed": "4-bit KV cache for faster agents.",
       "format": "mechanism_explainer",
       "objective": "share",
       "image_template": "handwritten_poster",
@@ -445,71 +428,70 @@
         "145d7b7b470b"
       ],
       "scores": {
-        "trend_strength": 9,
+        "trend_strength": 8,
         "audience_relevance": 9,
         "practical_value": 9,
         "originality": 8,
         "conversation_potential": 8,
         "evidence_strength": 9
       },
-      "score": 8.67
+      "score": 8.5
     },
     {
-      "id": "candidate-2026-09-27-8",
-      "topic": "Simplifying agent development with open-source SDKs",
-      "angle": "Highlighting new open-source SDKs like Strands Agents' Apache-2.0 `harness-sdk` that bundle the complex, often hand-rolled components of an agent (loop, memory, guardrails, evals) into a unified, in-process package, allowing developers to focus on core agent logic rather than boilerplate infrastructure.",
-      "audience_pain": "High complexity, boilerplate code, and lack of standardized tools when attempting to build and manage robust AI agents from scratch.",
-      "why_now": "Strands Agents' recent release of their `harness-sdk` directly addresses the common developer pain of repeatedly hand-rolling agent infrastructure.",
-      "hook_seed": "Stop hand-rolling AI agent loops.",
+      "id": "candidate-2026-09-28-6",
+      "topic": "Cohere's open-source MoE for efficient enterprise deployment",
+      "angle": "Cohere's Command A+, a 218B MoE model now Apache 2.0 licensed, demonstrating how open-source large models can be optimized to run on as few as two H100 GPUs while offering enterprise-grade features like native citations and 128K context, blurring the lines between proprietary and open-weight capabilities.",
+      "audience_pain": "High cost and accessibility of large enterprise-ready models, need for open and trustworthy models, managing hardware requirements for MoE models.",
+      "why_now": "Cohere Command A+ Apache 2.0 release, making it more accessible.",
+      "hook_seed": "Enterprise MoE, now Apache 2.0.",
+      "format": "hot_take",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "8c2c892f6c5d"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 9,
+        "practical_value": 8,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 9
+      },
+      "score": 8.5
+    },
+    {
+      "id": "candidate-2026-09-28-10",
+      "topic": "Managing LLM inference with Kubernetes-native AI Gateways",
+      "angle": "How specialized AI gateways, such as Kong Operator 2.3 with full Kubernetes CRD support, simplify LLM inference routing, policy management, and traffic optimization, enabling GitOps workflows for scalable and efficient deployments and reducing latency in production environments.",
+      "audience_pain": "Complexities of deploying and managing LLMs in a Kubernetes production environment, ensuring efficient routing, security, and scalability.",
+      "why_now": "Kong Operator 2.3 release with full Kubernetes CRD support for its AI Gateway.",
+      "hook_seed": "Kubernetes for your LLM inference.",
       "format": "practical_tips",
       "objective": "follow",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "915fb6b448c1"
+        "095959a2fd68"
       ],
       "scores": {
-        "trend_strength": 9,
+        "trend_strength": 8,
         "audience_relevance": 9,
         "practical_value": 9,
         "originality": 8,
         "conversation_potential": 8,
         "evidence_strength": 9
       },
-      "score": 8.67
+      "score": 8.5
     },
     {
-      "id": "candidate-2026-09-27-6",
-      "topic": "GPT-6 Astra's reasoning and million-token context",
-      "angle": "Moving beyond mere benchmark scores to discuss the practical implications of GPT-6 Astra's 99.9% on reasoning benchmarks and its 1.05 million-token workspace for solving complex, long-horizon problems, as demonstrated by its performance in the Kerbal Space Program Time Horizon Index.",
-      "audience_pain": "Difficulty in translating high-level model capabilities and benchmark results into concrete understanding of real-world impact and development opportunities.",
-      "why_now": "Recent reports highlight Astra's unprecedented ARC-AGI performance and its ability to achieve 90.50% in the Kerbal Space Program Time Horizon Index, showcasing its capability for complex, long-duration agentic tasks.",
-      "hook_seed": "GPT-6 Astra: 1M tokens, real problems.",
-      "format": "quote_react",
-      "objective": "reply",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "f9c7e391d7c3",
-        "059e87191d13"
-      ],
-      "scores": {
-        "trend_strength": 10,
-        "audience_relevance": 8,
-        "practical_value": 7,
-        "originality": 7,
-        "conversation_potential": 9,
-        "evidence_strength": 9
-      },
-      "score": 8.33
-    },
-    {
-      "id": "candidate-2026-09-27-7",
+      "id": "candidate-2026-09-28-3",
       "topic": "AI agents building large-scale inference infrastructure",
       "angle": "Exploring how automated 'Infra Agents,' powered by models like GLM-5.3, are being deployed to rapidly build and optimize large-scale inference infrastructure across 100,000+ AI accelerators, drastically cutting time from model adaptation to production readiness from months to weeks.",
-      "audience_pain": "The manual, slow, and complex process of deploying and optimizing inference infrastructure for rapidly growing large AI models and agentic systems.",
-      "why_now": "Z.ai's recent successful deployment of a production-grade GLM-5.3-Flash inference service using an automated 'Infra Agent' highlights this cutting-edge application of AI.",
-      "hook_seed": "Agents built our AI infra. Fast.",
+      "audience_pain": "Manual, slow, and complex infrastructure deployment for large models and clusters, scaling AI operations.",
+      "why_now": "Z.ai's successful deployment of a GLM-5.3 powered Infra Agent.",
+      "hook_seed": "AI built its own inference cloud.",
       "format": "hot_take",
-      "objective": "share",
+      "objective": "reply",
       "image_template": "handwritten_poster",
       "source_ids": [
         "daf781627c5c"
@@ -519,56 +501,33 @@
         "audience_relevance": 8,
         "practical_value": 7,
         "originality": 9,
+        "conversation_potential": 9,
+        "evidence_strength": 8
+      },
+      "score": 8.33
+    },
+    {
+      "id": "candidate-2026-09-28-7",
+      "topic": "Unlocking 7x LLM inference speedups with software optimization",
+      "angle": "Explaining how sophisticated software stacks (e.g., MetaStone's Meta-Infer) can boost LLM input throughput by nearly 7x on existing PCIe GPUs, not by changing the model or hardware, but through optimized kernels, communication paths, and memory/caching tuning, highlighting software-hardware integration's critical role beyond raw compute.",
+      "audience_pain": "Maximizing throughput on existing GPU hardware, identifying performance bottlenecks beyond model size, understanding advanced performance tuning.",
+      "why_now": "MetaStone's reported 6.87x throughput gain for DeepSeek-V4.1 on PCIe GPUs.",
+      "hook_seed": "7x LLM speedup? Software, not GPUs.",
+      "format": "mechanism_explainer",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "c91395d4fc2f"
+      ],
+      "scores": {
+        "trend_strength": 8,
+        "audience_relevance": 9,
+        "practical_value": 9,
+        "originality": 8,
         "conversation_potential": 8,
         "evidence_strength": 8
       },
-      "score": 8.17
-    },
-    {
-      "id": "candidate-2026-09-27-4",
-      "topic": "Streamlining LLM inference with Kubernetes AI Gateways",
-      "angle": "How specialized AI gateways, such as Kong Operator 2.3 with full Kubernetes CRD support, simplify LLM inference routing, policy management, and traffic optimization, enabling GitOps workflows for scalable and efficient deployments and reducing latency.",
-      "audience_pain": "Complexity, latency, and operational overhead in managing LLM inference traffic, scaling, and access policies within existing Kubernetes infrastructure.",
-      "why_now": "Kong Operator 2.3's new AI Gateway capabilities bring Kubernetes-native LLM routing and policy management into focus, addressing a growing need for robust inference infrastructure.",
-      "hook_seed": "Kubernetes + LLM = AI Gateway.",
-      "format": "mechanism_explainer",
-      "objective": "follow",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "095959a2fd68"
-      ],
-      "scores": {
-        "trend_strength": 8,
-        "audience_relevance": 8,
-        "practical_value": 9,
-        "originality": 7,
-        "conversation_potential": 7,
-        "evidence_strength": 8
-      },
-      "score": 7.83
-    },
-    {
-      "id": "candidate-2026-09-27-10",
-      "topic": "Unified open-source enterprise LLMs (e.g., Cohere Command A+)",
-      "angle": "Examining how models like Cohere's Command A+ are consolidating multiple specialized capabilities (reasoning, vision, translate) into a single, efficient (218B MoE, fits on two H100s, 128K context), and fully open-licensed (Apache 2.0) offering, simplifying deployment and ensuring trustworthiness with native citations for enterprise use.",
-      "audience_pain": "Challenges in managing multiple specialized LLMs for different enterprise tasks, high costs of proprietary solutions, and concerns about integration complexity and data governance.",
-      "why_now": "Cohere's recent Apache 2.0 release of Command A+ marks a significant step towards consolidated, open-source, and enterprise-ready LLM solutions, unifying four prior models.",
-      "hook_seed": "One open LLM for enterprise?",
-      "format": "practical_tips",
-      "objective": "click",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "8c2c892f6c5d"
-      ],
-      "scores": {
-        "trend_strength": 8,
-        "audience_relevance": 8,
-        "practical_value": 8,
-        "originality": 7,
-        "conversation_potential": 7,
-        "evidence_strength": 9
-      },
-      "score": 7.83
+      "score": 8.33
     }
   ]
 }
