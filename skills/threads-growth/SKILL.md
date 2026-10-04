@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-04 IST
+Last refreshed: 2026-10-05 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Run 125B MoE on an 8GB gaming GPU with Strata | angle: The Strata inference engine enables running a 125B parameter Mixture-of-Experts model (Qwen3.8-Flash-Next) on a single consumer GPU with only 8GB of VRAM. | objective: share | score: 9.33 | sources: f04c6fd69fcd
-- 8-bit LLM training now matches full precision | angle: MIT and NVIDIA researchers fixed the root cause of the accuracy gap in 8-bit floating-point training, allowing 2x throughput on FP8 hardware without compromising model quality. | objective: share | score: 9.17 | sources: 278d36464558
-- Open-source agent harness boosts token efficiency by 28% | angle: Strands launched an open-source AI agent harness for Python and TypeScript that optimizes context management, leading to a 28% reduction in token consumption. | objective: share | score: 8.67 | sources: 06d9b5d5b3ae
-- Prime Inference: Serverless serving for open LLMs on Blackwell | angle: Prime Intellect launched Prime Inference, a serverless and reserved-capacity serving platform for frontier open-source models, reporting nearly 40% lower p90 inter-token latency on NVIDIA Blackwell GPUs. | objective: follow | score: 8.5 | sources: 33818c018239
-- Auto-tuned GEMM kernels boost vLLM inference | angle: PyTorch researchers integrated Helion into vLLM's linear backend, reporting 1.11x to 1.18x GEMM speedups on NVIDIA Hopper GPUs by using a tunable kernel selection instead of hand-written heuristics. | objective: share | score: 8.33 | sources: b67a4c0054a3
-- DPUs triple AI inference throughput with KV-cache routing | angle: F5 benchmarks demonstrate that NVIDIA BlueField-3 Data Processing Units (DPUs) with KV-cache-aware routing increase AI inference throughput by 3.24x over Envoy AI Gateway, while freeing host CPU cores. | objective: share | score: 8.33 | sources: 4e2b16fc4201
-- Scaling Mixture-of-Experts with Olmo-core 3 | angle: AllenAI released Olmo-core 3, an open-source framework designed to scale Mixture-of-Experts (MoE) training into the trillion-parameter range while preserving computational efficiency. | objective: share | score: 8.17 | sources: bdd96d90d4db
-- Serving quantized Gemma 4 on a single TPU v5e | angle: A developer successfully repacked Google's quantization-aware-trained Gemma 4 weights for vLLM and served the 12B model on a single Google Cloud TPU v5e chip, achieving 675 output tokens per second. | objective: share | score: 8.0 | sources: caf134995ff1
+- OpenAI's Custom Inference Chip: Jalapeño | angle: OpenAI's new Jalapeño inference chip, with its homogeneous architecture, directly challenges Nvidia's dominance by delivering significantly better performance per watt than the GB200/GB300. | objective: reply | score: 9.0 | sources: f22babc0a61b
+- Agentic RAG Pipeline Performance Review | angle: Benchmarking shows that adding agentic orchestration to RAG pipelines doesn't always result in better accuracy, speed, or cost-efficiency, challenging the assumption that 'more agentic' is always better. | objective: reply | score: 9.0 | sources: 3b21d8b14bdf
+- Helion Backend for vLLM Inference | angle: PyTorch's Helion backend integrates into vLLM to automatically tune GEMM kernels for specific workloads, providing significant speedups on Hopper GPUs without manual optimization. | objective: share | score: 8.67 | sources: b67a4c0054a3, 8c7281a265e0
+- Agentic Inference Engine Optimization | angle: New 'skills-only' agentic workflows, such as those enabled by MetaInfer, can generate custom LLM inference engines that dramatically outperform vLLM defaults on decode speed for agentic tasks. | objective: share | score: 8.67 | sources: a263b0c2e24f
+- Open-Source AI Agent Harness for Token Efficiency | angle: Strands' new open-source agent harness optimizes context management, reducing token consumption by 28% while providing secure, model-agnostic tool integration. | objective: share | score: 8.67 | sources: 06d9b5d5b3ae
+- AI Agents: Documentation vs. Memory | angle: Effective AI agents benefit more from well-structured external documentation and explicit tool descriptions than from internal, mutable memory stores, simplifying agent design and improving reliability. | objective: reply | score: 8.67 | sources: hn-49945933
+- Jagged Flash Attention with TLX | angle: Optimizing attention kernels with TLX significantly reduces code complexity and boosts performance on new hardware like Blackwell, outperforming state-of-the-art FlashAttention-4. | objective: share | score: 8.17 | sources: 0df85350453c
+- Serverless Open LLM Serving on Blackwell | angle: Prime Intellect's Prime Inference offers a serverless platform for open-source models on NVIDIA Blackwell GPUs, achieving nearly 40% lower p90 inter-token latency through prefill/decode disaggregation. | objective: follow | score: 8.17 | sources: 33818c018239
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
