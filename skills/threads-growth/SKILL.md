@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-05 IST
+Last refreshed: 2026-10-06 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Benchmarking Agentic RAG Pipeline Performance | angle: Benchmarking an agentic RAG pipeline against simpler RAG setups reveals that agentic orchestration does not always guarantee better accuracy, speed, or cost-efficiency, challenging common assumptions. | objective: reply | score: 8.83 | sources: 3b21d8b14bdf
-- Agentic Inference Engine Optimization | angle: New 'skills-only' agentic workflows, such as those enabled by MetaInfer, can generate custom LLM inference engines that dramatically outperform vLLM defaults on decode speed and time-to-first-token for agentic tasks. | objective: share | score: 8.67 | sources: a263b0c2e24f
-- KV Cache Compression in vLLM | angle: Glyd's v0.27.0 and v0.28.0 releases integrate lossless KV cache compression into vLLM, allowing 1.25 to 1.30 times more tokens in the same memory and faster decoding on GPUs like A100s, H100s, and L4s. | objective: share | score: 8.5 | sources: 2a96a67c903c, 1cc218a3192a
-- OpenAI's Custom Inference Chip: Jalapeño | angle: OpenAI's first custom inference accelerator, Jalapeño, challenges Nvidia's dominance by delivering 1.5-1.9x better performance per watt than the GB200/GB300 using a homogeneous design for all inference workloads. | objective: reply | score: 8.5 | sources: f22babc0a61b
-- Helion Backend for vLLM Performance on Hopper | angle: PyTorch researchers integrated the Helion GEMM backend into vLLM, demonstrating 1.11x to 1.18x GEMM speedups on Hopper GPUs by automatically tuning kernel variants for specific workloads, boosting AI serving throughput. | objective: share | score: 8.5 | sources: b67a4c0054a3, 8c7281a265e0
-- Tencent's Open-Source Enterprise RAG Framework (WeKnora) | angle: Tencent's WeKnora is an MIT-licensed, Go + Vue 3 open-source framework for enterprise LLM knowledge bases, supporting local deployment, RAG, ReAct Agents, and 20+ LLMs and 8 vector databases for data-private solutions. | objective: follow | score: 8.33 | sources: 74a393fb0416
-- Serverless Serving for Frontier Open Models (Prime Inference) | angle: Prime Intellect's Prime Inference offers serverless endpoints and reserved GPU capacity for frontier open-source models, enabling cost-effective, scalable deployment and integrating with open training stacks. | objective: follow | score: 8.33 | sources: 33818c018239
-- Open MoE Training Infrastructure with Ai2 Olmo-core 3 | angle: Ai2's Olmo-core 3 provides an open training stack that makes trillion-parameter Mixture-of-Experts (MoE) models more practical to train, by redesigning distributed training for resident GPU experts and improving throughput. | objective: share | score: 8.17 | sources: db4b6692196b, c5221fca69a5, 88619b43b1f2
+- Large MoE Models on Consumer GPUs | angle: Strata allows running a 125B-parameter Qwen MoE model on consumer GPUs with 12GB+ VRAM via a one-click install, by distributing work across GPU, system RAM, CPU, and SSD. | objective: share | score: 9.5 | sources: 77c1ab41fc7b
+- Enterprise Agentic RAG Frameworks | angle: Tencent's WeKnora offers a data-private, self-hostable open-source framework for RAG and ReAct Agents, supporting 20+ LLMs and 8 vector DBs, addressing enterprise deployment complexities. | objective: follow | score: 9.0 | sources: 74a393fb0416, 8a596ea1607a
+- KV Cache Compression for vLLM | angle: Glyd's v0.27.0 and v0.28.0 releases for vLLM enable lossless KV cache compression, increasing token capacity by 1.25-1.30x and speeding up decoding on common GPUs. | objective: share | score: 9.0 | sources: 1cc218a3192a, 2a96a67c903c
+- Optimizing Agentic Inference Engines | angle: New "skills-only" agentic workflows, such as those demonstrated by Baseten using MetaInfer, can generate custom inference engines that significantly outperform vLLM on decode speed and time-to-first-token for agentic tasks. | objective: share | score: 9.0 | sources: a263b0c2e24f
+- Auditable & Controlled AI Agents | angle: Incidents of "rogue" agents and privacy concerns highlight the urgent need for auditable, traceable, and controllable agent systems like AgentScope 2.0 to ensure ethical and safe deployment. | objective: reply | score: 9.0 | sources: hn-49961057, hn-49968105, 8a596ea1607a
+- Latent Context Models for LLM Compression | angle: New Latent Context Models (LCLMs) demonstrate a "16x context trick," compressing context window data before prefill, leading to significant speedups on standard serving infrastructure for RAG and agent workflows. | objective: share | score: 8.83 | sources: 7ced79a24857
+- Advanced LLM Weight Quantization | angle: New methods like Tetra's 2.7-bit Leech-lattice quantization and EntroPack's adjustable-rate compression push past standard 4-bit, reducing memory traffic and storage without losing usable accuracy, especially for MoE models. | objective: reply | score: 8.67 | sources: cbb305043b64, 27062996aacb, dc7f53a1f4f3
+- Local Development for Open-Source AI Agents | angle: DeepSeek Harness v0.2 now offers official desktop apps for macOS and Windows, providing a robust open-source runtime for building and managing agents locally with built-in tools and plugin management. | objective: follow | score: 8.67 | sources: 506cb2c884a1
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
