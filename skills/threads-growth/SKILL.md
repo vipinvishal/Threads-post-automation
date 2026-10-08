@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-08 IST
+Last refreshed: 2026-10-09 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- KV Cache Compression for Super Long Context | angle: llama.cpp's TurboQuant compresses KV cache to 3.25 bits/value, enabling Llama-3 70B to reach over 500K context on a single A100 by dramatically reducing VRAM usage and boosting throughput. | objective: share | score: 9.67 | sources: fae4c0e697b6
-- Docker Agent for AI Agent Orchestration | angle: Docker's new `docker-agent` simplifies building, running, and sharing AI agents declaratively with YAML, integrating RAG and multi-LLM support directly into your development workflow. | objective: follow | score: 9.0 | sources: hn-49996259, be8ec0e9275f
-- Extreme Low-Bit Quantization for MoE Models | angle: Techniques like Tetra and NVFP4 are making 2.7-bit and FP4 quantization practical for large Mixture-of-Experts (MoE) models, drastically cutting VRAM and boosting inference speed without sacrificing accuracy on NVIDIA B200 and consumer GPUs. | objective: share | score: 9.0 | sources: cbb305043b64, 54fea47873ae, 560b529a09c2, bfef9767db7a
-- Auditable RAG-as-a-Service for Production Agents | angle: AgentScope 2.0 introduces 'RAG as a Service' and an auditable OS for AI agents, tackling production challenges like prompt tuning fatigue and untraceable multi-hop reasoning in complex RAG pipelines. | objective: share | score: 8.83 | sources: 8a596ea1607a, b75bd978b72f
-- Natively Multimodal Embeddings for Unified AI | angle: New models like EmbeddingGemma 2 and pplx-embed-v2-late offer unified embedding spaces for text, code, images, video, and audio, enabling richer RAG and on-device multimodal AI applications. | objective: share | score: 8.67 | sources: 7220b9bd13ae, 178c372bccef
-- LLM as its Own Retriever (UNREAL) | angle: The UNREAL approach shows a frozen LLM can become its own effective retriever with minimal added parameters (<500K), unifying retrieval and long-context inference and simplifying RAG architectures. | objective: share | score: 8.67 | sources: f11efc4d430d
-- Edge Decision Models for Real-time AI | angle: Liquid AI's open-weight d1 decision models are optimized for edge hardware (NVIDIA Jetson), offering real-time, low-latency inference for text, vision, and audio, enabling powerful on-device AI applications. | objective: share | score: 8.67 | sources: a60984e85fd0
-- Verifiable GPU Cluster Configuration with AICR | angle: NVIDIA AI Cluster Runtime (AICR) v1.0 offers version-locked, validated 'recipes' for GPU cluster configurations, ensuring stability, reproducibility, and verifiable deployments for AI infrastructure. | objective: follow | score: 8.5 | sources: 0babadb3412b
+- Measuring True Cost of AI Compute with Open-Source Benchmark | angle: Tensor Machines launched an open-source benchmark to measure the true cost of AI compute by connecting GPU performance and power consumption to the cost of *useful* AI output, moving beyond hourly rental prices. | objective: follow | score: 9.17 | sources: 385d24eed3a7
+- Docker Agent for AI Agent Orchestration | angle: Docker's new `docker-agent` simplifies building, running, and sharing AI agents declaratively with YAML, integrating RAG, multi-LLM support, and tool ecosystems directly into familiar developer workflows. | objective: follow | score: 8.83 | sources: be8ec0e9275f
+- LLM as its Own Retriever: UNREAL Simplifies RAG | angle: The UNREAL approach demonstrates that a frozen LLM can effectively become its own retriever with fewer than 500K added parameters, unifying retrieval and long-context inference. This simplifies RAG architectures and boosts recall on benchmarks. | objective: share | score: 8.83 | sources: f11efc4d430d
+- Extreme Low-Bit Quantization for MoE Models | angle: Techniques like NVFP4 are making extreme low-bit (e.g., FP4, sub-1-bit) quantization practical for large Mixture-of-Experts (MoE) models, drastically cutting VRAM and boosting inference speed on NVIDIA B200 and consumer GPUs. | objective: share | score: 8.67 | sources: 54fea47873ae, 560b529a09c2, 859f7af4eca8, a3eb1b662467
+- Natively Multimodal Embeddings for Unified AI | angle: Models like Google's EmbeddingGemma 2 and Perplexity's pplx-embed-v2-late offer unified embedding spaces for text, code, images, video, and audio. This enables richer RAG and on-device multimodal AI applications by eliminating the need to chain separate models. | objective: share | score: 8.67 | sources: 7220b9bd13ae, c8462c5ec2d7, 03ca0c10edc6
+- Edge Decision Models for Real-time AI | angle: Liquid AI's open-weight d1 decision models are optimized for edge hardware (NVIDIA Jetson), offering real-time, low-latency inference for text, vision, and audio, enabling powerful on-device AI applications. | objective: share | score: 8.33 | sources: a60984e85fd0
+- Anticloud's Low Electricity Cost for AI Research (T4 GPU) | angle: Dubai-based Anticloud reports generating approximately 24,000 tokens of output for a mere $0.013 in electricity costs on a T4 GPU using their 27B-parameter PAX v52 model for structured research frameworks. | objective: share | score: 8.33 | sources: f8587353889c
+- Remote GPU with PyTorch: Rgpu | angle: `Rgpu` is a PyTorch device that lets tensors live on a remote GPU, enabling distributed training and inference with less code complexity, making remote resources feel local. | objective: share | score: 7.5 | sources: hn-49988516
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
