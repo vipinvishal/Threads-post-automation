@@ -1,19 +1,32 @@
 {
   "date_ist": "2026-10-09",
-  "generated_at": "2026-10-08T20:46:02.808418+00:00",
+  "generated_at": "2026-10-09T09:59:30.059178+00:00",
   "signal_count": 27,
   "signals": [
     {
-      "id": "hn-50008187",
+      "id": "hn-50002650",
       "source": "hacker_news",
-      "title": "OpenAI annualised revenues $20B less than previously signalled",
-      "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
-      "published_at": "2026-10-08T16:45:58+00:00",
-      "excerpt": "Hacker News: 286 points and 173 comments.",
-      "signal_score": 545.5,
+      "title": "OpenAI withdraws three mathematical results",
+      "url": "https://twitter.com/danintheory/status/2108065033070789090",
+      "published_at": "2026-10-08T07:05:40+00:00",
+      "excerpt": "Hacker News: 313 points and 575 comments.",
+      "signal_score": 1175.5,
       "community_metrics": {
-        "points": 286,
-        "comments": 173
+        "points": 313,
+        "comments": 575
+      }
+    },
+    {
+      "id": "hn-50013902",
+      "source": "hacker_news",
+      "title": "OpenAI, the Partition Principle, and Mathematics",
+      "url": "https://karagila.org/2026/openai-pp",
+      "published_at": "2026-10-08T23:29:43+00:00",
+      "excerpt": "Hacker News: 121 points and 177 comments.",
+      "signal_score": 386.5,
+      "community_metrics": {
+        "points": 121,
+        "comments": 177
       }
     },
     {
@@ -22,72 +35,59 @@
       "title": "I think I found a planet nobody knew existed. I used Claude Code to find it",
       "url": "https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9",
       "published_at": "2026-10-08T07:07:34+00:00",
-      "excerpt": "Hacker News: 85 points and 28 comments.",
-      "signal_score": 127.0,
+      "excerpt": "Hacker News: 179 points and 70 comments.",
+      "signal_score": 284.0,
       "community_metrics": {
-        "points": 85,
-        "comments": 28
+        "points": 179,
+        "comments": 70
       }
     },
     {
-      "id": "hn-50010656",
+      "id": "hn-50011999",
       "source": "hacker_news",
-      "title": "Vitalik Buterin backs crypto ‘bunker mode’ amid rapid AI math advances",
-      "url": "https://cointelegraph.com/news/justin-drake-urges-crypto-bunker-mode-as-ai-could-break-wallet-security-within-months",
-      "published_at": "2026-10-08T19:17:51+00:00",
-      "excerpt": "Hacker News: 36 points and 21 comments.",
-      "signal_score": 67.5,
+      "title": "AI-ready biological data: $1.8B global commitment",
+      "url": "https://biohub.org/news/virtual-biology-initiative-expansion",
+      "published_at": "2026-10-08T20:46:25+00:00",
+      "excerpt": "Hacker News: 123 points and 18 comments.",
+      "signal_score": 150.0,
       "community_metrics": {
-        "points": 36,
-        "comments": 21
+        "points": 123,
+        "comments": 18
       }
     },
     {
-      "id": "hn-50006114",
+      "id": "hn-50007993",
       "source": "hacker_news",
-      "title": "Show HN: I Put an AI Agent on a Nokia 110",
-      "url": "https://github.com/anupray95/AI-Agent-on-a-NOKIA",
-      "published_at": "2026-10-08T14:18:51+00:00",
-      "excerpt": "Hacker News: 22 points and 6 comments.",
-      "signal_score": 31.0,
+      "title": "Show HN: Jevman – AI decision models play Pac-Man",
+      "url": "https://opper.ai/jevman-benchmark",
+      "published_at": "2026-10-08T16:34:13+00:00",
+      "excerpt": "Hacker News: 63 points and 14 comments.",
+      "signal_score": 84.0,
       "community_metrics": {
-        "points": 22,
-        "comments": 6
+        "points": 63,
+        "comments": 14
       }
     },
     {
-      "id": "hn-49988516",
+      "id": "hn-50009066",
       "source": "hacker_news",
-      "title": "Show HN: Rgpu – a PyTorch device whose tensors live on a remote GPU",
-      "url": "https://github.com/ymcrcat/rgpu",
-      "published_at": "2026-10-07T05:15:44+00:00",
-      "excerpt": "Hacker News: 15 points and 1 comments.",
-      "signal_score": 16.5,
+      "title": "Scaling and benchmarking a critical message bus using a new indexing strategy",
+      "url": "https://blog.janestreet.com/scaling-and-benchmarking-a-critical-message-bus",
+      "published_at": "2026-10-08T17:39:26+00:00",
+      "excerpt": "Hacker News: 45 points and 3 comments.",
+      "signal_score": 49.5,
       "community_metrics": {
-        "points": 15,
-        "comments": 1
+        "points": 45,
+        "comments": 3
       }
     },
     {
-      "id": "hn-49986740",
-      "source": "hacker_news",
-      "title": "Show HN: TerrainSR – fast, realistic heightmap upscaling model",
-      "url": "https://huggingface.co/joe-gibbs/terrainsr",
-      "published_at": "2026-10-07T01:24:17+00:00",
-      "excerpt": "Hacker News: 12 points and 2 comments.",
-      "signal_score": 15.0,
-      "community_metrics": {
-        "points": 12,
-        "comments": 2
-      }
-    },
-    {
-      "id": "a60984e85fd0",
+      "id": "34240226e671",
       "source": "exa_news",
-      "title": "Open d1: Edge decision models for text, vision, and audio | Blog | Liquid AI",
-      "url": "https://www.liquid.ai/blog/d1-open",
-      "published_at": "2026-10-07T00:00:00.000Z",
-      "excerpt": "Today, we release d1-3B and d1-omni-600M, two open-weight models in our d1 decision model family. \n\nd1-3B scores 48.57 on the Decision Index v0.2.1 (public split), ahead of every model under 10B and on par with Decider 35B-A3B, a decision model 12x its size. It runs the full NVIDIA stack, from DGX in the data center to Jetson at the edge: d1-3B answers a question in 8 ms on an NVIDIA GeForce RTX 4090, 16 ms on a Jetson AGX Thor, and 26 ms on a Jetson AGX Orin. Even the Jetson Orin Nano runs it in 50 ms, fast enough for real-time decisions on the smallest edge hardware.\n\nd1-omni-600M is our first experimental checkpoint, handling both text and image, as well as text and audio. It scores 15.95 on the same index.\n\nd1-3B and d1-omni-600M models are available today on Hugging Face. Check out our docs on how to run them locally.\n...\n- d1-3B is trained from LFM2.5-VL-3B, our latest VLM, which is decoder-only. It accepts text and images as inputs.\n- d1-omni-600M is trained from LFM2.5-Encoder-350M, a bidirectional encoder. It adds vision and audio encoders to handle all three modalities. It accepts either text and image, or text and audio as inputs.\n...\n2.5-Encoder-350M ... -45 ... adapter plus LoRA updates to the backbone. Those updates ... only when the ... images, and the vision encoder stayed frozen. ... then fine-tuned the full ... , merged the LoRA updates, and averaged the weights ... the previous checkpoint to regularize the final\n...\n## Benchmarks\n\nText benchmarks. We evaluated d1-3B and d1-omni-600M across seven public benchmarks covering reading comprehension, toxicity detection, intent classification, medical QA, and cross-lingual understanding.\n...\nd1-3B leads with a mean of 82.9, the highest in the table and ahead of Decider 4B (81.1). d1-omni-600M reaches 78.4, outperforming Decider 2B (77.1) at a quarter of the parameters. It also posts the highest score in the table on toxicity detection (Civil Comments: 95.8) and paraphrase identification (PAWS-X: 79.5).\n\nVision and audio performance. The Decision Index v0.3 includes a private vision split, which we do not report on in this release. Instead. we validated that d1-3B retains the vision capabilities of its LFM2.5-VL-3B backbone on standard vision benchmarks, and that d1-omni-600M handles all three modalities. Their vision capabilities are shown in our playground demos below. Dedicated audio decision benchmarks are currently an open problem. We look forward to seeing the community develop them as the category of multimodal decision models matures.\n...\nd1-3B and d1-omni-600M run the full NVIDIA stack — from DGX in the data center, to RTX workstations, to Jetson at the edge — with day-one support for llama.cpp. \n\nSince decision models don’t generate output tokens, we measure end-to-end latency, from input to output. We report inference numbers for d1-3B. d1-omni-600M is an early research release and is under active development.\n\nEdge inference. We measure latency on an Apple M5 Pro and, in collaboration with NVIDIA, on an NVIDIA Jetson AGX Thor, a Jetson AGX Orin 64 GB, and a Jetson Orin Nano. We measure one request at a time, across a single question, three questions over one state, a 3.4K-token state, and a 384px image.\n...\nd1-3B answers a single question in under 50 ms on every measured device. Three questions take only 1.3x the time of one, with the AGX Thor going from 16 ms to 20 ms.\n\nGPU inference. We measure latency on an NVIDIA RTX 4090 and an AMD MI325X, one request at a time, across a single question, three questions over one state, a 3.4K-token state, and a 384px image.\n...\nOn GPU, d1-3B answers a question in under 10 ms and processes a 384px image in under 18 ms on both platforms.\n...\nThese results make our small open d1 decision models a strong fit anywhere you need fast, structured decisions, including multimodal inputs. d1-3B delivers the highest decision quality at its size, while d1-omni-600M fits where footprint matters.\n...\nwe built ten demos ... Hugging Face ... without any setup.\n\nIn collaboration with NVIDIA, we also demonstrate d1-3B navigating an environment in Isaac Sim, with the model served on a Jetson in a hardware-in-the-loop setup.\n...\nStart building today with d1-3B and d1-omni-600M, available on Hugging Face.\n...\nruns anywhere. These models are:\n\n- Open-weight — Download, fine-tune, and deploy without restrictions\n- Fast from day one — Native support for llama.cpp across Apple, AMD, Qualcomm, and NVIDIA with NVFP4\n- A family — Two sizes let you trade accuracy for footprint as your deployment demands.\n...\nDownload d1-3B on Hugging Face Download d ... -omni-600M on Hugging Face Read the NVIDIA Jetson AI Lab on d ... -3B Read the NVIDIA Jetson AI Lab on d1-omni-600M",
+      "title": "Introducing Mistral Large 4 | Mistral",
+      "url": "https://mistral.ai/news/mistral-large-4",
+      "published_at": "2026-10-06T00:00:00.000Z",
+      "excerpt": "Today, we’re launching a public preview of Mistral Large 4. Unofficially ML4, very officially: le Chonk. ML4 pushes the frontier of open-weight performance. You can try the preview API today on Mistral Studio. Weights drop end of this month.\n...\nML4 is a 1 trillion-parameter natively multimodal model with 52 billion active parameters. It is our largest and most capable model to date, and it continues to improve rapidly as we refine it.\n\nThe model demonstrates exceptional performance across coding, agentic workflows, and multimodal understanding. It already achieves performance competitive with the strongest open-source models globally, while significantly outperforming any open-weight model developed in the US or Europe. On critical enterprise workloads, including cybersecurity, finance and law, we find it to be state-of-the-art among open models. In some domains such as visual grounding, it goes further still, surpassing even frontier closed models.\n\nWe will release the weights by the end of the month. Until then, we are red-teaming the model in real-world settings with cybersecurity leaders, vetted partners, and state authorities, who will access the same model with reduced moderation and expanded cyber capabilities.\n...\nML4 was trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral’s own datacenters in Europe. The public preview is served on that same infrastructure. It is a significant milestone in our long-term investment across infrastructure, research, and product development: state-of-the-art performance in critical verticals, delivered through open weights, designed to give customers control over their AI.\n...\na European deployment that ... ral operates end-to-end ... independently of other digital ... providers and under European law. ... of ML4 ... spanning more than\n...\nThere is still more to come. As we work toward releasing the weights, we will share further details on the model architecture, additional benchmarks, and our post-training methodology.\n...\nML4 is one of the world's strongest AI models for cybersecurity. On the Artificial Analysis Cyber Index, an independent evaluation of how well AI models find and fix security flaws in real software, it ranks among the top five models globally and leads open-weight models developed outside China by a wide margin. On one of the index's tests, which asks a model to reproduce a real vulnerability in open-source software and then patch it, ML4 scores 82%, the highest of any model. It also solves 93% of the challenges in Cybench, a set of 40 exercises drawn from security competitions, one of the highest scores reported for an open-weight model.\n...\nML4 excels across software engineering, repository understanding, and complex terminal workflows, scoring 61.7% on DeepSWE v1.1, 59.4% on SWE-Atlas-QnA, and 28.3% on Terminal-Bench 4. Its combined Coding Agent Index score of 49.8% places it ahead of DeepSeek V4 Pro 0813 and Qwen3.8 Max.\n...\nevaluation with Surge AI on coding quality: professional annotators ... model outputs on ... identities hidden. ML ... 3.74), ahead of K\n...\nML4 runs general-purpose agents that gather information, use tools, and produce finished deliverables across complex workflows. On AutomationBench — 657 business workflows across apps like Gmail, Google Sheets, Slack, and Salesforce — it scores 59.9%, ahead of Kimi K3, MiMo-V2.6-Pro, and DeepSeek V4 Pro.\n...\nsurpassing GPT- ... -Astra on Dense 200 (42% vs 41%).\n...\nat agentic coding for scientific tasks ... as data analysis, modeling, and simulating physical reality, which ... researchers focus on the questions ... than the plumbing. In benchmarks, ML4 is state of the art on SciCode-Verified among open-weight models. In practice, it can generate a full Hartree–Fock simulation in one shot — a complex, multi-step chemistry task built from a series of advanced routines.\n...\nML4 is our most capable model for the real-world tasks which professionals handle every day. It can create, edit and fix complex spreadsheets and documents, showing exemplary performance on both legal and financial benchmarks.\n\nNotably, we evaluated ML4 through third party evaluators (vals.ai) on representative tasks for both legal and financial tasks, finding the model exceeds GPT-6-Astra in both cases. On HarveyAI’s Legal Agent benchmark, ML4 outperforms all open-source models.\n...\nML4 has saturated our benchmarks on robustness to indirect prompt injections, putting it at the frontier of OSS models (compared to GLM-5.2, GLM-5.3, Kimi-K2.6, Kimi-K3, DS-V4-Pro-0813). On Lakera’s public B3 AI Security Benchmark, ML4 resists 93.3% of attacks – we see no higher scores among competitors.\n...\nBase models are improving fast, and our post-training has to keep pace. A recipe tuned for yesterday's model leaves capability on the table with today's frontier, because ground truth samples that once pushed a model to its limits won’t anymore. We use Reinforcement Learning (RL) because it adapts as the model does: we train on the outcomes of the model's own attempts, and we can raise the difficulty and the breadth of the tasks as it gets stronger.\n\nOur RL library was designed to make new environments easy to add and train at scale. A shared, composable interface allows a single training run to combine tasks ranging from single-turn chat and complex scientific problem solving to safety alignment, factuality, and long-horizon tool use. These environments share scaffolds and resources such as code sandboxes, web search, and external APIs. The same composability extends to verification, with reward models, unit tests, LLM judges, and static checks combined as needed for each task.\n\nAt runtime, an autoscaling fleet of actors generates tens of thousands of rollouts in parallel while model training proceeds asynchronously. The generation and training pipeline is optimized for long trajectories, supporting rollout budgets of millions of tokens across multiple compactions while keeping staleness low. Novel methods and optimizations across both stages minimize off-policy drift and enable stable RL over long horizons.\n\nAt our current scale (3k GPUs), a single training run produces roughly 33 billion tokens per day, of which around 16 billion are trainable completion tokens after filtering and masking. We can see the run progress directly in the training rollouts: training rewards rise across several representative environments as the policy learns to solve increasingly complex tasks. Below are a few examples.\n...\nThis is only the beginning. ML4 is the first milestone on the roadmap funded by our €3 billion Series D — the largest equity round ever raised by a European technology company. That capital is already being put to work: we are significantly scaling up our compute capacity in our own European datacenters, and much more is coming online in the months ahead.\n\nMore compute means more training. The reinforcement learning run behind this preview is still in flight, and the model is showing no signs of saturation — there is substantial headroom ahead. As we scale up training on our expanded infrastructure, we expect large and rapid improvements in the weeks and months to come.\n\nWe will release the weights by the end of the month, along with more details on the architecture, additional benchmarks, and our post-training methodology. And ML4 is only the foundation: it will serve as the base for a new generation of specialized and optimized Mistral models, built for the industries and workloads our customers care about most.",
       "signal_score": 14.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -108,12 +108,12 @@
       }
     },
     {
-      "id": "54fea47873ae",
+      "id": "7220b9bd13ae",
       "source": "exa_news",
-      "title": "1T MoE Quantization: ISTA SpTC on NVIDIA B200 | IAMag",
-      "url": "https://iamag.it/en/news/trillion-scale-moe-quantization-sptc-nvidia-b200",
+      "title": "EmbeddingGemma 2 is a best-in-class open model for natively multimodal embeddings",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2",
       "published_at": "2026-10-06T00:00:00.000Z",
-      "excerpt": "1T MoE Quantization: ISTA SpTC on NVIDIA B200 | IAMag\n\n# 1T MoE Quantization: ISTA SpTC on NVIDIA B200\n...\n- Hardware-software co-design for MoE models: Researchers present a joint quantization and sparsity system (reducing precision and unneeded weights) optimized for GPU Sparse Tensor Cores.\n- Accuracy preserved up to 1 trillion parameters: The method maintains 96.09% of original model performance on one-trillion-parameter models, outperforming state-of-the-art techniques by 4.35 percentage points.\n- Tested on NVIDIA B200 GPUs: Compute speed up to 1.65× compared to standard drivers and response times (latency) slashed by up to 4.03×.\n...\nAlthough modern datacenter GPUs incorporate Sparse Tensor Cores (SpTCs)—hardware compute units designed to halve workloads by cutting superfluous calculations (known as sparsity) and compressing numbers to lower precision—truly leveraging them with MoE models has always proved difficult. Until now, applying these reductions led to noticeable drops in response quality and suffered from a lack of optimized software instructions. In a new technical study, researchers Kwanhee Lee, Namhoon Lee, and Dan Alistarh from ISTA introduced a joint hardware-software co-design approach: a method capable of compressing expert weights directly into the chip's native supported format, accelerating large-scale inference (text generation).\n...\n1. Coordinated mathematical optimization (continuous relaxation):\n...\n2. Custom chip instructions (grouped sparse GEMM kernel): At the low-level code layer, the team wrote a dedicated kernel (a program that directly drives GPU circuits) for grouped matrix multiplications (grouped sparse GEMM, the core mathematical operation of MoE models). The kernel is tailored specifically to interface with the sparse Tensor Cores of next-generation accelerators.\n...\n## Benchmarks and performance on NVIDIA B200\n\nLaboratory validation evaluated MoE models ranging from 30 billion up to 1,000 billion parameters (one trillion). In terms of linguistic fidelity and reasoning, the framework minimizes the typical losses of compression: it surpasses the prior state of the art by a solid 4.35 percentage points, retaining an average of 96.09% of the original full-precision model's performance.\n\nThe most striking impacts, however, emerge during the serving phase (delivering actual responses to users). In tests conducted on the NVIDIA B200 chip, the researchers' optimized routine outperformed the vendor's official libraries:\n\n- Raw kernel speed: Execution speed increased by up to 1.65× compared to standard software engines.\n- Overall serving throughput: Total request throughput increased by 1.18×.\n- Response times (end-to-end latency): A complete response arrives up to 4.03× faster compared to unoptimized processing.\n...\nBy demonstrating that tight synergy between mathematical algorithms and physical silicon instructions can preserve over 96% of original quality even at trillion-parameter scale, the study by Lee and Alistarh marks a decisive milestone. Compressing and accelerating MoE models ceases to be a theoretical trade-off and becomes a practical lever for slashing energy costs and server expenses incurred by labs serving mixture-of-experts models.",
+      "excerpt": "Today, we’re launching EmbeddingGemma 2, expanding beyond text to unify code, images, video, and audio in a shared embedding space. Built on the Gemma 4 architecture and released under a commercially permissive Apache 2.0 license, EmbeddingGemma 2 has 740 million parameters, making it optimal for on-device inference. It can help find a specific video clip from a voice memo, or search through hours of audio recordings based on a text query, all processed by a single, natively multimodal model.\n...\n- Optimized for on-device performance: Runs efficiently within tight resource constraints. With quantization, on a Google Pixel 11 Pro, EmbeddingGemma 2 requires as little as ~191MB active RAM for text-only weights and ~567MB for the full multimodal model.\n...\nwith generative models such as Gemma 4 ... EmbeddingGemma ... emma 2 ... Gemma 4 and shares its ... encoder, developers can run both models together in a unified pipeline with a lower combined\n...\n- On-device deployment: Develop cross-platform apps with Google AI Edge MediaPipe for turnkey embedding, retrieval & decision tasks or LiteRT for custom model integration. Build for the browser with transformers.js or WebGPU.\n- Use your favorite development tools: Serve the model efficiently using transformers, sentence-transformers, MLX, vLLM, llama.cpp, SGLang, Ollama, and LMStudio. Store your embedding vectors with Qdrant.",
       "signal_score": 14.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -121,28 +121,15 @@
       }
     },
     {
-      "id": "38ab595d9685",
+      "id": "a60984e85fd0",
       "source": "exa_news",
-      "title": "Mellum2.1 Gets to Work: A Fast Open Model for Coding Agents - The JetBrains Blog",
-      "url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents",
-      "published_at": "2026-10-08T12:00:00.000Z",
-      "excerpt": "# Mellum2 ... 1 Gets to Work: A Fast Open Model for Coding Agents\n\n \n\n Bulat Salimzianov \n\nTrained with reinforcement learning in real environments, Mellum2.1 is built for coding agents and fast sub-agents that run on your own hardware.\n\nToday, we’re releasing Mellum2.1, the next version of the 12B mixture-of-experts model we open-sourced in June. The architecture hasn’t changed since version 2: it’s still a compact, fast model with 2.5B active parameters, released under the Apache 2.0 license. What has changed is everything that happens after pre-training.\n\nMellum2 was fast, but it couldn’t work inside a repository at the level we wanted. After a summer of reinforcement learning in real environments, with millions of sandboxed runs across thousands of environments, Mellum2.1 can: it explores a codebase, edits files, and checks its own changes.\n...\n- Real environments for agentic skills: We built the infrastructure to run thousands of RL environments in-house and launched millions of sandboxes over the course of training.\n...\nWe compared Mellum2.1 with Mellum2 – as well as two open models of a similar class, Qwen3.5-9B and Gemma 4 E4B – using the same evaluation setup for all of them.\n\nThe biggest improvement is in agentic coding, where Mellum2.1 advanced the most compared with Mellum2. The model also got better across the board, showing gains in coding, competitive programming, math, tool calling, and general knowledge, and it holds up on hard problems as well as everyday ones.\n\n \n\n \n\n##\n...\nPost-training didn’t touch the architecture, so Mellum2.1 is as fast as Mellum2, and multi-token prediction (MTP) makes it faster.\n\nUnder heavy load, Mellum2.1 is the fastest model in the group and serves almost twice as many tokens as Qwen3.5-9B. For a single request, MTP makes it about 1.6 times faster.\n...\n- A capable worker inside agentic systems: Mellum2.1 can handle different parts of an agent’s plan, from identifying ... root cause of a failing test to drafting and checking a fix.\n- Problems beyond coding: Mellum2.1 is a capable general assistant, too. It handles everyday questions and works through hard math and reasoning problems step by step.\n- Private, self-hosted deployment: Run Mellum2.1 locally or on your own infrastructure to keep code and data fully under your control.\n...\nMellum2.1 is available on Hugging Face. GGUF builds for llama.cpp, Ollama, and LM Studio, as well as the multi-token prediction (MTP) head for speculative decoding in vLLM, are coming soon.\n\nIf you’re building coding agents, sub-agents, or AI tools that run on your own infrastructure, we’d love for you to try Mellum2.1. Tell us what works and what doesn’t. Your feedback will shape the next version.",
+      "title": "Open d1: Edge decision models for text, vision, and audio | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/d1-open",
+      "published_at": "2026-10-07T00:00:00.000Z",
+      "excerpt": "Today, we release d1-3B and d1-omni-600M, two open-weight models in our d1 decision model family. \n\nd1-3B scores 48.57 on the Decision Index v0.2.1 (public split), ahead of every model under 10B and on par with Decider 35B-A3B, a decision model 12x its size. It runs the full NVIDIA stack, from DGX in the data center to Jetson at the edge: d1-3B answers a question in 8 ms on an NVIDIA GeForce RTX 4090, 16 ms on a Jetson AGX Thor, and 26 ms on a Jetson AGX Orin. Even the Jetson Orin Nano runs it in 50 ms, fast enough for real-time decisions on the smallest edge hardware.\n\nd1-omni-600M is our first experimental checkpoint, handling both text and image, as well as text and audio. It scores 15.95 on the same index.\n\nd1-3B and d1-omni-600M models are available today on Hugging Face. Check out our docs on how to run them locally.\n...\n- d1-3B is trained from LFM2.5-VL-3B, our latest VLM, which is decoder-only. It accepts text and images as inputs.\n- d1-omni-600M is trained from LFM2.5-Encoder-350M, a bidirectional encoder. It adds vision and audio encoders to handle all three modalities. It accepts either text and image, or text and audio as inputs.\n...\n2.5-Encoder-350M ... -45 ... adapter plus LoRA updates to the backbone. Those updates ... only when the ... images, and the vision encoder stayed frozen. ... then fine-tuned the full ... , merged the LoRA updates, and averaged the weights ... the previous checkpoint to regularize the final\n...\n## Benchmarks\n\nText benchmarks. We evaluated d1-3B and d1-omni-600M across seven public benchmarks covering reading comprehension, toxicity detection, intent classification, medical QA, and cross-lingual understanding.\n...\nd1-3B leads with a mean of 82.9, the highest in the table and ahead of Decider 4B (81.1). d1-omni-600M reaches 78.4, outperforming Decider 2B (77.1) at a quarter of the parameters. It also posts the highest score in the table on toxicity detection (Civil Comments: 95.8) and paraphrase identification (PAWS-X: 79.5).\n\nVision and audio performance. The Decision Index v0.3 includes a private vision split, which we do not report on in this release. Instead. we validated that d1-3B retains the vision capabilities of its LFM2.5-VL-3B backbone on standard vision benchmarks, and that d1-omni-600M handles all three modalities. Their vision capabilities are shown in our playground demos below. Dedicated audio decision benchmarks are currently an open problem. We look forward to seeing the community develop them as the category of multimodal decision models matures.\n...\nd1-3B and d1-omni-600M run the full NVIDIA stack — from DGX in the data center, to RTX workstations, to Jetson at the edge — with day-one support for llama.cpp. \n\nSince decision models don’t generate output tokens, we measure end-to-end latency, from input to output. We report inference numbers for d1-3B. d1-omni-600M is an early research release and is under active development.\n\nEdge inference. We measure latency on an Apple M5 Pro and, in collaboration with NVIDIA, on an NVIDIA Jetson AGX Thor, a Jetson AGX Orin 64 GB, and a Jetson Orin Nano. We measure one request at a time, across a single question, three questions over one state, a 3.4K-token state, and a 384px image.\n...\nd1-3B answers a single question in under 50 ms on every measured device. Three questions take only 1.3x the time of one, with the AGX Thor going from 16 ms to 20 ms.\n\nGPU inference. We measure latency on an NVIDIA RTX 4090 and an AMD MI325X, one request at a time, across a single question, three questions over one state, a 3.4K-token state, and a 384px image.\n...\nOn GPU, d1-3B answers a question in under 10 ms and processes a 384px image in under 18 ms on both platforms.\n...\nThese results make our small open d1 decision models a strong fit anywhere you need fast, structured decisions, including multimodal inputs. d1-3B delivers the highest decision quality at its size, while d1-omni-600M fits where footprint matters.\n...\nwe built ten demos ... Hugging Face ... without any setup.\n\nIn collaboration with NVIDIA, we also demonstrate d1-3B navigating an environment in Isaac Sim, with the model served on a Jetson in a hardware-in-the-loop setup.\n...\nStart building today with d1-3B and d1-omni-600M, available on Hugging Face.\n...\nruns anywhere. These models are:\n\n- Open-weight — Download, fine-tune, and deploy without restrictions\n- Fast from day one — Native support for llama.cpp across Apple, AMD, Qualcomm, and NVIDIA with NVFP4\n- A family — Two sizes let you trade accuracy for footprint as your deployment demands.\n...\nDownload d1-3B on Hugging Face Download d ... -omni-600M on Hugging Face Read the NVIDIA Jetson AI Lab on d ... -3B Read the NVIDIA Jetson AI Lab on d1-omni-600M",
       "signal_score": 13.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 2
-      }
-    },
-    {
-      "id": "7220b9bd13ae",
-      "source": "exa_news",
-      "title": "EmbeddingGemma 2 is a best-in-class open model for natively multimodal embeddings",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2",
-      "published_at": "2026-10-06T00:00:00.000Z",
-      "excerpt": "We introduced EmbeddingGemma last year to provide a lightweight option for high-quality text embeddings, to help your apps organize, search, and connect information directly on consumer hardware. The developer community’s response blew past our expectations. With more than 20 million downloads, builders have used it to power smarter on-device search tools and privacy-first retrieval augmented generation (RAG) pipelines.\n\nToday, we’re launching EmbeddingGemma 2, expanding beyond text to unify code, images, video, and audio in a shared embedding space. Built on the Gemma 4 architecture and released under a commercially permissive Apache 2.0 license, EmbeddingGemma 2 has 740 million parameters, making it optimal for on-device inference. It can help find a specific video clip from a voice memo, or search through hours of audio recordings based on a text query, all processed by a single, natively multimodal model.\n...\nEmbeddingGemma 2 brings robust capabilities directly to edge hardware. Generating embeddings locally helps ensure data privacy, reduces pipeline latency, and empowers developers to build cross-modal search and retrieval that works entirely offline.\n\nWhen paired with generative models such as Gemma 4, EmbeddingGemma 2 enables on-device RAG pipelines that understand complex multimodal data. Because EmbeddingGemma 2 is built on Gemma 4 and shares its text tokenizer and audio encoder, developers can run both models together in a unified pipeline with a lower combined total memory footprint.\n...\nCreate real-time decision engines leveraging multimodal context for classification, routing, and predictive capabilities via the MediaPipe Decision Task API.\n\nTo learn how to build on-device search and RAG systems with LiteRT, read the Google AI Edge blog post.\n...\n- Download the models: Find the model weights on Hugging Face and Kaggle, with Gemini Enterprise Agent Platform Model Garden availability coming soon. Visit LiteRT Community on Hugging Face for models optimized for on-device.\n- On-device deployment: Develop cross-platform apps with Google AI Edge MediaPipe for turnkey embedding, retrieval & decision tasks or LiteRT for custom model integration. Build for the browser with transformers.js or WebGPU.\n- Use your favorite development tools: Serve the model efficiently using transformers, sentence-transformers, MLX, vLLM, llama.cpp, SGLang, Ollama, and LMStudio.",
-      "signal_score": 13.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
         "rank": 2
       }
     },
@@ -173,55 +160,16 @@
       }
     },
     {
-      "id": "74a393fb0416",
+      "id": "1427660a2d7a",
       "source": "exa_news",
-      "title": "腾讯开源的企业级知识库，20+ LLM、8种向量库、7个IM渠道，一条命令本地跑-平芜编程栈",
-      "url": "http://www.pwwt.cn/news/3360610",
+      "title": "Announcing Genkit Dart 1.0: Build production-ready agentic apps with Dart and Flutter | The Flutter Blog",
+      "url": "https://flutter.dev/blog/announcing-genkit-dart-1-0",
       "published_at": "2026-10-08T00:00:00.000Z",
-      "excerpt": "WeKnora 是腾讯开源的 LLM 知识库框架，Go + Vue 3 编写。核心思路：一条命令本地部署，把散落在飞书/Notion/语雀/本地文件夹的文档统一接入，支持 RAG 问答、ReAct Agent 推理、自动 Wiki 生成，20+ LLM 和 8 种向量库随便换。\n\n- 腾讯官方出品——国内头部互联网公司背书\n- MIT 协议，完全自托管，数据不出内网\n- v0.6.3，最新的版本，新增网站嵌入 Widget，可把知识 Agent 接到官网、文档站或产品页；同时升级聊天体验，补齐 RSS 同步、Wiki 层级、文档标签、批量重解析和扫描 PDF OCR。\n...\n| 模式 | 作用 | 场景 |\n| --- | --- | --- |\n| Quick Q&A | RAG 检索 + 生成回答，带引用来源 | 日常知识查找 |\n| ReAct Agent | 多步推理，自动调用工具、搜索、检索 | 复杂问题分析 |\n| Wiki Mode | Agent 自动把文档生成结构化 Wiki + 知识图谱 | 文档自动整理 |\n...\nOpenAI、Azure、Anthropic、DeepSeek、通义千问、智谱、混元、豆包、Gemini、MiniMax、NVIDIA、SiliconFlow、OpenRouter、Ollama 等，随时切换。\n...\n企业微信、飞书、Slack、Telegram、钉钉、Mattermost、微信，直接在这些工具里问问题。\n...\n——文档解析 ... 向量化 → 检索引擎 ... Agent 编排 → 用户交互，全链路\n...\n公司文档散落在飞书、Notion、语雀、本地 NAS。WeKnora 接入所有数据源，自动同步，员工在企业微信里直接问\"去年的 Q3 财报在哪里\"，RAG 检索给出准确答案 + 文档链接。\n...\n把产品文档、FAQ、历史工单导入 WeKnora，配置 ReAct Agent。用户在 Slack 里问\"怎么重置密码\"，Agent 自动检索知识库 + 调用重置工具 + 给出步骤，不需要人工介入。\n...\n### 上手：让 AI Agent 帮你装\n...\n```\n用 Docker 部署 WeKnora 企业知识库，参考 https://github.com/Tencent/WeKnora要求：1. git clone https://github.com/Tencent/WeKnora.git && cd WeKnora2. cp .env.example .env，配置 LLM API Key（推荐 DeepSeek 或通义千问）3. docker compose up -d 启动核心服务4. 打开 http://localhost 确认 Web UI 正常5. 创建一个知识库，上传 3 个 PDF 测试文档6. 测试 Quick Q&A 和 ReAct Agent 两种模式7. 配置企业微信/飞书机器人，测试 IM 渠道问答\n```\n...\nCLI 工具：\n\n```\nweknora auth login --host https://kb.example.comweknora kb listweknora doc upload notes.mdweknora chat \"总结这份设计文档\"weknora mcp serve # 启动 MCP Server\n```\n...\n| 维度 | WeKnora | Dify | FastGPT | AnythingLLM |\n| --- | --- | --- | --- | --- |\n| 定位 | 企业级 RAG + Agent + Wiki | LLM 应用开发平台 | 知识库问答 | 本地文档聊天 |\n| 数据源 | 飞书/Notion/语雀/RSS + 本地 | 有限 | 有限 | 本地为主 |\n| IM 渠道 | 7 个（企微/飞书/Slack等） | 部分 | 部分 | 无 |\n| Agent 模式 | ReAct 多步推理 | 工作流编排 | 简单 RAG | 无 |\n| Wiki 生成 | ✅ 自动 + 知识图谱 | ❌ | ❌ | ❌ |\n| 向量库 | 8 种 | 2-3 种 | 2-3 种 | 2-3 种 |\n| 企业安全 | RBAC + 审计 + 加密 | 基础 | 基础 | 基础 |\n| 部署 | Docker/K8s/本地 | Docker/云 | Docker/云 | Docker |\n| 开源协议 | MIT | Apache 2.0 | Apache 2.0 | MIT |\n\nDify 胜在应用编排和生态，FastGPT 胜在中文优化和易用性，AnythingLLM 胜在本地隐私。WeKnora 胜在企业级完整性：多数据源接入、7 个 IM 渠道、ReAct Agent、自动 Wiki、RBAC 安全体系，一套方案覆盖从文档接入到员工使用的全链路。\n...\n- 生产环境建议内网部署：腾讯官方建议不要直接暴露到公网，配好防火墙和访问控制\n- LLM API Key 成本：大文档库首次 embedding 消耗较多 Token，建议用低价模型或本地 Ollama\n- CVE 安全漏洞：2026 年初披露过租户权限绕过和 SQL 注入漏洞，建议升级到最新版本（v0.6.3+）\n- 文档解析耗时：大 PDF 或扫描件可能需要几分钟，后台 MQ 异步处理，可以关页面等通知\n...\n✅大模型基础认知—大模型核心原理、发展历程、主流模型（GPT、文心一言等）特点解析 ✅核心技术模块—RAG检索增强生成、Prompt工程实战、Agent智能体开发逻辑 ✅开发基础能力—Python进阶、API接口调用、大模型开发框架（LangChain等）实操 ✅应用场景开发—智能问答系统、企业知识库、AIGC内容生成工具、行业定制化大模型应用 ✅项目落地流程—需求拆解、技术选型、模型调优、测试上线、运维迭代 ✅面试求职冲刺—岗位JD解析、简历AI项目包装、高频面试题汇总、模拟面经",
+      "excerpt": "# Announcing Genkit Dart 1.0: Build production-ready agentic apps with Dart and Flutter\n\n Announcing the stable 1.0 release of Genkit Dart, an open-source framework for building AI-powered features and agentic workflows with Dart and Flutter. \n\n \n\n### Chris Gill \n\nOct 8, 2026 · 6 min read\n\n Dart and Flutter let you build high-quality apps for mobile, web, and desktop from a single codebase. With Genkit Dart, you can bring that same productivity to full-stack, agentic apps. \n\n Today, we're announcing Genkit Dart 1.0, the first stable, production-ready release of Google's open-source framework for building AI-powered features and agents in Dart. Since our preview launch earlier this year, feedback from the Dart and Flutter community has helped us refine the APIs and expand the toolkit for production workloads.\n...\nthe agent skill to ... AI coding assistants like ... igravity, Claude Code, and Codex up-to-date knowledge of Genkit Dart APIs and best practices:\n...\n## Why Genkit Dart\n\n Genkit provides a unified API across model providers, end-to-end type safety between your server and client, and local tooling to test and debug your AI workflows.\n...\nropic Claude, OpenAI, and OpenAI ... compatible models through a single interface. You register model providers as plugins and can switch between models without rewriting your application logic:\n...\nkit lets you wrap your AI logic into flows: strongly typed, observable ... that are easy to test and deploy as HTTP endpoints. ... the `schemantic` package, you can define your ... schemas once in Dart, ... model, and ... between your backend\n...\n### Test and debug with the Developer UI\n\n Genkit includes a local Developer UI for testing flows, experimenting with prompts, and inspecting execution traces step by step. Launch it alongside your Dart process using the Genkit CLI:\n...\n## Built for agentic workflows\n\n Since the preview launch, we've expanded Genkit Dart with capabilities designed for multi-step agentic workflows, including human-in-the-loop interrupts, generation middleware, prompt management, and production telemetry.\n...\nTools let models call your Dart functions to fetch data or trigger actions, like searching for flights or booking a hotel. When an ... confirmation, a ... can pause the generation loop ... returning `.interrupt(...)` instead of `. ... (...)`:\n...\n### Extend generation with middleware\n\n Middleware hooks directly into the `generate` loop to intercept model calls, inject tools, or modify requests and responses. Using `genkit` and `genkit_middleware`, you can attach pre-packaged capabilities like automatic retries, dynamic `SKILL.md` loading, and tool approval rules to any `generate` call:\n...\n### Monitor your app in production\n\n When you're ready to deploy, the `genkit_otel` package exports traces, token usage, and latency metrics using the OpenTelemetry GenAI semantic conventions, integrating directly with your existing observability backend:\n...\n## What's next: stateful agents and generative UI\n\n Alongside the stable 1.0 core, we're developing higher-level agentic APIs under the `package:genkit/experimental.dart` import so you can try them early and help shape their design. \n\n Stateful agents combine a model, tools, system instructions, and state into a single `defineAgent` call. Conversations persist across turns and app restarts using session stores, and you can use `remoteAgent` to delegate tasks to subagents or expose agents over HTTP to connect with your Flutter app:\n...\nGenerative UI with A2UI lets agents stream interactive UI surfaces instead of plain text. With `genkit_a2ui`, an agent can emit components like date pickers, forms, and confirmation cards that your Flutter app renders incrementally as native widgets. Check out the A2UI guide to learn more.\n...\nGenkit Dart 1.0 is available on pub.dev today. Thank you to everyone in the Dart and Flutter community who built with the preview, reported issues, and contributed pull requests to help bring Genkit Dart to 1.0. \n\n- Get started: Follow the quickstart guide. \n- Explore samples: Browse the sample apps on GitHub. \n- Join the community: Chat with the team on Discord. \n- Stay updated: Follow Genkit on X and LinkedIn. \n- Give feedback: Open an issue on the GitHub repository.",
       "signal_score": 12.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
         "rank": 3
-      }
-    },
-    {
-      "id": "bb02613b7d99",
-      "source": "exa_news",
-      "title": "Carbon-A: Finding genes in known and unknown genomes",
-      "url": "https://huggingface.co/blog/HuggingFaceBio/carbon-annotator-genbank-genome-annotation",
-      "published_at": "2026-10-08T00:00:00.000Z",
-      "excerpt": "# Carbon-A:\n...\nToday, we're releasing the Carbon Annotation Database and the model behind it, Carbon-A. We've used this model to discover 566 million new gene candidates across 22,617 species, thousands of which have never been studied before. We validated a number of these new genes in well-studied species, such as in cats, chicken, and arabidopsis, with our partners at Active Site and UCSD, with more extensive wet lab results on previously-unstudied genomes to be released soon.\n\nYou can explore the Carbon Annotation Database, the model, the training data, and the technical report in HuggingFaceBio’s Carbon Annotation Database Collection.\n...\nNow, we’re releasing Carbon-Annotator (Carbon-A), a 1.2B-parameter model that predicts protein-coding regions directly from DNA using a single model across mammals, other vertebrates, invertebrates, plants, fungi, and protists. It works over a 98,304-base-pair context window and produces nucleotide-resolution predictions on both strands.\n\nAcross 42 benchmark genomes, Carbon-A reaches a macro-averaged nucleotide F1 of 0.944 and outperforms the baselines we evaluated (AUGUSTUS, Helixer, Tiberius, ANNEVO, OrionGeno, SegmentNT, and NTv3) at nucleotide, exon, and gene level.\n...\nWe compared Carbon-A, RefSeq, and several other gene predictors against Iso-Seq data from cat, Syrian hamster, chicken, and Arabidopsis. The Iso-Seq data support several coding regions predicted by Carbon-A that are absent from the RefSeq annotation, providing independent evidence that some apparent disagreements with the reference may reflect missing annotations rather than model errors. In the aggregate results below, Carbon-A reaches roughly 0.62 complete-CDS support, which closely matches the reference closely and outperforms all other ab initio systems we tested.\n...\nTo make this model more useful for the genomics community, we have also been running Carbon-A across eukaryotic assemblies in GenBank to build the Carbon Annotation Database (CADB).\n\nThe current release contains 48,167 assemblies from 22,617 taxa, covering around 27 trillion base pairs and 566 million predicted protein-coding loci. Compared with the RefSeq-derived training corpus, that is about 11.0× more taxa and 9.0× more sequence.\n...\nWe have now ... roughly half of the ... in our target GenBank set, and we plan to release another batch in three weeks.\n...\nIf your species is not in the database yet, you can run Carbon-A directly from the Hugging Face Hub: https://huggingface.co/HuggingFaceBio/Carbon-A-1.2B\n...\nAs a bonus: The released model also provides a confidence score for each predicted gene. On our benchmark, this score reaches an AUROC of 0.876 for distinguishing exact CDS matches from other predictions. This makes it possible to trade coverage for precision depending on the application.\n...\nOur next steps include:\n\n- gathering feedback from researchers working on poorly annotated genomes;\n- exploring models that predict complete gene structures more directly;\n- extending Carbon-A to handle multiple isoforms explicitly;\n- continuing experimental validation, including proteomics and mass spectrometry;\n- and continuing to expand the Carbon Annotation Database.\n\nThe current model already shows signals associated with alternative isoforms, but the decoder still produces a single consensus path per locus. Resolving multiple transcripts explicitly is one of the clearest next steps.",
-      "signal_score": 11.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 4
-      }
-    },
-    {
-      "id": "b75bd978b72f",
-      "source": "exa_news",
-      "title": "Progress Agentic RAG Adds New AI Capabilities",
-      "url": "https://www.passionateinmarketing.com/progress-software-connects-enterprise-knowledge-across-business-systems-with-new-agentic-rag-capabilities",
-      "published_at": "2026-10-06T00:00:00.000Z",
-      "excerpt": "India. —October 7 th , 2026— Progress Software (Nasdaq: PRGS), an AI infrastructure software leader, today announced new capabilities within Progress® Agentic RAG, an agentic retrieval-augmented generation (RAG) platform for AI agents and LLMs that connects enterprise knowledge to AI-powered experiences through a shared Agentic Knowledge Layer. The release includes a native Microsoft Teams application, a new Smart Agent for autonomous multistep retrieval and a WordPress plugin that improves content ingestion, fidelity and governance.\n...\nThe latest Progress Agentic RAG platform release gives organizations two complementary ways to put their knowledge behind AI agents. Content can be ingested in advance through a governed Knowledge Box and kept continuously synchronized for fast, trusted retrieval. In addition, native Model Context Protocol (MCP) support in the platform’s Smart Agent enables agents to access live business systems and web sources at the moment a question is asked, without duplicating data or requiring custom integrations for every system. Together, these capabilities help organizations bring AI into the tools employees use every day, deliver answers that span multiple systems and keep information current, all while preserving governance and avoiding costly rebuilds.\n...\n#### Available through the Microsoft Store, the Progress Agentic RAG platform Teams app brings trusted, source-cited AI experience directly into Teams chats and channels. By bringing AI into a collaboration platform employees already use every day, organizations can accelerate adoption and give users access to enterprise knowledge, while maintaining existing permissions and governance controls without leaving their existing workflows.\n\n- #### Smart Agent for Multistep Retrieval\n\n#### The new Smart Agent plans queries, creates sub-questions, retrieves information across a Knowledge Box, MCP-connected applications and web sources and evaluates results until sufficient information has been gathered. This enables organizations to answer more complex cross-system questions while reducing the need for custom orchestration and source-routing logic.\n...\n#### The native WordPress plugin gives administrators greater control over how WordPress content is indexed and refreshed within Progress Agentic RAG. By preserving content structure, metadata and taxonomy information, it improves retrieval quality, helps keep AI experiences aligned with current content and strengthens governance of enterprise knowledge.\n\nExisting Progress Agentic RAG customers inherit all three capabilities using the same indexed content, access controls and quality framework already in place, with no reindexing, pipeline rebuilds or architectural changes required.\n\nThe latest release of Progress Agentic RAG is now available. For more information, visit https://www.progress.com/agentic-rag.",
-      "signal_score": 11.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 4
-      }
-    },
-    {
-      "id": "859f7af4eca8",
-      "source": "exa_news",
-      "title": "Sub-1-Bit LLM Compression via Latent Factorization — Web Pulse",
-      "url": "https://wpnews.pro/news/sub-1-bit-llm-compression-via-latent-factorization",
-      "published_at": "2026-10-08T00:00:00.000Z",
-      "excerpt": "Banseok Lee and Youngmin Kim released the official implementation of LittleBit (NeurIPS 2025) and LittleBit-2 (ICML 2026), which compress large language models into the sub-1-bit regime down to 0.1 bits per weight by factorizing dense weight matrices into low-rank latent factors, binarizing them, and restoring magnitude with learned scales. LittleBit-2 adds Internal Latent Rotation with Joint Iterative Quantization (Joint-ITQ) to align SVD-derived latent factors with the binary hypercube before quantization-aware training, enabled via the opt-in --use_itq flag with no additional inference overhead. The codebase supports OPT, Llama and Llama 2/3, Phi-4, Qwen2.5, QwQ, Gemma 2, Gemma 3, and Qwen3, and recommends Python 3.12 with transformers 4.51.x for reproducing paper results.\n...\nLittleBit compresses large language models into the sub-1-bit regime by factorizing each dense weight matrix into low-rank latent factors, binarizing those factors, and restoring magnitude information through lightweight learned scales. This enables extreme compression, including the 0.1 bits-per-weight setting, while preserving the original model architecture at inference time.\n\nLittleBit-2 improves this recipe by addressing latent geometry misalignment in the initialization stage. It applies Internal Latent Rotation with Joint Iterative Quantization (Joint-ITQ), aligning the SVD-derived latent factors with the binary hypercube before QAT. LittleBit-2 initialization is available as an opt-in (`--use_itq`) and produces no additional inference overhead.\n\n- Sub-1-bit compression: Designed for 1.0 to 0.1 bits per weight.\n- LittleBit-2 opt-in: Enable Joint-ITQ initialization with`--use_itq` for improved latent geometry alignment.\n- No inference-time change: LittleBit-2 modifies initialization only; the deployed factorized layer remains the same.\n- QAT-friendly: Supports Quantization-Aware Training with SmoothSign and optional residual factorization.\n...\nTrain a model with Quantization-Aware Training. By default, `LittleBitLinear` uses the original SVD-only initialization. To enable LittleBit-2 (Joint-ITQ), pass `--use_itq True`.\n...\n```\nCUDA_VISIBLE_DEVICES=0 python -m main \\\n    --model_id meta-llama/Llama-2-7b-hf \\\n    --dataset c4_wiki \\\n    --save_dir ./outputs/Llama-2-7b-LittleBit-2 \\\n    --num_train_epochs 5.0 \\\n    --per_device_train_batch_size 4 \\\n    --lr 4e-05 \\\n    --warmup_ratio 0.02 \\\n    --report wandb \\\n    --quant_func SmoothSign \\\n    --quant_mod LittleBitLinear \\\n    --residual True \\\n    --eff_bit 1.0 \\\n    --kv_factor 1.0 \\\n    --min_split_dim 8 \\\n    --l2l_loss_scale 10.0\n\n```\n\nMulti-GPU with DeepSpeed\n\n```\ndeepspeed --num_gpus=4 main.py \\\n    --model_id meta-llama/Llama-2-7b-hf \\\n    --dataset c4_wiki \\\n    --save_dir ./outputs/Llama-2-7b-LittleBit-2 \\\n    --ds_config_path configs/zero3.json \\\n    --num_train_epochs 5.0 \\\n    --per_device_train_batch_size 4 \\\n    --lr 4e-05 \\\n    --report wandb \\\n    --quant_func SmoothSign \\\n    --quant_mod LittleBitLinear \\\n    --residual True \\\n    --eff_bit 1.0 \\\n    --kv_factor 1.0 \\\n    --min_split_dim 8\n\n```\n...\nOlder checkpoints may not include `littlebit_config.json`. In that case, pass the quantization arguments explicitly:",
-      "signal_score": 11.0,
-      "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
-        "rank": 4
       }
     },
     {
@@ -231,36 +179,23 @@
       "url": "https://aithority.com/machine-learning/tensor-machines-launches-open-source-benchmark-to-measure-the-true-cost-of-ai-compute",
       "published_at": "2026-10-08T00:00:00.000Z",
       "excerpt": "Tensor Machines Launches Open-Source Benchmark to Measure the True Cost of AI Compute\n\n# Tensor Machines Launches Open-Source Benchmark to Measure the True Cost of AI Compute\n\n By PRNewswire On Oct 8, 2026 \n\n#### New benchmark connects GPU performance and power consumption to the cost of useful AI output\n\nTensor Machines announced an open-source AI hardware benchmark designed to help data center operators answer the most pressing economic question: how much useful AI are they getting from the hardware and power they have already bought? The benchmark brings hardware behavior and workload performance into a repeatable assessment of the energy and cost required to produce useful AI output.\n\nGPU specifications and hourly rental prices do not tell an operator how much work a system can sustain. Facility measures such as Power Usage Effectiveness (PUE), describe energy overhead but do not measure the AI output produced by the equipment. Tensor Machines is developing the benchmark around output that meets a workload’s service requirements, giving operators a way to evaluate the productive capacity of their infrastructure.\n\n“The economic value of a GPU comes from the useful work it delivers,” said Muneeb Rasool, founder and CEO of Tensor Machines. “Operators need to know what that output costs and how the answer changes with the workload, power settings and hardware condition. We are opening up the benchmark so they can measure those tradeoffs and make better use of the infrastructure they already have.”\n...\nTensor’s benchmark recipe applies different loads and records how hardware draws power, heats up, sustains performance and recovers. The benchmark is designed to connect that physical response to the share of requests meeting service requirements, the energy consumed per accepted output token and the cost of that output. Repeating the same workload after a controlled change would let an operator test whether a different power setting, workload placement or cooling condition improves the result.\n\nTensor Machines’ proprietary physics-based models support this work by analyzing the relationships between power, heat, performance and hardware degradation. The models are in private beta with select bare-metal providers and neo-cloud design partners. The broader goal is to help operators sustain productive output and make informed decisions about hardware use and remaining productive life.",
-      "signal_score": 10.0,
+      "signal_score": 11.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 5
+        "rank": 4
       }
     },
     {
-      "id": "578554bff0dd",
+      "id": "74a393fb0416",
       "source": "exa_news",
-      "title": "Introducing Mistral Large 4",
-      "url": "https://aventure.vc/news/2026-10-06-introducing-mistral-large-4",
-      "published_at": "2026-10-06T00:00:00.000Z",
-      "excerpt": "Today, we’re launching a public preview of Mistral Large 4. Unofficially ML4, very officially: le Chonk. ML4 pushes the frontier of open-weight performance. You can try the preview API today on Mistral Studio. Weights drop end of this month.\n...\nML4 is a 1 trillion-parameter natively multimodal model with 49 billion active parameters. It is our largest and most capable model to date, and it continues to improve rapidly as we refine it.\n\nThe model demonstrates exceptional performance across coding, agentic workflows, and multimodal understanding. It already achieves performance competitive with the strongest open-source models globally, while significantly outperforming any open-weight model developed in the US or Europe. On critical enterprise workloads, including cybersecurity, finance and law, we find it to be state-of-the-art among open models. In some domains such as visual grounding, it goes further still, surpassing even frontier closed models.\n\nWe will release the weights by the end of the month. Until then, we are red-teaming the model in real-world settings with cybersecurity leaders, vetted partners, and state authorities, who will access the same model with reduced moderation and expanded cyber capabilities.\n...\nML4 was trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral’s own datacenters in Europe. The public preview is served on that same infrastructure. It is a significant milestone in our long-term investment across infrastructure, research, and product development: state-of-the-art performance in critical verticals, delivered through open weights, designed to give customers control over their AI.\n...\nThere is still more to come. As we work toward releasing the weights, we will share further details on the model architecture, additional benchmarks, and our post-training methodology.\n...\nML4 is one of the world's strongest AI models for cybersecurity. On the Artificial Analysis Cyber Index, an independent evaluation of how well AI models find and fix security flaws in real software, it ranks among the top five models globally and leads open-weight models developed outside China by a wide margin. On one of the index's tests, which asks a model to reproduce a real vulnerability in open-source software and then patch it, ML4 scores 82%, the highest of any model. It also solves 93% of the challenges in Cybench, a set of 40 exercises drawn from security competitions, one of the highest scores reported for an open-weight model.\n...\nML4 excels across software engineering, repository understanding, and complex terminal workflows, scoring 61.7% on DeepSWE v1.1, 59.4% on SWE-Atlas-QnA, and 28.3% on Terminal-Bench 4. Its combined Coding Agent Index score of 49.8% places it ahead of DeepSeek V4 Pro 0813 and Qwen3.8 Max.\n\nWe also ran a blind human evaluation with Surge AI on coding quality: professional annotators rated model outputs on a 1–5 scale, with model identities hidden. ML4 Preview ranked second of five models (3.74), ahead of Kimi K3 (3.59), GLM-5.3 (3.60) and GLM-5.2 (3.40), and behind only Claude Opus 5 (4.22).\n...\nML4 runs general-purpose agents that gather information, use tools, and produce finished deliverables across complex workflows. On AutomationBench — 657 business workflows across apps like Gmail, Google Sheets, Slack, and Salesforce — it scores 59.9%, ahead of Kimi K3, MiMo-V2.6-Pro, and DeepSeek V4 Pro.\n...\nIt's highly proficient at agentic coding for scientific tasks such as data analysis, modeling, and simulating physical reality, which lets researchers focus on the questions rather than the plumbing. In benchmarks, ML4 is state of the art on SciCode-Verified among open-weight models. In practice, it can generate a full Hartree–Fock simulation in one shot — a complex, multi-step chemistry task built from a series of advanced routines.\n...\nML4 is our most capable model for the real-world tasks which professionals handle every day. It can create, edit and fix complex spreadsheets and documents, showing exemplary performance on both legal and financial benchmarks.\n\nNotably, we evaluated ML4 through third party evaluators (vals.ai) on representative tasks for both legal and financial tasks, finding the model exceeds GPT-6-Astra in both cases. On HarveyAI’s Legal Agent benchmark, ML4 outperforms all open-source models.\n...\nML4 has saturated our benchmarks on robustness to indirect prompt injections, putting it at the frontier of OSS models (compared to GLM-5.2, GLM-5.3, Kimi-K2.6, Kimi-K3, DS-V4-Pro-0813). On Lakera’s public B3 AI Security Benchmark, ML4 resists 93.3% of attacks – we see no higher scores among competitors.\n...\non the KORA Benchmark, where ML4 again sits at our highest measured score among OSS models (1.691, with 2 being the maximum denoted as “ Exemplary”).\n...\nBase models are improving fast, and our post-training has to keep pace. A recipe tuned for yesterday's model leaves capability on the table with today's frontier, because ground truth samples that once pushed a model to its limits won’t anymore. We use Reinforcement Learning (RL) because it adapts as the model does: we train on the outcomes of the model's own attempts, and we can raise the difficulty and the breadth of the tasks as it gets stronger.\n\nOur RL library was designed to make new environments easy to add and train at scale. A shared, composable interface allows a single training run to combine tasks ranging from single-turn chat and complex scientific problem solving to safety alignment, factuality, and long-horizon tool use. These environments share scaffolds and resources such as code sandboxes, web search, and external APIs. The same composability extends to verification, with reward models, unit tests, LLM judges, and static checks combined as needed for each task.\n\nAt runtime, an autoscaling fleet of actors generates tens of thousands of rollouts in parallel while model training proceeds asynchronously. The generation and training pipeline is optimized for long trajectories, supporting rollout budgets of millions of tokens across multiple compactions while keeping staleness low. Novel methods and optimizations across both stages minimize off-policy drift and enable stable RL over long horizons.\n\nAt our current scale (3k GPUs), a single training run produces roughly 33 billion tokens per day, of which around 16 billion are trainable completion tokens after filtering and masking. We can see the run progress directly in the training rollouts: training rewards rise across several representative environments as the policy learns to solve increasingly complex tasks. Below are a few examples.\n...\nThis is only the beginning. ML4 is the first milestone on the roadmap funded by our €3 billion Series D — the largest equity round ever raised by a European technology company. That capital is already being put to work: we are significantly scaling up our compute capacity in our own European datacenters, and much more is coming online in the months ahead.\n\nMore compute means more training. The reinforcement learning run behind this preview is still in flight, and the model is showing no signs of saturation — there is substantial headroom ahead. As we scale up training on our expanded infrastructure, we expect large and rapid improvements in the weeks and months to come.\n\nWe will release the weights by the end of the month, along with more details on the architecture, additional benchmarks, and our post-training methodology. And ML4 is only the foundation: it will serve as the base for a new generation of specialized and optimized Mistral models, built for the industries and workloads our customers care about most.\n...\nOpen-weight hybrid instruct-and-reasoning MoE with multimodal input; unifies instruction, reasoning, and agentic capabilities in a single model, state-of-the-art among open weights on cybersecurity, finance, and manufacturing, natively fluent in 160+ languages.",
-      "signal_score": 9.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 6
-      }
-    },
-    {
-      "id": "f11efc4d430d",
-      "source": "exa_news",
-      "title": "UNREAL turns a frozen LLM into its own retriever with <500K params | AI Weekly",
-      "url": "https://aiweekly.co/alerts/unreal-turns-a-frozen-llm-into-its-own-retriever-with-500k-params",
-      "published_at": "2026-10-07T00:00:00.000Z",
-      "excerpt": "UNREAL turns a frozen LLM into its own retriever with <500K params | AI Weekly\n...\nwith <50\n...\n- UNREAL adds fewer than 500K trainable parameters to a frozen LLM, under 0.005% of each backbone's parameter count.\n- On a 3B-token, 21M-chunk Wikipedia index, recall@10 rises from 49.1% to 73.2% on HotpotQA and 31.7% to 60.1% on 2WikiMultiHopQA.\n- At 128K tokens, NoLiMa accuracy climbs from 1.0% to 24.83%; the method cuts FLOPs and time-to-first-token from roughly 32K tokens onward.\n...\nA new paper on Hugging Face Papers argues that corpus retrieval and long-context inference are the same operation at different scales, and shows a single frozen LLM can do both. UNREAL — short for Unifying REtrieval And Long-Context with a Single Model — adds \"fewer than 500K trainable parameters\" on top of a frozen backbone, which the authors note is \"under 0.005% of each tested backbone's parameter count,\" and derives retrieval queries directly from the model's residual stream rather than a separate encoder.\n\nThe headline numbers come from a 3B-token, 21M-chunk Wikipedia index. The paper reports complete-evidence recall@10 rising \"from 49.1% to 73.2% on HotpotQA, from 31.7% to 60.1% on 2WikiMultiHopQA, and from 8.8% to 14.4% on MuSiQue.\" Applied as a long-context selector, the same module raises NoLiMa accuracy \"from 1.0% to 24.83% at its maximum context length of 128K tokens,\" and LV-Eval F1 \"from 49.97% to 54.66% at 256K.\" The authors say UNREAL \"reduces FLOPs and time-to-first-token relative to full-context inference from roughly 32K tokens onward, with larger gains as context grows.\"\n\nFour backbones were tested — the dense Qwen3.5-4B and Muse-Glimmer-30B, plus the hybrid Qwen3.5-35B-A3B and Nemotron-3.5-Lightning-30B-A3B — and \"all four tested backbones outperform the strongest dedicated retriever-reranker systems,\" including BM25, Qwen3-Embedding, BGE, a Jina cross-encoder reranker, and a LightOn multi-vector retriever. It is the tenth RAG story we have tracked in the last 90 days, and the second this week to argue that the retriever-plus-generator split is becoming an architectural accident rather than a necessity.\n\n Originally reported by huggingface.co",
-      "signal_score": 9.0,
+      "title": "腾讯开源的企业级知识库，20+ LLM、8种向量库、7个IM渠道，一条命令本地跑-平芜编程栈",
+      "url": "http://www.pwwt.cn/news/3360610",
+      "published_at": "2026-10-08T00:00:00.000Z",
+      "excerpt": "WeKnora 是腾讯开源的 LLM 知识库框架，Go + Vue 3 编写。核心思路：一条命令本地部署，把散落在飞书/Notion/语雀/本地文件夹的文档统一接入，支持 RAG 问答、ReAct Agent 推理、自动 Wiki 生成，20+ LLM 和 8 种向量库随便换。\n\n- 腾讯官方出品——国内头部互联网公司背书\n- MIT 协议，完全自托管，数据不出内网\n- v0.6.3，最新的版本，新增网站嵌入 Widget，可把知识 Agent 接到官网、文档站或产品页；同时升级聊天体验，补齐 RSS 同步、Wiki 层级、文档标签、批量重解析和扫描 PDF OCR。\n...\n| 模式 | 作用 | 场景 |\n| --- | --- | --- |\n| Quick Q&A | RAG 检索 + 生成回答，带引用来源 | 日常知识查找 |\n| ReAct Agent | 多步推理，自动调用工具、搜索、检索 | 复杂问题分析 |\n| Wiki Mode | Agent 自动把文档生成结构化 Wiki + 知识图谱 | 文档自动整理 |\n...\nOpenAI、Azure、Anthropic、DeepSeek、通义千问、智谱、混元、豆包、Gemini、MiniMax、NVIDIA、SiliconFlow、OpenRouter、Ollama 等，随时切换。\n...\nDoris、腾讯\n...\n企业微信、飞书、Slack、Telegram、钉钉、Mattermost、微信，直接在这些工具里问问题。\n...\n检索引擎 ... Agent 编 ... → 用户交互，\n...\n公司文档散落在飞书、Notion、语雀、本地 NAS。WeKnora 接入所有数据源，自动同步，员工在企业微信里直接问\"去年的 Q3 财报在哪里\"，RAG 检索给出准确答案 + 文档链接。\n...\n把产品文档、FAQ、历史工单导入 WeKnora， ... ReAct Agent。用户在 Slack 里问\"怎么重置密码\"，Agent 自动检索知识库 + 调用重置工具 + 给出步骤，不需要人工介入。\n...\n### 上手：让 AI Agent 帮你装\n...\n```\n用 Docker 部署 WeKnora 企业知识库，参考 https://github.com/Tencent/WeKnora要求：1. git clone https://github.com/Tencent/WeKnora.git && cd WeKnora2. cp .env.example .env，配置 LLM API Key（推荐 DeepSeek 或通义千问）3. docker compose up -d 启动核心服务4. 打开 http://localhost 确认 Web UI 正常5. 创建一个知识库，上传 3 个 PDF 测试文档6. 测试 Quick Q&A 和 ReAct Agent 两种模式7. 配置企业微信/飞书机器人，测试 IM 渠道问答\n```\n...\n```\nweknora auth login --host https://kb.example.comweknora kb listweknora doc upload notes.mdweknora chat \"总结这份设计文档\"weknora mcp serve # 启动 MCP Server\n```\n...\n| 维度 | WeKnora | Dify | FastGPT | AnythingLLM |\n| --- | --- | --- | --- | --- |\n| 定位 | 企业级 RAG + Agent + Wiki | LLM 应用开发平台 | 知识库问答 | 本地文档聊天 |\n| 数据源 | 飞书/Notion/语雀/RSS + 本地 | 有限 | 有限 | 本地为主 |\n| IM 渠道 | 7 个（企微/飞书/Slack等） | 部分 | 部分 | 无 |\n| Agent 模式 | ReAct 多步推理 | 工作流编排 | 简单 RAG | 无 |\n| Wiki 生成 | ✅ 自动 + 知识图谱 | ❌ | ❌ | ❌ |\n| 向量库 | 8 种 | 2-3 种 | 2-3 种 | 2-3 种 |\n| 企业安全 | RBAC + 审计 + 加密 | 基础 | 基础 | 基础 |\n| 部署 | Docker/K8s/本地 | Docker/云 | Docker/云 | Docker |\n| 开源协议 | MIT | Apache 2.0 | Apache 2.0 | MIT |\n\nDify 胜在应用编排和生态，FastGPT 胜在中文优化和易用性，AnythingLLM 胜在本地隐私。WeKnora 胜在企业级完整性：多数据源接入、7 个 IM 渠道、ReAct Agent、自动 Wiki、RBAC 安全体系，一套方案覆盖从文档接入到员工使用的全链路。\n...\n- 生产环境建议内网部署：腾讯官方建议不要直接暴露到公网，配好防火墙和访问控制\n- LLM API Key 成本：大文档库首次 embedding 消耗较多 Token，建议用低价模型或本地 Ollama\n- CVE 安全漏洞：2026 年初披露过租户权限绕过和 SQL 注入漏洞，建议升级到最新版本（v0.6.3+）\n- 文档解析耗时：大 PDF 或扫描件可能需要几分钟，后台 MQ 异步处理，可以关页面等通知\n...\n✅大模型基础认知—大模型核心原理、发展历程、主流模型（GPT、文心一言等）特点解析 ✅核心技术模块—RAG检索增强生成、Prompt工程实战、Agent智能体开发逻辑 ✅开发基础能力—Python进阶、API接口调用、大模型开发框架（LangChain等）实操 ✅应用场景开发—智能问答系统、企业知识库、AIGC内容生成工具、行业定制化大模型应用 ✅项目落地流程—需求拆解、技术选型、模型调优、测试上线、运维迭代 ✅面试求职冲刺—岗位JD解析、简历AI项目包装、高频面试题汇总、模拟面经",
+      "signal_score": 11.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 6
+        "rank": 4
       }
     },
     {
@@ -270,75 +205,36 @@
       "url": "https://syncai.news/article/quasar-lowering-the-loss-floor-of-quantization-aware-training-with-loss-aware-re-311746",
       "published_at": "2026-10-07T00:00:00.000Z",
       "excerpt": "QUASAR: Lowering the Loss Floor of Quantization-Aware Training with Loss-Aware Reconstruction · SyncAI.news\n...\n# QUASAR: Lowering the Loss Floor of Quantization-Aware Training with Loss-Aware Reconstruction\n\narXiv:2608.13966v2 Announce Type: replace-cross Abstract: As large language model inference shifts toward lower precision, post-training quantization (PTQ) becomes increasingly brittle, making quantization-aware training (QAT) essential for preserving model quality. However, QAT has a structural mismatch: gradient updates are applied to latent full-precision weights, while the loss and gradients are computed on lossy reconstructions of those weights. This mismatch can lead to suboptimal training trajectories and a higher loss floor. Second-order PTQ methods address a similar problem by minimizing loss-aware reconstruction error, but applying such expensive reconstruction repeatedly during QAT as the weights evolve is impractical. We introduce QUASAR, a QAT method that brings lightweight, loss-aware reconstruction into the training loop. At each training step, QUASAR reconstructs the latent weights by searching over a small set of clipping ranges and fitting dequantization parameters through saliency-weighted least squares. We use an exponential moving average of squared gradients as the per-parameter saliency signal. Our theoretical analysis shows that optimizing QUASAR's reconstruction objective tightens both the convergence and final-loss bounds of QAT. We evaluate QUASAR across four model families and across INT4, INT3, INT2, and NVFP4 quantization formats. QUASAR consistently achieves lower training and evaluation loss than competitive QAT methods and outperforms QAT and PTQ baselines on downstream benchmarks. At INT2, QUASAR improves average accuracy over the best QAT baseline by 13.3 points with quantization-aware distillation and by 10.9 points with QAT on mathematical reasoning data. Notably, after distillation on only about 600M tokens, QUASAR's INT4 Gemma-4 E4B checkpoint outperforms the corresponding QAT checkpoint released by Google, with 66% lower KL divergence and 1.8 points higher average accuracy.",
-      "signal_score": 9.0,
+      "signal_score": 11.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
-        "rank": 6
+        "rank": 4
       }
     },
     {
-      "id": "f8587353889c",
+      "id": "62c0f80434d4",
       "source": "exa_news",
-      "title": "Anticloud Reports $0.013 Electricity Cost in PAX v52 AI Research",
-      "url": "https://natlawreview.com/press-releases/anticloud-reports-0013-electricity-cost-pax-v52-ai-research-benchmark",
-      "published_at": "2026-10-06T00:00:00.000Z",
-      "excerpt": "### Anticloud Reports $0.013 Electricity Cost in PAX v52 AI Research Benchmark\n...\nRelease Date\n...\nDubai-based Anticloud reports results from a benchmark in which its 27B-parameter PAX v52 model generated structured research frameworks for 20 open problems across multiple scientific fields.\n\nDubai, United Arab Emirates--(Newsfile Corp. - October 6, 2026) - Anticloud FZ LLE, a Dubai-based developer of sovereign AI infrastructure, has reported results from a PAX v52 benchmark in which its 27B-parameter model generated structured research frameworks for 20 open problems spanning mathematics, physics, computer science, biology and cosmology.\n\nAccording to Anticloud's published benchmark results, the test generated approximately 24,000 tokens of output during a run on a T4 GPU. The company reported an estimated electricity cost of $0.013 for the run and said each generated output was SHA3-256 hashed and recorded through its AIOSS audit system.\n...\nThe benchmark also forms part of a broader discussion around the capabilities, cost and accessibility of AI systems being developed by frontier research labs. Anticloud said its results ... intended to contribute to this discussion by ... what can be ... with a smaller, locally deployed model ... a controlled computing\n...\n\"The benchmark was designed to test what a smaller, locally deployed model can produce when the system is built around auditability, reproducibility and control over the computing environment,\" said Lois-Kleinner Alpasan, founder of Anticloud FZ LLE.\n\nAt 22 years old at the time of the reported benchmark, Alpasan was leading the development of Anticloud’s locally deployed AI infrastructure and the systems used to conduct and record the test.\n...\nAccording to Anticloud's published benchmark data, the PAX L5 Narrow L2 General 27B model generated research frameworks for 20 open problems across mathematics, physics, computer science, biology and cosmology.\n...\n- 20 research frameworks generated\n- Approximately 24,000 tokens processed\n- Approximately 286 seconds per research framework\n- Approximately $0.013 in reported electricity cost\n- $0.00 reported Kaggle cost\n- 4.2 tokens per second under the reported benchmark configuration\n\nAnticloud said the outputs were generated during a reproducible test run and that the resulting materials were SHA3-256 hashed and recorded through its AIOSS system.\n...\nAnticloud also reported performance results for the PAX L5 Narrow L2 General 27B model across several benchmark and assessment frameworks.\n...\n- 97.3 tokens per second on a T4 GPU\n- Approximately $0.08 per 1 million tokens\n- 100/100 on the reported MITRE ATT&CK assessment\n- 88% on the reported NIST AI RMF assessment\n- 7/9 on the reported machine-learning readiness assessment\n- 61.86% on TruthfulQA\n- 69.78% on MMLU\n- 77.46% on HellaSwag\n...\nAudit and Deployment Infrastructure\n\nAnticloud said auditability is a central component of its PAX v52 architecture.\n\nAccording to the company, its AIOSS system uses SHA3-256 hashing to maintain a tamper-evident record of generated outputs. The company reported an AIOSS audit-chain throughput of 205,796 entries per second and a CRDT merge time of 0.11 milliseconds for a 10,000-operation test conducted in its reported T4 environment.\n\nThe company also reported the use of AES-256GCM and scrypt for its sovereign memory encryption system.\n\nAnticloud said its approach is intended to provide greater visibility into model activity, generated outputs and system operations when AI workloads are run in controlled computing environments.\n...\nAccording to Alpasan, Anticloud's current development focus includes expanding its AI architecture into a more modular system.\n\nAs part of its future research and evaluation work, Anticloud is also developing an AGI-oriented test based on a 77,000-page corpus designed to evaluate models on broader knowledge and reasoning capabilities beyond structured, grid-based rule evaluation. The company said the test is intended to provide an additional reference point for future model assessment.\n...\nAnticloud said the broader objective is to develop AI infrastructure that can support locally controlled workloads while maintaining records of system activity and generated outputs.\n...\nAnticloud FZ LLE is a Dubai-based developer of sovereign AI infrastructure and AI systems focused on local deployment, auditability and controlled computing environments. The company develops technology for AI workloads across research and selected regulated-industry applications.",
-      "signal_score": 8.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 7
-      }
-    },
-    {
-      "id": "03ca0c10edc6",
-      "source": "exa_news",
-      "title": "Perplexity Open-Sources pplx-embed-v2-late, 92.4% on MADQA | AI Weekly",
-      "url": "https://aiweekly.co/alerts/perplexity-open-sources-pplx-embed-v2-late-924-on-madqa",
+      "title": "vLLM Boosts DeepSeek V4.1 Flash Throughput 5.3x - News - Cocoloop",
+      "url": "https://news.cocoloop.cn/en/2026/10/vllm-deepseek-v41-flash-agent",
       "published_at": "2026-10-08T00:00:00.000Z",
-      "excerpt": "- The 0.6B and 9B models share a 128-dimensional per-token vector space, so a corpus indexed at 9B quality can be queried at 0.6B speed without rebuilding the index.\n- Benchmark delta ... two models is ... upgrading the indexing model from 0.6B to ... 2.3 ... % on MAD\n...\nPerplexity's MIT-licensed 0.6B/9B embedder pair removes the hard choice between indexing quality and query-time cost in RAG stacks, collapsing what was a two-tier infrastructure decision into a single shared vector space. Multiple outlets read this as a deliberate ecosystem play to pull developer workflows away from proprietary embedding services at Cohere, OpenAI, and Voyage AI.\n\nPerplexity has released two open-weight embedders, a 0.6B edge model and a 9B, that share one embedding space, so an index built with the big model can be served by the small one. Both landed October 7 on Hugging Face under the MIT license, announced on the company forum.\n\nThe pitch is retrieval over text, images, and rendered pages without a chunking or OCR pipeline in front. Perplexity's model card describes them as \"late-interaction (ColBERT) retrievers for text, images, and visual documents, built on Qwen3.5 with bidirectional attention,\" each producing \"one 128-dimensional vector per token\" scored with MaxSim.\n\nThe 9B scored 92.4% on MADQA, a set of 500 questions over roughly 18,000 PDF pages, and 64.0% on BrowseComp+ paired with GPT-OSS-120B. AlphaSignal's writeup puts that 4.9 points ahead of competing ColBERT models. On Q2D-Web the company lists 74.8% Recall@1000 across about 190 million documents.\n...\nfrom a bigger teacher. \"Both ... distilled from an internal 18B ColBERT teacher trained on ... and triplet data. Distillation used a token-level LEAF-style objective,\" the model card says. The 0. ... B was fully fine-tuned; for the 9B, the final eight transformer layers were fully fine-tuned while the remaining layers and the vision encoder were adapted with LoRA.\n\nThe 0.6B lands at 594M total parameters, with 240M for text and 340M for images. The 9B card lists 7.4B active parameters out of 8B. API access is announced as forthcoming; today the release is for self-hosters.\n\nIt arrives a day after Google's EmbeddingGemma 2 and alongside a run of retrieval and RAG work we have been tracking this week, including an Aalto result on inverting ColPali indexes.\n...\nThe next checkpoint is Perplexity's own API pricing when embedding access ships; that will set the floor for whether teams self-host the 9B or pay by the token, and will also force a direct comparison with Google's EmbeddingGemma 2 released a day earlier.\n...\nExamines developer cost economics, highlights nDCG ... 0 and ViDoRe v3 benchmark specifics, and flags open questions around storage overhead and independent third-party validation\n...\n2. Startup Fortune Read → \n\nFrames the MIT release as a competitive ecosystem move against Google and OpenAI, drawing explicit parallels to open-source drops by Mistral, DeepSeek, and Alibaba in 2026.\n\n> A developer can now run a model that matches Qwen3 and beats Gemini on Perplexity's reported multilingual retrieval benchmark\n3. KuCoin Flash Read → \n\nProvides the clearest standalone statement of the cross-model compatibility guarantee and names the specific ViDoRe v3 delta between 0.6B and 9B indexing.\n\n> The vectors of both models are mutually compatible, allowing developers to build a database using the 9B model while using the 0.6B model for everyday searches",
-      "signal_score": 8.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 7
-      }
-    },
-    {
-      "id": "c8462c5ec2d7",
-      "source": "exa_news",
-      "title": "Bring multimodal semantic search to the edge with EmbeddingGemma 2\n            \n            \n            - Google Developers Blog",
-      "url": "https://developers.googleblog.com/en/google-ai-edge-with-embeddinggemma-2",
-      "published_at": "2026-10-06T00:00:00.000Z",
-      "excerpt": "Today, Google DeepMind launched EmbeddingGemma 2, a best-in-class for its size, open-weight, multimodal embedding model that natively maps text, images, video frames, and audio into a single, unified vector space. For developers building local search and media retrieval experiences, it reduces the latency and memory overhead of chaining separate image captioning, speech-to-text, and text-embedding models. Designed specifically for local, privacy-first applications, EmbeddingGemma 2 covers text, vision, and audio modalities in a compact 740M parameter footprint, offering modular encoders that can run on as little as ~191 ... active RAM for text-only weights and ~567 ... for the full multimodal model on a Google Pixel 11 Pro. Most notably, EmbeddingGemma 2 can act as an ultra-low-latency on-device decision engine. Without requiring any training data or fine-tuning, it matches user inputs directly against classification labels and descriptions, delivering instant, zero-shot intent routing in a matter of milliseconds. For an overview of the model architecture and evals including multimodal embedding capabilities, ... out the Google DeepMind blog.\n...\n, we’ll share how you can experience the power of EmbeddingGemma 2 right away through Google AI Edge’s interactive showcases, Google AI Edge Gallery on mobile and Google AI Edge Foresight on Mac, and how you can leverage the model to build your own private, on-device ... search, visual keyframe retrieval, and condition-trigger workflows ... coming weeks, we will also make this model available as a service on Android, accessible through ML Kit, including using NPU acceleration to further ... performance across a broad range of devices.\n...\nFor developers building for the Android ecosystem, EmbeddingGemma 2 is a lightweight, task-specific model perfectly suited for on-device execution. We are bringing these ... search capabilities to ML Kit in ... coming weeks, providing a standardized, platform-integrated path for production Android apps in the future. By integrating with ML Kit developers can get ... for EmbeddingGemma out ... box without having to manage the model or worrying about APK bloat. ML Kit will feature blazing fast performance ... NPU acceleration (when available) and automatic model updates.\n...\nWhile MediaPipe Tasks offers turnkey simplicity, cross-platform applications requiring fine-grained control over processing and acceleration can be built directly on LiteRT, the proven engine powering ML Kit, MediaPipe Tasks, Google AI Edge Gallery, and Foresight. Powered by unified acceleration across CPUs, GPUs, and NPUs, deployment is greatly simplified with exceptional portability: a single `.litertlm` file runs out of the box on both CPU and GPU across all supported edge platforms. On Android, ML Kit APIs (coming soon) leverage LiteRT to provide optimized implementation for the platform, giving you both performance and simplicity without having to worry about model lifecycle management.\n\nTo provide the best inference speed for EmbeddingGemma 2, we implemented targeted optimizations for compute-intensive workloads like vision encoding. This unlocks highly responsive, real-time AI experiences, as “search-as-you-type” in the Google AI Edge Gallery app, with visual embeddings taking as little as 37.3 ms (26.9 images per sec) on a MacBook M5 Pro GPU. See table for additional measurements.\n\n Table: Per image EmbeddingGemma 2 vision latency across CPU, GPU and NPU for a representative set of devices. Latency column specifies the vision embedding latency, evaluated with a maximum budget of 70 vision tokens per image.\n...\n- Quantization-Aware Training (QAT): Compresses model weights to INT4 and INT8, bringing multimodal vector search within reach of mid-range consumer hardware.\n- Adaptive input and output scaling: Given the text and image input size, we dynamically load the optimal computational graph at runtime, consistently supported across all CPU, GPU, and NPU backends. This design accommodates variable text length without wasted compute while empowering developers to control vision token budgets for the ideal balance between latency and precision. For output, built-in Matryoshka Representation Learning (MRL) slicing allows on-the-fly dimension truncation, cutting local storage and index footprints by up to 8x.\n...\n- Deploy EmbeddingGemma 2: Download ready-to-run, pre-quantized `.litertlm` bundles directly from the Hugging Face LiteRT Community.",
-      "signal_score": 8.0,
-      "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
-        "rank": 7
-      }
-    },
-    {
-      "id": "f2d39a661b1d",
-      "source": "exa_news",
-      "title": "Dell AI Data Platform Adds Agentic AI, GPU Capabilities",
-      "url": "https://www.channelinsider.com/ai/dell-ai-data-platform-agentic-ai-gpu",
-      "published_at": "2026-10-07T00:00:00.000Z",
-      "excerpt": "Dell expands its AI Data Platform with agentic AI context tools, GPU acceleration, managed PowerScale and services to move AI projects into production.\n...\nDell Technologies is expanding its AI Data Platform with new enterprise context, GPU acceleration, and managed infrastructure capabilities to help organizations move AI workloads from pilot projects into production.\n\nThe updates include a Unified Semantic Layer, Enterprise Knowledge Graph, and knowledge agents designed to give AI systems governed business context, alongside NVIDIA-accelerated data processing, a new open-source storage benchmarking tool, and a fully managed PowerScale offering for Microsoft Azure.\n...\nDell is also using NVIDIA Nemotron Retriever models within the platform for document parsing, embedding, and reranking. The models also provide reasoning and visual understanding capabilities to Knowledge Agents.\n...\nThe announcement also incorporates NVIDIA accelerated computing, including NVIDIA cuDF, GPU-accelerated Apache Spark, and Apache Arrow, into the data processing environment.\n\nThe engine features up to 10x faster data processing, with jobs starting up to seven times faster over Apache Arrow.\n...\nBased on Dell’s internal benchmarking, Chhabra cited up to 20 times faster batch data processing compared with CPU-only processing and an average of four times faster data processing across workloads. Chhabra notes that the improvements depend on the workloads and configuration involved.\n\nDell’s testing was conducted using NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs, with the Dell Data Processing Engine powered by NVIDIA cuDF.\n...\nFurther, Dell is introducing the Dell Storage Performance Benchmarking Tool, an open-source benchmarking tool for PowerScale and ObjectScale designed to help customers evaluate storage performance against their specific AI workloads.\n\nThe tool allows organizations to define and run realistic, repeatable storage benchmarks using their own infrastructure.\n\nIt supports testing scenarios such as checkpoint-style writes, high-concurrency reads, mixed read/write environments, and I/O queries. It measures throughput and latency in real time, verifies persistent data end-to-end, and records software versions and test provenance.\n\nThe tool can also test S3-compatible object storage across training, inference, and checkpointing workloads, helping organizations compare vendor solutions and determine whether their storage infrastructure can keep GPUs supplied with data.\n\nThe release of the tool helps customers make more informed storage-sizing decisions by using performance results from their own environments rather than relying exclusively on standardized vendor benchmarks.\n...\nDell has also announced the expansion of its PowerScale for Microsoft Azure, which is offered as a fully managed service, allowing customers to use PowerScale in Azure without handling deployment, monitoring, maintenance, or upgrades themselves.\n...\nAlso announced: Dell is expanding its professional services portfolio to help enterprises plan, deploy, and optimize their AI Data Platform environments.\n\nThe expanded services cover data strategy, production-ready platform implementation, data engine selection, and ongoing platform optimization.\n\nThe services are designed to help customers determine where their data resides, identify appropriate data sources, align infrastructure with AI use cases, and transition AI projects from pilots to productions.\n\nDell’s implementation services also extend across its data and storage engines, activating the platform’s analytics, processing, search, and orchestration capabilities while keeping the platform tuned to the demands of AI workloads.",
-      "signal_score": 7.0,
+      "excerpt": "vLLM Boosts DeepSeek V4.1 Flash Throughput 5.3x - News - Cocoloop\n\n DeepSeek 2026-10 English \n\n# vLLM Boosts DeepSeek V4.1 Flash Throughput 5.3x\n...\nThe vLLM team says DeepSeek-V4.1-Flash activates about 16 billion parameters per token during decoding, with a global KV cache compressed to roughly 890 bytes per token in FP4. Latency drops 1.9x at low concurrency, and throughput rises 5.3x when per-user output is capped at 150 tokens per second — all benchmarks ran on GB200 and GB300 hardware.\n\nThe open-source inference framework vLLM, working with Inferact, published a technical blog post on October 7 detailing a suite of inference optimizations built for DeepSeek-V4.1-Flash. In tests simulating agentic workloads, the team measured a 1.9x speedup at low concurrency, and a 5.3x throughput gain when per-user output speed was capped at 150 tokens per second.\n\nThe workload was SemiAnalysis's AgentX benchmark, which the team treats as representative of agentic serving scenarios — multi-turn conversations, long context windows, and session affinity that keeps prefix-cache hit rates high. The low-latency setup used 4-way tensor parallelism with FlashInfer; the high-throughput setup used 2-way data parallelism combined with expert parallelism.\n...\nAccording to the blog post, V4.1 Flash uses a causal encoder-decoder architecture with 40 layers total, where layer 20 computes the global KV used by the decoder. Each token activates roughly 16 billion parameters during decoding and about 8 billion during prefill. The global KV cache is compressed and shared across layers, coming to roughly 890 bytes per token at FP4 precision; a separate sliding-window KV cache covers the most recent 128 positions, stored uncompressed at FP8.\n...\n- Bounded sliding-window replay: when a prefix-cache hit occurs, the system recomputes just the most recent 128 tokens, paired with CUDA Graph. This cuts time-to-first-token by about 30%, and by nearly 70% on contexts of roughly 100,000 tokens. It's enabled by default on V4.1 and can be disabled with `--no-swa-bounded-replay`.\n- Sparse MQA scoring kernel: 14 to 23x faster than the original implementation at a 512K context, though only 1.2x faster at 8K — translating to roughly a 3% to 6% end-to-end decoding gain.\n- NVFP4 attention: shrinks the KV cache by 45% compared with the earlier FP8 approach, and speeds up the corresponding step by about 1.45x.\n- Engram lookup: asynchronous prefetching with transparent huge pages speeds up lookups by as much as roughly 10x.\n\nA few more changes came from operator fusion: folding several steps of mixture-of-experts routing into a single kernel gave 1.18x to 1.31x gains at medium batch sizes, while mHC-related kernels ran 1.14x to 1.51x faster than the TileLang version on GB200.\n\nOn accuracy, the team ran comparisons on GSM8K and GPQA and said the quality loss was \"negligible,\" within about 1.5 standard errors. The blog post did not share evaluation results on additional tasks.\n...\nAll these figures come from Nvidia's Blackwell platform. Due to U.S. export controls, institutions in China have limited access to chips like the GB200 and GB300, and NVFP4 is a Blackwell-exclusive data format — so the related gains can't be directly reproduced on H20 chips or domestic accelerators.\n\nThe parts that do transfer sit mainly in the scheduling and caching layers. Bounded sliding-window replay, session affinity, and skipping KV cache offload are only loosely tied to specific hardware, and the code has already landed in vLLM's main branch — teams running the same model can pick it up simply by upgrading. Progress on the various kernel integrations is tracked centrally in vLLM's GitHub issue #57448. No third party has yet measured the actual speedup on domestic chips.\n...\n, test hardware ... parallelism configurations.",
+      "signal_score": 10.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 8
+        "rank": 5
       }
     },
     {
-      "id": "7f6dc85e7023",
+      "id": "b75bd978b72f",
       "source": "exa_news",
-      "title": "Write Once, Run Anywhere: Universal Tools for AI Agents - DEV Community",
-      "url": "https://dev.to/agent-kernel/write-once-run-anywhere-universal-tools-for-ai-agents-1mmg",
-      "published_at": "2026-10-06T10:32:57.000Z",
-      "excerpt": "# Write Once, Run Anywhere: Universal Tools for AI Agents - DEV Community\n...\nWrite Once, Run Anywhere: Universal Tools for AI Agents - DEV Community\n\n Posted on Oct 6 • Originally published at kernel.yaala.ai \n\n# Write Once, Run Anywhere: Universal Tools for AI Agents\n...\nAgent Kernel solves this: write your tools once, use them everywhere.\n...\n## The Solution: Write Normal Python Functions \n\nWith Agent Kernel, you write your tools as regular Python functions—no special decorators or framework-specific code:\n...\n## Using Your Tool with Any Framework \n\nOnce you've written your tool as a normal Python function, you can add it to agents in any framework. The only thing that changes is one line of code:\n\n#### OpenAI Agents \n\n```\nfrom agents import Agent\nfrom agentkernel.openai import OpenAIToolBuilder\n\nweather_agent = Agent(\n    name=\"weather\",\n    instructions=\"You provide weather information.\",\n    tools=OpenAIToolBuilder.bind([get_weather]),  # ← Add your tool here\n)\n...\n#### CrewAI \n\n```\nfrom crewai import Agent\nfrom agentkernel.crewai import CrewAIToolBuilder\n...\nagent = Agent(\n    role=\"weather\",\n    goal=\"You provide weather information\",\n    backstory=\"Use the get_weather tool for queries.\",\n    tools=CrewAIToolBuilder.bind([get_weather]),  # ← Add your tool here\n)\n...\n#### LangGraph \n\n```\nfrom langgraph.prebuilt import create_react_agent\nfrom agentkernel.langgraph import LangGraphToolBuilder\n\nweather_agent = create_react_agent(\n    name=\"weather\",\n    tools=LangGraphToolBuilder.bind([get_weather]),  # ← Add your tool here\n    model=model,\n    prompt=\"Use the get_weather tool for queries.\",\n)\n\n```\n\n#### Google ADK \n\n```\nfrom google.adk.agents import Agent\nfrom agentkernel.adk import GoogleADKToolBuilder\n\nweather_agent = Agent\n...\nname=\"weather\",\n    model=\"gemini-2 ... 0-flash-exp\",\n    description=\"You provide ... information\",\n    tools=GoogleADKToolBuilder.bind([get_weather]),  # ← Add your tool here\n)\n...\nThe `.bind()` method translates your normal Python function into whatever format each framework needs. You don't have to worry about the details—just write your function once and use it anywhere.\n...\nAgent Kernel detects whether your function is async or sync and generates the right code for each framework automatically. You just write `def` or `async def`.\n...\nAgent Kernel solves this by:\n\n1. Wrapping tools for ADK - Adding the `tool_context` parameter automatically\n2. Bridging contexts - Converting ADK's context to Agent Kernel's unified `ToolContext`\n3. Passing context through session state - Storing context IDs in ADK's session and retrieving them in\n...\nAgent Kernel extracts metadata once from your Python function (name, docstring, parameters, types) and formats it appropriately for each framework.\n...\nIf you write tools using framework-specific decorators, you're locked in. Agent Kernel's `ToolBuilder` classes handle these imports internally, so your tool code has zero framework dependencies.\n...\n## Accessing Runtime Information \n\nSometimes your tools need to know things like \"which user is asking?\" or \"what session is this?\" Agent Kernel provides this information in ... consistent way, regardless of which framework you're using:\n...\n## Real Example: Switching Frameworks Is Easy\n...\ntry LangGraph\n...\n## Async Functions Work Too \n\nIf your tool needs to do asynchronous work (like database queries or API calls), just write it as an async function:\n...\n# Works with any framework automatically\ntools = OpenAIToolBuilder.bind([search_database])\ntools = LangGraphToolBuilder.bind([search_database])\ntools = GoogleADKToolBuilder.bind([search_database])\n...\nhandles the async details for you\n...\n## Using Multiple Tools \n\nReal agents usually need multiple tools. Just add them all to the list:\n...\n## Local Tools vs. MCP: When to Use Each \n\nYou might have heard of MCP (Model Context Protocol) and wonder: \"Should I use MCP for my tools, or build them locally?\"\n...\nMCP is designed for connecting to external tool servers that run as separate processes. Think of it like calling a web API or external service.\n...\n### Agent Kernel Tools: Part of Your Code \n\nAgent Kernel's tool binding is for tools that are part of your agent's business logic—functions that live in your codebase alongside your agents.\n\nUse local tool binding when:\n\n- Tools are specific to your agent's logic (like calculating pricing, formatting data)\n- Tools access your application's state or databases directly\n- You want simple, fast function calls without network overhead\n- You want to test tools as regular Python code\n...\n### Why Local Tools Are Often Better\n...\nin your agent code is simpler and more efficient\n...\nStart with local tools. They're simpler, faster, and easier to build and test.\n...\nFor most business logic—data formatting, calculations, querying your own databases, calling your internal APIs—local tools are the right choice.\n\n### Best of Both Worlds \n\nAgent Kernel supports both approaches. Use local tools for your custom logic, and connect to MCP servers when you need external capabilities:\n...\nMCP tools for external\n...\n-docs\")\n...\nThe key insight: Local tools and MCP serve different purposes. Don't add MCP complexity unless you need it. For most agent development, simple local tools are the better choice.\n\n## What Your Tools Keep \n\nWhen you write a tool as a normal Python function, Agent Kernel automatically extracts everything the AI needs to know:\n...\n## Getting Started \n\nUsing framework-agnostic tools is simple:\n\n### 1. Install Agent Kernel\n...\n### 2. Write your\n...\n### 3. Add it to your agent \n\n```\nfrom agentkernel.openai import OpenAIToolBuilder\nfrom agents import Agent\n\nagent = Agent(\n    name=\"my_agent\",\n    instructions=\"Use my_tool when needed.\",\n    tools=OpenAIToolBuilder.bind([my_tool]),\n)",
-      "signal_score": 7.0,
+      "title": "Progress Agentic RAG Adds New AI Capabilities",
+      "url": "https://www.passionateinmarketing.com/progress-software-connects-enterprise-knowledge-across-business-systems-with-new-agentic-rag-capabilities",
+      "published_at": "2026-10-06T00:00:00.000Z",
+      "excerpt": "India. —October 7 th , 2026— Progress Software (Nasdaq: PRGS), an AI infrastructure software leader, today announced new capabilities within Progress® Agentic RAG, an agentic retrieval-augmented generation (RAG) platform for AI agents and LLMs that connects enterprise knowledge to AI-powered experiences through a shared Agentic Knowledge Layer. The release includes a native Microsoft Teams application, a new Smart Agent for autonomous multistep retrieval and a WordPress plugin that improves content ingestion, fidelity and governance.\n...\nThe latest Progress Agentic RAG platform release gives organizations two complementary ways to put their knowledge behind AI agents. Content can be ingested in advance through a governed Knowledge Box and kept continuously synchronized for fast, trusted retrieval. In addition, native Model Context Protocol (MCP) support in the platform’s Smart Agent enables agents to access live business systems and web sources at the moment a question is asked, without duplicating data or requiring custom integrations for every system. Together, these capabilities help organizations bring AI into the tools employees use every day, deliver answers that span multiple systems and keep information current, all while preserving governance and avoiding costly rebuilds.\n...\n#### Available through the Microsoft Store, the Progress Agentic RAG platform Teams app brings trusted, source-cited AI experience directly into Teams chats and channels. By bringing AI into a collaboration platform employees already use every day, organizations can accelerate adoption and give users access to enterprise knowledge, while maintaining existing permissions and governance controls without leaving their existing workflows.\n\n- #### Smart Agent for Multistep Retrieval\n\n#### The new Smart Agent plans queries, creates sub-questions, retrieves information across a Knowledge Box, MCP-connected applications and web sources and evaluates results until sufficient information has been gathered. This enables organizations to answer more complex cross-system questions while reducing the need for custom orchestration and source-routing logic.\n...\n#### The native WordPress plugin gives administrators greater control over how WordPress content is indexed and refreshed within Progress Agentic RAG. By preserving content structure, metadata and taxonomy information, it improves retrieval quality, helps keep AI experiences aligned with current content and strengthens governance of enterprise knowledge.\n\nExisting Progress Agentic RAG customers inherit all three capabilities using the same indexed content, access controls and quality framework already in place, with no reindexing, pipeline rebuilds or architectural changes required.\n\nThe latest release of Progress Agentic RAG is now available. For more information, visit https://www.progress.com/agentic-rag.",
+      "signal_score": 10.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 8
+        "rank": 5
       }
     },
     {
@@ -348,6 +244,110 @@
       "url": "https://aidaily.phd/briefing/e56b1",
       "published_at": "2026-10-07T00:00:00.000Z",
       "excerpt": "A 70B parameter language model running at 500,000 tokens of context on 34 GB of VRAM, with generation throughput 79% faster than its FP16 baseline, sounds like a hardware upgrade story. It is not. The performance comes entirely from a 52 byte data structure called block_tq3, now merged into llama.cpp as native KV cache support. TurboQuant, ported from Google Research's arXiv:2504.19874, packs 128 dimensional key and value vectors into 3.25 bits per value through MSE optimal quantization with learned rotation matrices. On Llama-3 35B at 110K context, KV buffer memory drops from 768 MiB to roughly 167 MiB, a 79% reduction. On Llama-3 70B, the context ceiling on a single A100 extends from 109K tokens to over 500K. The numbers alone would make this notable. What makes it transformative is how those numbers are achieved: not through better compression alone, but through the elimination of a computational tax that prior quantization methods imposed.\n\nThe block_tq3 structure stores a 4 byte float32 scale factor and 48 bytes of packed 3 bit indices for 128 values. The quantization pipeline begins with a learned rotation matrix R drawn from SO(128), the special orthogonal group in 128 dimensions, paired with a translation vector t. Each incoming KV vector x is transformed as x' = R times (x minus t), aligning the vector into a low entropy subspace where 3 bit quantization captures more than 99.9% of variance. The 128 transformed values are split into two halves of 64, each receiving an independent asymmetric scale. Indices are clamped to the range negative four through three and packed into contiguous uint8 arrays using 128 bit SIMD instructions on both x86 and ARM. The rotation matrices themselves are computed offline via 178 iterations of Lloyd-Max optimization over real KV cache traces from Llama-3.1 8B, Llama-3.1 70B, and Gemma-2 27B. The entire training procedure fits on a single GPU in roughly two hours at a cost of approximately five dollars in cloud compute.\n\nThe pivotal engineering decision is what happens at decode time. Prior KV quantization in llama.cpp, using q4_0 and q8_0 formats, stored compressed values but dequantized them to float32 before computing attention. At short contexts this overhead is negligible. At 110K tokens, q4_0 incurred a 37% generation throughput penalty relative to FP16, dropping from 38.0 tokens per second to 24.0. TurboQuant sidesteps this entirely by fusing quantized integer arithmetic directly into the attention kernel. The dot product Q times K is computed via lookup table indexing over 3 bit codes, producing the attention logits without ever materializing full precision KV tensors. The result: 37.8 tokens per second at 110K context, statistically indistinguishable from the FP16 baseline of 38.0. On longer contexts where the memory bandwidth bottleneck intensifies, the advantage grows. Llama-3 70B at 500K tokens achieves 22.4 tokens per second versus 12.5 for FP16, a 79% speedup.\n...\nThe research lineage runs through five years of post training quantization, beginning with SmoothQuant (Xiao et al., arXiv:2211.10438, 2022), which introduced activation outlier smoothing for INT8 inference. AWQ (Ji Lin et al., arXiv:2306.00978, 2023) refined this with per channel scaling for weights. The critical pivot to KV specific compression came with KVQuant (Yuhong Li et al., arXiv:2401.18079, 2024), the first system to apply non uniform per layer quantization to key and value caches, achieving less than 0.1 perplexity degradation at 3 bits on Llama-3. QAQ (Jiaming Tang et al., arXiv:2403.04643, 2024) advanced the theory further by proving, via Hessian analysis, that keys are less sensitive to quantization than values, motivating asymmetric bit allocation. TurboQuant synthesizes these findings into a single algorithm that uses rotation to handle outliers, per half scaling to manage asymmetry, and integer compute to eliminate the dequantization tax that every prior method accepted as inevitable.\n...\nMost coverage of KV cache quantization will focus on the compression ratio. A 4.6 times reduction in memory, enabling 500K context on 34 GB of VRAM, is the obvious headline. But the deeper story is that compression ratio and inference speed have been decoupled in prior approaches and recoupled in TurboQuant. Before this work, moving from FP16 to q4_0 saved 72% of KV memory but cost 37% of generation speed at long contexts. The memory savings enabled fitting longer sequences, but the speed penalty partially negated the practical benefit. TurboQuant achieves nearly identical memory savings, 79% versus 72%, while simultaneously accelerating decode by up to 79% relative to FP16. This is not a tradeoff; it is a Pareto improvement. The reason is architectural: by designing the quantization format around the compute kernel rather than bolting compression onto an existing pipeline, the format itself becomes the fast path.\n...\nreduce 128 dimensional KV vectors to 3.25 bits without quality loss, the same principle should extend to intermediate activations in feedforward layers, to cross attention caches in encoder decoder models, and potentially to gradient tensors during training. The offline Lloyd-Max procedure is cheap enough, two GPU hours, to be applied routinely during model development. Expect quantization aware pretraining to incorporate rotation objectives within 12 months, yielding models that are natively compressible to 2 bits without post hoc optimization. The theoretical foundation, that attention error decomposes as the sum of key error and value error norms,\n...\nFor practitioners building production systems, the actionable takeaway is immediate: switch long context deployments from q4_0 or q8_0 KV to TQ3_0 today. The llama.cpp integration is a single flag, kv-quant turboquant-3bit, compatible with any GGUF model. No separate rotation matrix files are needed; the Lloyd-Max centroids and lookup tables are baked into the binary. Profile decode throughput, not prompt throughput, as the primary metric at contexts above 32K tokens. On a 24 GB consumer GPU, Llama-3 70B Q4_K_M with TQ3_0 KV runs 256K context stable. On the same hardware with FP16 KV, the ceiling is roughly 30K tokens. For agentic workflows requiring full conversation history, this is the difference between truncation and memory.\n\nThe implications for hardware strategy are equally sharp. TurboQuant's integer compute path means that future inference accelerators optimized for low bit integer arithmetic, rather than floating point tensor cores, become first class citizens for LLM serving. AMD's CDNA3 with its INT4 matrix units, Intel's AMX with INT8 tiles, and Qualcomm's Hexagon DSP all gain relevance as inference targets. NVIDIA's moat, built on FP16 tensor core throughput, erodes when the dominant operation is a 3 bit integer lookup table indexed dot product. The ggml abstraction layer already maps these operations to platform specific SIMD, meaning that a single upstream change benefits every hardware backend simultaneously. By mid 2027, expect production inference cost per token to be determined more by memory bandwidth per dollar than by peak FLOPS.\n...\nThe broader trajectory is now clear. KV cache management, not parameter count, is the binding constraint on practical LLM deployment. TurboQuant demonstrates that this constraint yields to algorithmic innovation at the intersection of signal processing, quantization theory, and systems engineering. The field spent 2023 and 2024 racing to scale models larger. The systems that will define 2026 and 2027 are racing to make existing models fit where they previously could not, run faster than they previously did, and cost less than they previously charged. A 52 byte block structure, a rotation matrix from 1982 era signal processing, and 178 iterations of Lloyd-Max optimization have done more for practical long context inference than the last doubling of GPU memory. That is the kind of result that reshapes roadmaps.",
+      "signal_score": 10.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 5
+      }
+    },
+    {
+      "id": "bb02613b7d99",
+      "source": "exa_news",
+      "title": "Carbon-A: Finding genes in known and unknown genomes",
+      "url": "https://huggingface.co/blog/HuggingFaceBio/carbon-annotator-genbank-genome-annotation",
+      "published_at": "2026-10-08T00:00:00.000Z",
+      "excerpt": "# Carbon-A:\n...\nToday, we're releasing the Carbon Annotation Database and the model behind it, Carbon-A. We've used this model to discover 566 million new gene candidates across 22,617 species, thousands of which have never been studied before. We validated a number of these new genes in well-studied species, such as in cats, chicken, and arabidopsis, with our partners at Active Site and UCSD, with more extensive wet lab results on previously-unstudied genomes to be released soon.\n\nYou can explore the Carbon Annotation Database, the model, the training data, and the technical report in HuggingFaceBio’s Carbon Annotation Database Collection.\n...\nNow, we’re releasing Carbon-Annotator (Carbon-A), a 1.2B-parameter model that predicts protein-coding regions directly from DNA using a single model across mammals, other vertebrates, invertebrates, plants, fungi, and protists. It works over a 98,304-base-pair context window and produces nucleotide-resolution predictions on both strands.\n\nAcross 42 benchmark genomes, Carbon-A reaches a macro-averaged nucleotide F1 of 0.944 and outperforms the baselines we evaluated (AUGUSTUS, Helixer, Tiberius, ANNEVO, OrionGeno, SegmentNT, and NTv3) at nucleotide, exon, and gene level.\n...\nWe compared Carbon-A, RefSeq, and several other gene predictors against Iso-Seq data from cat, Syrian hamster, chicken, and Arabidopsis. The Iso-Seq data support several coding regions predicted by Carbon-A that are absent from the RefSeq annotation, providing independent evidence that some apparent disagreements with the reference may reflect missing annotations rather than model errors. In the aggregate results below, Carbon-A reaches roughly 0.62 complete-CDS support, which closely matches the reference closely and outperforms all other ab initio systems we tested.\n...\nTo make this model more useful for the genomics community, we have also been running Carbon-A across eukaryotic assemblies in GenBank to build the Carbon Annotation Database (CADB).\n\nThe current release contains 48,167 assemblies from 22,617 taxa, covering around 27 trillion base pairs and 566 million predicted protein-coding loci. Compared with the RefSeq-derived training corpus, that is about 11.0× more taxa and 9.0× more sequence.\n...\nWe have now ... roughly half of the ... in our target GenBank set, and we plan to release another batch in three weeks.\n...\nIf your species is not in the database yet, you can run Carbon-A directly from the Hugging Face Hub: https://huggingface.co/HuggingFaceBio/Carbon-A-1.2B\n...\nAs a bonus: The released model also provides a confidence score for each predicted gene. On our benchmark, this score reaches an AUROC of 0.876 for distinguishing exact CDS matches from other predictions. This makes it possible to trade coverage for precision depending on the application.\n...\nOur next steps include:\n\n- gathering feedback from researchers working on poorly annotated genomes;\n- exploring models that predict complete gene structures more directly;\n- extending Carbon-A to handle multiple isoforms explicitly;\n- continuing experimental validation, including proteomics and mass spectrometry;\n- and continuing to expand the Carbon Annotation Database.\n\nThe current model already shows signals associated with alternative isoforms, but the decoder still produces a single consensus path per locus. Resolving multiple transcripts explicitly is one of the clearest next steps.",
+      "signal_score": 9.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 6
+      }
+    },
+    {
+      "id": "bd39a9e0d7a1",
+      "source": "exa_news",
+      "title": "Agent-first platform Limelit releases Limelit Open, an open-source AI search visibility tracker | FinancialContent",
+      "url": "https://www.financialcontent.com/article/abnewswire-2026-10-8-agent-first-platform-limelit-releases-limelit-open-an-open-source-ai-search-visibility-tracker",
+      "published_at": "2026-10-08T00:00:00.000Z",
+      "excerpt": "Limelit, an agent-first generative engine optimization platform, has released Limelit Open, a self-hosted AI search visibility tracker, as open source under the Apache 2.0 license, with tools and plugins that let AI agents read its data.\n\nSan Francisco, California - October 08, 2026 - Limelit, a generative engine optimization (GEO) platform built by Limelit.co, has released Limelit Open, a self-hosted artificial intelligence (AI) search visibility tracker, as open source at github.com/limelit-co/open under the Apache 2.0 license. Limelit Open is being built in public, and ready-to-run downloads for macOS and Linux have been published on GitHub since September 29, 2026.\n\nLimelit Open tracks how ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews, Google AI Mode and Bing Copilot mention and cite a brand against its competitors, for five of the engines, a free monthly allowance from Limelit's hosted service. It runs as a single program, with no database server or container to set up, and keeps its data in a local file. Its dashboard shows visibility, share of voice, average position and citation share, and gives visibility as the number of answers that name the brand out of all answers measured. Every answer can be read in full with the brand marked in the text, the sources the engine cited and, for ChatGPT, Claude and Gemini, the web searches the engine reported running, known as query fan-out. A read-only demo at demo.limelit.co runs an unmodified build of the repository.\n\nThe project is built for AI agents first. It includes a Model Context Protocol (MCP) server with fourteen read tools, most of which share their names with the hosted product's tools, so an assistant such as Claude can query the data directly.\n\nOn October 5, 2026, the repository also became a plugin marketplace that can be added to Claude Code, Anthropic's AI coding assistant, with the command \"/plugin marketplace add limelit-co/open\", which makes three plugins available to install. One connects Claude Code to a Limelit Open install, one connects it to the hosted product, and one runs two checks that need no account: which AI crawlers a site's robots.txt file (the file that tells crawlers what they may read) lets in, and whether its llms.txt file (a proposed index of a site's pages for AI models) is present and well formed.\n...\nLimelit's hosted product is built to work like an AI marketer for a small team. Its agents run the recurring work of generative engine optimization on a schedule: they refresh the buyer questions across the engines, hunt for the questions where a brand is missing, score those gaps, draft the page or correction that answers each one, draft outreach pitches for the team to send from its own mailbox, and track whether the brand's visibility improves. A spend cap stops the work before a budget is exceeded, and the team decides what ships. Agents created in its agent builder, can also run on a schedule, read the account's own data and report what they find, but they cannot publish or send anything. An Open install moves to the hosted product with one command, which copies its data and never sends the operator's provider keys.\n...\nLimelit is an agent-first generative engine optimization platform built by Limelit.co in the San Francisco Bay Area. Its hosted product works like an AI marketer: its agents track AI search visibility across ChatGPT, Perplexity, Claude, Gemini, Google AI Overviews and Google AI Mode, show where a brand is recommended, missing or described inaccurately, and draft the pages, corrections and outreach that address those gaps, on a schedule the team sets. Limelit Open, its self-hosted tracker, is open source under the Apache 2.0 license. Outreach messages that Limelit drafts are handed to the customer's own mailbox; Limelit does not send them. More information is available at limelit.co.",
+      "signal_score": 9.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 6
+      }
+    },
+    {
+      "id": "aaf65a69b02d",
+      "source": "exa_news",
+      "title": "TurboQuant Compresses LLM KV Caches to 2.8 Bits With Under 1% MSE, but the Real Breakthrough Is Eliminating Dequantization Entirely | AI Daily PhD",
+      "url": "https://aidaily.phd/briefing/e44b1",
+      "published_at": "2026-10-07T00:00:00.000Z",
+      "excerpt": "TurboQuant Compresses LLM KV Caches to 2.8 Bits With Under 1% MSE, but the Real Breakthrough Is Eliminating Dequantization Entirely | AI Daily PhD\n...\nA single flag change in llama.cpp now compresses the key-value cache of a 35-billion-parameter language model from 64 KB per token to roughly 14 KB, a 4.6x reduction, while producing outputs byte-identical to FP16 at temperature zero. The implementation, contributed to llama.cpp's GitHub discussion #20969 by ggml-org developer kth8, ports Algorithm 1 from Google Research's TurboQuant paper (arXiv:2504.19874), accepted at ICLR 2026. At 110K context length on an RTX 4090 class GPU, the prior standard approach, q4_0 quantization, imposed a 37% decode throughput penalty relative to FP16 despite saving 552 MiB of KV memory. TurboQuant's tq3_0 format saves even more memory while recovering full FP16 decode speed, achieving roughly 1.0x to 1.1x relative throughput. The trick is not merely using fewer bits; it is never materializing FP16 intermediates at all.\n\nTurboQuant exploits three statistical properties of post-projection KV activations that hold reliably in models with grouped-query attention (GQA) and rotary positional embeddings (RoPE): low variance norms across heads, natural sparsity in value channels, and predictable distributional shape after rotation. The quantization procedure, termed TurboQuant_mse, begins with per-channel normalization. For each D-dimensional KV vector, the method computes channel-wise mean mu_c and standard deviation sigma_c, then clips outliers beyond 3 sigma, a threshold tuned to keep relative MSE below 1%. The clipped, normalized values are then mapped to the nearest entry in a 256-entry codebook learned offline via k-means clustering over calibration activations. Despite the codebook being 8-bit in index space, aggressive bit-packing compresses the stored representation to an effective 2.8 bits per element in the tq3_0 format, packing 10 three-bit quanta into each 32-bit register with 2 bits of padding.",
+      "signal_score": 9.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 6
+      }
+    },
+    {
+      "id": "38ab595d9685",
+      "source": "exa_news",
+      "title": "Mellum2.1 Gets to Work: A Fast Open Model for Coding Agents - The JetBrains Blog",
+      "url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents",
+      "published_at": "2026-10-08T12:00:00.000Z",
+      "excerpt": "# Mellum2 ... 1 Gets to Work: A Fast Open Model for Coding Agents\n\n \n\n Bulat Salimzianov \n\nTrained with reinforcement learning in real environments, Mellum2.1 is built for coding agents and fast sub-agents that run on your own hardware.\n\nToday, we’re releasing Mellum2.1, the next version of the 12B mixture-of-experts model we open-sourced in June. The architecture hasn’t changed since version 2: it’s still a compact, fast model with 2.5B active parameters, released under the Apache 2.0 license. What has changed is everything that happens after pre-training.\n\nMellum2 was fast, but it couldn’t work inside a repository at the level we wanted. After a summer of reinforcement learning in real environments, with millions of sandboxed runs across thousands of environments, Mellum2.1 can: it explores a codebase, edits files, and checks its own changes.\n...\n- Real environments for agentic skills: We built the infrastructure to run thousands of RL environments in-house and launched millions of sandboxes over the course of training.\n...\nWe compared Mellum2.1 with Mellum2 – as well as two open models of a similar class, Qwen3.5-9B and Gemma 4 E4B – using the same evaluation setup for all of them.\n\nThe biggest improvement is in agentic coding, where Mellum2.1 advanced the most compared with Mellum2. The model also got better across the board, showing gains in coding, competitive programming, math, tool calling, and general knowledge, and it holds up on hard problems as well as everyday ones.\n\n \n\n \n\n##\n...\nPost-training didn’t touch the architecture, so Mellum2.1 is as fast as Mellum2, and multi-token prediction (MTP) makes it faster.\n\nUnder heavy load, Mellum2.1 is the fastest model in the group and serves almost twice as many tokens as Qwen3.5-9B. For a single request, MTP makes it about 1.6 times faster.\n...\n- A capable worker inside agentic systems: Mellum2.1 can handle different parts of an agent’s plan, from identifying ... root cause of a failing test to drafting and checking a fix.\n- Problems beyond coding: Mellum2.1 is a capable general assistant, too. It handles everyday questions and works through hard math and reasoning problems step by step.\n- Private, self-hosted deployment: Run Mellum2.1 locally or on your own infrastructure to keep code and data fully under your control.\n...\nMellum2.1 is available on Hugging Face. GGUF builds for llama.cpp, Ollama, and LM Studio, as well as the multi-token prediction (MTP) head for speculative decoding in vLLM, are coming soon.\n\nIf you’re building coding agents, sub-agents, or AI tools that run on your own infrastructure, we’d love for you to try Mellum2.1. Tell us what works and what doesn’t. Your feedback will shape the next version.",
+      "signal_score": 8.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 7
+      }
+    },
+    {
+      "id": "e2cff3acca75",
+      "source": "exa_news",
+      "title": "Meet the Underdog Saluki 27B: A 2-bit Qwen3.8-27B That Beats the Original at Tool Calling - MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/10/09/meet-the-underdog-saluki-27b-a-2-bit-qwen3-8-27b-that-beats-the-original-at-tool-calling",
+      "published_at": "2026-10-09T00:00:00.000Z",
+      "excerpt": "Underdog, the on-device assistant from Conway Research, has released Saluki 27B under Apache 2.0. Underdog Saluki 27B is a 2-bit GGUF of Qwen3.8-27B that fits in 7.89 GB. The full BF16 model needs 54 GB. Underdog tuned the compression to protect tool calling, the skill that turns a chat model into an agent. For developers, that means a 27B-class agent model that runs in stock llama.cpp.\n...\n- Size: 27B dense parameters. 7.89 GB GGUF versus 54 GB for BF16. \n- Runs on: stock llama.cpp and apps built on it, with full GPU offload. Optional 629 MB or 928 MB vision add-on. \n- Performance: 96% average retention across 9 benchmarks versus full Qwen3.8-27B.\n- Best: Parallel tool calls, 42 versus 35 for the full model (120% retention).\n- Worst: AIME 2025, 79.2 versus 96.7 (about 82% retention).\n- Bottom line:\n...\noriginal at tool calling\n...\nSaluki 27B is a 2-bit, mixed-precision GGUF of Qwen3.8-27B built for local agents. It stacks 3 layers of work:\n...\n- The second layer is ISTA-DASLab’s Qwen3.8-27B-GSQ-RCO-GGUF. GSQ learns accurate low-bit scalar grids per tensor. RCO assigns a quantization type to each tensor under a fixed size budget. ISTA’s smallest file, IQ2_XS, is 8.4 GB at 2.50 bits per weight.\n- The third layer is Underdog’s own pass. It shrank the file to 7.89 GB and targeted tool calling. The file is named `IQ2-mix` and carries an imatrix tag. Underdog has not published the full recipe for this pass.\n...\n| Feature | Underdog Saluki 27B | Qwen3.8-27B (BF16) | ISTA GSQ-RCO IQ2_XS | PrismML Bonsai 2 27B (PTQ1_0) |\n| --- | --- | --- | --- | --- |\n| Org | Underdog (Conway Research) | Qwen team | ISTA-DASLab | PrismML |\n| Parameters | 27B | 27B | 27B | 27.36B |\n| File size | 7.89 GB | 54 GB | 8.4 GB | 5.95 GB |\n| Bits per weight | Not disclosed (2-bit mix) | 16 | 2.50 | 1.75 |\n| Context | Not disclosed | 262,144 native | Not disclosed | 262K |\n| Vision | Add-on, 629 or 928 MB | Native | 0.9 GB mmproj | Optional 0.63 GB |\n| Runtime | Stock llama.cpp | Transformers, vLLM, SGLang | Stock llama.cpp, Ollama, LM Studio | PrismML llama.cpp fork |\n| Underdog Bench (of 120) | 88 | 84 | Not disclosed | 70 |\n| Vendor headline | 96% avg retention, 9 benchmarks | Baseline | 100.3% zero-shot recovery | 98.2% of FP16, 14 benchmarks |\n| License | Apache 2.0 | Apache 2.0 | Apache 2.0 | Apache 2.0 |\n\nBonsai 2 is smaller and reports 98.2% retention across 14 thinking-mode benchmarks. It also posts stronger math, including 95.00 on AIME25. However, it needs PrismML’s llama.cpp fork, since stock llama.cpp rejects its packing formats. Saluki runs on stock llama.cpp. Each vendor uses its own harness, so cross-vendor scores are not directly comparable.\n...\n- Saluki 27B fits Qwen3.8-27B into 7.89 GB, down from 54 GB.\n- It beats the full model on tool calling: 88 versus 84.\n- Parallel tool calls rise to 42 from 35.\n- Math and reasoning take the biggest hit, down to about 82 to 85%.\n- It runs in stock llama.cpp under Apache 2.0.",
+      "signal_score": 8.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 7
+      }
+    },
+    {
+      "id": "cbdc78db27b5",
+      "source": "exa_news",
+      "title": "GLM 5.3 Now Available on Amazon Bedrock | VFF - The signal in the noise",
+      "url": "https://vff.ai/article/2026/10/06/introducing-glm-5-3-on-amazon-bedrock",
+      "published_at": "2026-10-06T00:00:00.000Z",
+      "excerpt": "GLM 5.3 Now Available on Amazon Bedrock | VFF - The signal in the noise\n\n# GLM 5.3 Now Available on Amazon Bedrock\n...\nGLM 5.3, a 753-billion-parameter mixture-of-experts model from Zhipu AI, is now available on Amazon Bedrock with managed APIs and cross-region inference. The model is optimized for coding and long-horizon agentic tasks, with reported improvements in coding benchmarks and emergent cybersecurity capabilities. Enterprise customers can access it without managing infrastructure, with support for prompt caching and OpenAI-compatible APIs.\n...\n- GLM 5.3 is a 753B-parameter mixture-of-experts model now available on Amazon Bedrock for eligible enterprise customers\n- Z.ai reports 50% improvement over GLM 5.2 on internal coding benchmarks and a leading score of 84.5 on the CyberGym security benchmark\n- The model supports prompt caching, cross-region inference, and both OpenAI-compatible and Amazon Bedrock native APIs\n- GLM 5.3 is designed for complex systems engineering, multi-step reasoning, and sustained context across large codebases\n...\nLarge open-weight models optimized for coding and agentic workflows have historically required customers to provision and operate their own inference infrastructure. GLM 5.3 on Bedrock removes that operational burden while offering specialized capabilities for security testing and long-context coding tasks, making frontier-class models more accessible to enterprises.\n...\nOrganizations can now run complex coding and security automation workflows without infrastructure management costs. Prompt caching reduces both latency and input costs for agentic workloads that repeatedly process large codebases or system prompts, improving economics for sustained multi-step tasks.\n...\n- Managed access to large open-weight models reduces barriers to entry for enterprises that lack dedicated ML infrastructure teams\n- Cybersecurity capabilities position GLM 5.3 for defensive security workflows and authorized penetration testing automation\n- Cross-region inference and prompt caching address key operational constraints for long-horizon agentic tasks in production environments\n...\nMonitor adoption patterns among enterprise customers to understand demand for open-weight models on managed platforms versus self-hosted alternatives. Track how prompt caching and cross-region inference features influence cost and latency outcomes in production agentic workflows. Watch for competitive responses from other cloud providers offering similar managed access to large open-weight models.",
+      "signal_score": 7.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 8
+      }
+    },
+    {
+      "id": "cb9c403971f1",
+      "source": "exa_news",
+      "title": "Perplexity Open Sources 9B and 0.6B Embedding Models for OCR-Free Search | HuggingNews",
+      "url": "https://huggingnews.com/ai/perplexity-open-sources-9b-and-06b-embedding-models-for-ocr-free-search-beee8dff",
+      "published_at": "2026-10-07T00:00:00.000Z",
+      "excerpt": "Perplexity has launched a set of late-interaction embedding models that allow for the retrieval of text and images within a single shared vector space. The new pplx-embed-v2-late weights are hosted on Hugging Face and enable users to search across PDF pages, screenshots, and slide decks as images, eliminating the need for optical character recognition. The framework is natively supported in Sentence Transformers and facilitates cross-model querying, where data is indexed by a larger model and queried by a smaller one to reduce latency.\n\nThe models, available in 9B and 0.6B parameter versions, scored 92.4% on MADQA and 64% on BrowseComp+. Across 72 text retrieval tasks, the 9B model achieved 81.3 nDCG@10, while the 0.6B version reached 78.0. Perplexity reports that pairing 0.6B queries with 9B indexing improves text retrieval to 79.6 nDCG@10, and the 0.6B model's performance on ViDoRe v3 page images is within 1.2 points of the Nemotron ColEmbed V2 8B.\n\n \n\nImage via @tomaarsen on X\n...\nSource @aravsrinivas Oct 7 12:33p ▸ — We’re open-sourcing pplx-embed-v2-late, multi-vector embeddings for text and images, 9B and 0.6B, in one shared embedding space \n\nSupport @tomaarsen Oct 7 12:59p ▸ — @perplexity_ai just released pplx-embed-v2-late: 0.6B & 9B models for text & image retrieval \n\nAnalysis @tomaarsen Oct 7 12:59p ▸ — Perplexity reports that 0.6B queries + 9B documents improves over 0.6B on both sides \n\nSupport @tomaarsen Oct 7 12:59p ▸ — The 0.6B is within 1.2 points of Nemotron ColEmbed V2 8B \n\nSupport @tomaarsen Oct 7 12:59p ▸ — Across 72 text retrieval tasks, Perplexity reports 81.3 nDCG@10 for 9B & 78.0 for 0.6B",
+      "signal_score": 7.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 8
+      }
+    },
+    {
+      "id": "971278a0bb39",
+      "source": "exa_news",
+      "title": "Qwen3-235B-A22B-Instruct-2507-FP8 Lands on ModelScope: Native FP8 for Faster, Leaner Inference — AICHINA.news Blog | AI China News",
+      "url": "https://aichina.news/blog/qwen3-235b-a22b-instruct-2507-fp8-lands-on-modelscope-native-fp8-for-yw7xyb",
+      "published_at": "2026-10-06T00:00:00.000Z",
+      "excerpt": "Qwen has updated the ModelScope model card for Qwen3-235B-A22B-Instruct-2507-FP8, adding the FP8 quantised version of its large instruction-tuned model. The release targets hardware with native FP8…\n\n models/Qwen October 6, 2026 1 min read Auto-generated from ModelScope \n\nQwen has updated the ModelScope model card for Qwen3-235B-A22B-Instruct-2507-FP8, adding the FP8 quantised version of its large instruction-tuned model. The release targets hardware with native FP8 support, making it possible to serve a 235B-parameter mixture-of-experts model with 22B active parameters more efficiently. The update keeps the model's instruction-following and reasoning capabilities intact while reducing the precision of weights and activations to eight bits.\n\nFor developers, this matters because FP8 inference can cut memory use and increase throughput on supported GPUs, such as NVIDIA Hopper and Blackwell generations. That translates into lower serving costs, faster response times, and easier deployment in production environments where GPU memory and bandwidth are limiting factors. It also means teams can experiment with a frontier-scale Qwen model without needing the full BF16 footprint, provided their hardware supports FP8.\n\nThe model itself is built for demanding tasks: complex reasoning, coding, long-form instruction following, and multilingual conversation. As with any quantised release, there are trade-offs. FP8 requires compatible hardware, and while quality is generally strong, it may not perfectly match higher-precision versions in every edge case. Licence and usage terms remain available on the ModelScope page. View the full model page at https://aichina.news/models/Qwen/Qwen3-235B-A22B-Instruct-2507-FP8/",
       "signal_score": 7.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -357,13 +357,40 @@
   ],
   "candidates": [
     {
-      "id": "candidate-2026-10-09-9",
-      "topic": "Measuring True Cost of AI Compute with Open-Source Benchmark",
-      "angle": "Tensor Machines launched an open-source benchmark to measure the true cost of AI compute by connecting GPU performance and power consumption to the cost of *useful* AI output, moving beyond hourly rental prices.",
-      "audience_pain": "Opacity in AI cloud costs and difficulty in optimizing for actual useful work, not just raw compute resources.",
-      "why_now": "A new open-source benchmark has been released specifically to address the challenge of accurately assessing AI compute costs, directly benefiting data center operators and developers.",
-      "hook_seed": "True AI compute cost? Use this benchmark.",
-      "format": "india_cost",
+      "id": "candidate-2026-10-09-3",
+      "topic": "Breakthroughs in LLM Quantization",
+      "angle": "TurboQuant and NVFP4 are drastically cutting KV cache memory (e.g., to 2.8-3.25 bits/value, 79% reduction) and even *eliminating dequantization*, while Saluki 27B shows 2-bit quantization can *improve* agentic capabilities.",
+      "audience_pain": "High VRAM requirements and latency for large LLM inference on consumer hardware or edge devices.",
+      "why_now": "Multiple recent papers/releases demonstrate practical extreme quantization with performance *gains* or retention, making larger models accessible.",
+      "hook_seed": "Quantization: 2-bit models get smarter.",
+      "format": "mechanism_explainer",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "aaf65a69b02d",
+        "e2cff3acca75",
+        "560b529a09c2",
+        "a3eb1b662467",
+        "62c0f80434d4"
+      ],
+      "scores": {
+        "trend_strength": 10,
+        "audience_relevance": 10,
+        "practical_value": 9,
+        "originality": 9,
+        "conversation_potential": 9,
+        "evidence_strength": 10
+      },
+      "score": 9.5
+    },
+    {
+      "id": "candidate-2026-10-09-1",
+      "topic": "Measuring AI Compute Cost",
+      "angle": "Tensor Machines' new open-source benchmark links GPU performance and power consumption directly to the cost of *useful* AI output, moving beyond simple hourly rental prices.",
+      "audience_pain": "Accurately assessing the true cost-efficiency of AI hardware and infrastructure, beyond abstract specifications or rental rates.",
+      "why_now": "A new open-source tool addresses a critical economic question for data center operators and developers building AI at scale.",
+      "hook_seed": "Real AI compute cost? Benchmark it.",
+      "format": "practical_tips",
       "objective": "follow",
       "image_template": "handwritten_poster",
       "source_ids": [
@@ -375,17 +402,17 @@
         "practical_value": 10,
         "originality": 8,
         "conversation_potential": 9,
-        "evidence_strength": 9
+        "evidence_strength": 10
       },
-      "score": 9.17
+      "score": 9.33
     },
     {
       "id": "candidate-2026-10-09-2",
-      "topic": "Docker Agent for AI Agent Orchestration",
-      "angle": "Docker's new `docker-agent` simplifies building, running, and sharing AI agents declaratively with YAML, integrating RAG, multi-LLM support, and tool ecosystems directly into familiar developer workflows.",
-      "audience_pain": "Complexity in managing and deploying AI agents, integrating various tools/LLMs, and RAG pipelines.",
-      "why_now": "Docker has just open-sourced `docker-agent` as a CLI plugin, making agent development more accessible and familiar to container users.",
-      "hook_seed": "Docker simplifies AI agent development.",
+      "topic": "Declarative AI Agent Orchestration",
+      "angle": "Docker's new `docker-agent` simplifies building, running, and sharing AI agents with declarative YAML, offering multi-LLM support, RAG, and tool integration.",
+      "audience_pain": "The complexity of developing, deploying, and managing AI agents across diverse models and tools.",
+      "why_now": "A major open-source release leverages familiar Docker workflows for emerging agentic architectures, simplifying development.",
+      "hook_seed": "Docker agents: YAML to orchestrate AI.",
       "format": "practical_tips",
       "objective": "follow",
       "image_template": "handwritten_poster",
@@ -394,95 +421,44 @@
       ],
       "scores": {
         "trend_strength": 9,
-        "audience_relevance": 10,
+        "audience_relevance": 9,
         "practical_value": 10,
-        "originality": 7,
-        "conversation_potential": 8,
-        "evidence_strength": 9
+        "originality": 8,
+        "conversation_potential": 9,
+        "evidence_strength": 10
       },
-      "score": 8.83
+      "score": 9.17
     },
     {
       "id": "candidate-2026-10-09-6",
-      "topic": "LLM as its Own Retriever: UNREAL Simplifies RAG",
-      "angle": "The UNREAL approach demonstrates that a frozen LLM can effectively become its own retriever with fewer than 500K added parameters, unifying retrieval and long-context inference. This simplifies RAG architectures and boosts recall on benchmarks.",
-      "audience_pain": "Complex RAG pipelines with separate retriever and generator models, and the performance limitations of fixed-context LLMs.",
-      "why_now": "A new paper introduces UNREAL, proposing an innovative method that drastically changes how RAG can be implemented by making a single LLM self-sufficient for retrieval.",
-      "hook_seed": "LLM retrieves its own context.",
-      "format": "mechanism_explainer",
-      "objective": "share",
+      "topic": "Open-Source Enterprise AI Knowledge Bases",
+      "angle": "Tencent's WeKnora is an MIT-licensed, self-hostable framework unifying enterprise documents for RAG, ReAct agents, supporting 20+ LLMs and 8 vector databases.",
+      "audience_pain": "Managing fragmented enterprise knowledge for AI, ensuring data privacy, and integrating diverse LLMs/vector DBs for RAG/agents securely.",
+      "why_now": "A major open-source release from a leading tech company provides a comprehensive, self-hostable solution for enterprise knowledge management for AI.",
+      "hook_seed": "Tencent open-sources enterprise AI RAG.",
+      "format": "practical_tips",
+      "objective": "follow",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "f11efc4d430d"
+        "74a393fb0416"
       ],
       "scores": {
         "trend_strength": 9,
         "audience_relevance": 9,
-        "practical_value": 8,
-        "originality": 9,
+        "practical_value": 10,
+        "originality": 8,
         "conversation_potential": 9,
-        "evidence_strength": 9
+        "evidence_strength": 10
       },
-      "score": 8.83
+      "score": 9.17
     },
     {
-      "id": "candidate-2026-10-09-1",
-      "topic": "Extreme Low-Bit Quantization for MoE Models",
-      "angle": "Techniques like NVFP4 are making extreme low-bit (e.g., FP4, sub-1-bit) quantization practical for large Mixture-of-Experts (MoE) models, drastically cutting VRAM and boosting inference speed on NVIDIA B200 and consumer GPUs.",
-      "audience_pain": "Large MoE models are VRAM-hungry and slow; consumer GPUs struggle to run them efficiently.",
-      "why_now": "Recent research and product releases (e.g., AutoTrust NVFP4 build, ISTA SpTC) demonstrate significant breakthroughs in MoE/LLM quantization, achieving sub-1-bit compression and substantial VRAM reduction (e.g., 51.1 GiB to 17.1 GiB) without major accuracy loss.",
-      "hook_seed": "MoE VRAM too high? Try FP4.",
-      "format": "mechanism_explainer",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "54fea47873ae",
-        "560b529a09c2",
-        "859f7af4eca8",
-        "a3eb1b662467"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 9,
-        "originality": 8,
-        "conversation_potential": 8,
-        "evidence_strength": 9
-      },
-      "score": 8.67
-    },
-    {
-      "id": "candidate-2026-10-09-4",
-      "topic": "Natively Multimodal Embeddings for Unified AI",
-      "angle": "Models like Google's EmbeddingGemma 2 and Perplexity's pplx-embed-v2-late offer unified embedding spaces for text, code, images, video, and audio. This enables richer RAG and on-device multimodal AI applications by eliminating the need to chain separate models.",
-      "audience_pain": "Building multimodal RAG requires complex pipelines, multiple models, higher latency, and increased memory overhead.",
-      "why_now": "Google and Perplexity have recently released new multimodal embedding models that natively combine modalities into a single embedding space, simplifying architecture for developers.",
-      "hook_seed": "One embedding for text, audio, video?",
-      "format": "mechanism_explainer",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "7220b9bd13ae",
-        "c8462c5ec2d7",
-        "03ca0c10edc6"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 9,
-        "originality": 8,
-        "conversation_potential": 8,
-        "evidence_strength": 9
-      },
-      "score": 8.67
-    },
-    {
-      "id": "candidate-2026-10-09-3",
-      "topic": "Edge Decision Models for Real-time AI",
-      "angle": "Liquid AI's open-weight d1 decision models are optimized for edge hardware (NVIDIA Jetson), offering real-time, low-latency inference for text, vision, and audio, enabling powerful on-device AI applications.",
-      "audience_pain": "Deploying complex AI models on resource-constrained edge devices with real-time performance is challenging.",
-      "why_now": "Liquid AI has released new open-weight models (d1-3B, d1-omni-600M) specifically designed and benchmarked for edge deployment on NVIDIA Jetson devices.",
-      "hook_seed": "Real-time AI on Jetson? d1 models.",
+      "id": "candidate-2026-10-09-5",
+      "topic": "Real-time AI on Edge Devices",
+      "angle": "Liquid AI's open-weight d1 decision models (e.g., d1-3B) are optimized for edge hardware (NVIDIA Jetson), offering real-time, low-latency (8-50ms) inference for text, vision, and audio.",
+      "audience_pain": "Deploying performant AI on resource-constrained edge devices with strict latency requirements.",
+      "why_now": "New open-weight models specifically designed and benchmarked for edge deployment are now available, enabling powerful on-device AI applications.",
+      "hook_seed": "Edge AI: real-time, low latency.",
       "format": "practical_tips",
       "objective": "share",
       "image_template": "handwritten_poster",
@@ -490,60 +466,130 @@
         "a60984e85fd0"
       ],
       "scores": {
-        "trend_strength": 8,
+        "trend_strength": 9,
         "audience_relevance": 9,
         "practical_value": 10,
-        "originality": 7,
-        "conversation_potential": 7,
-        "evidence_strength": 9
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 10
       },
-      "score": 8.33
+      "score": 9.0
     },
     {
-      "id": "candidate-2026-10-09-10",
-      "topic": "Anticloud's Low Electricity Cost for AI Research (T4 GPU)",
-      "angle": "Dubai-based Anticloud reports generating approximately 24,000 tokens of output for a mere $0.013 in electricity costs on a T4 GPU using their 27B-parameter PAX v52 model for structured research frameworks.",
-      "audience_pain": "High operational costs of running LLMs, particularly for specific research tasks, making cost optimization a critical concern.",
-      "why_now": "Anticloud has recently published benchmark results providing concrete, low-cost electricity data for a specific AI workload on a T4 GPU, offering valuable cost insights.",
-      "hook_seed": "$0.013 electricity for 24K tokens.",
-      "format": "india_cost",
+      "id": "candidate-2026-10-09-9",
+      "topic": "Reinforcement Learning for Coding Agents",
+      "angle": "Mellum2.1, a fast 12B mixture-of-experts model (2.5B active), is trained with reinforcement learning in real environments to build capable, self-hostable coding agents.",
+      "audience_pain": "Building effective and fast coding agents that can interact with real-world environments and run efficiently on local hardware.",
+      "why_now": "Mellum2.1's release highlights the impact of RL training in real environments for practical, deployable coding agents, moving beyond theoretical benchmarks.",
+      "hook_seed": "Coding agents learn in real environments.",
+      "format": "mechanism_explainer",
       "objective": "share",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "f8587353889c"
+        "38ab595d9685"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 9,
+        "practical_value": 8,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 10
+      },
+      "score": 8.67
+    },
+    {
+      "id": "candidate-2026-10-09-4",
+      "topic": "Unified Multimodal Embeddings",
+      "angle": "Models like Google's EmbeddingGemma 2 unify embeddings for text, code, images, video, and audio into a single shared space, enabling simpler multimodal RAG and on-device AI applications.",
+      "audience_pain": "The complexity and inefficiency of integrating different modalities often requires chaining multiple models or managing separate embedding spaces.",
+      "why_now": "New open-source models are pushing the frontier of natively multimodal capabilities and efficient on-device deployment.",
+      "hook_seed": "One embedding model, all modalities.",
+      "format": "mechanism_explainer",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "7220b9bd13ae"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 8,
+        "practical_value": 8,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 10
+      },
+      "score": 8.5
+    },
+    {
+      "id": "candidate-2026-10-09-7",
+      "topic": "Verifiable GPU Cluster Configuration",
+      "angle": "NVIDIA AI Cluster Runtime (AICR) v1.0 provides version-locked, validated recipes for GPU cluster configuration, with deployment artifacts and signed validation evidence, ensuring stability and reliability.",
+      "audience_pain": "Complexity, instability, and debugging challenges in setting up and maintaining production-grade GPU clusters for AI workloads.",
+      "why_now": "AICR v1.0 offers a stable, open framework to build reliable AI infrastructure, reducing deployment headaches and increasing trust.",
+      "hook_seed": "Stable GPU clusters? NVIDIA validates.",
+      "format": "mechanism_explainer",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "0babadb3412b"
       ],
       "scores": {
         "trend_strength": 8,
         "audience_relevance": 9,
-        "practical_value": 8,
+        "practical_value": 9,
         "originality": 7,
-        "conversation_potential": 9,
-        "evidence_strength": 9
+        "conversation_potential": 8,
+        "evidence_strength": 10
       },
-      "score": 8.33
+      "score": 8.5
     },
     {
       "id": "candidate-2026-10-09-8",
-      "topic": "Remote GPU with PyTorch: Rgpu",
-      "angle": "`Rgpu` is a PyTorch device that lets tensors live on a remote GPU, enabling distributed training and inference with less code complexity, making remote resources feel local.",
-      "audience_pain": "Managing remote GPU resources, data transfer overhead, and complex multi-GPU setups in PyTorch.",
-      "why_now": "A recent Show HN demonstrates `Rgpu` as a practical open-source tool simplifying remote GPU utilization for PyTorch developers.",
-      "hook_seed": "PyTorch remote GPU? Rgpu makes it local.",
-      "format": "practical_tips",
+      "topic": "Mistral Large 4 Open-Weight Frontier",
+      "angle": "Mistral Large 4, a 1-trillion parameter model with 52 billion active parameters, pushes the frontier of open-weight performance across coding, agentic workflows, and multimodal understanding.",
+      "audience_pain": "Identifying the most capable open-weight models for advanced AI applications and understanding their architectural advancements and performance.",
+      "why_now": "Public preview of Mistral's largest and most capable open-weight model to date, setting new benchmarks and capabilities in the competitive LLM landscape.",
+      "hook_seed": "Mistral Large 4: open-weight frontier.",
+      "format": "quote_react",
       "objective": "share",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "hn-49988516"
+        "34240226e671"
       ],
       "scores": {
-        "trend_strength": 7,
-        "audience_relevance": 8,
-        "practical_value": 9,
-        "originality": 6,
-        "conversation_potential": 7,
-        "evidence_strength": 8
+        "trend_strength": 9,
+        "audience_relevance": 9,
+        "practical_value": 8,
+        "originality": 7,
+        "conversation_potential": 8,
+        "evidence_strength": 10
       },
-      "score": 7.5
+      "score": 8.5
+    },
+    {
+      "id": "candidate-2026-10-09-10",
+      "topic": "LLM Mathematical Reliability",
+      "angle": "OpenAI's withdrawal of mathematical results highlights the inherent challenges in ensuring factual and mathematically sound outputs from LLMs, even with advanced models.",
+      "audience_pain": "Trusting LLM outputs for tasks requiring high factual or mathematical precision in AI systems, and understanding their inherent limitations.",
+      "why_now": "Recent highly-publicized withdrawals bring the ongoing debate about LLM reliability and mathematical reasoning to the forefront, impacting trust in AI systems.",
+      "hook_seed": "Can LLMs do real math?",
+      "format": "quote_react",
+      "objective": "reply",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "hn-50002650",
+        "hn-50013902"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 8,
+        "practical_value": 7,
+        "originality": 7,
+        "conversation_potential": 10,
+        "evidence_strength": 9
+      },
+      "score": 8.33
     }
   ]
 }
