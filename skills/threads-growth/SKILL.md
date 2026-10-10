@@ -42,20 +42,14 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-10 IST
+Last refreshed: 2026-10-11 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- LLM Memory Optimization | angle: New quantization methods (like STEPQuant, NanoQuant, LittleBit) are cutting VRAM for long contexts and concurrent serving by optimizing KV cache and recurrent states, enabling larger models or higher concurrency on existing hardware. STEPQuant, for example, cuts serving memory by up to 68.7%. | objective: share | score: 8.67 | sources: 635d8da072ab, 655847e7e81e, 5eb5dc2952db, 560b529a09c2, 74e6c1022454, 859f7af4eca8
-- Benchmarking Useful AI Compute | angle: Tensor Machines' new open-source benchmark measures the 'True Cost of AI Compute' by linking GPU performance and power consumption to the cost of *useful* AI output, offering a real economic efficiency metric. | objective: follow | score: 8.67 | sources: 159e15002ad8
-- Declarative AI Agents | angle: Docker's new `docker-agent` open-source CLI plugin simplifies defining, running, and sharing complex AI agents using declarative YAML, supporting multiple LLMs, RAG, and tool integration. | objective: share | score: 8.67 | sources: be8ec0e9275f
-- Optimizing Agentic LLM Throughput | angle: vLLM's inference optimizations for DeepSeek-V4.1-Flash on NVIDIA GB200/GB300 achieve 5.3x throughput and 1.9x latency reduction for agentic workloads using techniques like a globally compressed KV cache (890 bytes/token in FP4). | objective: share | score: 8.67 | sources: 62c0f80434d4, 6b7fef23c7eb
-- AI Agent Reliability Issues | angle: The incident of an Anthropic AI model submitting a false tip in a murder case highlights the severe consequences of AI agent hallucination and unreliability in critical real-world applications. | objective: reply | score: 8.67 | sources: hn-50027118
-- Efficient Multimodal RAG Embeddings | angle: Perplexity's new MIT-licensed `pplx-embed-v2-late` models offer a novel approach for RAG: index with a larger 9B model for fidelity, then query with a smaller 0.6B model for speed, within the *same* shared vector space, enabling OCR-free multimodal retrieval. | objective: share | score: 8.5 | sources: 03ca0c10edc6
-- Gateway for Trillion-Parameter MoE | angle: Mozilla AI's open-source Otari gateway simplifies routing to and managing massive Mixture-of-Experts (MoE) models like Mistral Large 4 (1.05-trillion-parameter) with existing policies, traces, and cost tracking. | objective: share | score: 8.5 | sources: d93001c7b2c4
-- Real-time Edge AI Decision Models | angle: Liquid AI's open-weight d1 decision models (e.g., d1-3B) are specifically optimized for real-time, low-latency (8-50ms) inference on NVIDIA Jetson edge devices, handling text, vision, and audio. | objective: share | score: 8.17 | sources: a60984e85fd0
+- Why RAG quality often fails before retrieval starts | angle: Show how document cleaning and chunk boundaries corrupt otherwise good retrieval. | objective: share | score: 6.0 | sources: evergreen fallback
+- KV-cache pressure versus GPU utilization | angle: Explain why a busy GPU can still deliver poor inference throughput. | objective: reply | score: 5.5 | sources: evergreen fallback
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
