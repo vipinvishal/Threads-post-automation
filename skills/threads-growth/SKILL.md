@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-12 IST
+Last refreshed: 2026-10-13 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Extreme Quantization for Local LLMs | angle: New sub-1-bit (e.g., NanoQuant, DwarfStar's 2-bit asymmetric) quantization methods promise massive LLM compression for local inference on consumer GPUs, but often at a quality cost or with specific hardware requirements. | objective: reply | score: 8.83 | sources: f7bac2587425, 74e6c1022454, ac0a789f37f1
-- Advanced KV Cache Memory Management | angle: Advanced KV cache strategies, like FP4 caching and persistent disk-backed storage, are crucial for running long-context models efficiently, drastically reducing GPU memory pressure and enabling longer context windows. | objective: share | score: 8.67 | sources: 5a19cfdbc599, 74e6c1022454
-- Benchmarking True AI Compute Costs | angle: Tensor Machines' new open-source benchmark, TensorBench, measures the true economic cost of 'useful' AI output by linking GPU performance and power consumption directly to workload results, moving beyond hourly rental prices. | objective: follow | score: 8.5 | sources: c048bddf7fbf
-- Optimizing Agent Tool Use | angle: Agent platforms are improving skill discovery, allowing agents to dynamically search for and use relevant tools without inflating prompt context with the entire tool library, improving efficiency and reducing token usage. | objective: share | score: 8.5 | sources: 7581596d8d1e
-- Standardizing Multi-Model LLM API Access | angle: Tools like TaoToken offer a unified API gateway to manage multi-vendor LLM calls, simplifying RAG and Agent development by consolidating API keys and standardizing access across different models. | objective: share | score: 8.33 | sources: 6627b3a97225
-- NVIDIA Vera Rubin: Next-Gen AI Performance | angle: NVIDIA's Vera Rubin NVL72 rack-scale system delivers significant throughput per megawatt (e.g., vLLM 7.84x per-GPU vs GB200), showcasing a leap in inference/training efficiency for next-gen AI infrastructure. | objective: share | score: 8.33 | sources: 9c12b711852a, f3da7871256e
-- Mixture-of-Depths Model Architecture | angle: Mixture-of-Depths (MoD) architectures like Llama 4 Scout enable frontier models with huge total parameters (105B total, 24B active) to run efficiently on consumer hardware by activating only a subset of parameters per token. | objective: follow | score: 8.33 | sources: 14f37a4edcd4, 5a19cfdbc599, fcee03567966
-- Comparing Official and Custom 4-bit Quantization | angle: Google's 4-bit QAT export for Gemma 4 E2B was found significantly less accurate than a custom repack, highlighting that official low-bit quantization exports might not always be optimally configured. | objective: share | score: 8.17 | sources: 030277322d71
+- Process Supervision for Agentic RAG | angle: Training agentic RAG models with fine-grained 'process rewards' (ReasonRAG) significantly improves efficiency and performance with much less data. | objective: follow | score: 8.83 | sources: c172946d1a66
+- Graph RAG + Agentic RAG | angle: The evolution to RAG 2.0 combines knowledge graphs for structured reasoning and autonomous agents for dynamic, multi-stage retrieval, moving beyond simple keyword search. | objective: share | score: 8.67 | sources: 5b2b522857e0, 7050d1e35008
+- Official vs. Custom Quantization | angle: Official 4-bit quantization exports might not always be optimal; custom repacks can yield significantly higher accuracy and smaller model sizes. | objective: reply | score: 8.67 | sources: 030277322d71
+- Extreme LLM Quantization | angle: New sub-1-bit and 2-bit asymmetric quantization methods enable massive models on consumer GPUs, but come with significant quality tradeoffs and specific hardware/software demands. | objective: reply | score: 8.5 | sources: f7bac2587425, 74e6c1022454, 030277322d71
+- Production-Grade RAG | angle: Moving RAG from prototype to production requires robust solutions for ingestion, hybrid retrieval, guardrails, and continuous monitoring, beyond basic vector search. | objective: share | score: 8.5 | sources: 47f8e94fb62d, adf6adfa951e, 5b2b522857e0
+- Agent Data Services | angle: Managed data services provide a dedicated context and memory layer for AI agents, streamlining data ingestion, processing, and retrieval for complex tasks. | objective: share | score: 8.33 | sources: 1b86e1ccfb23, eba659082a5d
+- Hybrid Model Decoding Optimization | angle: Techniques like ReplaySSM optimize state storage and KV cache management to drastically speed up decoding for hybrid LLM architectures. | objective: share | score: 8.33 | sources: 8ad0104262a1
+- AI Infrastructure Benchmarking | angle: True AI compute costs should be measured by useful AI work delivered per watt and dollar, not just raw GPU specs or rental rates. | objective: follow | score: 8.17 | sources: 36c6dfaa44f2
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
