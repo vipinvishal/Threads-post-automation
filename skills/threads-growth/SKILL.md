@@ -48,14 +48,8 @@ Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Process Supervision for Agentic RAG | angle: Training agentic RAG models with fine-grained 'process rewards' (ReasonRAG) significantly improves efficiency and performance with much less data. | objective: follow | score: 8.83 | sources: c172946d1a66
-- Graph RAG + Agentic RAG | angle: The evolution to RAG 2.0 combines knowledge graphs for structured reasoning and autonomous agents for dynamic, multi-stage retrieval, moving beyond simple keyword search. | objective: share | score: 8.67 | sources: 5b2b522857e0, 7050d1e35008
-- Official vs. Custom Quantization | angle: Official 4-bit quantization exports might not always be optimal; custom repacks can yield significantly higher accuracy and smaller model sizes. | objective: reply | score: 8.67 | sources: 030277322d71
-- Extreme LLM Quantization | angle: New sub-1-bit and 2-bit asymmetric quantization methods enable massive models on consumer GPUs, but come with significant quality tradeoffs and specific hardware/software demands. | objective: reply | score: 8.5 | sources: f7bac2587425, 74e6c1022454, 030277322d71
-- Production-Grade RAG | angle: Moving RAG from prototype to production requires robust solutions for ingestion, hybrid retrieval, guardrails, and continuous monitoring, beyond basic vector search. | objective: share | score: 8.5 | sources: 47f8e94fb62d, adf6adfa951e, 5b2b522857e0
-- Agent Data Services | angle: Managed data services provide a dedicated context and memory layer for AI agents, streamlining data ingestion, processing, and retrieval for complex tasks. | objective: share | score: 8.33 | sources: 1b86e1ccfb23, eba659082a5d
-- Hybrid Model Decoding Optimization | angle: Techniques like ReplaySSM optimize state storage and KV cache management to drastically speed up decoding for hybrid LLM architectures. | objective: share | score: 8.33 | sources: 8ad0104262a1
-- AI Infrastructure Benchmarking | angle: True AI compute costs should be measured by useful AI work delivered per watt and dollar, not just raw GPU specs or rental rates. | objective: follow | score: 8.17 | sources: 36c6dfaa44f2
+- Why RAG quality often fails before retrieval starts | angle: Show how document cleaning and chunk boundaries corrupt otherwise good retrieval. | objective: share | score: 6.0 | sources: evergreen fallback
+- KV-cache pressure versus GPU utilization | angle: Explain why a busy GPU can still deliver poor inference throughput. | objective: reply | score: 5.5 | sources: evergreen fallback
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
