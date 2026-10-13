@@ -42,14 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-13 IST
+Last refreshed: 2026-10-14 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Why RAG quality often fails before retrieval starts | angle: Show how document cleaning and chunk boundaries corrupt otherwise good retrieval. | objective: share | score: 6.0 | sources: evergreen fallback
-- KV-cache pressure versus GPU utilization | angle: Explain why a busy GPU can still deliver poor inference throughput. | objective: reply | score: 5.5 | sources: evergreen fallback
+- Quantization: Llama2-70B on a $200 GPU? | angle: Examining the practical trade-offs and hidden costs (quality loss, custom kernels) of extreme quantization methods that enable large LLMs like Llama2-70B to run on affordable consumer GPUs. | objective: share | score: 8.5 | sources: f7bac2587425, 5a53ae6eb36e, ca1778766458
+- Securing LLMs with Data Gateways | angle: Exploring the emerging role of LLM gateways and self-hosted knowledge base frameworks (like Consus and WeKnora) in enabling companies to use LLMs while keeping sensitive data private and compliant. | objective: click | score: 8.5 | sources: hn-50073471, 74a393fb0416
+- RAG: From Prototype to Production System | angle: Outlining the necessary components and distinctions between a RAG prototype and a production-grade system, including automated ingestion, hybrid retrieval, reranking, and continuous monitoring. | objective: share | score: 8.17 | sources: 47f8e94fb62d, 74a393fb0416
+- Running Private AI Agents On-Device | angle: Highlighting how models like LFM2.5-24B-A2B enable efficient, private, and fast execution of agentic workflows directly on user hardware, leveraging innovations like low active parameter counts (MoE speed). | objective: reply | score: 8.17 | sources: f7bac2587425
+- Hybrid Retrieval & Reranking for RAG | angle: Detailing how hybrid retrieval (dense + sparse) and reranking mechanisms significantly improve the accuracy and relevance of context retrieved for RAG systems, a key step for production quality. | objective: reply | score: 8.17 | sources: 47f8e94fb62d
+- NVIDIA Run:ai Goes Open Source | angle: Discussing the implications and benefits of NVIDIA making its full Run:ai platform open source, including KAI Scheduler and GPU Fractioning, for managing and optimizing AI workloads and GPU resources. | objective: follow | score: 8.0 | sources: df7310b2ced0, hn-50070593
+- AI Bots Flooding Websites: New Infra Challenge | angle: Examining the operational challenge of websites being flooded by AI bot traffic, its impact on server infrastructure, costs, and the need for new detection and mitigation strategies. | objective: reply | score: 8.0 | sources: hn-50073221
+- Muse Wonder Pricing: Beyond Token Counts | angle: Analyzing the new API pricing models for frontier LLMs (like Muse Wonder's input/output token rates and usage plans) and what developers need to consider for cost-effective integration into their applications. | objective: share | score: 8.0 | sources: eba659082a5d, a7e060dff520
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
