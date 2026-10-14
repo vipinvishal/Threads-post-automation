@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-14 IST
+Last refreshed: 2026-10-15 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Extreme LLM quantization for consumer GPUs | angle: Examining the practical trade-offs and hidden costs (quality loss, custom kernels) of extreme quantization methods that enable large LLMs like Llama2-70B to run on affordable consumer GPUs. | objective: share | score: 8.67 | sources: f7bac2587425, 604294fdb275, ca1778766458
-- Understanding new LLM pricing models | angle: Analyzing the new API pricing models for frontier LLMs (like Muse Wonder's input/output token rates and usage plans) and what developers need to consider for cost-effective integration into their applications. | objective: share | score: 8.67 | sources: eba659082a5d
-- Running private AI agents on-device | angle: Highlighting how models like LFM2.5-24B-A2B enable efficient, private, and fast execution of agentic workflows directly on user hardware, leveraging innovations like low active parameter counts (MoE speed). | objective: reply | score: 8.5 | sources: aee940039b0a, f7bac2587425
-- Improving RAG with hybrid retrieval and reranking | angle: Detailing how hybrid retrieval (combining dense and sparse methods) and reranking mechanisms significantly improve the accuracy and relevance of context retrieved for RAG systems, a key step for production quality. | objective: reply | score: 8.5 | sources: 5b2b522857e0, 74a393fb0416, a75fca757706
-- Superfluid: Local LLM server for multi-agent inference | angle: Introducing Superfluid as a new local-AI native LLM server specifically designed for efficient multi-agent inference, addressing the challenges of orchestrating multiple local agents. | objective: click | score: 8.5 | sources: 4c217930a764
-- Moving RAG from prototype to production | angle: Outlining the necessary components and distinctions between a RAG prototype and a production-grade system, including automated ingestion, hybrid retrieval, reranking, and continuous monitoring. | objective: share | score: 8.33 | sources: 5b2b522857e0, 74a393fb0416
-- NVIDIA Run:ai platform open source | angle: Discussing the implications and benefits of NVIDIA making its full Run:ai platform open source, including KAI Scheduler and GPU Fractioning, for managing and optimizing AI workloads and GPU resources. | objective: follow | score: 8.17 | sources: 9c4eefb7b943
-- GPU-aware Kubernetes scheduling with KAI Scheduler | angle: How KAI Scheduler, now open source from NVIDIA Run:ai, addresses challenges in GPU-aware Kubernetes scheduling, allowing for efficient allocation and fractionalization of GPUs for diverse AI workloads. | objective: click | score: 8.17 | sources: 9c4eefb7b943
+- Extreme 4-bit Quantization for Local LLMs | angle: Exploring how 4-bit quantization, especially with techniques like Echo for training, makes large LLMs viable on consumer hardware while maintaining accuracy. | objective: share | score: 8.67 | sources: cbf3b56b5c16, e66946e481fe, ca1778766458
+- Beyond Basic RAG: Graph & Agentic Approaches | angle: Exploring how RAG 2.0 incorporates knowledge graphs (Graph RAG) and autonomous agents (Agentic RAG) to significantly improve retrieval and generation quality for enterprise applications. | objective: share | score: 8.67 | sources: 5b2b522857e0, 74a393fb0416
+- NVIDIA Run:ai Goes Open Source | angle: Discussing the implications of NVIDIA open-sourcing its Run:ai platform, focusing on components like KAI Scheduler and GPU Fractioning for optimized AI workload and GPU resource management in Kubernetes. | objective: follow | score: 8.67 | sources: 9c4eefb7b943
+- Enterprise KV Cache Optimization | angle: How platforms like Tensormesh are enabling scalable, multi-tier KV cache management across infrastructure to significantly reduce LLM inference costs and improve efficiency for enterprise workloads. | objective: click | score: 8.67 | sources: 622350830a27
+- Building Private, Fast On-Device AI Agents | angle: How models designed for edge deployment, like Liquid AI's LFM2.5-24B-A2B, enable efficient and private agentic workflows directly on user hardware using few active parameters. | objective: reply | score: 8.5 | sources: aee940039b0a, ba16b84a6a35
+- Benchmarking Real AI Infrastructure Efficiency | angle: Discussing new open-source benchmarks that move beyond traditional metrics to evaluate AI infrastructure efficiency by linking hardware performance, power consumption, and useful AI work delivered. | objective: share | score: 8.5 | sources: 36c6dfaa44f2
+- The Overlooked Security Flaws in AI Agents | angle: Highlighting how 'frontier labs are skipping security basics' in AI agent development, leading to real-world incidents like data erasure and emphasizing the need for fundamental security practices. | objective: reply | score: 8.5 | sources: hn-50091788, hn-50085323
+- Decoding Frontier LLM API Pricing | angle: Analyzing how new input/output token pricing models and tiered usage plans (e.g., Muse Wonder) impact developer costs for integrating advanced LLMs. | objective: click | score: 8.33 | sources: eba659082a5d, bed0888b21c9
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
