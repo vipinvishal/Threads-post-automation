@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-15 IST
+Last refreshed: 2026-10-16 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Fitting Large Models on Consumer GPUs | angle: ModelScope's open-source EntroPack PyTorch library allows developers to tune AI model weight storage, enabling models requiring 80GB to fit on cheaper 24GB GPUs by adjusting compression. | objective: share | score: 9.17 | sources: 17254c855c40
-- AI Agent Security Failures | angle: Real-world AI agent 'hacking' reports stem from basic security containment and monitoring failures, not AI going rogue, highlighting neglected security basics. | objective: reply | score: 8.83 | sources: hn-50091788
-- Nemotron 3.5 Bolt: 2-bit Quantization for Local AI | angle: NVIDIA's Nemotron 3.5 Bolt demonstrates how 2-bit quantization-aware training can pack a 74B Mixture-of-Experts model (with 9B active parameters) into just 24GB of VRAM for local AI. | objective: follow | score: 8.83 | sources: c2e1176b0c75
-- NVIDIA Run:ai Is Now Open Source | angle: NVIDIA has open-sourced its Run:ai platform, providing modular components like KAI Scheduler for GPU-aware Kubernetes scheduling and GPU Fractioning for shared GPU resources, foundational for AI factories. | objective: follow | score: 8.83 | sources: 9c4eefb7b943
-- Cut AI Agent Token Costs by 71% | angle: Elastic's new context engine leverages Knowledge Indicators and hybrid search to significantly reduce AI agent token consumption by 71%, optimizing performance and operational costs. | objective: reply | score: 8.83 | sources: 308269c42e32
-- Faster Postgres Vector Search | angle: Pg_vectorsearch introduces a new index that significantly outperforms pgvector's IVFFlat and HNSW, crucial for accelerating RAG performance in database environments. | objective: share | score: 8.67 | sources: hn-50086165
-- Quantizing LLMs Without Calibration Data | angle: DualQuant is a new post-training quantization framework that eliminates the need for calibration datasets for 4-bit LLM deployment, matching SmoothQuant performance as FP4 hardware converges. | objective: share | score: 8.67 | sources: 859c07d12ab0
-- Enterprise KV Cache Optimization | angle: Tensormesh Platform enables scalable, multi-tier KV cache management across infrastructure to reuse LLM context, significantly cutting inference costs and improving time-to-first-token. | objective: click | score: 8.67 | sources: 622350830a27
+- GPU Memory Compression for LLMs | angle: ModelScope's open-source EntroPack PyTorch library allows developers to tune AI model weight storage to fit a chosen GPU memory budget, making it possible to run 80GB models on cheaper 24GB GPUs by adjusting compression and trading accuracy. | objective: share | score: 9.0 | sources: 17254c855c40
+- LLM Quantization without Calibration Data | angle: DualQuant is a new post-training quantization framework that eliminates the need for calibration datasets for 4-bit LLM deployment, matching SmoothQuant performance and enabling 2.61x memory reduction and 2.46x throughput as FP4 hardware converges. | objective: share | score: 8.67 | sources: 859c07d12ab0
+- NVIDIA Run:ai Open Source | angle: NVIDIA has open-sourced its Run:ai platform, expanding the DSX AI Factory Platform with modular components like KAI Scheduler for GPU-aware Kubernetes scheduling and GPU Fractioning for shared GPU resources, foundational for scaling AI infrastructure. | objective: follow | score: 8.67 | sources: 9c4eefb7b943
+- Local Inference for Frontier LLMs | angle: Apple MLX and Mac Studio now enable running Muse Spark Open, a nearly trillion-parameter model, locally at over 36 tokens per second on a cluster of four Mac Studios, leveraging unified memory and distributed inference with RDMA. | objective: follow | score: 8.5 | sources: b03fca02d763, 02ba95dc47b6
+- Agent-Native SDK for AI Agent Development | angle: Agent-Native Beta is an open-source TypeScript framework for building AI agents with intuitive UIs. It enables shared actions across six surfaces and connections to various tools and other agents, supporting both local and online development. | objective: follow | score: 8.5 | sources: a1aa4df695e9
+- Google's Antigravity SDK for Local Agentic Workflows | angle: Google's Antigravity SDK adds local model support, enabling developers to build and execute agentic workflows on their own machines, enhancing code privacy, inference cost control, and token efficiency through hybrid orchestration. | objective: share | score: 8.17 | sources: f10f6b06bd4e
+- Faster LLM Inference with ReplaySSM | angle: NVIDIA and Princeton University's Dao AI Lab introduced ReplaySSM, a method that speeds inference in hybrid language models by reducing repeated memory writes during token decoding, accelerating full decode steps by 1.20x to 1.47x. | objective: share | score: 8.17 | sources: 2ad62845a619
+- Omnigent for AI Agent Interoperability | angle: Databricks' Omnigent is an open-source meta-harness designed to make AI agents interoperable, ensuring user contexts, policies, and skills persist across different platforms and enabling consistent enterprise agent governance. | objective: share | score: 8.17 | sources: 615fc1ee938e
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
