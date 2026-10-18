@@ -1,110 +1,19 @@
 {
-  "date_ist": "2026-10-17",
-  "generated_at": "2026-10-17T07:30:00.787633+00:00",
-  "signal_count": 26,
+  "date_ist": "2026-10-18",
+  "generated_at": "2026-10-18T07:45:08.907531+00:00",
+  "signal_count": 17,
   "signals": [
-    {
-      "id": "hn-50122800",
-      "source": "hacker_news",
-      "title": "Claude reveals ECDSA curve origins",
-      "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-      "published_at": "2026-10-16T18:55:59+00:00",
-      "excerpt": "Hacker News: 829 points and 311 comments.",
-      "signal_score": 1295.5,
-      "community_metrics": {
-        "points": 829,
-        "comments": 311
-      }
-    },
-    {
-      "id": "hn-50121179",
-      "source": "hacker_news",
-      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-      "url": "https://www.mercor.com/research/labor-index/benchmark-map",
-      "published_at": "2026-10-16T17:08:38+00:00",
-      "excerpt": "Hacker News: 475 points and 406 comments.",
-      "signal_score": 1084.0,
-      "community_metrics": {
-        "points": 475,
-        "comments": 406
-      }
-    },
-    {
-      "id": "hn-50122951",
-      "source": "hacker_news",
-      "title": "How the Claude Code team does code review",
-      "url": "https://claude.dev/blog/solving-code-review-at-anthropic",
-      "published_at": "2026-10-16T19:04:47+00:00",
-      "excerpt": "Hacker News: 318 points and 299 comments.",
-      "signal_score": 766.5,
-      "community_metrics": {
-        "points": 318,
-        "comments": 299
-      }
-    },
-    {
-      "id": "hn-50122431",
-      "source": "hacker_news",
-      "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
-      "url": "https://github.com/cobanov/PS5LM",
-      "published_at": "2026-10-16T18:32:35+00:00",
-      "excerpt": "Hacker News: 272 points and 64 comments.",
-      "signal_score": 368.0,
-      "community_metrics": {
-        "points": 272,
-        "comments": 64
-      }
-    },
-    {
-      "id": "hn-50118688",
-      "source": "hacker_news",
-      "title": "Show HN: Gemini 4 Argon plays StarCraft",
-      "url": "https://starskirmish.com/bench/v0-2",
-      "published_at": "2026-10-16T14:18:44+00:00",
-      "excerpt": "Hacker News: 212 points and 94 comments.",
-      "signal_score": 353.0,
-      "community_metrics": {
-        "points": 212,
-        "comments": 94
-      }
-    },
     {
       "id": "hn-50122878",
       "source": "hacker_news",
       "title": "You could have invented transformers from memory",
       "url": "https://alexwang.ai/posts/associative-memory",
       "published_at": "2026-10-16T19:01:17+00:00",
-      "excerpt": "Hacker News: 252 points and 64 comments.",
-      "signal_score": 348.0,
+      "excerpt": "Hacker News: 546 points and 126 comments.",
+      "signal_score": 735.0,
       "community_metrics": {
-        "points": 252,
-        "comments": 64
-      }
-    },
-    {
-      "id": "hn-50118318",
-      "source": "hacker_news",
-      "title": "What was a Token Ring network?",
-      "url": "https://dfarq.homeip.net/what-was-a-token-ring-network",
-      "published_at": "2026-10-16T13:43:30+00:00",
-      "excerpt": "Hacker News: 109 points and 84 comments.",
-      "signal_score": 235.0,
-      "community_metrics": {
-        "points": 109,
-        "comments": 84
-      }
-    },
-    {
-      "id": "hn-50121939",
-      "source": "hacker_news",
-      "title": "Designing more efficient quantum circuits with Claude",
-      "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
-      "published_at": "2026-10-16T18:00:18+00:00",
-      "excerpt": "Hacker News: 130 points and 31 comments.",
-      "signal_score": 176.5,
-      "community_metrics": {
-        "points": 130,
-        "comments": 31
+        "points": 546,
+        "comments": 126
       }
     },
     {
@@ -113,50 +22,24 @@
       "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
       "url": "https://llmspeed.dev",
       "published_at": "2026-10-17T04:36:53+00:00",
-      "excerpt": "Hacker News: 31 points and 8 comments.",
-      "signal_score": 43.0,
+      "excerpt": "Hacker News: 281 points and 80 comments.",
+      "signal_score": 401.0,
       "community_metrics": {
-        "points": 31,
-        "comments": 8
+        "points": 281,
+        "comments": 80
       }
     },
     {
-      "id": "6caba4f2724f",
-      "source": "exa_news",
-      "title": "Beam is now available — Reflection",
-      "url": "https://reflection.ai/blog/beam-is-available",
-      "published_at": "2026-10-16T00:00:00.000Z",
-      "excerpt": "Beam is our first open-weight model, built for advanced coding, reasoning, and long-horizon agentic workloads with frontier reasoning efficiency. Today, we have released Beam’s model weights on Hugging Face under an Apache 2.0 license. Our model card includes final benchmarks, and the Beam Safety Technical Report shares the model’s complete safety methodology and evaluations.\n\nIn addition to releasing Beam’s weights and documentation, we’re launching with an ecosystem of over 40 partners and integrations to create what we are calling an open operating system for agents. The model is the kernel, and everything above the infrastructure layer is open: reference agentic integrations, deployment containers, inference integrations, and customization pipelines.\n\nDevelopers can download and self-host the model, evaluate it, customize it for their own domains, connect it to agentic systems, and access it through Reflection and our partners.\n...\nBeam is a sparse Mixture-of-Experts model with 501 billion total parameters, 23 billion active, built for coding, reasoning, and agentic workloads. Since opening up access to Beam, we’ve seen some interesting use cases from early developers.\n...\nOur vision is to build an open intelligence stack that gives developers, enterprises, and governments control over how AI is deployed in their environments. A model is only one layer of a working system; making it useful takes more than releasing weights. It also requires reliable inference, evaluation, safety tooling, customization workflows, agent runtimes, and deployment paths.\n\nWe have worked with partners across the open ecosystem to support inference, quantization, fine-tuning, reinforcement learning, agent harnesses, evaluation, and observability. Partners are making Beam available through managed endpoints, cloud platforms, on-premises systems, and sovereign infrastructure.\n...\nWe are releasing Beam’s model weights in BF16, FP8, and NVFP4 precision formats, along with a speculative decoding drafter model. We have also worked with partners to optimize serving configurations and develop fused kernels for lower latency and higher throughput. Together, these reduce memory requirements and accelerate token generation out of the box.\n\nBeam has native, day-zero support across the ecosystem including: Transformers (Hugging Face), vLLM (Inferact), SGLang (RadixArk), Unsloth, Axolotl, TokenSpeed (LightSeek Foundation), and Dynamo (NVIDIA) so you can go from weights to a production-scale endpoint without writing custom plumbing.\n...\nBeam and Mirror CLI are both open-source friendly. We trained Beam along with the Mirror CLI harness to offer best performance, while also integrating with other popular open source harnesses to give developers optionality.\n\nMirror lets developers run Beam from a terminal, point it at different checkpoints or endpoints, and use it as a daily coding and agent harness. Developers can inspect the agent’s activity, approve tool calls, and steer it as it works. Mirror supports resumable conversations and parallel agents in separate worktrees, while project instructions, skills, MCP connections, and Python extensions let developers adapt it to their workflows.\n\nMirror’s architecture reflects this design. A Python frontend handles the product layer: prompts, skills, and developer tooling. It talks to a Rust agent core over a local connection, and that core is what actually drives the model. Keeping the core minimal lets it double as a clean evaluation surface, so results produced through Mirror are reliable.\n...\nBeam has also been tested with Pi (Earendil), OpenCode (Anomaly), and Hermes (Nous Research) across coding and knowledge work, including tasks that involve reading repositories, editing files, and running commands.\n\nAll of these harnesses work with Beam today through Reflection’s first-party API, other hosted third-party inference providers, or by self-hosting the model. We’ll keep adding harness support over time.\n...\nDevelopers can post-train Beam, including with large scale reinforcement learning, to customize the model. Because model customization is an iterative process that depends heavily on your evaluations, we are providing recipes and integrations from Reflection and the open-source ecosystem, as well as the tools to measure both capabilities and safety at every step.\n\nWhen we did our largest RL runs when training Beam, for example, we ran roughly 1.3 billion sandboxes across RL training, evaluation, and ablations. We are upstreaming lessons from training Beam into the open-source ecosystem we’re building, including OpenEnv, an open environment standard we’ll adopt for future runs.\n...\nReplay of the peak hour of Beam’s final reinforcement ... run, shown in ... . With evaluations and other RL experiments ... fleet peaked at 8 ... 3% of allocatable)\n...\nWe partnered with NVIDIA (NeMo RL, AutoModel, Megatron), RadixArk (Miles), Hugging Face (TRL), Anyscale (SkyRL) and Axolotl to build fine-tuning and RL workflows, so developers can deeply customize Beam for their own use cases.\n...\nDevelopers can also leverage novel approaches like self-distillation to customize Beam for additional domains and increase accuracy and token efficiency on your tasks. We plan to release recipes for developers to do this in the coming days.\n...\nBeam is available on a broad set of platforms. Beyond the open weights and Reflection’s API, we’ve partnered with hyperscalers, inference providers, and open-source projects so Beam is available on various platforms at launch including: Amazon Web Services, Nscale, Applied Compute, Baseten, Cloudflare, CoreWeave, Databricks, Fireworks AI, Google Cloud, Hermes, LM Studio, Microsoft Foundry, Modal, Nebius, Nvidia NIMs, Ollama, OpenCode, OpenRouter, Oracle, Together AI, Vercel, and Weights & Biases.\n\nFor on-premises, sovereign, and air-gapped environments, Dell and HPE deliver Beam behind the firewall. It’s the same open stack a developer runs on a laptop, deployed at enterprise scale with no retooling or rebuilding for a different environment.\n\n- Try Beam at platform.reflection.ai. It’s free to start. Sign up for the public beta to test Beam on Reflection’s first party API.\n- Get the weights. Pull the weights from Hugging Face, read the model card, or hit a hosted endpoint on one of our partner offerings.\n- Access developer documentation at developers.reflection.ai for API references, deployment guides, agentic tooling, customization recipes, and demos.\n- Join the community. Join us on Discord to discuss open models, find collaborators, and build with us.",
-      "signal_score": 14.0,
+      "id": "hn-50137950",
+      "source": "hacker_news",
+      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "url": "https://sphinx-six-theta.vercel.app",
+      "published_at": "2026-10-18T04:33:49+00:00",
+      "excerpt": "Hacker News: 90 points and 25 comments.",
+      "signal_score": 127.5,
       "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 1
-      }
-    },
-    {
-      "id": "2d06427d134e",
-      "source": "exa_news",
-      "title": "Introducing FastFlow SDK",
-      "url": "https://www.amd.com/en/developer/resources/technical-articles/2026/introducing-fastflow-sdk.html",
-      "published_at": "2026-10-15T00:00:00.000Z",
-      "excerpt": "FastFlow-SDK removes that tradeoff. It is one-stop platform by AMD for local AI software development, so you can start by running a supported model and keep going as far beneath the surface as your work demands, all within the same eco-system, without switching any licenses, vendors or tool chains.\n...\nFastFlow-SDK provides a single-entry point for developers targeting Ryzen AI NPUs. It includes support for running state-of-the-art GenAI models while exposing the underlying software stack for developers who need to customize model execution, operators, and kernels.\n...\n- FastFlow (formerly FastFlowLM) - the application layer for running and serving AI models on the NPU.\n- IRON - a close-to-metal Python API for programming Ryzen AI NPUs, built on an open-source MLIR-based compiler toolchain.\n- Hip Runtime eXtended (HRX) - a lightweight runtime layer responsible for loading and executing workloads on AMD hardware across Windows and Linux.\n...\nFastFlow is an NPU-native inference engine integrated directly into Lemonade, which exposes an OpenAI-compatible streaming API and supports the context lengths of the models it serves. FastFlow also supports tool calling and reasoning models, enabling agentic and multi-step AI workflows on the NPU.\n...\nEmbeddings / RAG\n\nEmbeddingGemma\n...\nTogether, these models provide a starting point for building chat applications, agents, multimodal experiences, speech workflows, and RAG pipelines targeting Ryzen AI NPUs.\n...\nUnder the hood, the models supported by FastFlow are built from operators and kernels developed with IRON. While FastFlow provides ready-to-run model inference, IRON is the layer used to build and customize the NPU programs that power those models.\n\nIRON is a close-to-metal Python API for programming AMD Ryzen AI NPUs, built on an open-source MLIR-based compiler toolchain. It takes Python-defined workloads and compiles them into programs that run on the AI Engine array, giving developers direct control over kernel implementation and data movement on the NPU.\n...\nvectorized compute directly for ... .\n- ... distribution patterns.\n- Common AI operators: Examples include attention, GEMM, softmax, RMSNorm, LayerNorm, RoPE, SwiGLU, GELU, SiLU, Conv2D, and ResNet building blocks.\n\nThese operators form many of the building blocks used in modern transformer and vision models, including the operators used in the forward passes of models ... as Qwen and Llama. With IRON, developers can build and optimize ... directly for the NPU.\n...\nHRX sits between compiled programs and the underlying hardware, acting as the runtime layer responsible for execution. It loads compiled programs and executes them alongside the device driver on Linux and Windows, handling memory management, asynchronous work queuing, synchronization, and command execution, thus, the layer that determines how fast ... above it runs.\n...\n: Run one ... , and iterate. Useful when\n...\ndispatch: Queue a sequence of ... a pipeline, reducing runtime overhead ... model workload. ... by FastFlow ... end inference.\n...\nThe easiest way to get started is through Lemonade, which includes FastFlow as a supported backend. If your goal is to build an AI application, benchmark a model, or evaluate NPU performance, this is the fastest path. You can begin running supported models immediately. To get started with Lemonade, visit the Lemonade website.\n...\nOnce you're ready to move beyond running models, FastFlow-SDK provides access to the tools used to build and customize them. Developers can experiment with model configurations, integrate new capabilities, and explore how workloads are assembled for the NPU.\n...\nPerformance tuning happens at the IRON and HRX layers. Use IRON to develop and optimize operators and kernels, then use HRX to control how they are executed on the NPU.\n...\nStart with Lemonade to run models on the Ryzen AI NPU, then explore FastFlow-SDK as your development needs expand to include model customization, operator development, and runtime optimization.",
-      "signal_score": 14.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 1
-      }
-    },
-    {
-      "id": "90edf14943c1",
-      "source": "exa_news",
-      "title": "Optimized support for Open NVIDIA Nemotron 3.5 Super VL | Red Hat Developer",
-      "url": "https://developers.redhat.com/articles/2026/10/15/optimized-support-open-nvidia-nemotron-3-5-super-vl",
-      "published_at": "2026-10-15T00:00:00.000Z",
-      "excerpt": "Red Hat AI is releasing optimized FP8 and DSpark speculative decoding checkpoints for Nemotron 3.5 Super VL, a 120B multimodal mixture-of-experts (MoE) model built for long-running agents. These checkpoints are designed to double inference throughput on NVIDIA Hopper GPUs without compromising output accuracy.\n\nThese optimizations combine FP8 quantization using LLM Compressor with a DSpark speculative decoding model trained using Speculators, delivering substantial inference performance gains while preserving model quality.\n...\nTo accelerate inference for Nemotron 3.5 Super VL, we are releasing an optimized FP8-quantized checkpoint. FP8 quantization reduces the precision of model weights and activations from BF16 to 8-bit floating point, cutting model weight memory and storage requirements in half while preserving model quality.\n\nFP8 quantization is particularly effective on NVIDIA Hopper GPUs, which feature native FP8 Tensor Core support and deliver approximately 2× higher theoretical matrix multiplication throughput compared to BF16. Combined with reduced memory bandwidth requirements, this enables higher inference throughput and improved GPU efficiency, especially for large-scale models.\n\nWe generated the quantized checkpoints using the LLM Compressor library and its model-free post-training quantization (PTQ) workflow, leveraging the calibration-free nature of FP8 Dynamic quantization.\n\nAfter evaluating several quantization configurations, we settled on quantizing the attention, expert, and Mamba projection layers of the main model, while keeping the shared experts, routers, normalization layers, and `lm_head` in their original precision. For the multi-token prediction (MTP) layers, we quantized the attention, expert, and shared expert layers, while leaving the normalization layers and `eh_proj` unquantized.\n...\nTo assess the impact of quantization on model accuracy, particularly in reasoning-intensive tasks and agentic workflows, we evaluate both the BF16 and FP8 models across a broad suite of representative benchmarks. To ensure a fair and consistent comparison, both models are evaluated under identical conditions: non-greedy sampling, four NVIDIA H200 GPUs, vLLM 0.31.0, and the Inspect AI and Harbor evaluation frameworks. The evaluation results are presented in Figure 1. The FP8 checkpoint consistently preserves model accuracy across all evaluated benchmarks.\n...\nThe performance gains from quantized checkpoints can be further extended by enabling speculative decoding with parallel drafting DSpark models. Speculative decoding accelerates inference by using a smaller, faster draft model to propose multiple tokens ahead of time, which the LLM then verifies in parallel.\n...\nQuantization and speculative decoding are complementary, orthogonal inference acceleration techniques that can be combined to achieve compounded performance gains. To demonstrate their individual and combined impact, we conducted a series of benchmarks using vLLM, highlighting the performance improvements enabled by each optimization and the additional benefits of combining them.\n\nThe following plots (Figure 3, Figure 4, and Figure 5) demonstrate performance benchmarking, comparing the performance gains achieved through swapping MTP speculative decoding with our trained DSpark speculator as well as swapping the BF16 checkpoint for our FP8 quantized checkpoint. All benchmarks were performed on four H100s across workloads with prompts from various datasets. Each chart shows per-user streaming speed (interactivity) on the x-axis versus total output throughput (tok/s) on the y-axis, with each point representing a different concurrency level N. The HumanEval prompts come from OpenAI's HumanEval coding benchmark, while the math_reasoning and RAG prompts come from Spec-Bench, the ACL 2024 speculative decoding benchmark suite.\n\nEach upgrade delivers meaningful gains on its own, and they compose cleanly. Swapping MTP for our trained DSpark speculator at BF16 primarily boosts single-user streaming speed, while swapping the BF16 checkpoint for FP8 primarily boosts aggregate throughput under load, where its reduced compute and memory footprint matters most. Combining them outperforms either intermediate configuration at every concurrency level on both workloads.\n...\nNemotron 3.5 Super VL models are available for inference through Red Hat Inference Hub on Red Hat AI Factory with NVIDIA.",
-      "signal_score": 14.0,
-      "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
-        "rank": 1
+        "points": 90,
+        "comments": 25
       }
     },
     {
@@ -165,11 +48,24 @@
       "title": "Day-0 support with 5x perf for Reflection Beam on Google Cloud | Google Cloud Blog",
       "url": "https://cloud.google.com/blog/topics/ai-infrastructure/day-0-support-with-5x-perf-for-reflection-beam-on-google-cloud",
       "published_at": "2026-10-16T00:00:00.000Z",
-      "excerpt": "Day-0 support with 5x perf for Reflection Beam on Google Cloud | Google Cloud Blog\n...\nToday, Reflection released Beam, its first open-weight model built to give developers, researchers, and enterprises open control and customization for frontier software engineering and long-horizon agentic tasks. Released under a permissive Apache 2.0 license with BF16, FP8, and NVFP4 checkpoints available at launch, Beam sets a new standard for inference efficiency in the 500B-parameter class by solving complex reasoning and coding problems with 3x to 4x higher reasoning compute efficiency than comparable open models.\n\nAlongside today’s release, Google Cloud is announcing day 0 support and ready-to-run deployment recipes for serving Beam on Google Cloud AI Hypercomputer and NVIDIA AI Infrastructure.\n\nTo help developers get the full benefit of Beam’s token efficiency in production, we worked with Reflection to optimize performance of the underlying serving stack using llm-d (with vLLM) and NVIDIA Dynamo (with SGLang) on Google Cloud:\n\n\"By deploying our Beam model on Google Cloud, we achieved up to 5x higher performance and 8x lower latency to optimize serving of agentic workloads.\" - Joe Spisak, VP of Product & Head of Open Source, Reflection\n...\n- Compounding model and system efficiency: Combining Beam’s 3x to 4x reasoning compute efficiency with system-level optimizations on A4X Max instances (NVIDIA GB300 NVL72) for up to 5x higher throughput and 8x lower latency,* and G4 VMs (NVIDIA RTX PRO 6000) for up to 2x higher throughput and 8x lower latency.*\n- High-efficiency multi-turn serving: KV-cache-aware routing, prefill/decode disaggregation, speculative decoding and hierarchical KV cache offloading to Host DRAM and Local SSD reduce redundant prompt recomputation across long coding sessions.\n- Turnkey optimized deployment: Our recommended performance optimized recipes for agentic workloads with llm-d and NVIDIA Dynamo are available in AI-Hypercomputer/gpu-recipes, llm-d repo and Model Garden in Gemini platform with a few clicks. \n\n*Based on customer benchmarking\n...\nReflection designed Beam (~501B total parameters with ~23B active parameters per token, and an approximately 1M-token context window) specifically for text-native software engineering and multi-step tool use. It plugs directly into the coding harnesses developers already use, including Reflection’s Mirror CLI, Claude Code, Hermes, OpenCode, and , to resolve GitHub issues, run CLI and DevOps workflows, and complete long-horizon tasks.\n\nBecause Beam activates only 23B parameters per token and reaches solutions using 3x to 4x fewer reasoning tokens than other comparable open weight models, it dramatically reduces the inference-time compute required for each reasoning step.\n...\nFirst, prefill compute becomes a bottleneck. Standard Kubernetes load balancers distribute requests using stateless round-robin routing. When a coding harness sends Turn 15 of a session, it often lands on a different replica than Turn 14. That replica is forced to recompute the entire historical prompt from scratch, wasting GPU compute and creating long prefill queues that delay other users.\n\nSecond, decode becomes bottlenecked by KV cache capacity. Holding long-context KV caches for dozens of concurrent agent sessions quickly fills up GPU High-Bandwidth Memory (HBM). Once HBM fills up, the serving engine has to evict older KV blocks. As soon as those blocks are evicted, cache hit rates drop and GPU throughput stalls.\n\nTo preserve Beam’s model-level efficiency at cluster scale, the serving stack has to be optimized as a distributed system. That is why our recipes pair Beam with llm-d (with vLLM) and NVIDIA Dynamo (with SGLang).\n...\nTo run Beam’s BF16, FP8, and NVFP4 checkpoints at peak efficiency on Day 0, we designed a vertically integrated architecture on AI Hypercomputer where each layer handles a specific part of the agentic serving lifecycle.\n...\n- Prefix- and load-aware routing (GKE + llm-d EPP / Dynamo router): Tracks cached prefixes and queue depth across worker pods, steering each follow-up turn from a coding harness to the replica holding its warm KV prefix while preventing queue saturation via turn-priority flow control.\n- Disaggregated compute and speculative decoding (A4X Max & G4 instance): Runs vLLM and SGLang with native Blackwell NVFP4, Expert Parallelism (EP) for Beam’s 23B active experts, Data-Parallel Attention, and DFlash2 speculative decoding. Separating Prefill and Decode (P/D) pools ensures heavy prompt bursts never stall active token generation.\n- Tiered KV cache (GPU Memory -> DRAM & Local SSD) Active KV blocks stay in high-bandwidth GPU memory (Tier 1), while warm KV blocks evicted during long-horizon sessions overflow into host CPU DRAM and local NVMe SSDs (Tier 2) via vLLM’s OffloadingConnector or SGLang's HiCache, allowing historical context to be fetched in milliseconds instead of recomputed from scratch.\n...\nA note on reading these charts. The two configurations are not comparable to each other. NVIDIA Dynamo ran on A4X Max instances with 32 x NVIDIA GB300 NVL72GPUs; llm-d ran on G4 VMs with 8 x NVIDIA RTX PRO 6000 GPUs. Each chart shows the gain over a baseline on the same hardware. More replicas give the router more warm KV caches to hit and more room to split prefill from decode, so the uplift grows with the deployment. Both llm-d and NVIDIA Dynamo scale up and down to match the underlying infrastructure.\n...\nAcross both platforms, layering these optimizations shifts the Pareto frontier to deliver higher output throughput and faster per-user interactivity simultaneously:\n\n- Baseline deployment (Stateless round-robin routing). In a standard Kubernetes deployment without prefix awareness, consecutive turns from the same coding session land on different replicas, forcing constant prefill recomputation on historical context and causing throughput to plateau as concurrency scales.\n- KV-cache-aware & flow control routing. Enabling prefix-aware routing in NVIDIA Dynamo or llm-d’s Sticky EPP with turn-priority flow control keeps multi-turn agent trajectories pinned to the replica holding their warm KV cache, immediately cutting Time-to-First-Token (TTFT) latency and freeing up GPU compute, resulting in a significant increase in token throughput.\n- Host DRAM and Local SSD (LSSD) KV offloading. Offloading evicted KV blocks from GPU memory into host DRAM and local NVMe SSDs prevents cache thrashing when dozens of long-context coding sessions exceed on-device GPU memory capacity.\n- Disaggregated serving, speculative decoding, and KV pool tuning. Tuning hybrid KV cache memory allocation, enabling speculative decoding, and disaggregating prefill and decode workers isolates token generation from heavy prompt bursts while the draft model multiplies output throughput to keep per-agent token interactivity fast.\n...\nThis blog explored how you can leverage system level optimizations to scale performance to serve Reflection's Beam family of models for agentic workloads. All of the Kubernetes manifests, router configurations, and benchmarking scripts from this post are open-source and ready to run on your own GKE cluster.\n\n- Deploy the optimized stack: Explore the day 0 guides for running Reflection’s Beam with llm-d and NVIDIA Dynamo in the AI-Hypercomputer/gpu-recipes repository on A4X Max and G4, and Model Garden in Gemini platform.\n- Download the weights: Grab the Apache 2.0 BF16, FP8, and NVFP4 checkpoints on Reflection’s Hugging Face page.",
-      "signal_score": 13.0,
+      "excerpt": "Day-0 support with 5x perf for Reflection Beam on Google Cloud | Google Cloud Blog\n\nOctober 16, 2026\n\n##### Injae Kwak\n\n##### Shivaji Dutta\n\nAI Infra Solutions Architect\n\n##### Try Gemini today\n\nThe front door to AI in the workplace\n\nToday, Reflection released Beam, its first open-weight model built to give developers, researchers, and enterprises open control and customization for frontier software engineering and long-horizon agentic tasks. Released under a permissive Apache 2.0 license with BF16, FP8, and NVFP4 checkpoints available at launch, Beam sets a new standard for inference efficiency in the 500B-parameter class by solving complex reasoning and coding problems with 3x to 4x higher reasoning compute efficiency than comparable open models.\n\nAlongside today’s release, Google Cloud is announcing day 0 support and ready-to-run deployment recipes for serving Beam on Google Cloud AI Hypercomputer and NVIDIA AI Infrastructure.\n\nTo help developers get the full benefit of Beam’s token efficiency in production, we worked with Reflection to optimize performance of the underlying serving stack using llm-d (with vLLM) and NVIDIA Dynamo (with SGLang) on Google Cloud:\n\n\"By deploying our Beam model on Google Cloud, we achieved up to 5x higher performance and 8x lower latency to optimize serving of agentic workloads.\" - Joe Spisak, VP of Product & Head of Open Source, Reflection\n\nWith today’s day 0 release on Google Cloud, developers get:\n\n- Compounding model and system efficiency: Combining Beam’s 3x to 4x reasoning compute efficiency with system-level optimizations on A4X Max instances (NVIDIA GB300 NVL72) for up to 5x higher throughput and 8x lower latency,* and G4 VMs (NVIDIA RTX PRO 6000) for up to 2x higher throughput and 8x lower latency.*\n- High-efficiency multi-turn serving: KV-cache-aware routing, prefill/decode disaggregation, speculative decoding and hierarchical KV cache offloading to Host DRAM and Local SSD reduce redundant prompt recomputation across long coding sessions.\n- Turnkey optimized deployment: Our recommended performance optimized recipes for agentic workloads with llm-d and NVIDIA Dynamo are available in AI-Hypercomputer/gpu-recipes, llm-d repo and Model Garden in Gemini platform with a few clicks. \n\n*Based on customer benchmarking\n\n...\n\n- Deploy the optimized stack: Explore the day 0 guides for running Reflection’s Beam with llm-d and NVIDIA Dynamo in the AI-Hypercomputer/gpu-recipes repository on A4X Max and G4, and Model Garden in Gemini platform.\n- Download the weights: Grab the Apache 2.0 BF16, FP8, and NVFP4 checkpoints on Reflection’s Hugging Face page.\n- Visit us at the llm-d and PyTorch Conference in San Jose: If you are attending PyTorch Conference North America in San Jose this October, stop by the llm-d community sessions and the Google Cloud booth #. We will be walking through live demos of KV-cache-aware routing, P/D disaggregation, and KV cache tiering for agentic workloads.\n- Come see us at NVIDIA GTC Berlin: If you are attending NVIDIA GTC Berlin, come connect with us at our booth #3026, or our Google Cloud Hub at w3.hub: just a short 5 minute walk from the venue. Learn more about our sessions.",
+      "signal_score": 14.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 2
+        "rank": 1
+      }
+    },
+    {
+      "id": "6caba4f2724f",
+      "source": "exa_news",
+      "title": "Beam is now available — Reflection",
+      "url": "https://reflection.ai/blog/beam-is-available",
+      "published_at": "2026-10-16T00:00:00.000Z",
+      "excerpt": "# Beam is now available\n\nOctober 16, 2026| 6 min read\n\nBeam is our first open-weight model, built for advanced coding, reasoning, and long-horizon agentic workloads with frontier reasoning efficiency. Today, we have released Beam’s model weights on Hugging Face under an Apache 2.0 license. Our model card includes final benchmarks, and the Beam Safety Technical Report shares the model’s complete safety methodology and evaluations.\n\nIn addition to releasing Beam’s weights and documentation, we’re launching with an ecosystem of over 40 partners and integrations to create what we are calling an open operating system for agents. The model is the kernel, and everything above the infrastructure layer is open: reference agentic integrations, deployment containers, inference integrations, and customization pipelines.\n\nDevelopers can download and self-host the model, evaluate it, customize it for their own domains, connect it to agentic systems, and access it through Reflection and our partners.\n\n...\n\n## Partnering to create the open operating system for agents \n\nOur vision is to build an open intelligence stack that gives developers, enterprises, and governments control over how AI is deployed in their environments. A model is only one layer of a working system; making it useful takes more than releasing weights. It also requires reliable inference, evaluation, safety tooling, customization workflows, agent runtimes, and deployment paths.\n\nWe have worked with partners across the open ecosystem to support inference, quantization, fine-tuning, reinforcement learning, agent harnesses, evaluation, and observability. Partners are making Beam available through managed endpoints, cloud platforms, on-premises systems, and sovereign infrastructure.\n\nWe are building and releasing our own open-source tools while collaborating with the projects developers already use. Together, these efforts expand a single model release into a usable system with many paths to adoption.\n\n...\n\nBeam has native, day-zero support across the ecosystem including: Transformers (Hugging Face), vLLM (Inferact), SGLang (RadixArk), Unsloth, Axolotl, TokenSpeed (LightSeek Foundation), and Dynamo (NVIDIA) so you can go from weights to a production-scale endpoint without writing custom plumbing.\n\n...\n\n## Agentic development with Mirror CLI\n\nBeam and Mirror CLI are both open-source friendly. We trained Beam along with the Mirror CLI harness to offer best performance, while also integrating with other popular open source harnesses to give developers optionality.\n\nMirror lets developers run Beam from a terminal, point it at different checkpoints or endpoints, and use it as a daily coding and agent harness. Developers can inspect the agent’s activity, approve tool calls, and steer it as it works. Mirror supports resumable conversations and parallel agents in separate worktrees, while project instructions, skills, MCP connections, and Python extensions let developers adapt it to their workflows.\n\nMirror’s architecture reflects this design. A Python frontend handles the product layer: prompts, skills, and developer tooling. It talks to a Rust agent core over a local connection, and that core is what actually drives the model. Keeping the core minimal lets it double as a clean evaluation surface, so results produced through Mirror are reliable.\n\n...\n\nBeam has also been tested with Pi (Earendil), OpenCode (Anomaly), and Hermes (Nous Research) across coding and knowledge work, including tasks that involve reading repositories, editing files, and running commands.\n\nAll of these harnesses work with Beam today through Reflection’s first-party API, other hosted third-party inference providers, or by self-hosting the model. We’ll keep adding harness support over time.",
+      "signal_score": 14.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 1
       }
     },
     {
@@ -178,7 +74,7 @@
       "title": "Day 0 support for Muse Spark Open on vLLM | vLLM Blog",
       "url": "https://vllm.ai/blog/2026-10-15-muse-spark-open",
       "published_at": "2026-10-15T00:00:00.000Z",
-      "excerpt": "re excited to have worked with Meta Superintelligence Labs to ... 0. Muse ... weight sparse mixture- ... -experts (MoE) model ... to date and ... mer 30B\n...\n- Architecture: 816B total parameters, 42B active per token with a 1M context window.\n- Quantization: Meta released the model in both BF16 and NVFP4. MXFP4 weights were released by AMD.\n- Multimodal: Native image and video perception through the same Perception Encoder as Muse Glimmer, with additional audio support.\n- Parallelism: Tensor Parallelism and Pipeline Parallelism on both Nvidia and AMD. EP, TEP, DEP and PD disaggregation on Nvidia. Initial support on TPU is also available.\n- Speculative decoding: We have trained a DSpark draft model, supported on both CUDA and ROCm that accelerates the model performance, tested on the SPEED bench.\n...\nNvidia team improved Muse Spark Open inference across FlashInfer and vLLM through fused normalization, gating, and residual kernels; fused MoE finalization with tensor-parallel communication and RMSNorm; a new low-latency BF16 GEMM implementation and reduced compilation overhead; TEP pooler/unpooler sharding with fused MNNVL collectives; TF32 router GEMM fed by the norm's FP32 output; and improvements to data movement, hardware support, and runtime reliability.\n...\nThanks to the AMD team, we have also supported the model on AMD Instinct™ MI355X GPUs, in both FP8 and MXFP4 quantized formats, providing improved inference performance and deployment efficiency. Note that ROCm currently supports both Tensor-Parallel and Pipeline-Parallelism.\n...\nvLLM also supports LoRA RL on Muse Spark Open from day 0, serving as the rollout engine with Verl FSDP2 as the trainer. vLLM serves the original NVFP4 checkpoint with the LoRA adapter applied on top. The trainer runs on a BF16 dequantization of the same weights and updates only the adapter (rank 32, alpha 64), which covers attention, the MoE latent projections and all routed experts. It also replays the rollout’s MoE routing (R3), and only the adapter is synced back to vLLM after each step.",
+      "excerpt": "# Day 0 support for Muse Spark Open on vLLM\n\nOctober 15, 2026 9 min read\n\nTable of Contents\n\nDay 0 support for Muse Spark Open on vLLM\n\n We're excited to have worked with Meta Superintelligence Labs to bring Muse Spark Open to vLLM on day 0. Muse Spark Open is an open-weight sparse mixture-of-experts (MoE) model, built for long-horizon agentic coding workflows. It is the most capable US open-weights model to date and it is the model Muse Glimmer 30B was distilled from.\n\n## Highlights\n\n- Architecture: 816B total parameters, 42B active per token with a 1M context window.\n- Quantization: Meta released the model in both BF16 and NVFP4. MXFP4 weights were released by AMD.\n- Multimodal: Native image and video perception through the same Perception Encoder as Muse Glimmer, with additional audio support.\n- Parallelism: Tensor Parallelism and Pipeline Parallelism on both Nvidia and AMD. EP, TEP, DEP and PD disaggregation on Nvidia. Initial support on TPU is also available.\n- Speculative decoding: We have trained a DSpark draft model, supported on both CUDA and ROCm that accelerates the model performance, tested on the SPEED bench.\n\n...\n\n### Nvidia\n\nNvidia team improved Muse Spark Open inference across FlashInfer and vLLM through fused normalization, gating, and residual kernels; fused MoE finalization with tensor-parallel communication and RMSNorm; a new low-latency BF16 GEMM implementation and reduced compilation overhead; TEP pooler/unpooler sharding with fused MNNVL collectives; TF32 router GEMM fed by the norm's FP32 output; and improvements to data movement, hardware support, and runtime reliability.\n\n### AMD\n\nThanks to the AMD team, we have also supported the model on AMD Instinct™ MI355X GPUs, in both FP8 and MXFP4 quantized formats, providing improved inference performance and deployment efficiency. Note that ROCm currently supports both Tensor-Parallel and Pipeline-Parallelism.\n\n### TPU\n\nWe have added support for Muse Spark Open on TPU on top of TorchTPU. Please contact us or Google for code access. We have also built megakernels for Muse Spark Open. With DSpark speculative decoding (acceptance length = 6), they reach over 650 tokens/sec on 4 TPU v7 chips and over 960 tokens/sec on 8 chips. Without speculative decoding, they still deliver over 270 and 350 tokens/sec, respectively.\n\n...\n\n## Reinforcement learning in vLLM\n\nvLLM also supports LoRA RL on Muse Spark Open from day 0, serving as the rollout engine with Verl FSDP2 as the trainer. vLLM serves the original NVFP4 checkpoint with the LoRA adapter applied on top. The trainer runs on a BF16 dequantization of the same weights and updates only the adapter (rank 32, alpha 64), which covers attention, the MoE latent projections and all routed experts. It also replays the rollout’s MoE routing (R3), and only the adapter is synced back to vLLM after each step.",
       "signal_score": 13.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -186,15 +82,54 @@
       }
     },
     {
-      "id": "b03fca02d763",
+      "id": "2d06427d134e",
       "source": "exa_news",
-      "title": "Introducing Muse Spark Open, The Most Capable US Open‑Weight Model to Date | Meta AI Research",
-      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "title": "Introducing FastFlow SDK",
+      "url": "https://www.amd.com/en/developer/resources/technical-articles/2026/introducing-fastflow-sdk.html",
       "published_at": "2026-10-15T00:00:00.000Z",
-      "excerpt": "Muse Spark Open is available today and brings leading agentic capabilities to your desktop for the first time on Apple M5 Ultra Mac Studios.\nToday, we’re releasing the weights for Muse Spark Open, the most capable US open-weight model to date. Muse Spark Open is a natively multimodal model with 816B total parameters (42B active) and a 1M-token context window. Built for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.\nWe believe the future is for everyone, and that includes the freedom to run advanced models wherever, including at home. Muse Spark Open is the first model in its class to run on your desktop using two Apple M5 Ultra Mac Studios with the latest MLX framework.\nMuse Spark Open is available today through API platforms at Baseten, Fireworks AI, Groq, Modal, Nebius, OpenRouter and Together AI. Model weights are available for download on Amazon SageMaker AI, Google Cloud Model Garden, Hugging Face, and Microsoft Foundry Models.\nIt runs on leading inference engines like SGLang, vLLM, TensorRT-LLM, Hugging Face Transformers, Apple MLX, llama.cpp, and Unsloth with optimizations for AMD, Apple, Intel, and NVIDIA silicon. Developers can easily further customize the model using the PyTorch framework.\n## Key Benchmarks\n...\nLeveraging the latest version of MLX, Muse Spark Open was optimized to run on Mac Studio with M5 Ultra, and together they’re the best way to run a powerful model on your own desktop.\nApple’s unified memory architecture lets the M5 Ultra's integrated GPU use up to 512 GB per Mac Studio, so two machines can hold an entire model. And the chip’s 1.2 TB/s of memory bandwidth is fast enough to read the small slice each token needs. The result is two Mac Studios behave like one supercomputer with a terabyte of unified memory.\nWe tested a range of agentic workflows running entirely on-device, using Muse Code powered by Muse Spark Open, including shipping real iOS changes to Ice Cubes (an open-source Mastodon client) — bug fixes, new features, full build — and driving DaVinci Resolve end to end, with the model reviewing footage frame by frame to find the strongest moments and crop them vertically.\n...\nWe’re sharing this work because we want everyone to have access to the best models. The open-weight version of Muse Spark ships with custom, auto-tunable Helion GPU kernels in SGLang, delivering 1.03-3.95× kernel-level speedups on NVIDIA and AMD GPUs, and a 3% end-to-end speedup on AMD MI350.\n...\nadditional safety post-training for ... strong safeguards across risk categories measured.\nWe evaluated the model in line with our Meta Superintelligence Scaling Framework, covering the most severe risks, and it met the thresholds our framework requires for release. Detailed results are in the Muse Spark Open model card, with a full evaluation report available soon.\n...\nre releasing the weights under the Muse Model License with limited commercial terms, which ... many developers to use the model for free.\n...\nYou can customize Muse Spark Open for your use case by leveraging PyTorch’s TorchTitan to further tune the model. To run it on Apple silicon, use MLX, which pulls the weights directly from Hugging Face.\nMuse Spark Open is available now through Hugging Face: https://huggingface.co/collections/meta-models/muse-spark-open\nMLX Adapter for running Muse Spark Open on Mac Studio.\nHosted Inference Partners: Together AI, Fireworks, Baseten, Modal, Groq, Nebius, and OpenRouter.",
+      "excerpt": "Introducing FastFlow SDK\n\n# Introducing FastFlow-SDK: Run, Customize, and Optimize Local AI\n\n Oct 15, 2026\n\nSay you're building an AI application and want local inference running fast: you point your app at an OpenAI-compatible endpoint, and you're ready. Now, say you need to tune models for a specific workload: you want to customize how they execute. Or say you need closer access to the metal to optimize the operators and kernels, such as GEMM, attention, and RoPE, that make your hardware fast in the first place. Different developers, different starting points, but all of them are trying to do real work on the same hardware.\n\nHere's the catch: most tools only solve for the first case. Point-and-run inference engines get you to a working demo fast, but the moment you need to adapt how a model executes, or build a custom operator, you hit a wall. The serving API simply doesn't expose what's happening underneath it, so you're stuck choosing between an easy on-ramp and real access to the hardware.\n\nFastFlow-SDK removes that tradeoff. It is one-stop platform by AMD for local AI software development, so you can start by running a supported model and keep going as far beneath the surface as your work demands, all within the same eco-system, without switching any licenses, vendors or tool chains.\n\nThis first blog in the series introduces FastFlow-SDK and the three technologies that make it possible: FastFlow, IRON, and HRX. The initial release targets Ryzen™ AI NPUs (XDNA2).\n\nFastFlow-SDK meets you on the same stack for whatever advantage you are looking for:\n\n- Run: Point your app at an OpenAI-compatible endpoint and get instant speed inference.\n- Customize: Adapt model execution and build new capabilities using the tools underneath.\n- Optimize: Build and tune operators and kernels directly at close-to-metal level.\n\n...\n\n## FastFlow-SDK\n\nFastFlow-SDK provides a single-entry point for developers targeting Ryzen AI NPUs. It includes support for running state-of-the-art GenAI models while exposing the underlying software stack for developers who need to customize model execution, operators, and kernels.\n\nFastFlow-SDK assembles the following components:\n\n- FastFlow (formerly FastFlowLM) - the application layer for running and serving AI models on the NPU.\n- IRON - a close-to-metal Python API for programming Ryzen AI NPUs, built on an open-source MLIR-based compiler toolchain.\n- Hip Runtime eXtended (HRX) - a lightweight runtime layer responsible for loading and executing workloads on AMD hardware across Windows and Linux.\n\n...\n\n## FastFlow\n\nFastFlow is an NPU-native inference engine integrated directly into Lemonade, which exposes an OpenAI-compatible streaming API and supports the context lengths of the models it serves. FastFlow also supports tool calling and reasoning models, enabling agentic and multi-step AI workflows on the NPU.\n\nFastFlow supports a range of language, multimodal, speech, and embedding models:\n\nModel Type\n\nModel Families\n\nText LLMs\n\nQwen (2.5 / 3 / 3.5 / 3.6-MoE)\n\nMixture-of-Experts\n\nGemma 3/4, gpt-oss, Llama 3.1/3.2, Phi, LiquidAI/LFM2\n\nVision-Language\n\nGemma 3/4, Qwen3-VL, Qwen2.5-VL\n\nSpeech\n\nWhisper large-v3-turbo\n\nEmbeddings / RAG\n\nEmbeddingGemma 300m\n\nClick here for complete list.\n\nTogether, these models provide a starting point for building chat applications, agents, multimodal experiences, speech workflows, and RAG pipelines targeting Ryzen AI NPUs.\n\n...\n\n#### 2. Customize: Build and modify with FastFlow-SDK\n\nOnce you're ready to move beyond running models, FastFlow-SDK provides access to the tools used to build and customize them. Developers can experiment with model configurations, integrate new capabilities, and explore how workloads are assembled for the NPU.\n\nAs your application requirements evolve, FastFlow-SDK serves as the entry point to the broader development stack and documentation. From there, you can begin working directly with the underlying projects and move deeper into the stack as needed.\n\nTo get started, visit the FastFlow-SDK repository for installation instructions, examples, and links to the underlying project documentation.",
+      "signal_score": 13.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 2
+      }
+    },
+    {
+      "id": "128670a55579",
+      "source": "exa_news",
+      "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning | NVIDIA Technical Blog",
+      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning",
+      "published_at": "2026-10-15T00:00:00.000Z",
+      "excerpt": "# NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning\n\n Oct 15, 2026 \n\n By Chris Alexiuk and Chintan Patel \n\n AI-Generated Summary \n\n- NVIDIA Nemotron 3.5 Super VL is an open, customizable multimodal model with a 120B-parameter mixture-of-experts architecture that activates 12B parameters per token for agentic workflows.\n- The model combines reasoning, instruction following, tool use, and text, image, document, and video understanding in a single model, eliminating the need for separate vision-language models.\n- On a single GPU, Nemotron 3.5 Super VL delivers up to 5x higher throughput for agentic tasks compared to other open models in its size category.\n- Organizations including Scale AI, Ramp, and AI21 have post-trained the model for specialized workflows, achieving improvements such as 40x lower inference cost, 10x lower latency, and 40% higher accuracy.\n- Developers can customize the model using NVIDIA NeMo with supervised fine-tuning, low-rank adaptation, and reinforcement learning on open datasets released on Hugging Face.\n- The model uses LiLiCorr speculative decoding, NVFP4 quantization with quantization-aware distillation, multi-token prediction, and context reuse to optimize inference efficiency on platforms including NVIDIA DGX Spark.\n\n...\n\nNVIDIA Nemotron 3.5 Super VL is an open, customizable multimodal model for these specialized workflows. Its 120B-parameter mixture-of-experts (MoE) architecture activates 12B parameters per token, balancing model capacity with inference efficiency.\n\nOn a single GPU, this model delivers up to 5x higher throughput for agentic tasks compared to other open models in its size category.\n\n \n\nEnlarge\n\nFigure 1. Nemotron 3.5 Super VL delivers over 600 TPS on Artificial Analysis Intelligence Index agentic tasks on the Baseten endpoint\n\nThe model combines reasoning, instruction following, and tool use with text, image, document, and video understanding. By combining these capabilities into one model, teams can handle text and visual tasks without deploying separate text and vision-language models or passing task context between them.\n\nDevelopers can post-train Nemotron 3.5 Super VL with NVIDIA NeMo using their own data, tools, policies, and workflows. This post explains how to use that foundation to build specialized enterprise agents and describes the training and inference techniques that power it.\n\n...\n\n## Accuracy and efficiency across agent tasks\n\nEvaluations of Nemotron 3.5 Super VL span Hermes, LangChain, OpenClaw, OpenCode, Pi, Codex, and Claude. In addition to coding tasks, agent harness providers use their own evaluations to test a wide range of agent tasks. On Hermes Bench and LangChain behavioral evaluations, Nemotron 3.5 Super VL scores higher than Nemotron 3 Ultra.\n\n| Model | Hermes Bench | LangChain Evals |\n| --- | --- | --- |\n| Nemotron 3 Ultra | 56.33% | 84.3% |\n| Nemotron 3.5 Super VL | 63.44% | 87.05% |\n\nTable 1. Nemotron 3.5 Super VL scores higher than Nemotron 3 Ultra on Hermes Bench and LangChain evaluations\n\nFor always-on agents, efficiency determines how much work a deployment can complete. Throughput, token usage, tool calls, and the steps needed to reach a correct result all affect task completion time.\n\n...\n\nThis model was also optimized to run locally on NVIDIA DGX Spark. An independent evaluation by EXO Labs placed Nemotron 3.5 Super VL on the Pareto frontier for accuracy and task completion time.\n\n...\n\n## Simplify production deployment with NVIDIA NIM and NVIDIA Dynamo\n\nNVIDIA NIM packages models with optimized inference engines, validated configurations, and standard APIs for cloud and data center deployment. NIM receives ongoing security, feature, and performance updates. Enterprise support is available through NVIDIA AI Enterprise. Get started with NIM.\n\nNVIDIA Dynamo supports distributed inference optimizations to increase throughput and reduce latency, including KV-cache-aware routing, KV cache management, and disaggregated serving.\n\nOn 16 NVIDIA B200 GPUs at 50 tokens per second per user, KV-aware routing with session affinity and KV cache offload serves up",
       "signal_score": 12.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 3
+      }
+    },
+    {
+      "id": "155dcdd9064d",
+      "source": "exa_news",
+      "title": "Serving Reflection Beam on vLLM from Day 0 | vLLM Blog",
+      "url": "https://vllm.ai/blog/2026-10-16-reflection-beam",
+      "published_at": "2026-10-16T00:00:00.000Z",
+      "excerpt": "# Serving Reflection Beam on vLLM from Day 0\n\nOctober 16, 2026 11 min read\n\nTable of Contents\n\nTL;DR: Reflection's Beam is a 501B-parameter MoE with 23B active parameters per token. vLLM supports it from day 0 and optimizes it on NVIDIA Blackwell:\n\n- Full feature support. Reasoning, tool calling, and structured outputs work out of the box, and you can run the model with tensor, data, or expert parallelism.\n- Agent-driven optimization. Coding agents optimized the model autonomously, making batch-1 decode 2.71× faster and prefill 1.87× faster than our first implementation.\n- DFlash2 with adaptive verification. With Beam's DFlash2 drafter, a single request reaches 708 tokens/s on TP8, with an acceptance length of 3.7. Adaptive verification, which decides each step how many draft tokens are worth verifying, adds 10% more throughput at high concurrency.\n\nTo try it, use our Docker image `vllm/vllm-openai:reflection-beam`:\n\nCopy code\n\n```\ndocker run --gpus all --ipc=host -p 8000:8000 \\\n  -v ~/.cache/huggingface:/root/.cache/huggingface \\\n  vllm/vllm-openai:reflection-beam \\\n  reflection/Beam-1.0-501B-A23B-NVFP4 \\\n  -tp 4 \\\n  --max-num-seqs 128 \\\n  --reasoning-parser beam \\\n  --tool-call-parser beam --enable-auto-tool-choice \\\n  --kv-cache-dtype fp8 \\\n  --attention-config '{\"backend\":\"FLASHINFER\"}' \\\n  --kernel-config '{\"enable_flashinfer_autotune\":false}' \\\n  --speculative-config '{\n    \"method\": \"dflash\",\n    \"model\": \"reflection/Beam-1.0-501B-A23B-DFlash2\",\n    \"num_speculative_tokens\": 7,\n    \"attention_backend\": \"FLASH_ATTN\"\n  }'\n```\n\n...\n\n## Agent-driven optimization\n\nOur initial version of implementation was an unoptimized, almost pure PyTorch version of the model. We then optimized it autonomously with coding agents: they profiled the model, wrote the kernels, and benchmarked each change. On TP8, the seven changes below brought batch-1 decode from 8.95 ms to 3.30 ms per step, and an 8 × 2K prefill from 328 ms to 176 ms.\n\n...\n\n## Getting started\n\nThe command at the top of this post is a good default: TP4 on a single GB300 node, with DFlash2 and FP8 KV cache. To enable adaptive verification, add `\"enable_adaptive_verification\": true` to the `--speculative-config`. Other optimizations above are on by default.\n\n- Choosing a parallel setup.\n\n- For the lowest latency, use TP4 or TP8.\n- For higher throughput, use data-parallel attention with expert parallelism, e.g. `-dp 4 --enable-expert-parallel`.\n- Reasoning and tool calling. The `beam` parsers read the response template that ships with the checkpoint. By default, vLLM also constrains every response to that template, so tool calls always parse and match each tool's JSON schema. `response_format` and `thinking_token_budget` work as usual. To turn the default constraint off, set `VLLM_BEAM_ALWAYS_CONSTRAIN_OUTPUT=0`.",
+      "signal_score": 12.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 3
+      }
+    },
+    {
+      "id": "90edf14943c1",
+      "source": "exa_news",
+      "title": "Optimized support for Open NVIDIA Nemotron 3.5 Super VL | Red Hat Developer",
+      "url": "https://developers.redhat.com/articles/2026/10/15/optimized-support-open-nvidia-nemotron-3-5-super-vl",
+      "published_at": "2026-10-15T00:00:00.000Z",
+      "excerpt": "# Optimized support for Open NVIDIA Nemotron 3.5 Super VL \n\nOctober 15, 2026\n\n Eldar Kurtić Helen Zhao Charles Hernandez Dipika Sikka \n\nRed Hat AI is releasing optimized FP8 and DSpark speculative decoding checkpoints for Nemotron 3.5 Super VL, a 120B multimodal mixture-of-experts (MoE) model built for long-running agents. These checkpoints are designed to double inference throughput on NVIDIA Hopper GPUs without compromising output accuracy.\n\nThese optimizations combine FP8 quantization using LLM Compressor with a DSpark speculative decoding model trained using Speculators, delivering substantial inference performance gains while preserving model quality.\n\n...\n\n## FP8 quantization\n\nTo accelerate inference for Nemotron 3.5 Super VL, we are releasing an optimized FP8-quantized checkpoint. FP8 quantization reduces the precision of model weights and activations from BF16 to 8-bit floating point, cutting model weight memory and storage requirements in half while preserving model quality.\n\nFP8 quantization is particularly effective on NVIDIA Hopper GPUs, which feature native FP8 Tensor Core support and deliver approximately 2× higher theoretical matrix multiplication throughput compared to BF16. Combined with reduced memory bandwidth requirements, this enables higher inference throughput and improved GPU efficiency, especially for large-scale models.\n\nWe generated the quantized checkpoints using the LLM Compressor library and its model-free post-training quantization (PTQ) workflow, leveraging the calibration-free nature of FP8 Dynamic quantization.\n\nAfter evaluating several quantization configurations, we settled on quantizing the attention, expert, and Mamba projection layers of the main model, while keeping the shared experts, routers, normalization layers, and `lm_head` in their original precision. For the multi-token prediction (MTP) layers, we quantized the attention, expert, and shared expert layers, while leaving the normalization layers and `eh_proj` unquantized.\n\nThe quantization process is fully reproducible using the creation script provided in the model card.\n\n...\n\nTo assess the impact of quantization on model accuracy, particularly in reasoning-intensive tasks and agentic workflows, we evaluate both the BF16 and FP8 models across a broad suite of representative benchmarks. To ensure a fair and consistent comparison, both models are evaluated under identical conditions: non-greedy sampling, four NVIDIA H200 GPUs, vLLM 0.31.0, and the Inspect AI and Harbor evaluation frameworks. The evaluation results are presented in Figure 1. The FP8 checkpoint consistently preserves model accuracy across all evaluated benchmarks.\n\n...\n\nEach upgrade delivers meaningful gains on its own, and they compose cleanly. Swapping MTP for our trained DSpark speculator at BF16 primarily boosts single-user streaming speed, while swapping the BF16 checkpoint for FP8 primarily boosts aggregate throughput under load, where its reduced compute and memory footprint matters most. Combining them outperforms either intermediate configuration at every concurrency level on both workloads.\n\n...\n\nNemotron 3.5 Super VL models are available for inference through Red Hat Inference Hub on Red Hat AI Factory with NVIDIA.",
+      "signal_score": 12.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
         "rank": 3
       }
     },
@@ -204,24 +139,24 @@
       "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
       "url": "https://huggingface.co/blog/reflection-beam",
       "published_at": "2026-10-16T00:00:00.000Z",
-      "excerpt": "Beam by Reflection is out on Hugging Face! It is the first model from the new US lab, Reflection, and it’s open! It's a mixture-of-experts (MoEs) model with 501B parameters (23B active per token), supports text as input, has a context window of 1M tokens, and is released under the Apache 2.0 license.\n\nBeam is focused on coding and agentic use cases. It is for teams that want a frontier-scale model on their own hardware, infrastructure, or cloud, and want to customize it to their own use cases. Beam ships with its own dedicated open source Rust based harness that delivers the best performance from the model.\n\nBeam has a native transformers implementation, as well as downstream libraries like vLLM and SGLang. We’ve worked with the Reflection team to bring you inference, SFT (supervised fine tuning), and RL (reinforcement learning) recipes for you to build with this model for your needs. On top of day-0 support in transformers, SGLang and vLLM, this post shows you how to run it, how to post-train it, and what we built with it.\n...\n> - 501B-parameter MoEs LLM with 23B active per token. 52 layers, 256 experts per MoE layer, 8 routed per token.\n> - Text in, text out with context window of 1M tokens.\n> - Checkpoint formats: BF16, FP8, and NVFP4\n> - Reasoning that can stay in context across turns (`preserve_thinking`), tool calling with a dedicated grammar. The model supports five reasoning values: \"low\", \"medium\" (default), \"high\", \"xhigh\", and \"max\".\n> - Response template in the tokenizer.\n> - Speculative decoding drafter model with DFlash2\n> - Day-0 libraries: transformers, SGLang, vLLM. Full-parameter RL with Miles.\n> - Ships with a Rust-based custom harness.\n> - Apache 2.0.\n...\nBeam is a text-only model built for long-context (1M context length) reasoning and agentic work. It is a sparse MoE model, where each token is computed by a small fraction of the network, so it runs at the speed of a much smaller model while keeping the capacity of a large one.\n...\n## Inference Support \n\nBeam comes with day-0 support in transformers, SGLang and vLLM.\n...\nBeam's tokenizer carries a response template. `parse_response` reads it and turns the raw output into a message dict, with the reasoning, the answer, and any tool calls in separate fields. This avoids the usual regex for splitting reasoning from answers from tool calls. And the rules ship with the tokenizer, so the parsed structure matches what Beam was trained to produce. The chat template can pre-write part of the assistant turn, which the parser needs to see.\n...\n### vLLM \n\nBeam has day-0 support in vLLM. The command below serves the BF16 checkpoint with tensor parallelism across 16 GPUs (two 8x H200 nodes) and exposes an OpenAI-compatible API:\n...\nFor faster generation ... add DFlash2 speculative decoding. A small dra ... up to 15 ... ahead, and Beam checks them all in one forward pass, so each step can accept several tokens. The ... a little extra memory ... the drafter\n...\n### SGLang \n\nBeam also has day-0 support in SGLang. We recommend serving it with DFlash2 speculative decoding, which both commands below turn on. On Blackwell, the NVFP4 checkpoint fits on 4 B300s:\n...\n### Inference Providers \n\nBeam is available on Hugging Face Inference Providers, powered by Baseten, Fireworks, and Together, with more to follow soon.\n...\n### Inference Endpoints \n\nWe’ve set up a Beam recipe for you to one click deploy in Inference Endpoints from the catalog in FP8 or NVFP4, or install with the `hf` cli like so:\n...\nYou can fine tune Beam for your own use cases. Here, we share some examples in TRL and Miles to get you started on supervised fine-tuning and reinforcement learning.\n...\nThe quickest way to adapt Beam to your own data is supervised fine- ... with TRL's SFTTrainer. To keep memory manageable, we train LoRA adapters with PEFT rather than updating all 501B parameters: We used TRL’s `SFTTrainer` to adapt Beam to a simple goal: keep its reasoning in the language requested by the user. We fine-tuned on Multilingual-Thinking with LoRA, which trains a small set of adapter weights while keeping the base model frozen.\n...\nReflection and RadixArk built a recipe that trains the model with GRPO in Miles, in BF16. You can update the full model or use LoRA to train adapters while keeping the base weights frozen. Megatron trains, SGLang generates the rollouts, and Miles publishes the new weights to the rollout engines after each update. We reviewed the recipe.\n...\n### Hey Beam, how do you scale on multiple agents? \n\nWe wanted to see whether Beam could make faster progress by splitting a programming task across agents. We paired Beam with the open-source Pi coding agent and compared three setups: 1. one agent working alone, 2. five persistent peers collaborating through a shared Git repository, and 3. a lead agent delegating work to asynchronous subagents. The harness ran on Hugging Face jobs with inference through Reflection’s platform API.\n...\n### Hey Beam, fin ... a decision model for ... code base! \n\nDecision models are all the rage at the moment because they’re super fast and practical for many use cases. We started with Beam in Pi after Beam’s quota ran out to train and evaluate a custom decision model for developer incident triage.\n\nWe wanted to see whether a coding agent could turn an incident-triage policy into a small, fast decision model. The task was to read a developer incident and choose the responsible team, its severity, and whether someone should be pinged immediately. Using Unsloth, we fine-tuned Qwen3.5-0.8B to score these choices directly.\n...\nFor a baseline, we prompted the unadapted model with the full triage policy and ... , without examples, and asked ... decisions as JSON. On the ... 320 synthetic test tickets, the fine-tuned decision model got all ... answers correct on 76.25%, versus 4.69% for prompted zero-shot. Mean ticket latency fell from 1,218.06 ... to 102.58 ms, an 11.9× speedup.\n...\nBeam is a 501B open model that you can run on your own hardware and change. Start with the BF16 checkpoint, or try one of the quants FP8, NVFP4. If you build something with Beam, share it in ... discussions tab.",
-      "signal_score": 12.0,
+      "excerpt": "# Welcome Beam: a 501B open model you can own, customize, and scale \n\nPublished October 16, 2026 \n\nben burtenshaw\n\nburtenshaw \n\nPedro Cuenca\n\npcuenq \n\nBeam by Reflection is out on Hugging Face! It is the first model from the new US lab, Reflection, and it’s open! It's a mixture-of-experts (MoEs) model with 501B parameters (23B active per token), supports text as input, has a context window of 1M tokens, and is released under the Apache 2.0 license.\n\nBeam is focused on coding and agentic use cases. It is for teams that want a frontier-scale model on their own hardware, infrastructure, or cloud, and want to customize it to their own use cases. Beam ships with its own dedicated open source Rust based harness that delivers the best performance from the model.\n\nBeam has a native transformers implementation, as well as downstream libraries like vLLM and SGLang. We’ve worked with the Reflection team to bring you inference, SFT (supervised fine tuning), and RL (reinforcement learning) recipes for you to build with this model for your needs. On top of day-0 support in transformers, SGLang and vLLM, this post shows you how to run it, how to post-train it, and what we built with it.\n\n...\n\nTL;DR\n\n> - 501B-parameter MoEs LLM with 23B active per token. 52 layers, 256 experts per MoE layer, 8 routed per token.\n> - Text in, text out with context window of 1M tokens.\n> - Checkpoint formats: BF16, FP8, and NVFP4\n> - Reasoning that can stay in context across turns (`preserve_thinking`), tool calling with a dedicated grammar. The model supports five reasoning values: \"low\", \"medium\" (default), \"high\", \"xhigh\", and \"max\".\n> - Response template in the tokenizer.\n> - Speculative decoding drafter model with DFlash2\n> - Day-0 libraries: transformers, SGLang, vLLM. Full-parameter RL with Miles.\n> - Ships with a Rust-based custom harness.\n> - Apache 2.0.\n\n...\n\n## What is Beam? \n\nBeam is a text-only model built for long-context (1M context length) reasoning and agentic work. It is a\n\n...\n\n## Inference Support \n\nBeam comes with day-0 support in transformers, SGLang and vLLM.\n\n### Transformers \n\nInstall the latest version of transformers.\n\n```sh\npip install -U \"transformers>=5.20.1\"\n\n```\n\nThe easiest way to run Beam is the text-generation pipeline:\n\n```py\nfrom transformers import pipeline\n\npipe = pipeline(\n    \"text-generation\", model=\"reflection/Beam-1.0-501B-A23B\", device_map=\"auto\"\n)\n\nmessages = [\n    {\"role\": \"user\", \"content\": \"Write a limerick about Python exceptions.\"}\n]\noutput = pipe(messages, max_new_tokens=2000)\noutput[0][\"generated_text\"][-1]\n\n```\n\nThe pipeline returns the whole chat. The last message is Beam's reply, already parsed by the response template.\n\n...\n\n### Inference Providers \n\nBeam is available on Hugging Face Inference Providers, powered by Baseten, Fireworks, and Together, with more to follow soon.\n\n```py\nimport os\nfrom openai import OpenAI\n\nclient = OpenAI(\n    base_url=\"https://router.huggingface.co/v1\",\n    api_key=os.environ[\"HF_TOKEN\"],\n)\n\ncompletion = client.chat.completions.create(\n    model=\"reflection/Beam-1.0-501B-A23B:auto\",\n    messages=[{\"role\": \"user\", \"content\": \"What is the capital of France?\"}],\n)\n\nprint(completion.choices[0].message)\n\n```\n\n...\n\n### Hey Beam, how do you scale on multiple agents? \n\nWe wanted to see whether Beam could make faster progress by splitting a programming task across agents. We paired Beam with the open-source Pi coding agent and compared three setups: 1. one agent working alone, 2. five persistent peers collaborating through a shared Git repository, and 3. a lead agent delegating work to asynchronous subagents. The harness ran on Hugging Face jobs with inference through Reflection’s platform API.\n\nFor the tasks, we used ProgramBench: agents must recreate a program from its compiled executable and documentation, without seeing its source code or the evaluator’s tests. Each setup had the same 8M API-token ceiling and two-hour solver limit per task, shared across its agents. We saved implementation snapshots and evaluated them against fixed hidden-test suites from the ProgramBench-Tests dataset.\n\nOur score-versus-latency plot shows the average fraction of tests passed. The time axis uses fixed reference rates for model tokens plus measured tool time, rather than elapsed wall time. We initially ran five tasks. The current figure shows a post-hoc subset of jq, xsv, FIGlet, and hexyl; ripgrep was excluded across all three setups because grading its saved artifacts was too slow. The published results retain all 15 original episodes.",
+      "signal_score": 11.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 3
+        "rank": 4
       }
     },
     {
-      "id": "dbe582b969a2",
+      "id": "c7e65c2afa37",
       "source": "exa_news",
-      "title": "China launches first national benchmark covering entire AI industry chain | Orient",
-      "url": "https://orient.tm/en/china/1594",
+      "title": "Muse Spark Is Now an Open-Weights Model",
+      "url": "https://pytorch.org/blog/muse-spark-open",
       "published_at": "2026-10-15T00:00:00.000Z",
-      "excerpt": "China on Tuesday released Qiusuo 4.0, the country's first evaluation benchmark covering the entire artificial intelligence industry chain, including computing power, model algorithms, intelligent systems and products, industry applications and security governance.\n\nThe national benchmark provides chipmakers, model developers and other AI product manufacturers with a unified testing process and common evaluation criteria.\n...\nLightweight versions of Qiusuo tools for computing power, large models and intelligent agents have also been open-sourced, allowing companies to reproduce evaluations more quickly and conduct joint hardware-software verification.\n\nThe system is divided into four main sections: foundational software and hardware, models and intelligent systems, security governance, and industry implementation.\n\nQiusuo 4.0 includes 16 evaluation tools covering areas from computing infrastructure and intelligent computing clouds to large models, intelligent agents, embodied AI, smart terminals and AI security.\n\nAccording to CCTV+, the new benchmark is designed to make AI product evaluation more comparable and help companies select and deploy technologies more efficiently.",
-      "signal_score": 11.0,
+      "excerpt": "# Muse Spark Is Now an Open-Weights Model\n\nSource: https://pytorch.org/blog/muse-spark-open/\n\nLast updated: 2026-10-15\n\n---\n\nToday, Meta is releasing the weights for Muse Spark Open, the most capable US open-weights model to date. It’s available today on Hugging Face under the Muse Model License. Muse Spark Open runs optimized on the SGLang and vLLM inference engines, with optimization for NVIDIA, AMD, and Intel.\n\nBuilding on our August release of Muse Spark, this open weights version has additional safety post-training to make it more robust against misuse as a standalone model without system guardrails. The result is a model that is a top open source choice for safety. Muse Spark Open is an 816B total/42B active parameter model with a context window of 1M tokens. Built for coding and agentic work, Muse Spark Open is natively multimodal and shares the same base model as Muse Spark 1.3.\n\n...\n\n## Why Helion kernels?\n\nHelion is a PyTorch native kernel authoring language designed for writing high-performance kernels across heterogeneous hardware platforms. Following early adoption from the open-source ecosystem, Helion became a part of the PyTorch Foundation in April 2026. Muse Spark Open ships with Helion implementations of operations such as RoPE, RMSNorm, quantization, etc., delivering 1.03 – 3.95x speedups compared to custom kernels written in hardware specific languages (e.g. NVIDIA CUDA and CuTe DSL) on NVIDIA GB300. These same kernels were directly portable for AMD, scoring similar performance improvements on AMD Mi350 with an overall 3% improvement in end-to-end throughput.\n\nIn addition, we also launched Helion megakernels for Muse Spark Open in SGLang. Written entirely in Helion, these kernels fuse multiple operations into a single persistent kernel to improve low latency inference, and can likewise be autotuned for different shapes and hardware.\n\nHelion kernels can be further autotuned by users for broader hardware platforms and workloads – including different accelerator architectures (NVIDIA, AMD, Google TPU, etc.), quantization formats, tensor shapes, and parallelism strategies – without maintaining separate hand-tuned implementations for every configuration. Together, these capabilities make it easier to achieve portable performance while reducing the cost of developing and maintaining specialized kernels.",
+      "signal_score": 10.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 4
+        "rank": 5
       }
     },
     {
@@ -230,23 +165,10 @@
       "title": "Announcing Day 0 Support for NVIDIA Nemotron 3.5 Super VL on vLLM | vLLM Blog",
       "url": "https://vllm.ai/blog/2026-10-15-nemotron-3-5-super-vl-vllm",
       "published_at": "2026-10-15T00:00:00.000Z",
-      "excerpt": "- Native visual understanding with agentic execution: The model combines high-accuracy reasoning and tool use with document, image, and video understanding, preserving task-relevant context across specialized workflows.\n- Efficient, controllable deployment: A hybrid Mamba-Transformer architecture, multi-token prediction, and NVFP4 quantization are designed to improve generation efficiency and create headroom for more concurrent long-context sessions.\n...\n- Architecture: 120B total parameters with 12B active parameters in a mixture-of-experts design\n- Modalities: Text, images, documents, and video as input; text as output\n- Optimization: C-RADIOv4 vision encoder, hybrid Mamba-Transformer architecture, multi-token prediction, and NVFP4 quantization\n- Model role: High-accuracy agentic execution with native visual understanding for systems of models\n- Customization: Post-train with NVIDIA NeMo using organization-specific data, tools, policies, and workflows\n- Deployment: NVIDIA NIM for optimized production serving across cloud and data center environments\n- Deployment targets: 1x GB10, B200, B300, RTX PRO 6000, H200, and 2x H100\n- Availability:\n\n- Download the model weights from Hugging Face: BF16 and NVFP4\n- Run Nemotron 3.5 Super VL with vLLM using the getting-started cookbook\n...\nNemotron 3.5 Super VL is intended to run across a wide range of NVIDIA platforms. vLLM provides the serving layer needed to bring the model into production workflows, including continuous batching, prefix caching, speculative decoding, and an OpenAI-compatible API.\n\nThe BF16 checkpoint offers a straightforward baseline for deployment. NVFP4 is also available at launch for environments that can take advantage of lower-precision inference.\n...\nThe following NVFP4 launch configuration is an example for a 1× GB200 setup. Validate it on the target hardware before use.\n...\n```\nvllm serve nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 \\\n  --served-model-name nemotron-3.5-super \\\n  --trust-remote-code \\\n  --max-model-len 114688 \\\n  --reasoning-parser nemotron_v3 \\\n  --speculative-config.method mtp \\\n  --speculative-config.num_speculative_tokens 5\n```\n...\nNemotron 3.5 Super VL supports Multi-Token Prediction (MTP) to accelerate token generation while preserving the target model’s output quality.\n\nNemotron 3.5 Super VL includes built-in multi-token prediction (MTP) heads. During decoding, these heads propose future tokens and the target model verifies them, reducing the number of sequential generation steps required for longer responses.\n...\nserve nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 \\\n  --served-model-name nemotron-3.5-super \\\n  --trust-remote ... code \\\n  --speculative-config.method mtp \\\n  --speculative-config.num_speculative_tokens 3\n...\nNemotron 3.5 Super VL is designed to deliver high accuracy for specialized multimodal agent tasks while using only a subset of its total parameters for each token. The hybrid Mamba-Transformer architecture and multi-token prediction along with NVFP4 quantization help accelerate output generation.\n\nAs shown in Figure 1, on a single GPU, this model delivers up to 5x faster throughput for agentic tasks compared to other open models in its size category.\n\nNemotron 3.5 Super VL reaches over 600 output tokens per second at 100,000 input tokens, compared with other open models.",
-      "signal_score": 11.0,
-      "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
-        "rank": 4
-      }
-    },
-    {
-      "id": "155dcdd9064d",
-      "source": "exa_news",
-      "title": "Serving Reflection Beam on vLLM from Day 0 | vLLM Blog",
-      "url": "https://vllm.ai/blog/2026-10-16-reflection-beam",
-      "published_at": "2026-10-16T00:00:00.000Z",
-      "excerpt": "Serving Reflection Beam on vLLM from Day 0 | vLLM Blog\n\n# Serving Reflection Beam on vLLM from Day 0\n...\nTL;DR: Reflection's Beam is a 501B-parameter MoE with 23B active parameters per token. vLLM supports it from day 0 and optimizes it on NVIDIA Blackwell:\n\n- Full feature support. Reasoning, tool calling, and structured outputs work out of the box, and you can run the model with tensor, data, or expert parallelism.\n- Agent-driven optimization. Coding agents optimized the model autonomously, making batch-1 decode 2.71× faster and prefill 1.87× faster than our first implementation.\n- DFlash2 with adaptive verification. With Beam's DFlash2 drafter, a single request reaches 708 tokens/s on TP8, with an acceptance length of 3.7. Adaptive verification, which decides each step how many draft tokens are worth verifying, adds 10% more throughput at high concurrency.\n\nTo try it, use our Docker image `vllm/vllm-openai:reflection-beam`:\n...\n```\ndocker run --gpus all --ipc=host -p 8000:8000 \\\n  -v ~/.cache/huggingface:/root/.cache/huggingface \\\n  vllm/vllm-openai:reflection-beam \\\n  reflection/Beam-1.0-501B-A23B-NVFP4 \\\n  -tp 4 \\\n  --max-num-seqs 128 \\\n  --reasoning-parser beam \\\n  --tool-call-parser beam --enable-auto-tool-choice \\\n  --kv-cache-dtype fp8 \\\n  --attention-config '{\"backend\":\"FLASHINFER\"}' \\\n  --kernel-config '{\"enable_flashinfer_autotune\":false}' \\\n  --speculative-config '{\n    \"method\": \"dflash\",\n    \"model\": \"reflection/Beam-1.0-501B-A23B-DFlash2\",\n    \"num_speculative_tokens\": 7,\n    \"attention_backend\": \"FLASH_ATTN\"\n  }'\n...\nBeam is a 52-layer MoE decoder with hidden size 5120. The MoE routing follows DeepSeek-V3. The main differences are in the attention layers and in how the residual stream is normalized.\n...\nOur initial version of implementation was an unoptimized, almost pure PyTorch version of the model. We then optimized it autonomously with coding agents: they profiled the model, wrote the kernels, and benchmarked each change. On TP8, the seven changes below brought batch-1 decode from 8.95 ms to 3.30 ms per step, and an 8 × 2K prefill from 328 ms to 176 ms.\n...\nIn the high concurrency region, Beam's performance can be further improved by combining Attention DP with MegaMoE, powered by FlashInfer's CuTe DSL NVFP4 MegaMoE kernel. The Finalize + norm boundary fusion remains applicable.\n\n| Configuration | Peak input token throughput |\n| --- | --- |\n| Attention DP + MegaMoE | 168.8K tokens / second |\n| ... (`flashinfer_trtllm`, `flashinfer_nvlink_ ... _sided`) | 98.7K tokens / second |\n\nAttention DP with MegaMoE delivered 1.71× higher peak prefill throughput than TP4. Benchmark setup: 4×GB300, with an input sequence length of 32K tokens and an output sequence length of 1 token to isolate prefill performance.\n...\n## DFlash2 speculative decoding\n\nBeam ships with a DFlash2 draft head, which vLLM supports from day 0. Instead of drafting one token at a time, it predicts a whole block of tokens in a single forward pass from the target model's hidden states.\n...\n- Adaptive verification. With `\"enable_adaptive_verification\": true`, vLLM predicts how likely each draft token is to be accepted and verifies only the ones worth their cost, instead of a fixed number per step. DFlash2 has no confidence head, so the acceptance estimate comes from the drafter's own logits (see our recent post on adaptive verification).\n- Kernels. The drafter's convolution, norms, and KV writes are fused, and the whole draft step runs in a CUDA graph. FP8 KV cache works for the drafter too, ... no change in acceptance.\n\nServing results on TP8, with and without adaptive verification, on the low-entropy category of SPEED-Bench's `throughput_1k` split: ~1K-token prompts, mostly code completion and text sorting, with greedy decoding and up to 4K output tokens. Low-entropy text is easier to predict, so expect lower acceptance on open-ended chat.\n\n| Concurrency | Fixed draft (tok/s) | Adaptive (tok/s) | Change | Acceptance length |\n| --- | --- | --- | --- | --- |\n| 1 | 708 | 707 | −0.1% | 3.71 → 3.61 |\n| 8 | 3,232 | 3,221 | −0.3% | 3.67 → 3.57 |\n| 32 | 7,744 | 8,275 | +6.9% | 3.68 → 3.29 |\n| 128 | 15,012 | 16,632 | +10.8% | 3.68 → 3.23 |\n\nAdaptive verification pays off under load. At concurrency 128 it raises output throughput by 10.8% and cuts p99 TPOT by 9%, while verifying fewer draft tokens per step, which lowers acceptance length slightly but saves more compute than it loses. At low concurrency, where extra draft tokens are nearly free, it is neutral.\n\n## AgentX benchmark\n...\nWe also tested Beam on AgentX, which replays multi-turn coding conversations to measure serving performance. With DFlash2, vLLM reached approximately 88K total tokens/s per GPU at 96 concurrent requests. Total throughput counts input and output tokens, including cached input. Input-token cache hit rates ranged from 91.4% to 95.6% across the sweep.\n\nAgentX benchmark configuration: Beam 1.0 NVFP4 on 4× GB300 with TP4/EP1 and FP8 KV cache for both target and drafter. DFlash2 uses real acceptance (average AL 3.6 across measured points), block size 8, and probabilistic sampling. AgentX uses trajectory ratios 0.55–0.75, maximum reasoning effort, temperature 1.0, and 20 minutes per point. Total throughput includes cached input tokens. Source commits: vLLM 8e0922.\n...\nThe command at the top of this post is a good default: TP4 on a single GB300 node, with DFlash2 and FP8 KV cache. To enable adaptive verification, add `\"enable_adaptive_verification\": true` to the `--speculative-config`. Other optimizations above are on by default.\n...\n- For the lowest latency, use TP4 or TP8.\n- For higher throughput, use data-parallel attention with expert parallelism, e.g. `-dp 4 --enable-expert-parallel`.\n- Reasoning and tool calling. The `beam` parsers read the response template that ships with the checkpoint. By default, vLLM also constrains every response to that template, so tool calls always parse and match each tool's JSON schema. `response_format` and `thinking_token_budget` work as usual. To turn the default constraint off, set `VLLM_BEAM_ALWAYS_CONSTRAIN_OUTPUT=0`.\n...\nWe also collaborated with the SkyRL team to enable Day 0 support for RL on Beam. LoRA, BF16 full fine-tuning and MXFP8 RL are supported out of the box, with an upgraded RL stack for the 500B scale.\n\nThe SkyRL team post-trained the Beam model on the DAPO recipe with vLLM for inference and Megatron for training. LoRA, full fine-tuning and MXFP8 RL achieve similar gains in performance in 50 training steps, or 100 optimizer updates (reasoning `minimal`), with an average accuracy (avg@8) jump from ~61% to ~79% on AIME25. Average absolute log-probability difference between Megatron and vLLM stays under 0.01 with Rollout Routing Replay (R3) enabled for LoRA and BF16 full fine-tuning, and under 0.03 for MXFP8 RL.",
+      "excerpt": "Nemotron 3.5 Super VL addresses two practical requirements for multimodal, always-on agents:\n\n- Native visual understanding with agentic execution: The model combines high-accuracy reasoning and tool use with document, image, and video understanding, preserving task-relevant context across specialized workflows.\n- Efficient, controllable deployment: A hybrid Mamba-Transformer architecture, multi-token prediction, and NVFP4 quantization are designed to improve generation efficiency and create headroom for more concurrent long-context sessions.\n\n...\n\n## TL;DR: About NVIDIA Nemotron 3.5 Super VL\n\n- Architecture: 120B total parameters with 12B active parameters in a mixture-of-experts design\n- Modalities: Text, images, documents, and video as input; text as output\n- Optimization: C-RADIOv4 vision encoder, hybrid Mamba-Transformer architecture, multi-token prediction, and NVFP4 quantization\n- Model role: High-accuracy agentic execution with native visual understanding for systems of models\n- Customization: Post-train with NVIDIA NeMo using organization-specific data, tools, policies, and workflows\n- Deployment: NVIDIA NIM for optimized production serving across cloud and data center environments\n- Deployment targets: 1x GB10, B200, B300, RTX PRO 6000, H200, and 2x H100\n- Availability:\n\n- Download the model weights from Hugging Face: BF16 and NVFP4\n- Run Nemotron 3.5 Super VL with vLLM using the getting-started cookbook\n\n...\n\n## Run High-Throughput Inference with vLLM\n\nNemotron 3.5 Super VL is intended to run across a wide range of NVIDIA platforms. vLLM provides the serving layer needed to bring the model into production workflows, including continuous batching, prefix caching, speculative decoding, and an OpenAI-compatible API.\n\nThe BF16 checkpoint offers a straightforward baseline for deployment. NVFP4 is also available at launch for environments that can take advantage of lower-precision inference.\n\n...\n\n### Serve the Model\n\nThe following NVFP4 launch configuration is an example for a 1× GB200 setup. Validate it on the target hardware before use.\n\nCopy code\n\n```\nvllm serve nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 \\\n  --served-model-name nemotron-3.5-super \\\n  --trust-remote-code \\\n  --max-model-len 114688 \\\n  --reasoning-parser nemotron_v3 \\\n  --speculative-config.method mtp \\\n  --speculative-config.num_speculative_tokens 5\n```\n\n...\n\n## Accelerate Long-Running Agentic Workflows with Speculative Decoding\n\nNemotron 3.5 Super VL supports Multi-Token Prediction (MTP) to accelerate token generation while preserving the target model’s\n\n...\n\nNemotron 3.5 Super VL is designed to deliver high accuracy for specialized multimodal agent tasks while using only a subset of its total parameters for each token. The hybrid Mamba-Transformer architecture and multi-token prediction along with NVFP4 quantization help accelerate output generation.\n\nAs shown in Figure 1, on a single GPU, this model delivers up to 5x faster throughput for agentic tasks compared to other open models in its size category.\n\nNemotron 3.5 Super VL reaches over 600 output tokens per second at 100,000 input tokens, compared with other open models.\n\nFigure 1. Nemotron 3.5 Super VL delivers over 600 TPS on Artificial Analysis Intelligence Index agentic tasks on Baseten endpoint.\n\nAs shown in Figure 2, Nemotron 3.5 Super VL performs tasks 4x faster compared to other leading open models of similar size.\n\nChart comparing SWE-bench Pro accuracy and hours to complete 10,000 tasks on four B200 GPUs; Nemotron 3.5 Super VL has the shortest completion time.",
       "signal_score": 10.0,
       "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
+        "query": "AI systems GPU serving quantization research release",
         "rank": 5
       }
     },
@@ -256,76 +178,37 @@
       "title": "Perplexity Ships Its Search Agent’s Sandbox as Open Source — and the Sandbox Layer Just Got Another Entrant",
       "url": "https://tech.yahoo.com/ai/perplexity-ai/articles/perplexity-ships-search-agent-sandbox-181042782.html",
       "published_at": "2026-10-16T00:00:00.000Z",
-      "excerpt": "On October 15, 2026, Perplexity released its execution sandbox to the public. The SPACE repository — Sandboxed Platform for Agentic Code Execution, written in Rust — carries an Apache 2.0 license, 820 stars as of October 16 (770 in the first 24 hours per the announcement), and the production record of powering every Perplexity Computer agent session since July 2026.\n\nThe technical foundation is Firecracker microVMs — the same AWS-originated virtual machine monitor underpinning E2B, DigitalOcean Agent Droplets, and the sandbox forking pattern our earlier coverage identified as one of two load-bearing pillars of agent security. Each SPACE agent task runs in its own microVM with credentials and outbound traffic controlled from outside the VM. The performance numbers are notable: median sandbox spin-up of approximately 60 milliseconds, with support for pause/resume and rolling snapshots persisting up to one week. Perplexity reports zero escapes across approximately 118 adversarial test attempts.\n\nThe repository ships with an E2B Compatibility Wrapper supporting the E2B Python SDK, documented in the SPACE documentation. Cloud partners CoreWeave, Akamai, and Crusoe are working to offer SPACE to their own customers.\n\nThe real forward signal is not the sandbox itself but what Perplexity says comes next. Secondary coverage reports that Perplexity positions SPACE as part of a broader Agentic Runtime Platform roadmap — language that signals an infrastructure play extending well beyond isolated execution. The primary blog page at perplexity.ai returned a Cloudflare challenge at our fetch, so the roadmap framing is labeled at retrieval strength rather than verbatim primary source.\n\nWhat matters here is the pattern. Multiple vendors have converged on near-identical Firecracker-based per-agent isolation in the same period. Our October 3 coverage documented five platforms shipping copy-on-write isolation in a single week — DigitalOcean, Uber, E2B, Daytona, and Cloudflare. The Kubernetes Agent Sandbox CRD reached general availability in May 2026 with 16x growth in five months, allocating 300 sandboxes per second at 90% under 200 milliseconds. The execution layer is no longer a competitive advantage. It is a commodity.\n...\ncontrol plane is where the moat is concentrating ... crossed 42,000 servers ... vendors — Des ... , Postman — are embedding directly into ... Enterprise API platforms are building protocol-agn ... since August is\n...\nFor builders, the message is straightforward. Stop building custom sandboxes. SPACE, E2B, Modal, and the K8s Agent Sandbox CRD all solve the isolation problem. Direct your engineering resources upward: agent governance, identity, orchestration, and the coordination fabric that sits between agents and the systems they touch.\n\nFor investors, the commodity status of the ... layer changes the calculus. The ... ,000-agent ... projects by 2028 will ... be bottlenecked ... . The bottleneck is ... — not the\n...\nalso proof that the",
-      "signal_score": 10.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 5
-      }
-    },
-    {
-      "id": "08fc98fbbc65",
-      "source": "exa_news",
-      "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72 | NVIDIA Technical Blog",
-      "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72",
-      "published_at": "2026-10-15T00:00:00.000Z",
-      "excerpt": "Meta’s Muse Spark\n...\n# Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72 \n\n Oct 15, 2026 \n\n By Rajath Narasimha and Esther Kim \n\n AI-Generated Summary \n\n- Mixture-of-experts (MoE) model Muse Spark Open activates 42B of 816B total parameters per token through top-8 routing across 256 experts.\n- Trained on NVIDIA GB300 NVL72 Blackwell Ultra for agentic coding workflows, it delivers higher first-attempt accuracy, reliable tool calling, and deep codebase understanding across repositories.\n...\n- NVFP4 checkpoints optimized for NVIDIA Blackwell Ultra shrink the memory footprint of all 816B parameters with native FP4 Tensor Core acceleration.\n- Running agentic workloads on NVIDIA GB300 NVL72 delivers up to 50K tokens per second per GPU and up to 600 tokens per second per user.\n...\nMeta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on NVIDIA GB300 NVL72 Blackwell Ultra specifically for agentic coding workflows, it delivers higher first attempt accuracy, reliable tool calling, and deep codebase understanding across repositories. The 1M token context window holds an entire project, including complex dependencies, legacy code, and thousands of files without breaking a task into pieces. \n\nAs a reasoning model, Muse Spark Open adds audio and video perception alongside image and document understanding, working natively and reliably across what it sees, hears, and reads. NVFP4 checkpoints generated by Meta and optimized for NVIDIA Blackwell Ultra shrink the memory footprint of all 816B parameters with native FP4 Tensor Core acceleration. Fewer bytes moved per token to increase tokens per second per user, and the freed-up memory supports larger KV cache for concurrent long context sessions, delivering higher throughput, a lower cost per token.\n...\nMuse Spark Open\n...\nThe NVIDIA GB300 NVL72 features a rack scale architecture that integrates 72 NVIDIA Blackwell Ultra GPUs into a single platform. Its large, 72-GPU NVIDIA NVLink domain enables efficient communication at 130 TB/s, eliminating bottlenecks that appear when expert traffic must cross traditional off-the-shelf networks. For a sparse MoE model like Muse Spark Open, which routes each token to eight of 256 experts, that bandwidth directly determines how much of the theoretical throughput a deployment realizes. \n\nAgentic workloads turn static single-turn interactions into multistep workflows that reason, invoke tools, coordinate subagents, and carry growing context from one turn to the next. Out of the box, Muse Spark Open running agentic workloads on NVIDIA GB300 NVL72 delivers up to 50K per second per GPU and up to 600 tokens per second per user, enabling AI factories to run large parameter models in production at high throughput and low latency. \n\n \n\nEnlarge\n...\nNVIDIA supports multiple inference stacks to meet a variety of developer needs. SGLang, vLLM, and TensorRT LLM give developers direct control over serving configuration, parallelism, and batching on the NVIDIA accelerated computing platform. TensorRT LLM adds compiled engines tuned for NVIDIA GPUs. NVIDIA Dynamo publishes deployment recipes for all three, and separates prefill from decode across dedicated GPU pools, so compute bound prompt processing doesn’t slow token generation. Its KV cache-aware routing sends each request to the worker already holding the relevant prefix, avoiding precomputation as context accumulates across long agentic sessions.\n...\n## Get started with GPU-accelerated Muse Spark Open \n\nTo get started, download Muse Spark Open NVFP4 weights from Hugging Face. For production deployments, try the downloadable NVIDIA NIM. The NIM reduces setup to a single command, replacing benchmarking and tuning cycles with a container that automatically selects the best serving backend and precision for the detected hardware.",
+      "excerpt": "On October 15, 2026, Perplexity released its execution sandbox to the public. The SPACE repository — Sandboxed Platform for Agentic Code Execution, written in Rust — carries an Apache 2.0 license, 820 stars as of October 16 (770 in the first 24 hours per the announcement), and the production record of powering every Perplexity Computer agent session since July 2026.\n\nThe technical foundation is Firecracker microVMs — the same AWS-originated virtual machine monitor underpinning E2B, DigitalOcean Agent Droplets, and the sandbox forking pattern our earlier coverage identified as one of two load-bearing pillars of agent security. Each SPACE agent task runs in its own microVM with credentials and outbound traffic controlled from outside the VM. The performance numbers are notable: median sandbox spin-up of approximately 60 milliseconds, with support for pause/resume and rolling snapshots persisting up to one week. Perplexity reports zero escapes across approximately 118 adversarial test attempts.\n\nThe repository ships with an E2B Compatibility Wrapper supporting the E2B Python SDK, documented in the SPACE documentation. Cloud partners CoreWeave, Akamai, and Crusoe are working to offer SPACE to their own customers.\n\n...\n\nFor builders, the message is straightforward. Stop building custom sandboxes. SPACE, E2B, Modal, and the K8s Agent Sandbox CRD all solve the isolation problem. Direct your engineering",
       "signal_score": 9.0,
       "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
+        "query": "latest LLM agents RAG inference open source developer tool",
         "rank": 6
       }
     },
     {
-      "id": "hn-50088767",
-      "source": "hacker_news",
-      "title": "0/1 Knapsack Problem in PyTorch",
-      "url": "https://jedrzej.maczan.pl/2025_11_21_dp_knapsack_sliding_hirschberg",
-      "published_at": "2026-10-14T15:04:33+00:00",
-      "excerpt": "Hacker News: 8 points and 0 comments.",
-      "signal_score": 8.0,
-      "community_metrics": {
-        "points": 8,
-        "comments": 0
-      }
-    },
-    {
-      "id": "aba6f1027f8e",
+      "id": "b3cb7a8ed917",
       "source": "exa_news",
-      "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark | NVIDIA Technical Blog",
-      "url": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark",
-      "published_at": "2026-10-16T00:00:00.000Z",
-      "excerpt": "# Code, Test, and Deploy on One Machine ... NVIDIA RTX Spark\n\n Bring coding agents, model customization, and CUDA-accelerated development to your everyday PC \n\n Oct 16, 2026 \n\n By Annamalai Chockalingam \n\n AI-Generated Summary \n\n- NVIDIA RTX Spark combines the GB10 system-on-a-chip with up to 128GB of unified memory to let developers run local coding agents, test, and deploy on a single PC.\n- The platform delivers 4.6x faster coding-agent performance, 2.7x faster fine-tuning, and 1.8x faster code compilation compared with Intel Panther Lake 12Xe.\n- NVIDIA partnered with Microsoft to expand the Windows on Arm software stack, adding the first PyTorch-CUDA build, Python 3.15 native by default, over 2,000 Conda packages, and Arm-compatible versions for more than 97% of the top 15,000 Python packages.\n- Nemotron 3.5 Bolt 74B-A9B 24GB, a 74B-parameter mixture-of-experts model quantized to 2 bits, is purpose-built for local agents on RTX Spark and runs on llama.cpp, vLLM, Ollama, Unsloth, and LM Studio.\n- Decision models now supported in llama.cpp and Unsloth enable agents to choose actions up to 200x faster than traditional reasoning loops.\n...\nNVIDIA RTX Spark is built for AI development. Thanks to the NVIDIA GB10 system-on-a-chip and large unified memory, developers can run local coding agents, access AI frameworks, and code, test, and deploy on a single PC.\n...\nWith up to 128GB of unified memory and 1 petaflop of FP4 AI compute, developers can run coding models locally, including Qwen 3.8 Flash Next, reducing cloud coding agent token consumption.\n...\nThanks to the NVIDIA Grace CPU and Blackwell GPU in RTX Spark, these laptops and desktops come equipped with all the compute required for inference, fine-tuning and compilation. Compared with Intel’s Panther Lake 12Xe, RTX Spark delivers 4.6x performance on coding agents, 2.7x performance on fine-tuning, and 1.8x performance on code compilation.\n...\nFigure 1. NVIDIA developer-workload comparison, with Intel Core Ultra X9 388H normalized to 1.0. Tests: AA-AgentPerf-local with Qwen3.8-27B; Unsloth LoRA with Llama-3.1-8B; and Linux kernel compilation using Phoronix Test Suite\n...\nNVIDIA partnered with Microsoft to advance the Windows on Arm developer landscape. Together with RTX Spark, the community is releasing multiple new tools, including the first PyTorch-CUDA build, the first Python release that is native by default with Python 3.15, over 2,000 ready-to-use Conda packages, and Arm-compatible versions for more than 97% of the top 15,000 Python packages.\n...\nBecause NVIDIA GPUs are the most widely used platform for AI development, new tools and frameworks typically work on NVIDIA from day one, while support for other hardware follows weeks later. There’s also access to NVIDIA CUDA-X libraries, including tools such as FlashInfer for LLM acceleration and NVIDIA NeMo libraries tools for AI model development.\n...\n- Seamless deployment of local models with optimized recipes\n- Enhanced security with NVIDIA OpenShell and/or Microsoft Execution Containers, delivering OS-level sandboxing\n- Hybrid prompt routers between local and cloud models, so that prompts get sent to local models if they are good enough, or escalated to cloud if needed, reducing token consumption\n\nMicrosoft GitHub CoPilot now enables seamless local AI through Windows ML, which is now supported with llama.cpp as a backend. The prompt router HydraFusion has been upgraded to also support local models. And the new MAI 1.1 Coding Flash model can run locally on RTX Spark.\n...\nNemotron 3.5 Bolt 74B-A9B 24GB is a new LLM purpose-built for running local agents on RTX Spark. \n\nThis model is a 74B parameter, 9B-active-parameter mixture-of-experts (MoE) model, packed into 24GB using 2-bit quantization with advanced quantization-aware training techniques to retain quality. It aims to achieve the optimal balance between speed and intelligence, being faster than most popular dense models while smarter than most popular MoE models with a similar memory footprint.\n\nUsers will be able to run Nemotron 3.5 Bolt 74B at launch through llama.cpp, vLLM, Ollama, Unsloth and LM Studio. It will also be directly accessible via agents such as Hermes and OpenClaw. \n\nLike other Nemotron models, Bolt 74B is fully open source, including training data, weights and recipes, so developers can fine-tune and customize their own agents.\n...\nDecision models are the latest breakthrough in AI development. They give AI agents a near-instant way to make decisions, without lengthy reasoning loops. They can choose what to do next, from classifying requests, to selecting the next action, up to 200x faster than traditional agents. Decision models are now supported in llama.cpp and Unsloth on RTX Spark and GeForce RTX GPUs.\n...\nThe NVIDIA AI for Media SDKs are now available for RTX Spark, including Python wheel with support for video super resolution, frame generation, and TrueHDR. The wheel is available on PyPI, with C++ SDKs also available on NGC for RTX Spark and Windows on Arm.\n...\nRTX Spark is available now in laptops, and coming in November to small form factor desktops that are ideal for always on, 24×7 running agents.",
+      "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+      "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72",
+      "published_at": "2026-10-15T00:00:00.000Z",
+      "excerpt": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on NVIDIA GB300 NVL72 Blackwell Ultra specifically for agentic coding workflows, it delivers higher first attempt accuracy, reliable tool calling, and deep codebase understanding across repositories. The 1M token context window holds an entire project, including complex dependencies, legacy code, and thousands of files without breaking a task into pieces.\n\n...\n\n## Custom-built for agentic coding multimodal understanding across text, image, video, and audio \n\nGeneral coding models are optimized for single-shot completions such as generating a function, writing a unit test, or suggesting an inline fix. They excel at discrete, well-scoped tasks where the context is small, and the answer is immediate. Agentic coding demands something fundamentally different. Planning a multifile refactor, navigating thousands of files, recovering from failing tests, and coordinating subagents over long horizons requires a model built for sustained, multistep work. \n\nMuse Spark Open is built for exactly these workloads, delivering higher first-attempt accuracy, reliable tool calling, and deep codebase understanding across repositories. It plans, acts, observes, and self corrects. It supports multistep task execution with tool use, output evaluation, and iterative refinement. The model uses goal conditioning to hold direction and context compaction to retain the knowledge needed to sustain progress across long-running sessions. With a 1M token context window, it holds an entire project, including complex dependencies, legacy code, and thousands of files without breaking tasks into pieces. \n\nBeyond coding, it searches the web (including multimodal browsing), spawns and coordinates subagents for decomposable tasks, and leverages computer use capabilities unified across desktop, mobile, and browser. It generates separate commentary before each action, so developers know what the agent is doing and why.\n\n...\n\n## Flexible deployment options for Muse Spark Open \n\nNVIDIA supports multiple inference stacks to meet a variety of developer needs. SGLang, vLLM, and TensorRT LLM give developers direct control over serving configuration, parallelism, and batching on the NVIDIA accelerated computing platform. TensorRT LLM adds compiled engines tuned for NVIDIA GPUs. NVIDIA Dynamo publishes deployment recipes for all three, and separates prefill from decode across dedicated GPU pools, so compute bound prompt processing doesn’t slow token generation. Its KV cache-aware routing sends each request to the worker already holding the relevant prefix, avoiding precomputation as context accumulates across long agentic sessions.",
       "signal_score": 8.0,
       "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
+        "query": "latest LLM agents RAG inference open source developer tool",
         "rank": 7
       }
     },
     {
-      "id": "1973c0388cbf",
+      "id": "2398eae9ef18",
       "source": "exa_news",
-      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
-      "url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models | NVIDIA Blog",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl",
       "published_at": "2026-10-15T00:00:00.000Z",
-      "excerpt": "# Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta \n\nPublished October 15, 2026 \n\nPedro Cuenca\n\nMuse Spark Open is an open-weight model from Meta. The mixture of experts model brings text, images, audio, and video into a model with approximately 816 billion parameters, around 42 billion active per token, and a context window of up to one million tokens. It generates text, giving developers a common interface for asking questions about different kinds of input.\n\nFollowing Muse Glimmer, Muse Spark Open introduces a mixture-of-experts architecture at a much larger scale, and the most capable US open-weights model to date.\n\nMeta trained Muse Spark Open for agentic coding: reading a codebase, writing and debugging code, and calling tools. It also takes images, audio, and video as input, so the same model can read a screenshot, listen to a voice note, or watch a screen recording while it works on your code. This post shows you how to run it, how to fine-tune it, and what we built with it. Find all the models here.\n...\nMeta describes Muse Spark Open as a coding-optimized model trained on real developer workflows such as multi-file refactors and long debugging sessions. Muse Spark Open is an agentic focused model that plans, acts, observes, and self-corrects over long tasks, including browsing the web with images.\n\n| Feature | Muse Spark Open |\n| --- | --- |\n| Model size | ~816B total parameters; ~42B active per token |\n| Expert routing | 256 experts per MoE layer; 8 selected per token |\n| Inputs | Text, images, audio, and video |\n| Output | Text |\n| Context window | Up to 1M tokens |\n| Checkpoint formats | BF16 and NVFP4 |\n...\nMuse Spark Open is the full-size model of the Muse series of models. Muse Glimmer, which Meta released in August, is a small dense model from the same series, ideal for running locally. Both models use the same tokenizer and vocabulary. The chat template follows the Muse Glimmer template, with additions for the new modalities. In Muse Spark Open the input embedding and the output layer are separate matrices of about 1.66B parameters each.\n...\nMuse Glimmer uses one dense feed-forward network in each layer. Muse Spark Open replaces this dense network with a Mixture-of-Experts (MoE) block. Each MoE block has 256 experts, and a router selects 8 experts for each token. Each expert is a feed-forward network that projects from 8192 to 4096 dimensions and back to 8192, then applies its own normalization to its output. The experts hold ~97% of the total model parameters.\n\nOnly 8 experts run per token, so the model computes each token with about 42B parameters. All 256 experts stay in memory, so deployment needs the memory of an 816B-parameter model, but runs at the much faster speed of a 42B model. The BF16 checkpoint is about 1.5 TB in safetensors format. The NVFP4 checkpoint stores the parameters in 4-bit precision with negligible loss in accuracy, specifically for NVIDIA Blackwell GPUs. In transformers, the BF16 checkpoint runs across 4 nodes of 8 H200 GPUs with tensor parallelism (TP=32) and the NVFP4 runs on a single B200 node. If you want to deploy Muse Spark Open, check out the `llama.cpp`, vLLM, and SGLang recipes below.\n...\nThe context window is 1M tokens at inference. The configuration sets `max_position_embeddings` to 1,048,576. This includes image, video, and audio tokens in the same window as text.\n...\nThe Muse Spark Open implementation provides `MuseSparkForConditionalGeneration` for text generation from multimodal inputs and `MuseSparkProcessor` for preparing conversations. The processor combines the tokenizer, image and video processors, audio feature extractor, and chat template.\n\nUse a `DistributedConfig` to configure the parallelism settings. `tp_size` is the number of devices across which the dense layers are sharded, and `ep_size` is the number of devices across which the experts are distributed.\n...\naudio at 24 kHz and pads the waveform to a multiple of 1,920 samples, corresponding to one\n...\n### Llama.cpp\n...\nMuse Spark Open is integrated in llama.cpp and comes in the prebuilt binaries. You can install this with following command:\n...\nThe repository containing quants is here. Once the server has started, you can head to localhost:9931 to chat with the built-in WebUI. From the web UI you can add audio and images for inference and adjust the reasoning lever. Note that turning off reasoning is not possible with Muse Spark Open, so keep the model reasoning at “low” if you want to consume less tokens to solve an easier task. We tested quants on Mac M3 Ultra (512GB). An imatrix-calibrated 2-bit quant runs at 18 tokens/s, with plenty of room free for the KV cache (304 GB used by the model).\n...\nllama.cpp team ships different quantized versions. We have tested Q2_K, Q4_K_S and Q_8 on Apple Silicon chips. You can run each quant by adding the quant id as suffix, `llama serve -hf ggml-org/Muse-Spark-Open-816B-A42B:Q2_K`.\n...\nThe Muse Spark Open integration for SGLang supports text, image, audio, and video inputs. The NVFP4 reference configuration runs across four GB300 GPUs.\n...\nThe Muse Spark Open reference integration for vLLM supports text and image inputs with the NVFP4 checkpoint that require blackwell series GPUs.\n...\n## MLX \n\nMuse Spark Open is available in oMLX and mlx-lm today. oQ quants optimized for oMLX are available in 3-bit and 4-bit, ready to use right away.\n\nWe tested the oQ3e quant on an M3 Ultra (512 GB). The model takes about 344 GB, leaving room for the KV cache, and runs at about 225 tok/s prefill and 21 tok/s generation with a 1024-token prompt and 128 generated tokens.\n...\nThis is a big model, even the 3-bit quantization requires more than 256 GB of RAM, as explained above. You can also run distributed inference across multiple computers, please refer to the documentation for details.\n\n## Deploying Muse Spark Open with Inference Endpoints \n\nYou can deploy Muse Spark Open on Inference Endpoints with a pre-validated SGLang recipe for the NVFP4 variant which runs on either 8 × NVIDIA RTX Pro 6000 98 GB with 131072 context length, or with 8 x NVIDIA H200 141GB if you want 1048576 context length instead.\n...\n## Fine-tuning with TRL \n\nYou can fine-tune the 816B checkpoint with the TRL `SFTTrainer`. This section shows how we fine-tuned it with TRL on 8 nodes of 8 H100 GPUs. The recipe trains LoRA adapters on the attention layers. The experts stay frozen. The full script is in the TRL examples.\n\nFirst, we need to split the model across 64 GPU devices. Given the large size of the model, we need to parallelize it across multiple axes. We shard the model with FSDP and split the experts across GPUs, using `DistributedConfig`, which tells `transformers` how to split the model when it loads:\n...\nIn the snippet above, `fsdp_size=64` shards the model across all 64 GPUs with FSDP2, and `ep_size=8` splits the 256 experts of each layer into 8 groups. Transformers sends each token to the GPU that holds its expert, so each GPU trains on its own slice of the batch.\n...\nThe core parts here are `packing=True` which joins examples into 2048-token sequences without padding. A block-diagonal mask keeps the examples separate. `save_only_model=True` saves the adapter and no optimizer state, because the trainer cannot resume a model that was sharded at load time. `LoraConfig` targets the four attention projections and the 256 experts of each layer stay frozen.\n...\nWe trained for 500 steps, which took about 2 hours on 64 H100s, at about 8,000 tokens per second. Mean token accuracy rose from 72% to 84% and the loss fell from 1.26 to 0.57, which signals a good fine-tuning run.\n...\n## Wrapping Up \n\nMuse Spark Open is a full-size open-weight model from the Muse series. Start with the BF16 or NVFP4 checkpoint, or try one of the great `llama.cpp quants`. If you build something with Muse Spark Open, share it, and tell us in the repository’s discussions.",
-      "signal_score": 7.0,
+      "excerpt": "Models\n\n 5x faster, accurate and customizable Nemotron 3.5 Super VL expands NVIDIA’s open models for always-on agents, with Nemotron 3.5 Bolt bringing agentic intelligence to local NVIDIA systems. \n\n October 15, 2026 by Kari Briski \n\n \n\nNVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents.\n\nJoining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B 24GB, optimized to balance intelligence and speed per GB for local agentic workloads, and Nemotron 3.5 Bolt E4B 4GB, optimized for intelligence per GB for fast conversational agents.\n\nSuper VL and Bolt 74B-A9B are available now, with Bolt E4B coming Oct. 23. The three open models together cover the full range of agent deployments, from large enterprise servers down to edge devices and local hardware.\n\n...\n\n## Nemotron 3.5 Bolt: Agentic Intelligence at the Edge\n\nBolt 74B-A9B 24GB is designed to run everyday agentic tasks locally on NVIDIA RTX/DGX Spark, using a native 2-bit quantization to fit in 24GB of memory and run alongside other applications.\n\nRelative to other models with a similar memory footprint, it provides a good balance of intelligence and speed: smart enough to get most jobs done, yet much faster than the smartest models.\n\nWith Bolt 74B-A9B 24GB, users can delegate their projects to popular local agent harnesses — from researching the web to writing to debugging code — all without sending those workloads to the cloud. It is the #1 open model in its class on PinchBench, and the #2 open model for BrowseComp. Bolt E4B 4GB is built for physical and conversational agents on GeForce RTX, Jetson, and RTX/DGX Spark. It combines natural conversation with multi-turn agentic capabilities to power fast local voice assistants, interactive characters and embedded interfaces.\n\n...\n\n## Runs on DGX Spark, DGX Station, and RTX \n\nNemotron 3.5 Super VL runs across NVIDIA’s full hardware stack: on DGX Spark, DGX Station, RTX PRO and RTX systems for local intelligence at the desktop, on NVIDIA Jetson at the edge, and across data center and cloud environments.\n\nNemotron 3.5 Bolt 74B-A9B 24G B is available now on Hugging Face, with support for llama.cpp, Ollama, LM Studio,",
+      "signal_score": 8.0,
       "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 8
-      }
-    },
-    {
-      "id": "f10f6b06bd4e",
-      "source": "exa_news",
-      "title": "Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy - InfoQ",
-      "url": "https://www.infoq.com/news/2026/10/antigravity-sdk-local-models",
-      "published_at": "2026-10-14T00:00:00.000Z",
-      "excerpt": "Google has introduced support for local models in the Antigravity SDK, enabling developers to build and execute agentic workflows directly on their own machines, while retaining the flexibility to mix in cloud-based models for higher-level tasks. This approach gives developers greater control over data privacy, inference costs, network dependencies, and computational workload distribution.\n\nOne of the most compelling capabilities of the Antigravity SDK is hybrid agent orchestration, which adapts Google's proposed Architect-Builder pattern to a mixed cloud-local compute environment.\n...\nGoogle says that the Antigravity SDK enables the architect to operate in the cloud, devising a strategy and breaking the task into smaller units using filenames and task descriptions, without requiring access to the source code itself. The builders, instead, run locally and perform tasks such as reproducing security vulnerabilities, proposing code fixes, reviewing candidate patches, and running regression tests. Additional specialized local agents can validate proposed changes against the provided test suites, keeping the code-intensive stages of the workflow on-device.\n...\nThe initial implementation focuses on running Gemma 4 26B A4B through Google's LiteRT technology. However, developers are not limited to LiteRT exclusively, as the Antigravity SDK also supports OpenAI-compatible local inference servers through `LocalOpenAIAgentConfig`, including Ollama, LM Studio, and vLLM.\n...\nThe Antigravity SDK should not be confused with the Antigravity IDE, which is an IDE powered by the Antigravity SDK. They share the same underlying agent infrastructure, but serve different purposes, with the SDK letting you build your own AI agents programmatically rather than simply using them for coding tasks.\n\n General Feedback ... infoq.com ... infoq.com ... infoq.com Marketing marketing ... infoq.com",
-      "signal_score": 7.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 8
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 7
       }
     },
     {
@@ -334,109 +217,112 @@
       "title": "Hyper Optimizing Kimi K3 in vLLM: Moving Fast and Responsibly | vLLM Blog",
       "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel",
       "published_at": "2026-10-16T00:00:00.000Z",
-      "excerpt": "Coding agents can now help with some of the hardest parts of model optimization: writing complex GPU kernels, performing cross-operator fusions, overlapping computation with communication, and tuning execution across different batch sizes and GPU configurations. For Kimi K3, we used agent-assisted development to build a unified CuTe DSL decode path on the NVIDIA GB300, covering attention, MoE, and communication across 8 or 16 GPUs. The optimizations deliver over 840 tokens/s at batch 1 on 16 NVIDIA GB300 GPUs with DSpark (synthetic AL=6), 1.5–2× higher decode throughput in several tested configurations, and up to 1.8× higher P90 interactivity on the AgentX workload.\n...\nThis contribution introduces a new decode path for Kimi K3 which fuses and replaces almost all operations with customized CuTe DSL kernels, tuned for certain subproblems. It targets NVIDIA Blackwell GPUs with 8 or 16 GPUs, decode batches from 1 to 64, and optional decode context parallelism for long contexts. The GPUs share one NVLink domain with multicast support. For more details, please refer to the PR.\n...\nchoices. For attention input ... , we use specialized small ... kernels at batch ... tuned to launch well-sized kernels ... reads / communication ... as much as possible\n...\nFor long contexts, decode context parallelism (DCP) splits the KV cache across GPUs. Each GPU computes attention over its local portion, and a tuned fused kernel combines the partial results with v-proj and gating.\n...\nWe fuse attention output projection directly to its all-reduce and the following attention-residual computation. GPU kernels publish partial results into NVLink-accessible buffers, and receiving kernels combine them and continue the computation. Some small-batch configurations fuse the producer and consumer into one kernel. Data exchange is done with a fence-less approach with minimal overhead.\n...\nAlthough the experts already use tensor parallelism, the baseline computes the full router scores and latent input projection on every GPU. We split these calculations across the TP ranks and combine each rank’s share into one matrix multiplication. The GPUs exchange the results over NVLink. This reduces repeated computation, weight reads, and kernel launches before expert execution begins.\n...\nFor K3, the initial hardware validation covers GB300 with TP8 and TP16, decode batches up to 64, speculative decoding with various draft lengths, and decode context-parallel configurations within one NVLink domain.\n\nThese boundaries describe where the optimization applies, but not cutting ‘feature coverage’. Production deployment needs fundamental features that make the endpoint useful. Features like full-context serving, temperature sampling, and structured output cannot be “optimized away” or “opt-out”, they are first-class serving features and belong to the validation plan alongside kernel shapes and numerical checks.\n...\nReliable validation also takes GPU time. The related Bring-Your-Own-GPU evaluation RFC proposes standard evaluation images that contributors can run on their own hardware. Reproducible result bundles and submissions linked to GitHub PRs would make the evidence much more accessible ... Different evaluation tiers and shared community compute would help expand coverage while managing GPU demand and reducing pressure on project-funded CI\n...\nWith DSpark, Kimi K3 reaches 842 tokens per second on 16 NVIDIA GB300 GPUs in the controlled AL=6 benchmark. That is 1.73× faster than stock vLLM with the same speculative decoding setup. Refer to the PR for a full results table.\n...\nThe improvements span across the tested batch range. TP16 retains a 1.62–1.71× gain ... 6–64, while TP8 delivers 1.31 ... .43 ... the same range.\n...\nOur optimized Kimi K3 implementation also delivers 1.8× higher P90 interactivity at concurrency 1 on AgentX: 403.2 versus 223.7 tokens/s/user. This compares the optimized run on 16 GB300 GPUs with the earlier vLLM result on 8 GB300 GPUs.\n\nAgentX replays traffic patterns from real coding-agent sessions, including long contexts, multiple conversation turns, tool pauses, parallel subagents, and KV-cache reuse. It preserves these workload patterns while replacing private content with synthetic text, testing the serving system under realistic agent traffic. AgentX methodology.\n...\nFor DeepSeek-V4.1-Flash, #61868 follows the K3 design patterns: behind the same opt-in `decode_backend: latency_specialized` switch, the implementation also supports up to 64 concurrent requests, seamless fallback for prefills and mixed batches, and speculative decoding. Instead of chasing a single hotspot, that executor cuts kernels and host work: it fuses all-reduce + mHC at every sublayer boundary, replaces the large-batch MoE and GEMMs with CuTe DSL kernels built for low-latency, deduplicates and shards the indexer’s work, and takes per-step work that stock vLLM runs eagerly on the CPU and replays it as a CUDA graph instead.\n...\nWithin two days of Meta’s Muse Spark Open release, our early results already exceeded 950 tokens per second per user, with seven draft tokens (K=7) and an acceptance length of six (AL=6). More optimizations are underway.\n\nWe are also releasing a similar mechanism to optimize the decode latency for GLM5.3 under a low-concurrency scenario too. We’ll share its optimization details and performance results in a follow-up.",
+      "excerpt": "# Hyper Optimizing Kimi K3 in vLLM: Moving Fast and Responsibly\n\nOctober 16, 2026 12 min read\n\nBenjamin Chislett (NVIDIA)\n\nTable of Contents\n\nKimi K3 decode performance on NVIDIA GB300.\n\nCoding agents can now help with some of the hardest parts of model optimization: writing complex GPU kernels, performing cross-operator fusions, overlapping computation with communication, and tuning execution across different batch sizes and GPU configurations. For Kimi K3, we used agent-assisted development to build a unified CuTe DSL decode path on the NVIDIA GB300, covering attention, MoE, and communication across 8 or 16 GPUs. The optimizations deliver over 840 tokens/s at batch 1 on 16 NVIDIA GB300 GPUs with DSpark (synthetic AL=6), 1.5–2× higher decode throughput in several tested configurations, and up to 1.8× higher P90 interactivity on the AgentX workload.\n\n...\n\nThis contribution introduces a new decode path for Kimi K3 which fuses and replaces almost all operations with customized CuTe DSL kernels, tuned for certain subproblems. It targets NVIDIA Blackwell GPUs with 8 or 16 GPUs, decode batches from 1 to 64, and optional decode context parallelism for long contexts. The GPUs share one NVLink domain with multicast support. For more details, please refer to the PR.\n\nKimi K3 kernel timeline: stock vLLM uses 130 microseconds and 23 kernels per layer; specialized decode uses 69 microseconds and 13 kernels.\n\n...\n\n### Decode performance with DSpark\n\nWith DSpark, Kimi K3 reaches 842 tokens per second on 16 NVIDIA GB300 GPUs in the controlled AL=6 benchmark. That is 1.73× faster than stock vLLM with the same speculative decoding setup. Refer to the PR for a full results table.\n\nKimi K3 at batch 1 with TP16, DSpark DL7, and synthetic AL=6: 842 decode tokens/s versus 488 for stock vLLM, a 1.73x speedup.\n\nSetup: TP16, DSpark with seven draft tokens, synthetic acceptance length of 6, DL=7, ISL=1, OSL=1k, batch size 1. TPS measures aggregate decode throughput and excludes prefill.\n\n### Decode performance without speculation\n\nThe improvements span across the tested batch range. TP16 retains a 1.62–1.71× gain at batches 16–64, while TP8 delivers 1.31–1.43× over the same range.\n\n| Batch size | TP8 tokens/s | TP8 speedup | TP16 tokens/s | TP16 speedup |\n| --- | --- | --- | --- | --- |\n| 1 | 193.3 | 1.58× | 256.4 | 1.88× |\n| 2 | 317.8 | 1.50× | 436.7 | 1.92× |\n| 4 | 540.6 | 1.55× | 702.5 | 1.81× |\n| 8 | 820.1 | 1.45× | 1,157.9 | 1.79× |\n| 16 | 1,274.8 | 1.43× | 1,758.3 | 1.71× |\n| 32 | 1,702.6 | 1.33× | 2,550.9 | 1.64× |\n| 64 | 2,375.9 | 1.31× | 3,606.1 | 1.62× |\n\nNo speculative decoding. Throughput is for the entire TP group.",
       "signal_score": 7.0,
       "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
+        "query": "latest technical AI model infrastructure release benchmark developer",
         "rank": 8
       }
     }
   ],
   "candidates": [
     {
-      "id": "candidate-2026-10-17-2",
-      "topic": "Open-Weight Frontier Agentic Models",
-      "angle": "New open-weight multimodal Mixture-of-Experts models like Muse Spark Open (Meta), Beam (Reflection), and Nemotron 3.5 Super VL (NVIDIA) are redefining agentic capabilities for self-hosting.",
-      "audience_pain": "Access to advanced AI, customization, cost-effectiveness of self-hosting, keeping up with frontier models.",
-      "why_now": "Multiple major open-weight releases in the same week from Meta, Reflection, and NVIDIA.",
-      "hook_seed": "Frontier AI is now open-weight.",
-      "format": "mechanism_explainer",
+      "id": "candidate-2026-10-18-6",
+      "topic": "Evaluating Local LLM Hardware with Llmspeed",
+      "angle": "Tools like Llmspeed allow developers to simulate and 'feel how fast a local LLM runs' before investing in expensive hardware, providing crucial pre-purchase insights for optimizing local AI development.",
+      "audience_pain": "The significant cost and uncertainty involved in selecting the right hardware for efficient local LLM inference, without prior performance benchmarks.",
+      "why_now": "Llmspeed recently gained significant traction on Hacker News, indicating strong community demand for practical solutions to hardware evaluation for local LLMs.",
+      "hook_seed": "Test local LLM speed before buying.",
+      "format": "practical_tips",
+      "objective": "click",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "hn-50127979"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 10,
+        "practical_value": 10,
+        "originality": 8,
+        "conversation_potential": 9,
+        "evidence_strength": 9
+      },
+      "score": 9.17
+    },
+    {
+      "id": "candidate-2026-10-18-1",
+      "topic": "Open-Weight Frontier Agentic MoE Models",
+      "angle": "New open-weight multimodal Mixture-of-Experts (MoE) models like Muse Spark Open (Meta), Reflection Beam, and NVIDIA Nemotron 3.5 Super VL are redefining agentic capabilities for self-hosting with advanced reasoning and multimodal understanding.",
+      "audience_pain": "How to choose and utilize the latest large open models for complex agentic tasks, and understand their unique strengths and architectural advantages.",
+      "why_now": "Multiple major open-weight model releases this week (Meta Muse Spark Open, Reflection Beam, NVIDIA Nemotron 3.5 Super VL), all emphasizing agentic workflows and advanced architectures.",
+      "hook_seed": "New open MoE models reshape agentic AI.",
+      "format": "practical_tips",
       "objective": "follow",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "b03fca02d763",
+        "685f3e8c6d66",
+        "c7e65c2afa37",
+        "b3cb7a8ed917",
+        "5ad181173c04",
         "6caba4f2724f",
+        "155dcdd9064d",
         "1290a00f4d1e",
-        "1973c0388cbf",
+        "128670a55579",
+        "2398eae9ef18",
         "1394d9cacfb3"
       ],
       "scores": {
         "trend_strength": 10,
-        "audience_relevance": 10,
+        "audience_relevance": 9,
         "practical_value": 9,
         "originality": 8,
         "conversation_potential": 8,
         "evidence_strength": 10
       },
-      "score": 9.17
+      "score": 9.0
     },
     {
-      "id": "candidate-2026-10-17-3",
-      "topic": "Desktop Platforms for Agentic AI Development",
-      "angle": "New hardware-software platforms like NVIDIA RTX Spark (GB10, Windows on Arm), AMD FastFlow SDK (Ryzen AI NPUs), and models optimized for Apple M5 Ultra (Muse Spark Open) are bringing advanced agentic AI to developers' desktops.",
-      "audience_pain": "High cloud costs, desire for local development, hardware requirements for LLMs.",
-      "why_now": "Recent announcements from NVIDIA, AMD, and Meta highlighting desktop capabilities.",
-      "hook_seed": "Your desktop is now an AI supercomputer.",
+      "id": "candidate-2026-10-18-3",
+      "topic": "Boosting LLM Inference with FP8 & Speculative Decoding",
+      "angle": "FP8/NVFP4 quantization combined with DSpark speculative decoding is enabling up to 2x inference throughput and reduced memory footprint for new agentic MoE models like Nemotron 3.5 Super VL and Kimi K3 on NVIDIA Hopper/Blackwell GPUs.",
+      "audience_pain": "High inference costs and latency are bottlenecks for deploying large language models, especially MoE architectures.",
+      "why_now": "Recent announcements from Red Hat, vLLM, and Google Cloud highlight these specific techniques for new, frontier models.",
+      "hook_seed": "Double LLM inference with FP8 and DSpark.",
       "format": "practical_tips",
-      "objective": "click",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "aba6f1027f8e",
-        "2d06427d134e",
-        "b03fca02d763"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 10,
-        "practical_value": 10,
-        "originality": 8,
-        "conversation_potential": 8,
-        "evidence_strength": 10
-      },
-      "score": 9.17
-    },
-    {
-      "id": "candidate-2026-10-17-5",
-      "topic": "Serving Multimodal MoE Models with vLLM",
-      "angle": "vLLM now offers Day 0 support and specialized optimizations (DFlash2, adaptive verification) for new multimodal Mixture-of-Experts models like Muse Spark Open and Nemotron 3.5 Super VL, enhancing serving efficiency.",
-      "audience_pain": "Performance, cost, and complexity of serving large multimodal models; getting the most out of new models.",
-      "why_now": "Multiple vLLM blog posts coinciding with new multimodal MoE model releases.",
-      "hook_seed": "vLLM unleashes new MoE models.",
-      "format": "practical_tips",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "1973c0388cbf",
-        "1394d9cacfb3",
-        "155dcdd9064d",
-        "685f3e8c6d66"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 10,
-        "originality": 7,
-        "conversation_potential": 8,
-        "evidence_strength": 10
-      },
-      "score": 8.83
-    },
-    {
-      "id": "candidate-2026-10-17-6",
-      "topic": "Boosting LLM Inference with FP8/NVFP4 & Speculative Decoding",
-      "angle": "Recent releases like Nemotron 3.5 Super VL and Muse Spark Open leverage FP8/NVFP4 quantization and DSpark speculative decoding to double inference throughput and reduce memory footprint on NVIDIA Hopper/Blackwell GPUs.",
-      "audience_pain": "High inference costs, slow response times, VRAM limitations for large models.",
-      "why_now": "Multiple new models and optimizations released together, highlighting these critical techniques.",
-      "hook_seed": "Double LLM inference, half the memory.",
-      "format": "mechanism_explainer",
       "objective": "share",
       "image_template": "handwritten_poster",
       "source_ids": [
         "90edf14943c1",
         "5ad181173c04",
         "685f3e8c6d66",
-        "08fc98fbbc65",
-        "1394d9cacfb3"
+        "1394d9cacfb3",
+        "ee02bcfabfc3"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 9,
+        "practical_value": 10,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 10
+      },
+      "score": 9.0
+    },
+    {
+      "id": "candidate-2026-10-18-2",
+      "topic": "vLLM Optimizations for MoE Model Inference",
+      "angle": "vLLM now offers Day 0 support and specialized optimizations, including DFlash2 and agent-driven tuning, for new multimodal Mixture-of-Experts models like Muse Spark Open and Reflection Beam, significantly enhancing inference efficiency.",
+      "audience_pain": "Optimizing inference performance and latency for deploying large, complex multimodal and MoE models efficiently on available hardware.",
+      "why_now": "vLLM recently announced Day 0 support and specific performance-boosting features for several newly released agentic MoE models.",
+      "hook_seed": "vLLM: Day 0 for multimodal MoE inference.",
+      "format": "mechanism_explainer",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "685f3e8c6d66",
+        "155dcdd9064d",
+        "1394d9cacfb3",
+        "ee02bcfabfc3"
       ],
       "scores": {
         "trend_strength": 9,
@@ -449,37 +335,62 @@
       "score": 8.83
     },
     {
-      "id": "candidate-2026-10-17-1",
-      "topic": "The AI Benchmark Applicability Gap",
-      "angle": "New research reveals existing AI benchmarks largely fail to cover tasks constituting 90% of real-world working hours, raising questions about current AI utility.",
-      "audience_pain": "Disconnect between AI hype/benchmarks and practical, real-world usefulness; understanding AI's current limitations.",
-      "why_now": "Recent Hacker News discussion on new research highlights this significant gap.",
-      "hook_seed": "Benchmarks miss 90% of real work.",
-      "format": "hot_take",
-      "objective": "reply",
+      "id": "candidate-2026-10-18-7",
+      "topic": "Integrated Multimodal Models for Specialized Agents",
+      "angle": "New models like NVIDIA Nemotron 3.5 Super VL and Meta Muse Spark Open integrate multimodal reasoning (text, image, video, document) with agentic execution capabilities, simplifying architecture by eliminating the need for separate vision-language models for specialized tasks.",
+      "audience_pain": "The complexity and overhead of combining disparate multimodal models for agentic applications, or the desire for more deeply integrated, context-aware agents.",
+      "why_now": "Recent model releases prominently feature combined multimodal and agentic capabilities as a core differentiator and performance booster.",
+      "hook_seed": "Multimodal agents: single model, deeper understanding.",
+      "format": "mechanism_explainer",
+      "objective": "share",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "hn-50121179"
+        "128670a55579",
+        "1394d9cacfb3",
+        "b3cb7a8ed917"
       ],
       "scores": {
         "trend_strength": 9,
         "audience_relevance": 9,
-        "practical_value": 8,
-        "originality": 7,
-        "conversation_potential": 9,
-        "evidence_strength": 8
+        "practical_value": 9,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 10
       },
-      "score": 8.33
+      "score": 8.83
     },
     {
-      "id": "candidate-2026-10-17-4",
-      "topic": "The 'Open Operating System for Agents'",
-      "angle": "Reflection's Beam model introduces an 'open operating system' where the model is the kernel, and the entire agentic ecosystem (infrastructure, integrations, deployment, customization) is open source.",
-      "audience_pain": "Understanding the future architecture of AI agents, building robust agentic systems.",
-      "why_now": "Specific new concept introduced with the Reflection Beam launch.",
-      "hook_seed": "AI models get an 'open OS'.",
+      "id": "candidate-2026-10-18-10",
+      "topic": "Quizzing AI-Generated Code with Sphinx",
+      "angle": "Tools like Sphinx, a hook that quizzes developers on their AI's generated code before shipping, address the critical need for verifying the quality, correctness, and safety of AI-produced code within development workflows.",
+      "audience_pain": "Lack of trust and effective quality assurance mechanisms for integrating AI-generated code into production, leading to potential bugs or security vulnerabilities.",
+      "why_now": "Sphinx recently appeared as a 'Show HN,' indicating a new and relevant tool designed to solve a growing problem for developers working with code-generating AI.",
+      "hook_seed": "Verify AI-generated code before shipping.",
+      "format": "practical_tips",
+      "objective": "click",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "hn-50137950"
+      ],
+      "scores": {
+        "trend_strength": 8,
+        "audience_relevance": 9,
+        "practical_value": 10,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 9
+      },
+      "score": 8.67
+    },
+    {
+      "id": "candidate-2026-10-18-5",
+      "topic": "The 'Open Operating System for Agents' Architecture",
+      "angle": "Reflection's Beam model introduces an 'open operating system for agents,' where the model serves as the kernel, and the entire agentic ecosystem (infrastructure, integrations, deployment, customization) is open source, challenging traditional AI product paradigms.",
+      "audience_pain": "Understanding the architectural implications and potential of next-generation agentic systems and open-source AI ecosystems beyond just model weights.",
+      "why_now": "The concept was explicitly framed by Reflection during the recent launch of their Beam open-weight model, making it a current and relevant architectural discussion.",
+      "hook_seed": "Model as kernel: open OS for agents.",
       "format": "mechanism_explainer",
-      "objective": "share",
+      "objective": "reply",
       "image_template": "handwritten_poster",
       "source_ids": [
         "6caba4f2724f",
@@ -490,79 +401,56 @@
         "audience_relevance": 8,
         "practical_value": 7,
         "originality": 9,
-        "conversation_potential": 7,
-        "evidence_strength": 9
+        "conversation_potential": 9,
+        "evidence_strength": 10
       },
-      "score": 8.0
+      "score": 8.5
     },
     {
-      "id": "candidate-2026-10-17-8",
-      "topic": "Running LLMs on Consumer Gaming Hardware",
-      "angle": "The successful deployment of Llama.cpp to run GGUF models natively on a jailbroken PS5 highlights the growing accessibility and optimization for local LLM inference on non-traditional consumer devices.",
-      "audience_pain": "Cloud cost avoidance, local privacy, pushing hardware limits, DIY AI projects.",
-      "why_now": "Specific, recent demonstration on Hacker News sparks curiosity about local deployment.",
-      "hook_seed": "Your PS5 can run LLaMA.cpp.",
+      "id": "candidate-2026-10-18-4",
+      "topic": "AMD FastFlow SDK for Local AI Optimization",
+      "angle": "AMD's new FastFlow SDK provides developers with tools to run, customize, and optimize local AI inference by offering closer access to hardware operators and kernels, moving beyond generic inference engines.",
+      "audience_pain": "Lack of fine-grained control and optimization capabilities for local AI inference, especially on non-NVIDIA hardware, limiting performance and customizability.",
+      "why_now": "AMD's recent introduction of FastFlow SDK specifically targets deep optimization for local AI workflows on their hardware.",
+      "hook_seed": "AMD FastFlow: deeper local AI optimization.",
       "format": "practical_tips",
-      "objective": "share",
+      "objective": "click",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "hn-50122431"
+        "2d06427d134e"
+      ],
+      "scores": {
+        "trend_strength": 8,
+        "audience_relevance": 8,
+        "practical_value": 9,
+        "originality": 8,
+        "conversation_potential": 7,
+        "evidence_strength": 10
+      },
+      "score": 8.33
+    },
+    {
+      "id": "candidate-2026-10-18-9",
+      "topic": "Intuitive Foundations of Transformer Architecture",
+      "angle": "The concept that 'you could have invented transformers from memory' suggests a simpler, more intuitive, associative memory-based understanding of their core mechanism, demystifying the complexity often associated with advanced AI architectures.",
+      "audience_pain": "Difficulty in grasping the underlying principles of complex AI architectures like transformers, leading to a desire for more intuitive and accessible explanations.",
+      "why_now": "A highly engaged Hacker News post indicates current community interest in simplifying and re-evaluating the foundational concepts of transformers.",
+      "hook_seed": "Transformers from memory: simpler AI logic.",
+      "format": "mechanism_explainer",
+      "objective": "reply",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "hn-50122878"
       ],
       "scores": {
         "trend_strength": 7,
         "audience_relevance": 8,
         "practical_value": 7,
         "originality": 9,
-        "conversation_potential": 8,
+        "conversation_potential": 9,
         "evidence_strength": 8
       },
-      "score": 7.83
-    },
-    {
-      "id": "candidate-2026-10-17-10",
-      "topic": "China's Unified AI Industry Chain Benchmark",
-      "angle": "China's launch of Qiusuo 4.0 provides a national benchmark covering the entire AI industry chain, from computing power to applications, offering unified testing and evaluation criteria.",
-      "audience_pain": "Lack of consistent benchmarks across global AI, comparing different AI systems and products.",
-      "why_now": "Recent national launch aims for industry-wide standardization, impacting global AI.",
-      "hook_seed": "China sets national AI benchmark.",
-      "format": "quote_react",
-      "objective": "reply",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "dbe582b969a2"
-      ],
-      "scores": {
-        "trend_strength": 8,
-        "audience_relevance": 7,
-        "practical_value": 6,
-        "originality": 8,
-        "conversation_potential": 7,
-        "evidence_strength": 9
-      },
-      "score": 7.5
-    },
-    {
-      "id": "candidate-2026-10-17-9",
-      "topic": "AI Designing More Efficient Quantum Circuits",
-      "angle": "Claude's ability to design more efficient quantum circuits showcases LLMs' advanced problem-solving capabilities in highly specialized and complex scientific domains.",
-      "audience_pain": "Understanding frontier AI applications, interdisciplinary innovation, future of scientific research.",
-      "why_now": "Anthropic's research announcement and Hacker News discussion on this specific use case.",
-      "hook_seed": "Claude optimizes quantum circuits.",
-      "format": "mechanism_explainer",
-      "objective": "reply",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "hn-50121939"
-      ],
-      "scores": {
-        "trend_strength": 7,
-        "audience_relevance": 7,
-        "practical_value": 6,
-        "originality": 8,
-        "conversation_potential": 7,
-        "evidence_strength": 9
-      },
-      "score": 7.33
+      "score": 8.0
     }
   ]
 }
