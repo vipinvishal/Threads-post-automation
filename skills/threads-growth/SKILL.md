@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-19 IST
+Last refreshed: 2026-10-20 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Local AI Development with NVIDIA RTX Spark | angle: Explore how NVIDIA RTX Spark, leveraging GB10 SoC and unified memory, empowers developers to run local coding agents, test, and deploy AI models on a single PC with significant performance improvements. | objective: follow | score: 8.67 | sources: aba6f1027f8e
-- AWS Strands Decider 2B for Agent Orchestration | angle: Explain how AWS's Strands Decider 2B, a compact 2B-parameter model, is purpose-built to make discrete decisions within agent workflows (e.g., tool selection, model routing), reducing cost and latency. | objective: share | score: 8.5 | sources: 2539fec6f8c0
-- Frontier Open-Weight MoE Models | angle: Highlight the emergence of frontier-scale open-weight Mixture-of-Experts (MoE) models like Reflection Beam (501B) and Meta Muse Spark Open (816B), their token-efficient intelligence, and implications for self-hosting agentic workloads. | objective: follow | score: 8.5 | sources: 155dcdd9064d, a28c1492e502, 7f0421aaecae, 4d7112fe164a, 441eebc2786d, 871069fd3ac8
-- ModelSphere for Mixed LLM Deployments | angle: Introduce ModelSphere, an Apache-2.0 platform for deploying and operating LLM services across heterogeneous accelerator fleets, featuring cluster-level routing, caching, and autoscaling. | objective: click | score: 8.17 | sources: 3dc77ecf6c94
-- ByteDance OpenViking: Agent Memory as Filesystem | angle: Explore ByteDance's OpenViking, an open-source context database that treats AI agent memory, knowledge, and skills as a virtual filesystem (`viking://`), simplifying complex agent knowledge management. | objective: follow | score: 8.17 | sources: 94f642557d91
-- Why You Need an LLM Proxy | angle: Explain the critical importance of running your own LLM proxy to gain visibility, control, and enhanced security over all LLM API interactions, rather than relying solely on third-party providers. | objective: reply | score: 8.0 | sources: hn-50145507
-- Agentic RAG with Sentence-Level Citations | angle: How agentic RAG systems, like Footnote, improve answer reliability and reduce hallucinations by acting like researchers and providing precise sentence-level citations. | objective: share | score: 7.83 | sources: 7f04710b2f3a
-- Reflection Beam: Agent's Open OS Architecture | angle: Analyze Reflection's Beam model as an 'open operating system for agents,' where the model serves as the kernel and the entire agentic ecosystem (infrastructure, integrations, deployment) is open source. | objective: reply | score: 7.83 | sources: 7f0421aaecae, 7f04710b2f3a
+- Shipping AI-Generated Code Blind | angle: Address the growing problem of developers shipping AI-written code they don't fully understand, exploring the risks, best practices for verification, and tools like Laminar for tracing agent errors. | objective: reply | score: 9.17 | sources: hn-50151036, hn-50154029
+- Frontier Open-Weight MoE Performance | angle: Explore how new open-weight Mixture-of-Experts (MoE) models like Reflection Beam (501B) and Meta Muse Spark Open (816B) achieve high performance while enabling more efficient self-hosting than dense models of comparable 'total' size. | objective: follow | score: 8.33 | sources: 7f0421aaecae, 4d7112fe164a, 441eebc2786d, c3d4bf9dbc5c
+- OpenViking: Filesystem for AI Agent Memory | angle: Explain ByteDance's OpenViking, an open-source context database that structures AI agent memory, knowledge, and skills as a virtual filesystem (`viking://`), simplifying persistent and queryable agent knowledge. | objective: share | score: 8.33 | sources: 94f642557d91
+- Running Agentic LLMs on Consumer Devices | angle: Highlight how models like Meta's Muse Glimmer 30B and Google's EmbeddingGemma 2 are purpose-built for on-device agentic tasks, leveraging quantization and multimodal capabilities for local deployment. | objective: follow | score: 8.33 | sources: 2ec85bc81387, e53f2f2c4ced, b46a071ce209, c3d4bf9dbc5c
+- llama.cpp Low-Bit Quantization for NPUs | angle: Highlight how `llama.cpp`'s new Q1_0 and Q2_0 quantization support enables running larger language models more efficiently on Snapdragon NPUs (e.g., Hexagon NPU), making powerful LLMs accessible on mobile devices and tablets. | objective: share | score: 8.33 | sources: 8b2e1fa91710
+- NVIDIA Dory: Trade Compute for Accuracy | angle: Explain NVIDIA's Dory1.0-4B model, which allows developers to adjust inference depth by running a shared block of layers multiple times, effectively trading compute resources for improved accuracy without loading a larger model. | objective: share | score: 8.33 | sources: e79cf58ff53e
+- Nvidia's Open Models for Enterprise Agents | angle: Discuss Nvidia's new open models like Nemotron 3.5 Bolt 74B-A9B (designed to fit 24GB VRAM) and Nemotron 3.5 Super VL, highlighting their focus on running agents efficiently in enterprise and on consumer PCs. | objective: follow | score: 8.33 | sources: c3d4bf9dbc5c, 441eebc2786d
+- Boosting LLM Inference with Host DRAM | angle: Explain how new research from Georgia Tech, Nvidia, and Stanford improves LLM inference throughput by concurrently accessing both HBM (on-package) and host DRAM, treating host memory as a working tier, not just overflow. | objective: click | score: 7.83 | sources: f50f1e2789d5
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
