@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-20 IST
+Last refreshed: 2026-10-21 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Flash Models: Cost vs. Hallucination Trade-offs | angle: Examining new 'Flash' models like MiniMax M3.1 Flash and DeepSeek V4.1 Flash, which offer significantly lower costs and faster inference for agentic tasks, but sometimes at the expense of higher hallucination rates. | objective: reply | score: 8.83 | sources: 1d516ecf9825, 473cb7eff9b1
-- Trusting AI-Generated Code | angle: The risks and mitigation strategies for shipping AI-generated code without full understanding, focusing on verification tools like Laminar for tracing agent errors. | objective: share | score: 8.67 | sources: hn-50151036, hn-50154029
-- On-Device Multimodal Agents | angle: The emergence of purpose-built, quantized models like Meta's Muse Glimmer 30B and Google's EmbeddingGemma 2 designed for autonomous, multimodal agentic tasks on consumer hardware without cloud infrastructure. | objective: follow | score: 8.5 | sources: 2ec85bc81387, b46a071ce209, e062aca780cf, c3d4bf9dbc5c
-- Hidden LLM Instructions & Abliteration Risks | angle: Analyzing the security and compliance challenges posed by hidden LLM instructions (e.g., WhatsApp) and the new vulnerabilities introduced by 'abliterated' models. | objective: reply | score: 8.5 | sources: hn-50159341, hn-50159245
-- Enhancing LLMs with External Tools & Context | angle: How platforms like Archipelag.io and Neo4j's Context Engine are enabling LLMs to use external tools (calculators, lookup) and access structured knowledge layers for more accurate, informed responses. | objective: reply | score: 8.5 | sources: 5d6889922e2f, 70f4c82900e5
-- Filesystem for AI Agent Memory | angle: How ByteDance's OpenViking treats AI agent memory, knowledge, and skills as a virtual filesystem, simplifying persistent context management for complex agents. | objective: follow | score: 8.17 | sources: 94f642557d91
-- Q1_0/Q2_0 Quantization for NPUs | angle: Examining `llama.cpp`'s new Q1_0 and Q2_0 quantization support for Qualcomm Hexagon NPUs, enabling ultra-efficient on-device LLM inference for mobile and edge applications. | objective: share | score: 8.17 | sources: b3cc02e961b3
-- Elastic Scaling for MoE Models | angle: How vLLM is addressing the challenge of scaling Mixture-of-Experts (MoE) models with near-zero downtime by dynamically adding or removing GPUs without requiring full engine restarts. | objective: click | score: 8.0 | sources: c8ff411f4fae
+- AI agent memory as a filesystem | angle: ByteDance's OpenViking project, treating agent memory, knowledge, and skills as a virtual filesystem (viking://), simplifying persistent context management for agents. | objective: share | score: 9.0 | sources: 94f642557d91
+- On-device agentic models | angle: Meta's Muse Glimmer 30B, a 4-bit quantized agentic model designed to run the full agentic loop (reasoning, tool use, failure recovery) on a single consumer GPU without cloud. | objective: follow | score: 8.83 | sources: c3b07f3c2704, 2ec85bc81387
+- Agent orchestration for cost savings | angle: Tsinghua's open-source `PilotDeck 2.0` agent operating system, using smart routing and tiered model orchestration (strong models for planning, light models for execution) to reduce complex task costs by a factor of six. | objective: click | score: 8.83 | sources: af597b09241f
+- On-device multimodal embeddings | angle: Google's EmbeddingGemma 2 expands beyond text to support code, images, video, and audio, designed for low-latency on-device semantic search and RAG under Apache 2.0. | objective: follow | score: 8.83 | sources: b46a071ce209
+- PyTorch Native on TPUs | angle: Google open-sourcing TorchTPU and its integration with vLLM, SGLang, and llm-d, making TPUs a native option for PyTorch workflows (training, serving, deploying). | objective: follow | score: 8.5 | sources: hn-50169053, 1ed882ec39a2, 77008e3ac4f9
+- Kubernetes-native distributed inference | angle: Google, Red Hat, IBM's `llm-d 1.0` reaching production readiness for distributed, Kubernetes-native LLM inference, addressing scaling and reliability for the 'agentic era.' | objective: reply | score: 8.5 | sources: e81aff5f7df1, 36239401256c
+- Flash models: cost vs. accuracy | angle: MiniMax's M3.1 Flash offering dramatically lower costs and faster inference for enterprise tasks, but with a high hallucination rate compared to competitors, highlighting the trade-off. | objective: reply | score: 8.5 | sources: 1d516ecf9825
+- Parallel token generation LLM | angle: Inception's Mercury 3, a diffusion LLM generating tokens in parallel at 1,068 tokens per second on NVIDIA GPUs, offering speed-first performance for agents, voice bots, and search. | objective: reply | score: 8.0 | sources: b0d37a483429
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
