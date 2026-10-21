@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-21 IST
+Last refreshed: 2026-10-22 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- OpenViking: Filesystem for AI agent memory | angle: ByteDance's OpenViking treats AI agent memory, knowledge, and skills as a virtual filesystem (viking://), offering a novel and simplified approach to persistent context management. | objective: share | score: 9.0 | sources: 94f642557d91
-- Kubernetes-native distributed LLM inference | angle: llm-d 1.0 offers a production-ready open-source stack for distributed LLM inference on Kubernetes, crucial for scaling agentic applications. | objective: reply | score: 8.83 | sources: e81aff5f7df1, 36239401256c, 77008e3ac4f9
-- Native PyTorch support for Google TPUs | angle: Google open-sourced TorchTPU, enabling native PyTorch workflows for training and inference on TPUs, extending hardware options for developers. | objective: follow | score: 8.83 | sources: hn-50169053, 77008e3ac4f9, 385dd689c6e0, 1ed882ec39a2
-- On-device agentic model for consumer hardware | angle: Meta's Muse Glimmer 30B is an open-source, 4-bit quantized model purpose-built for autonomous agentic tasks on consumer devices, including multi-step reasoning and tool use locally. | objective: follow | score: 8.67 | sources: 2ec85bc81387
-- Multimodal embeddings for on-device RAG | angle: Google's EmbeddingGemma 2 provides compact, open-weight, multimodal embeddings (text, code, images, video, audio) optimized for low-latency on-device RAG and semantic search. | objective: follow | score: 8.67 | sources: b46a071ce209
-- Self-learning vector databases for AI agents | angle: Cognitum One's RuVector, an open-source Rust engine, combines vector search, graph relationships, and self-learning to create persistent, improving memory for AI agents, solving the 'agents forget' problem. | objective: click | score: 8.67 | sources: 46b0d0d79cb8
-- Large open-weight sparse MoE models for agents | angle: Meta's Muse Spark Open (816B, 1M context) and Reflection's Beam (501B) demonstrate the emergence of open-weight sparse Mixture-of-Experts models optimized for long-horizon agentic and coding tasks, offering high capability with efficient activation. | objective: follow | score: 8.5 | sources: 916717af7e82, b6103640f123
-- DeepInfer: Production-grade LLM inference architecture | angle: DeepSeek open-sourced DeepInfer, its production inference engine, showcasing advanced techniques like GPU kernels, expert distribution, and speculative decoding for high-performance serving. | objective: share | score: 8.33 | sources: hn-50163277, 4150fc8c69ff, 2f49b7015c65
+- Kubernetes-native distributed LLM inference with llm-d 1.0 | angle: llm-d 1.0 offers a production-ready open-source stack for distributed LLM inference on Kubernetes, crucial for scaling agentic applications. | objective: share | score: 8.67 | sources: e81aff5f7df1, 36239401256c, 7c06b8dbc101
+- Multimodal RAG with EmbeddingGemma 2 | angle: Google's EmbeddingGemma 2 provides compact, open-weight, multimodal embeddings (text, code, images, video, audio) optimized for low-latency on-device RAG and semantic search. | objective: follow | score: 8.67 | sources: b46a071ce209
+- NVIDIA Nemotron 3.5: Advancing agents with world-class retrieval | angle: NVIDIA Nemotron 3.5 Embed, Rerank, and Parse models significantly improve agent performance by ensuring more relevant evidence retrieval, reducing wasted tokens and achieving more grounded answers. | objective: share | score: 8.67 | sources: 3eb63f62a75d
+- OpenViking: Filesystem approach for AI agent memory | angle: ByteDance's OpenViking treats AI agent memory, knowledge, and skills as a virtual filesystem (viking://), offering a novel and simplified approach to persistent context management. | objective: share | score: 8.5 | sources: 94f642557d91
+- Meta's Muse Spark Open: Powerful MoE for agents | angle: Meta's Muse Spark Open (816B, 1M context) is a leading open-weight Mixture-of-Experts model, optimized for long-horizon coding and agentic tasks, surpassing proprietary models in benchmarks. | objective: follow | score: 8.5 | sources: 916717af7e82
+- High-performance quantized inference kernels (Humming) | angle: Humming offers a general-purpose, high-performance kernel library for quantized inference, boosting efficiency across diverse hardware (NVIDIA, T-Head) and quantization schemes. | objective: follow | score: 8.33 | sources: 1ebbaa4f30df
+- vLLM on Google Cloud TPUs with TorchTPU | angle: vLLM TorchTPU enables running vLLM models on Google Cloud TPUs with existing model code and the same CLI, expanding hardware options for high-performance inference. | objective: follow | score: 8.17 | sources: 1ed882ec39a2
+- EAGLE-4 & Speculative Decoding on AMD GPUs | angle: EAGLE-4 enhances speculative decoding on AMD Instinct MI355X GPUs, achieving up to 3.5x speedup for LLM inference (e.g., Qwen3.8-27B) from day zero, offering a strong alternative to NVIDIA. | objective: share | score: 8.17 | sources: e5a1f88609e0
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
