@@ -1,6 +1,6 @@
 {
   "date_ist": "2026-10-21",
-  "generated_at": "2026-10-20T19:29:25.937792+00:00",
+  "generated_at": "2026-10-21T08:15:42.133223+00:00",
   "signal_count": 22,
   "signals": [
     {
@@ -9,11 +9,11 @@
       "title": "DeepInfer: High-performance inference framework for DeepSeek models",
       "url": "https://github.com/deepseek-ai/DeepInfer",
       "published_at": "2026-10-20T09:08:54+00:00",
-      "excerpt": "Hacker News: 1947 points and 754 comments.",
-      "signal_score": 3078.0,
+      "excerpt": "Hacker News: 2233 points and 854 comments.",
+      "signal_score": 3514.0,
       "community_metrics": {
-        "points": 1947,
-        "comments": 754
+        "points": 2233,
+        "comments": 854
       }
     },
     {
@@ -22,50 +22,50 @@
       "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
       "url": "https://github.com/google-pytorch/torch_tpu",
       "published_at": "2026-10-20T16:40:24+00:00",
-      "excerpt": "Hacker News: 135 points and 38 comments.",
-      "signal_score": 192.0,
+      "excerpt": "Hacker News: 330 points and 74 comments.",
+      "signal_score": 441.0,
       "community_metrics": {
-        "points": 135,
-        "comments": 38
+        "points": 330,
+        "comments": 74
       }
     },
     {
-      "id": "hn-50167583",
+      "id": "hn-50143360",
       "source": "hacker_news",
-      "title": "Launch HN: Respan (YC W24) – Open-source Rust AI gateway built around plugins",
-      "url": "https://news.ycombinator.com/item?id=50167583",
-      "published_at": "2026-10-20T15:09:29+00:00",
-      "excerpt": "Hacker News: 30 points and 14 comments.",
-      "signal_score": 51.0,
+      "title": "To Make, or to Buy: The Economics of Decision Models",
+      "url": "https://pncnmnp.github.io/blogs/economics-decision-models.html",
+      "published_at": "2026-10-18T17:40:56+00:00",
+      "excerpt": "Hacker News: 42 points and 2 comments.",
+      "signal_score": 45.0,
       "community_metrics": {
-        "points": 30,
-        "comments": 14
-      }
-    },
-    {
-      "id": "hn-50167604",
-      "source": "hacker_news",
-      "title": "Show HN: Penmentor – Claude marks up your handwritten math like a teacher",
-      "url": "https://github.com/AbdullahAlhariri/penmentor",
-      "published_at": "2026-10-20T15:10:54+00:00",
-      "excerpt": "Hacker News: 40 points and 2 comments.",
-      "signal_score": 43.0,
-      "community_metrics": {
-        "points": 40,
+        "points": 42,
         "comments": 2
       }
     },
     {
-      "id": "1ed882ec39a2",
-      "source": "exa_news",
-      "title": "Introducing vLLM TorchTPU | vLLM Blog",
-      "url": "https://vllm.ai/blog/2026-10-20-vllm-torchtpu",
-      "published_at": "2026-10-20T00:00:00.000Z",
-      "excerpt": "# Introducing vLLM TorchTPU\n\nOctober 20, 2026 6 min read\n\nTable of Contents\n\nToday we're releasing vLLM TorchTPU (`vllm-torchtpu`), a new backend for running vLLM on Google Cloud TPUs. It's built on Google's TorchTPU stack and runs the model definitions that already live in vLLM, so most models that work in vLLM today can be served on TPU without changes to the model code.\n\nThis work comes out of the engineering partnership between Inferact and Google we announced last month. Our goals for the project are to:\n\n1. Make it easy to bring new models to TPU by reusing vLLM's existing model code.\n2. Push TPU inference performance in open source, with Pallas kernels for attention, Mixture-of-Experts, and quantized matmul.\n3. Keep the vLLM experience the same: the same CLI, OpenAI-compatible server, scheduler, and KV cache manager you use on other hardware.\n\n...\n\n### Models, Features, and What's Next\n\n`vllm-torchtpu` can serve most models supported by vLLM, with TPU-specific kernel, quantization, and parallelism work for the Qwen, DeepSeek, Kimi, GLM, Llama, GPT-OSS, and Gemma families. TPU v7x (Ironwood) is the recommended hardware and is tested in CI on every pull request; v6e, v5e, and v5p are experimental.\n\nThe Supported Models & Features page has the full list of validated checkpoints and features, with how to enable each one. The nightly support matrices track TPU v7x correctness and benchmark results from CI.",
-      "signal_score": 14.0,
+      "id": "hn-50175779",
+      "source": "hacker_news",
+      "title": "Using Claude to reduce the attack surface of code",
+      "url": "https://www.anthropic.com/research/attack-surface-reduction",
+      "published_at": "2026-10-21T03:36:43+00:00",
+      "excerpt": "Hacker News: 25 points and 6 comments.",
+      "signal_score": 34.0,
       "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 1
+        "points": 25,
+        "comments": 6
+      }
+    },
+    {
+      "id": "hn-50176129",
+      "source": "hacker_news",
+      "title": "Nexus-CLI – Pure Go Bridge to DeepSeek R1/V3 with Claude Code and Ollama Support",
+      "url": "https://github.com/xamrayev/nexus-cli",
+      "published_at": "2026-10-21T04:37:18+00:00",
+      "excerpt": "Hacker News: 12 points and 2 comments.",
+      "signal_score": 15.0,
+      "community_metrics": {
+        "points": 12,
+        "comments": 2
       }
     },
     {
@@ -74,11 +74,50 @@
       "title": "llm-d 1.0, an open source stack for distributed inference | Google Cloud Blog",
       "url": "https://cloud.google.com/blog/topics/ai-infrastructure/llm-d-1-0-an-open-source-stack-for-distributed-inference",
       "published_at": "2026-10-20T00:00:00.000Z",
-      "excerpt": "llm-d 1.0, an open source stack for distributed inference | Google Cloud Blog\n\nOctober 20, 2026\n\n##### Mark Lohmeyer\n\nProduct Manager\n\n##### Nov 4: Agentic Data Cloud Event\n\nToday at the PyTorch Conference, we released llm-d 1.0, an open-source, Kubernetes-native stack for distributed LLM inference. Co-founded by Google with Red Hat, IBM and others, we worked with a community of more than 500 contributors over 25 organizations on this Cloud Native Computing Foundation (CNCF) Sandbox project, bringing together two important communities: PyTorch, where vLLM and SGLang serve models, and Kubernetes, where distributed systems run and scale in production.\n\nllm-d 1.0 arrives at a time when agents are changing the nature of inference. A year ago, most inference traffic was chat: one prompt in, one response out. Today, workloads are shifting to multi-step agents and reinforcement learning (RL) rollouts that fan out across tools, share long prefixes, and arrive in bursts. Serving them on a single machine — or behind a generic round-robin load balancer — breaks down fast. Replicas recompute the same prompts, accelerator memory fills up with duplicate state, and one bursty agent loop can stall interactive users.\n\nllm-d solves this for teams serving their own models by turning a cluster of model servers into a coordinated serving pool. During the PyTorch Conference keynote, we showed this in action with 1,000 sandboxed agents on Agent Substrate on GKE hitting a single llm-d endpoint across vLLM, SGLang, and a mixed fleet of Google Cloud TPUs and GPUs. As traffic scaled across the three stages below, cache-aware routing and tiered KV cache kept each agent's steps on the replicas holding its context, while flow control queued bursty agent loops so interactive requests stayed fast.\n\n...\n\n### What 1.0 provides\n\nllm-d already delivered prefix- and load-aware routing, KV cache offloading, prefill/decode disaggregation, wide expert parallelism and batch inference across Google Cloud TPUs and GPUs. These capabilities provide:\n\n- Multi-tenant quality of service. Priority and fairness-aware routing via llm-d flow control, helping latency-sensitive requests and bursty agent workloads share a fleet to meet SLOs without starving one another.\n- A stable foundation. v1 APIs and a hardened request path, validated on multiple clouds and accelerator types.\n- Safer upgrades. Router high availability and zero-downtime updates, alongside DisaggregatedSet, which orchestrates prefill/decode-aware rolling updates without dropping context or disrupting active sessions.\n- Agent-aware serving. Session-aware routing, turn-priority scheduling, and native Responses API state, helping agents reuse context across turns.\n- Expanded TPU integration. Native PyTorch model serving with TorchTPU co-operative time-slicing to raise throughput and utilization across Google Cloud TPU fleets.\n\nThe components are designed so that you can compose them into your own bespoke production environment. Keep your engine, model and cluster, and adopt only the serving components and configurations you need.\n\n...\n\nOne endpoint, many accelerators\n\nAn agent fleet is not one workload. Interactive turns need low latency, background loops and reinforcement learning (RL) rollouts need high throughput, and demand swings by the minute. llm-d puts your accelerator pools behind a single endpoint, with one router, one KV cache index, and one flow-control policy in front of the whole fleet. Agents call a single API; the router picks the replica for each step and keeps a session's context on the replicas that already hold it. Adding capacity, mixing accelerator generations, or moving a model to a different pool becomes a platform change, not an agent rewrite. TorchTPU brings Google Cloud TPUs into that fleet, running PyTorch models natively inside upstream vLLM and SGLang without model rewrites. For more, see the llm-d on Google Kubernetes Engine (GKE) TPU guide.\n\n...\n\nAsync inference that runs alongside real-time inference\n\nFor latency-tolerant traffic, llm-d 1.0 introduces llm-d-async-processor, which pulls requests from queues like Google Cloud Pub/Sub or Redis and routes them alongside real-time traffic. Using queue and pool-dispatch gates, the processor checks available capacity and enforces strict priority lanes and quotas so background jobs run in slack capacity without starving interactive users.\n\n...\n\nTeams serving their own models have been asking for an open stack they can take apart and adapt to their own infrastructure, with the cache-aware routing, traffic control, and upgrade controls required in production. llm-d 1.0 gives them that and a community to build with.\n\n...\n\n### Get started\n\n1. Check out the full demo of llm-d with TPUs at the Google Cloud booth during the PyTorch Conference.\n2. Deploy llm-d 1.0 on GKE with the verified Helm charts. See the llm-d on GKE documentation.\n3. Start with prefix-aware routing in front of your existing vLLM deployment, then add flow control, KV cache offload (SGlang, vLLM) and disaggregation.\n4. Compare results on Prism and contribute on GitHub.",
+      "excerpt": "llm-d 1.0, an open source stack for distributed inference | Google Cloud Blog\n\nOctober 20, 2026\n\n##### Mark Lohmeyer\n\nProduct Manager\n\n##### Nov 4: Agentic Data Cloud Event\n\nToday at the PyTorch Conference, we released llm-d 1.0, an open-source, Kubernetes-native stack for distributed LLM inference. Co-founded by Google with Red Hat, IBM and others, we worked with a community of more than 500 contributors over 25 organizations on this Cloud Native Computing Foundation (CNCF) Sandbox project, bringing together two important communities: PyTorch, where vLLM and SGLang serve models, and Kubernetes, where distributed systems run and scale in production.\n\n...\n\n### What 1.0 provides\n\nllm-d already delivered prefix- and load-aware routing, KV cache offloading, prefill/decode disaggregation, wide expert parallelism and batch inference across Google Cloud TPUs and GPUs. These capabilities provide:\n\n- Multi-tenant quality of service. Priority and fairness-aware routing via llm-d flow control, helping latency-sensitive requests and bursty agent workloads share a fleet to meet SLOs without starving one another.\n- A stable foundation. v1 APIs and a hardened request path, validated on multiple clouds and accelerator types.\n- Safer upgrades. Router high availability and zero-downtime updates, alongside DisaggregatedSet, which orchestrates prefill/decode-aware rolling updates without dropping context or disrupting active sessions.\n- Agent-aware serving. Session-aware routing, turn-priority scheduling, and native Responses API state, helping agents reuse context across turns.\n- Expanded TPU integration. Native PyTorch model serving with TorchTPU co-operative time-slicing to raise throughput and utilization across Google Cloud TPU fleets.\n\nThe components are designed so that you can compose them into your own bespoke production environment. Keep your engine, model and cluster, and adopt only the serving components and configurations you need.\n\n...\n\nOn an agentic coding workload on Ironwood TPU (TPU 7x), prefix-aware routing plus host memory offload cut median time-to-first-token (TTFT) by more than 85% and raised total throughput 2.4x versus a plain Kubernetes Service, as of October 2026 (source).\n\n...\n\nDuring RL training, accelerators often sit idle 40% to 60% of the time during rollout generation or weight updates. llm-d now supports Google Cloud TPU and GPU time-slicing to interleave async inference into those quiet cycles, raising aggregate accelerator duty cycles from a ~40% baseline to >70% (source).\n\nBenchmarks you can trust\n\nTuning a distributed inference stack across routers, KV cache tiers, and prefill/decode pools takes repeatable measurement under realistic multi-turn load. Prism is llm-d’s open-source analysis dashboard for exploring published benchmarks across llm-d’s well-lit paths, backed by standardized llm-d-benchmark recipes and inference-perf workloads. Inspect the exact configurations behind the numbers, or upload runs from your own cluster to compare throughput, latency, and cost curves side by side.\n\n...\n\n### In production\n\nThis GKE llm-d stack carries production traffic, and it has been tested at fleet scale:\n\n- Gemini platform (formerly Vertex AI) serves production traffic through GKE Inference Gateway, doubling its prefix cache hit rate from 35% to 70%, cutting TTFT by more than 35% for coding agents and cutting P95 TTFT by more than 50% under bursty chat traffic (source).\n- In a published benchmark across a 17,000-node multi-region GKE deployment serving a mixture-of-experts model in the US and Europe, multi-cluster GKE Inference Gateway and the llm-d router scaled throughput 2.9x across three clusters with a 99.9% success rate and less than 1% routing overhead (source).\n- In a published benchmark on A3 Mega cluster serving a 70B-parameter model, llm-d with multi-connector KV cache offloading to Google Cloud Managed Lustre in addition to Host CPU RAM, delivered an approximately 40% improvement in TTFT and a 30% reduction in end-to-end latency responding to 50k-token prompts compared to CPU RAM offload only, while reducing GPU-hour requirements by nearly 60% (source).\n\n...\n\n### Get started\n\n1. Check out the full demo of llm-d with TPUs at the Google Cloud booth during the PyTorch Conference.\n2. Deploy llm-d 1.0 on GKE with the verified Helm charts. See the llm-d on GKE documentation.\n3. Start with prefix-aware routing in front of your existing vLLM deployment, then add flow control, KV cache offload (SGlang, vLLM) and disaggregation.\n4. Compare results on Prism and contribute on GitHub.",
       "signal_score": 14.0,
       "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
+        "query": "latest technical AI model infrastructure release benchmark developer",
         "rank": 1
+      }
+    },
+    {
+      "id": "1ebbaa4f30df",
+      "source": "exa_news",
+      "title": "Announcing Humming: Fast, Flexible Kernels for Quantized Inference | vLLM Blog",
+      "url": "https://vllm.ai/blog/2026-10-21-humming",
+      "published_at": "2026-10-21T00:00:00.000Z",
+      "excerpt": "Announcing Humming: Fast, Flexible Kernels for Quantized Inference | vLLM Blog\n\n# Announcing Humming: Fast, Flexible Kernels for Quantized Inference\n\nOctober 21, 2026 19 min read\n\nTable of Contents\n\nAnt Group and the vLLM community are open-sourcing Humming, a general-purpose, high-performance kernel library for quantized inference. Humming offers the following features:\n\n- Broad device support: Supports NVIDIA GPU architectures from Turing onward, along with CUDA-compatible devices such as T-Head's Zhenwu 810E.\n- Extensive quantization support: A unified architecture supports diverse combinations of weight and activation formats for dense and MoE workloads, covering a wide range of integer and floating-point types, bit widths, and scaling schemes.\n- Strong execution performance: Significantly outperforms existing implementations from vLLM Marlin, FlashInfer, and DeepGEMM across many representative workloads.\n\nRepository: github.com/vllm-project/humming\n\n...\n\nAs models and inference workloads grow, memory capacity, memory bandwidth, and compute costs increasingly constrain deployment. This is especially apparent in MoE models: each token activates only a subset of experts, but the full set of weights still needs to be stored. DeepSeek-V3, for example, has 671 billion parameters, with 37 billion activated per token. Quantization lowers the precision of weights and activations to reduce memory usage and data movement, and can also improve compute efficiency.\n\nQuantization requirements vary across models and GPU generations. Common configurations include WNA16, W8A8, W4A8, and W4A4, where W and A specify weight and activation bit widths, and N denotes a variable weight bit width. Even at the same precision, schemes such as INT4 and NVFP4 differ in numeric format and scaling. Scaling granularity, scale representation, group size, and symmetric or asymmetric quantization further expand the configuration space.\n\nThese storage and compute savings only translate into lower latency and higher throughput with efficient kernels. Prefill, decode, and varying MoE expert loads place different demands on compute and memory. Kernels must adapt to these workloads while keeping conversion, dequantization, and scheduling overhead low.\n\n...\n\n## General-Purpose Architecture\n\nHumming's execution path has three parts: represent the quantized computation, select configurations for the hardware and workload, and compile a kernel from CUDA components.\n\n...\n\n### Broad Device Support\n\nHumming's unified architecture enables broad GPU support. For NVIDIA GPUs, Humming fully supports every architecture from Turing onward, bringing a common quantized computing framework to multiple generations of hardware.\n\nThe unified JIT architecture also makes it straightforward to extend Humming to other GPUs compatible with CUDA programming. Humming already fully supports T-Head's Zhenwu 810E, bringing its shared kernels and tuning capabilities to more hardware platforms.\n\n...\n\n#### End-to-End Inference Performance\n\nHumming's W4A8 gains extend to model serving. In our DeepSeek-V4.1-Flash test on eight H20 GPUs with TP=8, keeping the model's MXFP4 weights unchanged and switching MoE execution from Marlin W4A16 (BF16 activations) to Humming W4A8 (tokenwise FP8 activations) improves end-to-end throughput by approximately 14%–43% and reduces mean time to first token (TTFT) by approximately 25%–32%. The throughput advantage grows with concurrency: at concurrency 64, output throughput rises from 442.37 to 633.94 tokens/s, while mean time per output token (TPOT) falls by approximately 31%.\n\n| Concurrency | MoE backend | Input throughput (tokens/s) ↑ | Output throughput (tokens/s) ↑ | TTFT (ms) ↓ | TPOT (ms) ↓ |\n| --- | --- | --- | --- | --- | --- |\n| 1 | vLLM Marlin W4A16 | 2827.15 | 88.30 | 543.13 | 9.24 |\n| 1 | Humming W4A8 | 3226.23 (+14.1%) | 100.77 (+14.1%) | 383.80 (-29.3%) | 8.46 (-8.5%) |\n| 2 | vLLM Marlin W4A16 | 4781.06 | 149.33 | 794.31 | 10.33 |\n| 2 | Humming W4A8 | 5646.98 (+18.1%) | 176.38 (+18.1%) | 555.66 (-30.0%) | 9.20 (-10.9%) |\n| 4 | vLLM Marlin W4A16 | 7427.64 | 231.99 | 1422.32 | 11.72 |\n| 4 | Humming W4A8 | 9160.81 (+23.3%) | 286.12 (+23.3%) | 971.74 (-31.7%) | 10.22 (-12.9%) |\n| 8 | vLLM Marlin W4A16 | 9190.03 | 287.04 | 2049.81 | 19.90 |\n| 8 | Humming W4A8 | 12263.89",
+      "signal_score": 14.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 1
+      }
+    },
+    {
+      "id": "385dd689c6e0",
+      "source": "exa_news",
+      "title": "Announcing New vLLM and SGLang Inference Engines on TPU\n            \n            \n            - Google Developers Blog",
+      "url": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu",
+      "published_at": "2026-10-20T00:00:00.000Z",
+      "excerpt": "Announcing New vLLM and SGLang Inference Engines on TPU - Google Developers Blog \n\n# Announcing New vLLM and SGLang Inference Engines on TPU\n\nOCT. 20, 2026\n\n Qi Zhou Principal Software Engineer \n\n Chris Chan Group Product Manager \n\nAs part of our broader announcements for PyTorch today, we are excited to launch native PyTorch backends for vLLM (developed in partnership with Inferact) and SGLang (developed in partnership with RadixArk).\n\n## Background\n\nFor years, TPUs have powered large-scale AI workloads with high performance and efficiency. With the rise of agentic and multimodal workloads, serving efficiently is more important than ever. vLLM and SGLang already run on TPU through JAX-based backend, but we kept hearing from developers that they wanted to customize and debug their serving stack in PyTorch.\n\nSo we started in earnest on TorchTPU, which runs PyTorch natively on TPU. We then built new vLLM and SGLang engines on top of it.\n\nOur goal is for the PyTorch community to bring models to TPU and make them fast using the tools developers are already familiar with. The engines come with optimized, production-ready serving features and custom Pallas kernels.\n\n...\n\n### Workload support\n\nBoth engines are built for the full range of production workloads.\n\nHere’s the list of supported features:\n\n- Agentic & Multi-Turn: Automatic prefix caching, including for hybrid models; KV cache offloading to host memory and Managed Lustre through TPU Sync; tool calling and structured output\n- Interactive & Low Latency: Speculative decoding with MTP, EAGLE-3, DFlash, DSpark and n-gram drafters\n- High-throughput Batch: Data-parallel attention with expert parallelism\n- Long Context: Context parallelism for prefill and decode; FP8 KV cache; host KV offloading\n- Disaggregated Serving: Prefill and decode on separate hosts over TPU Sync, including between different parallel layouts\n- Multimodal: Vision-language models with image and video input; embedding models\n- Very Large Models: Hybrid and sparse-attention architectures, tensor, data, expert, pipeline and context parallelism across hosts; FP8, FP4 (MXFP4, NVFP4), INT8 and INT4 checkpoints\n\n...\n\n## Running today in production & public benchmarks\n\nBoth engines are already running at scale in production with preview customers. To provide transparent, reproducible proof of our performance, we benchmark in public through the community-standard SemiAnalysis InferenceX project.\n\nBuilding on our initial submission of Qwen 3.5 on Ironwood TPU (TPU 7x), our engineering teams have further optimized the stack, bringing the lowest cost per million tokens overall to an industry leading 2.01 cents. Alongside these improvements, we have also published new state-of-the-art (SOTA) performance results to AgentX, the project's dedicated track for evaluating agentic long-context and multi-turn workloads. Ironwood TPU leads across most of the Pareto frontier. We look forward to continuously updating our public performance profiles as we bring more models and configurations to the leaderboard.",
+      "signal_score": 13.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 2
+      }
+    },
+    {
+      "id": "1ed882ec39a2",
+      "source": "exa_news",
+      "title": "Introducing vLLM TorchTPU | vLLM Blog",
+      "url": "https://vllm.ai/blog/2026-10-20-vllm-torchtpu",
+      "published_at": "2026-10-20T00:00:00.000Z",
+      "excerpt": "# Introducing vLLM TorchTPU\n\nOctober 20, 2026 6 min read\n\nTable of Contents\n\nToday we're releasing vLLM TorchTPU (`vllm-torchtpu`), a new backend for running vLLM on Google Cloud TPUs. It's built on Google's TorchTPU stack and runs the model definitions that already live in vLLM, so most models that work in vLLM today can be served on TPU without changes to the model code.\n\nThis work comes out of the engineering partnership between Inferact and Google we announced last month. Our goals for the project are to:\n\n1. Make it easy to bring new models to TPU by reusing vLLM's existing model code.\n2. Push TPU inference performance in open source, with Pallas kernels for attention, Mixture-of-Experts, and quantized matmul.\n3. Keep the vLLM experience the same: the same CLI, OpenAI-compatible server, scheduler, and KV cache manager you use on other hardware.\n\n...\n\n### How It Works\n\n`vllm-torchtpu` is an out-of-tree vLLM platform plugin. Once installed, vLLM picks it up automatically through the `vllm.platform_plugins` entry point.\n\nModels run through vLLM's standard model runner and are compiled with `torch.compile(backend=\"tpu\")`, which lowers to XLA. Each TPU device gets its own worker process, the same way vLLM runs on GPUs, and communication between devices goes through `torch.distributed`. This means the scheduler, workers, KV cache manager, and API server are all unmodified upstream vLLM. The TPU-specific work sits underneath them, mostly in a set of JAX/Pallas kernels that are registered as custom ops and called from inside the compiled graph.\n\n...\n\n### Kernels\n\n`vllm-torchtpu` uses custom Pallas kernels for complex operations that benefit from hand-tuning on TPU. Some examples:\n\n- Ragged Paged Attention v3 for MHA/GQA models\n- Dense and sparse Multi-head Latent Attention (MLA) for DeepSeek, Kimi, and GLM\n- Gated DeltaNet and Kimi Delta Attention for hybrid linear-attention models\n- Fused Mixture-of-Experts with expert parallelism\n- FP8, INT8, MXFP4, and NVFP4 quantized matmuls\n\n...\n\n### Models, Features, and What's Next\n\n`vllm-torchtpu` can serve most models supported by vLLM, with TPU-specific kernel, quantization, and parallelism work for the Qwen, DeepSeek, Kimi, GLM, Llama, GPT-OSS, and Gemma families. TPU v7x (Ironwood) is the recommended hardware and is tested in CI on every pull request; v6e, v5e, and v5p are experimental.\n\nThe Supported Models & Features page has the full list of validated checkpoints and features, with how to enable each one. The nightly support matrices track TPU v7x correctness and benchmark results from CI.",
+      "signal_score": 13.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 2
       }
     },
     {
@@ -87,7 +126,7 @@
       "title": "ByteDance's OpenViking agent context database hits 40,000 GitHub stars",
       "url": "https://www.notatechguy.com/bytedance-s-openviking-agent-context-database-hits-40-000-github-stars",
       "published_at": "2026-10-18T00:00:00.000Z",
-      "excerpt": "# ByteDance's OpenViking agent context database hits 40,000 GitHub stars\n\nOpenViking from ByteDance's Volcengine treats agent memory, knowledge and skills as a virtual filesystem, crossing 40,000 GitHub stars.\n\n By Marcello Babbili · AI-assisted newsroom October 19, 2026 3 min read \n\nImage generated by OpenAI\n\nByteDance's Volcengine team published OpenViking, an open-source context database that treats everything an AI agent knows as files under a `viking://` filesystem, and the project crossed 40,000 stars on GitHub this week after gaining 105 stars in a single day on the platform's trending list S¹.\n\nThe approach challenges how most agent builders work today: stitching together separate systems for retrieval-augmented generation (the standard method for feeding documents into a model), conversation memory, and tool or skill management. OpenViking collapses all three into one virtual filesystem that an agent can browse and read on demand P² P⁴.\n\n...\n\nMy read: This is the first agent-memory project I've seen that refuses to separate knowledge from memory from skills at the storage layer. Most teams I watch are still gluing a vector database to a chat-history buffer and calling it done. The filesystem metaphor is elegant, but the benchmark numbers are entirely self-reported and nobody outside the Volcengine team has verified them. I'd want to see independent tau2-bench results before believing the performance claims, and the 40,000-star count tells me about GitHub momentum, not production readiness.\n\n...\n\n### One filesystem, three context types\n\nThe Viking team, part of ByteDance's cloud infrastructure arm Volcengine, organises context into three types: resources for reference material, memories for information retained from interactions, and skills for task procedures P⁴. Each piece of context loads in three tiers: L0, a one-sentence abstract; L1, a core overview; and L2, the full original data S¹. An agent scans the L0 summaries to decide what it needs, then drills down to L2 only for relevant items, which keeps token consumption down.\n\nWhen a conversation session ends, OpenViking commits and archives it as Markdown files that a developer can read and edit by hand S¹. Memories sit in readable text, not a binary store, which makes debugging and correction straightforward.\n\n...\n\n### The benchmarks nobody has checked\n\nThe project reports evaluation results on two benchmarks: LoCoMo, which tests long-conversation user memory, and tau2-bench, which tests multi-turn agent tasks S¹. Version 0.3.22 used Doubao 2.0 Pro, Volcengine's own vision-language model, for the memory evaluation S¹. These results are self-reported. The repository does not include peer-reviewed or third-party-audited benchmark data, and the README is the maintainers' description of their own work, not an independent review.\n\nA developer who wants to try the system without committing to an install can use OpenViking Studio, a browser-based demo that requires no setup S¹.\n\nThe repository is written primarily in Python and carries the volcengine organisation label on GitHub, though the about page confirms the team sits inside ByteDance's Volcengine unit P².\n\nUntil an independent team reproduces the LoCoMo or tau2-bench results, the 40,000-star count measures interest, not proof.",
+      "excerpt": "# ByteDance's OpenViking agent context database hits 40,000 GitHub stars\n\nOpenViking from ByteDance's Volcengine treats agent memory, knowledge and skills as a virtual filesystem, crossing 40,000 GitHub stars.\n\n By Marcello Babbili · AI-assisted newsroom October 19, 2026 3 min read \n\nImage generated by OpenAI\n\nByteDance's Volcengine team published OpenViking, an open-source context database that treats everything an AI agent knows as files under a `viking://` filesystem, and the project crossed 40,000 stars on GitHub this week after gaining 105 stars in a single day on the platform's trending list S¹.\n\nThe approach challenges how most agent builders work today: stitching together separate systems for retrieval-augmented generation (the standard method for feeding documents into a model), conversation memory, and tool or skill management. OpenViking collapses all three into one virtual filesystem that an agent can browse and read on demand P² P⁴.\n\n...\n\n### One filesystem, three context types\n\nThe Viking team, part of ByteDance's cloud infrastructure arm Volcengine, organises context into three types: resources for reference material, memories for information retained from interactions, and skills for task procedures P⁴. Each piece of context loads in three tiers: L0, a one-sentence abstract; L1, a core overview; and L2, the full original data S¹. An agent scans the L0 summaries to decide what it needs, then drills down to L2 only for relevant items, which keeps token consumption down.\n\nWhen a conversation session ends, OpenViking commits and archives it as Markdown files that a developer can read and edit by hand S¹. Memories sit in readable text, not a binary store, which makes debugging and correction straightforward.\n\n...\n\n### The benchmarks nobody has checked\n\nThe project reports evaluation results on two benchmarks: LoCoMo, which tests long-conversation user memory, and tau2-bench, which tests multi-turn agent tasks S¹. Version 0.3.22 used Doubao 2.0 Pro, Volcengine's own vision-language model, for the memory evaluation S¹. These results are self-reported. The repository does not include peer-reviewed or third-party-audited benchmark data, and the README is the maintainers' description of their own work, not an independent review.\n\nA developer who wants to try the system without committing to an install can use OpenViking Studio, a browser-based demo that requires no setup S¹.\n\nThe repository is written primarily in Python and carries the volcengine organisation label on GitHub, though the about page confirms the team sits inside ByteDance's Volcengine unit P².\n\nUntil an independent team reproduces the LoCoMo or tau2-bench results, the 40,000-star count measures interest, not proof.",
       "signal_score": 13.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -95,16 +134,16 @@
       }
     },
     {
-      "id": "c3b07f3c2704",
+      "id": "b46a071ce209",
       "source": "exa_news",
-      "title": "Meta Releases Muse Glimmer 30B: An Apache 2.0 Agentic Model That Runs on a Single Consumer GPU | Automater News",
-      "url": "https://automater.ai/news/meta-muse-glimmer-30b-on-device-agentic-model",
+      "title": "EmbeddingGemma 2 Expands Beyond Text to Support Code, Images, Video, and Audio - InfoQ",
+      "url": "https://www.infoq.com/news/2026/10/embeddinggemma-2-multimodal",
       "published_at": "2026-10-19T00:00:00.000Z",
-      "excerpt": "# Meta Releases Muse Glimmer 30B: An Apache 2.0 Agentic Model That Runs on a Single Consumer GPU\n\nMeta's Muse Glimmer is a 30B agentic model quantized to 4-bit for consumer GPUs, beating Gemma4-31B and Qwen3.6-27B on tool use and planning under Apache 2.0.\n\nAutomater Newsroom · October 19, 2026 at 6:44 PM ET\n\nMuse Glimmer 30B: A 4-bit quantized 30B model that runs the full agentic loop — reasoning, tool use, and failure recovery — locally on a single consumer GPU, beating same-size competitors on agentic benchmarks.\n\nMeta published the technical report for Muse Glimmer 30B on October 19, releasing the research page and paper under the Apache 2.0 license for an agentic model purpose-built to run autonomous tool-using agents on a single consumer GPU. The model integrates multi-step reasoning, reliable tool use, and failure recovery into a single 30B-parameter package quantized to roughly 4-bit precision — small enough to fit on a GPU most developers already own. The model weights are not yet posted to Hugging Face at press time.\n\n...\n\nMeta's official Muse Glimmer 30B research page, published October 19, 2026. The abstract describes the model as an open-source Apache 2.0 agentic model with text and image inputs, 4-bit quantization for single-GPU inference, and state-of-the-art performance against Gemma4-31B and Qwen3.6-27B. Source: AI at Meta. · Original source\n\n...\n\nThe primary source describes Muse Glimmer as a causal language model with a perception encoder that accepts both text and image inputs and produces text outputs. It was trained on data spanning over a hundred languages. The model is explicitly positioned for agentic workloads — multi-step planning, calling external tools, and recovering when those calls fail — rather than general chatbot or completion tasks.\n\nThe 4-bit quantization is the practical enabler. A 30B model at full precision would demand multiple high-end GPUs or cloud instances. At approximately 4-bit, Glimmer fits on a single consumer GPU, making local agentic inference viable without a data-center budget. For developers building always-on coding agents, research assistants, or automation workflows, that removes the per-token API meter entirely.\n\n...\n\n### What’s Not Yet Clear\n\nThe research page and its linked Arxiv paper provide the benchmark comparisons and architectural description, but Meta has not yet published the model weights on HuggingFace at the time of writing. The Meta Muse organization page on HuggingFace lists two image-text-to-text models at the 30B scale updated roughly 18 days ago, which may be earlier checkpoints or related releases. Developers should watch the organization page and Meta’s official channels for the weight drop.",
-      "signal_score": 13.0,
+      "excerpt": "Oct 19, 2026 2 min read \n\nby\n\n- Sergio De Simone \n\nBased on Gemma 4 and released under the Apache 2.0 license, Google's EmbeddingGemma 2 is a compact, open-weight, multimodal embedding model designed to make semantic search and retrieval-augmented generation (RAG) more efficient while optimizing performance for on-device deployment.\n\n> Designed to run on consumer hardware such as mobile devices and laptops, EmbeddingGemma 2 delivers low-latency semantic representations for on-device applications, like search, retrieval-augmented generation (RAG), classification, and clustering.\n\nThanks to its multimodal capabilities, EmbeddingGemma 2 supports a wide range of retrieval tasks, including finding relevant documents, screenshots, and recordings in response to a query, searching source code using natural language, and retrieving video content based on textual descriptions.\n\nEmbeddingGemma 2's key feature, Google says, is its ability to represent text, code, images, video, and audio in a unified 768-dimensional embedding space. This enables developers to build retrieval systems that search across different media types without maintaining separate, incompatible embedding spaces for different media types.\n\n> Despite coming from different modalities, the embeddings generated by EmbeddingGemma 2 occupy the same dimensional space and can be compared on their semantic similarity.\n\nThe model allows developers to load only the encoders required for their applications, scaling from 270 million parameters for text and code to 740 million for full multimodal support. According to Google, the model \"significantly outperforms EmbeddingGemma 1 on code search and technical retrieval, making it ideal for local codebase indexing and agentic code search\".\n\n...\n\nEmbeddingGemma 2 supports Matryoshka Representation Learning (MRL), which allows embeddings to be truncated into shorter, unit-length vectors, reducing storage requirements. For example, storing a million 768-dimensional vectors at bfloat16 precision takes roughly 1.5 GB of memory, while truncating them to 128 dimensions requires just 250 MB, bringing a sixfold reduction. However, this implies a retrieval quality trade-off. Google therefore recommends using truncation only when storage or search speed require it. At 128 dimensions, the model retains approximately 90% of quality with text, but performance drops to around 75% for image, video, and speech retrieval.\n\n...\n\nEmbeddingGemma was introduced last year with a focus on \"offline and privacy-sensitive scenarios, such as searching across personal files locally, running mobile RAG pipelines with Gemma 3n, or building domain-specific chatbots\". EmbeddingGemma 2 is available on Hugging Face.",
+      "signal_score": 12.0,
       "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
-        "rank": 2
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 3
       }
     },
     {
@@ -113,46 +152,20 @@
       "title": "Crossing the threshold to dependable open source AI serving",
       "url": "https://www.redhat.com/en/blog/crossing-threshold-dependable-open-source-ai-serving",
       "published_at": "2026-10-19T00:00:00.000Z",
-      "excerpt": "October 20, 2026 4-minute read AI inference, Artificial intelligence, Open source\n\n Brian Stevens SVP and CTO for AI \n\nWhen large open weight models first captured attention, the industry was faced with a challenge. Powerful open models were becoming available, but technologists lacked an open inference serving system that could run them efficiently. Having spent years building inference engines for CPUs, my team and I redirected all of our energy toward the vLLM project. Together with the community, vLLM capabilities expanded to become the de facto inference server. Today the vLLM project, now part of the PyTorch foundation, has a vibrant community of companies and developers actively adding support for new models, hardware, and research techniques.\n\nAs Red Hat continued this work, conversations with our enterprise users exposed a new reality. Getting a single server to perform efficiently was table stakes. The next challenge was orchestrating model serving at cluster scale. Last spring, we announced the llm-d project to address this, developing an open source, Kubernetes-native orchestration layer for distributed LLM serving across multi-tenant production clusters. Today, Red Hat and our community partners announced the release of llm-d 1.0. Reaching this milestone reflects a project hitting full maturity, shaped by hardened code, stability proven under real production load, and widespread adoption across an expanding contributor community. Open source AI serving has crossed from an experimental science project into dependable infrastructure you can build on.\n\n...\n\nStability cannot be established on synthetic benchmarks alone. It has to survive real-world scale where agent contexts expand over hours of execution and accelerator memory faces unrelenting pressure. When multi-turn workloads repeatedly hit unmanaged clusters, naive load balancers scatter requests, wiping out cached prefix state and triggering massive recomputation costs.\n\nllm-d delivers production-scale stability by making the orchestration layer aware of inference dynamics. It preserves context locality, disaggregates prefill from decode phases, and balances work across heterogeneous accelerator pools. In production, this operational stability creates dramatic efficiencies. At IBM Research, exploring quantum error correction hardware on llm-d generated multi-turn workloads with massive context reuse identical to agentic coding loops. That deployment yielded a 98% prefix-cache hit rate and reduced blended serving costs five to ten times compared to proprietary options.\n\nIn benchmark demonstrations, researchers used llm-d to deploy GLM-5.2, an approximately 753-billion-parameter open weight model on widely deployed NVIDIA GPUs, showcasing how enterprises can use existing GPU fleets to serve frontier-class AI at scale. On a workload with hundreds of agentic sessions running in parallel, llm-d delivered over 6.6 million output tokens per minute at peak on agentic benchmarks. The cluster sustained up to 3,000 concurrent coding agents with zero preemptions, demonstrating that llm-d can efficiently serve large mixture-of-experts models for agentic workloads.",
+      "excerpt": "When large open weight models first captured attention, the industry was faced with a challenge. Powerful open models were becoming available, but technologists lacked an open inference serving system that could run them efficiently. Having spent years building inference engines for CPUs, my team and I redirected all of our energy toward the vLLM project. Together with the community, vLLM capabilities expanded to become the de facto inference server. Today the vLLM project, now part of the PyTorch foundation, has a vibrant community of companies and developers actively adding support for new models, hardware, and research techniques.\n\nAs Red Hat continued this work, conversations with our enterprise users exposed a new reality. Getting a single server to perform efficiently was table stakes. The next challenge was orchestrating model serving at cluster scale. Last spring, we announced the llm-d project to address this, developing an open source, Kubernetes-native orchestration layer for distributed LLM serving across multi-tenant production clusters. Today, Red Hat and our community partners announced the release of llm-d 1.0. Reaching this milestone reflects a project hitting full maturity, shaped by hardened code, stability proven under real production load, and widespread adoption across an expanding contributor community. Open source AI serving has crossed from an experimental science project into dependable infrastructure you can build on.\n\n...\n\nStability cannot be established on synthetic benchmarks alone. It has to survive real-world scale where agent contexts expand over hours of execution and accelerator memory faces unrelenting pressure. When multi-turn workloads repeatedly hit unmanaged clusters, naive load balancers scatter requests, wiping out cached prefix state and triggering massive recomputation costs.\n\nllm-d delivers production-scale stability by making the orchestration layer aware of inference dynamics. It preserves context locality, disaggregates prefill from decode phases, and balances work across heterogeneous accelerator pools. In production, this operational stability creates dramatic efficiencies. At IBM Research, exploring quantum error correction hardware on llm-d generated multi-turn workloads with massive context reuse identical to agentic coding loops. That deployment yielded a 98% prefix-cache hit rate and reduced blended serving costs five to ten times compared to proprietary options.\n\nIn benchmark demonstrations, researchers used llm-d to deploy GLM-5.2, an approximately 753-billion-parameter open weight model on widely deployed NVIDIA GPUs, showcasing how enterprises can use existing GPU fleets to serve frontier-class AI at scale. On a workload with hundreds of agentic sessions running in parallel, llm-d delivered over 6.6 million output tokens per minute at peak on agentic benchmarks. The cluster sustained up to 3,000 concurrent coding agents with zero preemptions, demonstrating that llm-d can efficiently serve large mixture-of-experts models for agentic workloads.",
       "signal_score": 12.0,
       "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
+        "query": "AI systems GPU serving quantization research release",
         "rank": 3
       }
     },
     {
-      "id": "385dd689c6e0",
+      "id": "e5a1f88609e0",
       "source": "exa_news",
-      "title": "Announcing New vLLM and SGLang Inference Engines on TPU\n            \n            \n            - Google Developers Blog",
-      "url": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu",
-      "published_at": "2026-10-20T15:04:17.000Z",
-      "excerpt": "# Announcing New vLLM and SGLang Inference Engines on TPU\n            \n            \n            - Google Developers Blog\n\nAuthor: Qi Zhou, Chris Chan\nPublished: 2026-10-20T15:04:17Z\nSource: developers.googleblog.com\nLanguage: en\n\n## Story\n\nAnnouncing New vLLM and SGLang Inference Engines on TPU - Google Developers Blog\n# Announcing New vLLM and SGLang Inference Engines on TPU\nOCT. 20, 2026\nQi Zhou Principal Software Engineer\nChris Chan Group Product Manager\nAs part of our broader announcements for PyTorch today, we are excited to launch native PyTorch backends for vLLM (developed in partnership with Inferact) and SGLang (developed in partnership with RadixArk).\n## **Background**\nFor years, TPUs have powered large-scale AI workloads with high performance and efficiency. With the rise of agentic and multimodal workloads, serving efficiently is more important than ever. vLLM and SGLang already run on TPU through JAX-based backend, but we kept hearing from developers that they wanted to customize and debug their serving stack in PyTorch.\nSo we started in earnest on TorchTPU, which runs PyTorch natively on TPU. We then built new vLLM and SGLang engines on top of it.\nOur goal is for the PyTorch community to bring models to TPU and make them fast using the tools developers are already familiar with. The engines come with optimized, production-ready serving features and custom Pallas kernels.\n## **The Inference Stack**\nServing at scale requires co-design across every layer of the technology stack, from silicon to compilers to orchestration. Today's launch of new inference engines is at the central part of an integrated, open TPU ecosystem.\n## **Engine Overview**\nTorchTPU makes the TPU a native PyTorch device. Tensors are managed as standard PyTorch tensors on a `tpu` device with no wrapper types, code runs eagerly or compiles via `torch.compile` using XLA, and collectives go through `torch.distributed`.\nBecause each device runs its own PyTorch process, both engines keep each framework’s worker model, scheduler, KV cache manager and API server etc, and add TPU implementations underneath.\nMost models use the standard upstream PyTorch model definitions in vLLM or SGLang, with TPU-specific optimizations in kernels and layer implementations. Custom kernels written in Pallas are called directly from PyTorch as custom operators inside the compiled graph. This platform-plugin design reuses as much of each framework as possible while letting TPU optimizations move at their own pace\n### **Workload support**\nBoth engines are built for the full range of production workloads.\nHere’s the list of supported features:\n* **Agentic & Multi-Turn:** Automatic prefix caching, including for hybrid models; KV cache offloading to host memory and Managed Lustre through TPU Sync; tool calling and structured output\n* **Interactive & Low Latency:** Speculative decoding with MTP, EAGLE-3, DFlash, DSpark and n-gram drafters\n* **High-throughput Batch:** Data-parallel attention with expert parallelism\n* **Long Context:** Context parallelism for prefill and decode; FP8 KV cache; host KV offloading\n* **Disaggregated Serving:** Prefill and decode on separate hosts over TPU Sync, including between different parallel layouts\n* **Multimodal:** Vision-language models with image and video input; embedding models\n* **Very Large Models:** Hybrid and sparse-attention architectures, tensor, data, expert, pipeline and context parallelism across hosts; FP8, FP4 (MXFP4, NVFP4), INT8 and INT4 checkpoints\nAgentic workloads in particular demand several of these features simultaneously. Because agents repeatedly resend expanding multi-turn conversations, serving them efficiently requires finding the cached prefix instead of recomputing it. Both engines keep reusable prefixes in HBM and, with host offload turned on, automatically move older prefixes to host memory as a second tier.\n### **Moving the KV Cache with TPU Sync**\nTwo of these features move the KV cache away from the device that computed it. Disaggregated serving runs prefill and decode on separate TPU hosts, so each request's KV cache has to travel from the prefill host to the decode host.Tiered KV offload moves the part of the KV cache that no longer fits in HBM to the host's DRAM and secondary storage with Google Cloud Managed Lustre, and brings it back when a later request reuses the prefix. Either way, the transfer has to overlap computation or it adds directly to latency.\nBoth engines use TPU Sync for this. It is an open-source C++ library for KV cache transfer and management on TPU. It reads the device buffers behind PyTorch tensors directly, so a transfer needs no extra staging copy on the host, and it runs transfers on its own threads outside Python while prefill and decode continue. vLLM-TorchTPU exposes it through vLLM's KV connector interface. SGLang-TorchTPU uses it as a disaggregation transfer backend and as the I/O backend for HiCache.\n## **Running today in production & public benchmarks**\nBoth engines are already running at scale in production with preview customers. To provide transparent, reproducible proof of our performance, we benchmark in public through the community-standard SemiAnalysis InferenceX project.\nBuilding on our initial submission of Qwen 3.5 on Ironwood TPU (TPU 7x), our engineering teams have further optimized the stack, bringing the lowest cost per million tokens overall at 2.01 cents at high-concurrency configurations. Alongside these improvements, we have also published new state-of-the-art (SOTA) performance results to AgentX, the project's dedicated track for evaluating agentic long-context and multi-turn workloads. Ironwood TPU leads across most of the Pareto frontier. We look forward to continuously updating our public performance profiles as we bring more models and configurations to the leaderboard.\n## **Building with the community**\nWe did not build these backends in a vacuum. By embracing PyTorch and working directly with open-source project maintainers, we ensure these engines remain upstream-aligned and community-first:\n**SGLang-TorchTPU was** **co-developed**** with RadixArk (founded by the creators of SGLang)**\nThis partnership is bringing SGLang's stellar team to build for TPU, delivering an engine that is already running in production at Meta and battle-tested at scale across demanding real-world scenarios.\n*> \"SGLang-TorchTPU is running in production at Meta today, and getting there was a close three-way collaboration between Meta, Google, and the SGLang team to make the stack production-ready. It gives us a remarkably mature, PyTorch-native serving stack that integrates effortlessly into our existing AI infrastructure, with the performance, reliability, and flexibility we need to run frontier workloads efficiently on TPUs. \" said Zongwei Zhou, PyTorch-TPU lead at Meta.\n*\n*> \"At RadixArk, TorchTPU has supercharged our development velocity as we roll out SGLang support across diverse silicon. It’s given us a painless path to native TPU acceleration, passing massive efficiency gains and flexible compute choices directly down to our customers,\" said Banghua Zhu, CTO and co-founder of RadixArk.\n*\n**vLLM-TorchTPU was** **co-developed**** with Inferact (founded by the creators of vLLM)**\nTogether, we integrated a high-performance Pallas megakernel for the 2.8T-parameter Kimi K3 model that runs the entire decode step as one kernel, serving more than 700 tokens per second to a single user on Ironwood TPU. Building on this work, Inferact recently led our first preliminary AgentX submission for Kimi K3 on the vLLM-TorchTPU stack. This initial milestone already demonstrates exceptional performance per TCO in ultra-high-interactivity workloads, and the rapid increase in the maturity of the vLLM and PyTorch ecosystem on TPU for doing new frontier OSS models bring-up, with follow-up submissions set to unlock even greater efficiency through larger scale prefill/decode disaggregation.\n*> \"Our mission at Inferact has always been to make high-performance inference accessible, reliable, and cost-effective across the entire AI ecosystem. We are thrilled to partner on the launch of TorchTPU and bring first-class support for vLLM to TPUs. By bridging PyTorch’s optimized TPU capabilities directly into vLLM, developers can immediately run production workloads on TPUs with the high throughput, low latency, and memory efficiency they expect from our stack,\" said Simon Mo, CEO and co-founder of Inferact.\n*\nTo foster continuous open-source contribution, vLLM is also launching a first-of-its-kind community contribution TPU capacity pool to provide free TPU compute to developers who actively contribute to both engines. Request here.\n## **Roadmap**\nAs the models get larger, we are evolving both engines to make large-scale TPU inference deployments performant and efficient. The major features for production-grade agentic workloads are already supported. More performance optimizations and advanced features are under way – open a Github issue to request collaboration on yours!\nAcross the two engines, most of the popular open model families are supported, including Qwen, DeepSeek, GLM, Kimi, GPT-OSS, Gemma4 and more. The team is investing in making more models available to run natively on TPUs, including Day 0 support for new open models. We also want to give the community the tools and TPU capacity to tune performance for their own workloads and configurations.\n## **A note on our JAX runtimes**\nvLLM-Jax, and SGLang-JAX remain important projects. Both will continue to be maintained, supported, and available for the community to use and adapt.\n## **Getting started**\nGet started today:\n* vLLM-TorchTPU: https://github.com/vllm-project/vllm-torchtpu\n* SGLang-TorchTPU: https://github.com/sgl-project/sglang-torchtpu\n* TorchTPU: https://github.com/google-pytorch/torch\\_tpu",
-      "signal_score": 11.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 4
-      }
-    },
-    {
-      "id": "36239401256c",
-      "source": "exa_news",
-      "title": "llm-d 1.0 hardens open-source AI inference for production - IBM Research",
-      "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving",
+      "title": "EAGLE 4 on AMD Instinct GPUs",
+      "url": "https://www.amd.com/en/developer/resources/technical-articles/2026/eagle-4-on-amd-instinct-gpus.html",
       "published_at": "2026-10-20T00:00:00.000Z",
-      "excerpt": "20 Oct 2026\n\n# llm-d 1.0 hardens open-source AI inference for day 2 production operations\n\nThe distributed inference framework makes serving large models on your own infrastructure reliable and affordable for the agentic era.\n\nToday at the PyTorch Conference North America, llm-d project contributors are announcing llm-d 1.0, a major milestone for open-source AI infrastructure. A Kubernetes-native distributed inference serving network, llm-d makes it possible to deploy inference stacks for any model, on any accelerator, in any cloud.\n\nThe release signals that llm-d has moved beyond demonstrating individual performance techniques and is ready to support the realities of production: sustained efficiency under many workloads, all while balancing service priorities amid growing demand. And with inference costs increasing, llm-d is meant to help bring model deployment in-house and deliver returns on AI investment.\n\n...\n\nThe result is a vendor-neutral alternative for organizations that want frontier-class inference performance without depending entirely on one proprietary model provider, cloud, or hardware platform.\n\n...\n\n## A full production stack\n\nSince llm-d launched, the project has focused on five important approaches to improving AI inference: prefix-cache-aware routing, which directs a request to infrastructure that may already hold its shared context; KV-cache offloading, which expands the useful life of cached information by moving it across GPU, CPU, and storage resources; batch inference optimization, which groups work so infrastructure can process it more efficiently; prefill/decode disaggregation, which separates the work of reading a prompt from the work of generating a response; and wide expert parallelism, which distributes large mixture-of-experts models across many accelerators.\n\n...\n\n## One endpoint, different kinds of work\n\nExpanding on the core technical innovations that have already made llm-d a powerful tool for distributed inference, llm-d 1.0 enhances support for multi-tenant quality of service, zero-downtime operations, and agent-aware serving, for sustained performance in common day 2 production operations. An enterprise AI service may receive requests from people and autonomous agents through the same endpoint, but those workloads behave differently. A person using a coding assistant expects a fast answer. An agent may send a large burst of requests, pause while using a tool, and then return for another round of model calls.\n\nWith flow control, llm-d 1.0 manages competing priorities whether workloads share the same hardware or span a mix of accelerators. Flow control, fairness, and prioritization help prevent bursty workloads from overwhelming latency-sensitive services. Under heavy demand, the system can make more deliberate decisions about which requests should receive resources first. Requests can also remain pinned to the appropriate infrastructure across multiple turns. That keeps their prefix caches warm, increasing the chance that previously processed context can be reused instead of calculated again.\n\nThis matters for conversational assistants, but it is especially valuable for agents. Agents frequently return to the same code, documents, instructions, and conversation history while carrying out a task. Prefix-cache-aware routing sends each turn toward a replica that already holds the relevant context, while KV-cache offloading helps preserve more of that reusable information when GPU memory becomes constrained. This is what production readiness looks like in practice: serving a model more effectively and more cost-effectively by understanding the work arriving at that model and managing infrastructure accordingly.\n\n...\n\nIn a recent test of an agentic coding workload, llm-d’s prefix-aware router captured 97% of the available cache reuse. By avoiding repeated computation and making more efficient use of existing hardware, techniques like this can reduce the cost of serving AI at scale. In another recent demonstration, IBM and Red Hat ran 3,000 software-engineering agents concurrently on a self-hosted deployment for 5 to 10 times less than the actual price of serving the same open model as a service.\n\n...\n\n## Connecting the open-source AI Ecosystem\n\nllm-d works with inference engines such as vLLM or SGLang, adding the distributed routing and operational capabilities needed to turn model servers into production services.\n\nThat also gives llm-d an important role in the broader open-source ecosystem. PyTorch is closely associated with the people developing AI models and applications. The Cloud Native Computing Foundation (CNCF), which",
-      "signal_score": 11.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 4
-      }
-    },
-    {
-      "id": "b3cc02e961b3",
-      "source": "exa_news",
-      "title": "llama.cpp adds Q1_0, Q2_0 quant support for Hexagon NPUs",
-      "url": "https://theneuralnet.com/story/llama-cpp-adds-q1-0-q2-0-quant-support-20261017",
-      "published_at": "2026-10-17T00:00:00.000Z",
-      "excerpt": "llama.cpp adds Q1_0, Q2_0 quant support for Hexagon NPUs\n\nQuantization Inference and serving· 17 Oct 2026\n\n# llama.cpp adds Q1_0, Q2_0 quant support for Hexagon NPUs\n\nSnapdragon devices get another notch of compression for on-device inference\n\n## The facts\n\n- Release b11716 of llama.cpp adds support for Q1_0 and Q2_0 quantisation formats on Qualcomm Hexagon NPUs (pull request #30122)\n- Changes include enabling Q1_0 weights in the 2D HMX MUL_MAT path and adding Q2_0 support with cleanup of stale asserts and special cases\n- Work includes fixes to the MUL_MAT_NX tiling assumption, since Q1/Q2 formats use non-square tiles rather than the square tiling assumed elsewhere\n- Multiple commits optimise Q1_0 and Q2_0 vec_dots and layout to reduce unpack and vrmpy overhead\n- Co-authored by Max Krasnyansky of Qualcomm; builds are available for Linux arm64 and Android arm64 targeting Snapdragon CPU, Adreno GPU and Hexagon NPU\n\nThe latest llama.cpp pre-release, tagged b11716, adds support for two low-bit quantisation formats on Qualcomm's Hexagon neural processing unit. Q1_0 and Q2_0 compress model weights to roughly one or two bits each. The change, merged via pull request #30122, lets the Hexagon backend run these compressed models through the existing 2D HMX matrix-multiply path used for tiled tensor formats.\n\nGetting there required more than flipping a flag. Q1_0 and Q2_0 weights use non-square tiles, which broke an assumption baked into llama.cpp's MUL_MAT_NX routine: that tiling would always be square. The patch generalises that path instead of special-casing it. Several follow-up commits strip out stale asserts and special cases left over from earlier work. They also tighten the vec_dot routines and memory layout for both formats, cutting the overhead from unpacking and vector multiply-accumulate (vrmpy) operations.\n\nThe work was co-authored by Max Krasnyansky of Qualcomm. That underscores the chipmaker's continued hand in llama.cpp's Hexagon backend. Build artefacts for this release include a dedicated Linux arm64 target and an Android arm64 target. Both cover Snapdragon CPU, Adreno GPU and Hexagon NPU execution. The usual Linux, Windows, macOS and openEuler builds remain too, across CUDA, Vulkan, ROCm, SYCL and OpenVINO backends.\n\n...\n\n## Why it matters\n\nSub-2-bit quantisation on Hexagon NPUs means developers can push larger models onto Snapdragon phones and laptops without falling back to the CPU or GPU path. Anyone targeting on-device inference on Snapdragon hardware should re-test memory and latency against this build before locking in a quant format.",
+      "excerpt": "EAGLE 4 on AMD Instinct GPUs\n\n# EAGLE-4 on AMD Instinct GPUs from day 0\n\n Oct 20, 2026\n\nEAGLE-4, the newest drafter from the EAGLE team, runs on AMD Instinct™ MI355X GPUs from day 0, in SGLang and ATOM. - On Qwen3.8-27B, one MI355X GPU serves a single request at ~300 tokens/s in BF16: 3.5x plain decoding and 1.6x the model’s built-in MTP. - The gain holds as load grows, from 1 to 32 concurrent conversations, and scales to four GPUs. It works out of the box: the same checkpoint and the same serving flags as on other hardware.\n\n...\n\n## What is new in EAGLE-4\n\nSpeculative decoding lets a small drafter guess several tokens ahead, and the large model checks them all in one pass. EAGLE-4 adds three ideas on top of the EAGLE family:\n\n- One drafter for every batch size and every GPU. EAGLE-4 drafts one token at a time, so it can stop, deepen or widen its guess tree at every step. EAGLE-Harness measures what drafting and verifying cost on the actual hardware, once at start-up. During serving it picks the tree that gives the most accepted tokens per unit of cost: a wide, deep tree for a single user, short chains under heavy load.\n- A cheaper LM head for the drafter. The drafter’s vocabulary projection used to be most of its cost. A low-rank head first shortlists candidates from the full vocabulary, then the full head scores only those exactly. This cuts the draft’s cost by more than 40% without truncating the vocabulary.\n- A small drafter. One transformer layer, so it fits next to the model with little memory, from data-center GPUs down to edge devices.\n\n...\n\n## Day 0 on AMD Instinct GPUs\n\nEAGLE-4 runs on the MI355X GPU with the same checkpoint and the same launch flags as elsewhere:\n\nTo make it fast on day 0, we measured EAGLE-Harness’s cost tables on the MI355X GPU, so tree sizes fit this GPU; added tree verification for Qwen3.8’s linear-attention (Gated DeltaNet) layers: a guess tree is checked in one pass, and only the accepted branch’s state is kept; checked losslessness: every output token matches plain decoding, up to BF16 rounding at near-ties.\n\n#### Results\n\nQwen3.8-27B, BF16 weights, one MI355X GPU, SPEED-Bench (the EAGLE-4 paper’s benchmark: thinking on, greedy).\n\nConcurrent conversations\n\n1\n\n4\n\n16\n\n32\n\nPlain decoding (SGLang)\n\n82\n\n292\n\n872\n\n1,285\n\nBuilt-in MTP (SGLang)\n\n178\n\n617\n\n1,743\n\n2,551\n\nEAGLE-4, SGLang\n\n289\n\n941\n\n2,167\n\n2,784\n\nEAGLE-4, ATOM\n\n309\n\n976\n\n2,309\n\n3,243\n\nFigure2: EAGLE-4 against load\n\n- One request: EAGLE-4 gets ~4.7 tokens accepted per check, against ~2.9 for the built-in MTP. That is where the 1.6x comes from.\n- Under load: EAGLE-4 shortens its guesses as the GPU fills up, so it stays ahead of MTP at 32 conversations.\n- More GPUs: with tensor parallelism, one request reaches 403 tok/s on two MI355X GPUs (ATOM) and 463-489 on four (SGLang / ATOM).\n\n#### Four GPUs\n\nTensor parallel across four MI355X GPUs, same benchmark:\n\nFigure 3: EAGLE-4 on four GPUs\n\nConcurrent Conversations\n\n4\n\n16\n\n32\n\nPlain decoding (SGLang)\n\n156\n\n539\n\n1,655\n\n2,331\n\nBuilt-in MTP (SGLang)\n\n303\n\n1,036\n\n2,711\n\n3,916\n\nEAGLE-4, SGLang\n\n463\n\n1,360\n\n3,339\n\n4,474\n\nEAGLE-4, ATOM\n\n489\n\n1,347\n\n3,381\n\n4,796\n\nWith SGLang, EAGLE-4 is 3.0x plain decoding and 1.5x MTP for one request on four GPUs, and still 1.9x and 1.14x at 32 conversations.",
       "signal_score": 11.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -160,12 +173,12 @@
       }
     },
     {
-      "id": "77008e3ac4f9",
+      "id": "916717af7e82",
       "source": "exa_news",
-      "title": "TorchTPU is now open source: Run native PyTorch on TPUs | Google Cloud Blog",
-      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus",
+      "title": "Muse Spark Open on Fireworks: Meta’s Open Weights Model, Available on US Serverless",
+      "url": "https://fireworks.ai/blog/meta-muse-spark-open",
       "published_at": "2026-10-20T00:00:00.000Z",
-      "excerpt": "TorchTPU is now open source: Run native PyTorch on TPUs | Google Cloud Blog\n\nOctober 20, 2026\n\n##### Mark Lohmeyer\n\n##### Bill Jia\n\nVice President, Engineering\n\nToday at PyTorch Conference 2026, we announced a range of new products and integrations designed to help you run PyTorch effectively on Google Cloud or in your own infrastructure. Notably, TorchTPU, our native PyTorch stack for Google TPUs, is now available as open source on GitHub. With TorchTPU, TPUs join GPUs and CPUs as a native option for PyTorch. You can now train, serve, and deploy models on TPUs using the tools you already rely on, including vLLM, SGLang, llm-d, TorchTitan, Ray, TorchRec, Hugging Face, LiteRT. Ultimately, this provides our customers choice across a broad range of workload-optimized computing options including TPUs, GPUs, and CPUs, with a consistent, open software and operational model across the full portfolio.",
+      "excerpt": "Muse Spark Open on Fireworks: Meta’s Open Weights Model, Available on US Serverless\n\n# Muse Spark Open on Fireworks: Meta’s open weights wodel, available on US serverless\n\nPUBLISHED 10/20/2026\n\nMuse Spark Open, an open weights model from Meta, is available Day-0 on Fireworks. It's an 816B-parameter mixture-of-experts model with 42B parameters active per token and a 1M-token context window, built for long-horizon coding and agent work that has to stay coherent across very long sessions.\n\nIt’s one of the most capable US open weights model to date, and the strongest open weights model we’ve seen for regulated professional work. It ranks first on Vals AI’s leaderboard for Harvey’s Legal Agent Benchmark, with nearly 4x the pass rate of Claude Opus 5. On Rogo’s Big Finance Bench, it beat Claude Opus 5.5 at every difficulty level and edged out GPT-6 Astra on the hardest tasks.\n\nMuse Spark Open was trained and developed in the US, and Fireworks runs it with Zero Data Retention by default. Try it today on serverless, running on US-only capacity with no US premium. Then move to reserved throughput for production and fine-tune it with serverless LoRA training.\n\n...\n\n## Muse Spark Open outperforms Claude Opus on regulated work\n\nMuse Spark Open does its best work where accuracy is paramount, such as legal, finance, and clinical tasks. These results come from independent evaluators and our Specialized Intelligence Index, where every model runs on the same harness:\n\n- •#1 on Harvey’s egal Agent Benchmark: On Vals AI’s leaderboard for completing legal work with files and tools, Muse Spark Open ranks first of 75 models at 25.4%, nearly 4x Claude Opus 5 (6.7%).\n- • Ahead of Claude Opus 5.5 on Rogo’s Big Finance Bench: In Fireworks’ Specialized Intelligence Index runs, Muse Spark Open beat Claude Opus 5.5 at every difficulty level. On the hardest tasks, it edged out GPT-6 Astra (17.3% vs. 16.5%) and scored more than 2.5x Opus 5.5 (6.6%) (Figure 1).\n- • Top three on Finance Agent: On Vals AI’s Finance Agent v2, it scored 60.6%, within a point of Gemini 3.8 Flash at about 60% lower cost per test.\n- • Clinical documentation: It scored 90.1% on Vals MedScribe, within a point of Claude Opus 5 (91.0%), at 75-83% lower token prices.\n\nThird-party results from Vals AI and Artificial Analysis in this post were measured on Meta’s API release of this model.\n\n...\n\n## How Muse Spark Open scores on standard benchmarks\n\nMuse Spark Open holds its own on standard public benchmarks:\n\n- • Fewer hallucinations: On Artificial Analysis’ AA-Omniscience, it has a 33% hallucination rate, lower than Claude Opus 5.5 (59%) and GPT-6 Astra (51%), because it declines to answer when unsure instead of guessing.\n- • Agentic coding: In Meta's evaluations, it scores 82.9% on Terminal-Bench 2.1, ahead of GPT-5.6 Terra and Grok 4.5 (Figure 2).\n\n> Muse Spark Open represents a step change for Western open-source models, with particularly strong instruction following in our early evaluations. We're excited to build on that foundation through post-training for the complex workflows we power at Decagon - Decagon Labs\n\n...\n\nFigure 2: Agentic coding benchmarks reported by Meta. Each model was evaluated in its own agent harness.\n\nBefore opening the endpoint, we ran the final open weights through our launch validation suite on our production serving stack. Muse Spark Open scored 91.1% on AIME26, 89.7% on GPQA Diamond, and 84.3% on SWE-bench Verified, and stayed above 80% on image understanding with OCRBench and MMMU Pro (Figure 3). As a check, we also ran the same weights on SGLang, a widely used open-source inference engine, and the scores matched. The model you call on Fireworks performs the way Meta built it.\n\n...\n\n## Here is how you can start building today:\n\nMuse Spark Open is available on our serverless API today on US-only capacity, with no US premium. See the Muse Spark Open model page for current pricing.",
       "signal_score": 10.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -186,25 +199,12 @@
       }
     },
     {
-      "id": "hn-50170021",
-      "source": "hacker_news",
-      "title": "Claude designed protein binders against scorpion neurotoxins",
-      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
-      "published_at": "2026-10-20T17:48:29+00:00",
-      "excerpt": "Hacker News: 8 points and 1 comments.",
-      "signal_score": 9.5,
-      "community_metrics": {
-        "points": 8,
-        "comments": 1
-      }
-    },
-    {
-      "id": "b0d37a483429",
+      "id": "36239401256c",
       "source": "exa_news",
-      "title": "Inception Releases Mercury 3 Diffusion LLM at 1,068 Tokens per Second - MarkTechPost",
-      "url": "https://www.marktechpost.com/2026/10/19/inception-mercury-3-diffusion-llm",
-      "published_at": "2026-10-20T00:00:00.000Z",
-      "excerpt": "# Inception Releases Mercury 3 Diffusion LLM at 1,068 Tokens per Second\n\nBy\n\nJean-marc Mommessin\n\nOctober 19, 2026\n\nInception has released Mercury 3, the newest version of its diffusion language model. Mercury 3 is a diffusion LLM from Inception that writes answers in parallel, not token by token. Inception reports 1,068 tokens per second on NVIDIA GPUs and a 1M-token context window. On Inception’s own benchmark table, it leads GPT-6 Luna and Claude Haiku 5.5 on 8 of 12 tests. For developers building agents, voice bots and search tools, this is a speed-first model with competitive scores.\n\n...\n\n## How does Mercury 3 perform on benchmarks?\n\nAll scores below come from Inception’s table. Every model ran at medium settings.\n\nMercury 3 posts its largest gains on instruction following and agentic coding. IFBench reaches 76.84, 15 points above GPT-6 Luna. SWE-Bench Atlas reaches 51.08, against 33.33 for Luna and 32.26 for Haiku 5.5. GPQA Diamond lands at 89.23.\n\nThe losses matter too. Haiku 5.5 wins DeepSWE v1 (51.62 vs 46.31) and MRCR v2 (78.40 vs 75.50). GPT-6 Luna edges ahead on AA-Omniscience-Public (46.94 vs 46.44) and AA-LCR v1.1 (78.30 vs 77.67). Long-context retrieval and longer coding tasks remain the weak spots.",
+      "title": "llm-d 1.0 hardens open-source AI inference for production - IBM Research",
+      "url": "https://research.ibm.com/blog/llmd-1-0-is-ready-for-production-inference-serving",
+      "published_at": "2026-10-20T12:00:00.000Z",
+      "excerpt": "# llm-d 1.0 hardens open-source AI inference for production - IBM Research\n\nAuthor: Peter Hess\nPublished: 2026-10-20T12:00:00Z\nSource: research.ibm.com\nLanguage: en",
       "signal_score": 9.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -212,12 +212,12 @@
       }
     },
     {
-      "id": "b46a071ce209",
+      "id": "46b0d0d79cb8",
       "source": "exa_news",
-      "title": "EmbeddingGemma 2 Expands Beyond Text to Support Code, Images, Video, and Audio - InfoQ",
-      "url": "https://www.infoq.com/news/2026/10/embeddinggemma-2-multimodal",
-      "published_at": "2026-10-19T00:00:00.000Z",
-      "excerpt": "Oct 19, 2026 2 min read \n\nby\n\n- Sergio De Simone \n\nBased on Gemma 4 and released under the Apache 2.0 license, Google's EmbeddingGemma 2 is a compact, open-weight, multimodal embedding model designed to make semantic search and retrieval-augmented generation (RAG) more efficient while optimizing performance for on-device deployment.\n\n> Designed to run on consumer hardware such as mobile devices and laptops, EmbeddingGemma 2 delivers low-latency semantic representations for on-device applications, like search, retrieval-augmented generation (RAG), classification, and clustering.\n\nThanks to its multimodal capabilities, EmbeddingGemma 2 supports a wide range of retrieval tasks, including finding relevant documents, screenshots, and recordings in response to a query, searching source code using natural language, and retrieving video content based on textual descriptions.\n\nEmbeddingGemma 2's key feature, Google says, is its ability to represent text, code, images, video, and audio in a unified 768-dimensional embedding space. This enables developers to build retrieval systems that search across different media types without maintaining separate, incompatible embedding spaces for different media types.\n\n> Despite coming from different modalities, the embeddings generated by EmbeddingGemma 2 occupy the same dimensional space and can be compared on their semantic similarity.\n\nThe model allows developers to load only the encoders required for their applications, scaling from 270 million parameters for text and code to 740 million for full multimodal support. According to Google, the model \"significantly outperforms EmbeddingGemma 1 on code search and technical retrieval, making it ideal for local codebase indexing and agentic code search\".\n\n...\n\nEmbeddingGemma 2 supports Matryoshka Representation Learning (MRL), which allows embeddings to be truncated into shorter, unit-length vectors, reducing storage requirements. For example, storing a million 768-dimensional vectors at bfloat16 precision takes roughly 1.5 GB of memory, while truncating them to 128 dimensions requires just 250 MB, bringing a sixfold reduction. However, this implies a retrieval quality trade-off. Google therefore recommends using truncation only when storage or search speed require it. At 128 dimensions, the model retains approximately 90% of quality with text, but performance drops to around 75% for image, video, and speech retrieval.\n\n...\n\nEmbeddingGemma was introduced last year with a focus on \"offline and privacy-sensitive scenarios, such as searching across personal files locally, running mobile RAG pipelines with Gemma 3n, or building domain-specific chatbots\". EmbeddingGemma 2 is available on Hugging Face.",
+      "title": "RuVector: Self-Learning Vector Database for AI Agent Memory",
+      "url": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/cognitum-one-launches-commercial-ruvector-the-self-learning-datab-1238912",
+      "published_at": "2026-10-20T00:00:00.000Z",
+      "excerpt": "# Cognitum One Launches Commercial RuVector, the Self-Learning Database Giving AI Agents Memory That Persists, Connects and Improves\n\nTuesday, 20 October 2026 09:50 AM\n\n#### Product Announcements\n\nThe open-source Rust engine combines vector search, graph relationships and self-learning memory, now backed by Cognitum One commercial licensing, enterprise support and deployment services.\n\nSAN FRANCISCO, CA / ACCESS Newswire / October 20, 2026 / AI agents forget. Each session starts from scratch, context is lost between tasks, and most vector databases store embeddings without recording how ideas connect or which answers proved useful. Cognitum One ™, Inc. (cognitum.one) today launched RuVector ™ commercially, adding licensing, enterprise support and deployment services to the open-source project. RuVector is an open-source Rust engine that combines vector search, graph relationships and self-learning memory for AI agents. It runs in PostgreSQL, in the browser and at the edge, so memory can sit wherever an organization's data and agents already are.\n\nRuVector has a large developer base behind it: more than 500,000 downloads a month across its npm and crates.io packages as of September 30, 2026, plus more than 4,400 GitHub stars and 580 forks. Within Cognitum One's platform, the roles are distinct. Ruflo coordinates teams of agents, ruOS gives them governed computers, and RuVector is what they remember.\n\n...\n\nWhat RuVector Does\n\n- Search and relationships in one engine. Fast vector search (HNSW indexing with SIMD acceleration, sub-millisecond queries) works alongside a Cypher-compatible knowledge graph. An agent can find similar material and follow how facts relate without a second database.\n- Improves retrieval from explicitly recorded feedback. When teams record which results helped, SONA updates lightweight LoRA adapters, and EWC++ consolidation protects earlier learning. Reads alone never change learned weights. Adapter learning is separate from index tuning and ranking settings, which teams control directly.\n- Works inside PostgreSQL. The ruvector-postgres extension is pgvector-compatible and adds 143 SQL functions for vector, graph and hybrid search inside an existing database. Teams should confirm compatibility for their specific pgvector workloads; full migration details are in the technical guide.\n- Signed, portable memory. The RVF file format packages vectors, indexes and metadata in a single file with copy-on-write branching and SHAKE256 witness chains, a tamper-evident record of every change. The same memory runs on servers, in WebAssembly in the browser and on edge devices, and running locally avoids hosted vector-service fees.\n\n...\n\nWhy RuVector Stands Apart\n\nRuVector extends conventional retrieval-augmented generation (RAG) by combining similarity search with graph relationships, persistent agent memory and learning from explicitly recorded feedback. It brings these capabilities together in one Rust engine for AI agents, RAG and intelligence workflows.\n\n- It learns instead of just storing. Traditional vector databases are passive storage. RuVector adds a graph neural network layer between initial search and final results that strengthens frequently used paths, and Cognitum One reports accuracy gains of 10 to 30 percent from usage feedback. SONA applies continuous LoRA micro-updates on a standard CPU, with Elastic Weight Consolidation protecting earlier learning from catastrophic forgetting.\n- A tech stack in a box. One engine replaces several systems: HNSW vector search, a graph engine with Cypher queries and hyperedges, and ruvllm, a built-in local runtime that runs language models and generates embeddings on-device with CUDA and Metal acceleration. An RVF file can bundle data, models and graph structures into a single artifact that boots a microkernel in milliseconds, making RuVector work almost like an operating system for agents at the edge.\n- Performance built in Rust. Production Rust with SIMD (AVX-512 and NEON) delivers search latency as low as 61 microseconds, which Cognitum One's benchmarks put at 30 to 800 times faster than typical vector databases, and more than 52,000 inserts per second on commodity hardware.\n- A fraction of the memory. RuVector needs about 200 MB of memory per million vectors, compared with the 1 to 3 GB typical of other vector databases. Automated RaBitQ and product quantization compress data 2 to 32 times, so demanding workloads run on low-cost CPUs without GPUs.\n- Zero-config, everywhere. A single npm install ruvector detects the system and uses native Rust bindings, or falls back to WebAssembly for browsers and iOS. The PostgreSQL extension brings the same self-learning search to existing relational workflows.\n\n...\n\nAvailability\n\nRuVector is available today. The core project remains open source under the MIT license. A Cognitum One commercial license adds a contract with enterprise support, deployment and configuration services, upgrade and maintenance commitments, and deployment with Ruflo ™ and ruOS ™ on infrastructure the customer controls. Model and infrastructure costs still apply.\n\nCognitum One recommends starting with one memory store and one agent, measuring retrieval quality on real queries, and adding graph, feedback learning and RVF features as each one earns its place. Installation commands, benchmarks and the full feature inventory are in the RuVector technical guide: github.com/ruvnet/ruvector.",
       "signal_score": 9.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -225,79 +225,79 @@
       }
     },
     {
-      "id": "1d516ecf9825",
+      "id": "77008e3ac4f9",
       "source": "exa_news",
-      "title": "MiniMax's new M3.1 Flash beats DeepSeek and Opus 5 on a key business benchmark at lower cost — but with a high hallucination rate",
-      "url": "https://venturebeat.com/technology/minimaxs-new-m3-1-flash-beats-deepseek-and-opus-5-on-a-key-business-benchmark-at-lower-cost-but-with-a-high-hallucination-rate",
-      "published_at": "2026-10-19T19:00:00.000Z",
-      "excerpt": "# MiniMax's new M3.1 Flash beats DeepSeek and Opus 5 on a key business benchmark at lower cost — but with a high hallucination rate\n\nCarl Franzen\n\n 12:38 pm, PT, October 19, 2026 \n\nVentureBeat made with OpenAI ChatGPT-Images-2.5\n\nCopy link Share on LinkedIn Share on X Share on Facebook\n\nChinese artificial intelligence company MiniMax has released M3.1 Flash, a new AI model designed to handle complex enterprise workflows, software development and computer-use tasks at dramatically lower costs than many competing frontier models — including the popular Chinese rival DeepSeek during peak hours. \n\nMiniMax says its new model operates nearly 3X faster than its predecessor while reducing overall usage costs for AI agents by 70%. We’ll dig more into how teams are cutting context and token costs at VentureBeat’s Agentic Infrastructure Stack Summit in San Francisco on October 28.\n\nBut the more interesting evidence comes from independent testing: Artificial Analysis has awarded M3.1 Flash a score of 42 on its Intelligence Index, up 13 points from the previous MiniMax M3, with a per-task evaluation cost less than half that of its predecessor.\n\nThat puts M3.1 Flash on par with Z.ai's GLM-5.3 Flash, just ahead of Google's Gemini 3.8 Flash, and within striking distance of DeepSeek V4.1 Flash-1017 — another new, inexpensive Chinese AI model — which scores 45.\n\nThere is, however, an important limitation: Artificial Analysis also found that while M3.1 Flash answered more than half of its factual knowledge questions correctly, it demonstrated an exceptionally high tendency to generate incorrect answers rather than acknowledge uncertainty.\n\nThe results underscore both the growing competitiveness of inexpensive Chinese AI models and the trade-offs enterprises must consider when deploying them for tasks",
-      "signal_score": 8.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 7
-      }
-    },
-    {
-      "id": "af597b09241f",
-      "source": "exa_news",
-      "title": "清华团队开源智能体操作系统PilotDeck 2.0，复杂任务成本降至约六分之一",
-      "url": "https://ai123.com/news/15546",
-      "published_at": "2026-10-17T00:00:00.000Z",
-      "excerpt": "清华团队开源智能体操作系统PilotDeck 2.0，复杂任务成本降至约六分之一\n\n2026-10-17 20:16 最后更新于 2026-10-20 23:06 AI123\n\n# 清华团队开源智能体操作系统PilotDeck 2.0，复杂任务成本降至约六分之一\n\n清华大学THUNLP实验室联合面壁智能、OpenBMB等团队正式开源智能体操作系统PilotDeck 2.0。该系统以WorkSpace（工作舱）为基本单位，为不同任务提供独立的文件系统、记忆库和技能集，实现文件、记忆与任务的隔离，减少Agent执行任务时的上下文污染与记忆串台。\n\nPilotDeck 2.0将记忆管理做成“白盒化”，用户可查看记忆生成、抽取、存储到调用的完整链路，并支持手动修改、删除或固定重要信息。系统内置Dream模式，在Agent空闲时自动对交互记忆进行归纳、提炼与去重，整理出错时可一键回滚。Always-on常驻执行模式允许Agent在用户关闭聊天窗口后继续后台推进长周期监控与执行任务，并生成进展报告。\n\n该系统原生支持MCP（模型上下文协议），在Web界面、命令行CLI及企业微信、飞书等IM生态中保持后端逻辑一致，便于开发者扩展工具与技能。\n\n在成本控制方面，PilotDeck通过Smart Routing智能路由进行任务难度识别与分层编排：复杂规划决策由强模型负责，底层执行、润色等交由轻量模型处理。在7个高难度复杂任务对比测试中，采用主模型Sonnet 4.6搭配子模型MiniMax-M2.7的“主强子弱”架构，综合得分高于单体顶配模型，成本约为后者的六分之一。在Workbuddy Bench评测中，PilotDeck使用Qwen3.6-35B-A3B得分79.1，优于Claude Code的77.3。\n\nPilotDeck采用AGPL-3.0开源许可证，支持macOS、Linux和Windows，并提供Docker部署方式。",
-      "signal_score": 8.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 7
-      }
-    },
-    {
-      "id": "b4ed2018d867",
-      "source": "exa_news",
-      "title": "DeepSeek open-sources DeepInfer, the engine that runs its AI models",
-      "url": "https://thenextweb.com/news/deepseek-deepinfer-open-source-inference-engine",
+      "title": "TorchTPU is now open source: Run native PyTorch on TPUs | Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus",
       "published_at": "2026-10-20T00:00:00.000Z",
-      "excerpt": "## What is in the release\n\nDeepInfer bundles optimised code for DeepSeek’s models with ways to split the work across many chips. It also includes speculative decoding, a technique that drafts several tokens ahead and checks them in one pass. Other features keep outputs consistent from run to run and force answers into set formats, according to the GitHub page.\n\nIt runs on two kinds of hardware: Nvidia’s SM100 data-centre GPUs and Huawei’s Ascend 950 chips. DeepSeek said code for future models and further improvements will land in the same place.\n\nThe release is not a complete service on its own. It leaves out a cache system, the split between processing prompts and generating answers, and load balancing across machines, the GitHub page says. DeepSeek also released deepseek-recipe, which matches how its official API turns text into tokens and back.\n\n...\n\nDeepInfer was first built mainly on vLLM, a widely used open-source inference engine, DeepSeek says. It also drew on SGLang and Nvidia’s TensorRT-LLM.\n\nThe vLLM project thanked DeepSeek on X for crediting the open-source community. It said it would keep improving its own support for V4.1-Flash with ideas from DeepInfer.\n\nDeepSeek measured its published benchmarks on four SM100 GPUs for processing prompts and 64 for generating output. They are the company’s own figures. There is no independent benchmarking of DeepInfer’s gains yet, Bloomberg’s Saritha Rai reported.",
-      "signal_score": 7.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 8
-      }
-    },
-    {
-      "id": "cf44d0b8794b",
-      "source": "exa_news",
-      "title": "Vercel Built a Durable Agent State Stack. The Reference App Is Open-Source and Running on AI Gateway.",
-      "url": "https://tech.yahoo.com/ai/gemini/articles/vercel-built-durable-agent-state-121143095.html",
-      "published_at": "2026-10-20T00:00:00.000Z",
-      "excerpt": "To address these constraints, Vercel is pivoting from ephemeral AI interactions toward a durable agent infrastructure stack. The objective is to standardize the lifecycle of agents that must operate over hours or days rather than seconds. By enforcing a clear separation of concerns—agent logic, execution environment, and persistence layer—the architecture moves developers away from stateless request-response patterns. Instead, it promotes stateful, event-driven systems capable of surviving the inherent instability of distributed computing.\n\n...\n\nAt the center of this stack is fx0, an open-source, lightweight design agent released under the Apache-2.0 license that currently holds 228 stars. It serves as a reference implementation for the libfx library, which provides the core createFxAgent() and createFxEngine() APIs. The durability model is built on Vercel's World, a storage layer behind Vercel Workflow, where sessions are maintained. Every turn is backed by Vercel Queues, ensuring that a turn continues even if the underlying function dies. To manage resources, there is an 800-second maximum duration per invocation, with libfx programmed to stop 30 seconds before the limit to queue a continuation. Furthermore, a 64-step budget per turn is tracked in Redis to prevent subagents from inflating costs, and crash recovery is designed to take approximately 13 minutes.\n\n...\n\nThe deeper issue is how these agents interact with data over time. Announced on October 15, 2026, at Vercel Ship 2026, Vercel Drives provides persistent file storage that survives sandbox shutdowns. Drives can be mounted by new sandboxes, forked for parallel exploration, or shared read-only across multiple agents. By integrating this with the AI Gateway, which handles model call billing through OAuth tokens or server trial keys, Vercel is creating a unified state management layer. This infrastructure complements other recent announcements, such as the eve framework for persistent memory, Vercel Connect, and the beta release of MCP Events.\n\n...\n\nFor infrastructure builders and CTOs, this transition offers a path to reduce the complexity of multi-step agents. By offloading state persistence and recovery to the platform, developers can focus on agent logic rather than building custom backstops for function failures. However, this move also introduces new considerations. The reliance on a proprietary stack raises questions about vendor lock-in and the long-term interoperability of these agents with non-Vercel ecosystems. Additionally, as agent-triggered deployments continue to scale, the platform must prove it can maintain performance and reliability at significantly higher volumes than current levels.",
-      "signal_score": 7.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 8
-      }
-    },
-    {
-      "id": "b12de104ffc4",
-      "source": "exa_news",
-      "title": "Arm Community",
-      "url": "https://developer.arm.com/community/arm-community-blogs/b/ai-blog/posts/bringing-executorch-to-arm-cortex-m-cpus",
-      "published_at": "2026-10-19T00:00:00.000Z",
-      "excerpt": "October 19, 2026\n\n# Bringing ExecuTorch to Arm Cortex-M CPUs\n\nLearn how ExecuTorch brings PyTorch deployment to Arm Cortex-M CPUs with CMSIS-NN acceleration, low memory use, and support for embedded ML workflow today\n\n...\n\nExecuTorch was designed to eliminate this gap. Arm MCU support has been available through the Ethos-U NPU, and the Cortex-M backend extends it to Cortex-M CPUs, so a model can run on parts with or without an accelerator. The trained PyTorch model is exported, quantized and lowered for the device within the same stack that serves models on mobile, desktop and server.\n\n...\n\n## The Cortex-M backend\n\nFigure 1: ExecuTorch model compilation and deployment workflow for Arm Cortex-M CPUs.\n\nThe ExecuTorch Cortex-M backend replaces standard PyTorch operators with CMSIS-NN-backed custom operators through ahead-of-time compiler passes. At inference time, these operators call directly into Arm's CMSIS-NN library, an open-source collection of optimized neural network kernels for Cortex-M processors.\n\nKey properties:\n\n- CMSIS-NN accelerated. Quantized operations (linear, conv, add, mul, softmax, activations, etc.) are replaced with optimized implementations that call CMSIS-NN functions and additional optimized Cortex-M implementations directly.\n- Target-aware compilation. The CPU variant (M0 through M85) and ISA tier are specified at compile time, so the correct CMSIS-NN backend is selected, eliminating runtime dispatch overhead.\n- Purpose-built quantizer. Produces INT8 quantized graphs matching the data layout requirements of CMSIS-NN kernels, using PyTorch's PT2E quantization framework.\n- Single compiler toolchain. The Cortex-M lowering path operates directly on the ExecuTorch edge dialect, keeping the compilation pipeline simple and debuggable.\n\n...\n\nMany Cortex-M MCUs pair the CPU with an Arm Ethos-U NPU such as the U55, U65, or U85. ExecuTorch's EthosUPartitioner delegates supported operations to the NPU via the Vela compiler, and operations left outside the partition run on the Cortex-M CPU within the same graph.\n\nThe Cortex-M passes run after Ethos-U partitioning and reuse the quantization parameters already in the graph. This allows a model quantized with EthosUQuantizer to use CMSIS-NN for CPU operations whose quantization, layout and shape constraints meet the Cortex-M backend requirements. Otherwise they fall back to ExecuTorch's portable kernels, which are functional but not accelerated.\n\n...\n\nIn our measurements, ExecuTorch achieves 2.3% to 10.6% lower inference latency on three of the four models. Autoencoder latency is nearly identical, with ExecuTorch taking 0.27% longer. Memory is where the two frameworks diverge more sharply. The measured model/operator/core footprint is up to 21.1% less flash across all four models, and less RAM on three of the four, including 46.1% less on the Autoencoder. ResNet-8 is the exception, using 1.2% more RAM than TFLM.",
-      "signal_score": 7.0,
+      "excerpt": "TorchTPU is now open source: Run native PyTorch on TPUs | Google Cloud Blog\n\nOctober 20, 2026\n\n##### Mark Lohmeyer\n\n##### Bill Jia\n\nVice President, Engineering\n\nToday at PyTorch Conference 2026, we announced a range of new products and integrations designed to help you run PyTorch effectively on Google Cloud or in your own infrastructure. Notably, TorchTPU, our native PyTorch stack for Google TPUs, is now available as open source on GitHub. With TorchTPU, TPUs join GPUs and CPUs as a native option for PyTorch. You can now train, serve, and deploy models on TPUs using the tools you already rely on, including vLLM, SGLang, llm-d, TorchTitan, Ray, TorchRec, Hugging Face, LiteRT. Ultimately, this provides our customers choice across a broad range of workload-optimized computing options including TPUs, GPUs, and CPUs, with a consistent, open software and operational model across the full portfolio.\n\n...\n\n### Optimizing inference\n\nAs reasoning and agentic models scale, inference cost and latency become the primary bottlenecks in production. We’ve integrated TorchTPU into widely used open-source serving engines and paired them with Kubernetes-native fleet routing across TPUs and GPUs to help you optimize throughput per dollar.\n\nThis foundation allows developers to scale workloads across diverse hardware while minimizing the friction of platform-specific tuning. To bring these framework-level enhancements to life in production, we have collaborated with leading open-source communities and industry partners. In the sections below, we explore how these partnerships are driving breakthrough efficiency across high-throughput serving with vLLM, structured agentic execution with SGLang, and large-scale distributed fleet orchestration with llm-d.\n\n...\n\n#### vLLM: High-throughput serving and memory efficiency\n\nDeveloped in partnership with Inferact, the native PyTorch vLLM backend on TorchTPU enables developers to deploy open-weight models directly on TPUs with optimized, production-ready serving features and custom Pallas kernels. This integration supports continuous batching, quantization, and multi-chip parallelism on TPU hardware, while preserving upstream worker models, schedulers, and API servers to improve cost-performance ratios, without requiring changes to existing inference stacks.\n\n...\n\n#### llm-d for distributed LLM inference\n\nTo run inference engines across large fleets, we are releasing llm-d 1.0 with Red Hat, IBM, and a community of more than 500 contributors and 25 organizations. As a Cloud Native Computing Foundation (CNCF) Sandbox project, llm-d connects two open-source communities: PyTorch, where vLLM and SGLang serve models, and Kubernetes, where distributed systems run and scale in production. The llm-d router sends each request to the replica that already holds its context, using prefix-cache-aware routing. It also splits compute-heavy prefill from memory-heavy decode. llm-d 1.0 makes that ready for production with multi-tenant flow control, router high availability, stable v1 APIs, and session-aware routing for agents. On Google Kubernetes Engine (GKE), you can have the choice of running on either GPUs or Google TPUs, with a common llm-d endpoint, and choose the hardware that fits each workload.",
+      "signal_score": 9.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
+        "rank": 6
+      }
+    },
+    {
+      "id": "4150fc8c69ff",
+      "source": "exa_news",
+      "title": "DeepInfer Explained: DeepSeek’s Open Inference Engine, Benchmarks, Specs, and Costs",
+      "url": "https://kingy.ai/blog/deepinfer-deepseek-inference-engine",
+      "published_at": "2026-10-20T15:00:00.000Z",
+      "excerpt": "Skip to main content\n\nDeepSeek has opened the inference engine behind V4.1-Flash. Its benchmarks show why large-scale serving needs specialized software, while its deployment notes reveal how much infrastructure still sits around the engine.\n\nDeepSeek released DeepInfer on October 20, 2026, giving developers access to the inference framework it says powers its production services. The practical significance is access to the engineering that turns model weights into a service: GPU kernels, expert distribution, speculative decoding, scheduling, and output constraints.\n\nThe release deserves attention from AI infrastructure teams. It also needs careful reading. The public package provides offline inference, supports DeepSeek-V4.1-Flash on specified NVIDIA and Huawei accelerators, and leaves several service-level components for operators to build. Downloading it does not reproduce DeepSeek’s hosted platform.\n\nOur assessment is that DeepInfer’s greatest immediate value is the combination of usable engine code and unusually specific deployment guidance. The published performance curves are useful reference points. They are insufficient evidence for a universal speed advantage, a guaranteed hosting price, or a measured reduction in electricity consumption.\n\n...\n\nDocumented support in the inspected release\n\n| Item | Published specification | Practical implication |\n| --- | --- | --- |\n| Supported model | DeepSeek-V4.1-Flash; default checkpoint DeepSeek-V4.1-Flash-1017 | A targeted DeepSeek engine; other checkpoints need explicit support |\n| Accelerators | NVIDIA SM100 GPUs; Huawei Ascend 950 NPUs | Check the exact accelerator target before planning a deployment |\n| Operating environment | Linux, GCC 13 or newer, Python 3.12 | The documented build targets a Linux infrastructure environment |\n| Platform runtime | CUDA 13 for NVIDIA; CANN 9.2 for Ascend | Backend dependencies differ |\n| Distributed execution | Attention data/context parallelism; MoE expert parallelism and expert load balancing | Engine support and the recommended production topology are separate decisions |\n| Generation features | DSpark, confidence-scheduled verification, asynchronous scheduling, SWA bounded replay, structured outputs | Configuration affects both speed and validation requirements |\n| Reproducibility modes | Batch-invariant inference and deterministic sampling, documented for NVIDIA only | Do not assume equal feature support across backends |\n| Licensing | DeepInfer: Apache-2.0; V4.1-Flash-1017 model weights: MIT | Keep engine, model, and dependency obligations distinct |\n\n...\n\n## What the speed benchmarks show\n\nDeepSeek separates prefill, which processes input, from decode, which emits output. Its main README reports prefill measurements on four SM100 GPUs and decode measurements on 64 SM100 GPUs, each within one scale-up domain. The interconnect and parallel layout are part of those results.\n\nDeepSeek’s prefill chart, reproduced from the Apache-2.0 repository. Four SM100 GPUs, 131,072-token context, 140-token decoder bounded replay. Values discussed below are approximate visual readings.\n\nThe prefill curve rises from roughly 60,000 non-cached input tokens per second per GPU at a 4,096-token batch setting to around 89,000 at 65,536. The corresponding prefill step latency increases from roughly 70 milliseconds to 730 milliseconds. Larger batches improve throughput with diminishing returns and a latency cost.\n\nThese are prefill-step measurements. They do not include every delay a customer experiences before receiving the first token: request admission, tokenization, queueing, cache lookup, network transfer, and other stages can contribute to time to first token. “Non-cached input” also matters because reusing a prefix changes how much new computation a request needs.\n\nDeepSeek’s decode chart. Sixty-four SM100 GPUs, 131,072-token context, fixed nextn=3, and 75% per-token acceptance scaling. The fastest-user and highest-throughput endpoints are different operating points.\n\nThe decode curve shows roughly 325 tokens per second per user and 2,600 output tokens per second per GPU at eight requests per data-parallel rank. At 256 requests per rank, it shows roughly 103 tokens per second per user and 26,000 tokens per second per GPU. Those are approximate chart readings, not raw records. They illustrate a tradeoff: raising aggregate throughput lowers individual generation speed.\n\nDo not combine the best endpoint\n\n...\n\n## Accuracy evaluations: what the reference scores mean\n\nDeepInfer includes a separate offline evaluation workflow. Its stated purpose is to sanity-check that a V4.1 deployment is configured correctly. The reference scores describe model performance under that protocol.\n\nDeepSeek-reported reference evaluations; not independently reproduced by Kingy.ai\n\n| Benchmark | Reference Pass@1 | Evaluation design |\n| --- | --- | --- |\n| AIME 2026 | 99.9% | 30 tasks × 32 samples; mean sample accuracy |\n| GPQA Diamond | 93.4% | 198 tasks × 8 samples; mean sample accuracy |\n| HLE-Full | 42.6% | 2,500 tasks: 2,158 text and 342 image; one sample per task |\n\nThirty-two AIME samples do not turn this into “the model solves a problem if any of 32 attempts succeeds.” The reported Pass@1 averages correctness across samples. That distinction matters when comparing it with best-of-many or Pass@k results.\n\nGeneration writes raw outputs to disk; scoring runs separately. The default scoring path uses an LLM judge. Rule-based scoring is available for AIME and GPQA, while HLE requires the LLM judge in this harness. Complete dataset coverage is a requirement for a valid Pass@1 figure. A paid external judge may add evaluation cost.\n\n...\n\n## The production deployment is much larger than the engine\n\nThe deployment notes recommend small expert-parallel groups for prefill and wide groups of 64–128 GPUs for decode. DeepSeek describes 64 prefill GPUs plus 64 decode GPUs as its smallest efficient deployment unit under the recommended layout. This is an efficiency recommendation for that production design, not a statement that every offline experiment requires 128 GPUs.\n\nThe surrounding cache system is substantial. DeepSeek describes roughly 100 PiB of SSD storage, three-day cache retention for agent traffic, and seven days for chatbot traffic. Its suggested storage server has 20 drives of 30.73 TB each and at least 40 GB/s read and 5 GB/s write throughput. These figures describe its production design and recommendations, rather than dependencies automatically provisioned by the public repository.\n\nWhy devote so much infrastructure to old context? An agent repeatedly reuses instructions, repository content, and conversation history. A cache hit can avoid processing that prefix again. DeepSeek’s design separates storage from compute so a prefill machine can reuse a prefix without being tied to the machine that originally processed it.\n\nThe public README explicitly excludes the complete KV cache system, vision/prefill/decode disaggregation service, and load balancing across data-parallel replicas. The Q&A explains their design but says cache management and load balancing remain coupled to internal infrastructure and are not yet fully open-sourced. Internal retention policies are therefore not built-in guarantees for a fresh DeepInfer deployment.",
+      "signal_score": 8.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 7
+      }
+    },
+    {
+      "id": "b6103640f123",
+      "source": "exa_news",
+      "title": "Reflection Releases Beam, a 501B Open Model for Local AI - Acceledesk",
+      "url": "https://www.acceledesk.com/article/reflection-releases-beam-a-501b-open-model-for-local-ai",
+      "published_at": "2026-10-18T00:00:00.000Z",
+      "excerpt": "Local AI\n\nCreated Sunday, October 18, 2026 by Ben Voss · Acceledesk AI news writer\n\nReflection has released Beam, a 501-billion-parameter open model for coding, reasoning, and AI agents. The model weights are available on Hugging Face under the Apache 2.0 license. Reflection says Beam is also available through its service and a network of launch partners.\n\n...\n\n## 501B Parameters, 23B Active\n\nBeam uses a sparse mixture-of-experts design. It contains about 501 billion total parameters, but activates about 23 billion for each token. This allows each response to use only part of the full network, according to Reflection’s availability announcement and the model card.\n\nBeam is a text-only model with a context window of up to 1 million tokens. Its released versions include BF16, FP8, and NVFP4 formats for different hardware platforms.\n\n...\n\n## Apache License Opens Deployment\n\nThe Apache 2.0 license allows commercial use, modification, and redistribution subject to its terms. That gives organizations more control over deployment and customization than a model available only through a closed hosted service.\n\nReflection says Beam launched with more than 40 partners and integrations, including cloud providers, inference platforms, and open-source projects. The company says developers can download the weights, self-host the model, evaluate it, and connect it to agent systems.\n\n...\n\n## Coding Agents Get New Option\n\nBeam targets software engineering, reasoning, and long-running agent tasks. Its model card lists coding, browsing, tool use, and Model Context Protocol support. Reflection also says Beam was trained for efficient reasoning, using fewer inference-time tokens than comparable open models.\n\nThe model card reports an 81.6% score on SWE-bench Verified for the BF16 version, along with results on several reasoning, coding, and tool-use evaluations. These results are reported by Reflection and displayed in the model card.\n\n...\n\n## Hardware Limits",
+      "signal_score": 8.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 7
+      }
+    },
+    {
+      "id": "2f49b7015c65",
+      "source": "exa_news",
+      "title": "DeepSeek open-sources DeepInfer, the inference framework behind its production services - SiliconANGLE",
+      "url": "https://siliconangle.com/2026/10/20/deepseek-open-sources-deepinfer-the-inference-framework-behind-its-production-services",
+      "published_at": "2026-10-20T23:11:43.000Z",
+      "excerpt": "# DeepSeek open-sources DeepInfer, the inference framework behind its production services - SiliconANGLE\n\nAuthor: Duncan Riley\nPublished: 2026-10-20T23:11:43Z\nSource: siliconangle.com\nLanguage: en",
+      "signal_score": 7.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 8
+      }
+    },
+    {
+      "id": "5d6889922e2f",
+      "source": "exa_news",
+      "title": "Models That Use Tools | Archipelag.io",
+      "url": "https://archipelag.io/news/models-that-use-tools",
+      "published_at": "2026-10-19T00:00:00.000Z",
+      "excerpt": "October 19, 2026 \n\n# Models That Use Tools\n\nArchipelag.io now ships with a chat harness: models on the network can call tools, in the web chat, through the OpenAI-compatible API, from the SDKs and the CLI, and on phone Islands too.\n\n Raffael Schneider · 5 min read\n\nAsk a small language model what 17.5% of 2,340 is and it will answer with total confidence and, often enough, the wrong number. Ask it what day it is and it will guess. Neither is a flaw you can train away in a model that fits on a laptop. What you can do is let it ask for help.\n\nThat’s what shipped this week. Every chat on Archipelag.io can now use tools: the model decides it needs a calculator, a clock or a lookup, says so in a structured way, gets the result back, and only then answers. It works in the web chat, through the API, from the SDKs and the CLI, and on desktop, server and phone Islands alike.\n\n...\n\nThe built-in tools are deliberately plain:\n\n- calculate: arithmetic, through a small expression parser (no `eval`, ever).\n- current_time: the date and time, in UTC or at any UTC offset.\n- search_cargos: looks up which models the network offers, so you can ask the chat which model is best for your task.\n- generate_image: when an image Cargo is available, the chat model can hand off a picture request to it, and the image appears in the conversation.\n\n...\n\n## Your own tools, through the API\n\nThe built-ins are for the web chat. The real point is the API, which speaks the same `tools` and `tool_calls` format as OpenAI’s Chat Completions, streaming included. If your code already talks to an OpenAI-compatible endpoint, you change the base URL and your existing tool definitions just work.\n\nThe Python and JavaScript SDKs (0.2.0) wrap the whole loop. Write a function, mark it as a tool, and the SDK handles the back-and-forth until the model has its answer:\n\n```python\nfrom archipelag import Client, tool\n\n@tool\ndef stock_level(sku: str) -> int:\n    \"\"\"How many units of a product are in the warehouse.\"\"\"\n    return warehouse.count(sku)\n\nclient = Client(api_key=...)\nresult = client.run_agent(\n    [{\"role\": \"user\", \"content\": \"Do we have enough SKU-1142 for an order of 40?\"}],\n    tools=[stock_level],\n)\nprint(result.content)\n\n```\n\nYour function runs on your machine. The Island that runs the model only ever sees the tool’s name, its description, and the result you choose to send back. It never gets your database, your files or your credentials, which matters on a network where the computer doing the thinking belongs to someone else.\n\nThe JavaScript",
+      "signal_score": 7.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
         "rank": 8
       }
     }
   ],
   "candidates": [
     {
-      "id": "candidate-2026-10-21-5",
-      "topic": "AI agent memory as a filesystem",
-      "angle": "ByteDance's OpenViking project, treating agent memory, knowledge, and skills as a virtual filesystem (viking://), simplifying persistent context management for agents.",
-      "audience_pain": "Managing long-term memory, knowledge bases, and tools for AI agents is complex, leading to context window issues, hallucinations, and state management headaches.",
-      "why_now": "Rapid GitHub star growth (40,000 stars).",
-      "hook_seed": "Agent memory is now a filesystem.",
+      "id": "candidate-2026-10-21-6",
+      "topic": "OpenViking: Filesystem for AI agent memory",
+      "angle": "ByteDance's OpenViking treats AI agent memory, knowledge, and skills as a virtual filesystem (viking://), offering a novel and simplified approach to persistent context management.",
+      "audience_pain": "Managing and persisting context, knowledge, and long-term memory for AI agents efficiently and scalably.",
+      "why_now": "OpenViking recently crossed 40,000 GitHub stars, indicating strong community interest in its innovative approach.",
+      "hook_seed": "Your AI agent's memory is now a filesystem.",
       "format": "mechanism_explainer",
       "objective": "share",
       "image_template": "handwritten_poster",
@@ -315,18 +315,19 @@
       "score": 9.0
     },
     {
-      "id": "candidate-2026-10-21-4",
-      "topic": "On-device agentic models",
-      "angle": "Meta's Muse Glimmer 30B, a 4-bit quantized agentic model designed to run the full agentic loop (reasoning, tool use, failure recovery) on a single consumer GPU without cloud.",
-      "audience_pain": "Developers wanting to build and deploy sophisticated AI agents locally on consumer hardware, reducing latency, cost, and reliance on cloud APIs.",
-      "why_now": "Recent release announcement and research paper.",
-      "hook_seed": "Full AI agent runs on your GPU.",
-      "format": "practical_tips",
-      "objective": "follow",
+      "id": "candidate-2026-10-21-1",
+      "topic": "Kubernetes-native distributed LLM inference",
+      "angle": "llm-d 1.0 offers a production-ready open-source stack for distributed LLM inference on Kubernetes, crucial for scaling agentic applications.",
+      "audience_pain": "Struggling to scale LLM inference reliably and efficiently in production, especially for agentic workloads on cloud-native infrastructure.",
+      "why_now": "llm-d 1.0 has reached production readiness, co-founded by Google with Red Hat and IBM, integrating with PyTorch ecosystems like vLLM and SGLang.",
+      "hook_seed": "Production-ready distributed LLM inference is here.",
+      "format": "mechanism_explainer",
+      "objective": "reply",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "c3b07f3c2704",
-        "2ec85bc81387"
+        "e81aff5f7df1",
+        "36239401256c",
+        "77008e3ac4f9"
       ],
       "scores": {
         "trend_strength": 9,
@@ -339,35 +340,61 @@
       "score": 8.83
     },
     {
-      "id": "candidate-2026-10-21-7",
-      "topic": "Agent orchestration for cost savings",
-      "angle": "Tsinghua's open-source `PilotDeck 2.0` agent operating system, using smart routing and tiered model orchestration (strong models for planning, light models for execution) to reduce complex task costs by a factor of six.",
-      "audience_pain": "High operational costs of complex agentic workflows due to frequent calls to expensive frontier models.",
-      "why_now": "Official open-source release, detailed blog post highlighting cost savings and smart routing.",
-      "hook_seed": "Cut AI agent costs by 83%.",
-      "format": "india_cost",
-      "objective": "click",
+      "id": "candidate-2026-10-21-2",
+      "topic": "Native PyTorch support for Google TPUs",
+      "angle": "Google open-sourced TorchTPU, enabling native PyTorch workflows for training and inference on TPUs, extending hardware options for developers.",
+      "audience_pain": "Limited hardware choice or complex setup for running PyTorch models on specialized accelerators like TPUs.",
+      "why_now": "TorchTPU is newly open-sourced at PyTorch Conference 2026, with direct integrations for vLLM, SGLang, and llm-d.",
+      "hook_seed": "PyTorch now runs natively on TPUs.",
+      "format": "practical_tips",
+      "objective": "follow",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "af597b09241f"
+        "hn-50169053",
+        "77008e3ac4f9",
+        "385dd689c6e0",
+        "1ed882ec39a2"
       ],
       "scores": {
         "trend_strength": 9,
         "audience_relevance": 9,
         "practical_value": 9,
         "originality": 8,
-        "conversation_potential": 9,
-        "evidence_strength": 9
+        "conversation_potential": 8,
+        "evidence_strength": 10
       },
       "score": 8.83
     },
     {
-      "id": "candidate-2026-10-21-9",
-      "topic": "On-device multimodal embeddings",
-      "angle": "Google's EmbeddingGemma 2 expands beyond text to support code, images, video, and audio, designed for low-latency on-device semantic search and RAG under Apache 2.0.",
-      "audience_pain": "Developers need compact, efficient multimodal embedding models for on-device applications, enabling robust RAG and search across diverse data types without cloud dependency.",
-      "why_now": "Recent release and detailed blog post.",
-      "hook_seed": "Multimodal embeddings, right on your device.",
+      "id": "candidate-2026-10-21-4",
+      "topic": "On-device agentic model for consumer hardware",
+      "angle": "Meta's Muse Glimmer 30B is an open-source, 4-bit quantized model purpose-built for autonomous agentic tasks on consumer devices, including multi-step reasoning and tool use locally.",
+      "audience_pain": "Running complex AI agents locally without cloud dependency, while maintaining performance and incorporating agentic capabilities.",
+      "why_now": "Muse Glimmer 30B was recently introduced, setting a new standard for on-device agentic performance in its size class.",
+      "hook_seed": "Full AI agents now run on your laptop.",
+      "format": "practical_tips",
+      "objective": "follow",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "2ec85bc81387"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 9,
+        "practical_value": 9,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 9
+      },
+      "score": 8.67
+    },
+    {
+      "id": "candidate-2026-10-21-5",
+      "topic": "Multimodal embeddings for on-device RAG",
+      "angle": "Google's EmbeddingGemma 2 provides compact, open-weight, multimodal embeddings (text, code, images, video, audio) optimized for low-latency on-device RAG and semantic search.",
+      "audience_pain": "Developing multimodal AI applications that require efficient, low-latency semantic search and RAG on consumer hardware.",
+      "why_now": "EmbeddingGemma 2, based on Gemma 4, was recently released under Apache 2.0, expanding multimodal capabilities for on-device deployment.",
+      "hook_seed": "Your phone just got multimodal RAG.",
       "format": "practical_tips",
       "objective": "follow",
       "image_template": "handwritten_poster",
@@ -380,151 +407,127 @@
         "practical_value": 9,
         "originality": 8,
         "conversation_potential": 8,
-        "evidence_strength": 10
+        "evidence_strength": 9
       },
-      "score": 8.83
+      "score": 8.67
     },
     {
-      "id": "candidate-2026-10-21-1",
-      "topic": "PyTorch Native on TPUs",
-      "angle": "Google open-sourcing TorchTPU and its integration with vLLM, SGLang, and llm-d, making TPUs a native option for PyTorch workflows (training, serving, deploying).",
-      "audience_pain": "PyTorch developers wanting to leverage TPUs without significant code changes or framework shifts, improving performance and efficiency for specific workloads.",
-      "why_now": "Multiple recent announcements (TorchTPU open-source, vLLM TorchTPU, llm-d 1.0) all happening on the same day.",
-      "hook_seed": "PyTorch goes native on TPUs.",
-      "format": "mechanism_explainer",
+      "id": "candidate-2026-10-21-10",
+      "topic": "Self-learning vector databases for AI agents",
+      "angle": "Cognitum One's RuVector, an open-source Rust engine, combines vector search, graph relationships, and self-learning to create persistent, improving memory for AI agents, solving the 'agents forget' problem.",
+      "audience_pain": "Building AI agents that can remember, connect ideas, and learn from past interactions to improve performance over time.",
+      "why_now": "RuVector was recently launched commercially, adding enterprise support to its open-source project, highlighting a mature solution for agent memory.",
+      "hook_seed": "Your AI agent will never forget again.",
+      "format": "practical_tips",
+      "objective": "click",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "46b0d0d79cb8"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 9,
+        "practical_value": 9,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 9
+      },
+      "score": 8.67
+    },
+    {
+      "id": "candidate-2026-10-21-9",
+      "topic": "Large open-weight sparse MoE models for agents",
+      "angle": "Meta's Muse Spark Open (816B, 1M context) and Reflection's Beam (501B) demonstrate the emergence of open-weight sparse Mixture-of-Experts models optimized for long-horizon agentic and coding tasks, offering high capability with efficient activation.",
+      "audience_pain": "Deploying highly capable yet efficient large language models for complex agentic workflows, especially those requiring vast context windows.",
+      "why_now": "Both Muse Spark Open and Beam were recently announced, highlighting the trend of large, open-weight MoE models for specialized agentic use cases.",
+      "hook_seed": "New MoE models are transforming agent work.",
+      "format": "hot_take",
       "objective": "follow",
       "image_template": "handwritten_poster",
       "source_ids": [
-        "hn-50169053",
-        "1ed882ec39a2",
-        "77008e3ac4f9"
+        "916717af7e82",
+        "b6103640f123"
       ],
       "scores": {
         "trend_strength": 9,
         "audience_relevance": 9,
         "practical_value": 8,
-        "originality": 7,
+        "originality": 8,
         "conversation_potential": 8,
-        "evidence_strength": 10
+        "evidence_strength": 9
       },
       "score": 8.5
     },
     {
       "id": "candidate-2026-10-21-3",
-      "topic": "Kubernetes-native distributed inference",
-      "angle": "Google, Red Hat, IBM's `llm-d 1.0` reaching production readiness for distributed, Kubernetes-native LLM inference, addressing scaling and reliability for the 'agentic era.'",
-      "audience_pain": "Scaling LLM inference in production, especially with complex agentic workloads, is a major challenge for organizations already using Kubernetes.",
-      "why_now": "Official 1.0 release announcement at PyTorch Conference.",
-      "hook_seed": "Distributed LLM inference, production-ready.",
+      "topic": "DeepInfer: Production-grade LLM inference architecture",
+      "angle": "DeepSeek open-sourced DeepInfer, its production inference engine, showcasing advanced techniques like GPU kernels, expert distribution, and speculative decoding for high-performance serving.",
+      "audience_pain": "Understanding the engineering behind high-performance LLM inference, beyond just model weights, to build robust serving systems.",
+      "why_now": "DeepInfer was just open-sourced, providing a concrete example of a production framework powering a leading LLM (DeepSeek-V4.1-Flash).",
+      "hook_seed": "DeepSeek just revealed its inference secrets.",
       "format": "mechanism_explainer",
-      "objective": "reply",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "e81aff5f7df1",
-        "36239401256c"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 8,
-        "practical_value": 9,
-        "originality": 7,
-        "conversation_potential": 8,
-        "evidence_strength": 10
-      },
-      "score": 8.5
-    },
-    {
-      "id": "candidate-2026-10-21-10",
-      "topic": "Flash models: cost vs. accuracy",
-      "angle": "MiniMax's M3.1 Flash offering dramatically lower costs and faster inference for enterprise tasks, but with a high hallucination rate compared to competitors, highlighting the trade-off.",
-      "audience_pain": "Balancing cost and performance with reliability for enterprise AI applications. Developers need to understand the real-world implications of 'flash' models.",
-      "why_now": "Recent release and detailed analysis including hallucination rates.",
-      "hook_seed": "Cheap LLMs: high speed, high risk?",
-      "format": "hot_take",
-      "objective": "reply",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "1d516ecf9825"
-      ],
-      "scores": {
-        "trend_strength": 8,
-        "audience_relevance": 9,
-        "practical_value": 9,
-        "originality": 7,
-        "conversation_potential": 9,
-        "evidence_strength": 9
-      },
-      "score": 8.5
-    },
-    {
-      "id": "candidate-2026-10-21-8",
-      "topic": "Parallel token generation LLM",
-      "angle": "Inception's Mercury 3, a diffusion LLM generating tokens in parallel at 1,068 tokens per second on NVIDIA GPUs, offering speed-first performance for agents, voice bots, and search.",
-      "audience_pain": "High latency in traditional autoregressive LLMs hinders interactive applications. Developers need faster generation for real-time use cases.",
-      "why_now": "Recent release and benchmark claims.",
-      "hook_seed": "LLM generates 1000+ tokens per second.",
-      "format": "mechanism_explainer",
-      "objective": "reply",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "b0d37a483429"
-      ],
-      "scores": {
-        "trend_strength": 8,
-        "audience_relevance": 8,
-        "practical_value": 7,
-        "originality": 8,
-        "conversation_potential": 8,
-        "evidence_strength": 9
-      },
-      "score": 8.0
-    },
-    {
-      "id": "candidate-2026-10-21-6",
-      "topic": "Ultra-low quantization for edge LLMs",
-      "angle": "`llama.cpp` adding specific Q1_0 and Q2_0 quantization support for Qualcomm Hexagon NPUs, enabling even smaller, more efficient LLMs for on-device inference on Snapdragon devices.",
-      "audience_pain": "Deploying LLMs on highly constrained edge devices (e.g., mobile phones, IoT) requires extreme efficiency and minimal memory footprint.",
-      "why_now": "Recent `llama.cpp` release (`b11716`).",
-      "hook_seed": "Tiny LLMs now on your Snapdragon.",
-      "format": "practical_tips",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "b3cc02e961b3"
-      ],
-      "scores": {
-        "trend_strength": 8,
-        "audience_relevance": 7,
-        "practical_value": 8,
-        "originality": 7,
-        "conversation_potential": 7,
-        "evidence_strength": 10
-      },
-      "score": 7.83
-    },
-    {
-      "id": "candidate-2026-10-21-2",
-      "topic": "DeepInfer high-performance engine",
-      "angle": "DeepSeek open-sourcing its DeepInfer framework for high-performance inference of its models, including speculative decoding and support for Nvidia SM100 and Huawei Ascend 950.",
-      "audience_pain": "Developers using or considering DeepSeek models need optimized inference solutions for production deployment, especially those working with specific hardware.",
-      "why_now": "Hacker News trending with 1947 points and 754 comments, official blog post.",
-      "hook_seed": "DeepSeek's fast inference, open-sourced.",
-      "format": "practical_tips",
       "objective": "share",
       "image_template": "handwritten_poster",
       "source_ids": [
         "hn-50163277",
-        "b4ed2018d867"
+        "4150fc8c69ff",
+        "2f49b7015c65"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 8,
+        "practical_value": 8,
+        "originality": 8,
+        "conversation_potential": 7,
+        "evidence_strength": 10
+      },
+      "score": 8.33
+    },
+    {
+      "id": "candidate-2026-10-21-7",
+      "topic": "Humming: Flexible kernels for quantized inference",
+      "angle": "vLLM and Ant Group open-sourced Humming, a general-purpose kernel library for quantized inference, offering broad device support and flexible quantization schemes for performance.",
+      "audience_pain": "Achieving optimal performance and device compatibility for quantized LLM inference, especially with diverse quantization formats.",
+      "why_now": "Humming was just announced, providing a new, open-source tool for low-level inference optimization, crucial for cost and speed.",
+      "hook_seed": "Quantized inference just got faster, everywhere.",
+      "format": "practical_tips",
+      "objective": "reply",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "1ebbaa4f30df"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 8,
+        "practical_value": 8,
+        "originality": 8,
+        "conversation_potential": 7,
+        "evidence_strength": 9
+      },
+      "score": 8.17
+    },
+    {
+      "id": "candidate-2026-10-21-8",
+      "topic": "EAGLE 4: Speculative decoding on AMD Instinct",
+      "angle": "EAGLE 4, the newest speculative decoding drafter, now runs on AMD Instinct MI355X GPUs from day one, showing significant speed gains (3.5x plain decoding) and scaling performance.",
+      "audience_pain": "Seeking efficient inference solutions on non-NVIDIA hardware, specifically leveraging advanced techniques like speculative decoding on AMD GPUs.",
+      "why_now": "EAGLE 4 was announced to run on AMD Instinct MI355X GPUs from day zero, offering immediate performance benefits.",
+      "hook_seed": "AMD GPUs just got a 3.5x inference boost.",
+      "format": "practical_tips",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "e5a1f88609e0"
       ],
       "scores": {
         "trend_strength": 8,
         "audience_relevance": 7,
         "practical_value": 8,
-        "originality": 6,
+        "originality": 8,
         "conversation_potential": 7,
-        "evidence_strength": 10
+        "evidence_strength": 9
       },
-      "score": 7.67
+      "score": 7.83
     }
   ]
 }
