@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-22 IST
+Last refreshed: 2026-10-23 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- vLLM-Hook MIA: Runtime LLM Control | angle: IBM's vLLM-Hook MIA is a new plugin library for vLLM designed to enable fast runtime monitoring and control over a model's evolving states, crucial for safety and accuracy. | objective: share | score: 9.0 | sources: 6fbfa4c0a557
-- llm-d 1.0: Distributed Inference on Kubernetes | angle: llm-d 1.0 offers a production-ready open-source stack for distributed LLM inference on Kubernetes, crucial for scaling agentic applications. | objective: share | score: 8.67 | sources: e81aff5f7df1, 51932a2eb267
-- Multimodal RAG with EmbeddingGemma 2 | angle: Google's EmbeddingGemma 2 provides compact, open-weight, multimodal embeddings (text, code, images, video, audio) optimized for efficient RAG and semantic search. | objective: follow | score: 8.67 | sources: b46a071ce209
-- NVIDIA Nemotron 3.5: Better Agent Retrieval | angle: NVIDIA Nemotron 3.5 Embed, Rerank, and Parse models significantly improve AI agent performance by ensuring more relevant evidence retrieval, reducing wasted tokens. | objective: share | score: 8.67 | sources: 3eb63f62a75d
-- Meta's Muse Spark Open for Agent Work | angle: Meta's Muse Spark Open, an 816B-parameter Mixture-of-Experts model with a 1M-token context window, is optimized for long-horizon coding and agent work, surpassing proprietary models in benchmarks. | objective: follow | score: 8.67 | sources: 916717af7e82
-- DeepSeek Open-Sources DeepInfer | angle: DeepSeek open-sourced DeepInfer, the inference framework behind its production services, addressing the 'core problem' of serving large models cost-effectively at scale. | objective: follow | score: 8.67 | sources: 2f49b7015c65
-- Humming: Fast Kernels for Quantized Inference | angle: Humming offers a general-purpose, high-performance kernel library for quantized inference, boosting efficiency across diverse hardware (NVIDIA, T-Head) and quantization schemes. | objective: follow | score: 8.5 | sources: 1ebbaa4f30df
-- vLLM TorchTPU: Run vLLM on TPUs | angle: vLLM TorchTPU enables running vLLM models on Google Cloud TPUs with existing model code and the same CLI, expanding hardware options for high-performance inference. | objective: follow | score: 8.5 | sources: 1ed882ec39a2, 77008e3ac4f9, 385dd689c6e0
+- Scaling LLM Inference with llm-d 1.0 on Kubernetes | angle: `llm-d 1.0` offers a production-ready, open-source, Kubernetes-native stack for distributed LLM inference, crucial for scaling agentic applications and reducing costs by up to 10x. | objective: share | score: 8.83 | sources: e81aff5f7df1, 51932a2eb267, 36239401256c
+- High-Accuracy Qwen-3.8-27B Quantizations for Local Agents | angle: New `Qwen-3.8-27B-BaseQuant-V1` models offer 15% higher accuracy than Unsloth at comparable sizes for local agents across various tasks (coding, function calling, chat), providing better performance without increased memory. | objective: click | score: 8.83 | sources: 5eb21a12c077
+- DeepSeek Open-Sources Production LLM Inference Framework | angle: DeepSeek open-sourced `DeepInfer`, their production inference framework, offering insights into how a major AI startup addresses the 'core problem' of serving large models cost-effectively at massive scale (155 trillion tokens/day). | objective: follow | score: 8.67 | sources: 2f49b7015c65
+- Speculative Decoding on AMD Instinct GPUs with EAGLE-4 | angle: `EAGLE-4` drafter model, with new speculative decoding ideas, runs on AMD Instinct MI355X GPUs from day zero, achieving 3.5x plain decoding speedup on Qwen3.8-27B at ~300 tokens/s. | objective: share | score: 8.67 | sources: e5a1f88609e0
+- Meta's Muse Spark Open for Long-Horizon Agents | angle: Meta's 816B-parameter `Muse Spark Open`, an open-weights MoE model with a 1M-token context window, excels in long-horizon coding and agent work, outperforming proprietary models in benchmarks. | objective: follow | score: 8.67 | sources: 916717af7e82
+- Advancing Agent Retrieval with NVIDIA Nemotron 3.5 | angle: NVIDIA's `Nemotron 3.5` Embed, Rerank, and Parse models significantly improve AI agent performance by ensuring more relevant evidence retrieval, reducing wasted inference tokens in enterprise RAG applications. | objective: share | score: 8.67 | sources: 3eb63f62a75d, b3b6b3192a25
+- Optimizing MoE Inference on Single GPUs with Specter | angle: `Specter`, a new MoE inference system, achieves significant speedups (up to 1.88x) on single-GPU hardware by strategically offloading experts to host memory and using multi-step routing lookahead. | objective: share | score: 8.5 | sources: 80cb5d11e0a2
+- Accelerating Quantized Inference with Humming Kernels | angle: `Humming`, a new open-sourced kernel library from Ant Group and vLLM, provides high-performance, flexible kernels for quantized inference, boosting efficiency across diverse hardware (NVIDIA, T-Head). | objective: follow | score: 8.17 | sources: 1ebbaa4f30df
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
