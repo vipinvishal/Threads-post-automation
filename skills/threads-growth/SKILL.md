@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-23 IST
+Last refreshed: 2026-10-24 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Production LLM inference with llm-d 1.0 | angle: `llm-d 1.0` offers a production-ready, open-source, Kubernetes-native stack for distributed LLM inference, crucial for scaling agentic applications and reducing costs. | objective: share | score: 8.5 | sources: 36239401256c
-- Faster MoE inference on single GPUs | angle: `Specter`, a new MoE inference system, achieves significant speedups (up to 1.88x) on single-GPU hardware by strategically offloading experts to host memory and using multi-step routing lookahead. | objective: reply | score: 8.5 | sources: 80cb5d11e0a2
-- NVIDIA Nemotron 3.5 for better RAG agents | angle: NVIDIA's `Nemotron 3.5` Embed, Rerank, and Parse models significantly improve AI agent performance by ensuring more relevant evidence retrieval, reducing wasted inference tokens in enterprise RAG applications. | objective: share | score: 8.33 | sources: 3eb63f62a75d
-- NVIDIA OpenShell for agent security | angle: NVIDIA's `OpenShell` provides a safe, private runtime environment critical for deploying and managing fleets of autonomous AI agents, addressing security concerns in enterprise applications. | objective: share | score: 8.33 | sources: hn-50198675, 80e161d47a46
-- EAGLE-4 speculative decoding on AMD GPUs | angle: `EAGLE-4` drafter model, with new speculative decoding ideas, runs on AMD Instinct MI355X GPUs from day zero, achieving 3.5x plain decoding speedup on Qwen3.8-27B at ~300 tokens/s. | objective: share | score: 8.0 | sources: e5a1f88609e0
-- Scaling frontier LLMs on DGX Spark | angle: NVIDIA DGX Spark's new 8-node support and RoCEnante backend enable running massive frontier models like GLM 5.3 (753B) with 1 TB unified memory and significant decode speedups. | objective: share | score: 7.83 | sources: 2ee9df656489
-- Humming kernels for flexible quantized inference | angle: `Humming`, a new open-sourced kernel library from Ant Group and vLLM, provides high-performance, flexible kernels for quantized inference, boosting efficiency across diverse hardware (NVIDIA, T-Head). | objective: follow | score: 7.83 | sources: 1ebbaa4f30df
-- vLLM and SGLang native on TPUs | angle: The new native PyTorch backends for `vLLM` and `SGLang` on TPUs make it easier to serve complex agentic and multimodal workloads with high performance and efficiency, leveraging existing vLLM model code. | objective: share | score: 7.83 | sources: 385dd689c6e0, 1ed882ec39a2
+- Distributed LLM inference with llm-d 1.0 | angle: llm-d 1.0 offers a Kubernetes-native, open-source stack for distributed LLM inference, reducing costs by 11.5x and coordinating inference pools for frontier models. | objective: share | score: 8.67 | sources: 44fba1b973d7
+- DeepSeek's DeepInfer for production LLM serving | angle: DeepSeek open-sources DeepInfer, the inference framework behind its production services, addressing the core problem of serving large models to a massive user base at a reasonable price (155 trillion tokens/day). | objective: share | score: 8.5 | sources: 2f49b7015c65
+- Faster MoE inference on single GPUs with Specter | angle: Specter, a new MoE inference system, achieves up to 1.88x speedup on single-GPU hardware by offloading experts to host memory and using multi-step routing lookahead. | objective: reply | score: 8.33 | sources: 80cb5d11e0a2
+- Improving RAG with NVIDIA Nemotron 3.5 models | angle: NVIDIA Nemotron 3.5 Embed, Rerank, and Parse models significantly improve AI agent performance by ensuring more relevant evidence retrieval in RAG applications. | objective: share | score: 8.33 | sources: 3eb63f62a75d
+- Humming kernels for flexible quantized inference | angle: Humming, an open-sourced kernel library from Ant Group and vLLM, provides high-performance, flexible kernels for quantized inference across diverse hardware (NVIDIA, T-Head). | objective: share | score: 8.33 | sources: 1ebbaa4f30df
+- Secure runtime for autonomous AI agents with OpenShell | angle: NVIDIA OpenShell provides a safe, private runtime environment critical for deploying and managing fleets of autonomous AI agents, addressing enterprise security concerns. | objective: follow | score: 8.17 | sources: hn-50198675, 80e161d47a46
+- Native vLLM and SGLang inference on TPUs | angle: Google announces native PyTorch backends for vLLM and SGLang on TPUs, making it easier to serve agentic and multimodal workloads with high performance. | objective: click | score: 8.17 | sources: 9c0f814f3586, 61d163128d74
+- Runtime tensor parallelism for LLM inference | angle: Amoeba dynamically transforms tensor parallelism strategies at runtime to efficiently process LLM inference requests with varying context lengths, optimizing memory and throughput. | objective: reply | score: 8.17 | sources: b9e0744f19d9
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
