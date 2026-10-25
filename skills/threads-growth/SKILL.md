@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-25 IST
+Last refreshed: 2026-10-26 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Scaling Frontier AI Models with NVIDIA DGX Spark Nodes | angle: Deep dive into how NVIDIA DGX Spark now supports 8-node clusters, unified memory (1TB), and RoCEnante backend for 4.43x decode speedup, enabling local execution of trillion-parameter models. | objective: follow | score: 8.5 | sources: 2ee9df656489
-- Scaling Quantized LLMs with Tensor Parallelism (vLLM & TGI) | angle: A practical guide to using vLLM and TGI's tensor parallelism and paged-attention KV cache for serving quantized open-weight LLMs efficiently on multi-GPU nodes. | objective: click | score: 8.33 | sources: 66e11c469d53
-- MyGPT: A Privacy-First, Open-Source RAG Platform | angle: Democratizing reliable knowledge-seeking with MyGPT, a new open-source Retrieval-Augmented Generation (RAG) platform emphasized for privacy and grounded answers. | objective: click | score: 8.33 | sources: 8169aa2bb39c
-- Designing Robust AI Serving Architectures | angle: Focus on the intricate interdependence of engineering decisions in production LLM serving, moving beyond isolated optimizations. | objective: share | score: 8.17 | sources: 56b525bbb0b2
-- 4-Bit State Quantization for Linear-Attention LLMs | angle: Explore PACE, a new 4-bit quantizer that reduces recurrent state memory by 1/3 for linear-attention models by rounding less often, matching 8-bit performance without fine-tuning. | objective: share | score: 8.17 | sources: 0e2cfb67c9c4
-- Optimizing LLM Inference with TensorRT's Global Performance Tuner | angle: Unpacking how NVIDIA TensorRT 11.1's new Global Performance Tuner uses a mathematical framework to navigate interdependent decisions across graph transformations, fusion, and quantization for superior inference. | objective: reply | score: 8.17 | sources: 5da2cba56c26
-- MiniMax-M3.1 MoE Optimization on AMD Instinct GPUs | angle: Highlighting day-0 support and optimization for MiniMax-M3.1, a natively multimodal MoE model, on AMD Instinct GPUs, including MXFP4 checkpoint performance. | objective: share | score: 8.0 | sources: 38eb11333fe4
-- Infinity: Runtime for Extreme AI Agent Concurrency | angle: Introducing Infinity, an Apache 2.0 open-source runtime from AWS that tackles agent concurrency bottlenecks by allowing agents to await tool returns without holding resources. | objective: share | score: 8.0 | sources: 0318bdb6824d
+- Open-Weight Agentic Coding Models Comparison | angle: Comparing newly released open-weight agentic coding models like Recursive Flint, Reflection Beam, and Meta Muse Spark, focusing on active parameters, benchmarks, and suitability for agentic tasks. | objective: reply | score: 8.83 | sources: 07415e42c775, e2e811840b17, 51fde45b8186, c444bc0fd198
+- Optimizing FP/BF16 on NVIDIA RTX 3000 GPUs | angle: A practical guide to unlocking higher FP/BF16 instruction issue rates on NVIDIA 3000 series cards for improved AI workload performance. | objective: click | score: 8.5 | sources: hn-50219700
+- Designing Robust AI Serving Architectures | angle: A shift in focus: why engineering the entire AI serving system – including memory, scheduling, and quantization – is more critical than isolated model optimizations for production success. | objective: share | score: 8.33 | sources: 56b525bbb0b2, 793fdf155732
+- MyGPT: A Privacy-First, Open-Source RAG Platform | angle: Deep dive into MyGPT, a new open-source Retrieval-Augmented Generation (RAG) platform designed for privacy and reliable knowledge-seeking, and its architectural components. | objective: share | score: 8.0 | sources: 8169aa2bb39c
+- TensorRT 11.1 Global Performance Tuner | angle: How NVIDIA TensorRT 11.1's Global Performance Tuner automates inference optimization across complex build routes, using a mathematical framework for best performance. | objective: reply | score: 8.0 | sources: 5da2cba56c26, bc9e5847c68b
+- Kubernetes for Agentic AI Inference with llm-d v1.0 | angle: How `llm-d` v1.0, a CNCF project, is maturing Kubernetes for dependable AI serving, specifically bridging PyTorch applications with cloud-native infrastructure for agentic workloads. | objective: click | score: 8.0 | sources: cb93e61865e7, 7964ac14b4c8
+- Infinity: Runtime for Extreme AI Agent Concurrency | angle: Introducing Infinity, AWS's new open-source runtime that addresses AI agent concurrency bottlenecks by enabling non-blocking tool calls and efficient resource management. | objective: share | score: 7.83 | sources: 0318bdb6824d
+- MiniMax-M3.1 MoE on AMD Instinct GPUs | angle: Day-0 support and performance optimization for MiniMax-M3.1, a multimodal MoE model, on AMD Instinct MI350 GPUs, highlighting MXFP4 checkpoints and fused-MoE kernels. | objective: follow | score: 7.67 | sources: 38eb11333fe4
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
