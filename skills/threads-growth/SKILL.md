@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-27 IST
+Last refreshed: 2026-10-28 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- EdgeRock-4B achieves 99.1% KV Cache reduction | angle: The open-source EdgeRock-4B model delivers a 99.1% reduction in KV Cache size and 6.42x throughput for long contexts, enabling 512 concurrent long inferences on a single 80GB GPU. | objective: share | score: 9.67 | sources: 2543567215b2
-- AWS Infinity Rust runtime for concurrent AI agents | angle: AWS open-sourced Infinity, a Rust runtime designed to fit 75,000 idle AI agents in 8GB, optimizing for massively concurrent, slow-tool-reliant agent workflows. | objective: follow | score: 9.0 | sources: 6efe9c947840
-- GPT-6.1 Terra lowers API costs by 50% | angle: OpenAI's GPT-6.1 Terra, now generally available on Amazon Bedrock, offers 50% lower standard API prices than previous versions, shifting the cost-efficiency frontier for high-volume AI automation. | objective: reply | score: 8.67 | sources: b58e83f7cf7d, 3629858e0124
-- AKV: KV Cache engineering for LLM agents | angle: Tsinghua AI open-sources AKV, a KV cache engineering server for LLM agents on SGLang, reducing cost by 27.7% and boosting task scores by intelligently reusing/dropping cache entries instead of summarizing old history. | objective: click | score: 8.67 | sources: 13a500707dee
-- Boost vLLM tool-call accuracy | angle: Insights into fixing tool-call accuracy in vLLM can significantly improve the reliability of agentic applications, addressing a critical pain point in LLM system integration. | objective: follow | score: 8.5 | sources: hn-50242870
-- Build LLM reasoning models from scratch | angle: Sebastian Raschka's new video course emphasizes building reasoning models from scratch, offering a foundational understanding essential for advanced AI development beyond superficial API interactions. | objective: share | score: 8.5 | sources: hn-50245138
-- Cross-request KV cache exposure vulnerability | angle: Cloudflare identified and remediated a cross-request KV cache exposure vulnerability in a GLM-5.3 model, highlighting a critical security concern in shared LLM inference infrastructure. | objective: share | score: 8.17 | sources: hn-50252159
-- PyTorch supports new AI accelerators natively | angle: PyTorch now natively supports IBM's Spyre dataflow AI accelerator and Google's TPUs, opening its ecosystem to a new class of hardware for diversified inference and training workloads. | objective: share | score: 7.83 | sources: 3ec73a08efa6, 407a55c1b70e
+- GPT-6.1 Terra Cost Reduction | angle: OpenAI's GPT-6.1 Terra offers 50% lower standard API prices than previous versions, shifting the cost-efficiency frontier for high-volume AI automation. | objective: reply | score: 9.0 | sources: b58e83f7cf7d
+- EdgeRock-4B KV Cache Optimization | angle: The open-source EdgeRock-4B model delivers a 99.1% reduction in KV Cache size and 6.42x throughput for long contexts, enabling 512 concurrent long inferences on a single 80GB GPU. | objective: share | score: 8.83 | sources: 2543567215b2
+- AKV Cache Engineering for LLM Agents | angle: Tsinghua AI open-sources AKV, a KV cache engineering server for LLM agents on SGLang, reducing cost by 27.7% and boosting task scores by intelligently reusing/dropping cache entries. | objective: click | score: 8.83 | sources: 13a500707dee
+- Sulci 1.0 Semantic Cache for Agents | angle: Sulci 1.0, an open-source, context-aware semantic cache for LLM apps and AI agents, reduces LLM calls by serving cached answers for semantically similar queries. | objective: click | score: 8.33 | sources: de9d96528fde
+- Multimodal LFM3 Hybrid Architecture | angle: Liquid AI's LFM3 introduces a new hybrid architecture, making it a multimodal model family (text, vision, audio, omni, decision) for specialized intelligence, efficient for local fine-tuning. | objective: share | score: 8.33 | sources: b4f511d77177
+- Hugging Face WebGPU Kernels for Browser AI | angle: Hugging Face has released 207 versioned WebGPU kernels and a JavaScript loader, enabling local AI workloads directly in the browser with performance boosts on modern hardware. | objective: follow | score: 8.33 | sources: 3adee5cba4f1
+- Agentic Retrieval on Amazon Bedrock | angle: AWS provides a method to build enterprise agentic retrieval systems on a Managed Amazon Bedrock Knowledge Base with CDK, addressing limitations of ordinary RAG. | objective: share | score: 8.33 | sources: f90db4fad777
+- MoE Inference Boosting on NVIDIA DGX | angle: NVIDIA details three techniques (Humming MXFP4 MoE kernels, Online FP8 quantization) to boost Mixture-of-Experts (MoE) inference performance, especially on NVIDIA DGX Spark. | objective: share | score: 8.17 | sources: e791771511b3
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
