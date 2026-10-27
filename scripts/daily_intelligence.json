@@ -1,6 +1,6 @@
 {
   "date_ist": "2026-10-27",
-  "generated_at": "2026-10-26T20:40:43.226963+00:00",
+  "generated_at": "2026-10-27T08:37:03.597699+00:00",
   "signal_count": 26,
   "signals": [
     {
@@ -9,11 +9,11 @@
       "title": "Anthropic S-1",
       "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
       "published_at": "2026-10-26T13:04:50+00:00",
-      "excerpt": "Hacker News: 1301 points and 1272 comments.",
-      "signal_score": 3209.0,
+      "excerpt": "Hacker News: 1597 points and 1533 comments.",
+      "signal_score": 3896.5,
       "community_metrics": {
-        "points": 1301,
-        "comments": 1272
+        "points": 1597,
+        "comments": 1533
       }
     },
     {
@@ -22,24 +22,11 @@
       "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
       "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
       "published_at": "2026-10-26T15:11:59+00:00",
-      "excerpt": "Hacker News: 432 points and 59 comments.",
-      "signal_score": 520.5,
+      "excerpt": "Hacker News: 689 points and 94 comments.",
+      "signal_score": 830.0,
       "community_metrics": {
-        "points": 432,
-        "comments": 59
-      }
-    },
-    {
-      "id": "hn-50246658",
-      "source": "hacker_news",
-      "title": "Concerning behavior from a popular open-weight AI model",
-      "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
-      "published_at": "2026-10-26T16:35:44+00:00",
-      "excerpt": "Hacker News: 182 points and 70 comments.",
-      "signal_score": 287.0,
-      "community_metrics": {
-        "points": 182,
-        "comments": 70
+        "points": 689,
+        "comments": 94
       }
     },
     {
@@ -48,24 +35,37 @@
       "title": "Fixing Tool-Call Accuracy in vLLM",
       "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
       "published_at": "2026-10-26T12:59:48+00:00",
-      "excerpt": "Hacker News: 135 points and 64 comments.",
-      "signal_score": 231.0,
+      "excerpt": "Hacker News: 162 points and 67 comments.",
+      "signal_score": 262.5,
       "community_metrics": {
-        "points": 135,
-        "comments": 64
+        "points": 162,
+        "comments": 67
       }
     },
     {
-      "id": "hn-50246238",
+      "id": "hn-50252159",
       "source": "hacker_news",
-      "title": "Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT",
-      "url": "https://github.com/FrigadeHQ/hob",
-      "published_at": "2026-10-26T16:12:29+00:00",
-      "excerpt": "Hacker News: 14 points and 3 comments.",
-      "signal_score": 18.5,
+      "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation",
+      "published_at": "2026-10-26T22:41:48+00:00",
+      "excerpt": "Hacker News: 127 points and 42 comments.",
+      "signal_score": 190.0,
       "community_metrics": {
-        "points": 14,
-        "comments": 3
+        "points": 127,
+        "comments": 42
+      }
+    },
+    {
+      "id": "hn-50255298",
+      "source": "hacker_news",
+      "title": "The Mythical Man-Month in the Age of AI",
+      "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "published_at": "2026-10-27T06:25:37+00:00",
+      "excerpt": "Hacker News: 73 points and 56 comments.",
+      "signal_score": 157.0,
+      "community_metrics": {
+        "points": 73,
+        "comments": 56
       }
     },
     {
@@ -87,7 +87,7 @@
       "title": "Build agentic retrieval on a Managed Amazon Bedrock Knowledge Base with CDK | Artificial Intelligence",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-retrieval-on-a-managed-amazon-bedrock-knowledge-base-with-cdk",
       "published_at": "2026-10-26T17:15:14.000Z",
-      "excerpt": "Build agentic retrieval on a Managed Amazon Bedrock Knowledge Base with CDK | Artificial Intelligence\n\n# Build agentic retrieval on a Managed Amazon Bedrock Knowledge Base with CDK\n\nby Prabhakar Chandrasekaran and Siddhant Sahu on 26 OCT 2026 in Advanced (300), Amazon Bedrock AgentCore, Amazon Bedrock Knowledge Bases, Technical How-to\n\n...\n\nThe CDK authoring model earned its place on the seams. Seven values cross stack boundaries in this architecture, and every one of them is a construct reference rather than an export/import pair, which is also why there’s no deploy script, no teardown script, and no fixed order to remember.\n\nFrom here you can point the data sources at your own corpora, place the agent in a virtual private cloud (VPC), tune the online-evaluation sampling rate to your budget and policies, or add more knowledge bases to the router. To learn more, see the Amazon Bedrock detail page and the Amazon Bedrock documentation. The app, the driver notebook, and the self-contained utilities are all in the accompanying GitHub repository, so you can clone it and deploy your own copy with one command.",
+      "excerpt": "Build agentic retrieval on a Managed Amazon Bedrock Knowledge Base with CDK | Artificial Intelligence\n\n# Build agentic retrieval on a Managed Amazon Bedrock Knowledge Base with CDK\n\nby Prabhakar Chandrasekaran and Siddhant Sahu on 26 OCT 2026 in Advanced (300), Amazon Bedrock AgentCore, Amazon Bedrock Knowledge Bases, Technical How-to Permalink Share\n\nThis post builds enterprise agentic retrieval on a Managed Amazon Bedrock Knowledge Base with the AWS Cloud Development Kit (AWS CDK). To see why that’s worth building, it helps to start with where ordinary Retrieval Augmented Generation (RAG) breaks down. Most RAG systems start the same way: they embed the question, fetch the nearest chunks from one index, hand them to a model, and return the answer. One retrieval, one generation. For a large class of questions that’s the right design, and there’s no reason to build anything more complicated.\n\nIt fails in a recognizable way. Ask a question whose answer spans two corpora, and a single retrieval returns half of what the model needs, which is worse than returning nothing, because the answer comes back fluent and incomplete. Ask a question where the right source depends on the question, and a single index has no mechanism to choose. Ask a question that needs a second look at the corpus after seeing the first result, and there is nowhere for that second look to happen.\n\nEnterprise agentic retrieval answers all three by putting a reasoning agent in the loop. The agent decides whether to retrieve, which knowledge base to consult, and whether to go back for more before it composes an answer. This is the direction Amazon Bedrock Knowledge Bases have evolved. With the launch of the Managed Knowledge Base, retrieval is no longer a single embed-and-fetch call. It has become an agentic capability: multi-turn planning, tool-driven retrieval, and grounded, cited answers. The AgenticRetrieveStream API offers this as a first-class service feature rather than something you assemble yourself. That works, and it also introduces a genuinely harder operational problem. A single-shot pipeline is a function you can reason about by reading it. An agent that reasons and retrieves in a loop takes a different path on every question. By default you can see neither the path it took nor whether the answer it produced was any good. Observability stops being a nice-to-have and becomes the only way to know the system works.\n\n...\n\n### From RAG to enterprise agentic retrieval\n\nClassic Retrieval Augmented Generation (RAG) does one retrieval and one generation. Enterprise agentic retrieval puts a reasoning agent in the loop: it decides whether and what to retrieve, can retrieve several times to refine, chooses which knowledge base is relevant (semantic routing), and only then composes a grounded answer with citations. With the Managed Knowledge Base, this is a first-class service capability, the AgenticRetrieveStream API performs the multi-turn planning, executes the retrieval, and returns a cited answer, rather than an orchestration layer you build and maintain over a raw vector search. That produces better answers on complex questions, but it also produces a more complex system to operate, which is exactly why observability and evaluation are built in from the start.\n\n...\n\nThe numbered steps in the diagram map to the workflow, which is as follows.\n\nStep 0 — one-time, at deploy. Before any question is asked, each corpus in Amazon S3 is ingested into its own Managed Knowledge Base: Amazon Bedrock parses, chunks, embeds, and indexes it automatically. This happens once when the stacks deploy, it isn’t part of the per-question path, so it is drawn as a dashed arrow and marked step 0. Every question then follows steps 1–6:\n\n1. A user sends a question to the agent hosted on the Amazon Bedrock AgentCore Runtime. The Runtime auto-instruments the whole reason-and-act loop with OpenTelemetry (OTEL) spans, so the system is observable from the very first call.\n2. The agent’s reasoning model plans and routes across knowledge bases. Because each knowledge base is exposed as its own retrieval tool, the agent selects the tool whose topic matches the question, financial or weather, rather than searching one blended index.\n3. The selected tool call is brokered by the AgentCore Gateway over MCP, authorized by the agent’s IAM task role and signed with SigV4, which invokes that knowledge base’s AgenticRetrieveStream API on the Managed Knowledge Base.\n4. AgenticRetrieveStream does the within-knowledge-base work: it decomposes the question into sub-queries, retrieves iteratively from the data store that Amazon Bedrock manages (ingested from the corpora in Amazon S3), and synthesizes a grounded, cited answer that streams back through the Gateway.\n5. The agent checks whether the returned context is sufficient. If not, it loops, routing and retrieving again, before composing its final answer. If so, it returns the cited answer to the user.\n6. Throughout, the Runtime emits spans, token counts, and metrics to Amazon CloudWatch and AWS X-Ray, populating the seven observability layers and feeding",
       "signal_score": 14.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -95,12 +95,12 @@
       }
     },
     {
-      "id": "20c8b1138512",
+      "id": "59f3ce6e3daf",
       "source": "exa_news",
-      "title": "NVIDIA Nemotron 3.5 Bolt E4B 4GB - NVIDIA Nemotron",
-      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Bolt-E4B-4GB",
-      "published_at": "2026-10-23T00:00:00.000Z",
-      "excerpt": "# NVIDIA Nemotron 3.5 Bolt E4B 4GB \n\n Published: October 23, 2026\n\n# Introducing NVIDIA Nemotron 3.5 Bolt E4B 4GB\n\nToday, we’re excited to release Nemotron 3.5 Bolt E4B 4GB — our latest open small language model optimized for speed and intelligence per GB in conversational agents.\n\nBolt E4B builds on Gemma 4 E4B with Nemotron post-training. It combines natural conversation with multi-turn agentic capabilities to power voice/device assistants, interactive characters and robotic/IoT interfaces running on NVIDIA GeForce RTX, Jetson, RTX Spark and DGX Spark.\n\nBolt E4B offers ~40% higher average quality against our prior model on key conversational agent benchmarks and outputs up to ~80% fewer tokens vs peers.\n\nDesigned to pack conversational agent intelligence into as little as ~4GB in its target workloads, Bolt E4B enables responsive local experiences while preserving headroom for applications and other models in the same pipeline.\n\n...\n\nAfter post-training, we quantized the selected BF16 checkpoint to Q4_K_M using llama.cpp with importance-matrix (imatrix) calibration. Calibration used approximately 1M tokens of RL rollouts from the same training step as the selected checkpoint.\n\nThis release also includes a DFlash parallel drafter. It proposes all draft tokens in one forward pass, which the target verifies in parallel while preserving the target model’s output distribution. DFlash delivers up to 21% higher throughput relative to Gemma-4-E4B’s original MTP drafter.",
+      "title": "Uncertainty-aware offline reinforcement learning for LLM inference serving with heterogeneous SLOs | Scientific Reports",
+      "url": "https://www.nature.com/articles/s41598-026-76614-6",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "excerpt": "Uncertainty-aware offline reinforcement learning for LLM inference serving with heterogeneous SLOs | Scientific Reports\n* Article\n* Open access\n* Published: 26 October 2026\n# Uncertainty-aware offline reinforcement learning for LLM inference serving with heterogeneous SLOs\n* Enmiao Feng 1,\n* Gaike Wang 2,\n* Pengfei Li 1,\n* Yinuo Wang ORCID: orcid.org/0009-0004-3927-0742 3 &\n* …\n* Shan Huang 4\n## Abstract\nLarge language model (LLM) inference workloads are bursty, have output lengths that are unknown at arrival, expose two resource-distinct phases (prefill and decode), and serve requests carrying heterogeneous service-level objectives (SLOs) on time-to-first-token (TTFT) and time-per-output-token (TPOT). Prevailing schedulers rely on static heuristics that cannot adapt to this uncertainty, while online reinforcement learning (RL) is unsafe and sample-inefficient in production. We present URSA, an uncertainty-aware, risk-sensitive scheduler trained *entirely offline*, without interacting with a live serving system, on scheduling transitions generated by replaying historical request traces under existing heuristic schedulers. URSA (i) predicts a calibrated *distribution* over each request’s output length and derived key–value (KV) cache footprint rather than a point estimate; (ii) encodes the joint state of the waiting queue, heterogeneous GPU instances, and KV occupancy as a request–instance heterogeneous graph processed by a graph neural network; (iii) learns a dispatch policy with conservative, distributional offline RL whose reward jointly optimizes SLO attainment, goodput, and KV-overflow risk; and (iv) reserves memory at a class-dependent high quantile of the predicted footprint to bound out-of-memory events. Across the BurstGPT, Azure LLM inference, and Alibaba GPU-cluster traces, URSA raises overall SLO attainment from \\\\(71.3\\\\%\\\\) (FCFS) and \\\\(84.1\\\\%\\\\) (learning-to-rank) to \\\\(90.4\\\\%\\\\), cuts P99 TTFT by up to \\\\(3.3\\\\times \\\\), and reduces recompute/eviction events below \\\\(1\\\\%\\\\), approaching an oracle that knows true lengths. We analyze limitations, robustness to prediction error, and transfer to other scheduling domains.\n## Funding\nThe authors did not receive external funding for this work.\n### Authors and Affiliations\n1. Duke University, Durham, USA\nEnmiao Feng & Pengfei Li\n2. New York University, New York, USA\nGaike Wang\n3. The University of Chicago, Chicago, USA\nYinuo Wang\n4. University of California San Diego, La Jolla, USA\nShan Huang\n1. Enmiao Feng\nView author publications\nSearch author on: PubMed Google Scholar\n2. Gaike Wang\nView author publications\nSearch author on: PubMed Google Scholar\n3. Pengfei Li\nView author publications\nSearch author on: PubMed Google Scholar\n4. Yinuo Wang\nView author publications\nSearch author on: PubMed Google Scholar\n5. Shan Huang\nView author publications\nSearch author on: PubMed Google Scholar\n### Corresponding author\nCorrespondence to Shan Huang (shanhuang@ucsd.edu).\n### Competing interests\nThe authors declare no competing interests.\n### Publisher's note\nSpringer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
       "signal_score": 14.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -113,7 +113,7 @@
       "title": "PyTorch opens the AI ecosystem to a new accelerator class - IBM Research",
       "url": "https://research.ibm.com/blog/pytorch-spyre-accelerator-software-ecosystem-updates",
       "published_at": "2026-10-26T00:00:00.000Z",
-      "excerpt": "26 Oct 2026\n\n# PyTorch opens the AI ecosystem to a new class of accelerators\n\nIBM has made Spyre a first-class PyTorch backend, giving developers the same workflows across devices.\n\nIn October 2025, IBM and the PyTorch Foundation outlined a plan for deeper Spyre enablement in 2026: treating the accelerator as a first-class PyTorch backend and supporting multi-accelerator scheduling. The latest software ecosystem\n\n...\n\nSpyre is IBM’s dataflow AI accelerator, optimized for inference. It is designed for enterprise teams running AI alongside their applications and data on IBM Z, LinuxONE, and Power systems. Its reduced-precision compute is well suited to the matrix-heavy work in language generation and embedding models. Unlike a conventional GPU, which executes kernels as instruction streams across scheduled groups of threads, Spyre triggers computation as data arrives at its compute engines. PyTorch provides the common layer that allows this different architecture to participate in an ecosystem built largely around GPUs.",
+      "excerpt": "26 Oct 2026\n\n# PyTorch opens the AI ecosystem to a new class of accelerators\n\nIBM has made Spyre a first-class PyTorch backend, giving developers the same workflows across devices.\n\nIn October 2025, IBM and the PyTorch Foundation outlined a plan for deeper Spyre enablement in 2026: treating the accelerator as a first-class PyTorch backend and supporting multi-accelerator scheduling. The latest software ecosystem updates deliver on that promise. Together, torch-spyre, Spyre's vLLM plugin, compiler\n\n...\n\nSpyre is IBM’s dataflow AI accelerator, optimized for inference. It is designed for enterprise teams running AI alongside their applications and data on IBM Z, LinuxONE, and Power systems. Its reduced-precision compute is well suited to the matrix-heavy work in language generation and embedding models. Unlike a conventional GPU, which executes kernels as instruction streams across scheduled groups of threads, Spyre triggers computation as data arrives at its compute engines. PyTorch provides the common layer that allows this different architecture to participate in an ecosystem built largely around GPUs.",
       "signal_score": 13.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -121,12 +121,12 @@
       }
     },
     {
-      "id": "8169aa2bb39c",
+      "id": "91502fdd88f6",
       "source": "exa_news",
-      "title": "Democratizing reliable knowledge-seeking with MyGPT: a privacy-first, open-source retrieval-augmented generation platform | Nature Communications",
-      "url": "https://www.nature.com/articles/s41467-026-78509-6",
-      "published_at": "2026-10-24T00:00:00.000Z",
-      "excerpt": "Democratizing reliable knowledge-seeking with MyGPT: a privacy-first, open-source retrieval-augmented generation platform | Nature Communications\n* Article\n* Open access\n* Published: 24 October 2026\n# Democratizing reliable knowledge-seeking with MyGPT: a privacy-first, open-source retrieval-augmented generation platform\n* Jaimin Patel ORCID: orcid.org/0000-0001-6754-6030 1, 2 na1,\n* Jude Downing 1, 2 na1,\n* Hugh Ferguson 1, 2,\n* Thika You 1, 2,\n* Duccio Malinverni ORCID: orcid.org/0000-0002-3946-9709 1, 2,\n* Steve Mathew D. A ORCID: orcid.org/0000-0003-1860-3013 1, 2, 3,\n* Inês Chen 2,\n* Madison Sluter 1, 2,\n* Beth Moorefield 1, 2,\n* Katalin Paréj 2,\n* Mukundan Ragavan 2,\n* Cindy Morris 4,\n* Dinesh Keerthi 4,\n* Desiree Becerra Armada 5,\n* Bálint Mészáros ORCID: orcid.org/0000-0003-0919-4449 1, 2,\n* Vikas D. Trivedi 1, 2,\n* Shahinur Alam 6,\n* Anthony Woodard 6,\n* Dan Alford 6,\n* Sagar Pathak ORCID: orcid.org/0009-0007-5348-9806 1, 2,\n* Cai Li ORCID: orcid.org/0000-0002-5624-3031 7,\n* Renato Umeton ORCID: orcid.org/0000-0002-5561-6932 8,\n* Carlos Rodriguez-Galindo 5,\n* Catherine G. Lam 5,\n* Stephen Gottschalk ORCID: orcid.org/0000-0003-3991-7468 4,\n* Charalampos G. Kalodimos ORCID: orcid.org/0000-0001-6354-2796 2 &\n* …\n* M. Madan Babu ORCID: orcid.org/0000-0003-0556-6196 1, 2, 8\n## Abstract\nLarge language models (LLMs) have transformed knowledge discovery, but their use in sensitive domains is limited by privacy concerns and risks of data leakage. Moreover, LLMs may hallucinate when queried about information outside their training data, undermining their reliability for scientific, clinical, or policy-related tasks. We present MyGPT, a fully open-source, privacy-preserving retrieval-augmented-generation (RAG) platform that uses open-source LLMs and operates locally or within secure institutional environments. MyGPT empowers users to query user-defined libraries such as biomedical literature, confidential clinical documents, and multilingual global health policies, while ensuring that sensitive data never leaves the secure environment. We introduce confidence metrics, including “relevance scores” and “hallucination index,” and provide explicit source citation from the library within a single interface to assess contextual support for generated answers. MyGPT offers a cost-effective, modular, open-source alternative to commercial LLM services and democratizes knowledge-seeking across multiple domains, including use at remote facilities without internet access.\n## Acknowledgments\nWe thank the domain experts, Drs. Balaji Santhanam, Katarina Nemec, Preethi Badrinarayan, Ben Leslie, Kalyan Immadisetty, and Benjamin Lang for their assistance in creating the Q&A datasets used for benchmarking the biomedical literature and public datasets, Jino John for helping with the evaluation of the kinase literature, and Nancy Gough and Jeyanthy Eswaran for their comments on the evaluation. We gratefully acknowledge Andrea Williams, Marcia Sabino de Freitas, Heather Fosburgh, Patricia Loggetto and Melissa Santiago, together with D.B.A. and C.G.L. from St. Jude Global, for their evaluation of health policies. We thank Pranay Kumar Anugu, Roshan Shrestha, and Piby Paul for their help with deploying MyGPT on the VMs approved for PHI data. We also thank Drs. Jim Downing, Paul Taylor, Bindumadhav Marathe, Elly Park, Rita Strack, Babu group, Blue-Sky Kinase team, and the Center for Adipocyte Signaling (ADIPOSIGN) team at the University of Southern Denmark, Odense for comments on this work, as well as Ashok Kumar Reddy Boddu, Arif Usta, Ed Suh, Michael Brewer, Darrell Gentry, Chad Burdyshaw, and Keith Perry from the Information Services department, and Andrew Dedmon, Valentina Perez, and Brian Elrod from the Information Security team of St. Jude for their support. We also thank the Pediatric Oncology Education program (H.F. from Rhodes College), Emerging Leaders in Biomedical Research program (T.Y. from The University of Memphis) and Khorana Program for Scholars (S.M.D.A from Vellore Institute of Technology).\n## Funding\nWe thank the American Lebanese Syrian Associated Charities (ALSAC) for funding and support. We also acknowledge support from the Blue-Sky Kinase initiative (J.P., B.Me., K.P., M.R., C.G.K., and M.M.B) and GPCR Collaborative (J.D., V.T., and M.M.B) funding mechanisms within St Jude.\n## Author information\nAuthor notes\n1. These authors contributed equally: Jaimin Patel, Jude Downing.\n### Authors and Affiliations\n1. Center of Excellence for Data-Driven Discovery, Department of Structural Biology, St. Jude Children’s Research Hospital, Memphis, TN, USA\nJaimin Patel, Jude Downing, Hugh Ferguson, Thika You, Duccio Malinverni, Steve Mathew D. A, Madison Sluter, Beth Moorefield, Bálint Mészáros, Vikas D. Trivedi, Sagar Pathak & M. Madan Babu\n2. Department of Structural Biology, St. Jude Children’s Research Hospital, Memphis, TN, USA\nJaimin Patel, Jude Downing, Hugh Ferguson, Thika You, Duccio Malinverni, Steve Mathew D. A, Inês Chen, Madison Sluter, Beth Moorefield, Katalin Paréj, Mukundan Ragavan, Bálint Mészáros, Vikas D. Trivedi, Sagar Pathak, Charalampos G. Kalodimos & M. Madan Babu\n3. College of Graduate Health Sciences, University of Tennessee Health Science Center, Memphis, TN, USA\nSteve Mathew D. A\n4. Department of Bone Marrow Transplantation and Cellular Therapy, St. Jude Children’s Research Hospital, Memphis, TN, USA\nCindy Morris, Dinesh Keerthi & Stephen Gottschalk\n5. Department of Global Pediatric Medicine, St. Jude Global, St. Jude Children’s Research Hospital, Memphis, TN, USA\nDesiree Becerra Armada, Carlos Rodriguez-Galindo & Catherine G. Lam\n6. Research Information Services, St. Jude Children’s Research Hospital, Memphis, TN, USA\nShahinur Alam, Anthony Woodard & Dan Alford\n7. Department of Biostatistics, St. Jude Children’s Research Hospital, Memphis, TN, USA\nCai Li\n8. Office of Data Science, St. Jude Children’s Research Hospital, Memphis, TN, USA\nRenato Umeton & M. Madan Babu\n1. Jaimin Patel\nView author publications\nSearch author on: PubMed Google Scholar\n2. Jude Downing\nView author publications\nSearch author on: PubMed Google Scholar\n3. Hugh Ferguson\nView author publications\nSearch author on: PubMed Google Scholar\n4. Thika You\nView author publications\nSearch author on: PubMed Google Scholar\n5. Duccio Malinverni\nView author publications\nSearch author on: PubMed Google Scholar\n6. Steve Mathew D. A\nView author publications\nSearch author on: PubMed Google Scholar\n7. Inês Chen\nView author publications\nSearch author on: PubMed Google Scholar\n8. Madison Sluter\nView author publications\nSearch author on: PubMed Google Scholar\n9. Beth Moorefield\nView author publications\nSearch author on: PubMed Google Scholar\n10. Katalin Paréj\nView author publications\nSearch author on: PubMed Google Scholar\n11. Mukundan Ragavan\nView author publications\nSearch author on: PubMed Google Scholar\n12. Cindy Morris\nView author publications\nSearch author on: PubMed Google Scholar\n13. Dinesh Keerthi\nView author publications\nSearch author on: PubMed Google Scholar\n14. Desiree Becerra Armada\nView author publications\nSearch author on: PubMed Google Scholar\n15. Bálint Mészáros\nView author publications\nSearch author on: PubMed Google Scholar\n16. Vikas D. Trivedi\nView author publications\nSearch author on: PubMed Google Scholar\n17. Shahinur Alam\nView author publications\nSearch author on: PubMed Google Scholar\n18. Anthony Woodard\nView author publications\nSearch author on: PubMed Google Scholar\n19. Dan Alford\nView author publications\nSearch author on: PubMed Google Scholar\n20. Sagar Pathak\nView author publications\nSearch author on: PubMed Google Scholar\n21. Cai Li\nView author publications\nSearch author on: PubMed Google Scholar\n22. Renato Umeton\nView author publications\nSearch author on: PubMed Google Scholar\n23. Carlos Rodriguez-Galindo\nView author publications\nSearch author on: PubMed Google Scholar\n24. Catherine G. Lam\nView author publications\nSearch author on: PubMed Google Scholar\n25. Stephen Gottschalk\nView author publications\nSearch author on: PubMed Google Scholar\n26. Charalampos G. Kalodimos\nView author publications\nSearch author on: PubMed Google Scholar\n27. M. Madan Babu\nView author publications\nSearch author on: PubMed Google Scholar\n### Corresponding authors\nCorrespondence to Jaimin Patel (jaimin.patel@stjude.org) or M. Madan Babu (madan.babu@stjude.org).\n### Competing interests\nThe authors declare no competing interests.\n## Additional information\n**Publisher’s note** Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.\n**Open Access** This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.",
+      "title": "antoinezambelli/forge",
+      "url": "https://github.com/antoinezambelli/forge",
+      "published_at": "2026-10-25T18:41:33.000Z",
+      "excerpt": "# forge\n\nPyPI\nTests\ncodecov\nPython 3.12+\nLicense: MIT\n\nA reliability layer for self-hosted LLM tool-calling. You give forge a set of tools; the model calls whichever it wants in whatever order. Workflow structure is opt-in — `required_steps`, `prerequisites`, and `terminal_tool` let you constrain the loop when you need to, but forge's guardrails (rescue parsing, retry nudges, response validation) apply with zero required steps too.\n\nForge takes an 8B local model from single digits to 84% across forge's 26-scenario v0.7.0 eval suite — and even lifts Sonnet 4.6 from 85% to 98% on the same workload (Anthropic numbers measured in v0.6.0; not re-run in v0.7.0 since the cost is non-trivial).\n\n**What forge isn't:**\n- **Not an agent orchestrator.** Forge sits inside one agentic loop and makes its tool calls reliable. Multi-agent graphs, DAG planners, and cross-agent coordination are out of scope.\n- **Not a coding harness.** Forge is domain-agnostic. If you're building a coding agent (or already using one like opencode, aider, Cline), proxy mode lifts your existing harness with forge's guardrails — no rewrite.\n\n**Three ways to use it:**\n\n- **Proxy server** — Drop-in proxy (`forge-proxy` from the standalone distribution, or `python -m forge.proxy` from the Python package) speaking both the OpenAI chat-completions and Anthropic Messages (`/v1/messages`) APIs, sitting between any client and a local model server. Point OpenAI-compatible tools (opencode, Continue, aider) **or Claude Code** at it and forge applies guardrails transparently — the client thinks it's talking to a smarter model. Most popular entry point.\n\n- **WorkflowRunner** — Define tools, pick a backend, run structured agent loops. Forge manages the full lifecycle: system prompts, tool execution, context compaction, and guardrails. **SlotWorker** adds priority-queued access to a shared inference slot with auto-preemption — for multi-agent architectures where specialist workflows share a GPU slot. Best when you're building on forge directly.\n\n- **Guardrails middleware** — Use forge's reliability stack (composable middleware) inside your own orchestration loop. You control the loop; forge validates responses, rescues malformed tool calls, and enforces required steps.\n\nSupports generic OpenAI-compatible endpoints, Ollama, llama-server (llama.cpp),\nLlamafile, vLLM, and Anthropic as backends.",
       "signal_score": 13.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -134,12 +134,12 @@
       }
     },
     {
-      "id": "59f3ce6e3daf",
+      "id": "b1813285b27d",
       "source": "exa_news",
-      "title": "Uncertainty-aware offline reinforcement learning for LLM inference serving with heterogeneous SLOs | Scientific Reports",
-      "url": "https://www.nature.com/articles/s41598-026-76614-6",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "excerpt": "Uncertainty-aware offline reinforcement learning for LLM inference serving with heterogeneous SLOs | Scientific Reports\n* Article\n* Open access\n* Published: 26 October 2026\n# Uncertainty-aware offline reinforcement learning for LLM inference serving with heterogeneous SLOs\n* Enmiao Feng 1,\n* Gaike Wang 2,\n* Pengfei Li 1,\n* Yinuo Wang ORCID: orcid.org/0009-0004-3927-0742 3 &\n* …\n* Shan Huang 4\n## Abstract\nLarge language model (LLM) inference workloads are bursty, have output lengths that are unknown at arrival, expose two resource-distinct phases (prefill and decode), and serve requests carrying heterogeneous service-level objectives (SLOs) on time-to-first-token (TTFT) and time-per-output-token (TPOT). Prevailing schedulers rely on static heuristics that cannot adapt to this uncertainty, while online reinforcement learning (RL) is unsafe and sample-inefficient in production. We present URSA, an uncertainty-aware, risk-sensitive scheduler trained *entirely offline*, without interacting with a live serving system, on scheduling transitions generated by replaying historical request traces under existing heuristic schedulers. URSA (i) predicts a calibrated *distribution* over each request’s output length and derived key–value (KV) cache footprint rather than a point estimate; (ii) encodes the joint state of the waiting queue, heterogeneous GPU instances, and KV occupancy as a request–instance heterogeneous graph processed by a graph neural network; (iii) learns a dispatch policy with conservative, distributional offline RL whose reward jointly optimizes SLO attainment, goodput, and KV-overflow risk; and (iv) reserves memory at a class-dependent high quantile of the predicted footprint to bound out-of-memory events. Across the BurstGPT, Azure LLM inference, and Alibaba GPU-cluster traces, URSA raises overall SLO attainment from \\\\(71.3\\\\%\\\\) (FCFS) and \\\\(84.1\\\\%\\\\) (learning-to-rank) to \\\\(90.4\\\\%\\\\), cuts P99 TTFT by up to \\\\(3.3\\\\times \\\\), and reduces recompute/eviction events below \\\\(1\\\\%\\\\), approaching an oracle that knows true lengths. We analyze limitations, robustness to prediction error, and transfer to other scheduling domains.\n## Funding\nThe authors did not receive external funding for this work.\n### Authors and Affiliations\n1. Duke University, Durham, USA\nEnmiao Feng & Pengfei Li\n2. New York University, New York, USA\nGaike Wang\n3. The University of Chicago, Chicago, USA\nYinuo Wang\n4. University of California San Diego, La Jolla, USA\nShan Huang\n1. Enmiao Feng\nView author publications\nSearch author on: PubMed Google Scholar\n2. Gaike Wang\nView author publications\nSearch author on: PubMed Google Scholar\n3. Pengfei Li\nView author publications\nSearch author on: PubMed Google Scholar\n4. Yinuo Wang\nView author publications\nSearch author on: PubMed Google Scholar\n5. Shan Huang\nView author publications\nSearch author on: PubMed Google Scholar\n### Corresponding author\nCorrespondence to Shan Huang (shanhuang@ucsd.edu).\n### Competing interests\nThe authors declare no competing interests.\n### Publisher's note\nSpringer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+      "title": "TPN Bench Expanded Its Toolkit to Preserve AI Performance During Compression - The TAO Daily",
+      "url": "https://taodaily.io/tpn-bench-expanded-its-toolkit-to-preserve-ai-performance-during-compression",
+      "published_at": "2026-10-24T00:00:00.000Z",
+      "excerpt": "# TPN Bench Expanded Its Toolkit to Preserve AI Performance During Compression\n\nTPN added Quantization Aware Distillation to TPN Bench, helping developers compress large AI models, preserve performance, and reduce hardware and computing requirements.\n\nIA\n\nIge A October 24, 2026 · 2 min read\n\nTPN (SN65) has added Quantization Aware Distillation to TPN Bench, expanding its capabilities for optimizing large language models.\n\nThe new feature allows developers and AI researchers to compress models while recovering some of the performance typically lost during compression.\n\nIt could make powerful AI models more practical to deploy on hardware with limited memory and computing capacity.\n\nTPN (SN65) specializes in reducing the computational resources required to run AI models while maintaining their capabilities.\n\nIts TPN Bench platform provides tools for evaluating model performance and optimizing models for deployment.\n\nUsers can upload models, select compression methods, and receive optimized versions without managing the underlying computational processes themselves.\n\nThis helps reduce the technical and infrastructure requirements associated with model optimization.\n\n...\n\nShrink Models on TPN Bench\n\nTPN Bench toolkit now offers three compression methods. Standard Quantization reduces the numerical precision of model parameters, lowering memory consumption.\n\nI-Matrix Quantization uses information about a model’s behavior to guide precision allocation and limit performance degradation.\n\nQuantization Aware Distillation extends these approaches by introducing additional training, allowing compressed models to recover some of the capabilities that conventional quantization can weaken.\n\nQuantization Aware Distillation on TPN Bench Toolkit\n\nQuantization Aware Distillation uses a teacher-student training approach in which the original model guides its compressed counterpart.\n\nAfter quantization, the smaller model learns to reproduce the original model’s outputs more accurately, helping restore performance affected by reduced numerical precision.\n\nThe technique aims to combine the efficiency of smaller models with more of the capabilities found in their larger versions.\n\nHow Quantization Aware Distillation Works\n\nAlthough this approach can improve compression outcomes, the additional training requires considerable computing resources and technical expertise.\n\nIntegrating it into TPN Bench gives developers access to the process without building and managing the optimization infrastructure themselves.\n\nFor TPN, the addition expands its role in making advanced AI models more efficient and accessible across different hardware environments.",
       "signal_score": 13.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -152,7 +152,7 @@
       "title": "OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock - AWS",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-6-1-terra-on-amazon-bedrock",
       "published_at": "2026-10-26T18:27:00.000Z",
-      "excerpt": "6.1 Terra is now generally available on Amazon Bedrock - AWS\n\n# OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock\n\n Posted on: Oct 26, 2026 \n\nToday, AWS announces the general availability of OpenAI GPT-6.1 Terra on Amazon Bedrock. GPT-6.1 Terra expands the GPT-6 family with a balance of capability, speed, and cost efficiency for everyday workloads. \n\nAs the newest model in the Terra line, GPT-6.1 Terra combines detailed visual reasoning, accurate computer use, and improved factuality and natural writing over GPT-5.6 Terra, for complex workflows. In OpenAI’s Agents’ Last Exam evaluation, it scored 15 percentage points higher than GPT-5.6 Terra, performed on par with GPT-6 Astra, and completed tasks more than three times faster than GPT-6 Astra and GPT-6.1 Sol. GPT-6.1 Terra offers balanced performance with input and output token prices at least 50% lower than those of GPT-6.1 Sol and GPT-5.6 Terra. It supports a context window of up to 1 million input tokens and accepts both text and image inputs. The Amazon Bedrock inference engine delivers the performance, security, and scale required for enterprise workloads. \n\nYou can call GPT-6.1 Terra directly through Amazon Bedrock APIs or configure ChatGPT Work and Codex to use the model on Amazon Bedrock. Use it to draft proposals, interpret technical drawings, investigate codebases, and build agents that operate across business systems. Established AWS controls help you secure workloads, govern access, and audit model invocation activity. \n\nYou can get started in the Amazon Bedrock console or programmatically through supported Amazon Bedrock APIs. For information about supported AWS Regions, endpoints, APIs, features, inference profiles and pricing, see the Amazon Bedrock documentation.",
+      "excerpt": "AWS\n\n# OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock\n\n Posted on: Oct 26, 2026 \n\nToday, AWS announces the general availability of OpenAI GPT-6.1 Terra on Amazon Bedrock. GPT-6.1 Terra expands the GPT-6 family with a balance of capability, speed, and cost efficiency for everyday workloads. \n\nAs the newest model in the Terra line, GPT-6.1 Terra combines detailed visual reasoning, accurate computer use, and improved factuality and natural writing over GPT-5.6 Terra, for complex workflows. In OpenAI’s Agents’ Last Exam evaluation, it scored 15 percentage points higher than GPT-5.6 Terra, performed on par with GPT-6 Astra, and completed tasks more than three times faster than GPT-6 Astra and GPT-6.1 Sol. GPT-6.1 Terra offers balanced performance with input and output token prices at least 50% lower than those of GPT-6.1 Sol and GPT-5.6 Terra. It supports a context window of up to 1 million input tokens and accepts both text and image inputs. The Amazon Bedrock inference engine delivers the performance, security, and scale required for enterprise workloads. \n\nYou can call GPT-6.1 Terra directly through Amazon Bedrock APIs or configure ChatGPT Work and Codex to use the model on Amazon Bedrock. Use it to draft proposals, interpret technical drawings, investigate codebases, and build agents that operate across business systems. Established AWS controls help you secure workloads, govern access, and audit model invocation activity. \n\nYou can get started in the Amazon Bedrock console or programmatically through supported Amazon Bedrock APIs. For information about supported AWS Regions, endpoints, APIs, features, inference profiles and pricing, see the Amazon Bedrock documentation.",
       "signal_score": 12.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -173,16 +173,55 @@
       }
     },
     {
-      "id": "52f504fcfb46",
+      "id": "3adee5cba4f1",
       "source": "exa_news",
-      "title": "FP4 W/A+FP4 KV的强化学习也能「又快又稳」：阿里千问提出TRACE，Rollout最高加速5.4倍",
-      "url": "https://m.aitntnews.com/newDetail.html",
-      "published_at": "2026-10-24T00:00:00.000Z",
-      "excerpt": "FP4 W/A+FP4 KV的强化学习也能「又快又稳」：阿里千问提出TRACE，Rollout最高加速5.4倍 \n\n FP4 W/A+FP4 KV的强化学习也能「又快又稳」：阿里千问提出TRACE，Rollout最高加速5.4倍 \n\n AI技术研报 2026-10-24 13:41 +5940 阅读\n\n大模型强化学习越来越「吃算力」，最昂贵的环节之一正是 Rollout。把 Rollout 从 BF16 压到 FP4，理论上可以显著降低计算和显存开销，但问题也随之而来 —— 训练端与 Rollout 端即使面对非常接近的数值，也可能因为 FP4 的离散量化边界而落到不同码点，最终把微小的数值误差放大成策略偏差导致训练崩溃。\n\n阿里千问联合俄亥俄州立大学的研究团队提出了 TRACE。它的核心思路并不是继续分别提高训练端和 Rollout 端的量化精度，而是直接减少两条低精度执行路径之间的差异：用 Rollout 侧真实的 FP4 量化结果，反过来指导训练侧的舍入方向。在 Qwen3.5-35B-A3B、Qwen3.5-122B-A10B、Qwen3.8-Flash-Next 以及 Qwen3.8-2.4T-A95B 四个 MoE 模型上，TRACE 可以在联合 FP4 W/A 与 FP4 KV Cache Rollout 的设置下，将最终性能拉回到 BF16 Rollout 附近，同时在 128K 输出长度下 rollout 获得最高 5.4× 的解码吞吐提升。\n\n- 论文标题：TRACE: Rollout-Guided Quantization-Aware Training for FP4 Reinforcement Learning of MoE Language Models\n- ArXiv 链接：https://arxiv.org/abs/2610.07767\n- Huggingface 链接：https://huggingface.co/papers/2610.07767\n\n...\n\nTRACE 的第一个设计是 Rollout-Guided Quantization-Aware Training。在 Rollout 阶段，系统记录 FP4 routed expert 激活和 FP4 KV 状态对应的量化结果；到了后续训练阶段，这些信息不再只是「历史数据」，而是直接参与训练侧 fake quantization 的舍入决策。具体来说，对于训练侧某个待量化值，TRACE 仍然只在相邻的两个 FP4 E2M1 码点之间选择，但不再机械使用标准 round-to-nearest （RTN）。它会优先选择距离 Rollout 侧实际码点更近的那个候选值。\n\n图 3：TRACE 总体流程。Rollout 侧保存紧凑量化信息，训练侧加载后用于调整 FP4 舍入。\n\n然而，直接保存完整的 Rollout 量化结果并不便宜。这些信息需要经历 GPU→CPU、CPU 缓存、磁盘写入 / 读取，再在训练时回到 GPU；长轨迹、大 batch 和异步 RL 都会放大存储与通信压力。 TRACE 的第二个设计，正是把「需要传什么」压到最少。作者统计发现，超过 99% 的训练 /rollout 量化不一致只相差一个相邻 FP4 codebook entry。既然训练侧自身的激活值已经把候选范围压得很小，那么 Rollout 侧没必要把完整低精度值全部传过去；保留少量 mantissa 信息，加上 scale，通常就足够告诉训练侧应该朝哪个方向舍入。\n\n...\n\n实验效果\n\n在 Qwen3.5-35B-A3B 的 RL 任务上，TRACE 的平均分达到 75.3。作为对照，BF16 Rollout 为 74.9，普通 QAT 为 59.6，QaRL 为 58.6，QUADS 为 68.8。尤其在 HMMT25 上，TRACE 从 QUADS 的 59.0 提升到 70.0。\n\n论文专门测了 Rollout 吞吐和端到端 RL step time。结果显示，如果保存完整指导信息，通信开销确实会严重拖慢 Rollout；而采用紧凑缓存后，TRACE 的吞吐基本贴近原生 FP4 Rollout。在 8K 输入、128K 输出时，解码吞吐相对 BF16 Rollout 最高提升 5.4×。端到端来看，联合 FP4 Rollout 的 RL step time 中 TRACE 仅产生约 7.4% 的额外开销。",
+      "title": "Hugging Face Publishes 207 WebGPU Kernels for Browser AI | WebGL / WebGPU",
+      "url": "https://webgpu.com/news/hugging-face-webgpu-kernels-browser-ai",
+      "published_at": "2026-10-25T00:00:00.000Z",
+      "excerpt": "# Hugging Face Publishes 207 WebGPU Kernels for Browser AI\n\nHugging Face has released 207 versioned WebGPU kernels, a JavaScript loader and Fleet benchmarking for local browser AI workloads.\n\nPublished\n\nOctober 25, 2026\n\nOn this page More than a folder of shaders\n\n- More than a folder of shaders\n- Faster on an Apple M4, with caveats\n- Fleet takes testing beyond one GPU\n\nHugging Face has released (opens in a new tab) an initial collection of 207 open-source WebGPU kernels for local AI workloads, accompanied by a JavaScript library that downloads and runs them directly from the Hugging Face Hub. Announced by Nico Martin (opens in a new tab) and Joshua Lochner (opens in a new tab), the collection covers the low-level operations that browser inference runtimes repeatedly need: matrix multiplication, normalization, convolution, attention primitives, quantization, broadcasting and tensor layout transformations. Everything is Apache 2.0 licensed. This is foundational work rather than another model demo. Faster browser inference ultimately depends on faster individual operations, and WebGPU portability alone does not guarantee good performance across every device.\n\n...\n\n## Faster on an Apple M4, with caveats\n\nHugging Face compared its kernels against ORT WebGPU on an Apple M4 GPU using a development version of ONNX Runtime Web 1.30.0. The evaluation started with 1,756 cases across all 207 operations. Hugging Face’s published aggregate covers the 809 cases where both systems produced matching outputs and reliable timings. Across those cases, the company reports a 2.57x geometric-mean speedup and a 1.90x median speedup, with 629 wins, 176 losses and four ties. Familiar operations showed more moderate improvements: Add reached 3.52x, Softmax 2.11x, LayerNormalization 2.22x and MatMul 1.14x. Some specialized workloads produced extreme results. A bilinear `Einsum` case ran more than 10,000 times faster, while a row-wise `CumSum` reported a 301x improvement.",
       "signal_score": 12.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
         "rank": 3
+      }
+    },
+    {
+      "id": "dcea9de48ce4",
+      "source": "exa_news",
+      "title": "Nvidia's Vera Rubin NVL72 trains models with 75% fewer GPUs than Grace Blackwell",
+      "url": "https://cryptobriefing.com/nvidia-vera-rubin-nvl72-75-percent-fewer-gpus",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "excerpt": "# Nvidia’s Vera Rubin NVL72 trains models with 75% fewer GPUs than Grace Blackwell \n\n Nvidia's next-generation supercomputer promises to slash hardware requirements and cut inference costs to one-tenth of its predecessor's price per million tokens \n\n by Diego Almada Lopez \n\nOct. 26, 2026\n\nNvidia has a habit of making its last chip look obsolete before most customers have finished unpacking it. The Vera Rubin NVL72 is the latest case in point.\n\nThe new system, which packs 72 Rubin GPUs and 36 Vera CPUs into a single NVLink domain, can train a 10-trillion-parameter mixture-of-experts model on 100 trillion tokens in one month using about 75% fewer GPUs than the Grace Blackwell NVL72 configuration.\n\n## What the Vera Rubin NVL72 actually is\n\nThe system is the direct successor to Nvidia’s Blackwell NVL72 racks, which shipped in GB200 and GB300 variants.\n\nEach GPU in the Vera Rubin NVL72 carries 288 GB of HBM4 memory. The architecture also introduces new interconnectivity designs and updated precision formats, both aimed at squeezing more useful work out of every watt consumed.\n\nThe cost reduction on the inference side is equally striking. Nvidia projects that running inference on the Vera Rubin NVL72 will cost one-tenth the price per million tokens compared to Blackwell racks.\n\nThird-party benchmarks back up at least part of that story. MLPerf Inference v6.1, released in September 2026, recorded throughput improvements of up to 3.7 times higher than the GB300 NVL72 on the Qwen3-VL task. Separately, Artificial Analysis benchmarks showed approximately 5.7 times higher throughput per megawatt than the GB300 NVL72 on agentic AI workloads.",
+      "signal_score": 11.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 4
+      }
+    },
+    {
+      "id": "e6dceccffc92",
+      "source": "exa_news",
+      "title": "Tensormesh Launches Tensormesh Platform to Cut LLM Inference Costs by Reusing KV Cache at Enterprise Scale - StorageNewsletter",
+      "url": "https://www.storagenewsletter.com/2026/10/26/tensormesh-launches-tensormesh-platform-to-cut-llm-inference-costs-by-reusing-kv-cache-at-enterprise-scale",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "excerpt": "# Tensormesh Launches Tensormesh Platform to Cut LLM Inference Costs by Reusing KV Cache at Enterprise Scale\n\n## Optimizing enterprise AI inference through intelligent multi-tier KV cache management\n\n This is a Press Release edited by StorageNewsletter.com on October 26, 2026 at 2:00 pm \n\nTensormesh, creators of LMCache, an open-source KV caching technology, announced Tensormesh Platform, the data management layer for AI inference. This multi-tier, scalable KV cache management software deploys across infrastructure with an enterprise Kubernetes deployment. With intelligent, AI-native data at its core, Tensormesh Platform enables enterprises to optimize the efficiency, cost, and quality of every inference they run. This marks the arrival of the first enterprise-ready KV cache management offering that works with any LLM, inference orchestration software, and storage vendor.\n\n...\n\nEnterprises deploying Tensormesh Platform also benefit from:\n\n- Tiered Caching: KV Cache is managed across HBM, CPU, and storage layers automatically\n- Prefix Caching: reuses the computed KV cache for the opening part of a prompt\n- NonPrefix Caching (CacheBlend): reuses computed blocks anywhere in the prompt, not just at the start, making Tensormesh Platform ideal for RAG\n- Peer-to-peer KV transfer: fetches KV cache directly from any peer in the fleet\n- Advanced cache controls: allows users to pin, look up, move, compress, and clear entries via controller APIs, per workload or fleet-wide",
+      "signal_score": 11.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 4
+      }
+    },
+    {
+      "id": "2543567215b2",
+      "source": "exa_news",
+      "title": "KV Cache砍掉99%，单卡吞吐飙6倍，港科CMU联手岩山科技开源新模型 – 量子位",
+      "url": "https://www.qbitai.com/2026/10/505407.html",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "excerpt": "# KV Cache砍掉99%，单卡吞吐飙6倍，港科CMU联手岩山科技开源新模型\n\n 一水 2026-10-26 14:45:25 来源：量子位 \n\n一张卡，512路长推理同时跑\n\n> 允中 发自 凹非寺\n> \n> 量子位 | 公众号 QbitAI\n\n谷歌今年的一篇论文，愣是把存储芯片巨头的股价都给整出动静了。\n\n论文里提到， KV Cache至少能压缩6倍。\n\n要知道，大模型推理越来越吃内存，KV Cache又是其中一笔不小的开销。\n\n现在谷歌突然把它压下去这么多，美光等存储芯片巨头的股价随之下跌。\n\n结果才过去几个月，又有人对KV Cache下了更狠的一刀。\n\n这次连压缩都不满足了。\n\n上下文从4K一路涨到256K，KV Cache占用愣是没变。\n\n在256K上下文下，始终固定在72MiB。相比源模型，KV Cache直接减少 99.1%。\n\n更夸张的是，一张80GB显卡同时跑512路长推理，输出吞吐达到12124 tokens/s，是源模型的6.42倍。\n\n而且推理能力也基本保住了，AIME 2024—2026平均一次通过率达到82.9%，而参评的有界状态模型即便做到14B，最好也只有18.8%。\n\n这就是岩山科技旗下岩芯矩阵联合港科大、CMU等高校刚刚发布并开源的 EdgeRock-4B。\n\n它给长推理带来的一个变化是：\n\n推理再长，内存不涨。\n\n模型权重和推理代码目前均已开源，还支持文本和图像推理。\n\n...\n\n# 一张卡，512路长推理同时跑\n\n先看最直观的吞吐。\n\n测试设定是32K输入、32K输出，所有模型都在单张Hopper 80GB GPU上跑，各自取实测最快的批大小。\n\n结果，EdgeRock-4B一口气开到512路并发，输出吞吐12124 tokens/s。\n\n源模型Qwen3.5-4B最快的配置是批大小64，只有1889 tokens/s；Gemma 4 E4B、MiniCPM5-2B、LFM2.5-2.6B也都在1700到2200",
+      "signal_score": 11.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 4
       }
     },
     {
@@ -192,23 +231,49 @@
       "url": "https://www.infoq.com/news/2026/10/google-meta-torchtpu",
       "published_at": "2026-10-25T00:00:00.000Z",
       "excerpt": "# PyTorch Conference 2026: Google and Meta Open-Source TorchTPU for Native PyTorch on TPUs \n\nOct 25, 2026 4 min read \n\nby\n\n- Andrew Hoblitzell \n\nAt PyTorch Conference North America 2026 in San Jose, Google and Meta open-sourced TorchTPU, a native PyTorch backend for Google's Tensor Processing Units (TPUs). Meta, which created PyTorch in 2016, plans to move larger-scale LLM workloads onto TPUs with it, Meta software engineer Zongwei Zhou said in the October 21 keynotes.\n\nTorchTPU replaces PyTorch/XLA, a lazy-tensor bridge from 2020 that, according to the announcement, \"required intrusive source-code modifications.\" The new backend aims to make porting a model as simple as changing `model.to(\"cuda\")` to `model.to(\"tpu\")`. \"With TorchTPU, TPUs join GPUs and CPUs as a native option for PyTorch,\" Google Cloud wrote in its announcement, co-authored by Bill Jia, VP of engineering for Core ML/AI.\n\n...\n\nBecause TorchTPU plugs into PyTorch's low-level dispatcher, the speakers said, Hugging Face models worked with it out of the box. The vLLM and SGLang inference engines run natively, and TorchTitan supports dense, mixture-of-experts, and diffusion models for training at scale. Ray and llm-d scale TPU workloads across hosts on Kubernetes. Four repositories were open sourced: TorchTPU, vLLM-TorchTPU, SGLang-TorchTPU, and TorchTitan.\n\nJia showed near-linear scaling past 8,000 TPU chips, with per-chip throughput holding roughly constant as the cluster grew. Google's published results include a Qwen3 235B mixture-of-experts run on 8,192 TPU v7x chips at 28% model FLOPs utilization. The announcement is candid that the one-line change is only a starting point:\n\n> One cannot achieve peak TPU performance with that simple change, since a model's shapes, sharding and ops may be skewed toward a GPU architecture; however, the model should run out of the box.",
-      "signal_score": 11.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 4
-      }
-    },
-    {
-      "id": "63f9b3c3500a",
-      "source": "exa_news",
-      "title": "Kimi continues to challenge the frontier with K3.1 Pro | The Rundown AI",
-      "url": "https://www.therundown.ai/articles/kimi-continues-to-challenge-the-frontier-with-k3-1-pro",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "excerpt": "The Rundown: Chinese AI lab Moonshot just introduced Kimi K3.1 Pro, an upgrade to its July K3 model that it says is “matching the strongest proprietary models” on key benchmarks, with free-to-download weights set to come by Nov. 4. \n\nThe details: \n\n- Artificial Analysis placed it No. 4 overall on its Intelligence Index, beating OpenAI’s GPT-6 Astra and trailing only Anthropic’s 5.5 duo and Meta’s Muse Wonder. \n- In Moonshot’s tests, K3.1 Pro tops Opus 5.5 on hours-long coding projects, expert academic questions, document-heavy research, and real-world job tasks. \n- At $2 in/$10 out per million tokens, K3.1 Pro is priced like Sonnet 5.5, a fifth of Astra’s rate, but consumes tokens at a higher rate than its frontier rivals. \n- AA also ranks it the best openly available cyber-defense model, scoring 64% with no safety refusals, trailing just a GPT-6 variant available only to vetted defenders. \n\nWhy it matters: U.S. labs have kept their best hacking models locked down, but a Chinese model now sits just behind OAI’s gated cyber model. Dario Amodei gave defenders 6-12 months in May before Chinese models catch up, and K3.1 Pro is already near the top on defense — with open models’ attack skills also likely not far behind.",
       "signal_score": 10.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
         "rank": 5
+      }
+    },
+    {
+      "id": "416d1d01ceea",
+      "source": "exa_news",
+      "title": "Announcing Private Agent Factory 26.10, featuring Deep NL2SQL | database",
+      "url": "https://blogs.oracle.com/database/announcing-private-agent-factory-26-10-featuring-deep-nl2sql",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "excerpt": "# Announcing Private Agent Factory 26.10, featuring Deep NL2SQL\n\n October 26, 2026 5 minute read \n\nKumar G Varun\n\nProduct Management - Applied AI, Private Agent Factory\n\nDeep NL2SQL and new ways to connect and operate private agents\n\nBusiness users want answers they can act on. Developers want to bring agents into the applications people already use. Platform teams need to understand how those agents behave and keep control of the data and govern th systems they access.\n\nOracle AI Database Private Agent Factory 26.10 addresses these needs.. This release introduces Deep NL2SQL, a major addition for asking business questions about enterprise data, alongside new Python SDK and REST integration capabilities, reusable ingestion services, expanded agent interoperability, and native observability. \n\nPrivate Agent Factory gives teams a visual environment to build, test, and run private agents with Oracle Database, enterprise documents, APIs, and supported models. This release extends that foundation from building an agent to connecting it to a business workflow and understanding its operation.\n\n...\n\n## Connect private agents to the applications people use\n\nThe new Agent Factory Python SDK gives developers a supported way to run Custom Workflows, Knowledge Agents, Data Analysis Agents, and Deep Data Research Agents from Python applications. Supported authentication options include username and password and browser-assisted SSO, while operations continue to follow the user’s existing Agent Factory permissions.\n\nThe SDK and standardized REST APIs provide integration options for applications, scripts, and business workflows. The SDK also supports operations on supported model connections and data sources. Teams can bring agent capabilities into an existing application without asking every user to work directly in the Agent Factory interface.",
+      "signal_score": 10.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 5
+      }
+    },
+    {
+      "id": "e95923e9b771",
+      "source": "exa_news",
+      "title": "Cerebras trillion-parameter model deployment — Grafy News",
+      "url": "https://grafy.ai/news/cerebras-details-wafer-scale-deployment-of-trillion-parameter-models",
+      "published_at": "2026-10-25T00:00:00.000Z",
+      "excerpt": "News Desk Oct 25, 2026 6 min read\n\nCerebras has published a detailed account of how it runs multi-trillion-parameter models across dozens of wafer-scale processors, describing a pipeline in which model weights stay on chip and only activations travel between wafers at roughly two microseconds per hop. It matters because the post turns an abstract claim about frontier-scale inference into a specific architecture, with trade-offs developers can inspect and test.\n\n...\n\nA single WSE-3T wafer provides 44 GB of on-chip memory, according to Cerebras, while trillion-parameter models need terabytes for their weights alone. The answer is to spread the model across many wafers rather than squeeze it into one.\n\nThe worked example is Kimi K3, described as an open-source model with about 3 trillion parameters, 69 linear-attention layers and 24 dense layers. Cerebras assumes 4-bit weight quantization, in the manner of the Hugging Face implementation, an 8-bit KV cache, and a 256k assumed average request size.\n\nOn those assumptions, each of the model's 93 layers comes to roughly 16 GB. Because a layer fits comfortably inside 44 GB, Cerebras can keep whole layers resident on a chip instead of splitting them across wafers.\n\n...\n\n## How do the wafers pass work between them?\n\nCerebras executes models as a pipeline. Its compiler maps model layers across regions of wafers, and the runtime maps the path tokens travel between them. Only activations cross between wafers, over RDMA over Ethernet, at roughly two microseconds per hop; weights generally do not move at all.\n\nThe assembly-line analogy in the post: wafer 1 runs layers 1–2 and sends activations to wafer 2, which runs layers 3–4 and passes results to wafer 3, until the last wafer produces the next token. Cerebras says production deployments use much finer-grained stages than the illustration.\n\n...\n\nThe example is not a toy model. As described in Cerebras's post, Kimi K3 scores 88.3% on Terminal-Bench 2.1, against 88.8% for GPT-5.6 Sol, and 91.2% on BrowseComp, against 90.4% for GPT-5.6 Sol. Open-weight models in the multi-trillion-parameter class are becoming servable at high token rates, and the architecture described here is a plausible reason why.\n\nThe caveat matters just as much. Cerebras notes that performance comparisons rest on third-party benchmarking or internal testing, and that observed speed improvements versus GPU-based systems may vary with workload, configuration, date and models tested. The method also scales: calculate memory for weights and request state, distribute across wafers, connect them into a pipeline. Each additional wafer adds compute and on-chip memory, allowing models larger than any single chip.",
+      "signal_score": 10.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 5
+      }
+    },
+    {
+      "id": "8189694c6366",
+      "source": "exa_news",
+      "title": "Moonshot AI launches upgraded Kimi model - Chinadaily.com.cn",
+      "url": "https://www.chinadaily.com.cn/a/202610/27/WS6adff3c1e4b06d4aa0564e78.html",
+      "published_at": "2026-10-27T00:00:00.000Z",
+      "excerpt": "By CHENG YU | China Daily | Updated: 2026-10-27 08:43 \n\n Kimi logo seen during an AI conference in Shanghai in July. CHINA DAILY \n\nChinese artificial intelligence startup Moonshot AI has launched an upgraded Kimi model, which boasts stronger coding, financial research and 3D design capabilities, while deliberately limiting its ability to carry out cyberattacks.\n\nKimi K3.1 Pro debuted fourth on independent evaluator Artificial Analysis' Intelligence Index, scoring 55 points, up 11 from its predecessor. It would become the highest-ranked open-weight model on the index once its weights are published, the evaluator said.\n\nThe first model in Moonshot's K3.1 series is available through its Kimi apps, coding tools and developer platforms. The company plans to release its full weights — the files developers need to run the model themselves — by Nov 4.\n\nThe model has 2.8 trillion parameters, with about 104 billion activated for each token processed. Its one-million-token context window allows it to handle large volumes of information in a single session.\n\nMoonshot said the upgrade was built through further training of Kimi K3, with improvements aimed at completing practical tasks — from building software and creating 3D assets to analyzing financial documents and carrying out extended, multistep assignments.\n\nThe company also removed cybersecurity-related data from parts of its training pipeline, including reinforcement-learning environments, while retaining general programming tasks.\n\n\"We aim not to release open weights that would extend the absolute frontier of cyber capability,\" Moonshot said.\n\nOn its internal test of vulnerability discovery and exploitation, the K3.1 Pro scored 81.0 percent, compared with 90.5 percent for a comparable version without such safeguards. These figures were self-reported by the company.\n\nMoonshot nevertheless reported competitive general coding performance. In its evaluation using Terminal-Bench 4.0 — which tests agents' ability to carry out practical computing tasks — K3.1 Pro scored 65.7 percent, ahead of OpenAI's GPT-6 Astra at 58.2 percent and just behind Anthropic's Claude Opus 5.5 at 66.4 percent.",
+      "signal_score": 9.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 6
       }
     },
     {
@@ -217,37 +282,37 @@
       "title": "AWS Infinity: open-source Rust runtime for massively concurrent AI agents",
       "url": "https://www.datastudios.org/post/aws-infinity-open-source-rust-runtime-75000-idle-ai-agents",
       "published_at": "2026-10-25T00:00:00.000Z",
-      "excerpt": "AWS Infinity: open-source Rust runtime for massively concurrent AI agents\n\n# AWS open-sources Infinity, a Rust agent runtime that fits about 75,000 idle AI agents in 8 GB\n\n22 hours ago 10 min read\n\nExpand image\n\nAmazon Web Services has released Infinity, an open-source Rust runtime designed to let very large numbers of AI agents wait on slow tools without holding processes, threads or network connections while they wait. The project was introduced on October 23, 2026 on the AWS Open Source Blog by Shadaj Laddad, research lead for the Hydro team at AWS, and is published under the Apache 2.0 license as part of the Hydro project, a collaboration between AWS and the Sky Computing Lab at UC Berkeley. AWS describes the release as an early research prototype rather than a managed service, and it is asking developers for feedback on the design.\n\n...\n\nInfinity ships with three connected pieces: the runtime itself, a tool protocol called the Reactive Agent Protocol (RAP), and a coding agent called Infinity Code that is built on the runtime. The same agent code is meant to run either as a resident process on a laptop or as a stateless, event-driven deployment on AWS Lambda, for which the repository includes AWS CDK constructs.",
-      "signal_score": 10.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 5
-      }
-    },
-    {
-      "id": "3adee5cba4f1",
-      "source": "exa_news",
-      "title": "Hugging Face Publishes 207 WebGPU Kernels for Browser AI | WebGL / WebGPU",
-      "url": "https://webgpu.com/news/hugging-face-webgpu-kernels-browser-ai",
-      "published_at": "2026-10-25T00:00:00.000Z",
-      "excerpt": "# Hugging Face Publishes 207 WebGPU Kernels for Browser AI\n\nHugging Face has released 207 versioned WebGPU kernels, a JavaScript loader and Fleet benchmarking for local browser AI workloads.\n\nPublished\n\nOctober 25, 2026\n\nOn this page More than a folder of shaders\n\n- More than a folder of shaders\n- Faster on an Apple M4, with caveats\n- Fleet takes testing beyond one GPU\n\nHugging Face has released (opens in a new tab) an initial collection of 207 open-source WebGPU kernels for local AI workloads, accompanied by a JavaScript library that downloads and runs them directly from the Hugging Face Hub. Announced by Nico Martin (opens in a new tab) and Joshua Lochner (opens in a new tab), the collection covers the low-level operations that browser inference runtimes repeatedly need: matrix multiplication, normalization, convolution, attention primitives, quantization, broadcasting and tensor layout transformations. Everything is Apache 2.0 licensed. This is foundational work rather than another model demo. Faster browser inference ultimately depends on faster individual operations, and WebGPU portability alone does not guarantee good performance across every device.\n\n...\n\n## Faster on an Apple M4, with caveats\n\nHugging Face compared its kernels against ORT WebGPU on an Apple M4 GPU using a development version of ONNX Runtime Web 1.30.0. The evaluation started with 1,756 cases across all 207 operations. Hugging Face’s published aggregate covers the 809 cases where both systems produced matching outputs and reliable timings. Across those cases, the company reports a 2.57x geometric-mean speedup and a 1.90x median speedup, with 629 wins, 176 losses and four ties. Familiar operations showed more moderate improvements: Add reached 3.52x, Softmax 2.11x, LayerNormalization 2.22x and MatMul 1.14x. Some specialized workloads produced extreme results. A bilinear `Einsum` case ran more than 10,000 times faster, while a row-wise `CumSum` reported a 301x improvement.\n\n...\n\n## Fleet takes testing beyond one GPU\n\nHugging Face has also launched Fleet, a browser-based testing tool that runs correctness and performance trials on the visitor’s GPU. With consent, results contribute private evidence that can expose device-specific failures and slow paths.\n\nThat broader testing surface may be as valuable as the kernels themselves. WGSL that performs well on an Apple M4 might need different workgroup sizes, vectorization or memory-access patterns on Intel, NVIDIA or mobile hardware. The larger contribution is the packaging model: inspectable WGSL, explicit contracts, correctness fixtures and benchmark cases that travel",
-      "signal_score": 10.0,
-      "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
-        "rank": 5
-      }
-    },
-    {
-      "id": "28590d115950",
-      "source": "exa_news",
-      "title": "AMD Adds MiniMax-M3.1 Support for Instinct MI350 Series GPUs | TokenPost",
-      "url": "https://www.tokenpost.com/news/technology/39363",
-      "published_at": "2026-10-23T00:00:00.000Z",
-      "excerpt": "# AMD Adds MiniMax-M3.1 Support for Instinct MI350 Series GPUs\n\nThe ROCm update supports vLLM and ATOM. AMD measured lower decode latency and higher interactivity in selected tests.\n\nBy Simon Yoon\n\nPublished Oct 23, 2026, 5:57 PM EDT\n\nA black accelerator module rests on a vivid red platform / TokenPost.ai\n\nAMD announced Thursday, Oct. 22, that MiniMax-M3.1 can run on Instinct MI350 Series GPUs through ROCm versions of vLLM and ATOM, bringing a coding and agent model with a context window of one million tokens to AMD’s inference stack.\n\nMiniMax-M3.1 includes reasoning and tool-use features. AMD’s setup supports the original NVFP4 checkpoint after conversion during loading, as well as an MXFP4 export made with AMD Quark. The ATOM configuration AMD tested uses the Quark export. AITER kernels handle expert routing, attention and reduction operations. AMD said the two weight paths performed within evaluation error of each other on GSM8K, AIME and MMMU-Pro.\n\nATOM applies per-channel FP8 attention and combines shared-expert work during startup. It also uses CUDA graphs to capture DSpark’s draft pass; AMD’s tests found that roughly half of DSpark’s seven-token draft proposals were accepted on real text. The MI350 implementation uses four-way tensor parallelism per replica, allowing two replicas on an eight-GPU node.\n\nIn AMD’s tests, vLLM mono decode reduced per-token decode latency by a factor of 3.2 at one request, 2.1 at four and 1.5 at 16, compared with the same server with mono decode disabled. On coding-agent traces, AMD said mono decode produced 2.2x to 2.4x the interactivity across one to eight concurrent users. Pairing it with DSpark speculative decoding increased interactivity by about one-third for one to four users and 13% at eight users in the reported tests.\n\nThe current configuration supports mono decode with DSpark for up to four concurrent requests. Wider decode steps use the standard path. AMD listed wider mono-decode steps and support for MiniMax-M3.1 mono decode in ATOM as future work, without a timeline.\n\nIn a separate announcement on Oct. 12, AMD introduced its Helion rack-scale design for agentic AI workloads; its enterprise configuration supports up to 16 Instinct MI350P GPUs.",
+      "excerpt": "AWS Infinity: open-source Rust runtime for massively concurrent AI agents\n\n# AWS open-sources Infinity, a Rust agent runtime that fits about 75,000 idle AI agents in 8 GB\n\n1 day ago 10 min read\n\nExpand image\n\nAmazon Web Services has released Infinity, an open-source Rust runtime designed to let very large numbers of AI agents wait on slow tools without holding processes, threads or network connections while they wait. The project was introduced on October 23, 2026 on the AWS Open Source Blog by Shadaj Laddad, research lead for the Hydro team at AWS, and is published under the Apache 2.0 license as part of the Hydro project, a collaboration between AWS and the Sky Computing Lab at UC Berkeley. AWS describes the release as an early research prototype rather than a managed service, and it is asking developers for feedback on the design.\n\n...\n\nThe central claim is about density. According to AWS, an idle Infinity agent occupies roughly 100 KB of memory, a figure that grows linearly with conversation history, which means that about 75,000 agents fit in 8 GB, the memory of a Raspberry Pi 5. The project documentation gives the measurement behind that figure: about 103 KB per agent after 20 tool-calling turns, and 8.4 GB for 80,000 idle resident agents. The benchmark that AWS cites ran 80,000 agents through 3.2 million completions on a single thread of an AMD EPYC 9R14 processor, using in-memory stores and a simulated model rather than a real language model.\n\nInfinity ships with three connected pieces: the runtime itself, a tool protocol called the Reactive Agent Protocol (RAP), and a coding agent called Infinity Code that is built on the runtime. The same agent code is meant to run either as a resident process on a laptop or as a stateless, event-driven deployment on AWS Lambda, for which the repository includes AWS CDK constructs.",
       "signal_score": 9.0,
       "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
+        "query": "latest LLM agents RAG inference open source developer tool",
         "rank": 6
+      }
+    },
+    {
+      "id": "bda068b5e26d",
+      "source": "exa_news",
+      "title": "Recursive Flint: 40B open coding model, specs, scores — 9to5AI",
+      "url": "https://9to5ai.tech/recursive-flint-open-coding-model",
+      "published_at": "2026-10-24T00:00:00.000Z",
+      "excerpt": "# Recursive Flint: an Apache 2.0, 40B coding model with 2.5B active parameters and a self-reported 89.7% on SWE-bench Pro v2\n\nRecursive Flint is a 40B-parameter mixture-of-experts coding model with about 2.5B active parameters, released under Apache 2.0 on October 21, 2026. Its 89.7% on SWE-bench Pro v2 is Recursive's own number and wasn't on Scale AI's leaderboard as of October 22.\n\nS By Shajanthan Yogeswaran Oct 24, 2026· 5 min read\n\n## What’s new, in 20 seconds\n\n1. Recursive Superintelligence published Flint on Hugging Face on October 21, 2026: a mixture-of-experts coding model with 39.8B total and about 2.5B active parameters, a documented 262,144-token context and Apache 2.0 weights.\n2. Recursive's model card lists 89.7% on SWE-bench Pro v2, 74.2% on SWE-bench Verified and 54.9% on Terminal-Bench 2.1, all run by Recursive. Flint wasn't on Scale AI's SWE-Bench Pro V2 leaderboard as of October 22, and Scale says that benchmark's public set is probably affected by training-time exposure.\n3. Recursive's rec engine needs an M4 Pro, M5 Pro or M5 Max Mac with at least 48 GB of memory and about 30 GB of disk. Recursive says Flint runs at more than 125 tokens per second on an M4 Pro",
+      "signal_score": 8.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 7
+      }
+    },
+    {
+      "id": "276fa00eecf2",
+      "source": "exa_news",
+      "title": "Microsoft Open-Sources Agensh: A Multi-Agent Harness for 1,024 Agents - MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/10/24/microsoft-agensh-multi-agent-harness-1024-agents",
+      "published_at": "2026-10-25T00:00:00.000Z",
+      "excerpt": "# Microsoft Open-Sources Agensh: A Multi-Agent Harness for 1,024 Agents\n\nBy\n\nAsif Razzaq\n\nOctober 24, 2026\n\nMicrosoft Research has open-sourced Agensh, a decentralized harness for large teams of coding agents. The Agensh multi-agent harness removes the central orchestrator that most agent frameworks depend on. Every worker picks its own sub-task, shares findings and merges code into a common Git repo. On ProgramBench, the team scaled the setup from 1 agent to 1,024 agents.\n\n...\n\n## What is Agensh?\n\nAgensh is a multi-agent harness from Microsoft Research that coordinates many LLM agents without a lead agent. \n\nThe target problem is the orchestrator ceiling. In orchestrator-worker designs, a lead agent plans, assigns and merges all work. The research paper cites Claude Code agent teams, Codex sub-agents, Copilot fleet and Kimi Agent Swarm as examples. Agensh lets the workers do that coordination themselves.\n\n## How does the Agensh cooperation loop work?\n\nEach worker runs the same 5-step loop, concurrently and asynchronously:\n\n1. Gather context: read the goal, peer progress, messages and findings.\n2. Claim a sub-task: post a CLAIM, then settle overlaps by direct message.\n3. Take action: work locally with tools and post useful findings early.\n4. Verify results: check the work against the sub-task’s acceptance criteria.\n5. Merge progress: merge into the shared repo, post an update, then repeat.\n\nThree services connect the workers. Gitea hosts the shared workspace, with branches, PRs and merge conflicts. Mattermost carries a team channel plus direct messages for urgent collisions. A shared context board, adapted from DeLM, stores typed notes: OBSERVED, FACT, FAIL, CLAIM and PATCH_SUMMARY.\n\nThe loop lives in the prompt, not in runtime code. Every worker gets the same prompt except its ID. Agensh sits on top of a single-agent harness. The experiments used GitHub Copilot CLI. The research paper states thin adapters can connect other harnesses, such as Claude Code.\n\n...\n\n| Feature | Agensh | Claude Code agent teams | Kimi Agent Swarm | Copilot CLI /fleet |\n| --- | --- | --- | --- | --- |\n| Coordination | No orchestrator; peers self-claim work | Fixed lead session coordinates",
+      "signal_score": 8.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 7
       }
     },
     {
@@ -257,45 +322,6 @@
       "url": "https://www.infoq.com/news/2026/10/google-ml-drift",
       "published_at": "2026-10-25T00:00:00.000Z",
       "excerpt": "Google has released ML Drift, an open-source, cross-platform GPU compute engine designed for on-device AI and machine learning inference. Licensed under Apache 2.0, it abstracts the complexities of different GPU hardware and low-level APIs, supporting OpenGL ES, OpenCL, Metal, and WebGPU.\n\nML Drift is the core GPU acceleration engine that powers LiteRT. By open-sourcing it, Google is enabling developers to build custom graphics and inference runtimes for applications ranging from traditional computer vision, audio, and depth processing to generative AI.\n\nOne of ML Drift's main goal is simplifying access to the diverse GPU hardware that developers encounter when creating applications for edge devices.\n\n...\n\nTo achieve this, ML Drift introduces several technical improvements over the legacy TFLite GPU delegate, including unified shaders through tensor virtualization, extensible custom operations, and five-dimensional tensor support. It also incorporates hardware-specific optimizations for GPUs from Arm, Intel, and Qualcomm Technologies to \"maximize hardware utilization across modern GPUs\".\n\nML Drift extends desktop support for inference on Windows and Linux through Dawn, Chromium's WebGPU implementation, while retaining native Metal backend support on macOS. Dawn provides a unified API model leveraging WebGPU's hardware abstraction layer, avoiding the need to interface directly with platform-specific graphics APIs such as DirectX and Vulkan.\n\n...\n\nWith the release of ML Drift, Google will stop updating the legacy TensorFlow Lite GPU delegate. For backward compatibility with existing models, the company recommends migrating to the LiteRT ML Drift GPU accelerator. Application developers can use the LiteRT ML Drift accelerator, while GPU and system engineers can access its lower level C++ API to construct custom `GpuModel` compute graphs and write custom shaders.",
-      "signal_score": 9.0,
-      "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
-        "rank": 6
-      }
-    },
-    {
-      "id": "6f75cfb6f505",
-      "source": "exa_news",
-      "title": "Vera Rubin Inference Results Leave Nvidia’s 75% Training Claim Untested | TokenPost",
-      "url": "https://www.tokenpost.com/news/technology/40939",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "excerpt": "# Vera Rubin Inference Results Leave Nvidia’s 75% Training Claim Untested\n\nAt about 190 output tokens per second per user, Vera Rubin reached 5.7 times GB300’s total throughput per megawatt of GPU and memory power, using a four-GPU GB300 comparison.\n\nBy Simon Yoon\n\nPublished Oct 26, 2026, 6:51 AM EDT\n\nA calibrated power analyzer stands beside a compute rack / TokenPost.ai\n\nOct. 15 AA-AgentPerf results put Vera Rubin NVL72 at 5.7 times GB300’s total throughput per megawatt at a specific speed, while leaving Nvidia’s separate training estimate untested. The finding measures inference — generating outputs from a trained model — rather than a completed training run.\n\nThe benchmark exercised coding-agent tasks with DeepSeek V4 Pro. At the selected operating point, Vera Rubin produced about 190 output tokens per second for each user. GB300 rack configurations did not reach that rate, so the comparison used a four-GPU GB300 setup. The 5.7-times result reflects that configuration and speed, rather than a full-rack comparison.\n\nThe power measure includes the GPUs and their memory but excludes CPUs, networking and cooling. The per-user speed leaves out time to first token, or the interval before a model begins responding. The total-throughput calculation also includes cached input tokens. When the systems were measured at their respective throughput peaks, Vera Rubin’s total throughput per megawatt was 1.14 times GB300’s.",
-      "signal_score": 8.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 7
-      }
-    },
-    {
-      "id": "b8c00288f9a8",
-      "source": "exa_news",
-      "title": "Introducing agentshield | Solo.io",
-      "url": "https://www.solo.io/press-releases/introducing-agentshield",
-      "published_at": "2026-10-23T00:00:00.000Z",
-      "excerpt": "# Introducing agentshield\n\nOctober 23, 2026\n\nIntroducing agentshield: Open source defense that meets autonomous attackers at their own speed and scale.\n\nCAMBRIDGE, Mass., October 23, 2026 – Solo.io, the leading provider of cloud native connectivity and AI-ready infrastructure, today announced agentshield, a new open source project that defends the data, APIs, and services an organization already runs against autonomous AI agents. While existing approaches focus on attaching security to the agents you control, agentshield creates a layer of protection around your existing infrastructure for the agents you don’t.\n\n...\n\nThe Solo.io agentic stack provides everything teams need to develop, deploy, and operate AI agents across agentic runtime environments. Powered by core open source projects created and contributed to the community by Solo.io, including:\n\n- ‍ Agentshield is the open source layer of protection around an organization’s existing infrastructure, defending the data, APIs, and services it already runs against the AI agents it doesn’t control, at the speed and scale those agents operate.‍\n- Agentgateway, an Agentic AI Foundation project, is the high-performance data plane for agentic traffic, built from the ground up in Rust to span the full range of agentic protocols and use cases as a unified inference gateway, LLM gateway, MCP gateway, and A2A gateway.‍\n- Kagent, a CNCF Sandbox project, is the Kubernetes-native runtime that makes agents first-class workloads, with the security, observability, and lifecycle controls enterprises need to run programmatic, declarative, and always-on assistant patterns side-by-side.‍\n- Agentregistry, contributed to CNCF, is the trusted source for discovering, packaging, and distributing agents and tools across an organization with centralized observability, security, and governance across agent runtimes.‍\n- Agentdesktop is the open source governance layer for AI agents on the desktop, bringing inventory, managed configuration, non-human identity, and observability to the workstations where most enterprise agent activity actually happens.‍\n- Agentevals captures evaluation and quality signals using OpenTelemetry rather than in-process instrumentation, providing continuous, framework-agnostic visibility into how agents actually behave in production across the",
-      "signal_score": 8.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 7
-      }
-    },
-    {
-      "id": "8a0113c4c348",
-      "source": "exa_news",
-      "title": "Abacus Releases a 4-Bit Nemotron Fine-Tune for Coding Agents | AI.info",
-      "url": "https://ai.info/news/abacus-smaug-nemotron-35-nvfp4-agentic-coding",
-      "published_at": "2026-10-24T00:00:00.000Z",
-      "excerpt": "## Abacus brings its Nemotron fine-tune down to four bits\n\nAbacus.AI published Smaug-Nemotron-3.5-NVFP4 on October 22, a four-bit version of its agentic coding fine-tune of NVIDIA’s Nemotron 3.5 Super VL. The base model has 120 billion parameters, with 12 billion active at a time; it combines Mamba-2, mixture-of-experts layers and attention, and accepts text, images and video. Abacus says the new checkpoint occupies about 75 GB, roughly a third of the BF16 model’s size.\n\nThat smaller footprint changes the hardware needed to serve the model. Abacus’s post describes NVIDIA’s corresponding NVFP4 checkpoint as running on one DGX Spark, one H200 or one GB200. It also says existing stacks serving that checkpoint can use Smaug as a drop-in replacement. The weights are published on Hugging Face under the OpenMDW 1.1 license inherited from NVIDIA’s base model.\n\n...\n\n## Training against the weights that will ship\n\nAbacus says ordinary fine-tuning followed by four-bit quantization would erase much of the small update it wanted to preserve. Its approach, which it calls merge-aware training, runs each training step using weights rounded into the format intended for release. The learning objective rewards tool-call actions while applying a separate penalty to keep the model’s reasoning close to the base.\n\n> “The new idea here is that the loss always sees the model exactly as it will be served.”\n> \n> Sandeep Singh Sandha and Arvind Sundararajan, the authors, write\n\nThe method adapts the language model, according to the company; the vision encoder, vision-language connector, MTP head and quantization layout remain those of NVIDIA’s checkpoint. That leaves the fine-tune’s main change in how the model behaves during multi-turn tool use, not in its architecture.",
       "signal_score": 8.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -308,48 +334,68 @@
       "title": "Introducing Fern — Mirendil",
       "url": "https://mirendil.com/news/introducing-fern",
       "published_at": "2026-10-26T00:00:00.000Z",
-      "excerpt": "# Introducing Fern\n\n Published: October 26, 2026, 8:00 am PT \n\n Fern is Mirendil’s first model. It is pretrained from scratch and supports a context window of up to 10M tokens. Its first version, Fern 0.1, was finished with a short round of post-training. New versions ship frequently. \n\nMore capable, for harder and longer-running work.\n\nBase model\n: Mirendil-Base-Large\nSize\n: 0.5–2T params\nContext\n: —\nInput\n: —\nBuilt for\n: —\nAccess\n: —\n\nOur most capable model, for the most demanding work.\n\nBase model\n: Mirendil-Base-XL\nSize\n: 2–10T params\nContext\n: —\nInput\n: —\nBuilt for\n: —\nAccess\n: —\n\n...\n\nA language model’s capabilities grow with compute, and there are two ways to spend more of it. One is the model’s parameter count. The other is its context length. A model with more parameters holds more static knowledge and can carry out more sophisticated reasoning steps. A model with a larger context window can use more task-specific information: draw on more of its own past experience, keep track of more specifications and instructions, integrate evidence from more documents and more code, and look at more data directly. \n\n Fern’s architecture, training and serving can support up to 10M tokens, about 23 MB of code, at once. That’s about half a million lines of code, a codebase on the scale of the Megatron-LM library, dozens to hundreds of complete agent traces, or days of an agent’s work, all held in context at the same time. \n\n Below, we first show that more context helps even with next-token prediction, the foundation of language model training and of every capability built on it. We then run a basic test of effective access to the long context with a standard benchmark (RULER). More comprehensive long-context results",
+      "excerpt": "# Introducing Fern\n\n Published: October 26, 2026, 8:00 am PT \n\n Fern is Mirendil’s first model. It is pretrained from scratch and supports a context window of up to 10M tokens. Its first version, Fern 0.1, was finished with a short round of post-training. New versions ship frequently. \n\nMore capable, for harder and longer-running work.\n\nBase model\n: Mirendil-Base-Large\nSize\n: 0.5–2T params\nContext\n: —\nInput\n: —\nBuilt for\n: —\nAccess\n: —\n\nOur most capable model, for the most demanding work.\n\nBase model\n: Mirendil-Base-XL\nSize\n: 2–10T params\nContext\n: —\nInput\n: —\nBuilt for\n: —\nAccess\n: —\n\n...\n\n. A model with more parameters holds more static knowledge and can carry out more sophisticated reasoning steps. A model with a larger context window can use more task-specific information: draw on more of its own past experience, keep track of more specifications and instructions, integrate evidence from more documents and more code, and look at more data directly. \n\n Fern’s architecture, training and serving can support up to 10M tokens, about 23 MB of code, at once. That’s about half a million lines of code, a codebase on the scale of the Megatron-LM library, dozens to hundreds of complete agent traces, or days of an agent’s work, all held in context at the same time. \n\n Below, we first show that more context helps even with next-token prediction, the foundation of language model training and of every capability built on it. We then run a basic test of effective access to the long context with a standard benchmark (RULER). More comprehensive long-context results are coming soon.",
       "signal_score": 7.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 8
-      }
-    },
-    {
-      "id": "416d1d01ceea",
-      "source": "exa_news",
-      "title": "Announcing Private Agent Factory 26.10, featuring Deep NL2SQL | database",
-      "url": "https://blogs.oracle.com/database/announcing-private-agent-factory-26-10-featuring-deep-nl2sql",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "excerpt": "## Connect private agents to the applications people use\n\nThe new Agent Factory Python SDK gives developers a supported way to run Custom Workflows, Knowledge Agents, Data Analysis Agents, and Deep Data Research Agents from Python applications. Supported authentication options include username and password and browser-assisted SSO, while operations continue to follow the user’s existing Agent Factory permissions.\n\nThe SDK and standardized REST APIs provide integration options for applications, scripts, and business workflows. The SDK also supports operations on supported model connections and data sources. Teams can bring agent capabilities into an existing application without asking every user to work directly in the Agent Factory interface.",
-      "signal_score": 7.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 8
-      }
-    },
-    {
-      "id": "e95923e9b771",
-      "source": "exa_news",
-      "title": "Cerebras trillion-parameter model deployment — Grafy News",
-      "url": "https://grafy.ai/news/cerebras-details-wafer-scale-deployment-of-trillion-parameter-models",
-      "published_at": "2026-10-25T00:00:00.000Z",
-      "excerpt": "read\n\nCerebras has published a detailed account of how it runs multi-trillion-parameter models across dozens of wafer-scale processors, describing a pipeline in which model weights stay on chip and only activations travel between wafers at roughly two microseconds per hop. It matters because the post turns an abstract claim about frontier-scale inference into a specific architecture, with trade-offs developers can inspect and test.\n\n...\n\nA single WSE-3T wafer provides 44 GB of on-chip memory, according to Cerebras, while trillion-parameter models need terabytes for their weights alone. The answer is to spread the model across many wafers rather than squeeze it into one.\n\nThe worked example is Kimi K3, described as an open-source model with about 3 trillion parameters, 69 linear-attention layers and 24 dense layers. Cerebras assumes 4-bit weight quantization, in the manner of the Hugging Face implementation, an 8-bit KV cache, and a 256k assumed average request size.\n\nOn those assumptions, each of the model's 93 layers comes to roughly 16 GB. Because a layer fits comfortably inside 44 GB, Cerebras can keep whole layers resident on a chip instead of splitting them across wafers.\n\n...\n\nCerebras executes models as a pipeline. Its compiler maps model layers across regions of wafers, and the runtime maps the path tokens travel between them. Only activations cross between wafers, over RDMA over Ethernet, at roughly two microseconds per hop; weights generally do not move at all.\n\nThe assembly-line analogy in the post: wafer 1 runs layers 1–2 and sends activations to wafer 2, which runs layers 3–4 and passes results to wafer 3, until the last wafer produces the next token. Cerebras says production deployments use much finer-grained stages than the illustration.\n\n...\n\nThe example is not a toy model. As described in Cerebras's post, Kimi K3 scores 88.3% on Terminal-Bench 2.1, against 88.8% for GPT-5.6 Sol, and 91.2% on BrowseComp, against 90.4% for GPT-5.6 Sol. Open-weight models in the multi-trillion-parameter class are becoming servable at high token rates, and the architecture described here is a plausible reason why.\n\nThe caveat matters just as much. Cerebras notes that performance comparisons rest on third-party benchmarking or internal testing, and that observed speed improvements versus GPU-based systems may vary with workload, configuration, date and models tested. The method also scales: calculate memory for weights and request state, distribute across wafers, connect them into a pipeline. Each additional wafer",
-      "signal_score": 7.0,
-      "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
         "rank": 8
       }
     }
   ],
   "candidates": [
     {
+      "id": "candidate-2026-10-27-2",
+      "topic": "EdgeRock-4B achieves 99.1% KV Cache reduction",
+      "angle": "The open-source EdgeRock-4B model delivers a 99.1% reduction in KV Cache size and 6.42x throughput for long contexts, enabling 512 concurrent long inferences on a single 80GB GPU.",
+      "audience_pain": "Memory constraints and high costs associated with long-context LLM inference, especially when running on limited hardware.",
+      "why_now": "Recently open-sourced with impressive, concrete benchmarks that directly address a major inference scaling challenge.",
+      "hook_seed": "99% less KV Cache. 6.4x throughput.",
+      "format": "mechanism_explainer",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "2543567215b2"
+      ],
+      "scores": {
+        "trend_strength": 10,
+        "audience_relevance": 10,
+        "practical_value": 10,
+        "originality": 9,
+        "conversation_potential": 9,
+        "evidence_strength": 10
+      },
+      "score": 9.67
+    },
+    {
       "id": "candidate-2026-10-27-7",
-      "topic": "The New Economics of GPT-6.1 Terra",
-      "angle": "OpenAI's GPT-6.1 Terra, now generally available on Amazon Bedrock, offers 50% lower standard API prices than GPT-5.6 Terra and GPT-6.1 Sol, shifting the cost-efficiency frontier for high-volume AI automation.",
-      "audience_pain": "High and unpredictable costs associated with using proprietary frontier LLMs for production workloads, impacting project ROI.",
-      "why_now": "The recent release and immediate general availability of GPT-6.1 Terra on Bedrock, coupled with significant price cuts, fundamentally changes the 'build vs. buy' calculus.",
-      "hook_seed": "GPT-6.1 Terra is 50% cheaper.",
+      "topic": "AWS Infinity Rust runtime for concurrent AI agents",
+      "angle": "AWS open-sourced Infinity, a Rust runtime designed to fit 75,000 idle AI agents in 8GB, optimizing for massively concurrent, slow-tool-reliant agent workflows.",
+      "audience_pain": "Scaling AI agents efficiently, managing state and resources for many concurrent agents, especially when agents are waiting on external tools.",
+      "why_now": "Recent open-source release of a tool that directly addresses a clear scaling and resource management challenge for agentic systems.",
+      "hook_seed": "75,000 AI agents. 8GB RAM.",
+      "format": "mechanism_explainer",
+      "objective": "follow",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "6efe9c947840"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 9,
+        "practical_value": 9,
+        "originality": 9,
+        "conversation_potential": 8,
+        "evidence_strength": 10
+      },
+      "score": 9.0
+    },
+    {
+      "id": "candidate-2026-10-27-1",
+      "topic": "GPT-6.1 Terra lowers API costs by 50%",
+      "angle": "OpenAI's GPT-6.1 Terra, now generally available on Amazon Bedrock, offers 50% lower standard API prices than previous versions, shifting the cost-efficiency frontier for high-volume AI automation.",
+      "audience_pain": "High API costs for deploying advanced LLMs in production, making large-scale automation financially challenging.",
+      "why_now": "Recent general availability and significant price reduction announcement make this an immediate factor for developers planning LLM deployments.",
+      "hook_seed": "GPT-6.1 Terra: 50% cheaper API.",
       "format": "india_cost",
       "objective": "reply",
       "image_template": "handwritten_poster",
@@ -358,45 +404,45 @@
         "3629858e0124"
       ],
       "scores": {
-        "trend_strength": 10,
+        "trend_strength": 9,
+        "audience_relevance": 9,
+        "practical_value": 9,
+        "originality": 7,
+        "conversation_potential": 8,
+        "evidence_strength": 10
+      },
+      "score": 8.67
+    },
+    {
+      "id": "candidate-2026-10-27-10",
+      "topic": "AKV: KV Cache engineering for LLM agents",
+      "angle": "Tsinghua AI open-sources AKV, a KV cache engineering server for LLM agents on SGLang, reducing cost by 27.7% and boosting task scores by intelligently reusing/dropping cache entries instead of summarizing old history.",
+      "audience_pain": "High costs and memory usage for long-running LLM agents due to the expanding KV cache, limiting agent complexity and context.",
+      "why_now": "Recent open-source release directly tackles an agent-specific KV cache problem, offering immediate practical benefits for agent developers.",
+      "hook_seed": "Agents: drop old KV cache, save 27%.",
+      "format": "practical_tips",
+      "objective": "click",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "13a500707dee"
+      ],
+      "scores": {
+        "trend_strength": 9,
         "audience_relevance": 9,
         "practical_value": 9,
         "originality": 8,
-        "conversation_potential": 9,
-        "evidence_strength": 10
-      },
-      "score": 9.17
-    },
-    {
-      "id": "candidate-2026-10-27-9",
-      "topic": "Kimi K3.1 Pro Challenges Frontier Models",
-      "angle": "Moonshot AI's Kimi K3.1 Pro is redefining the frontier for open-source LLMs, matching proprietary models like GPT-6 Astra and Anthropic's 5.5 duo on key benchmarks, with free-to-download weights coming soon.",
-      "audience_pain": "Evaluating the true performance, cost, and accessibility of emerging open-weight models against established proprietary APIs for complex tasks.",
-      "why_now": "Kimi K3.1 Pro was just introduced with impressive benchmark results and a promise of open weights by November 4, igniting the open-source vs. proprietary debate.",
-      "hook_seed": "Open-source just caught up to GPT-6.",
-      "format": "hot_take",
-      "objective": "reply",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "63f9b3c3500a"
-      ],
-      "scores": {
-        "trend_strength": 10,
-        "audience_relevance": 9,
-        "practical_value": 8,
-        "originality": 9,
-        "conversation_potential": 10,
+        "conversation_potential": 8,
         "evidence_strength": 9
       },
-      "score": 9.17
+      "score": 8.67
     },
     {
-      "id": "candidate-2026-10-27-6",
-      "topic": "Boost vLLM Tool-Call Accuracy",
+      "id": "candidate-2026-10-27-3",
+      "topic": "Boost vLLM tool-call accuracy",
       "angle": "Insights into fixing tool-call accuracy in vLLM can significantly improve the reliability of agentic applications, addressing a critical pain point in LLM system integration.",
-      "audience_pain": "Unreliable or inaccurate tool-calling from LLMs hosted on vLLM, leading to broken agentic workflows and unpredictable system behavior.",
-      "why_now": "A highly upvoted Hacker News post highlights this specific problem and sparks community discussion, indicating a strong demand for solutions.",
-      "hook_seed": "Boost vLLM tool-call accuracy now.",
+      "audience_pain": "Unreliable tool-calling by LLMs in vLLM leading to broken agent workflows and inaccurate results.",
+      "why_now": "High engagement on Hacker News indicates a current and pressing developer struggle with vLLM tool-call reliability.",
+      "hook_seed": "Improve vLLM tool-call accuracy now.",
       "format": "practical_tips",
       "objective": "follow",
       "image_template": "handwritten_poster",
@@ -404,93 +450,22 @@
         "hn-50242870"
       ],
       "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 10,
+        "trend_strength": 8,
+        "audience_relevance": 9,
         "practical_value": 10,
         "originality": 7,
         "conversation_potential": 8,
         "evidence_strength": 9
       },
-      "score": 8.83
+      "score": 8.5
     },
     {
       "id": "candidate-2026-10-27-5",
-      "topic": "PyTorch's Expanding Accelerator Ecosystem",
-      "angle": "PyTorch is opening its ecosystem to new accelerator classes, with Google and Meta open-sourcing TorchTPU for native PyTorch on TPUs, and IBM making Spyre a first-class PyTorch backend for its Z, LinuxONE, and Power systems.",
-      "audience_pain": "Optimizing PyTorch models for non-NVIDIA hardware, dealing with vendor-specific frameworks or complex porting processes.",
-      "why_now": "Recent announcements from PyTorch Conference 2026 and IBM Research highlight major efforts to make diverse AI accelerators natively compatible with PyTorch.",
-      "hook_seed": "PyTorch now loves TPUs and Spyre.",
-      "format": "practical_tips",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "3ec73a08efa6",
-        "407a55c1b70e"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 9,
-        "originality": 8,
-        "conversation_potential": 7,
-        "evidence_strength": 9
-      },
-      "score": 8.5
-    },
-    {
-      "id": "candidate-2026-10-27-8",
-      "topic": "TRACE: FP4 Quantization for MoE LLMs",
-      "angle": "TRACE (Rollout-Guided Quantization-Aware Training) enables practical FP4 quantization for reinforcement learning of MoE language models, achieving up to 5.4x decode throughput in rollout without sacrificing performance.",
-      "audience_pain": "The high compute and memory costs of training and serving large Mixture-of-Experts (MoE) models, especially with reinforcement learning, due to precision requirements.",
-      "why_now": "New research from Alibaba Cloud's Qwen and Ohio State University presents TRACE as a solution to make FP4 quantization viable for MoE models, overcoming numerical stability issues.",
-      "hook_seed": "FP4 MoE RL is now 5.4x faster.",
-      "format": "mechanism_explainer",
-      "objective": "click",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "52f504fcfb46"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 8,
-        "practical_value": 9,
-        "originality": 9,
-        "conversation_potential": 7,
-        "evidence_strength": 9
-      },
-      "score": 8.5
-    },
-    {
-      "id": "candidate-2026-10-27-2",
-      "topic": "On-Device AI with WebGPU & ML Drift",
-      "angle": "Hugging Face's 207 WebGPU kernels and Google's ML Drift (an open-source, cross-platform GPU compute engine) are simplifying and accelerating browser/on-device AI inference across diverse GPUs.",
-      "audience_pain": "Difficulty deploying AI models efficiently on client devices or within browsers, and abstracting complexities of different GPU hardware.",
-      "why_now": "Both Hugging Face and Google recently released open-source initiatives (WebGPU kernels, ML Drift) that promise to make on-device AI more accessible and performant.",
-      "hook_seed": "Browser AI is faster with WebGPU.",
-      "format": "practical_tips",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "3adee5cba4f1",
-        "1a172925185a"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 8,
-        "practical_value": 9,
-        "originality": 8,
-        "conversation_potential": 7,
-        "evidence_strength": 9
-      },
-      "score": 8.33
-    },
-    {
-      "id": "candidate-2026-10-27-10",
-      "topic": "Building Reasoning Models From Scratch",
-      "angle": "Sebastian Raschka's new video course emphasizes building reasoning models from scratch, providing a foundational understanding essential for advanced AI development beyond superficial API interactions.",
-      "audience_pain": "Developers often use AI models as black boxes without deeply understanding the underlying architectural principles that enable complex capabilities like reasoning.",
-      "why_now": "High community interest (over 400 points on Hacker News) in a new, comprehensive 'from-scratch' course indicates a strong demand for foundational education in AI model architecture.",
-      "hook_seed": "Build reasoning models from scratch.",
+      "topic": "Build LLM reasoning models from scratch",
+      "angle": "Sebastian Raschka's new video course emphasizes building reasoning models from scratch, offering a foundational understanding essential for advanced AI development beyond superficial API interactions.",
+      "audience_pain": "Developers feeling disconnected from the underlying mechanics of LLM reasoning, wanting deeper, foundational knowledge.",
+      "why_now": "A new course release gaining significant attention on Hacker News, reflecting a demand for deeper technical understanding.",
+      "hook_seed": "Build LLM reasoning models from scratch.",
       "format": "practical_tips",
       "objective": "share",
       "image_template": "handwritten_poster",
@@ -503,17 +478,64 @@
         "practical_value": 9,
         "originality": 8,
         "conversation_potential": 8,
-        "evidence_strength": 8
+        "evidence_strength": 9
       },
-      "score": 8.33
+      "score": 8.5
+    },
+    {
+      "id": "candidate-2026-10-27-6",
+      "topic": "Cross-request KV cache exposure vulnerability",
+      "angle": "Cloudflare identified and remediated a cross-request KV cache exposure vulnerability in a GLM-5.3 model, highlighting a critical security concern in shared LLM inference infrastructure.",
+      "audience_pain": "Security risks and potential data leakage in multi-tenant or shared LLM inference environments.",
+      "why_now": "Recent incident and public remediation announcement from Cloudflare underscore the immediacy of this security threat.",
+      "hook_seed": "KV cache leak: your prompts exposed?",
+      "format": "mechanism_explainer",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "hn-50252159"
+      ],
+      "scores": {
+        "trend_strength": 8,
+        "audience_relevance": 8,
+        "practical_value": 9,
+        "originality": 7,
+        "conversation_potential": 8,
+        "evidence_strength": 9
+      },
+      "score": 8.17
     },
     {
       "id": "candidate-2026-10-27-4",
-      "topic": "LLM Inference Scheduling for SLOs",
-      "angle": "New research explores uncertainty-aware offline reinforcement learning to optimize LLM inference serving, adapting to bursty workloads and heterogeneous service-level objectives (SLOs) like TTFT and TPOT.",
-      "audience_pain": "Prevailing static heuristics fail to adapt to the unpredictable nature of LLM inference workloads and varied performance requirements.",
-      "why_now": "A new Scientific Reports article highlights how RL can provide dynamic scheduling solutions for complex LLM inference environments.",
-      "hook_seed": "LLM inference is more complex than you think.",
+      "topic": "PyTorch supports new AI accelerators natively",
+      "angle": "PyTorch now natively supports IBM's Spyre dataflow AI accelerator and Google's TPUs, opening its ecosystem to a new class of hardware for diversified inference and training workloads.",
+      "audience_pain": "Limited hardware options or complex integration paths for PyTorch developers, especially for specialized AI accelerators.",
+      "why_now": "Recent announcements from IBM and Google at PyTorch Conference 2026 highlight new official backend support.",
+      "hook_seed": "PyTorch now runs on IBM Spyre & TPUs.",
+      "format": "mechanism_explainer",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "3ec73a08efa6",
+        "407a55c1b70e"
+      ],
+      "scores": {
+        "trend_strength": 8,
+        "audience_relevance": 8,
+        "practical_value": 7,
+        "originality": 7,
+        "conversation_potential": 7,
+        "evidence_strength": 10
+      },
+      "score": 7.83
+    },
+    {
+      "id": "candidate-2026-10-27-9",
+      "topic": "Optimizing LLM inference serving with Reinforcement Learning",
+      "angle": "New research explores uncertainty-aware offline reinforcement learning to optimize LLM inference serving, adapting to bursty workloads and heterogeneous service-level objectives (SLOs) like TTFT and TPOT, moving beyond static heuristics.",
+      "audience_pain": "Inefficient and unresponsive LLM inference serving, difficulty meeting varied performance guarantees (SLOs) in production environments.",
+      "why_now": "Recent academic publication addressing a complex, real-world infrastructure problem that many companies face in deploying LLMs.",
+      "hook_seed": "LLM serving: meet SLOs with RL.",
       "format": "mechanism_explainer",
       "objective": "click",
       "image_template": "handwritten_poster",
@@ -522,11 +544,11 @@
       ],
       "scores": {
         "trend_strength": 8,
-        "audience_relevance": 8,
+        "audience_relevance": 7,
         "practical_value": 8,
         "originality": 8,
         "conversation_potential": 7,
-        "evidence_strength": 8
+        "evidence_strength": 9
       },
       "score": 7.83
     }
