@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-28 IST
+Last refreshed: 2026-10-29 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Governor: Router for Coding Agent Costs | angle: Bito.ai introduces Governor, a context-driven model router for coding agents that cuts 60-80% of token costs by routing search and reading tasks to cheaper models, reserving frontier models for core generation. | objective: click | score: 9.17 | sources: c6736004f248
-- AWS Infinity: Concurrent AI Agents | angle: AWS open-sources Infinity, a Rust runtime designed to allow massively concurrent AI agents (fitting 75,000 idle agents in 8GB) by preventing resource-holding while agents await slow tool responses. | objective: share | score: 9.0 | sources: 6efe9c947840
-- GPT-6.1 Terra Cost Reduction | angle: OpenAI's GPT-6.1 Terra offers 50% lower standard API prices than previous versions, shifting the cost-efficiency frontier for high-volume AI automation, and is now generally available on Amazon Bedrock. | objective: reply | score: 8.83 | sources: b58e83f7cf7d, 3629858e0124
-- Hugging Face WebGPU for Browser AI | angle: Hugging Face has released 207 versioned WebGPU kernels, a JavaScript loader, and benchmarking tools, enabling local AI workloads to run directly in the browser with performance boosts on modern hardware. | objective: follow | score: 8.83 | sources: 3adee5cba4f1
-- EdgeRock-4B KV Cache Efficiency | angle: The open-source EdgeRock-4B model from Tsinghua AI, CMU, and Yanshan Technology delivers a 99.1% reduction in KV Cache size and 6.42x throughput for long contexts, enabling 512 concurrent long inferences on a single 80GB GPU. | objective: share | score: 8.67 | sources: 2543567215b2
-- DeepSeek's Open-Source DeepInfer | angle: The Chinese AI company DeepSeek has open-sourced its internal inference framework, DeepInfer, which powers its V4.1-Flash model on both Nvidia and Huawei chips, built upon vLLM, SGLang, and TensorRT-LLM. | objective: follow | score: 8.67 | sources: 9e574e154721
-- Liquid AI's LFM3 Multimodal Architecture | angle: Liquid AI's LFM3 introduces a new hybrid architecture for multimodal Liquid Foundation Models (text, vision, audio, omni, decision), built on 22T tokens, making it expressive and efficient for local fine-tuning and specialized intelligence. | objective: share | score: 8.5 | sources: b4f511d77177
-- Deploying Trillion-Parameter Models | angle: Cerebras details its approach to deploying multi-trillion-parameter models like Kimi K3 across WSE-3T wafers, achieving 1,000–2,000+ tokens per second for commercial inference speeds. | objective: reply | score: 8.33 | sources: e876330e40e5
+- GPT-6.1 Terra API Cost Reduction | angle: OpenAI's GPT-6.1 Terra model significantly reduces API costs (50% lower than predecessors) while offering high capability, making scalable, high-volume AI automation more economically practical. | objective: reply | score: 9.17 | sources: b58e83f7cf7d, 3629858e0124
+- LLM Inference Efficiency: KV Cache | angle: New techniques dramatically reduce KV Cache size and boost throughput for long contexts in LLMs, enabling more concurrent inferences on less hardware. | objective: share | score: 8.83 | sources: 2543567215b2, e6dceccffc92, 13a500707dee
+- Building Autonomous Engineering AI Agents | angle: Lessons learned from open-sourcing DevBox, an autonomous engineering harness, reveal practical insights into building agents that create, test, and review code, boasting an 80% merge rate across 1,500+ pull requests. | objective: share | score: 8.83 | sources: fafe9872debd
+- Optimizing AI Agent Retrieval | angle: Improve AI agent performance and reduce token costs by offloading retrieval tasks to structured data sources like SQLite or permission-aware enterprise knowledge bases. | objective: follow | score: 8.67 | sources: 59809aed2513, 13e030461d7f, f90db4fad777
+- Metrics for Evaluating AI Agents | angle: Real-world evaluation of AI agents on complex professional tasks (e.g., tax assignments) highlights the need for robust evaluation metrics beyond simple correctness to assess reliability and trustworthiness. | objective: reply | score: 8.67 | sources: hn-50275626
+- PyTorch 2.15 LLM Inference Optimizations | angle: PyTorch 2.15 introduces key features like FSDP2, pipelining with finer memory and communication control, and faster 4-bit (NVFP4) LLM decoding for NVIDIA Blackwell GPUs, significantly boosting inference performance. | objective: click | score: 8.5 | sources: a4b7bb3509d8
+- Context-Aware Semantic Caching for LLM Agents | angle: Implementing context-aware semantic caches, like Sulci 1.0, reduces LLM API calls and associated costs for AI agents by intelligently reusing answers to semantically similar past queries. | objective: share | score: 8.33 | sources: de9d96528fde, 13a500707dee
+- Multimodal Liquid Foundation Models (LFM3) | angle: Liquid AI's LFM3 introduces a new shared backbone architecture for multimodal models, efficiently handling text, vision, audio, and decision-making capabilities within a unified system for specialized AI. | objective: follow | score: 8.17 | sources: b4f511d77177
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
