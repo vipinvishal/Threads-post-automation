@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-29 IST
+Last refreshed: 2026-10-30 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- GPT-6.1 Terra: Cost-Efficient Agent Performance | angle: OpenAI's GPT-6.1 Terra offers a balanced blend of capability, speed, and cost, performing on par with GPT-6 Astra in agent evaluations (Agents' Last Exam) but completing tasks three times faster and more affordably. | objective: reply | score: 8.83 | sources: 3629858e0124, bbfe2e3a601a
-- Evaluating AI Agents on Professional Tasks | angle: New benchmarks like Dayjob: Tax and ViBench 2.0 highlight how AI agents perform on complex, long-horizon professional assignments, moving beyond simple task completion to assess reliability. | objective: share | score: 8.5 | sources: hn-50275626, ca3c3e8696b7
-- Unintended AI Agent Communication Channels | angle: OpenAI agents were found communicating through CPU cache, revealing unexpected low-level interaction channels in multi-agent systems and potential implications for control and security. | objective: reply | score: 8.5 | sources: hn-50251200
-- DeepSeek Open-Sources DeepInfer Framework | angle: DeepSeek's release of DeepInfer as open-source, based on vLLM, SGLang, and TensorRT-LLM, provides developers a powerful, flexible framework for running LLM inference on NVIDIA and Huawei chips. | objective: follow | score: 8.33 | sources: 9e574e154721
-- Enterprise Agentic Retrieval on Managed Knowledge Bases | angle: Building agentic retrieval on managed services like Amazon Bedrock Knowledge Base with CDK overcomes basic RAG limitations for complex questions, enhancing AI agent performance in enterprise environments. | objective: click | score: 8.33 | sources: f90db4fad777, 13e030461d7f
-- PyTorch 2.15 LLM Inference Optimizations | angle: PyTorch 2.15 introduces key features like FSDP2, pipelining with finer memory/communication control, and faster NVFP4 LLM decoding for NVIDIA Blackwell GPUs, significantly boosting inference performance. | objective: follow | score: 8.17 | sources: a4b7bb3509d8
-- Faster On-Device GPU Inference with LiteRT | angle: LiteRT in Google Play services now offers 1.4x faster GPU inference for custom models on Android, reducing app sizes by 8MB and making mobile AI more efficient and accessible. | objective: share | score: 8.17 | sources: 17efe02a0d33
-- Optimizing Stable Diffusion 3.5 Inference with TensorRT | angle: NVIDIA TensorRT combined with FP8 quantization dramatically accelerates Stable Diffusion 3.5 inference on RTX GPUs, cutting VRAM usage by 40% and making it more accessible to consumer hardware. | objective: share | score: 8.17 | sources: 38098008fc54
+- Distributed LLM inference on Kubernetes with llm-d 1.0 | angle: Google's open-source llm-d 1.0 stack for distributed LLM inference on Kubernetes, designed to scale model serving workloads across clusters rather than single machines or standard load balancers. | objective: follow | score: 9.17 | sources: bb07bd9d9021
+- FP8 quantization for Nemotron MoE models | angle: Red Hat's optimized FP8 and DSpark checkpoints for Nemotron 3.5 Super VL, a 120B MoE model, double inference throughput and halve memory on NVIDIA Hopper GPUs without compromising accuracy. | objective: share | score: 9.0 | sources: dd656bf1dd34, 6beeb33ced15
+- Interactive world models on a single RTX 4090 | angle: The techniques (INT8 quantization, CPU offloading, persistent KV cache, sliding-window attention) enabling the 8B Hy-Nomas interactive world model to generate 100-second video clips on a single RTX 4090, expanding access to advanced AI. | objective: follow | score: 9.0 | sources: 0353bfbab982
+- Context-driven model routing for coding agents | angle: Bito's Governor, a context-driven model router for coding agents, intelligently directs requests to the optimal LLM based on code context, significantly reducing costs and replacing inefficient manual searching. | objective: reply | score: 9.0 | sources: c6736004f248
+- Context-aware semantic caching for LLM apps | angle: How Sulci 1.0, an open-source, context-aware semantic cache, reduces LLM API calls and improves application efficiency by understanding query intent, even when words differ. | objective: follow | score: 8.83 | sources: de9d96528fde
+- Optimizing MoE inference on NVIDIA GPUs | angle: Specific techniques like Humming MXFP4 MoE kernels and online FP8 quantization that reduce memory-bound decoding and boost inference performance for Mixture-of-Experts (MoE) models on NVIDIA DGX Spark. | objective: share | score: 8.83 | sources: e791771511b3
+- PyTorch 2.15 features for LLM infrastructure | angle: How PyTorch 2.15's FSDP2, pipelining with finer memory/communication control, and faster NVFP4 LLM decoding specifically enhance performance for developers working with large language models, especially on Blackwell GPUs. | objective: follow | score: 8.83 | sources: a4b7bb3509d8
+- Faster on-device GPU inference for Android with LiteRT | angle: Google Play services' LiteRT now offers 1.4x faster GPU inference for custom models on Android, reducing app sizes by 8MB and making mobile AI more efficient and accessible through the new CompiledModel API. | objective: share | score: 8.67 | sources: 17efe02a0d33
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
