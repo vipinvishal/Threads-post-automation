@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-30 IST
+Last refreshed: 2026-10-31 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Benchmarking Long-Horizon AI Agents | angle: ViBench 2.0, a new benchmark for evaluating AI agents' ability to build entire software products one feature at a time, moving beyond traditional single-task coding benchmarks. | objective: reply | score: 9.17 | sources: ca3c3e8696b7
-- Distributed LLM Inference on Kubernetes | angle: Google's open-source llm-d 1.0 stack for distributed LLM inference on Kubernetes, designed to scale model serving workloads across clusters rather than single machines or standard load balancers. | objective: follow | score: 8.83 | sources: bb07bd9d9021
-- FP8 Quantization for MoE Models | angle: Red Hat's optimized FP8 and DSpark checkpoints for Nemotron 3.5 Super VL, a 120B mixture-of-experts (MoE) model, double inference throughput and halve memory on NVIDIA Hopper GPUs without compromising accuracy. | objective: share | score: 8.83 | sources: dd656bf1dd34, 6beeb33ced15
-- Context-Aware Semantic Caching | angle: How Sulci 1.0, an open-source, context-aware semantic cache, reduces LLM API calls and improves application efficiency by understanding query intent, even when words differ. | objective: follow | score: 8.67 | sources: de9d96528fde
-- Optimizing MoE Inference on NVIDIA DGX | angle: Specific techniques like Humming MXFP4 MoE kernels and online FP8 quantization that reduce memory-bound decoding and boost inference performance for Mixture-of-Experts (MoE) models on NVIDIA DGX Spark. | objective: share | score: 8.67 | sources: e791771511b3
-- Mistral Large 4's Advanced Architecture | angle: A deep dive into Mistral Large 4's novel architectural features (cross-layer KV sharing, NoPE layers, SSMax, LeRoPE) and its optimized integration with vLLM's advanced serving capabilities. | objective: follow | score: 8.67 | sources: e6cd835cd7d0, 49069eee3807
-- PyTorch 2.15 for LLM Infrastructure | angle: How PyTorch 2.15's FSDP2 and pipelining gain finer memory and communication control, and faster 4-bit (NVFP4) LLM decoding specifically enhance performance for developers working with large language models, especially on Blackwell GPUs. | objective: share | score: 8.67 | sources: a4b7bb3509d8
-- Faster On-Device AI with LiteRT | angle: Google Play services' LiteRT now offers 1.4x faster GPU inference for custom models on Android, reducing app sizes by 8MB and making mobile AI more efficient and accessible through the new CompiledModel API. | objective: share | score: 8.67 | sources: 17efe02a0d33
+- Security of AI Development Tools | angle: The recent backdoor in the Claude Code VS Code extension highlights the critical need for robust supply chain security and vigilance when adopting AI development tools. | objective: share | score: 9.33 | sources: hn-50300683
+- AI Agent Persistent Memory | angle: Building a self-hosted shared memory mesh to solve AI agent amnesia for coding LLMs, allowing agents to retain context across sessions. | objective: follow | score: 9.0 | sources: 3241f75ed648
+- Distributed LLM Inference on Kubernetes | angle: Google's open-source llm-d 1.0 stack for distributed LLM inference on Kubernetes, designed to scale model serving workloads across clusters. | objective: follow | score: 9.0 | sources: bb07bd9d9021
+- Long-Horizon AI Agent Benchmarks | angle: Introducing ViBench 2.0, a new benchmark that evaluates AI agents' ability to build entire software products feature-by-feature, moving beyond simplistic single-task coding benchmarks. | objective: reply | score: 8.83 | sources: ca3c3e8696b7
+- AI's Impact on SRE Roles | angle: Discussing the claim that AI is deskilling, rather than replacing, Site Reliability Engineers (SREs), and what this means for the evolving nature of engineering roles. | objective: reply | score: 8.83 | sources: hn-50305693
+- Enterprise AI Agents with Secure Context | angle: PipesHub, an open-source, self-hosted system, enables AI agents to securely search company knowledge with inherited access permissions, preventing data leakage for RAG and agent context. | objective: follow | score: 8.83 | sources: 13e030461d7f
+- LiteRT for Faster On-Device AI | angle: Google Play services' LiteRT now offers 1.4x faster GPU inference for custom models on Android, reducing app sizes by 8MB through its new CompiledModel API. | objective: share | score: 8.5 | sources: 17efe02a0d33
+- FP8 Quantization for MoE Inference | angle: Red Hat's optimized FP8 and DSpark checkpoints for Nemotron 3.5 Super VL (120B MoE model), doubling inference throughput and halving memory on NVIDIA Hopper GPUs without compromising accuracy. | objective: share | score: 8.33 | sources: dd656bf1dd34, 6beeb33ced15
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
