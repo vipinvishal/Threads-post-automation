@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-10-31 IST
+Last refreshed: 2026-11-01 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Real-time RAG faithfulness evaluation | angle: A new open-source library, `agentic-rag-faithfulness`, offers sub-millisecond, local evaluation of RAG faithfulness, detecting hallucinations in production without expensive LLM judge APIs. | objective: click | score: 8.83 | sources: fd1811e052c8
-- AI development tool security | angle: The backdoor in the Claude Code VS Code extension highlights that AI tool security isn't just about model safety, but a critical supply chain risk for developers. | objective: share | score: 8.67 | sources: hn-50300683
-- Secure enterprise knowledge bases for AI agents | angle: PipesHub, an open-source, self-hosted system, enables AI agents to securely search company knowledge with inherited access permissions, preventing data leakage for RAG. | objective: reply | score: 8.67 | sources: 13e030461d7f
-- AI's impact on SRE roles: deskilling vs. replacement | angle: A recent debate suggests AI isn't replacing Site Reliability Engineers (SREs), but rather deskilling them, profoundly changing the nature of engineering work. | objective: reply | score: 8.67 | sources: hn-50305693
-- GPU partitioning for cost-efficient AI inference | angle: Amazon SageMaker now supports GPU partitioning using NVIDIA MIG, allowing multiple small and mid-size models to share a single GPU, drastically reducing inference costs. | objective: follow | score: 8.5 | sources: cd3468986b60
-- Long-horizon AI agent software benchmarks | angle: ViBench 2.0 introduces a new way to evaluate AI agents by tasking them with building entire software products from scratch, moving beyond single-task coding benchmarks. | objective: share | score: 8.5 | sources: ca3c3e8696b7
-- Challenges of self-hosting trillion-parameter open-weight models | angle: Mistral Large 4, a 1-trillion-parameter multimodal model, is now open-weight, but requires 8 GPUs to serve, illustrating the significant infrastructure barrier for self-hosting frontier models. | objective: reply | score: 8.5 | sources: 9856a6f6f9cb, 49069eee3807
-- FP8 quantization for MoE model inference | angle: Red Hat's optimized FP8 checkpoints for Nemotron 3.5 Super VL (120B MoE) double Hopper GPU inference throughput and halve memory, crucial for efficient Mixture-of-Experts deployment. | objective: share | score: 8.33 | sources: dd656bf1dd34, 9856a6f6f9cb, a4b7bb3509d8
+- Sub-Millisecond RAG Faithfulness Evaluation | angle: The `agentic-rag-faithfulness` library allows local, sub-millisecond evaluation of RAG faithfulness, detecting LLM hallucinations without expensive API calls to judge models. | objective: click | score: 9.0 | sources: fd1811e052c8
+- Solving AI Agent Amnesia with Shared Memory | angle: Build a self-hosted shared memory mesh to give coding LLM agents persistent context, preventing the common 'amnesia' issue after sessions close. | objective: reply | score: 8.83 | sources: 3241f75ed648
+- GPU Partitioning for Cost-Efficient AI Inference | angle: Amazon SageMaker now uses NVIDIA MIG to partition GPUs, letting multiple small models share one accelerator and drastically cut inference costs. | objective: follow | score: 8.67 | sources: cd3468986b60
+- Optimizing LLM Inference with GPUStack v2.3 | angle: GPUStack v2.3 introduces PD (Prefill/Decode) disaggregation, shared KV cache pools, and elastic scheduling for more flexible, efficient, and cost-effective LLM inference deployments. | objective: share | score: 8.67 | sources: 1a706919c64b
+- Shipping Agentic RAG on AWS Lambda | angle: Learn how to build and deploy a tool-calling ReAct agent with RAG over a private knowledge base using AWS Lambda, LangGraph, and Terraform for production readiness. | objective: share | score: 8.5 | sources: 0e6ffeb83e1d
+- Knowledge Graphs vs. RAG for AI Agents | angle: NVIDIA's Agent Knowledge Foundation, with its Auto-Ontology library, shifts beyond RAG by using knowledge graphs to provide AI agents with a more accurate, structured understanding of enterprise data. | objective: share | score: 8.5 | sources: 58a57eb682d6
+- Mistral Large 4: Architecture Beyond MoE | angle: Mistral Large 4's novel architecture includes DeepSeek-style sparse attention, cross-layer KV sharing, NoPE layers, and SSMax/LeRoPE, going beyond standard Mixture-of-Experts. | objective: share | score: 8.33 | sources: e6cd835cd7d0, 278b16cb8f07, 84324060c7b6
+- Faster On-Device AI with LiteRT in Google Play Services | angle: LiteRT in Google Play services now offers 1.4x faster GPU inference for custom models, making on-device AI apps smaller and more performant on Android devices. | objective: follow | score: 8.33 | sources: 17efe02a0d33
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
