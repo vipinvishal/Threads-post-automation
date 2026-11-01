@@ -1,45 +1,19 @@
 {
-  "date_ist": "2026-11-01",
-  "generated_at": "2026-11-01T10:03:02.370227+00:00",
-  "signal_count": 30,
+  "date_ist": "2026-11-02",
+  "generated_at": "2026-11-01T19:51:40.060549+00:00",
+  "signal_count": 26,
   "signals": [
-    {
-      "id": "hn-50319358",
-      "source": "hacker_news",
-      "title": "Anthropic blocks users for anything touching training larger models",
-      "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
-      "published_at": "2026-10-31T19:39:19+00:00",
-      "excerpt": "Hacker News: 350 points and 205 comments.",
-      "signal_score": 657.5,
-      "community_metrics": {
-        "points": 350,
-        "comments": 205
-      }
-    },
     {
       "id": "hn-50320995",
       "source": "hacker_news",
       "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
       "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
       "published_at": "2026-10-31T22:46:12+00:00",
-      "excerpt": "Hacker News: 228 points and 111 comments.",
-      "signal_score": 394.5,
+      "excerpt": "Hacker News: 391 points and 194 comments.",
+      "signal_score": 682.0,
       "community_metrics": {
-        "points": 228,
-        "comments": 111
-      }
-    },
-    {
-      "id": "hn-50290652",
-      "source": "hacker_news",
-      "title": "AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura",
-      "url": "https://thedataexchange.media/leo-de-moura-lean-aws",
-      "published_at": "2026-10-29T15:29:48+00:00",
-      "excerpt": "Hacker News: 205 points and 50 comments.",
-      "signal_score": 280.0,
-      "community_metrics": {
-        "points": 205,
-        "comments": 50
+        "points": 391,
+        "comments": 194
       }
     },
     {
@@ -48,59 +22,33 @@
       "title": "The AI cost of JavaScript frameworks",
       "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks",
       "published_at": "2026-11-01T06:06:19+00:00",
-      "excerpt": "Hacker News: 69 points and 36 comments.",
-      "signal_score": 123.0,
+      "excerpt": "Hacker News: 238 points and 168 comments.",
+      "signal_score": 490.0,
       "community_metrics": {
-        "points": 69,
-        "comments": 36
+        "points": 238,
+        "comments": 168
       }
     },
     {
-      "id": "hn-50315782",
+      "id": "hn-50325662",
       "source": "hacker_news",
-      "title": "Show HN: A language model that lives in a boot sector",
-      "url": "https://github.com/kerlenton/bootgpt",
-      "published_at": "2026-10-31T12:58:29+00:00",
-      "excerpt": "Hacker News: 83 points and 5 comments.",
-      "signal_score": 90.5,
+      "title": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "published_at": "2026-11-01T13:47:24+00:00",
+      "excerpt": "Hacker News: 122 points and 59 comments.",
+      "signal_score": 210.5,
       "community_metrics": {
-        "points": 83,
-        "comments": 5
+        "points": 122,
+        "comments": 59
       }
     },
     {
-      "id": "hn-50320599",
-      "source": "hacker_news",
-      "title": "AI text watermarking and quality loss",
-      "url": "https://blog.keyvan.net/p/ai-text-watermarking-and-quality",
-      "published_at": "2026-10-31T21:50:13+00:00",
-      "excerpt": "Hacker News: 54 points and 8 comments.",
-      "signal_score": 66.0,
-      "community_metrics": {
-        "points": 54,
-        "comments": 8
-      }
-    },
-    {
-      "id": "hn-50290480",
-      "source": "hacker_news",
-      "title": "No AI, 52 min. Build all Linux Files utils in C by Hand [video]",
-      "url": "https://www.youtube.com/watch",
-      "published_at": "2026-10-29T15:20:04+00:00",
-      "excerpt": "Hacker News: 11 points and 3 comments.",
-      "signal_score": 15.5,
-      "community_metrics": {
-        "points": 11,
-        "comments": 3
-      }
-    },
-    {
-      "id": "49069eee3807",
+      "id": "7dd4d781b744",
       "source": "exa_news",
-      "title": "Mistral Large 4 (Le Chonk) is now open weight | Mistral",
-      "url": "https://mistral.ai/news/mistral-large-4-oss",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "excerpt": "Summary\n\nMistral released Mistral Large 4 (Le Chonk), a 1-trillion-parameter multimodal model, now available with improved coding, cybersecurity, and reasoning efficiency. It leads open-weight benchmarks in coding and defensive security while offering three reasoning modes for cost-performance balance. Fully open-weight and European-trained, it empowers sovereign AI with customizable, self-hosted deployment options.\n\n...\n\nToday, we're releasing the weights of this improved Mistral Large 4. The new model also features substantial gains in reasoning efficiency that give developers greater performance while lowering inference costs.\n\n...\n\nMistral Large 4 entered public preview with strong results across leading coding benchmarks. Just three weeks of additional reinforcement learning have since propelled it to the forefront of open-weight coding, taking the lead on FrontierCode and Terminal-Bench while matching the best open-weight models on the Artificial Analysis Coding Agent Index with substantially greater token efficiency.\n\nOn Cognition's private FrontierCode 2.0 benchmark, which assesses end-to-end code quality and whether a repository maintainer would merge the agent's change, Mistral Large 4 leads with a score of 19.7%.\n\n...\n\nOn the Artificial Analysis Coding Agent Index, Mistral Large 4 scores 48%, effectively tied with the leading open-weight model, GLM-5.3, while using 47% fewer tokens per task on average.\n\n...\n\nThe gains extend to terminal-based coding workflows. On Terminal-Bench 4.0, Mistral Large 4 improved by 13 percentage points to 41% compared to its public preview, taking the lead among open-weight models while reducing output tokens by 30%.\n\n...\n\nMistral Large 4 is available to try, deploy, and customize today.\n\nGet started in Mistral Studio, through the Mistral API, or on OpenRouter. For full control, download the open weights from Hugging Face and deploy on your own infrastructure with vLLM or SGLang. The model card and license have everything you need to get started — and for those who want to go deeper, a full technical report is coming soon.\n\nYou can also try the new model in Vibe Code; give it a feature to build or a bug to fix in your own repository.\n\nMistral Large 4, is also available through NVIDIA-hosted endpoints, as an optimized NVIDIA NIM container for serving with vLLM. Developers can use the open source NeMo AutoModel library for customization or the open source TensorRT LLM library for high-throughput serving.\n\n...\n\nStarting today, Mistral Large 4 is priced at $0.70 input / M, $0.07 cached input / M, and $2.10 output / M tokens.",
+      "title": "What’s new in AI infrastructure this month | Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/whats-new-in-ai-infrastructure-this-month",
+      "published_at": "2026-10-30T19:01:03.000Z",
+      "excerpt": "The Google Cloud AI Infrastructure team had another busy month in October, filled with new product launches and updates to power today’s AI and agentic workloads scalably and efficiently. We were also honored to share our progress with customers, partners, and the broader community at leading industry events, including NVIDIA GTC, PyTorch Conference, and AGNTCon + MCPCon.\n\n...\n\n- New compute service: Agent Compute Engine is a purpose-built compute service providing high-performance, hardware-isolated microVM sandboxes alongside expanded agent governance capabilities like Agent Gateway and Agent Registry, all in the service of securing and scaling autonomous AI agents. Its primary benefits include rapid sub-second activation, extreme workload density through copy-on-write memory sharing, enterprise-grade security and identity management, and cross-cloud observability.\n- AI Hypercomputer updates: At NVIDIA GTC Berlin 2026 we announced updates to our agentic infrastructure, including to A5X instances powered by the NVIDIA Vera Rubin NVL72 platform, Virgo Network scale-out fabric, and Managed Lustre storage. These co-engineered advancements provide enterprises with accelerated performance, enhanced sovereign AI controls, while advanced Confidential Computing capabilities help you train and deploy complex multi-step models securely and efficiently.\n- GKE product update: CPU startup boost for GKE, in preview, uses Kubernetes In-place Pod Resize to dynamically elevate container CPU resources during initialization and scale them back down to steady-state levels without having to restart the containers. This feature removes startup throttling and accelerates cold starts by up to 2x for demanding workloads, helping to lower cloud infrastructure costs.\n- GKE product update: The preview of the Wiz Runtime Sensor add-on for Google Kubernetes Engine (GKE) brings low-touch deployment, automated lifecycle management, enterprise credential security, and fleet-wide governance to Wiz's eBPF runtime threat detection for both Standard and Autopilot GKE clusters.\n- Modernization tools: Together at last. Google Cloud Modernize brings Google Cloud’s migration and modernization tools, including Migration Center, Google Cloud VMware Engine, Google Cloud Mainframe Modernization and our new EKS-to-GKE Migration Agent, into a single portfolio. Enterprise teams now have purpose-built agentic capabilities across infrastructure assessment, platform modernization, and application modernization.\n- Cloud Run product update: Temporal Serverless Workers on Cloud Run automatically scale worker pools based on Temporal task queue demands and scale down to zero when idle. This integration eliminates cluster management, lowers costs, using Temporal Worker Versioning to safely handle stateful, long-running workflows and AI agent workloads.\n- New open-source product: llm-d 1.0 is an open-source, Kubernetes-native serving stack that turns a cluster of model servers into a coordinated serving pool, unifying distributed LLM inference across mixed Google Cloud TPU and GPU fleets. Co-founded by Google and partners, it provides production-ready benefits such as cache-aware routing, tiered KV cache offloading, and priority-based flow control to dramatically improve context reuse, reduce time-to-first-token latency, and efficiently scale multi-tenant agent workloads.\n- New open-source product: Working with Meta, we open-sourced TorchTPU, a native PyTorch stack that integrates Google TPUs directly into the PyTorch ecosystem alongside GPUs and CPUs. Now developers can train, serve, and deploy models natively on TPUs using familiar frameworks like Hugging Face, vLLM, and TorchTitan.\n- Google Distributed Cloud updates: Organizations that operate under strict sovereignty mandates would love to use AI to help them process data, but can’t send it to the cloud. The latest version of Google Distributed Cloud (GDC) air-gapped brings frontier AI models and multimodal enterprise search with Gemini into these isolated environments. In addition, GDC air-gapped supports NVIDIA HGX B300 systems based on the NVIDIA Blackwell Ultra architecture, and features enhanced networking and security capabilities. \n- Edge inference product: Google open-sourced ML Drift, a cross-platform on-device GPU compute engine built for LiteRT that abstracts hardware complexities across OpenGL ES, OpenCL, Metal, and WebGPU. The framework delivers peak performance, enhanced 5D tensor support, and memory efficiency for both classical machine learning workloads and advanced generative AI models at the edge.\n- Open-weight model support: Reflection's Beam is an open-weight, 501-parameter model released under an Apache 2.0 license designed specifically for frontier software engineering and long-horizon agentic tasks. We announced day 0 support and ready-to-run deployment recipes for service Beam on AI Hypercomputer and NVIDIA AI Infrastructure.\n\n...\n\n- How-to guide: On July 27, Google announced Day 0 support for Moonshot AI’s Kimi K3 2.8-trillion-parameter open-weight model, the day weights were released. Whichever your preferred deployment path — via Model Garden, custom orchestration, or GKE with llm-d recipes — this guide offers detailed step-by-step instructions to help you evaluate and pilot Kimi K3 in Google Cloud.\n\n...\n\nThere are several configurations to use this implementation, including standard cluster (where you have full control) and autopilot cluster (where Google does the heavy configs\n\n...\n\n- How-to guide: Evaluate TPUs for sample workloads using a new microbenchmark suite that helps you accurately assess whether a device is achieving its theoretical performance specifications, and to identify specific performance gaps or architecture-specific bottlenecks.\n\n...\n\nThis blog outlines how one Google team optimized Mistral 3 large MoE model inference on Google’s Ironwood (TPU v7x), achieving a 1.5x performance gain. They did so with hybrid sharding, replacing linear VPU summations with tree reductions, optimizing GMM/MLA kernels, and adopting asynchronous scheduling. As a result, they boosted throughput by up to 48% while maintaining benchmark accuracy neutrality. Read the full blog here.\n\n...\n\n- Report: According to an independent benchmark report, GKE Inference Gateway outperforms the next leading managed Kubernetes service with 15.7% higher throughput, 92.8% shorter wait times, and 62.6% lower inter-token latency. This performance can be attributed to its use of prefix caching, which optimizes LLM performance by storing the KV cache (activation states) of long, repetitive prompt prefixes. Learn more in the blog. \n- Architecture deep dive: A closer look at the cold start problem, this time for TPUs and GKE, and how the Run:ai Model Streamer can help change the dynamic.",
       "signal_score": 14.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -113,7 +61,7 @@
       "title": "Shipping an Agentic RAG Assistant on AWS Lambda with LangGraph and Terraform - DEV Community",
       "url": "https://dev.to/vedsuthar21/shipping-an-agentic-rag-assistant-on-aws-lambda-with-langgraph-and-terraform-367b",
       "published_at": "2026-10-30T19:45:38.000Z",
-      "excerpt": "Shipping an Agentic RAG Assistant on AWS Lambda with LangGraph and Terraform - DEV Community\nVed Suthar\nPosted on Oct 30\n# Shipping an Agentic RAG Assistant on AWS Lambda with LangGraph and Terraform\n*How I built a tool-calling ReAct agent over a private knowledge base, packaged it as a Lambda container, and provisioned all of it as code.*\nMost retrieval-augmented generation (RAG) demos follow one fixed path: embed the question, fetch the top-k chunks, put them in a prompt, and return whatever the model says. That works until a question needs more than one lookup, or needs arithmetic the model shouldn't guess at, or doesn't need retrieval at all.\nI wanted an assistant that could decide what to do: search the knowledge base, search again with a better query, call a calculator, or just answer. I also wanted to deploy it with no hand-configured infrastructure. This post walks through the design: a LangGraph ReAct agent, FAISS for vector search, a FastAPI interface, a provider-agnostic LLM layer, and an AWS Lambda container image provisioned end-to-end with Terraform.\n## Why \"agentic\" RAG?\nIn classic RAG, retrieval is a step that always runs once. In agentic RAG, retrieval is a **tool**. The model works in a loop (the ReAct pattern: reason, act, observe) and picks which tool to call based on what it has learned so far.\nThat gets you three things:\n1. **Multi-hop questions.** If the first search returns half the answer, the agent can write a sharper second query.\n2. **Exact computation.** \"What's the combined budget of projects A and B?\" should go to a calculator, not to next-token prediction.\n3. **Skipping retrieval.** A greeting or a follow-up about the previous answer doesn't need a vector search.\nThe cost is more LLM calls per question and a bit of extra complexity. LangGraph keeps that complexity manageable.\n## Architecture at a glance\n```\nClient ──HTTPS──▶ Lambda (container image)\n                     │\n                     ├─ FastAPI app (via ASGI adapter)\n                     │\n                     └─ LangGraph agent\n                          ├─ LLM node (OpenAI or Anthropic)\n                          └─ Tool node\n                               ├─ retriever → FAISS index\n                               └─ calculator\n```\nI split the codebase into small modules so each part could be tested on its own:\n* `config` holds typed settings (model provider, model name, top-k, index path), loaded from environment variables.\n* `retriever` loads the FAISS index and returns ranked chunks with their source metadata.\n* `tools` defines the retriever and calculator as tools the LLM can call.\n* `llm` is a thin, provider-agnostic wrapper.\n* `graph` wires the agent.\n* `api` is the FastAPI layer.\n## The agent graph\nLangGraph models an agent as a state machine. The state is mainly the list of messages; nodes read the state and add to it; edges decide what runs next.\nThe ReAct loop needs two nodes and one conditional edge:\n```\nfrom langgraph.graph import StateGraph, MessagesState, START, END\nfrom langgraph.prebuilt import ToolNode\n\n...\n\ngraph = StateGraph(MessagesState)\ngraph.add_node(\"agent\", call_model)\ngraph.add_node(\"tools\", ToolNode(tools))\ngraph.add_edge(START, \"agent\")\ngraph.add_conditional_edges(\"agent\", should_continue, [\"tools\", END])\ngraph.add_edge(\"tools\", \"agent\")\napp_graph = graph.compile()\n```\nThe model either asks for tool calls or produces a final answer. If it asks for tools, `ToolNode` runs them, appends the results as tool messages, and control goes back to the model. I also set a recursion limit when invoking the graph so a confused model can't loop forever.\nWriting the loop as an explicit graph, rather than hiding it inside an agent class, paid off quickly. I could see every transition, test `should\\_continue` with plain unit tests, and add nodes later (a query-rewriting step, for example) without touching the rest.\n## Tools: retriever and calculator\nThe retriever tool's docstring matters as much as its code, because the model reads it to decide when to call it:\n```\n@tool\ndef retrieve_docs(query: str) -> str:\n    \"\"\"Search the private knowledge base. Use for any question about\n    internal documents. Returns the most relevant passages with sources.\"\"\"\n    hits = retriever.search(query, k=settings.top_k)\n    return \"\\n\\n\".join(f\"[{h.source}] {h.text}\" for h in hits)\n```\nReturning the source with each passage lets the model cite where an answer came from, and makes bad retrievals easy to spot while debugging.\nThe calculator is deliberately narrow. It evaluates arithmetic expressions with a small safe parser rather than Python's `eval`, because tool inputs are model-generated text and should be treated as untrusted.\n## FAISS: simple, local, fast to load\nFor a private knowledge base of modest size, FAISS is a good fit: no separate database to run, and the index is just a file. I build the index offline (chunk documents, embed them, write the index plus a metadata file mapping vector IDs to text and source), then ship it with the application.\nOn Lambda that has a nice property: the index loads from the container's filesystem at cold start and stays in memory for warm invocations. I load it once at module level, not per request, so warm requests skip that cost.\nThe trade-off is that updating the knowledge base means rebuilding the index and redeploying. For a knowledge base that changes rarely, I'll take that over running a vector database.\n## A provider-agnostic LLM layer\nI didn't want the agent tied to one vendor. The `llm` module exposes one factory that returns a chat model supporting tool binding, chosen by config:\n```\ndef get_llm(settings: Settings):\n    if settings.provider == \"openai\":\n        return ChatOpenAI(model=settings.model, temperature=0)\n    if settings.provider == \"anthropic\":\n        return ChatAnthropic(model=settings.model, temperature=0)\n    raise ValueError(f\"Unknown provider: {settings.provider}\")\n```\nThe rest of the code depends only on this interface. Switching providers is a config change, which also makes it easy to compare how different models behave with the same tools and prompts. API keys come from the environment and never live in the code or the image.\n## FastAPI on Lambda\nFastAPI gives a typed request and response schema and automatic docs during local development. To run the same app on Lambda, I wrap it with an ASGI-to-Lambda adapter such as Mangum, so one codebase serves both `uvicorn` locally and Lambda in production.\n```\napp = FastAPI()\n\n...\n\n* **Make the loop explicit.** An explicit graph is easier to debug and extend than an opaque agent executor.",
+      "excerpt": "Shipping an Agentic RAG Assistant on AWS Lambda with LangGraph and Terraform - DEV Community\nVed Suthar\nPosted on Oct 30\n# Shipping an Agentic RAG Assistant on AWS Lambda with LangGraph and Terraform\n*How I built a tool-calling ReAct agent over a private knowledge base, packaged it as a Lambda container, and provisioned all of it as code.*\nMost retrieval-augmented generation (RAG) demos follow one fixed path: embed the question, fetch the top-k chunks, put them in a prompt, and return whatever the model says. That works until a question needs more than one lookup, or needs arithmetic the model shouldn't guess at, or doesn't need retrieval at all.\nI wanted an assistant that could decide what to do: search the knowledge base, search again with a better query, call a calculator, or just answer. I also wanted to deploy it with no hand-configured infrastructure. This post walks through the design: a LangGraph ReAct agent, FAISS for vector search, a FastAPI interface, a provider-agnostic LLM layer, and an AWS Lambda container image provisioned end-to-end with Terraform.\n## Why \"agentic\" RAG?\nIn classic RAG, retrieval is a step that always runs once. In agentic RAG, retrieval is a **tool**. The model works in a loop (the ReAct pattern: reason, act, observe) and picks which tool to call based on what it has learned so far.\nThat gets you three things:\n1. **Multi-hop questions.** If the first search returns half the answer, the agent can write a sharper second query.\n2. **Exact computation.** \"What's the combined budget of projects A and B?\" should go to a calculator, not to next-token prediction.\n3. **Skipping retrieval.** A greeting or a follow-up about the previous answer doesn't need a vector search.\nThe cost is more LLM calls per question and a bit of extra complexity. LangGraph keeps that complexity manageable.\n## Architecture at a glance\n```\nClient ──HTTPS──▶ Lambda (container image)\n                     │\n                     ├─ FastAPI app (via ASGI adapter)\n                     │\n                     └─ LangGraph agent\n                          ├─ LLM node (OpenAI or Anthropic)\n                          └─ Tool node\n                               ├─ retriever → FAISS index\n                               └─ calculator\n```\nI split the codebase into small modules so each part could be tested on its own:\n* `config` holds typed settings (model provider, model name, top-k, index path), loaded from environment variables.\n* `retriever` loads the FAISS index and returns ranked chunks with their source metadata.\n* `tools` defines the retriever and calculator as tools the LLM can call.\n* `llm` is a thin, provider-agnostic wrapper.\n* `graph` wires the agent.\n* `api` is the FastAPI layer.\n## The agent graph\nLangGraph models an agent as a state machine. The state is mainly the list of messages; nodes read the state and add to it; edges decide what runs next.\nThe ReAct loop needs two nodes and one conditional edge:\n```\nfrom langgraph.graph import StateGraph, MessagesState, START, END\nfrom langgraph.prebuilt import ToolNode\n\n...\n\ngraph = StateGraph(MessagesState)\ngraph.add_node(\"agent\", call_model)\ngraph.add_node(\"tools\", ToolNode(tools))\ngraph.add_edge(START, \"agent\")\ngraph.add_conditional_edges(\"agent\", should_continue, [\"tools\", END])\ngraph.add_edge(\"tools\", \"agent\")\napp_graph = graph.compile()\n```\nThe model either asks for tool calls or produces a final answer. If it asks for tools, `ToolNode` runs them, appends the results as tool messages, and control goes back to the model. I also set a recursion limit when invoking the graph so a confused model can't loop forever.\nWriting the loop as an explicit graph, rather than hiding it inside an agent class, paid off quickly. I could see every transition, test `should\\_continue` with plain unit tests, and add nodes later (a query-rewriting step, for example) without touching the rest.\n## Tools: retriever and calculator\nThe retriever tool's docstring matters as much as its code, because the model reads it to decide when to call it:\n```\n@tool\ndef retrieve_docs(query: str) -> str:\n    \"\"\"Search the private knowledge base. Use for any question about\n    internal documents. Returns the most relevant passages with sources.\"\"\"\n    hits = retriever.search(query, k=settings.top_k)\n    return \"\\n\\n\".join(f\"[{h.source}] {h.text}\" for h in hits)\n```\nReturning the source with each passage lets the model cite where an answer came from, and makes bad retrievals easy to spot while debugging.\nThe calculator is deliberately narrow. It evaluates arithmetic expressions with a small safe parser rather than Python's `eval`, because tool inputs are model-generated text and should be treated as untrusted.\n## FAISS: simple, local, fast to load\nFor a private knowledge base of modest size, FAISS is a good fit: no separate database to run, and the index is just a file. I build the index offline (chunk documents, embed them, write the index plus a metadata file mapping vector IDs to text and source), then ship it with the application.\nOn Lambda that has a nice property: the index loads from the container's filesystem at cold start and stays in memory for warm invocations. I load it once at module level, not per request, so warm requests skip that cost.\nThe trade-off is that updating the knowledge base means rebuilding the index and redeploying. For a knowledge base that changes rarely, I'll take that over running a vector database.\n## A provider-agnostic LLM layer\nI didn't want the agent tied to one vendor. The `llm` module exposes one factory that returns a chat model supporting tool binding, chosen by config:\n```\ndef get_llm(settings: Settings):\n    if settings.provider == \"openai\":\n        return ChatOpenAI(model=settings.model, temperature=0)\n    if settings.provider == \"anthropic\":\n        return ChatAnthropic(model=settings.model, temperature=0)\n    raise ValueError(f\"Unknown provider: {settings.provider}\")\n```\nThe rest of the code depends only on this interface. Switching providers is a config change, which also makes it easy to compare how different models behave with the same tools and prompts. API keys come from the environment and never live in the code or the image.\n## FastAPI on Lambda\nFastAPI gives a typed request and response schema and automatic docs during local development. To run the same app on Lambda, I wrap it with an ASGI-to-Lambda adapter such as Mangum, so one codebase serves both `uvicorn` locally and Lambda in production.\n```\napp = FastAPI()\n\n...\n\nBecause each component\n\n...\n\n* the retriever is tested against a tiny fixture index;\n* the calculator is tested on valid and malicious inputs;\n\n...\n\n* **Tool descriptions are prompts.** Vague docstrings led to the model skipping retrieval or over-calling it. Clear \"use this when\" language fixed most routing problems.\n* **Make the loop explicit.** An explicit graph is easier to debug and extend than an opaque agent executor.\n* **Bound everything.** Recursion limits, Lambda timeouts, and a narrow calculator keep an autonomous loop predictable.\n* **Infrastructure as code from day one.** It was more work up front than clicking through the console, and it was worth it the first time I rebuilt the stack.",
       "signal_score": 14.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -121,12 +69,12 @@
       }
     },
     {
-      "id": "38098008fc54",
+      "id": "dd5db6601fca",
       "source": "exa_news",
-      "title": "NVIDIA TensorRT dramatically accelerates Stable Diffusion 3.5 on RTX GPUs – DailySynapse",
-      "url": "https://dailysynapse.com/news/nvidia-tensorrt-accelerates-stable-diffusion-35-rtx-gpus",
-      "published_at": "2026-11-01T00:00:00.000Z",
-      "excerpt": "The rise of generative artificial intelligence models has transformed digital creativity but also increased hardware demands, especially for VRAM. Stable Diffusion 3.5 Large, a leading image generation model, originally required over 18GB of VRAM, restricting its usability to only a handful of high-end systems. NVIDIA has addressed this limitation by collaborating with Stability AI to quantize the model to FP8—a process that trims VRAM usage by 40%, making it possible for more systems to run the model effectively.\n\nThis optimization, combined with the power of NVIDIA TensorRT, generates significant performance leaps. TensorRT, NVIDIA’s AI inference platform, has been reengineered for RTX AI PCs and now offers just-in-time, on-device engine building. Alongside reduced VRAM use, quantized Stable Diffusion 3.5 models see performance more than double, with FP8 TensorRT delivering a 2.3x speedup and 40% lower memory use compared to baseline PyTorch implementations in BF16. Medium versions are also optimized, with a 1.7x increase in speed. These advances allow image creation and editing tasks to proceed quickly and in real time, even on RTX GPUs with less VRAM.\n\nTensorRT for RTX is now available as a standalone software development kit, letting developers take advantage of rapid JIT engine creation without the need for training on device-specific packages. The SDK is eight times smaller than before and integrates with Windows ML for streamlined deployment. The optimized Stable Diffusion 3.5 models are live on Hugging Face and will soon be accessible as NVIDIA NIM microservices, further simplifying deployment for developers and creatives. Such coordinated advances mark a vital step in democratizing high-performance generative artificial intelligence, making advanced image synthesis accessible on a much wider range of systems.",
+      "title": "Three MoE Inference Optimizations NVIDIA Measured on DGX Spark - DEV Community",
+      "url": "https://dev.to/echakiri/three-moe-inference-optimizations-nvidia-measured-on-dgx-spark-1ob",
+      "published_at": "2026-11-01T14:00:02.000Z",
+      "excerpt": "* The DGX Spark is a compact AI computer from NVIDIA for developers and researchers, built on the GB10 Grace Blackwell superchip with up to 128 GB of unified memory, and the model benchmarked on it here is Ling-3.0-flash from Inclusion AI, a mixture-of-experts model with 124 billion parameters.\n* NVIDIA's post published on 27 October 2026 measures three changes to that model's decode loop at batch size 1, and reports time per output token falling from 27.71 ms to 9.72 ms.\n* Profiling showed decoding was memory-bound: reading model weights drove execution time, and the MoE computation plus the output projection dominated it.\n* Humming MXFP4 kernels compile at run time for the model's real shapes, which measured +9.3% decode throughput.\n* Online FP8 quantization halves the LM head weight reads and brings the stack to +21.7% over baseline.\n* Multi-token prediction with NEXTN turns one verification into four tokens, and the synthetic workload accepted 3.90 tokens per round.\n* GSM8K measured a 42.5% throughput gain across 1,319 questions with accuracy unchanged within 0.08 of a point.\n* The synthetic workload overstates the gain a real workload sees, because repetitive output is easier to draft.\n* One missing interface makes the stack slower than baseline, which is why the vendor recommends validating each optimization at startup.\nOfficial NVIDIA product photo of the DGX Spark family, from the product page at nvidia.com/en-us/products/workstations/dgx-spark, retrieved 29 October 2026.\nA batch of one is the least glamorous benchmark in AI infrastructure and the one most people actually run. It is the shape of a coding assistant answering one developer, a document summariser serving one request, an agent waiting on its own next token. NVIDIA chose that shape for this measurement, and the result is a useful case study in how much of a decode step is spent reading weights off memory.\n## Decoding was memory-bound on a 124-billion-parameter model at batch size 1\nLing-3.0-flash keeps 5.1 billion of its 124 billion parameters active per token. It has 42 layers, 35 of them Kimi Delta Attention linear-attention layers and seven multi-head latent attention layers, and each MoE layer routes a token to eight of 512 routed experts alongside one shared expert. The LM head projects a hidden dimension of 2,560 onto a vocabulary of 157,184 tokens.\nCapture of the NVIDIA technical blog post carrying the measurement, developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark, taken 29 October 2026.\nAt batch size 1, arithmetic units sit idle and the decode step waits on memory bandwidth. Two operations carried the cost: the routed-expert computation, and the vocabulary projection whose entire weight block has to be read for every generated token. NVIDIA's three optimizations attack those two costs in two different ways, and the article's value is that it reports each one separately before stacking them.\n## Humming MXFP4 kernels compile at run time for the model's real shapes\nThe baseline ran the official W4A8 recipe: FlashInfer MXFP4 MoE kernels, CUTLASS dense GEMM, and the `--enable-fp32-lm-head` option. Swapping the MoE backend for Humming moved time per output token from 27.71 ms to 25.35 ms and decode throughput from 36.09 to 39.45 tokens per second, a 9.3% gain.\n\n...\n\nNetics editorial visual: the order the three techniques apply to a decode loop, and the startup check that confirms each one is active.\n## Multi-token prediction turns each verification into four tokens\n\n...\n\nThe benefit depends on accept length and on the verification-cost ratio, which measured about 2.26. ... At batch size 1, small KV reads and larger weight reads made expert activation the principal verification cost: a normal decode activates eight\n\n...\n\nOn the synthetic 32K-input, 2K-output workload the stack reached 9.72 ms and 102.88 tokens per second, 185.1% over baseline, with an accept length of 3.90. That number is where a careful reader slows down.\nNetics editorial visual: the four figures that decide whether this stack is worth deploying, each traceable to the post's tables.\n## GSM8K measured a 42.5% throughput gain across 1,319 questions\nThe second evaluation is the one worth trusting more. NVIDIA ran all 1,319 GSM8K test questions with five-shot prompting, temperature 0.6, top\\_p 0.95, top\\_k 29, a 32,768-token ceiling and chain-of-thought enabled, holding sampling, parser, seed and memory allocation fixed.\nAcross that set, time per output token went from 26.45 ms to 18.56 ms, decode throughput from 37.81 to 53.89 tokens per second, a 42.5% gain, and mean latency from 15.21 s to 11.49 s. P50 fell from 8.36 s to 6.11 s and P95 from 50.20 s to 38.60 s. GSM8K accuracy moved from 96.89% to 96.82%, and the run recorded zero errors and zero truncations. The measured gain is real and roughly a quarter of the synthetic claim.\n## The synthetic workload overstates the gain a real workload sees\nNVIDIA states the caveat itself, which is rarer than it should be. Accept length was 3.90 on the synthetic run against 2.68 on GSM8K. Three differences explain most of the gap: synthetic output repeats, which makes drafting easy; the synthetic test decoded greedily while the real evaluation sampled at temperature 0.6 with top\\_p 0.95 and top\\_k 29; and the synthetic workload fixed output at 2K tokens while the median GSM8K output is about 310 tokens, which spreads the fixed overhead reductions over a much shorter generation.\nCapture of the DGX Spark user guide landing page, docs.nvidia.com/dgx/dgx-spark/index.html, taken 29 October 2026.\nThat last point is the one to carry into a deployment decision. Speculative decoding pays per token generated, and the two other optimizations pay per step, so a workload with short answers collects most of the first two gains and a fraction of the third. The same discipline applies to any vendor benchmark: the useful question is which of the measured mechanisms your own traffic can reach. A previous analysis of how CUDA 13.4 turns a GPU fraction into an enforceable memory limit followed the same logic, because a capability only counts once the platform enforces it under your workload.\n## One missing interface makes the stack slower than baseline\nStacking the three optimizations is where the article earns its keep. Each worked alone. Together, the FP8 LM-head path and MTP need the draft model to share the entire LM-head module, because the draft has to interpret the same quantized weights as the target. The original Ling NEXTN implementation exposed only the weight tensor.\nNetics editorial visual: the integration requirement behind the FP8 LM head and MTP pairing, and the failure mode when the interface is absent.\nWithout the interface the framework falls back silently: the draft receives FP8 weights and reads them as BF16, accept length collapses to 1.00, and throughput ends up below the configuration with no optimizations at all. Nothing fails, nothing logs an error, and the only symptom is that the machine is slower than it was before someone made it faster. NVIDIA's guidance is to validate at startup that every optimization is active, which is more reliable than inferring configuration state from a later performance number.\nThis paragraph belongs in an internal wiki. A silent fallback in an inference stack can create a capacity incident on launch day, so startup validation belongs in the deployment checklist. The model, the kernels and the quantization are NVIDIA's engineering; the discipline of proving each layer is active belongs to whoever operates the deployment. Related resources include Netics, and the deployment planning page.\n*Originally published on the Netics blog.*",
       "signal_score": 14.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -134,12 +82,12 @@
       }
     },
     {
-      "id": "7dd4d781b744",
+      "id": "898f1f075062",
       "source": "exa_news",
-      "title": "What’s new in AI infrastructure this month | Google Cloud Blog",
-      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/whats-new-in-ai-infrastructure-this-month",
-      "published_at": "2026-10-30T19:01:03.000Z",
-      "excerpt": "- New compute service: Agent Compute Engine is a purpose-built compute service providing high-performance, hardware-isolated microVM sandboxes alongside expanded agent governance capabilities like Agent Gateway and Agent Registry, all in the service of securing and scaling autonomous AI agents. Its primary benefits include rapid sub-second activation, extreme workload density through copy-on-write memory sharing, enterprise-grade security and identity management, and cross-cloud observability.\n- AI Hypercomputer updates: At NVIDIA GTC Berlin 2026 we announced updates to our agentic infrastructure, including to A5X instances powered by the NVIDIA Vera Rubin NVL72 platform, Virgo Network scale-out fabric, and Managed Lustre storage. These co-engineered advancements provide enterprises with accelerated performance, enhanced sovereign AI controls, while advanced Confidential Computing capabilities help you train and deploy complex multi-step models securely and efficiently.\n- GKE product update: CPU startup boost for GKE, in preview, uses Kubernetes In-place Pod Resize to dynamically elevate container CPU resources during initialization and scale them back down to steady-state levels without having to restart the containers. This feature removes startup throttling and accelerates cold starts by up to 2x for demanding workloads, helping to lower cloud infrastructure costs.\n- GKE product update: The preview of the Wiz Runtime Sensor add-on for Google Kubernetes Engine (GKE) brings low-touch deployment, automated lifecycle management, enterprise credential security, and fleet-wide governance to Wiz's eBPF runtime threat detection for both Standard and Autopilot GKE clusters.\n- Modernization tools: Together at last. Google Cloud Modernize brings Google Cloud’s migration and modernization tools, including Migration Center, Google Cloud VMware Engine, Google Cloud Mainframe Modernization and our new EKS-to-GKE Migration Agent, into a single portfolio. Enterprise teams now have purpose-built agentic capabilities across infrastructure assessment, platform modernization, and application modernization.\n- Cloud Run product update: Temporal Serverless Workers on Cloud Run automatically scale worker pools based on Temporal task queue demands and scale down to zero when idle. This integration eliminates cluster management, lowers costs, using Temporal Worker Versioning to safely handle stateful, long-running workflows and AI agent workloads.\n- New open-source product: llm-d 1.0 is an open-source, Kubernetes-native serving stack that turns a cluster of model servers into a coordinated serving pool, unifying distributed LLM inference across mixed Google Cloud TPU and GPU fleets. Co-founded by Google and partners, it provides production-ready benefits such as cache-aware routing, tiered KV cache offloading, and priority-based flow control to dramatically improve context reuse, reduce time-to-first-token latency, and efficiently scale multi-tenant agent workloads.\n- New open-source product: Working with Meta, we open-sourced TorchTPU, a native PyTorch stack that integrates Google TPUs directly into the PyTorch ecosystem alongside GPUs and CPUs. Now developers can train, serve, and deploy models natively on TPUs using familiar frameworks like Hugging Face, vLLM, and TorchTitan.\n- Google Distributed Cloud updates: Organizations that operate under strict sovereignty mandates would love to use AI to help them process data, but can’t send it to the cloud. The latest version of Google Distributed Cloud (GDC) air-gapped brings frontier AI models and multimodal enterprise search with Gemini into these isolated environments. In addition, GDC air-gapped supports NVIDIA HGX B300 systems based on the NVIDIA Blackwell Ultra architecture, and features enhanced networking and security capabilities. \n- Edge inference product: Google open-sourced ML Drift, a cross-platform on-device GPU compute engine built for LiteRT that abstracts hardware complexities across OpenGL ES, OpenCL, Metal, and WebGPU. The framework delivers peak performance, enhanced 5D tensor support, and memory efficiency for both classical machine learning workloads and advanced generative AI models at the edge.\n- Open-weight model support: Reflection's Beam is an open-weight, 501-parameter model released under an Apache 2.0 license designed specifically for frontier software engineering and long-horizon agentic tasks. We announced day 0 support and ready-to-run deployment recipes for service Beam on AI Hypercomputer and NVIDIA AI Infrastructure.\n\n...\n\n- Report: According to an independent benchmark report, GKE Inference Gateway outperforms the next leading managed Kubernetes service with 15.7% higher throughput, 92.8% shorter wait times, and 62.6% lower inter-token latency. This performance can be attributed to its use of prefix caching, which optimizes LLM performance by storing the KV cache (activation states) of long, repetitive prompt prefixes. Learn more in the blog. \n- Architecture deep dive: A closer look at the cold start problem, this time for TPUs and GKE, and how the Run:ai Model Streamer can help change the dynamic.",
+      "title": "Rubin Gets 9x to 21x GB300's Tokens per Dollar in Benchmark - FourWeekMBA",
+      "url": "https://fourweekmba.com/ai-rubin-gets-9x-to-21x-gb300s-tokens-per-dollar-in-benchmark",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "excerpt": "Nvidia’s Vera Rubin NVL72 produced 9.11 times as many tokens per dollar as the GB300 NVL72 at 200 tokens per second per user, and 20.9 times as many at 325, on a 744-billion-parameter agentic model. The figures are from an official preview of SemiAnalysis’s InferenceX benchmark, which the firm posted on X on 1 November.\n\nSemiAnalysis prices a Rubin chip at $3.61 an hour against $2.31 for a GB300, about 56% more. By our arithmetic, a 9.11x lead per dollar at that price gap means roughly 14 times the tokens per chip at 200 tokens per second per user, and about 33 times at 325.\n\n...\n\nSemiAnalysis wrote that “HBM CHIPS CAN REACH OVER 1000 tok/s/user on giant 700B+ models via agent swarm-written software, according to a new NVIDIA AgentX submission”. It added that on Rubin NVL72 “it can achieve 20.9x better perf per TCO than GB300 NVL72 at even “ultrafast” speeds of 325 tok/s/user and up to 9.11x better perf per TCO at 200 tok/s/user”.\n\n...\n\nSemiAnalysis InferenceX official preview, GLM-5.3 744B agentic (updated 30 October 2026): Vera Rubin NVL72 delivered 9.11x GB300 NVL72’s tokens per $1 TCO at 200 tok/s/user and 20.9x at 325, both FP4 on Dynamo TRTLLM; TCO per chip-hour $3.61 (VR200) vs $2.31 (GB300). Preview results may change.\n\n...\n\nIn a second post, SemiAnalysis said the Rubin submission uses a new “Mooncake Store feature of Extended GPU Memory, where KVCache stored on Vera’s LPDDR5X is pooled across all 18 Rubin compute trays using NVLink instead of the previous method of using RDMA, resulting in greater than 10x better bandwidth”.\n\n...\n\nThe Rubin result is labelled a preview that may change. The figures cover one model (GLM-5.3, 744 billion parameters) on one agentic scenario, priced at SemiAnalysis’s own TCO tier. The InferenceX page notes that disaggregated setups such as Dynamo TRTLLM count cost per decode or prefill chip rather than per total chip count. The roughly 14x and 33x per-chip multiples are our arithmetic from the stated ratios and hourly costs. SemiAnalysis does not describe the agent-written software beyond the phrase quoted.",
       "signal_score": 13.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -173,12 +121,12 @@
       }
     },
     {
-      "id": "6beeb33ced15",
+      "id": "cdd8870a0de1",
       "source": "exa_news",
-      "title": "Accelerate agentic AI with NVIDIA Nemotron models on Amazon EKS and SageMaker HyperPod EKS | Artificial Intelligence",
-      "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks",
-      "published_at": "2026-10-29T16:11:08.000Z",
-      "excerpt": "NVIDIA Nemotron 3.5 Super VL joins the NVIDIA Nemotron 3 Nano, Nano Omni, Super, Ultra, and Nemotron 3.5 Lightning models already available on AWS. It’s a 120B-parameter mixture-of-experts (MoE) model that activates 12B parameters per token. It combines reasoning and tool use with text, image, document, and video understanding, so one model serves both text and visual tasks. This post explores its architecture and use cases, then shows how to deploy it on Amazon Elastic Kubernetes Service (Amazon EKS), Amazon EKS Auto Mode, and Amazon SageMaker HyperPod EKS.\n\n...\n\nNVIDIA reports 63.44 percent on Hermes Bench and 87.05 percent on LangChain agent evaluations, and 80.8 percent on the CharXiv chart-reasoning benchmark. (technical report)\n\n...\n\n### Deployment architecture\n\nThe reference implementation runs on standard Amazon EKS, EKS Auto Mode, and SageMaker HyperPod EKS. With EKS Auto Mode, AWS manages scaling, GPU, and EFA support in the cluster on your behalf. The Kubernetes manifests for model deployment are the same for each of the orchestrator options. Each cluster has a control plane hosting the Kubernetes API and a data plane of CPU and GPU nodes. CPU nodes run system and test pods, while the GPU nodes run the model. Amazon Elastic Container Registry (Amazon ECR) stores the container images, a shared Amazon FSx for Lustre volume holds the model weights, and Elastic Fabric Adapter (EFA) connects the GPU nodes. The following figure shows a standard Amazon EKS cluster.\n\n...\n\nThis architecture has been validated on both p6-b200.48xlarge (8 x NVIDIA B200 GPUs) and p5en.48xlarge (8 x NVIDIA H200 GPUs) instances. You can validate the cluster and its network with an NVIDIA Collective Communications Library (NCCL) all-reduce micro-benchmark.\n\n...\n\nYou can measure the performance of a deployed model on the cluster with the NVIDIA aiperf tool.\n\n...\n\nThe aiperf output in the upper left pane shows key performance indicators (KPIs) like time to first token (TTFT), inter-token latency (ITL), and throughput in tokens per second (TPS). By taking these measurements at various levels of concurrency, we can study how latency and throughput depend on the number of concurrent requests. This information is essential to thoughtfully plan capacity and model deployment topology. The aws-do-eks container provides automation for visualizing GPU and EFA utilization as well as running aiperf and concurrency sweeps with single commands.",
+      "title": "Cloud TPU breaks AI inference records",
+      "url": "https://thetechstreetnow.com/cloud-tpu-breaks-ai-inference-records",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "excerpt": "MLPerf is the industry standard for measuring ML performance, and results from the new MLPerf Inference benchmarks are now available. These benchmarks represent performance across a variety of machine learning prediction scenarios. Our submission demonstrates that Google’s Cloud TPU platform addresses the critical needs of machine learning customers: developer velocity, scalability, and elasticity.\n\nMLPerf Inference v0.5 defines three datacenter-class benchmarks: ResNet-50 v1.5 for image classification, SSD-ResNet-34 for object detection, and GNMT for language translation. Google submitted results for all three of these benchmarks using Cloud TPU v3 devices and demonstrated near-linear scalability all the way up to a record 1 million images processed per second on ResNet-50 v1.5 using 32 Cloud TPU v3 devices1.\n\n...\n\nCloud TPUs are publicly available to Google Cloud customers in beta. These same TPUs are also being used throughout...",
       "signal_score": 12.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -199,12 +147,12 @@
       }
     },
     {
-      "id": "e1498cf5b668",
+      "id": "38098008fc54",
       "source": "exa_news",
-      "title": "How we fit a 27B model on a 12 GB laptop GPU - DEV Community",
-      "url": "https://dev.to/genrius_ai/how-we-fit-a-27b-model-on-a-12-gb-laptop-gpu-14eo",
-      "published_at": "2026-11-01T08:25:14.000Z",
-      "excerpt": "How we fit a 27B model on a 12 GB laptop GPU - DEV Community\nPosted on Nov 1 • Originally published at genrius-ai.github.io\n# How we fit a 27B model on a 12 GB laptop GPU\n## In short\n* Qwen3.8-27B goes from 53.8 GB of 16-bit weights to an 8.31 GB Pingala-8 file, 84.5% smaller (6.5x). It runs with every layer on one 12 GB RTX 5070 Ti Laptop GPU at 37.7 tokens/s (llama-bench, batch 1).\n* Version 2 moves bits between tensor roles and layer depths, following the allocation in DASH-Q's published files. WikiText-2 perplexity fell from 7.34 to 6.89 at the same size, better on 20 of 20 test windows.\n* DASH-Q IQ2\\_XS (8.55 GB) is still better than ours: 6.54, ahead on 20 of 20 windows. Against unsloth UD-IQ2\\_S (8.37 GB, 7.34) our lower average is not a significant win.\n* The file needs our patched llama.cpp runtime on an NVIDIA GPU. Stock llama.cpp, Ollama and LM Studio cannot load it.\n## The problem: 53.8 GB of weights, 12 GB of memory\nQwen3.8-27B is a 27-billion-parameter model. Its text weights, stored the way the Qwen team ships them at 16 bits each, come to 53.8 GB. That count leaves out the vision tower and the multi-token-prediction block, which we do not ship either.\nA model runs at full speed only when its weights sit in GPU memory, next to the cache that holds the conversation. A laptop GPU with 12 GB cannot hold 53.8 GB. Even at 4 bits per weight, the weights alone would be about 13.5 GB (a quarter of 53.8), more than the whole card before any cache. The usual answer is to leave some layers in system RAM, which slows generation to the speed of that slower memory.\nWe wanted the whole model on the GPU. That means about 2 bits per weight.\n## What 2-bit means\nA weight is one number in one of the model's matrices. At 16 bits it takes 2 bytes. At 2 bits it takes a quarter of a byte, so on its own it could take only 4 different values. No useful format stores weights that crudely. 2-bit formats code small groups of weights together, keep a scale for each block of weights, and store a few sensitive tensors with more bits. The \"2-bit\" label describes the bulk of the file, not every byte of it.\nFor our file the arithmetic is simple: 8.31 GB for 53.8 GB of 16-bit weights is 6.5x smaller, or about 2.5 bits per weight averaged over the whole file. The extra half bit pays for the scales, the token embedding and output head, and the tensors that get more than 2 bits.\nFewer bits means rounding error, and the error adds up across 27 billion weights. We measure what that costs with WikiText-2 perplexity, a standard score for how well a model predicts real text; lower is better. Our article on 8 models explains the score in plain words.\nPingala-8 codes each row of weights in groups of 4 with an 8-state trellis code, after a random Hadamard rotation and LDLQ rounding. These ideas come from QuIP, QuIP# and QTIP; the trellis-coded quantization guide explains them. This article is about something else: how many bits each tensor gets.\n## The 8.31 GB file\nThe release is 8,314,241,600 bytes in 9 parts on Hugging Face. On our one test machine, an RTX 5070 Ti Laptop GPU with 12 GB under WSL2, it loads with every layer on the GPU (`-ngl 99`) and leaves room for a 4,096-token context. The 12 GB guide and the VRAM requirements page show the memory arithmetic for longer contexts and other cards. We have not run this file on any other GPU.\n## The real-speed demo \n Real run, real speed. Text and timing captured from the run; terminal view re-rendered. Chat speed in this run: 31.63 tokens/s (runtime eval, 124 tokens, thinking off); the 37.7 tokens/s above is llama-bench tg64. Watch the 1080p MP4.\nThe clip replays one chat run on that laptop: every token appears when it was captured, nothing is sped up, and only the terminal view is redrawn. It shows two speeds on purpose. 37.7 tokens/s is the llama-bench generation test. 31.63 tokens/s is the runtime's own count for this chat answer. They are different measurements, we have not yet looked into the gap, and we report both.\n## What we changed in version 2: bits by role and depth\nA transformer is a stack of layers, and each layer holds several kinds of matrix: the attention projections (`attn\\_qkv` builds the queries, keys and values), the feed-forward matrices (`ffn\\_up`, `ffn\\_gate`, `ffn\\_down`), and in Qwen3.8's linear-attention layers an output projection called `ssm\\_out`. We call the kind of matrix its role, and its position in the stack its depth. A 2-bit file does not have to give every tensor the same number of bits. The question is where the extra bits do the most good.\nVersion 1 copied the layout llama.cpp uses for its IQ2\\_XXS type. That layout spent 4.5 bits per weight on `attn\\_qkv`, and the rest of the budget had to come from somewhere else.\nDASH-Q, a set of 2-bit GGUF files published by jkim96, splits the budget differently. We read the type of every tensor out of their Qwen3.8-27B file and built the same plan for ours: a bit budget for each role in each band of layers, from early to late. Same total bytes, different placement; the change was the allocation, not the coding method.\nThe result, on the same 20 WikiText-2 windows:\n* Version 1: perplexity 7.34.\n* Version 2: perplexity 6.89, lower on all 20 windows, at the same 8.31 GB.\nThe allocation idea is DASH-Q's, not ours. What we added is the evidence that the same plan helps a different coder.\n### The smaller model taught us the rest\nWe then tried to copy the 27B plan onto Qwen3.5-2B. It did not help: perplexity 15.80 against 15.62 for version 1, better on only 22 of 70 windows. The 27B plan spent too much on the late feed-forward layers (4.1 bits per weight) and starved `ssm\\_out` (2.6) for a model of this size. A plan learned on one model is not a plan for every model.\nThe second gap was the embedding. In the 2B, the token embedding and the output head are the same matrix. DASH-Q stores it at Q4\\_K, 286 MB. We stored it at Q5\\_K, 350 MB. At equal file size, that left DASH-Q 489 MB for the other matrices against our 429 MB, 14% more.\nSo the third try moved the embedding to Q4\\_K, which freed 61.6 MB, and used DASH-Q's own 2B plan for the rest. That file scored 14.06 at 778,189,408 bytes, slightly smaller than version 1 and better on 70 of 70 windows, a 10.0% drop in perplexity. It is now version 2 of our Qwen3.5-2B. The lesson we wrote down: the embedding and output head are part of the byte budget, so copy the leading file's whole-file allocation, not just its large matrices.\n## What failed: water-filling\nWe also tried to derive an allocation ourselves instead of copying one. Water-filling is the textbook answer from rate-distortion theory: measure how much error each tensor suffers at each bit rate, then hand out bits where they cut the most error, until every tensor gains the same from one more bit. We used a per-tensor error measure from our encoder.\nWe tested it where tests are cheap, on Qwen3.5-0.8B, at about 35 minutes of GPU time in all: \\*\\*\\*\\*\\*\\*\\*\\*\n|Qwen3.5-0.8B plan|Perplexity|vs DASH-Q plan|\n|DASH-Q role and depth plan|23.72|reference|\n|Water-filling, variant 1|26.72|+0.120 nats/token|\n|Water-filling, variant 2|25.71|+0.081 nats/token|\nWikiText-2, lower is better. The last column is the paired per-window loss difference; positive means worse than the DASH-Q plan.\nBoth variants lost clearly, so we stopped and logged the result. We do not know exactly why. One plausible reason is that the error of a tensor measured on its own is a poor guide to what the whole model loses when that tensor gets fewer bits. Either way, the DASH-Q plan won, and that is the one we shipped.\n## The honest comparison\nHere are the five Qwen3.8-27B files we measured on the same text, the same 20 windows and the same laptop. Lower is better. \\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\n|2-bit file|Size|PPL|Against ours (v2)|\n|DASH-Q IQ2\\_XS|8.55 GB|6.54|Better than ours on 20/20 windows|\n|Pingala-8 v2 (ours)|8.31 GB|6.89||\n|unsloth UD-IQ2\\_S|8.37 GB|7.34|Ours lower on average; not significant (9/20)|\n|Pingala-8 v1 (ours)|8.31 GB|7.34|v2 better on 20/20|\n|llama.cpp IQ2\\_XXS, same imatrix|8.43 GB|7.88|Ours lower|\nWikiText-2 test, 4,096-token windows, the first 20 windows for every file. Every window is in the eval dataset and ranked on the 2-bit GGUF leaderboard.\nDASH-Q is better. Its lead over us is 0.052 nats per token, with a 95% interval of plus or minus 0.012, and it holds on every window. That is about 5% in perplexity, for 0.24 GB more file.\nThe unsloth comparison is the opposite case. Our average is lower, 6.89 against 7.34, but we are better on only 9 of 20 windows, and the paired interval (-0.064 plus or minus 0.075) includes zero. We do not count that as a win. Our benchmarking article explains the paired test and why a lower average is not enough.\nWe did not compare speed with the rival files. On our GPU their IQ1\\_S, IQ2\\_S and IQ3\\_S tensors had to run on the CPU (the NaN page explains why), so a speed number from our machine would be unfair to them. Both rival files use standard llama.cpp types and load in stock llama.cpp; ours does not.\nSo when is ours the right file? When you run our runtime on an NVIDIA card and want the smallest of the files that fit, and one measured fully on the GPU. If quality comes first, or you want stock llama.cpp, Ollama or LM Studio, take DASH-Q.\n## How to run it\nBuild llama.cpp at commit `7ac59a6` with the Pingala-8 CUDA patch and the Qwen3.5 loader change, then download the 9 parts and pass part 1:\n```\ngit clone https://github.com/Genrius-AI/pingala8-llm\ngit clone https://github.com/ggml-org/llama.cpp && cd llama.cpp\ngit checkout 7ac59a6e3ad851cd41af00f678effab0598ba9a8\ngit apply ../pingala8-llm/patches/llama_cuda_vs_7ac59a6.patch\ngit apply ../pingala8-llm/patches/q35_loader_count_delta.patch\ncmake -S . -B build -DGGML_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=120 -DCMAKE_BUILD_TYPE=Release -DLLAMA_OPENSSL=OFF\ncmake --build build -j8 --target llama-cli llama-perplexity llama-bench",
+      "title": "NVIDIA TensorRT dramatically accelerates Stable Diffusion 3.5 on RTX GPUs – DailySynapse",
+      "url": "https://dailysynapse.com/news/nvidia-tensorrt-accelerates-stable-diffusion-35-rtx-gpus",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "excerpt": "This optimization, combined with the power of NVIDIA TensorRT, generates significant performance leaps. TensorRT, NVIDIA’s AI inference platform, has been reengineered for RTX AI PCs and now offers just-in-time, on-device engine building. Alongside reduced VRAM use, quantized Stable Diffusion 3.5 models see performance more than double, with FP8 TensorRT delivering a 2.3x speedup and 40% lower memory use compared to baseline PyTorch implementations in BF16. Medium versions are also optimized, with a 1.7x increase in speed. These advances allow image creation and editing tasks to proceed quickly and in real time, even on RTX GPUs with less VRAM.",
       "signal_score": 12.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -217,7 +165,7 @@
       "title": "Benchmarking Nvidia’s Vera CPU for the data center — standalone Vera tested against Granite Rapids-AP and EPYC Turin | Tom's Hardware",
       "url": "https://www.tomshardware.com/pc-components/cpus/benchmarking-nvidias-vera-cpu-for-the-data-center-standalone-vera-tested-against-granite-rapids-ap-and-epyc-turin",
       "published_at": "2026-10-30T00:00:00.000Z",
-      "excerpt": "Nvidia’s Vera CPU is an important next step in the company’s years-long spearheading of AI infrastructure buildout. It’s arriving just as the shift to agentic AI workflows has created unprecedented demand for data center CPUs, and it’s designed specifically for this moment, at least according to Nvidia’s marketing bullet points. Although the idea that anyone developed a CPU for a shift in demand that arose just six months ago is reaching, as our benchmarks below show, Nvidia’s claims about Vera aren’t full of hot air.\n\nBased on the workloads we have now — there aren’t standardized end-to-end agentic benchmarks focused on the CPU right now — Vera has strong indicators about its usefulness in agentic workflows. It offers chart-topping performance in Python, for instance, which makes up much of the backbone of the AI software ecosystem.\n\nIt also shows commanding memory bandwidth, both at the socket level and system level, with the high-speed C2C interconnect between Vera chips. In contentious agentic environments where agents may be querying large databases, that bandwidth is critical.\n\n...\n\nNvidia’s numbers aren’t dissimilar from our own. In the company’s white paper, it showed Vera ahead of the EPYC 9755 by 3%, and with our tests, Vera is ahead by 1.5%. Keep in mind the considerably higher 512-thread count of the 9755 system here against the 352-thread Vera system. Vera absolutely runs away with performance when breaking down the score per-core.\n\n...\n\nThere isn’t one universal language ... A strong agentic CPU right now is defined in part by strong Python performance, and Vera has exactly that.\n\n...\n\nStarting with a broad overview, you can see the total average test times for PyBench above, with Vera leading the pack. It’s 4% ahead of the EPYC 9755, which itself leads Intel’s Xeons and the larger 9965. Python is largely single-threaded, especially for these basic, built-in functions, so we see the 9755 pair leading the 9965 pair throughout all of our Python benchmarks.",
+      "excerpt": "Vera debuts with strong Python performance and unmatched memory bandwidth.\n\n...\n\nNvidia’s Vera CPU is an important next step in the company’s years-long spearheading of AI infrastructure buildout. It’s arriving just as the shift to agentic AI workflows has created unprecedented demand for data center CPUs, and it’s designed specifically for this moment, at least according to Nvidia’s marketing bullet points. Although the idea that anyone developed a CPU for a shift in demand that arose just six months ago is reaching, as our benchmarks below show, Nvidia’s claims about Vera aren’t full of hot air.\n\nBased on the workloads we have now — there aren’t standardized end-to-end agentic benchmarks focused on the CPU right now — Vera has strong indicators about its usefulness in agentic workflows. It offers chart-topping performance in Python, for instance, which makes up much of the backbone of the AI software ecosystem.\n\nIt also shows commanding memory bandwidth, both at the socket level and system level, with the high-speed C2C interconnect between Vera chips. In contentious agentic environments where agents may be querying large databases, that bandwidth is critical.\n\n...\n\nSo far, the primary benchmark we’ve had for Vera is SPEC CPU 2026 intrate, so we ran the full SPEC CPU 2026 suite to check Nvidia’s performance claims, as well as look at floating point performance. For anyone who hasn’t read SPEC CPU benchmarks before, there are a few disclaimers before heading into the results.\n\n...\n\nNvidia’s numbers aren’t dissimilar from our own. In the company’s white paper, it showed Vera ahead of the EPYC 9755 by 3%, and with our tests, Vera is ahead by 1.5%. Keep in mind the considerably higher 512-thread count of the 9755 system here against the 352-thread Vera system. Vera absolutely runs away with performance when breaking down the score per-core.\n\n...\n\nIf there’s any direct benchmark for agentic AI right now, it’s Python performance. There isn’t one universal language for AI agents, but Python (and, to a lesser extent, TypeScript) make up the foundational agentic frameworks like LangGraph, CrewAI, and AutoGen. A strong agentic CPU right now is defined in part by strong Python performance, and Vera has exactly that.\n\n...\n\nStarting with a broad overview, you can see the total average test times for PyBench above, with Vera leading the pack. It’s 4% ahead of the EPYC 9755, which itself leads Intel’s Xeons and the larger 9965. Python is largely single-threaded, especially for these basic, built-in functions, so we see the 9755 pair leading the 9965 pair throughout all of our Python benchmarks.",
       "signal_score": 11.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -238,12 +186,12 @@
       }
     },
     {
-      "id": "cd23769ab47c",
+      "id": "e1498cf5b668",
       "source": "exa_news",
-      "title": "HPCwire - Since 1987 – Covering the Fastest Computers in the World and the People Who Run Them",
-      "url": "https://www.hpcwire.com/off-the-wire/rival-io-launches-graphx-running-deepseek-v4-flash-on-just-8-nvidia-l4-gpus",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "excerpt": "Oct. 29, 2026 — Rival.io today launched GraphX, its proprietary kernel-optimization and silicon-placement technology, and announced the deployment of DeepSeek V4 Flash on just eight NVIDIA L4 GPUs. The achievement demonstrates GraphX’s ability to run a massive open-weight model on hardware considered incapable of supporting it, challenging assumptions about the infrastructure and cost required for private AI.\n\n...\n\nGraphX optimizes how models are placed across GPUs and how they use memory and computing power. This enables enterprises to meet workload requirements with fewer or less expensive GPUs and get more capacity from hardware they already own or can readily access. Depending on the model and workload, GraphX can reduce open-weight model hosting costs by up to 95% compared with equivalent deployments managed internally or hosted by hyperscale cloud providers.\n\nThe eight L4 configuration combined 192 GB of GPU memory and supported the model’s context window and associated KV cache, a capability that previously required specialized, expensive hardware setups.",
+      "title": "How we fit a 27B model on a 12 GB laptop GPU - DEV Community",
+      "url": "https://dev.to/genrius_ai/how-we-fit-a-27b-model-on-a-12-gb-laptop-gpu-14eo",
+      "published_at": "2026-11-01T08:25:14.000Z",
+      "excerpt": "How we fit a 27B model on a 12 GB laptop GPU - DEV Community\nPosted on Nov 1 • Originally published at genrius-ai.github.io\n# How we fit a 27B model on a 12 GB laptop GPU\n## In short\n* Qwen3.8-27B goes from 53.8 GB of 16-bit weights to an 8.31 GB Pingala-8 file, 84.5% smaller (6.5x). It runs with every layer on one 12 GB RTX 5070 Ti Laptop GPU at 37.7 tokens/s (llama-bench, batch 1).\n* Version 2 moves bits between tensor roles and layer depths, following the allocation in DASH-Q's published files. WikiText-2 perplexity fell from 7.34 to 6.89 at the same size, better on 20 of 20 test windows.\n* DASH-Q IQ2\\_XS (8.55 GB) is still better than ours: 6.54, ahead on 20 of 20 windows. Against unsloth UD-IQ2\\_S (8.37 GB, 7.34) our lower average is not a significant win.\n* The file needs our patched llama.cpp runtime on an NVIDIA GPU. Stock llama.cpp, Ollama and LM Studio cannot load it.\n## The problem: 53.8 GB of weights, 12 GB of memory\nQwen3.8-27B is a 27-billion-parameter model. Its text weights, stored the way the Qwen team ships them at 16 bits each, come to 53.8 GB. That count leaves out the vision tower and the multi-token-prediction block, which we do not ship either.\nA model runs at full speed only when its weights sit in GPU memory, next to the cache that holds the conversation. A laptop GPU with 12 GB cannot hold 53.8 GB. Even at 4 bits per weight, the weights alone would be about 13.5 GB (a quarter of 53.8), more than the whole card before any cache. The usual answer is to leave some layers in system RAM, which slows generation to the speed of that slower memory.\nWe wanted the whole model on the GPU. That means about 2 bits per weight.\n## What 2-bit means\nA weight is one number in one of the model's matrices. At 16 bits it takes 2 bytes. At 2 bits it takes a quarter of a byte, so on its own it could take only 4 different values. No useful format stores weights that crudely. 2-bit formats code small groups of weights together, keep a scale for each block of weights, and store a few sensitive tensors with more bits. The \"2-bit\" label describes the bulk of the file, not every byte of it.\nFor our file the arithmetic is simple: 8.31 GB for 53.8 GB of 16-bit weights is 6.5x smaller, or about 2.5 bits per weight averaged over the whole file. The extra half bit pays for the scales, the token embedding and output head, and the tensors that get more than 2 bits.\nFewer bits means rounding error, and the error adds up across 27 billion weights. We measure what that costs with WikiText-2 perplexity, a standard score for how well a model predicts real text; lower is better. Our article on 8 models explains the score in plain words.\nPingala-8 codes each row of weights in groups of 4 with an 8-state trellis code, after a random Hadamard rotation and LDLQ rounding. These ideas come from QuIP, QuIP# and QTIP; the trellis-coded quantization guide explains them. This article is about something else: how many bits each tensor gets.\n## The 8.31 GB file\nThe release is 8,314,241,600 bytes in 9 parts on Hugging Face. On our one test machine, an RTX 5070 Ti Laptop GPU with 12 GB under WSL2, it loads with every layer on the GPU (`-ngl 99`) and leaves room for a 4,096-token context. The 12 GB guide and the VRAM requirements page show the memory arithmetic for longer contexts and other cards. We have not run this file on any other GPU.\n## The real-speed demo \n Real run, real speed. Text and timing captured from the run; terminal view re-rendered. Chat speed in this run: 31.63 tokens/s (runtime eval, 124 tokens, thinking off); the 37.7 tokens/s above is llama-bench tg64. Watch the 1080p MP4.\nThe clip replays one chat run on that laptop: every token appears when it was captured, nothing is sped up, and only the terminal view is redrawn. It shows two speeds on purpose. 37.7 tokens/s is the llama-bench generation test. 31.63 tokens/s is the runtime's own count for this chat answer. They are different measurements, we have not yet looked into the gap, and we report both.\n## What we changed in version 2: bits by role and depth\nA transformer is a stack of layers, and each layer holds several kinds of matrix: the attention projections (`attn\\_qkv` builds the queries, keys and values), the feed-forward matrices (`ffn\\_up`, `ffn\\_gate`, `ffn\\_down`), and in Qwen3.8's linear-attention layers an output projection called `ssm\\_out`. We call the kind of matrix its role, and its position in the stack its depth. A 2-bit file does not have to give every tensor the same number of bits. The question is where the extra bits do the most good.\nVersion 1 copied the layout llama.cpp uses for its IQ2\\_XXS type. That layout spent 4.5 bits per weight on `attn\\_qkv`, and the rest of the budget had to come from somewhere else.\nDASH-Q, a set of 2-bit GGUF files published by jkim96, splits the budget differently. We read the type of every tensor out of their Qwen3.8-27B file and built the same plan for ours: a bit budget for each role in each band of layers, from early to late. Same total bytes, different placement; the change was the allocation, not the coding method.\nThe result, on the same 20 WikiText-2 windows:\n* Version 1: perplexity 7.34.\n* Version 2: perplexity 6.89, lower on all 20 windows, at the same 8.31 GB.\nThe allocation idea is DASH-Q's, not ours. What we added is the evidence that the same plan helps a different coder.\n### The smaller model taught us the rest\nWe then tried to copy the 27B plan onto Qwen3.5-2B. It did not help: perplexity 15.80 against 15.62 for version 1, better on only 22 of 70 windows. The 27B plan spent too much on the late feed-forward layers (4.1 bits per weight) and starved `ssm\\_out` (2.6) for a model of this size. A plan learned on one model is not a plan for every model.\nThe second gap was the embedding. In the 2B, the token embedding and the output head are the same matrix. DASH-Q stores it at Q4\\_K, 286 MB. We stored it at Q5\\_K, 350 MB. At equal file size, that left DASH-Q 489 MB for the other matrices against our 429 MB, 14% more.\nSo the third try moved the embedding to Q4\\_K, which freed 61.6 MB, and used DASH-Q's own 2B plan for the rest. That file scored 14.06 at 778,189,408 bytes, slightly smaller than version 1 and better on 70 of 70 windows, a 10.0% drop in perplexity. It is now version 2 of our Qwen3.5-2B. The lesson we wrote down: the embedding and output head are part of the byte budget, so copy the leading file's whole-file allocation, not just its large matrices.\n## What failed: water-filling\nWe also tried to derive an allocation ourselves instead of copying one. Water-filling is the textbook answer from rate-distortion theory: measure how much error each tensor suffers at each bit rate, then hand out bits where they cut the most error, until every tensor gains the same from one more bit. We used a per-tensor error measure from our encoder.\nWe tested it where tests are cheap, on Qwen3.5-0.8B, at about 35 minutes of GPU time in all: \\*\\*\\*\\*\\*\\*\\*\\*\n|Qwen3.5-0.8B plan|Perplexity|vs DASH-Q plan|\n|DASH-Q role and depth plan|23.72|reference|\n|Water-filling, variant 1|26.72|+0.120 nats/token|\n|Water-filling, variant 2|25.71|+0.081 nats/token|\nWikiText-2, lower is better. The last column is the paired per-window loss difference; positive means worse than the DASH-Q plan.\nBoth variants lost clearly, so we stopped and logged the result. We do not know exactly why. One plausible reason is that the error of a tensor measured on its own is a poor guide to what the whole model loses when that tensor gets fewer bits. Either way, the DASH-Q plan won, and that is the one we shipped.\n## The honest comparison\nHere are the five Qwen3.8-27B files we measured on the same text, the same 20 windows and the same laptop. Lower is better. \\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\n|2-bit file|Size|PPL|Against ours (v2)|\n|DASH-Q IQ2\\_XS|8.55 GB|6.54|Better than ours on 20/20 windows|\n|Pingala-8 v2 (ours)|8.31 GB|6.89||\n|unsloth UD-IQ2\\_S|8.37 GB|7.34|Ours lower on average; not significant (9/20)|\n|Pingala-8 v1 (ours)|8.31 GB|7.34|v2 better on 20/20|\n|llama.cpp IQ2\\_XXS, same imatrix|8.43 GB|7.88|Ours lower|\nWikiText-2 test, 4,096-token windows, the first 20 windows for every file. Every window is in the eval dataset and ranked on the 2-bit GGUF leaderboard.\nDASH-Q is better. Its lead over us is 0.052 nats per token, with a 95% interval of plus or minus 0.012, and it holds on every window. That is about 5% in perplexity, for 0.24 GB more file.\nThe unsloth comparison is the opposite case. Our average is lower, 6.89 against 7.34, but we are better on only 9 of 20 windows, and the paired interval (-0.064 plus or minus 0.075) includes zero. We do not count that as a win. Our benchmarking article explains the paired test and why a lower average is not enough.\nWe did not compare speed with the rival files. On our GPU their IQ1\\_S, IQ2\\_S and IQ3\\_S tensors had to run on the CPU (the NaN page explains why), so a speed number from our machine would be unfair to them. Both rival files use standard llama.cpp types and load in stock llama.cpp; ours does not.\nSo when is ours the right file? When you run our runtime on an NVIDIA card and want the smallest of the files that fit, and one measured fully on the GPU. If quality comes first, or you want stock llama.cpp, Ollama or LM Studio, take DASH-Q.\n## How to run it\nBuild llama.cpp at commit `7ac59a6` with the Pingala-8 CUDA patch and the Qwen3.5 loader change, then download the 9 parts and pass part 1:\n```\ngit clone https://github.com/Genrius-AI/pingala8-llm\ngit clone https://github.com/ggml-org/llama.cpp && cd llama.cpp\ngit checkout 7ac59a6e3ad851cd41af00f678effab0598ba9a8\ngit apply ../pingala8-llm/patches/llama_cuda_vs_7ac59a6.patch\ngit apply ../pingala8-llm/patches/q35_loader_count_delta.patch\ncmake -S . -B build -DGGML_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=120 -DCMAKE_BUILD_TYPE=Release -DLLAMA_OPENSSL=OFF\ncmake --build build -j8 --target llama-cli llama-perplexity llama-bench",
       "signal_score": 11.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -251,12 +199,12 @@
       }
     },
     {
-      "id": "e6cd835cd7d0",
+      "id": "21bcd34cf554",
       "source": "exa_news",
-      "title": "Day 0 support for Mistral Large 4 on vLLM | vLLM Blog",
-      "url": "https://vllm.ai/blog/2026-10-29-mistral-large-4",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "excerpt": "# Day 0 support for Mistral Large 4 on vLLM\n\nOctober 29, 2026 27 min read\n\nTable of Contents\n\nWe're excited to announce day-0 support for Mistral Large 4 in vLLM. Mistral Large 4 is Mistral's new frontier mixture-of-experts native multimodal model. It combines a DeepSeek-style sparse attention stack (MLA plus a DSA top-k indexer) with several new architecture features: cross-layer KV sharing, NoPE layers, SSMax and LeRoPE. It ships with a built-in DSpark speculative decoding drafter and a Pixtral vision encoder.\n\nSupporting it took more than a model file. ML4 runs on vLLM's model runner V2 (MRV2) with breakable CUDA graphs. Its building blocks live in a new `vllm/models/mistral/` package, and the work produced generic improvements to decode context parallelism (DCP), prefill context parallelism (PCP), DSpark, NIXL-based disaggregated serving and HiSparse host-memory KV offload.\n\n## Highlights\n\n- Architecture: 72-layer MoE with 128 routed experts (top-4) plus 1 shared expert and a hidden size of 6144. Attention is MLA (KV LoRA rank 512, RoPE dim 64) with a DSA sparse indexer that selects the top 2048 keys per query. 1 trillion parameters in total, 49 billion active per token (52 billion including embeddings and output layers).\n- Checkpoints: FP8 (block-scaled weights) and NVFP4 (NVFP4 experts, FP8 attention/shared experts). Both use an FP8 latent KV cache (`fp8_ds_mla`) by default.\n- Multimodal: a Pixtral vision encoder for image inputs, including multiple images per prompt.\n- Speculative decoding: a built-in DSpark drafter (3 sliding-window MLA layers, depth 3) accepts ~2.9 tokens per step and gives about 2x output throughput on TP8.\n- Long context: DCP gives ~7.9x more KV capacity on TP8. PCP+DCP prefill cuts time to first token (TTFT) by up to 1.6x. DSpark works under both.\n- Disaggregated serving: NIXL prefill/decode (P/D) disaggregation with DP/EP, TP and PCP×DCP prefill nodes, with DSpark on both sides.\n- HiSparse: host-memory sparse KV offload, now with support for cross-layer KV sharing.\n- AMD: day-0 on AMD Instinct MI350 Series GPUs with ROCm, including DSpark, image inputs and expert parallelism with MXFP4 experts.\n\n...\n\nNVFP4 does not trade quality for speed. On multimodal, long-context, agentic coding, business automation and cyber evals it stays within 2.1 points of FP8 on every task, and the mean difference is −0.3 points. Token consumption is matched too: mean completion tokens stay within about 4% of FP8. It is also faster and lighter: at TP8, NVFP4 decodes 1.08–1.19x faster per token than FP8 without spec decoding (1.18–1.22x with DSpark) and holds ~1.5x the KV cache.",
+      "title": "AMD MI355X Up to 46% Cheaper Than GB200 NVL72 on Kimi K3 2.8T | AI Weekly",
+      "url": "https://aiweekly.co/alerts/amd-mi355x-up-to-46-cheaper-than-gb200-nvl72-on-kimi-k3-28t",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "excerpt": "## TL;DR\n\n- SemiAnalysis puts MI355X at $0.05 per million tokens on Kimi K3 2.8T at 71 tok/s/user against GB200 NVL72's $0.07, a 35% gap.\n- At 118 tok/s/user the AMD part lands at $0.14 versus $0.16 on GB200 NVL72, a 20% advantage; at 165 tok/s/user the gap widens to 46%.\n- Chip pricing in the model: GB200 NVL72 at $1.86 per chip per hour and MI355X at $1.50, from SemiAnalysis's July 2026 pricing surveys and AI Cloud TCO model.\n\nAt the highest interactivity level in SemiAnalysis's InferenceX head-to-head on Kimi K3 2.8T, AMD's MI355X lands at $0.15 per million tokens against $0.22 on Nvidia's GB200 NVL72. The page calls the AMD part \"46% cheaper,\" per the InferenceX comparison.\n\nThe gap narrows at other operating points. At 71 tok/s/user, the page reports \"MI355X edges GB200 NVL72\" with the AMD part at $0.05 per million tokens against $0.07, \"a 35% cost-per-token gap.\" At 118 tok/s/user, MI355X comes in at $0.14 against $0.16 on GB200 NVL72, a 20% advantage.\n\nThe input column: GB200 NVL72 at $1.86 per chip per hour, MI355X at $1.50, both quoted as \"owning hyperscaler\" rates from SemiAnalysis's July 2026 pricing surveys and AI Cloud TCO model. The benchmark holds precision at FP4 and context at 8K in, 1K out.\n\nConcurrency is where the trade-off shows. At the loosest setting, 71 tok/s/user, GB200 NVL72 is listed as serving around 38 users against MI355X's 44. Pushed to 165 tok/s/user the Nvidia part lands near 8 users and the AMD part near 4, so MI355X's per-token win at peak interactivity rides on roughly half the users per chip.",
       "signal_score": 10.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -264,12 +212,12 @@
       }
     },
     {
-      "id": "63b5f1c8d2be",
+      "id": "75ad2f18cd4b",
       "source": "exa_news",
-      "title": "kanana-2 embedding: Kakao Open-Sources 3B and 1.3B",
-      "url": "https://memcool.app/blog/kanana-2-embedding",
-      "published_at": "2026-10-30T00:00:00.000Z",
-      "excerpt": "The kanana-2 embedding release gives developers two open Kakao models, 3B and 1.3B, tuned for Korean retrieval with Matryoshka vector sizes.\n\n...\n\ntl;dr\n\n- Two sizes: about 3B parameters and about 1.3B parameters, both under the Kanana Open License, which allows commercial use under its terms.\n- Matryoshka support: vectors can be cut to 1024, 512, 256, or 128 dimensions to save storage and speed up search.\n- Kakao compared them with llama-nemotron-embed-1b-v2 and Qwen3-Embedding-4B.\n\n...\n\nThe kanana-2 embedding release is Kakao's bet that personal AI agents need better memory search before they need bigger brains. On October 29, the Korean tech giant open-sourced two text embedding models on Hugging Face: kanana-2-3b-embedding and kanana-2-1.3b-embedding. Kakao says they beat similar-sized open models on Korean retrieval, match them on English, and run more efficiently than Qwen3-Embedding.\n\n...\n\nKakao announced the release in a press note dated October 29, framing embeddings as a building block for personalized AI agents. An embedding model turns text into numbers that capture meaning, so a system can find related information even when the user does not remember the exact words.\n\nKakao's example is relatable: you ask an assistant for \"that quiet restaurant we talked about,\" and it finds the right past note because the meaning matches, not the name. That is the retrieval half of retrieval-augmented generation, or RAG, and it decides whether an agent's answer is grounded in the right context.\n\n...\n\nBoth use Matryoshka representation learning. In practice that lets developers shrink vectors after the fact and trade a bit of accuracy for lower storage and faster search. The card's example code shows a 4,096-token max length setting and support for sentence-transformers, transformers, and vLLM.\n\n...\n\nIf you build search, RAG, or agent memory for Korean users, this is worth a test. Pull the 1.3B model first if latency or cost matters, then compare against the 3B on your own data. Try truncated dimensions like 256 to see how much accuracy you lose for the storage you save.\n\nRead the Kanana Open License before shipping. Commercial use is allowed under its conditions, but check them against your product and region.\n\nIf you mostly work in English, treat Kakao's \"similar English performance\" as a claim to verify, not a reason to switch. Run your own eval set before replacing a production embedding model.",
+      "title": "Introducing AgentEnv: An Open-Source Framework for Building RL Environments | Scale Labs",
+      "url": "https://labs.scale.com/blog/introducing-agentenv",
+      "published_at": "2026-10-31T00:00:00.000Z",
+      "excerpt": "10/5/2026\n\n# Introducing AgentEnv: An Open-Source Framework for Building RL Environments\n\nBy Edgar Arakelyan, Tejas Polakam, Yzabelle Go\n\nAn agent is only as good as the world it operates in, and building worlds that are realistic, accurate, and scalable all at once is the hard part of scaling RL. Every RL environment Scale builds runs on AgentEnv. Today we're open-sourcing it.\n\n...\n\nBuilding blocks: What an Environment is made of. An Environment is built from versioned composable blocks: Environments like Slack or Gmail, an Artifact of data that populates them, and Rules (the clock, triggers, and roles) that govern how it behaves.\n\nInteroperability: What an Environment works with. An Environment doesn't assume anything about who or what runs it. Any agent can connect to it, any sandbox can host it, and your cloud can run it, all through open protocols instead of custom glue.\n\n...\n\nAgent Agnostic. An Environment's card tells an agent which tools it serves and how to reach them, over MCP, REST or a generated CLI. An agent's Agent Card, from the open A2A protocol, does the same in the other direction.\n\nPair any Environment Card with any Agent Card and the agent can start work, with no custom wiring. The same Task runs unchanged and consistent on Claude Code, OpenAI's agents, or any of your own custom agents.\n\n...\n\nA Task is constructed as a DAG of AgentEnv steps. Each step represents a primitive action on an Agent, the Environment and more, like setting up the world, loading data, setting the clock, bringing in an agent, handing it the work, collecting what it made, grading the result with a rubric or a strict check.\n\n...\n\n### What comes out of the box\n\nAgentEnv ships 48 built-in step types, covering everything from deploying an Environment to setting its Rules of the World to grading trajectories. Most RL Tasks can be built from these alone, with no new code. For the rest, you can add your own steps as plugins.",
       "signal_score": 10.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -277,12 +225,12 @@
       }
     },
     {
-      "id": "cd3468986b60",
+      "id": "6fe14258f1f2",
       "source": "exa_news",
-      "title": "Amazon SageMaker AI inference now supports GPU partitioning for real-time endpoints - AWS",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-gpu-partitioning",
-      "published_at": "2026-10-30T00:00:00.000Z",
-      "excerpt": "Amazon SageMaker AI inference now supports GPU partitioning, enabling you to run several models on a single GPU instead of dedicating a whole accelerator to each one. Using NVIDIA Multi-Instance GPU (MIG) technology, SageMaker AI divides a GPU into as many as seven isolated partitions, each with its own memory and compute. Customers serving small and mid-size models, such as fine-tuned variants, embedding models, rerankers, and classifiers, previously had to give every model an entire accelerator, so an instance hosted no more models than it had GPUs and paid for GPU capacity those models could never use.\n\nWith GPU partitioning, you choose how to divide the GPUs behind your endpoint and place each model on a partition sized to fit it. Several models then share one accelerator with hardware-enforced isolation, so a busy model cannot take memory or throughput from the models beside it. Right-sizing an accelerator to a workload also opens up newer instance generations that would otherwise be more capacity than a single model needs. You configure GPU partitioning when you create an endpoint that hosts inference components, and you continue to invoke each model by name, so your application code doesn't change.\n\n...\n\nTo learn more, visit the Amazon SageMaker AI deployment page and see the Amazon",
+      "title": "Jittor team completes efficient adaptation of DeepSeek models on Huawei Ascend — AICHINA.news | AI China News",
+      "url": "https://aichina.news/news/jittor-team-completes-efficient-adaptation-of-deepseek-models-on-65jr4n",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "excerpt": ", memory usage is significantly reduced, providing an effective solution for large-model deployment in resource-constrained environments and successfully achieving deployment of the DeepSeek\n...\ninference speed, with performance increases of",
       "signal_score": 10.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -295,7 +243,7 @@
       "title": "OpenAI launches GPT-6.1 Terra, a faster, cheaper medium-sized model",
       "url": "https://featureddaily.com/news/openai-launches-gpt-6-1-terra-a-faster-cheaper-medium-sized-model",
       "published_at": "2026-11-01T00:00:00.000Z",
-      "excerpt": "The answer\n\nOpenAI released GPT-6.1 Terra, a medium-sized model it says is faster and cheaper.\n\nTL;DR · the 20-second read\n\n- Available now in ChatGPT Work, Codex and the API\n- Pricing is $1 per million input tokens, $5 per million output\n- OpenAI still recommends Sol or Astra for the most complex coding\n\nWhat happened: OpenAI released GPT-6.1 Terra, upgrading its medium-sized model from GPT-5.6. Terra had been left out when GPT-6 Sol and Luna launched the previous month, 9to5Mac reported.\n\nThe numbers: API pricing is $1 per million input tokens and $5 per million output. OpenAI says the price is 50% lower than GPT-5.6 Terra and GPT-6.1 Sol, according to BleepingComputer. 9to5Mac reports the 50% cut against GPT-5.6 Terra only. OpenAI also says Terra completes tasks more than 3 times as quickly as GPT-6 Astra and GPT-6.1 Sol, and performs on par with Astra at one-tenth its price per token.\n\n...\n\nThe context: On Agents' Last Exam, Terra scored 15 percentage points higher than GPT-5.6 Terra at medium reasoning effort, at about one-third the cost. On Terminal-Bench 4.0 it scored 50.3% at maximum reasoning effort, against 21.5% for GPT-5.6 Terra. On OpenAI's internal benchmark of error-inducing prompts, the error rate at low reasoning effort fell from 53.6% with GPT-5.6 Terra to 16.7%.\n\nThe catch: OpenAI still recommends GPT-6.1 Sol or GPT-6 Astra for the most complex coding tasks. The error-rate figures come from OpenAI's internal benchmark, not an independent test. Artificial Analysis separately reported a large drop in hallucination rate on its own benchmark.\n\nWho's affected: Developers can call the model as gpt-6.1-terra in the API. It is also available now in ChatGPT Work and Codex.",
+      "excerpt": "The upgrade is available now in ChatGPT Work, Codex and the API, with OpenAI citing a 50% price cut.\n\n...\n\n1 November 2026 · 05:30 GMT 2 min read Checked 1 Nov\n\nThe answer\n\nOpenAI released GPT-6.1 Terra, a medium-sized model it says is faster and cheaper.\n\nTL;DR · the 20-second read\n\n- Available now in ChatGPT Work, Codex and the API\n- Pricing is $1 per million input tokens, $5 per million output\n- OpenAI still recommends Sol or Astra for the most complex coding\n\nWhat happened: OpenAI released GPT-6.1 Terra, upgrading its medium-sized model from GPT-5.6. Terra had been left out when GPT-6 Sol and Luna launched the previous month, 9to5Mac reported.\n\nThe numbers: API pricing is $1 per million input tokens and $5 per million output. OpenAI says the price is 50% lower than GPT-5.6 Terra and GPT-6.1 Sol, according to BleepingComputer. 9to5Mac reports the 50% cut against GPT-5.6 Terra only. OpenAI also says Terra completes tasks more than 3 times as quickly as GPT-6 Astra and GPT-6.1 Sol, and performs on par with Astra at one-tenth its price per token.\n\n...\n\nThe context: On Agents' Last Exam, Terra scored 15 percentage points higher than GPT-5.6 Terra at medium reasoning effort, at about one-third the cost. On Terminal-Bench 4.0 it scored 50.3% at maximum reasoning effort, against 21.5% for GPT-5.6 Terra. On OpenAI's internal benchmark of error-inducing prompts, the error rate at low reasoning effort fell from 53.6% with GPT-5.6 Terra to 16.7%.\n\nThe catch: OpenAI still recommends GPT-6.1 Sol or GPT-6 Astra for the most complex coding tasks. The error-rate figures come from OpenAI's internal benchmark, not an independent test. Artificial Analysis separately reported a large drop in hallucination rate on its own benchmark.\n\nWho's affected: Developers can call the model as gpt-6.1-terra in the API. It is also available now in ChatGPT Work and Codex.",
       "signal_score": 9.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -316,12 +264,12 @@
       }
     },
     {
-      "id": "854ec9859143",
+      "id": "a9084cd8f080",
       "source": "exa_news",
-      "title": "Google announces Gemini 4 Carbon frontier model | SiliconReport",
-      "url": "https://www.siliconreport.com/google-announces-gemini-4-carbon-frontier-model",
-      "published_at": "2026-10-30T00:00:00.000Z",
-      "excerpt": "Google has announced Gemini 4 Carbon, describing it as its strongest artificial intelligence model to date with advanced cybersecurity and long-horizon capabilities. The announcement arrives two weeks after Google rolled out Gemini 4 Argon, continuing a rapid cadence of frontier model iterations while keeping general public availability on hold.\n\nDeepMind is implementing a staged deployment for the model, entering the U.S. government's voluntary pre-release model testing program while restricting initial access. Starting this week, Google is making Carbon available to a subset of cybersecurity defenders, with plans to phase access to additional trusted partners through its Fairwind Program before expanding to developers, businesses, and consumers.\n\nWhen general commercial availability arrives, Google stated that Gemini 4 Carbon will launch at the same introductory pricing as Argon. The company set rates at $2 per million input tokens and $10 per million output tokens, alongside a 95% discount for cached input tokens.\n\n...\n\nOn composite benchmarks, Gemini 4 Carbon ranked first on version 5.0 of the Artificial Analysis Intelligence Index with an overall score of 59 among models with published results. The index weights performance across knowledge work, coding, scientific reasoning, and general knowledge benchmarks.\n\nGoogle highlighted specialized evaluations focused on the software security lifecycle, noting that tests were run without guardrails to evaluate raw model capability. On SEC-bench Pro, an evaluation assessing autonomous detection of real-world flaws, Carbon reached an 88.2% success rate.\n\nOn the ExploitGym exploitation benchmark, which measures whether an agent can validate flaws by checking exploitability, the model scored 54.8%. On Collinear's CWE-bench for automated vulnerability remediation, Carbon recorded a 71.0% score for producing functional code fixes.\n\nBeyond vulnerability benchmarks, Google reported that Carbon improved by 89 Elo points on the WebDev Arena leaderboard, rising to fourth place with a score of 1768 for full-stack web development artifacts.",
+      "title": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
+      "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity",
+      "published_at": "2026-10-29T00:00:00.000Z",
+      "excerpt": "French AI company Mistral has released the weights for its trillion-parameter open source AI model Mistral Large 4 (ML4), allowing businesses and governments to download and deploy the system themselves. Nicknamed “Le Chonk,” the model was first introduced earlier this month.\n\n...\n\nThe release of the model’s weights — the numerical training that animates the system — ensures that other companies and government agencies will now be able to deploy ML4 for their own purposes.\n\nMistral says that its model is comparable in terms of performance with a Chinese open-weight competitor, GLM-5.3, which was previously considered one of the best open-weight models in the world — particularly when it comes to cyber work. However, Mistral’s model uses 47 percent fewer tokens per task, making it significantly more economical than GLM-5.3.\n\nThe company also claims that the model outranks all other open models when it comes to agentic coding tasks on Artificial Analysis’ Coding Agent Index, an AI benchmarking site. \n\n“Amid growing cyber threats, ML4 brings state-of-the-art sovereign cyber defense capabilities to enterprises and governments globally,” the company said Thursday. “Enterprise and public sector institutions can now download, deploy, and own frontier AI to detect, analyze, and respond to threats across code and IT infrastructure.”\n\nThe weights for ML4 are being made available on Hugging Face and via its API.",
       "signal_score": 8.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -329,12 +277,12 @@
       }
     },
     {
-      "id": "6815ed7a7ee8",
+      "id": "1eac99c57f86",
       "source": "exa_news",
-      "title": "Couchbase Converges The Agent Data Stack - Ceevia –",
-      "url": "https://ceevia.com/couchbase-converges-the-agent-data-stack",
-      "published_at": "2026-10-30T00:00:00.000Z",
-      "excerpt": "Couchbase is making Agent Memory available as a fully managed service starting with AWS, in addition to its existing self-managed deployment. Through one API, developers can now manage conversation history, user profiles, and semantically searchable facts, including context limited to the current session and information retained across sessions. ... As agents retain memory across\n\n...\n\nCouchbase’s managed MCP server on AWS gives compatible agents and applications a standard way to reach live operational data and Couchbase tools. The tools cover data work, such as schema discovery, document operations, and SQL queries, along with cluster administration, including index management, cluster health, and query-performance analysis. All tools run read-only by default. Administrators can disable individual tools or require confirmation before sensitive actions, and the managed service supports role-based API keys and IP allow lists. Teams that connect many agents to one MCP server will need a separate API key for each agent, limited to the tools and data it requires, with read-write access granted only where a task demands it.",
+      "title": "Factory releases Droid 1.0 coding agent harness with programmatic tool calling | Laplace Atlas",
+      "url": "https://www.laplaceatlas.com/stories/factory-releases-droid-1-0-coding-agent-harness-with-programmatic-tool-c-e7734edd",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "excerpt": "By Signal Desk · Factory · 1 November 2026\n\nFactory has released Droid 1.0, the largest update yet to its model-independent coding agent harness. The update enables programmatic tool calling by default, where the model writes a JavaScript program that runs in a sandbox to execute tools, allowing one model request to drive hundreds of tool calls. The base prompt is 13,055 input tokens, down 37% from 20,887, and only 2 tool definitions ship up front, down from 11. Droid 1.0 runs on macOS and Windows desktop apps, a terminal UI, and the Node SDK @factory/droid-sdk, and works with any supported model including user-supplied API keys. Factory reports a best result of 65.2% on Terminal-Bench 4 with Claude Opus 5.5 at $4.73 per passed task, and says Script mode cuts cost by 15% versus direct tool calling on Claude Opus 5.5. Script mode is on by default for 10 models, including GPT-6.1 Sol and Kimi K3.\n\n...\n\nDroid 1.0 reduces token usage and model calls by shifting tool execution into sandboxed programs, lowering the cost of running coding agents while maintaining compatibility with multiple models.",
       "signal_score": 8.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -342,12 +290,12 @@
       }
     },
     {
-      "id": "484d3a60ab5a",
+      "id": "cd3468986b60",
       "source": "exa_news",
-      "title": "Dynamic Beads Introduces Nested Run, a Plug-and-Play Upgrade That Lowers the Cost of Running Large AI Models",
-      "url": "https://www.einpresswire.com/article/953285830/dynamic-beads-introduces-nested-run-a-plug-and-play-upgrade-that-lowers-the-cost-of-running-large-ai-models",
+      "title": "Amazon SageMaker AI inference now supports GPU partitioning for real-time endpoints - AWS",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-gpu-partitioning",
       "published_at": "2026-10-30T00:00:00.000Z",
-      "excerpt": "NEW YORK, NY, UNITED STATES, October 30, 2026 / EINPresswire.com/ -- Dynamic Beads, an emerging artificial intelligence (AI) infrastructure company, today introduced Nested Run, a plug-and-play software upgrade designed to make large language models (LLMs) faster and less expensive to run on the graphics processing units (GPUs) that companies already operate. In tests on the open-weight Qwen3.8-27B model running on NVIDIA H100 and H200 GPUs, comparing the original model with the upgraded model on the same hardware, Dynamic Beads measured the following results: - Long prompts were read up to 1.46 times faster. - Inside vLLM, a widely used open-source serving engine, prompts of 16,000 tokens were ready 1.3 times faster. - Follow-up questions about the same document cost up to 74 percent less when the saved document state is reused. - Prompts of 128,000 tokens fit on a single 80 GB GPU and ran 1.51 times faster. - The model's embedding table, a large block of GPU memory, was 73 percent smaller. An exact mode returns the original model's answers word for word whenever a customer requires it. In a head-to-head test at the same amount of work, giving each word its own depth kept about 10 points more agreement with the original model than cutting every word at the same layer, the approach used by methods such as SwiftKV, including 25 points more on conversational text. The upgrade installs alongside a company's existing model and server software, without retraining the model from scratch. The company says the savings matter most for long inputs such as documents, search results, coding assistants and extended conversations, where reading the prompt makes up a large share of GPU time. Based on its measured results, Dynamic Beads estimates savings of about 10 percent on mixed traffic and about 25 percent on long-document traffic. \"Every company running AI models pays for GPU time on every request, and those bills keep growing,\" said Benny Goldstein, Founder of Dynamic Beads. \"Our goal is simple: the same model, the same answers, and a lower bill. We believe Dynamic Beads can become one of the companies that defines how AI is run efficiently in the years ahead.\" The approach was invented by Eytan Goldstein. It is designed to plug into existing open-weight AI models. The first pack supports Qwen3.8-27B, and packs for additional model families are in development. A patent application covering the method has been filed with the United States Patent and Trademark Office. \"The idea is that not every word in a prompt needs the same amount of work,\" said Eytan Goldstein, Inventor of Nested Run. \"Giving each word the effort it actually needs is what lets the same model run faster without changing what it knows.\" Dynamic Beads also offers Nested Run +, which adds optional tools that speed up the whole request, including answer writing. In company tests these tools made complete requests up to 2.2 times faster, reduced model memory by about 45 percent and cut reasoning length by 18 percent. The company is inviting GPU cloud providers and AI platforms to measure the savings on their own traffic before committing. \"We offer a free first month at no cost,\" said Steve Marks, Chief Partnerships Officer of Dynamic Beads. \"We run the upgrade side by side with a provider's current setup, on its real requests, and hand over a written savings report. The numbers speak for themselves.\" Nested Run and Nested Run + are licensed to the companies that run AI models, either as a license for a provider's fleet or as a share of the measured savings. More information is available at https://dynamicbeads.com. About Dynamic Beads Dynamic Beads builds and licenses plug-and-play upgrades that make AI models faster and less expensive to run on existing GPUs. Its first products, Nested Run and Nested Run +, are designed for GPU cloud providers, AI inference platforms and companies that serve open-weight large language models. The company's method is patent pending. Dynamic Beads was founded by Benny Goldstein, with inventor Eytan Goldstein and Chief Partnerships Officer Steve Marks.",
+      "excerpt": "Amazon SageMaker AI inference now supports GPU partitioning, enabling you to run several models on a single GPU instead of dedicating a whole accelerator to each one. Using NVIDIA Multi-Instance GPU (MIG) technology, SageMaker AI divides a GPU into as many as seven isolated partitions, each with its own memory and compute. Customers serving small and mid-size models, such as fine-tuned variants, embedding models, rerankers, and classifiers, previously had to give every model an entire accelerator, so an instance hosted no more models than it had GPUs and paid for GPU capacity those models could never use.\n\nWith GPU partitioning, you choose how to divide the GPUs behind your endpoint and place each model on a partition sized to fit it. Several models then share one accelerator with hardware-enforced isolation, so a busy model cannot take memory or throughput from the models beside it. Right-sizing an accelerator to a workload also opens up newer instance generations that would otherwise be more capacity than a single model needs. You configure GPU partitioning when you create an endpoint that hosts inference components, and you continue to invoke each model by name, so your application code doesn't change.",
       "signal_score": 8.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -355,12 +303,12 @@
       }
     },
     {
-      "id": "e1bcf9597a4f",
+      "id": "77588c1bf066",
       "source": "exa_news",
-      "title": "Vera Rubin makes MLPerf debut with strong GB300 gains – DailySynapse",
-      "url": "https://dailysynapse.com/news/vera-rubin-makes-mlperf-debut-with-strong-gb300-gains",
-      "published_at": "2026-11-01T00:00:00.000Z",
-      "excerpt": "Nvidia’s Vera Rubin NVL72 made its first public appearance in MLPerf Inference v6.1, published on September 16, 2026, as a preview submission rather than a generally available product. Nvidia said the rack delivered up to 2.5x the DeepSeek-R1 throughput and up to 3.7x the Qwen3-VL throughput of its current GB300 NVL72 system, with the largest gains showing up in latency-sensitive interactive scenarios.\n\nThe results come with caveats. Vera Rubin’s scores were submitted in MLCommons’ preview category, meaning the hardware and software stack are still pre-launch and may change before commercial availability. Nvidia has not disclosed a launch date, pricing, memory capacity, transistor count, or TDP for Vera Rubin NVL72 alongside the benchmark data.\n\nAMD used the same round to emphasize scale and software progress, including a 512-GPU Instinct MI355X cluster submitted by Crusoe and ROCm-driven gains on unchanged MI355X hardware. AMD reported a 28% jump in offline throughput and a 38% jump in server-mode throughput on gpt-oss 120B, plus a 70% gain on a Wan 2.2 video-generation test.\n\nThe broader MLPerf round drew 30 organizations, 120 systems, and 486 individual results, reflecting a shift toward rack-scale AI infrastructure, reasoning workloads, multimodal models, retrieval-augmented generation, and agentic edge tests.",
+      "title": "DeepSeek Unveils Super-Agent Architecture, V4.1-Flash-1017 Open Weights and Search API - DEV Community",
+      "url": "https://dev.to/976905690/deepseek-unveils-super-agent-architecture-v41-flash-1017-open-weights-and-search-api-2poo",
+      "published_at": "2026-11-01T01:42:40.000Z",
+      "excerpt": "DeepSeek's Harness team has published a technical essay outlining a more autonomous \"Super-agent\" system design, while simultaneously shipping the V4.1-Flash-1017 open-weights model and opening its search and fetch capabilities as a paid API.\n\nA new agent architecture In the essay \"Super-agent Design Exploration: Toward More Autonomous Agent Systems,\" the team argues that mainstream agent designs still bottleneck on human attention: the number of tasks a person can supervise caps the system's scale. The proposed architecture breaks this limit with a dual-layer structure, event-driven execution, asynchronous multi-channel interaction, compute-storage separation and an external Watchdog. By taking over session management and context synchronization at the infrastructure layer, the system lets humans move up from execution details to higher-level decision and acceptance.\n\n...\n\nV4.1-Flash-1017 and benchmarks The new V4.1-Flash-1017 model improves across the board versus the prior V4.1 Flash while cutting runtime and output length, reaching a new performance-cost Pareto optimum under several harnesses. On the Artificial Analysis Intelligence Index it scores 45 (up 6 points, tying for second among open-weights models). Terminal-Bench 4.0 rose from 31.2 to 42.3, and DeepSWE reached 77.0, surpassing Opus 5 (74.0) and GPT-5.6 Sol. DeepSeek positioned the release for \"build a complete project from scratch\" tasks such as game development and 3D modeling, demonstrating a Forbidden City 3D model, a web racing game and a Portal 2 recreation in the Godot engine from minimal interaction rounds.\n\nA paid Search and Fetch API Alongside the model, DeepSeek opened its self-developed search engine as an API. Search and Fetch endpoints are priced at 5 yuan per 1,000 calls. Starting 1 November 2026 (Beijing time), server-side tool calls to Search/Fetch triggered inside DeepSeek Harness, Claude Code and Codex begin to be billed, ending the previously free usage for those integrations. The move turns a convenience feature into a metered, revenue-generating service and aligns DeepSeek with the broader trend of agent infrastructure monetization.\n\nKey Facts Architecture: dual-layer, event-driven, async multi-channel, compute-storage separation, external Watchdog. Internal Super-agent auto-reproduces and fixes bugs and reviews code without being pinged. V4.1-Flash-1017: AA Intelligence Index 45 (+6); Terminal-Bench 4.0 42.3 (was 31.2); DeepSWE 77.0. Search/Fetch API at 5 yuan per 1,000 calls; billed from 1 Nov 2026. Demonstrated end-to-end builds: Forbidden City 3D, web racing game, Portal 2 in Godot. Sources: Jiemian News, MBAlib, DeepSeek official; threerouter",
       "signal_score": 7.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -368,12 +316,12 @@
       }
     },
     {
-      "id": "61892748f4c0",
+      "id": "8f2b8572ea1b",
       "source": "exa_news",
-      "title": "DeepSeek Open-Sources dsh-superagent, a Router-Worker Coding Agent - MarkTechPost",
-      "url": "https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent",
-      "published_at": "2026-11-01T00:00:00.000Z",
-      "excerpt": "The DeepSeek Harness team just released dsh-superagent, an MIT-licensed research prototype. DeepSeek dsh-superagent is a proactive coding agent for one GitHub repository. It is packaged as a bundle for DeepSeek Harness. It listens to GitHub and, optionally, Feishu. It turns allowed requests into parallel work items, each in its own agent session. The release shipped alongside a design post, Exploring Super-agent Design: Towards a More Autonomous Agent System.\n\n...\n\n- What is it?: A TypeScript bundle, v0.1.0, released as 1 commit under MIT. It uses whatever model the Harness profile is set to.\n- Runs on: Your own machine, as a dedicated DeepSeek Harness profile. Needs Node.js 22.19+ or 24+, git 2.32+, Python 3.8+, tmux and GitHub CLI 2.48+.\n- Performance: In DeepSeek’s simulation, it finished tasks far faster under a noisy message stream than a single-session agent.\n- Best: p95 task completion of 15.7 minutes vs 29.5 minutes for the single-session baseline (about 1.9x faster).\n- Worst: Tested only on synthetic messages and simulated tools. Real coding quality was not measured.\n\n...\n\nIt is a GitHub agent that waits to be asked. When an allowed person addresses it, it opens a work item, called a Ticket. Each Ticket runs in its own session and directory. Results return to the original conversation, often as a pull request. A local web panel lists only what needs a person.\n\n...\n\nThe research team describes 2 layers.\n\n...\n\nIn the prototype, that flow is concrete, per the domain model:\n\n- Source → Trigger: GitHub or Feishu produces events.\n- Eval: decides whether a batch of Triggers asks for new work.\n- Ticket: a unit of authorized work, with an immutable Mandate stating why it may proceed.\n- Subscription: later comments on a pull request reach the right Worker without a fresh mention.\n\n...\n\n| Feature | DeepSeek dsh-superagent | GitHub Copilot cloud agent | Claude Code Action | OpenAI Codex |\n| --- | --- | --- | --- | --- |\n| Trigger | Mention by allowed person; written rules | Issue assignment, chat, API, Slack and more | `@claude` mention, issue assignment, workflow prompt | `@Codex` in Slack; cloud tasks |\n| Unasked (proactive) work | Yes, rule-gated; `observe` by default | Yes, via automations | Yes, via workflow events | Not disclosed |\n| Parallel isolated sessions | Yes, 1 per Ticket | Not disclosed | Not disclosed | Not disclosed |\n| Where it runs | Your machine (Harness profile) | GitHub, in the background | Your GitHub Actions runner | Codex cloud |\n| Chat source | Feishu (optional) | Slack, Teams | Not disclosed | Slack |\n| License | MIT | Not disclosed | MIT | CLI agent open source |\n| Availability | Research prototype | All paid Copilot plans | Your API key or cloud provider | ChatGPT Plus and above |",
+      "title": "Meet TokenEconomizer: Microsoft’s Plugin That Cuts Coding Agent Costs by Up to 30.9% - MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/10/30/microsoft-tokeneconomizer-coding-agent-cost-control",
+      "published_at": "2026-10-30T00:00:00.000Z",
+      "excerpt": "A team of researchers from Microsoft Research and UC Berkeley have released TokenEconomizer, an open-source cost controller for coding agents. TokenEconomizer is a plugin that learns from past sessions in a repository to cut waste in later ones. It works with Claude Code, Codex, GitHub Copilot CLI and Pi. It does not touch model weights or agent code. On 277 SWE-Bench tasks, it lowered mean cost by 18.4% to 30.9% across 5 agent-model settings.\n\n...\n\n- Package: A standard-library Python package and agent plugins, with 3 switchable mechanisms.\n- Runs on: Any machine running Claude Code, Codex, Copilot CLI or Pi with Python 3.10+. No GPU and no API key of its own.\n- Performance: 18.4% to 30.9% lower mean SWE-Bench cost, and cheaper in all 30 repository-setting cells.\n- Best: 30.9% lower cost on Claude Code with Opus 4.8 (33.2% when combined with RTK).\n- Worst: Only 6.4% to 9.3% savings on ReposVul audits; Pass@1 drops 1.0 point on Opus 4.8.\n\n...\n\nTokenEconomizer is an external controller that treats the agent as a black box. It keeps a state per repository, built from completed traces. Before each task, it sets 3 policies through the prompt, the tool settings and the event stream.\n\n...\n\nShell, read, write and edit tools are always kept. Other tools are masked after 3 consecutive unused tasks, or when an LLM judge marks them irrelevant. The full catalog returns every 5 tasks for a re-audit. On Django with Claude Code, the first request on task 2 fell from 43,351 to 16,295 prompt tokens.\n\n...\n\n| Feature | TokenEconomizer | RTK | Serena | Aider RepoMap |\n| --- | --- | --- | --- | --- |\n| Approach | Learns per-repository policies from past sessions | Compresses shell command output | MCP server with symbol-level code tools | Ranked map of repository symbols in the prompt |\n| Learns from earlier tasks | Yes | No | No | No |\n| License | Apache 2.0 | Apache 2.0 CLI; BUSL-1.1 engine | GPL-3.0-or-later (MIT for SolidLSP) | Apache 2.0 |\n| Agents | Claude Code, Codex, Copilot CLI, Pi | 18 AI coding tools | Any MCP client | Aider |\n| Mean SWE-Bench cost change (paper, 5 settings) | -18.4% to -30.9% | -8.9% to +4.5% | Not in main runs (raised pooled cost in profiling) | -6.1% to +6.5% |\n| Cells with higher cost (of 30) | 0 | 12 | Not disclosed | 15 |\n\n...\n\n## How do you install TokenEconomizer?\n\nThe plugin needs one of the 4 agents and Python 3.10 or newer. On Claude Code, clone the repo, add it as a marketplace, then run `claude plugin install tokeneconomizer@tokeneconomizer`. Learned data stays local in `~/.tokeneconomizer`. Tool pruning and the loop guard are on by default. Micro-skills are off by default, because the proposer adds model calls.",
       "signal_score": 7.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -381,12 +329,12 @@
       }
     },
     {
-      "id": "d9128917205f",
+      "id": "1d72b7aa3af2",
       "source": "exa_news",
-      "title": "LOWN cuts LLaDA-V decoding to 35.3% of FLOPs at 99.6% score | AI Weekly",
-      "url": "https://aiweekly.co/alerts/lown-cuts-llada-v-decoding-to-353-of-flops-at-996-score",
+      "title": "From AI models to deployment: Five developer takeaways shaping the future of AI - Arm Newsroom",
+      "url": "https://newsroom.arm.com/blog/ai-developer-takeaways-models-deployment",
       "published_at": "2026-10-30T00:00:00.000Z",
-      "excerpt": "A new method called LOWN routes the image through a diffusion vision-language model only when the model's text prediction actually depends on it, retaining 99.6% of LLaDA-V's score on ten benchmarks while using 35.3% of the decoding FLOPs on average. The paper, posted to arXiv by Donghyeon Cho, Joowon Kim, Seungho Shin and Eunho Yang, requires no training and no tuned threshold.",
+      "excerpt": ", and evaluation into a command line workflow. Attendees compared accuracy and estimated latency before exporting an ExecuTorch model file. Latency estimates came from Arm MLIA, rather than measurements on a physical board, allowing developers to assess",
       "signal_score": 7.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -396,12 +344,12 @@
   ],
   "candidates": [
     {
-      "id": "candidate-2026-11-01-5",
-      "topic": "Fitting 27B Models on 12GB Laptop GPUs",
-      "angle": "Advanced quantization techniques (Pingala-8, DASH-Q) can reduce Qwen3.8-27B's VRAM usage from 53.8 GB (16-bit) to 8.31 GB, enabling it to run at 37.7 tokens/s on a single 12 GB RTX 5070 Ti Laptop GPU.",
-      "audience_pain": "The desire to run powerful, large language models locally on consumer-grade hardware without requiring specialized, expensive GPUs.",
-      "why_now": "A recent, detailed demonstration provides concrete steps and benchmarks for enabling powerful local inference, a major goal for many individual developers and small teams.",
-      "hook_seed": "27B LLM on your laptop GPU.",
+      "id": "candidate-2026-11-02-1",
+      "topic": "Local 27B LLM on 12GB GPU",
+      "angle": "Advanced quantization (Pingala-8, DASH-Q) reduces Qwen3.8-27B from 53.8 GB (BF16) to 8.31 GB, enabling it to run at 37.7 tokens/s on a single 12 GB RTX 5070 Ti Laptop GPU.",
+      "audience_pain": "High VRAM requirements prevent running powerful large language models (LLMs) on consumer hardware.",
+      "why_now": "New, practical quantization techniques make powerful LLMs accessible for local development and inference, addressing a common hardware constraint.",
+      "hook_seed": "27B LLM on your 12GB laptop.",
       "format": "practical_tips",
       "objective": "share",
       "image_template": "handwritten_poster",
@@ -409,22 +357,45 @@
         "e1498cf5b668"
       ],
       "scores": {
-        "trend_strength": 10,
+        "trend_strength": 9,
         "audience_relevance": 10,
         "practical_value": 10,
-        "originality": 9,
+        "originality": 8,
         "conversation_potential": 9,
         "evidence_strength": 9
       },
-      "score": 9.5
+      "score": 9.17
     },
     {
-      "id": "candidate-2026-11-01-2",
-      "topic": "Solving AI Agent Amnesia with Shared Memory",
-      "angle": "Build a self-hosted shared memory mesh to give coding LLM agents persistent context, preventing the common 'amnesia' issue where they lose session history.",
-      "audience_pain": "AI coding agents frequently lose context between sessions, forcing developers to re-explain architectural nuances and past debugging steps.",
-      "why_now": "This directly addresses a core limitation of agentic workflows highlighted in recent developer discussions, offering a practical solution for persistent agent memory.",
-      "hook_seed": "AI agents keep forgetting? Fix it.",
+      "id": "candidate-2026-11-02-2",
+      "topic": "GPU Partitioning for AI Inference Costs",
+      "angle": "Amazon SageMaker now uses NVIDIA Multi-Instance GPU (MIG) technology to partition GPUs, letting multiple small and mid-size models share one accelerator, drastically cutting inference costs by up to 7x.",
+      "audience_pain": "High GPU costs for small and mid-size model inference due to underutilization of dedicated accelerators.",
+      "why_now": "This new AWS feature provides concrete cost savings for real-time AI inference endpoints, crucial for scalable and efficient deployments.",
+      "hook_seed": "Cut AI inference GPU costs by 7x.",
+      "format": "practical_tips",
+      "objective": "follow",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "cd3468986b60"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 9,
+        "practical_value": 10,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 9
+      },
+      "score": 8.83
+    },
+    {
+      "id": "candidate-2026-11-02-3",
+      "topic": "Persistent Memory for AI Coding Agents",
+      "angle": "Building a self-hosted shared memory mesh can solve 'AI agent amnesia,' providing persistent context for coding LLMs across multiple sessions.",
+      "audience_pain": "AI agents lose context and forget past interactions, requiring developers to repeatedly re-explain architectural details or session history.",
+      "why_now": "This offers a direct, practical solution to a widely recognized and frustrating problem in developing and deploying intelligent agents.",
+      "hook_seed": "Your AI agent won't forget.",
       "format": "practical_tips",
       "objective": "reply",
       "image_template": "handwritten_poster",
@@ -434,89 +405,89 @@
       "scores": {
         "trend_strength": 9,
         "audience_relevance": 9,
-        "practical_value": 10,
+        "practical_value": 9,
         "originality": 8,
-        "conversation_potential": 9,
-        "evidence_strength": 9
-      },
-      "score": 9.0
-    },
-    {
-      "id": "candidate-2026-11-01-3",
-      "topic": "GPU Partitioning for Cost-Efficient AI Inference",
-      "angle": "Amazon SageMaker now uses NVIDIA Multi-Instance GPU (MIG) technology to partition GPUs, letting multiple small and mid-size models share one accelerator, drastically cutting inference costs by up to 7x.",
-      "audience_pain": "High GPU inference costs, especially for smaller models that don't fully utilize an entire accelerator, leading to wasted capacity.",
-      "why_now": "A new AWS feature offers a direct solution to optimize GPU utilization and reduce inference costs, making managed services more economical for diverse model deployments.",
-      "hook_seed": "Cut GPU inference costs by 7x.",
-      "format": "practical_tips",
-      "objective": "follow",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "cd3468986b60"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 10,
-        "practical_value": 10,
-        "originality": 8,
-        "conversation_potential": 8,
-        "evidence_strength": 9
-      },
-      "score": 9.0
-    },
-    {
-      "id": "candidate-2026-11-01-10",
-      "topic": "Running Massive Open-Weight Models on Fewer GPUs with GraphX",
-      "angle": "Rival.io's proprietary GraphX kernel-optimization technology enabled deploying DeepSeek V4 Flash on just eight NVIDIA L4 GPUs, challenging assumptions about required hardware and potentially cutting hosting costs by up to 95%.",
-      "audience_pain": "Prohibitive hardware costs and high GPU requirements for self-hosting massive open-weight models, limiting their adoption by many organizations.",
-      "why_now": "A new technology demonstrates significant cost-saving potential, allowing enterprises to run powerful models on less expensive or existing hardware, addressing a major barrier to private AI deployment.",
-      "hook_seed": "8 GPUs run DeepSeek V4 Flash?",
-      "format": "practical_tips",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "cd23769ab47c"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 10,
-        "originality": 9,
-        "conversation_potential": 8,
-        "evidence_strength": 9
-      },
-      "score": 9.0
-    },
-    {
-      "id": "candidate-2026-11-01-1",
-      "topic": "Sub-Millisecond RAG Faithfulness Evaluation",
-      "angle": "The `agentic-rag-faithfulness` library allows local, sub-millisecond evaluation of RAG faithfulness, detecting LLM hallucinations without expensive API calls to judge models.",
-      "audience_pain": "Existing RAG evaluation is slow, expensive, and often relies on larger LLM judges, hindering rapid iteration and deployment.",
-      "why_now": "A new library offers a fast, local alternative addressing a key RAG problem identified in recent community signals, enabling cost-effective, real-time feedback.",
-      "hook_seed": "RAG faithfulness in <1ms? Yes.",
-      "format": "practical_tips",
-      "objective": "click",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "fd1811e052c8"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 10,
-        "originality": 8,
-        "conversation_potential": 8,
-        "evidence_strength": 9
+        "conversation_potential": 10,
+        "evidence_strength": 8
       },
       "score": 8.83
     },
     {
-      "id": "candidate-2026-11-01-6",
-      "topic": "NVIDIA TensorRT for Stable Diffusion 3.5 Acceleration",
-      "angle": "NVIDIA TensorRT, combined with FP8 quantization, reduces VRAM requirements for Stable Diffusion 3.5 Large by 40% (from over 18GB) and generates significant performance leaps on RTX GPUs for image generation.",
-      "audience_pain": "High VRAM requirements and slow inference for large generative models like Stable Diffusion make local deployment and rapid iteration challenging.",
-      "why_now": "The collaboration between NVIDIA and Stability AI delivers optimized performance for a leading image generation model, making it more accessible and faster for a wider range of RTX GPU users.",
-      "hook_seed": "Stable Diffusion faster on your RTX.",
+      "id": "candidate-2026-11-02-4",
+      "topic": "NVIDIA Rubin: 9-21x Tokens/Dollar",
+      "angle": "NVIDIA's Vera Rubin NVL72 achieves 9.11 to 20.9 times more tokens per dollar than the GB300 NVL72 for 744-billion-parameter agentic models, according to an official SemiAnalysis benchmark preview.",
+      "audience_pain": "High inference costs for large-scale agentic models, and difficulty in identifying the most cost-efficient high-end AI hardware.",
+      "why_now": "New benchmark data for NVIDIA's cutting-edge hardware directly impacts total cost of ownership (TCO) discussions for large-scale AI deployments.",
+      "hook_seed": "Rubin: 21x cheaper AI tokens.",
+      "format": "india_cost",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "898f1f075062"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 9,
+        "practical_value": 9,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 9
+      },
+      "score": 8.67
+    },
+    {
+      "id": "candidate-2026-11-02-5",
+      "topic": "Speeding Up MoE Model Inference",
+      "angle": "NVIDIA's optimizations for Mixture-of-Experts (MoE) model inference, including Humming MXFP4 kernels and online FP8 quantization, significantly reduce decode time from 27.71 ms to 9.72 ms by addressing memory-bound bottlenecks.",
+      "audience_pain": "Slow inference speeds and memory bottlenecks for large MoE models are limiting their practical deployment and throughput.",
+      "why_now": "Concrete performance improvements from NVIDIA provide critical insights and a roadmap for developers optimizing their MoE model deployments.",
+      "hook_seed": "3x faster MoE inference.",
+      "format": "mechanism_explainer",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "dd5db6601fca"
+      ],
+      "scores": {
+        "trend_strength": 8,
+        "audience_relevance": 9,
+        "practical_value": 9,
+        "originality": 8,
+        "conversation_potential": 8,
+        "evidence_strength": 9
+      },
+      "score": 8.5
+    },
+    {
+      "id": "candidate-2026-11-02-6",
+      "topic": "AI Agent Swarms Drown in Bureaucracy",
+      "angle": "A team of 50 AI agent swarms unleashed in Minecraft failed to build a civilization, instead 'drowning in paralyzing bureaucracy' due to coordination and communication breakdowns.",
+      "audience_pain": "Understanding the real-world limitations and complex failure modes when scaling multi-agent systems beyond simple tasks.",
+      "why_now": "This highly visible and recent failure case serves as a crucial counterpoint to agentic AI hype, highlighting significant design challenges.",
+      "hook_seed": "AI agents: bureaucracy killed civilization.",
+      "format": "hot_take",
+      "objective": "reply",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "hn-50325662"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 8,
+        "practical_value": 7,
+        "originality": 8,
+        "conversation_potential": 10,
+        "evidence_strength": 8
+      },
+      "score": 8.33
+    },
+    {
+      "id": "candidate-2026-11-02-8",
+      "topic": "Faster Stable Diffusion on RTX GPUs",
+      "angle": "NVIDIA TensorRT, combined with FP8 quantization, dramatically accelerates Stable Diffusion 3.5 on RTX GPUs, doubling performance (2.3x speedup) and reducing VRAM usage by 40%.",
+      "audience_pain": "Slow image generation speeds and high VRAM requirements on consumer GPUs limit the local use of popular generative AI models like Stable Diffusion.",
+      "why_now": "These significant performance boosts and memory savings are critical for local deployment and real-time image creation/editing tasks on RTX hardware.",
+      "hook_seed": "Double Stable Diffusion speed on RTX.",
       "format": "practical_tips",
       "objective": "follow",
       "image_template": "handwritten_poster",
@@ -526,92 +497,22 @@
       "scores": {
         "trend_strength": 9,
         "audience_relevance": 9,
-        "practical_value": 10,
-        "originality": 8,
-        "conversation_potential": 8,
-        "evidence_strength": 9
-      },
-      "score": 8.83
-    },
-    {
-      "id": "candidate-2026-11-01-4",
-      "topic": "Mistral Large 4's Advanced Architecture Beyond MoE",
-      "angle": "Mistral Large 4's novel architecture includes DeepSeek-style sparse attention, cross-layer KV sharing, NoPE layers, SSMax, LeRoPE, and a built-in DSpark speculative decoding drafter, going beyond standard Mixture-of-Experts.",
-      "audience_pain": "Understanding how new frontier models achieve their performance and efficiency gains through specific, often overlooked, architectural innovations.",
-      "why_now": "The recent release of Mistral Large 4, with its advanced features and open weights, demands a deeper dive into its underlying architecture for those building or evaluating next-gen models.",
-      "hook_seed": "Mistral Large 4: More than just MoE.",
-      "format": "mechanism_explainer",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "e6cd835cd7d0",
-        "49069eee3807"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 8,
-        "originality": 9,
-        "conversation_potential": 8,
-        "evidence_strength": 9
-      },
-      "score": 8.67
-    },
-    {
-      "id": "candidate-2026-11-01-9",
-      "topic": "Kakao's Matryoshka Embedding Models for Efficient Search",
-      "angle": "Kakao's new open-source kanana-2 embedding models (3B, 1.3B) with Matryoshka support allow vectors to be dynamically cut to smaller dimensions (e.g., 1024, 512, 256, 128) to save storage and speed up vector search.",
-      "audience_pain": "High storage and computational costs associated with large embedding vectors in Retrieval-Augmented Generation (RAG) and semantic search systems.",
-      "why_now": "New open-source models offering a practical solution for efficiency in retrieval are crucial for optimizing 'memory search' components in personal AI agents and enterprise RAG systems.",
-      "hook_seed": "Smaller embeddings, faster AI search.",
-      "format": "mechanism_explainer",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "63b5f1c8d2be"
-      ],
-      "scores": {
-        "trend_strength": 8,
-        "audience_relevance": 9,
         "practical_value": 9,
-        "originality": 8,
+        "originality": 7,
         "conversation_potential": 7,
         "evidence_strength": 9
       },
       "score": 8.33
     },
     {
-      "id": "candidate-2026-11-01-7",
-      "topic": "Agent Compute Engine: Securing Autonomous AI Agents in Cloud",
-      "angle": "Google Cloud's Agent Compute Engine provides high-performance, hardware-isolated microVM sandboxes, expanded agent governance, rapid sub-second activation, and extreme workload density for scaling and securing autonomous AI agents.",
-      "audience_pain": "Challenges in securely deploying, scaling, and managing autonomous AI agents, which require robust isolation, governance, and rapid elasticity in a cloud environment.",
-      "why_now": "A new purpose-built Google Cloud service directly addresses the unique infrastructure and security needs of emerging agentic workflows, a key area of AI development.",
-      "hook_seed": "Secure AI agents with microVMs.",
+      "id": "candidate-2026-11-02-7",
+      "topic": "JavaScript Frameworks' Hidden AI Cost",
+      "angle": "Integrating AI tools or agents into development workflows can incur significant 'AI costs' due to the computational overhead of popular JavaScript frameworks.",
+      "audience_pain": "Developers face unexpected resource consumption and performance degradation when combining AI capabilities with existing web development stacks.",
+      "why_now": "As AI increasingly integrates into web development, understanding these hidden performance and cost implications becomes crucial for project planning.",
+      "hook_seed": "JavaScript frameworks: the hidden AI cost.",
       "format": "mechanism_explainer",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "7dd4d781b744"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 8,
-        "practical_value": 8,
-        "originality": 8,
-        "conversation_potential": 7,
-        "evidence_strength": 9
-      },
-      "score": 8.17
-    },
-    {
-      "id": "candidate-2026-11-01-8",
-      "topic": "The AI Cost of JavaScript Frameworks",
-      "angle": "The overhead of modern JavaScript frameworks can unexpectedly increase the real-world inference costs and degrade performance for AI-powered web applications due to factors like bundle size and runtime complexity.",
-      "audience_pain": "Hidden costs and performance bottlenecks when integrating AI functionalities into web applications built with popular JavaScript frameworks, often overlooked during development.",
-      "why_now": "Recent community signals highlight this as a critical, often unrecognized, issue for many web developers trying to integrate AI, prompting a re-evaluation of current practices.",
-      "hook_seed": "JS frameworks costing you AI cash?",
-      "format": "hot_take",
-      "objective": "reply",
+      "objective": "click",
       "image_template": "handwritten_poster",
       "source_ids": [
         "hn-50323088"
@@ -621,8 +522,31 @@
         "audience_relevance": 9,
         "practical_value": 8,
         "originality": 8,
-        "conversation_potential": 9,
-        "evidence_strength": 7
+        "conversation_potential": 8,
+        "evidence_strength": 8
+      },
+      "score": 8.17
+    },
+    {
+      "id": "candidate-2026-11-02-9",
+      "topic": "DeepSeek's Super-Agent Architecture",
+      "angle": "DeepSeek's new 'Super-agent' architecture proposes a dual-layer, event-driven, and asynchronous design to overcome human attention bottlenecks and scale agent systems toward greater autonomy.",
+      "audience_pain": "Current AI agent designs are often limited by the need for constant human supervision, preventing true autonomy and large-scale deployment.",
+      "why_now": "This new theoretical and architectural proposal pushes the boundaries of autonomous agent systems, addressing a core scaling challenge for future AI applications.",
+      "hook_seed": "Beyond human supervision: Super-agents.",
+      "format": "mechanism_explainer",
+      "objective": "share",
+      "image_template": "handwritten_poster",
+      "source_ids": [
+        "77588c1bf066"
+      ],
+      "scores": {
+        "trend_strength": 9,
+        "audience_relevance": 8,
+        "practical_value": 7,
+        "originality": 9,
+        "conversation_potential": 8,
+        "evidence_strength": 8
       },
       "score": 8.17
     }

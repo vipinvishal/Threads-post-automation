@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-11-01 IST
+Last refreshed: 2026-11-02 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Fitting 27B Models on 12GB Laptop GPUs | angle: Advanced quantization techniques (Pingala-8, DASH-Q) can reduce Qwen3.8-27B's VRAM usage from 53.8 GB (16-bit) to 8.31 GB, enabling it to run at 37.7 tokens/s on a single 12 GB RTX 5070 Ti Laptop GPU. | objective: share | score: 9.5 | sources: e1498cf5b668
-- Solving AI Agent Amnesia with Shared Memory | angle: Build a self-hosted shared memory mesh to give coding LLM agents persistent context, preventing the common 'amnesia' issue where they lose session history. | objective: reply | score: 9.0 | sources: 3241f75ed648
-- GPU Partitioning for Cost-Efficient AI Inference | angle: Amazon SageMaker now uses NVIDIA Multi-Instance GPU (MIG) technology to partition GPUs, letting multiple small and mid-size models share one accelerator, drastically cutting inference costs by up to 7x. | objective: follow | score: 9.0 | sources: cd3468986b60
-- Running Massive Open-Weight Models on Fewer GPUs with GraphX | angle: Rival.io's proprietary GraphX kernel-optimization technology enabled deploying DeepSeek V4 Flash on just eight NVIDIA L4 GPUs, challenging assumptions about required hardware and potentially cutting hosting costs by up to 95%. | objective: share | score: 9.0 | sources: cd23769ab47c
-- Sub-Millisecond RAG Faithfulness Evaluation | angle: The `agentic-rag-faithfulness` library allows local, sub-millisecond evaluation of RAG faithfulness, detecting LLM hallucinations without expensive API calls to judge models. | objective: click | score: 8.83 | sources: fd1811e052c8
-- NVIDIA TensorRT for Stable Diffusion 3.5 Acceleration | angle: NVIDIA TensorRT, combined with FP8 quantization, reduces VRAM requirements for Stable Diffusion 3.5 Large by 40% (from over 18GB) and generates significant performance leaps on RTX GPUs for image generation. | objective: follow | score: 8.83 | sources: 38098008fc54
-- Mistral Large 4's Advanced Architecture Beyond MoE | angle: Mistral Large 4's novel architecture includes DeepSeek-style sparse attention, cross-layer KV sharing, NoPE layers, SSMax, LeRoPE, and a built-in DSpark speculative decoding drafter, going beyond standard Mixture-of-Experts. | objective: share | score: 8.67 | sources: e6cd835cd7d0, 49069eee3807
-- Kakao's Matryoshka Embedding Models for Efficient Search | angle: Kakao's new open-source kanana-2 embedding models (3B, 1.3B) with Matryoshka support allow vectors to be dynamically cut to smaller dimensions (e.g., 1024, 512, 256, 128) to save storage and speed up vector search. | objective: share | score: 8.33 | sources: 63b5f1c8d2be
+- Local 27B LLM on 12GB GPU | angle: Advanced quantization (Pingala-8, DASH-Q) reduces Qwen3.8-27B from 53.8 GB (BF16) to 8.31 GB, enabling it to run at 37.7 tokens/s on a single 12 GB RTX 5070 Ti Laptop GPU. | objective: share | score: 9.17 | sources: e1498cf5b668
+- GPU Partitioning for AI Inference Costs | angle: Amazon SageMaker now uses NVIDIA Multi-Instance GPU (MIG) technology to partition GPUs, letting multiple small and mid-size models share one accelerator, drastically cutting inference costs by up to 7x. | objective: follow | score: 8.83 | sources: cd3468986b60
+- Persistent Memory for AI Coding Agents | angle: Building a self-hosted shared memory mesh can solve 'AI agent amnesia,' providing persistent context for coding LLMs across multiple sessions. | objective: reply | score: 8.83 | sources: 3241f75ed648
+- NVIDIA Rubin: 9-21x Tokens/Dollar | angle: NVIDIA's Vera Rubin NVL72 achieves 9.11 to 20.9 times more tokens per dollar than the GB300 NVL72 for 744-billion-parameter agentic models, according to an official SemiAnalysis benchmark preview. | objective: share | score: 8.67 | sources: 898f1f075062
+- Speeding Up MoE Model Inference | angle: NVIDIA's optimizations for Mixture-of-Experts (MoE) model inference, including Humming MXFP4 kernels and online FP8 quantization, significantly reduce decode time from 27.71 ms to 9.72 ms by addressing memory-bound bottlenecks. | objective: share | score: 8.5 | sources: dd5db6601fca
+- AI Agent Swarms Drown in Bureaucracy | angle: A team of 50 AI agent swarms unleashed in Minecraft failed to build a civilization, instead 'drowning in paralyzing bureaucracy' due to coordination and communication breakdowns. | objective: reply | score: 8.33 | sources: hn-50325662
+- Faster Stable Diffusion on RTX GPUs | angle: NVIDIA TensorRT, combined with FP8 quantization, dramatically accelerates Stable Diffusion 3.5 on RTX GPUs, doubling performance (2.3x speedup) and reducing VRAM usage by 40%. | objective: follow | score: 8.33 | sources: 38098008fc54
+- JavaScript Frameworks' Hidden AI Cost | angle: Integrating AI tools or agents into development workflows can incur significant 'AI costs' due to the computational overhead of popular JavaScript frameworks. | objective: click | score: 8.17 | sources: hn-50323088
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
