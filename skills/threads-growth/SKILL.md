@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-11-02 IST
+Last refreshed: 2026-11-03 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- AMD vs NVIDIA for AI inference cost | angle: AMD MI355X delivers Kimi K3 inference at 2.3x lower cost ($0.077 vs $0.179 per million tokens) than NVIDIA B200 at 100 tokens/second/user due to larger HBM capacity and kernel tuning. | objective: share | score: 9.17 | sources: 4ddb86c7e0a2
-- AI Agent Desktop Control | angle: Vercel Labs' open-source `agent-desktop` CLI enables AI agents to control native macOS, Windows, and Linux applications by reading the operating system’s accessibility tree, providing JSON snapshots for interaction without the need for vision models. | objective: follow | score: 9.17 | sources: 90234d5a31c0
-- Multi-session AI Agent Architecture | angle: DeepSeek's Super-agent architecture applies classic computer system ideas like scheduling, caching, storage-compute separation, and watchdogs to overcome the single-session agent bottleneck, enabling robust multi-task concurrency and context synchronization. | objective: reply | score: 9.0 | sources: d79c7b96fbc0
-- Fast RAG Faithfulness Evaluation | angle: The `agentic-rag-faithfulness` library evaluates Retrieval-Augmented Generation (RAG) faithfulness locally in under 1 millisecond, avoiding expensive LLM judges and supporting both English and Arabic to detect LLM hallucinations efficiently. | objective: share | score: 9.0 | sources: fd1811e052c8
-- CUDA inside LLM weights | angle: qwenGPU is an experimental model that compiles a SIMT GPU directly into the weights of Qwen3.5-2B, allowing real CUDA code, compiled to NVIDIA PTX, to run within its own forward passes for exact computation inside an LLM. | objective: follow | score: 8.83 | sources: 767a19ed137a
-- MoE Inference Optimization | angle: NVIDIA's optimizations for Mixture-of-Experts (MoE) model inference, including Humming MXFP4 kernels and online FP8 quantization, significantly reduce decode time from 27.71 ms to 9.72 ms by addressing memory-bound bottlenecks. | objective: share | score: 8.67 | sources: dd5db6601fca
-- AI Overhead of JavaScript Frameworks | angle: Integrating AI tools or agents into development workflows can incur significant 'AI costs' due to the computational overhead of popular JavaScript frameworks, impacting performance and efficiency. | objective: click | score: 8.67 | sources: hn-50323088
-- Accelerating Stable Diffusion with TensorRT | angle: NVIDIA TensorRT, combined with FP8 quantization, dramatically accelerates Stable Diffusion 3.5 on RTX GPUs, doubling performance (2.3x speedup) and reducing VRAM usage by 40%. | objective: follow | score: 8.5 | sources: 38098008fc54
+- Cost-Effective Models for AI Agents | angle: OpenAI's GPT-6.1 Terra on Bedrock and MiniMax M3.1 Flash on Tenstorrent significantly cut per-token costs for agent tasks (e.g., MiniMax M3.1 Flash is 70% cheaper than M3). | objective: share | score: 9.17 | sources: bbab874b16fe, efc41608ed16
+- Fast RAG Faithfulness Evaluation | angle: The `agentic-rag-faithfulness` library evaluates RAG faithfulness locally in under 1 millisecond, avoiding expensive LLM judges and supporting both English and Arabic. | objective: share | score: 9.0 | sources: fd1811e052c8
+- Compiling GPUs into LLM Weights | angle: qwenGPU is an experimental Qwen3.5-2B model that compiles a SIMT GPU directly into its weights, allowing real CUDA, compiled to NVIDIA PTX, to run within its forward passes for exact computation. | objective: follow | score: 8.83 | sources: 767a19ed137a
+- Grounding AI Agents with Semantic Layers | angle: NVIDIA Auto Ontology, an open-source semantic layer framework, builds a context layer from enterprise metadata, allowing AI agents to write accurate SQL against certified business definitions. | objective: share | score: 8.83 | sources: 0d768a694155
+- Accelerating Stable Diffusion with TensorRT | angle: NVIDIA TensorRT, combined with FP8 quantization, dramatically accelerates Stable Diffusion 3.5 on RTX GPUs, doubling performance (2.3x speedup) and reducing VRAM usage by 40% (from 18GB+). | objective: follow | score: 8.67 | sources: 38098008fc54
+- Serverless Agentic RAG Deployment | angle: Shipping a tool-calling ReAct agent over a private knowledge base on AWS Lambda with LangGraph and Terraform demonstrates how to productionize agentic RAG assistants as infrastructure as code. | objective: click | score: 8.67 | sources: 0e6ffeb83e1d
+- Optimizing MoE Inference on GPUs | angle: NVIDIA's optimizations for Mixture-of-Experts (MoE) model inference, using techniques like Humming MXFP4 kernels, reduced decode time on DGX Spark from 27.71 ms to 9.72 ms by addressing memory-bound bottlenecks. | objective: share | score: 8.5 | sources: dd5db6601fca
+- Dedicated Infrastructure for AI Agents | angle: Google Cloud's new Agent Compute Engine provides purpose-built, secure, hardware-isolated microVM sandboxes for rapid, dense, and scalable deployment of autonomous AI agents. | objective: click | score: 8.5 | sources: 279218177f3a
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
