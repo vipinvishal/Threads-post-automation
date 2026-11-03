@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-11-03 IST
+Last refreshed: 2026-11-04 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- Private Offline RAG | angle: Building a 100% private, zero-cloud RAG pipeline and autonomous agent engine in pure Python addresses high API costs and enterprise data privacy concerns. | objective: share | score: 9.33 | sources: d7b7279ac0ec
-- Dynamic LoRA Switching on Ryzen AI | angle: AMD's Ryzen AI Software 1.9 enables dynamic LoRA switching on NPUs, allowing applications to swap task-specific adapters for quantized base models without reloading, improving accuracy for specialized tasks. | objective: share | score: 8.83 | sources: c139ae289a01
-- NVIDIA Auto Ontology for AI Agents | angle: NVIDIA released Auto Ontology, an open-source semantic layer framework under Apache 2.0, enabling AI agents to generate accurate SQL queries against certified business definitions from enterprise metadata. | objective: share | score: 8.83 | sources: d2a55cf3063c
-- Native PyTorch on Google TPUs | angle: TorchTPU, an open-source collaboration by Google and Meta, brings native PyTorch support to Google TPUs, allowing PyTorch workloads to run with minimal code changes and hardware optimizations. | objective: share | score: 8.67 | sources: cce656dc4030, 5ecabe18fb25
-- Open-Source RL Environments (AgentEnv) | angle: Scale Labs open-sourced AgentEnv, an open-source framework with 48 built-in step types for building realistic, scalable, and consistent Reinforcement Learning (RL) environments for AI agents. | objective: share | score: 8.67 | sources: 75ad2f18cd4b
-- MoE Inference Optimization | angle: NVIDIA achieved a 3x speedup in MoE model decode loop by optimizing for memory-bound execution on DGX Spark, reducing time per output token from 27.71 ms to 9.72 ms. | objective: follow | score: 8.5 | sources: dd5db6601fca
-- Zyphra Hierarchical Attention (ZHA) | angle: Zyphra's ZHA introduces a sparse attention method with a tree-structured indexer that aims for true subquadratic attention, maintaining performance on 256K context for reasoning and agentic coding. | objective: follow | score: 8.5 | sources: a8c390dc95b9
-- OLMo-Core 3 Training Infrastructure | angle: Ai2's OLMo-Core 3 is an inspectable, forkable open training stack for trillion-parameter mixture-of-experts (MoE) models (e.g., 858 TFLOP/s per B300 GPU), released as *machinery* for building, not a deployed model. | objective: share | score: 8.5 | sources: 64cf7fa698fe
+- India-based Pay-per-Token AI Inference | angle: E2E Networks has launched Blaze, a pay-per-token inference service in India running on NVIDIA GPU infrastructure, offering OpenAI-compatible API access to open-weight models with KV cache reuse for efficiency. | objective: click | score: 9.0 | sources: 1b4816700aa9
+- Private Offline RAG Architecture | angle: Building a 100% private, zero-cloud RAG pipeline in pure Python addresses high API costs and enterprise data privacy concerns. | objective: share | score: 8.83 | sources: d7b7279ac0ec
+- Postman AI Plugin Privacy Concerns | angle: Postman silently auto-installed AI plugins that attempted to share all API data, raising significant privacy, security, and data governance concerns for developers using the tool. | objective: reply | score: 8.83 | sources: hn-50354960
+- Dynamic LoRA Switching for On-Device AI | angle: AMD Ryzen AI Software 1.9 enables dynamic LoRA adapter switching on NPUs at inference time without reloading the base model, reducing memory and deployment complexity for specialized AI PCs. | objective: share | score: 8.67 | sources: cad10a0d6074
+- MoE Inference Optimization on GPUs | angle: NVIDIA achieved a 42.5% throughput increase for MoE models on DGX Spark by optimizing for memory-bound execution with new kernels, FP8 output, and speculative decoding. | objective: follow | score: 8.33 | sources: dd5db6601fca, 68471500c439
+- Evaluating Long-Context State Tracking (StateBench) | angle: The new StateBench benchmark tests how well language models track state changes over long documents, revealing that recurrent and hybrid models can generalize farther than transformers on these tasks. | objective: reply | score: 8.33 | sources: 1f10e5a726b7
+- Emerging Protocols for AI Agent Infrastructure | angle: A new layer of standardized agent plumbing, like HarnessRouter's Unified Harness Protocol and Azure MCP Server 3.0, is emerging to tame the AI dev stack, shifting from single-vendor tools to shared infrastructure. | objective: share | score: 8.33 | sources: 29ebbd5d8872
+- GraphRAG Chatbot Development with Memgraph | angle: Memgraph's new open-source AI Graph Toolkit automates building GraphRAG chatbots by converting SQL databases or raw text into knowledge graphs, enabling faster, context-aware responses. | objective: share | score: 8.33 | sources: d106b125d622
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
