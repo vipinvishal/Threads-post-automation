@@ -42,20 +42,20 @@ Only the section between the managed markers may be updated automatically. Perma
 <!-- DAILY_INTELLIGENCE_START -->
 ## Daily intelligence (managed automatically)
 
-Last refreshed: 2026-11-04 IST
+Last refreshed: 2026-11-05 IST
 
 Metric-backed learning:
 - Not enough completed insight snapshots yet; keep strategy exploratory.
 
 Current ranked opportunities:
-- India's Pay-per-Token AI Inference | angle: E2E Networks launched Blaze AI, a pay-per-token inference service in India running on NVIDIA GPU infrastructure, offering OpenAI-compatible API access to open-weight models, targeting cost-efficient, low-latency, and sovereign compute. | objective: click | score: 9.0 | sources: f8a84a343308
-- Postman AI Plugin Privacy Warning | angle: Postman silently auto-installed AI plugins that attempted to share all API data, raising significant privacy, security, and data governance concerns for developers using the tool. | objective: reply | score: 9.0 | sources: hn-50354960
-- Build Private, Offline RAG | angle: Building a 100% private, zero-cloud RAG pipeline in pure Python addresses high API costs and enterprise data privacy concerns for sensitive documents in sectors like healthcare and legal. | objective: share | score: 8.83 | sources: d7b7279ac0ec
-- AI Models Rewrite Other AI Weights | angle: Frontier AI models like GPT-6 Astra can directly rewrite the weights of another model (e.g., Qwen3.5-0.8B) to improve its performance in specific tasks like math, bypassing traditional gradient-descent training. | objective: share | score: 8.67 | sources: ed555af589a6, hn-50355251
-- RAG Still Wins Over Huge Context | angle: Despite the availability of 1-million-token context windows from models like Mistral Large 4 and DeepSeek V4.1-Flash, RAG pipelines still offer superior cost, latency, freshness, and auditability for LLM applications. | objective: share | score: 8.5 | sources: ce3a4d389acb
-- Dynamic LoRA on AMD Ryzen AI | angle: AMD Ryzen AI Software now supports dynamic LoRA adapter switching on NPUs at inference time without reloading the base model, allowing one quantized base model to stay resident and solving the quantization trap. | objective: share | score: 8.33 | sources: 65967eca7462
-- Speeding Up MoE Inference on GPUs | angle: NVIDIA achieved a 42.5% throughput increase for MoE models (Ling-3.0-flash, 124B parameters) on DGX Spark by optimizing memory-bound decoding with new kernels, FP8 output layers, and built-in speculative decoding. | objective: follow | score: 8.17 | sources: dd5db6601fca, 68471500c439
-- GraphRAG: Building Smarter Chatbots | angle: Memgraph's new open-source AI Graph Toolkit automates building GraphRAG chatbots by converting SQL databases or raw text into knowledge graphs, enabling faster, more accurate, and context-aware responses. | objective: share | score: 8.17 | sources: d106b125d622
+- Build Private, Offline RAG | angle: The necessity and architectural patterns for building completely offline Retrieval-Augmented Generation (RAG) systems to address high API costs and enterprise data privacy concerns. | objective: share | score: 8.33 | sources: 9b3058145d81
+- Inference Performance Beyond FLOPs | angle: Investigating how factors like software overhead, encrypted firmware, and memory bandwidth (not just raw compute FLOPs) are critical bottlenecks for AI inference performance. | objective: follow | score: 8.33 | sources: hn-50362905, 1b8db94f9ad4, 45f4b2343014, hn-50370654
+- Key Specs for AI Accelerators | angle: A comparative guide to evaluating new AI accelerator cards, emphasizing critical specifications beyond theoretical FLOPs, such as memory capacity, bandwidth, and power efficiency, for real-world inference performance. | objective: follow | score: 8.33 | sources: hn-50370654, 1b8db94f9ad4
+- The Rise of Open-Weight Agentic Models | angle: Exploring the emergence and architectural characteristics of specialized open-weight models (like Ripple-65B and Kimi K3.1 Pro) designed specifically for agentic workflows and coding tasks. | objective: reply | score: 8.17 | sources: hn-50369925, dfae4b6814ae, hn-50366999, 6ee47946cb27, e1bf20be5c70
+- The Nuance of "Open-Weight" Models | angle: Deconstructing what 'open-weight' truly means for recent model releases, focusing on the crucial details of licensing, usage restrictions, and security considerations beyond just access to weights. | objective: share | score: 8.17 | sources: hn-50366999, be1c963b8f4c, dfae4b6814ae
+- Kimi K3.1 Pro's Sparse Attention | angle: How sparse attention in frontier models like Kimi K3.1 Pro changes long-context inference efficiency, reducing memory reads per layer. | objective: share | score: 8.0 | sources: hn-50366999, 6ee47946cb27, 86ef835c3782, e0a14eed8e24
+- AI Forces Paying Technical Debt | angle: How the demanding requirements of AI integration—especially for data readiness, infrastructure scalability, and security—are forcing organizations to finally address and resolve long-standing technical debt. | objective: reply | score: 8.0 | sources: hn-50364336
+- Kubernetes for LLM Inference Control | angle: How Kubernetes is emerging as the preferred control plane for managing scalable, multi-tenant LLM inference, offering features like token rate limiting, load balancing, and cost tracking. | objective: share | score: 7.83 | sources: 9d632dff934f, e0a14eed8e24
 
 Daily data is advisory. Re-check cited source evidence before publishing any claim.
 <!-- DAILY_INTELLIGENCE_END -->
