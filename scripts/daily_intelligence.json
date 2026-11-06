@@ -1,19 +1,58 @@
 {
   "date_ist": "2026-11-06",
-  "generated_at": "2026-11-05T21:31:15.954374+00:00",
+  "generated_at": "2026-11-06T10:20:26.621124+00:00",
   "signal_count": 25,
   "signals": [
+    {
+      "id": "hn-50385272",
+      "source": "hacker_news",
+      "title": "Claude Code sends your email address to websites",
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "published_at": "2026-11-05T22:17:15+00:00",
+      "excerpt": "Hacker News: 1152 points and 354 comments.",
+      "signal_score": 1683.0,
+      "community_metrics": {
+        "points": 1152,
+        "comments": 354
+      }
+    },
+    {
+      "id": "hn-50385870",
+      "source": "hacker_news",
+      "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+      "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+      "published_at": "2026-11-05T23:09:57+00:00",
+      "excerpt": "Hacker News: 337 points and 158 comments.",
+      "signal_score": 574.0,
+      "community_metrics": {
+        "points": 337,
+        "comments": 158
+      }
+    },
     {
       "id": "hn-50368208",
       "source": "hacker_news",
       "title": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
       "url": "https://www.linum.ai/field-notes/pjit-21k",
       "published_at": "2026-11-04T16:45:11+00:00",
-      "excerpt": "Hacker News: 100 points and 11 comments.",
-      "signal_score": 116.5,
+      "excerpt": "Hacker News: 231 points and 21 comments.",
+      "signal_score": 262.5,
       "community_metrics": {
-        "points": 100,
-        "comments": 11
+        "points": 231,
+        "comments": 21
+      }
+    },
+    {
+      "id": "hn-50388513",
+      "source": "hacker_news",
+      "title": "I struggle to believe that AI R&D is ingenious",
+      "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform",
+      "published_at": "2026-11-06T05:19:04+00:00",
+      "excerpt": "Hacker News: 90 points and 74 comments.",
+      "signal_score": 201.0,
+      "community_metrics": {
+        "points": 90,
+        "comments": 74
       }
     },
     {
@@ -22,63 +61,24 @@
       "title": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
       "url": "https://github.com/rivet-dev/rivet",
       "published_at": "2026-11-05T17:17:42+00:00",
-      "excerpt": "Hacker News: 53 points and 27 comments.",
-      "signal_score": 93.5,
+      "excerpt": "Hacker News: 96 points and 51 comments.",
+      "signal_score": 172.5,
       "community_metrics": {
-        "points": 53,
-        "comments": 27
+        "points": 96,
+        "comments": 51
       }
     },
     {
-      "id": "hn-50380658",
+      "id": "hn-50389448",
       "source": "hacker_news",
-      "title": "Building a Multi-Agent System from Scratch: Architecture Patterns",
-      "url": "https://kadhar.dev/blog/multi-agent-systems-from-scratch",
-      "published_at": "2026-11-05T15:51:57+00:00",
-      "excerpt": "Hacker News: 57 points and 21 comments.",
-      "signal_score": 88.5,
+      "title": "App Store 2026 in numbers: AI, pricing, abandoned apps",
+      "url": "https://obelisk.club/research/app-store-2026",
+      "published_at": "2026-11-06T07:59:19+00:00",
+      "excerpt": "Hacker News: 33 points and 28 comments.",
+      "signal_score": 75.0,
       "community_metrics": {
-        "points": 57,
-        "comments": 21
-      }
-    },
-    {
-      "id": "hn-50383163",
-      "source": "hacker_news",
-      "title": "Hungary: Communist-era files released, up to 60k former agents revealed",
-      "url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
-      "published_at": "2026-11-05T19:16:34+00:00",
-      "excerpt": "Hacker News: 64 points and 13 comments.",
-      "signal_score": 83.5,
-      "community_metrics": {
-        "points": 64,
-        "comments": 13
-      }
-    },
-    {
-      "id": "hn-50380704",
-      "source": "hacker_news",
-      "title": "Show HN: Stroq – a local audit of what your coding agent did and why",
-      "url": "https://github.com/AGGIB/Stroq",
-      "published_at": "2026-11-05T15:54:41+00:00",
-      "excerpt": "Hacker News: 46 points and 10 comments.",
-      "signal_score": 61.0,
-      "community_metrics": {
-        "points": 46,
-        "comments": 10
-      }
-    },
-    {
-      "id": "hn-50383963",
-      "source": "hacker_news",
-      "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
-      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models",
-      "published_at": "2026-11-05T20:21:43+00:00",
-      "excerpt": "Hacker News: 24 points and 1 comments.",
-      "signal_score": 25.5,
-      "community_metrics": {
-        "points": 24,
-        "comments": 1
+        "points": 33,
+        "comments": 28
       }
     },
     {
@@ -87,7 +87,7 @@
       "title": "Introducing Kinference: An Open Source Inference Control Plane for vLLM and Kubernetes | vLLM Blog",
       "url": "https://vllm.ai/blog/2026-11-04-introducing-kinference",
       "published_at": "2026-11-04T04:46:35.000Z",
-      "excerpt": "# Introducing Kinference: An Open Source Inference Control Plane for vLLM and Kubernetes\n\nNovember 4, 2026 7 min read\n\nTable of Contents\n\nWe’re excited to announce Kinference [kay-inference], a new open source project for building scalable inference platforms with vLLM.\n\nKinference by Buoyant\n\nWe created Kinference at Buoyant after watching our customers struggle to run open weight models in their environments. We designed Kinference to be the control plane layer for the platform you need to build. It uses vLLM to do the underlying inference, and provides the set of features necessary for building an inference platform in practice. This includes token rate limiting, tenant usage and cost tracking, intelligent load balancing, and inference policies.\n\n...\n\nIn addition to policies and a routing layer, Kinference provides inference-specific load balancing that takes into account signals like GPU queue sizes, historical performance, and the contents of the KV cache on the GPU. This KV-cache awareness, in particular, allows Kinference to send requests to the vLLM worker that will do the least work for that specific request.\n\nModeling the KV cache content of the GPU can produce dramatic gains in performance for distributed inference. For example, in our public Kinference benchmarks, we showed that, when compared to standard Kubernetes load balancing (labeled “service” below), Kinference (labeled “kinference”) was able to cut median time-to-first-token (TTFT) by 95% and median end-to-end latency by 45% of requests on one workload type.\n\n...\n\nIn the capacity benchmark, Kinference served 7.4× the goodput on shared-prefix and about 3.5× the goodput on multiturn. It was able to attain our chosen SLO at concurrency 32 (the highest measured) on our shared-prefix workload, and concurrency 8 on the multiturn workload, whereas the kube-proxy approach was not able to attain the SLO at any concurrency level.\n\n...\n\nFeedback, issues and benchmark reports from other deployments are very welcome.",
+      "excerpt": "# Introducing Kinference: An Open Source Inference Control Plane for vLLM and Kubernetes\n\nNovember 4, 2026 7 min read\n\nTable of Contents\n\nWe’re excited to announce Kinference [kay-inference], a new open source project for building scalable inference platforms with vLLM.\n\nKinference by Buoyant\n\nWe created Kinference at Buoyant after watching our customers struggle to run open weight models in their environments. We designed Kinference to be the control plane layer for the platform you need to build. It uses vLLM to do the underlying inference, and provides the set of features necessary for building an inference platform in practice. This includes token rate limiting, tenant usage and cost tracking, intelligent load balancing, and inference policies.\n\n...\n\nKinference can be paired with your existing stack. Using Kinference is simply a matter of pointing inference clients to its HTTP endpoint and sending OpenAI or Anthropic-compatible inference traffic there.\n\n...\n\nIn addition to policies and a routing layer, Kinference provides inference-specific load balancing that takes into account signals like GPU queue sizes, historical performance, and the contents of the KV cache on the GPU. This KV-cache awareness, in particular, allows Kinference to send requests to the vLLM worker that will do the least work for that specific request.\n\nModeling the KV cache content of the GPU can produce dramatic gains in performance for distributed inference. For example, in our public Kinference benchmarks, we showed that, when compared to standard Kubernetes load balancing (labeled “service” below), Kinference (labeled “kinference”) was able to cut median time-to-first-token (TTFT) by 95% and median end-to-end latency by 45% of requests on one workload type.\n\n...\n\nIn the capacity benchmark, Kinference served 7.4× the goodput on shared-prefix and about 3.5× the goodput on multiturn. It was able to attain our chosen SLO at concurrency 32 (the highest measured) on our shared-prefix workload, and concurrency 8 on the multiturn workload, whereas the kube-proxy approach was not able to attain the SLO at any concurrency level.\n\n...\n\nKinference is fully open source under Apache v2. It’s available on GitHub today. Feedback, issues and benchmark reports from other deployments are very welcome.",
       "signal_score": 14.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -95,28 +95,28 @@
       }
     },
     {
-      "id": "ea640d6bbee6",
+      "id": "86ef835c3782",
       "source": "exa_news",
-      "title": "Cohere Makes Embed 5 and Rerank 5 Available on OpenRouter | AI.info",
-      "url": "https://ai.info/news/cohere-embed-5-rerank-5-openrouter",
-      "published_at": "2026-11-05T00:00:00.000Z",
-      "excerpt": "AI.info Team · Written with AI · fact-checked · 2026-11-05\n\nCohere says Embed 5 and Rerank 5 are now live on OpenRouter, with access through a single API. Its demonstration builds a retrieval-augmented generation (RAG) pipeline, which retrieves relevant text from a document collection before a language model answers a question.\n\n## One OpenRouter key for retrieval and generation\n\nOpenRouter users can use the same API key and credits they already use for other models, with no additional setup. Cohere’s walkthrough uses one client for embedding documents, retrieving candidates, reranking them and sending selected text to a chat model. The workflow needs no separate SDKs, accounts or bills to manage.\n\nThe pipeline has an offline indexing stage and an online path that runs for each question. Indexing embeds document chunks to make them searchable; each question then calls an Embed 5 Fast model, a Rerank 5 model and a chat model through OpenRouter’s API. Cohere frames knowing which calls happen once and which happen per request as a way to explain most of the pipeline’s cost and latency.\n\n...\n\nThe walkthrough’s retrieval function requests up to 20 chunks by cosine similarity. Its sample corpus contains six documents, each producing one chunk, so the example can return at most six candidates. Rerank 5 then re-scores the candidates, returns up to five, and the sample code drops any result with a relevance score below 0.3. Fewer than five results may therefore remain. Cohere describes Rerank 5’s scores as calibrated across queries and domains, so the same relevance threshold can filter weak context before it reaches the language model.\n\nRerank 5 can score a query and chunk together with up to 32,000 tokens combined; the walkthrough says longer inputs are split into several passes. Cohere says it reranks semi-structured material such as JSON records and tables well when formatted as YAML strings, and that switching rerank models does not require re-indexing because reranking reads raw text at query time. The post recommends Rerank 5 Pro for reasoning-heavy queries and long or domain-specific documents, and Rerank 5 Fast for high-volume search and agents that search many times per task.\n\n...\n\nOnce reranking selects the chunks, the sample sends them as numbered sources to a chat model and asks it to answer from those sources alone. The example uses deepseek/deepseek-v4.1-flash-1017, while its code comment says any chat model on OpenRouter can fill that role. If no result clears the relevance threshold, the sample skips the language-model call.",
+      "title": "Kimi K3.1 Pro on AMD Instinct GPUs",
+      "url": "https://www.amd.com/en/developer/resources/technical-articles/2026/kimi-k3-1-pro-on-amd-instinct-gpus.html",
+      "published_at": "2026-11-04T20:41:00.000Z",
+      "excerpt": "Nov 04, 2026\n\n# TL;DR\n\n- Kimi K3.1 Pro, Moonshot AI’s open-weight, natively multimodal agentic model (2.8T total and 104B activated parameters, 1M-token context), serves on 8× AMD Instinct™ MI355X GPUs with both ATOM and vLLM on day 0, from the released MXFP4 checkpoint and with its DSpark speculative-decoding draft.\n- K3.1 Pro keeps Kimi K3’s hybrid architecture: 69 Kimi Delta Attention (KDA) layers and 24 latent-attention layers over an 896-expert MXFP4 MoE. It adds a sparse indexer (DSA) to every one of the 24 attention layers, which selects 2,048 tokens of history per query. ATOM serves the indexed layers on its shared DSA path, with an FP8 index cache next to the FP8 latent KV cache\n- ATOM: native KDA and sparse MLA kernels, the routed experts on FlyDSL’s MXFP4 grouped MoE, per-channel FP8 attention applied at start-up, and a DSpark draft that shares the target’s KV cache and runs as a captured CUDA graph.\n- vLLM: memory-efficient sparse attention with decode context parallelism (DCP) for long-context serving, alongside a specialized decode path for low-latency interactive workloads\n- Accuracy on Moonshot AI’s Kimi Vendor Verifier, at reasoning effort max: OCRBench 0.871 (Moonshot reference 0.872); tool-call JSON schema 0.991.\n\n...\n\n- Hybrid attention, now sparse: Of the 93 decoder layers, 69 use Kimi Delta Attention, a gated linear attention with a fixed-size recurrent state per request. The other 24 are gated latent attention (MLA) layers: every fourth layer, plus the last. In K3.1 Pro each of them also has an indexer (32 heads of dimension 128) that scores the request’s history and selects the top 2,048 tokens for attention. Attention then reads at most 2,048 tokens per query however long the context grows; only the lightweight indexer scores the whole history.\n- Two small caches per attention layer: Each MLA layer caches one 576-wide latent per token (512 compressed KV plus 64 RoPE dimensions) and one index key per token.\n- A wide, latent MoE: There are 896 routed experts, 16 active per token, plus two shared experts. The routed experts work in a 3,584-wide latent space, half the 7,168-wide hidden size, and use the SiTU-GLU activation. Only the first layer is dense.\n- MXFP4, quantization-aware trained: The routed experts are stored in MXFP4 (one E8M0 scale per 32 values). Attention, the indexer, the shared experts, the dense MLP, the latent up/down projections, the router, the LM head and the vision encoder are BF16.\n- DSpark speculative decoding: A separate five-layer MLA draft reads hidden states from five of the target’s last layers and proposes a block of draft tokens per step.\n\n...\n\nATOM serves Kimi K3.1 Pro with tensor parallelism over the eight GPUs of one MI355X node, for text and image input, from the released MXFP4 checkpoint without conversion. With the DSpark draft loaded, each GPU peaks at about 199 GB of its 288 GB during start-up, and a single 1M-token request fits on one node.\n\n...\n\nPTPC FP8 attention: At start-up, ATOM re-quantizes the BF16 attention and dense linears to FP8 with one scale per output channel, with activations scaled per token at run time (--online_quant_config with ptpc_fp8): 559 linears per rank, done in about 2 seconds. The routed experts, the KDA convolutions, the vision encoder and the indexer-packed down-projection keep their stored formats.\n\n...\n\nvLLM supports Kimi K3.1 Pro on AMD Instinct MI355X GPUs with the MXFP4 checkpoint and DSpark speculative decoding. Built on AITER and FlyDSL kernels, the ROCm implementation combines memory-efficient sparse attention with decode context parallelism (DCP) for long-context serving, alongside a specialized decode path for low-latency interactive workloads.",
       "signal_score": 14.0,
       "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
+        "query": "AI systems GPU serving quantization research release",
         "rank": 1
       }
     },
     {
-      "id": "036920f78541",
+      "id": "3c716c666a06",
       "source": "exa_news",
-      "title": "AMD releases online quantization for vLLM ATOM SGLang | TLDR",
-      "url": "https://tldr.tech/story/ffc77033-fd7e-479e-899a-990e4e5c6793",
-      "published_at": "2026-11-05T18:07:05.000Z",
-      "excerpt": "# AMD releases online quantization for vLLM ATOM SGLang\n\nAMD has introduced online quantization, a feature that quantizes model weights layer by layer during the model-loading stage inside serving engines rather than ahead of time through a separate export job. This approach eliminates the need for intermediate disk checkpoints and enables fast exploration of quantization schemes, dynamic requantization, and reinforcement learning rollouts. Integrations are available in inference engines including vLLM, ATOM, and SGLang, with benchmarks showing that online quantization matches the accuracy and latency of traditional offline methods. Open article →",
+      "title": "Meet rag-pipeline-utils: RAG for Node.js that tells you when your LLM is making things up - DEV Community",
+      "url": "https://dev.to/devildev/meet-rag-pipeline-utils-rag-for-nodejs-that-tells-you-when-your-llm-is-making-things-up-4o3n",
+      "published_at": "2026-11-06T07:53:38.000Z",
+      "excerpt": "I maintain `@devilsdev/rag-pipeline-utils`, an open-source RAG library for Node.js built around one idea: you should be able to check every answer against the sources it came from, cheaply, in your app and in CI. This post is a quick tour. \n\n```\nnpm install @devilsdev/rag-pipeline-utils\n\n...\n\nNode.js 22+, with CommonJS, ESM and TypeScript types included.\n\n...\n\nIt checks each sentence against the sources: the words, but also the numbers and the negations, which is where answers tend to go wrong. It runs locally with no API key and makes no model calls, so the same input gives the same verdict every time, offline, in tests.\n\n...\n\nIf you do want the library to run the pipeline, `createRagPipeline()` wires an embedder, a retriever, an optional reranker and an LLM. This one runs offline, with the built-in TF-IDF embedder and an in-memory store:",
       "signal_score": 14.0,
       "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
+        "query": "latest LLM agents RAG inference open source developer tool",
         "rank": 1
       }
     },
@@ -126,7 +126,7 @@
       "title": "Supercharging XLA-based inference: Announcing the launch of XLA Serving Engine | Google Open Source Blog",
       "url": "https://opensource.googleblog.com/2026/11/supercharging-xla-inference-xla-serving-engine.html",
       "published_at": "2026-11-05T12:34:42.000Z",
-      "excerpt": "#### Thursday, November 5, 2026\n\nOleg Shaldybin\n\n and \n\nMonica Song\n\n, Google TPU Software\n\nToday we are excited to announce the launch of XLA Serving Engine (XSE), a general-purpose model export and inference runtime for the OpenXLA ecosystem, open-sourced under the Apache 2.0 license.\n\nWe created XLA Serving Engine to enable a “Train in Python, Serve in C++” workflow. Most ML engineers develop models using Python (with frameworks like JAX and PyTorch); however, some production serving environments do not allow Python due to operational and deployment complexity. XLA Serving Engine offers a solution by providing an API for engineers to export their ML models to an “XLA SavedModel” containing the StableHLO representation of their model’s function, which can then be loaded and executed by the XLA Serving Runtime.\n\nThis approach allows users to serve models (typically non-LLMs) directly in a C++ runtime, which enables high throughput at any scale and optimizes for low latency by removing the overhead of the Python interpreter. In our studies, we found that for short requests, XSE delivers 2–5x the throughput of the best Python server we could build, and 8–36x that of a straightforward one, while using 30–70% less CPU time per prediction and a quarter of the memory.\n\nLast year, we began deploying core components of XLA Serving Engine as part of Google’s internal load-bearing, production serving infrastructure. Today, XSE serves over 6 million queries per second and powers some of Google's highest-volume online inference pipelines, including YouTube Shorts, Google Ads, Search, and parts of Gemini Omni, with plans to onboard more customers internally.\n\n...\n\n- Python-Free Serving: XSE enables a “Train in Python, Serve in C++” workflow via the intermediary compiled XLA SavedModel serialization format. In our studies, we found that XSE delivers 2–5x the throughput of a pure Python server.\n- Low-latency execution: The XLA Serving Runtime wraps PJRT directly and optimizes the model using the XLA compiler. This eliminates Python runtime overhead and the global interpreter lock. XSE is C++ native, which means one process is capable of using all eight cores.\n\n...\n\n- Orbax Checkpointing Integration: XLA SavedModel stores JAX model computations as StableHLO and uses Orbax checkpoint to store the weights.\n- Flexible Scale: Supports both single-host and multi-host serving by leveraging PJRT.\n- Performance Parity: XSE preserves the performance of the model’s forward function (including kernel optimizations). Hand off your model to XLA Serving Engine with confidence that performance will be identical to its training environment.\n- Docker Packages: We provide a suite of Docker images that are tested on CPU, GPU, and TPU and expose simple gRPC APIs for calling your model.",
+      "excerpt": "### Supercharging XLA-based inference: Announcing the launch of XLA Serving Engine \n\n#### Thursday, November 5, 2026\n\nOleg Shaldybin\n\n and \n\nMonica Song\n\n, Google TPU Software\n\nToday we are excited to announce the launch of XLA Serving Engine (XSE), a general-purpose model export and inference runtime for the OpenXLA ecosystem, open-sourced under the Apache 2.0 license.\n\nWe created XLA Serving Engine to enable a “Train in Python, Serve in C++” workflow. Most ML engineers develop models using Python (with frameworks like JAX and PyTorch); however, some production serving environments do not allow Python due to operational and deployment complexity. XLA Serving Engine offers a solution by providing an API for engineers to export their ML models to an “XLA SavedModel” containing the StableHLO representation of their model’s function, which can then be loaded and executed by the XLA Serving Runtime.\n\nThis approach allows users to serve models (typically non-LLMs) directly in a C++ runtime, which enables high throughput at any scale and optimizes for low latency by removing the overhead of the Python interpreter. In our studies, we found that for short requests, XSE delivers 2–5x the throughput of the best Python server we could build, and 8–36x that of a straightforward one, while using 30–70% less CPU time per prediction and a quarter of the memory.\n\nLast year, we began deploying core components of XLA Serving Engine as part of Google’s internal load-bearing, production serving infrastructure. Today, XSE serves over 6 million queries per second and powers some of Google's highest-volume online inference pipelines, including YouTube Shorts, Google Ads, Search, and parts of Gemini Omni, with plans to onboard more customers internally.\n\n...\n\n- Python-Free Serving: XSE enables a “Train in Python, Serve in C++” workflow via the intermediary compiled XLA SavedModel serialization format. In our studies, we found that XSE delivers 2–5x the throughput of a pure Python server.\n- Low-latency execution: The XLA Serving Runtime wraps PJRT directly and optimizes the model using the XLA compiler. This eliminates Python runtime overhead and the global interpreter lock. XSE is C++ native, which means one process is capable of using all eight cores.\n\nFigure 1: Throughput under latency target\n\n- Orbax Checkpointing Integration: XLA SavedModel stores JAX model computations as StableHLO and uses Orbax checkpoint to store the weights.\n- Flexible Scale: Supports both single-host and multi-host serving by leveraging PJRT.\n- Performance Parity: XSE preserves the performance of the model’s forward function (including kernel optimizations). Hand off your model to XLA Serving Engine with confidence that performance will be identical to its training environment.\n- Docker Packages: We provide a suite of Docker images that are tested on CPU, GPU, and TPU and expose simple gRPC APIs for calling your model.",
       "signal_score": 13.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -134,55 +134,29 @@
       }
     },
     {
-      "id": "86ef835c3782",
+      "id": "ea640d6bbee6",
       "source": "exa_news",
-      "title": "Kimi K3.1 Pro on AMD Instinct GPUs",
-      "url": "https://www.amd.com/en/developer/resources/technical-articles/2026/kimi-k3-1-pro-on-amd-instinct-gpus.html",
-      "published_at": "2026-11-04T20:41:00.000Z",
-      "excerpt": "# Kimi K3.1 Pro on AMD Instinct GPUs: Day-0 support and optimization\n\n Nov 04, 2026\n\n# TL;DR\n\n- Kimi K3.1 Pro, Moonshot AI’s open-weight, natively multimodal agentic model (2.8T total and 104B activated parameters, 1M-token context), serves on 8× AMD Instinct™ MI355X GPUs with both ATOM and vLLM on day 0, from the released MXFP4 checkpoint and with its DSpark speculative-decoding draft.\n- K3.1 Pro keeps Kimi K3’s hybrid architecture: 69 Kimi Delta Attention (KDA) layers and 24 latent-attention layers over an 896-expert MXFP4 MoE. It adds a sparse indexer (DSA) to every one of the 24 attention layers, which selects 2,048 tokens of history per query. ATOM serves the indexed layers on its shared DSA path, with an FP8 index cache next to the FP8 latent KV cache\n- ATOM: native KDA and sparse MLA kernels, the routed experts on FlyDSL’s MXFP4 grouped MoE, per-channel FP8 attention applied at start-up, and a DSpark draft that shares the target’s KV cache and runs as a captured CUDA graph.\n- vLLM: memory-efficient sparse attention with decode context parallelism (DCP) for long-context serving, alongside a specialized decode path for low-latency interactive workloads\n- Accuracy on Moonshot AI’s Kimi Vendor Verifier, at reasoning effort max: OCRBench 0.871 (Moonshot reference 0.872); tool-call JSON schema 0.991.\n\n...\n\n# Serving with ATOM\n\nATOM serves Kimi K3.1 Pro with tensor parallelism over the eight GPUs of one MI355X node, for text and image input, from the released MXFP4 checkpoint without conversion. With the DSpark draft loaded, each GPU peaks at about 199 GB of its 288 GB during start-up, and a single 1M-token request fits on one node.\n\n...\n\nPTPC FP8 attention: At start-up, ATOM re-quantizes the BF16 attention and dense linears to FP8 with one scale per output channel, with activations scaled per token at run time (--online_quant_config with ptpc_fp8): 559 linears per rank, done in about 2 seconds. The routed experts, the KDA convolutions, the vision encoder and the indexer-packed down-projection keep their stored formats.\n\n...\n\nvLLM supports Kimi K3.1 Pro on AMD Instinct MI355X GPUs with the MXFP4 checkpoint and DSpark speculative decoding. Built on AITER and FlyDSL kernels, the ROCm implementation combines memory-efficient sparse attention with decode context parallelism (DCP) for long-context serving, alongside a specialized decode path for low-latency interactive workloads.",
+      "title": "Cohere Makes Embed 5 and Rerank 5 Available on OpenRouter | AI.info",
+      "url": "https://ai.info/news/cohere-embed-5-rerank-5-openrouter",
+      "published_at": "2026-11-05T00:00:00.000Z",
+      "excerpt": "Cohere says Embed 5 and Rerank 5 are now live on OpenRouter, with access through a single API. Its demonstration builds a retrieval-augmented generation (RAG) pipeline, which retrieves relevant text from a document collection before a language model answers a question.\n\n...\n\nCohere’s walkthrough uses one client for embedding documents, retrieving candidates, reranking them and sending selected text to a chat model.\n\n...\n\nThe pipeline has an offline indexing stage and an online path that runs for each question. Indexing embeds document chunks to make them searchable; each question then calls an Embed 5 Fast model, a Rerank 5 model and a chat model through OpenRouter’s API. Cohere frames knowing which calls happen once and which happen per request as a way to explain most of the pipeline’s cost and latency.",
+      "signal_score": 13.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 2
+      }
+    },
+    {
+      "id": "2e982238db06",
+      "source": "exa_news",
+      "title": "Online Requantization Speeds AI Model Checkpoint Conversion",
+      "url": "https://aidailypost.com/news/online-requantization-smooths-checkpoint",
+      "published_at": "2026-11-05T17:45:42.000Z",
+      "excerpt": "A checkpoint saved in NVFP4 doesn't automatically work on a serving stack built for FP8, and switching between the two has usually meant re-running a quantization script from scratch, calibration data and all. A team behind a new feature called online quantization is trying to cut that step out of the picture. Instead of quantizing a model offline, writing a smaller checkpoint to disk, and loading that into a serving engine later, online quantization does the work during model loading itself.\n\nThe serving engine reads a regular high-precision checkpoint and converts each layer's weights inside its own weight-loading hook, right before serving starts. No separate script, no calibration pass, no new file written to disk.\n\nThat matters most in situations where the old offline workflow breaks down: reinforcement learning rollouts where weights change every training step, or cases where a checkpoint already quantized in one format, say FP8, needs to run in another, like NVFP4, without redoing the whole pipeline. It also opens up faster experimentation with different quantization schemes and small edits to an already-quantized checkpoint, since nothing has to be rebuilt from the original weights each time.\n\n...\n\nCheckpoint formats have become a real tax on anyone trying to ship models across different hardware. A model lands in FP8 block-scale or NVFP4, but the kernels on hand want MXFP4, and until now that mismatch meant another offline quantization pass: calibration data, GPTQ or AWQ runs, a new multi-gigabyte artifact to store and track. Online requantization pushes that conversion into the serving path itself, letting one checkpoint target whatever precision a given accelerator actually wants.\n\nFor teams running mixed fleets, AMD here, Nvidia there, this cuts real operational weight: fewer quantized duplicates, less disk churn, fewer brittle one-off scripts tied to a specific GPU generation. The tradeoff worth watching is accuracy. Offline pipelines earn their keep through careful calibration; doing that work on the fly, per request, is a different engineering problem, and the summary doesn't say how recovery techniques like rotation or SmoothQuant carry over.",
       "signal_score": 13.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
         "rank": 2
-      }
-    },
-    {
-      "id": "ab3c7605854d",
-      "source": "exa_news",
-      "title": "Box taps Nvidia’s Nemotron for new agent-first content retrieval system | TechCrunch",
-      "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system",
-      "published_at": "2026-11-05T14:00:00.000Z",
-      "excerpt": "At its developer conference on Thursday, Box showed off a new feature that will build Nvidia’s Nemotron embedding system into the core of its product. \n\nCalled Box Content Retrieval, the new feature allows agents to answer queries far more effectively by relying on the embedded metadata created by Nemotron. \n\nBox says the upshot for users is faster, more accurate, and less expensive queries. Nvidia’s VP of generative AI software, Kari Briski, told TechCrunch that she expects queries to be answered four times faster, with 20% fewer errors and 90% fewer tokens used.\n\nThe system will be available to all of Box’s Enterprise Advance customers, rolling out early next year.\n\n“This dramatically boosts both the relevance of our search technology for agents,” Box CEO Aaron Levie said. “Instead of an agent having to kind of read through each document, we can send back chunks from the documents that are most relevant to the user’s query or whatever the task is that the agent is doing.”\n\nThe feature is an implementation of Nvidia’s Nemotron Embed project, which offers open-weight embedding models to improve automated retrieval systems. Major labs have often overlooked such models, which use LLMs to pre-process data so it can be better used by agents. The sector has been a focus for Nvidia’s open source model project, with its recent Nemotron release in July topping the RTEB benchmark, which measures retrieval quality.\n\nThe system will be most useful when paired with active agents, Box says, giving the example of lawyers, who will ostensibly be able to find relevant clauses and precedents more easily under the new system. Because Nemotron’s embeddings go beyond simple keywords to map underlying concepts, a search tool can surface related legal themes even when different wording or language is used.\n\nWhile the Nemotron models are freely available, the system also relies heavily on Box’s pre-existing metadata and permission controls, which will make it challenging to recreate from scratch. “We’re probably packing in five different technologies into one simple API,” Levie told TechCrunch.",
-      "signal_score": 13.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 2
-      }
-    },
-    {
-      "id": "6ee47946cb27",
-      "source": "exa_news",
-      "title": "vLLM Delivers Day-0 Support for Kimi K3.1 Pro | vLLM Blog",
-      "url": "https://vllm.ai/blog/2026-11-04-kimi-k31-pro",
-      "published_at": "2026-11-04T16:37:06.000Z",
-      "excerpt": "# vLLM Delivers Day-0 Support for Kimi K3.1 Pro\n\nNovember 4, 2026 22 min read\n\nTable of Contents\n\nKimi K3.1 Pro is Moonshot AI's most capable open-weight model: a 2.8T-parameter (104B active) multimodal MoE with a 1M-token context that matches the strongest closed-source models on coding, agentic and knowledge benchmarks.\n\nThe main change is attention: K3.1 Pro adds Sparse Attention (DSA) to all 24 full-attention layers for efficiency. vLLM supports it on day 0 on NVIDIA GPUs, AMD GPUs, Google TPUs and Alibaba T-Head Zhenwu PPUs.\n\n## TL;DR\n\n- Sparse attention on a hybrid model: K3.1 Pro keeps K3's KDA + MLA hybrid and adds a DSA indexer to all 24 MLA layers. At long context, a decode step reads about a quarter of the bytes per layer that dense MLA reads.\n- One KV cache for three kinds of state: vLLM packs each block's MLA latent, indexer keys and KDA state together. The packed cache runs with FlashInfer and FlashMLA sparse kernels with FP8 or NVFP4 KV and optional MXFP4 index keys, and P/D disaggregation transfers it unchanged.\n- Token-sharded prefill attention: up to 1.69× faster time to first token (TTFT) than head-sharded prefill at 340K tokens on 8× GB300.\n- Decode context parallelism (DCP) with a sparse indexer: an exact top-k merge with ~10× less traffic makes the attention module 1.3–1.5× faster at DCP8. DCP prefill attention runs 4.1–4.3× faster per layer, and DCP8 holds 7.2× the KV tokens of TP8.\n- Fused low-latency decode: the specialized CuTe DSL decode path from Kimi K3 now covers DSA layers, making decode 1.2–1.6× faster on 8× GB300, and 1.9× faster under DCP8.\n- Agentic serving: on NVIDIA GB300, up to 375.9 tok/s per user at the latency-sensitive end and 37.8K total tok/s per GPU at the throughput end; on NVIDIA Rubin, up to 815.6 tok/s per user and 68.7K total tok/s per GPU on the SemiAnalysis AgentX benchmark.\n- Zero-mismatch RL on day 0: for the first time, day-0 support comes with zero-mismatch RL: vLLM and Megatron produce bit-identical log-probs for both the base model and the LoRA adapter, so the PPO KL is exactly 0 at every step of a 100-step full-model run.\n\n...\n\nvLLM delivers strong performance on agentic serving workloads. We benchmark our day-0 image with the SemiAnalysis AgentX benchmark on NVIDIA GB300 and NVIDIA Rubin.\n\n### NVIDIA GB300\n\nAt the latency-sensitive end of the frontier, Kimi K3.1 Pro holds 375.9 tokens per second per user. Further along the frontier, it keeps each user above 100 tokens per second while serving 19.2K total tokens per second per GPU. At the throughput end, it reaches 37.8K tokens per second per GPU, about 26× the most interactive point, while each user still sees about 54 tokens per second.\n\nFigure 7: AgentX Pareto frontier for Kimi K3.1 Pro on NVIDIA GB300, with 4 speculative tokens and a synthetic acceptance length of 3.36 tokens. Hover a point for its configuration and metrics.\n\n### NVIDIA Rubin\n\nOn NVIDIA Rubin, Kimi K3.1 Pro holds 815.6 tokens per second per user at the latency-sensitive end of the frontier. Further along the frontier, it keeps each user above 100 tokens per second while serving 46.0K total tokens per second per GPU. At the throughput end, it reaches 68.7K tokens per second per GPU, about 51× the most interactive point, while each user still sees about 75 tokens per second.",
-      "signal_score": 12.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 3
-      }
-    },
-    {
-      "id": "9b3058145d81",
-      "source": "exa_news",
-      "title": "Leveling the Playing Field: Building a 100% Offline Kubernetes Docs RAG Exam Assistant with Web AI, Gemma 4, and WebGPU - DEV Community",
-      "url": "https://dev.to/gde/leveling-the-playing-field-building-a-100-offline-kubernetes-docs-rag-exam-assistant-with-web-ai-53bi",
-      "published_at": "2026-11-04T13:56:06.000Z",
-      "excerpt": "In this article, we'll walk through the architecture and implementation of Kubernetes WebAI RAG—an open-source, 100% offline Retrieval-Augmented Generation (RAG) system running entirely inside the browser using Gemma 4 E2B, EmbeddingGemma, LiteRT-LM, TensorFlow.js, and WebGPU.\n\n...\n\nThis project builds upon Jason Mayes' `VectorSearch.js`, which pioneered client-side vector similarity search in the browser using TensorFlow.js and WebGPU.\n\nTo transform a general-purpose browser vector search demo into an exam-ready Kubernetes Q&A system, we re-engineered the workflow around a core principle: Prepare once on the maintainer's machine; run identically and offline on every student's browser.\n\nKey architectural upgrades in `kubernetes-webai-rag` include:\n\n- Zero Startup Indexing: Instead of scraping or embedding documents in the student's browser (which would take hours) or importing massive payloads into IndexedDB on page load, the maintainer prebuilds a normalized 16,483-chunk float32 vector matrix (`768` dimensions) alongside a BM25 inverted keyword index.\n- Hybrid Search with Reciprocal Rank Fusion (RRF): Combines semantic understanding (`EmbeddingGemma`) with exact Kubernetes terminology matching (`BM25`), grouping by headings and enforcing page diversity.\n- Bundled Local Documentation Mirror: Strips external scripts, rewrites links, and mirrors the entire readable Kubernetes documentation snapshot locally so students can verify every `[1]`, `[2]` citation side-by-side.\n- On-Device Generation with Gemma 4 E2B & LiteRT-LM: Streams grounded answers and YAML manifests directly from the student's GPU, backed by atomic Origin Private File System (OPFS) model caching.\n\n...\n\n### 1. Concept Retrieval & Real-Time Streaming \n\nWhen a student asks a question (e.g., \"What is a Pod in Kubernetes and how do I create a Deployment?\"), the app:\n\n- Embeds only the question (plus up to 2 recent user questions for follow-up context) on-device using `EmbeddingGemma`.\n- Searches all 16,483 prebuilt chunks in milliseconds using WebGPU matrix multiplication and BM25 keyword search.\n- Streams a grounded explanation from Gemma 4 E2B with inline citations like `[1]`, `[2]`.",
-      "signal_score": 12.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 3
       }
     },
     {
@@ -191,7 +165,33 @@
       "title": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory | NVIDIA Technical Blog",
       "url": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory",
       "published_at": "2026-11-05T16:00:00.000Z",
-      "excerpt": "# Five Ways NVIDIA Co-Design\n\n...\n\nNov 05, 2026\n\n...\n\nAI-Generated Summary \n\n- NVFP4 reduces model footprint by approximately 3.5x versus FP16 and 1.8x versus FP8 while preserving accuracy, freeing HBM for KV cache, larger batches, and higher concurrency.\n- Wide expert parallelism in TensorRT-LLM spreads experts across eight or more GPUs, leaving more HBM per GPU for cache and raising arithmetic intensity through weight reuse.\n- NVIDIA Dynamo treats KV cache as a fleet-wide resource with KV-aware routing, disaggregated serving, and the KV Cache Runner that tiers blocks across GPU, CPU, and storage via NIXL.\n- The NVIDIA Vera CPU provides 88 Olympus cores with 1.8x faster single-threaded performance and up to 1.5 TB of LPDDR5X connected coherently to Rubin at 1.8 TB/s over NVLink-C2C, staging idle KV cache during tool calls.\n- NVIDIA CMX adds a pod-level G3.5 storage tier built on BlueField-4 STX, Spectrum-X, DOCA Memos, and Dynamo integration to share and reuse KV cache across nodes.\n- Together these five co-designed levers enable Vera Rubin NVL72 to deliver up to 30x the throughput per megawatt of GB300 NVL72 from the same 288 GB per GPU.\n\n...\n\nOn SemiAnalysis AgentX, which replays recorded coding-agent sessions with real tool-call gaps and growing context, NVIDIA Vera Rubin NVL72 then delivers up to 30x the throughput per megawatt of GB300 NVL72 at 160 tokens per second per user.\n\n...\n\nApplied to weights, NVFP4 reduces the model footprint by approximately 3.5x relative to FP16 and 1.8x relative to FP8, freeing memory for what agentic inference needs most: more KV-cache capacity, larger batches, and higher concurrency. NVFP4 has become the default precision for open agentic benchmarks with strict accuracy requirements, including AA-AgentPerf, SemiAnalysis AgentX, and MLPerf Endpoints. Across these benchmarks and leading mixture-of-experts (MoE) architectures, it delivers up to 4x the throughput of an FP8 baseline at the same interactivity (Figure 3 below).",
+      "excerpt": "# Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory\n\n Nov 05, 2026 \n\n By Eduardo Alvarez, Jamie Li and Ronil Prasad \n\n AI-Generated Summary \n\n- NVFP4 reduces model footprint by approximately 3.5x versus FP16 and 1.8x versus FP8 while preserving accuracy, freeing HBM for KV cache, larger batches, and higher concurrency.\n- Wide expert parallelism in TensorRT-LLM spreads experts across eight or more GPUs, leaving more HBM per GPU for cache and raising arithmetic intensity through weight reuse.\n- NVIDIA Dynamo treats KV cache as a fleet-wide resource with KV-aware routing, disaggregated serving, and the KV Cache Runner that tiers blocks across GPU, CPU, and storage via NIXL.\n- The NVIDIA Vera CPU provides 88 Olympus cores with 1.8x faster single-threaded performance and up to 1.5 TB of LPDDR5X connected coherently to Rubin at 1.8 TB/s over NVLink-C2C, staging idle KV cache during tool calls.\n- NVIDIA CMX adds a pod-level G3.5 storage tier built on BlueField-4 STX, Spectrum-X, DOCA Memos, and Dynamo integration to share and reuse KV cache across nodes.\n- Together these five co-designed levers enable Vera Rubin NVL72 to deliver up to 30x the throughput per megawatt of GB300 NVL72 from the same 288 GB per GPU.\n\n...\n\nApplied to weights, NVFP4 reduces the model footprint by approximately 3.5x relative to FP16 and 1.8x relative to FP8, freeing memory for what agentic inference needs most: more KV-cache capacity, larger batches, and higher concurrency. NVFP4 has become the default precision for open agentic benchmarks with strict accuracy requirements, including AA-AgentPerf, SemiAnalysis AgentX, and MLPerf Endpoints. Across these benchmarks and leading mixture-of-experts (MoE) architectures, it delivers up to 4x the throughput of an FP8 baseline at the same interactivity (Figure 3 below).",
+      "signal_score": 12.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 3
+      }
+    },
+    {
+      "id": "6ee47946cb27",
+      "source": "exa_news",
+      "title": "vLLM Delivers Day-0 Support for Kimi K3.1 Pro | vLLM Blog",
+      "url": "https://vllm.ai/blog/2026-11-04-kimi-k31-pro",
+      "published_at": "2026-11-04T16:37:06.000Z",
+      "excerpt": "Kimi K3.1 Pro is Moonshot AI's most capable open-weight model: a 2.8T-parameter (104B active) multimodal MoE with a 1M-token context that matches the strongest closed-source models on coding, agentic and knowledge benchmarks.\n\nThe main change is attention: K3.1 Pro adds Sparse Attention (DSA) to all 24 full-attention layers for efficiency. vLLM supports it on day 0 on NVIDIA GPUs, AMD GPUs, Google TPUs and Alibaba T-Head Zhenwu PPUs.\n\n...\n\n- Sparse attention on a hybrid model: K3.1 Pro keeps K3's KDA + MLA hybrid and adds a DSA indexer to all 24 MLA layers. At long context, a decode step reads about a quarter of the bytes per layer that dense MLA reads.\n- One KV cache for three kinds of state: vLLM packs each block's MLA latent, indexer keys and KDA state together. The packed cache runs with FlashInfer and FlashMLA sparse kernels with FP8 or NVFP4 KV and optional MXFP4 index keys, and P/D disaggregation transfers it unchanged.\n- Token-sharded prefill attention: up to 1.69× faster time to first token (TTFT) than head-sharded prefill at 340K tokens on 8× GB300.\n- Decode context parallelism (DCP) with a sparse indexer: an exact top-k merge with ~10× less traffic makes the attention module 1.3–1.5× faster at DCP8. DCP prefill attention runs 4.1–4.3× faster per layer, and DCP8 holds 7.2× the KV tokens of TP8.\n- Fused low-latency decode: the specialized CuTe DSL decode path from Kimi K3 now covers DSA layers, making decode 1.2–1.6× faster on 8× GB300, and 1.9× faster under DCP8.\n- Agentic serving: on NVIDIA GB300, up to 375.9 tok/s per user at the latency-sensitive end and 37.8K total tok/s per GPU at the throughput end; on NVIDIA Rubin, up to 815.6 tok/s per user and 68.7K total tok/s per GPU on the SemiAnalysis AgentX benchmark.\n- Zero-mismatch RL on day 0: for the first time, day-0 support comes with zero-mismatch RL: vLLM and Megatron produce bit-identical log-probs for both the base model and the LoRA adapter, so the PPO KL is exactly 0 at every step of a 100-step full-model run.\n\n...\n\nThe latent and the index keys can be quantized independently. An NVFP4 latent alone already brings K3.1 Pro below K3 with FP8. Opt-in MXFP4 index keys fit 11% more tokens on top and make the indexer 10–20% faster at long context. With both, eight GB300 GPUs hold 1.7× as many tokens as with FP8, and DCP8 multiplies that by seven: about 36 full 1M-token contexts at once, against 3 for TP8 with FP8.\n\n...\n\nAt the latency-sensitive end of the frontier, Kimi K3.1 Pro holds 375.9 tokens per second per user. Further along the frontier, it keeps each user above 100 tokens per second while serving 19.2K total tokens per second per GPU. At the throughput end, it reaches 37.8K tokens per second per GPU, about 26× the most interactive point, while each user still sees about 54 tokens per second.",
+      "signal_score": 12.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 3
+      }
+    },
+    {
+      "id": "f2072a832445",
+      "source": "exa_news",
+      "title": "Tencent Launches Hy4, Joining the Ranks of the World’s Leading Open-Source AI Models",
+      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models",
+      "published_at": "2026-11-04T08:06:53.000Z",
+      "excerpt": "# Tencent Launches Hy4, Joining the Ranks of the World’s Leading Open-Source AI Models\n\nNovember 4, 2026\n\nTencent today announced the release of Tencent Hy4, its latest-generation large language model, marking a significant leap in performance and capabilities that now ranks it among the world’s leading open-source AI models. Tencent Hy plans to release model weights and system cards in the coming days, reinforcing its commitment to responsible open-source AI development, with a focus on cybersecurity and biological safety.\n\n...\n\nIn a rigorous blind evaluation conducted by the Tencent Hy team in partnership with Tencent Financial Technology, Hy4 emerged as the top-performing open-source model. The assessment involved 213 financial professionals, including 153 experts from leading external institutions, approximately 70 percent of whom possessed more than five years of industry experience. Based on performance across 579 real-world financial tasks, Hy4 achieved the highest overall performance score.\n\n...\n\nFrontend & Game Development: Hy4 is optimized for high-complexity tasks, including intricate business logic, state ... This ensures that generated interfaces are not only visually polished but also fully functional. Furthermore, through collaboration with Tencent Interactive Entertainment Group (IEG) professional developers, Hy4 has significantly advanced its game development capabilities. By deeply integrating with major engines like Unreal Engine (UE), Unity, and Godot, the model now supports complex game logic and multiplayer implementations. Compared to Hy4 Preview, Hy4 improved by 19.1 percent in GameDev and 9.8 percent in GameLogic benchmarks.\n\n...\n\nHy4 is currently available across Tencent Cloud TokenHub, WorkBuddy, CodeBuddy, Yuanbao, WeCom’s AI Assistant (Dayuan), ima, and more. Additionally, the model’s API is being made available via third-party platforms such as OpenRouter, Hermes, and OpenCode. Integration efforts are underway for other Tencent products and platforms, including QQ, Honor of Kings, Game of Peace, WeRead, and Tencent News.",
       "signal_score": 11.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -199,12 +199,12 @@
       }
     },
     {
-      "id": "d7b7279ac0ec",
+      "id": "d62ece28130b",
       "source": "exa_news",
-      "title": "Building Private Offline RAG in Pure Python: Ollama, SQLite-Vec & Function Calling Agents - DEV Community",
-      "url": "https://dev.to/antigravitydev/building-private-offline-rag-in-pure-python-ollama-sqlite-vec-function-calling-agents-4gf9",
-      "published_at": "2026-11-03T01:54:40.000Z",
-      "excerpt": "Posted on Nov 3 \n\n# Building Private Offline RAG in Pure Python: Ollama, SQLite-Vec & Function Calling Agents \n\nPaying metered per-million-token bills to OpenAI or Anthropic is killing AI startup margins in 2026. If your application handles 10,000 queries per day with multi-turn context and reasoning models, you are bleeding between $800 and $3,000 every single month in variable API costs. Furthermore, healthcare, legal, and enterprise clients flatly refuse to allow sensitive internal documents to cross public cloud network boundaries.\n\nIn this deep architectural breakdown, we will build a 100% private, zero-cloud RAG pipeline and autonomous agent engine in pure Python. It runs entirely on local hardware, costs $0.00 in ongoing API subscription fees, and operates with sub-millisecond local vector retrieval.\n\n## 1. High-Level Architecture: Zero-Cloud Local AI \n\nHere is the operational pipeline: \n\n```\n[User Query / Document Input]\n              ↓\n  [Local Embedding Model: nomic-embed-text / bge-m3]\n              ↓\n  [Single-File Serverless Vector DB: SQLite + BLOB Math]\n  (Cosine Similarity via NumPy or sqlite-vec)\n              ↓\n  [Top-K Semantic Context Assembly + Prompt Guardrails]\n              ↓\n  [Local Reasoning Model: Ollama / DeepSeek-R1 / Qwen 2.5]\n  (Strict Deterministic JSON Extraction via Pydantic V2)\n              ↓\n  [Autonomous Tool Execution / Structured Response]\n\n```\n\n...\n\n## 4. Deterministic Structured Tool Calling with Pydantic V2 \n\nLocal models (like `qwen2.5-coder:7b` or `deepseek-r1:8b`) can execute real-world tools with 100% syntactic reliability when paired with Ollama's `format=\"json\"` and Pydantic schema validation: \n\n```\n# app/agents/tool_caller.py\nimport json\nimport ollama\nfrom pydantic import BaseModel, Field\n\nclass DatabaseQueryIntent(BaseModel):\n    action: str = Field(description=\"Query action: select, insert, or update\")\n    table_name: str = Field(description=\"Target table name\")\n    filters: dict = Field(default_factory=dict, description=\"Query filters\")\n    limit: int = Field(default=10, description=\"Max rows to return\")\n\nasync def parse_user_command(user_prompt: str) -> DatabaseQueryIntent:\n    client = ollama.AsyncClient()\n    schema = DatabaseQueryIntent.model_json_schema()\n\n    system_prompt = (\n        \"You are an autonomous command parser. \"\n        \"Convert user intent into the following JSON schema strictly:\\n\"\n        f\"{json.dumps(schema)}\\n\"\n        \"Return ONLY raw valid JSON. No conversational preamble.\"\n    )\n\n    response = await client.chat(\n        model=\"qwen2.5-coder:7b\",\n        messages=[\n            {\"role\": \"system\", \"content\": system_prompt},\n            {\"role\": \"user\", \"content\": user_prompt}\n        ],\n        format=\"json\"\n    )\n\n    raw_json = response[\"message\"][\"content\"]\n    return DatabaseQueryIntent(**json.loads(raw_json))",
+      "title": "The Complete Guide to RAG, MCP, LangGraph, Embeddings, and Beyond - DEV Community",
+      "url": "https://dev.to/hosseinhezami/the-modern-ai-stack-the-complete-guide-to-rag-mcp-langgraph-embeddings-and-beyond-1h7h",
+      "published_at": "2026-11-06T09:34:19.000Z",
+      "excerpt": "It is the discipline of constructing context, constraints, and examples to guide a probabilistic engine toward a deterministic outcome.\n* **System Instructions vs. User Messages:** The system prompt sets the global behavioral boundaries. The user message contains the specific task.\n* **Structured Outputs:** Modern APIs support strict JSON Schema validation. This forces the model to output valid JSON via grammar-constrained decoding, allowing application code to parse the response reliably without regex hacking.\n* **Function Calling (Tool Calling):** The model does not execute code. Instead, it outputs a structured JSON request stating, \"I need to call the `get\\_weather` function.\" Your application intercepts this, executes the API call, and feeds the result back to the model.\n* **Prompt Injection:** A security vulnerability where malicious user input overrides the system prompt. Defense requires strict input sanitization and separation of data from instructions.\n|Category|Tool / Provider|Best Use Case|Limitations|\n|**Professional API**|OpenAI / Anthropic|Production reasoning, complex agents|High token costs, data leaves your VPC|\n|**Model Router**|OpenRouter|Multi-provider failover, cost optimization|Added latency, reliance on third-party routing|\n|**Self-Hosted / Free**|Ollama + Llama 3|Local dev, privacy-sensitive prototyping|Requires significant RAM/VRAM, setup overhead|\n|**Enterprise Cloud**|AWS Bedrock / Azure AI|Compliance, VPC integration, SLAs|Complex IAM setup, enterprise pricing|\n## 4. Embeddings and Semantic Search\nAn embedding model translates unstructured data (text, images) into dense arrays of floating-point numbers called vectors. These vectors map the *semantic meaning* of the data into a high-dimensional geometric space.\n* **Semantic Similarity:** In vector space, \"canine\" and \"dog\" are located close together, while \"dog\" and \"automobile\" are far apart.\n* **Dense vs. Sparse Embeddings:** Sparse embeddings (like BM25) rely on exact keyword matching. Dense embeddings (generated by neural networks) capture contextual meaning. Modern search uses **Hybrid Search**, combining both.\n* **Distance Metrics:** Cosine similarity measures the angle between two vectors (ignoring magnitude), making it the standard for text similarity.\n* **Version Compatibility:** You cannot mix embeddings generated by `text-embedding-ada-002` with `text-embedding-3-large` in the same index. Migrating models requires re-embedding your entire dataset.\n**> Crucial Distinction:\n**> An embedding model\n*> creates\n*> the vectors. A vector database\n*> stores and searches\n*> them. They are entirely separate components in the stack. Embeddings are not vector databases.\n### Embedding Providers Comparison\n|Provider|Model Examples|Characteristics|Pricing Model|\n|**OpenAI**|`text-embedding-3-large`|High accuracy, supports dimension shortening|Paid API (per token)|\n|**Voyage AI**|`voyage-3`|Optimized for RAG, coding, and specific domains|Paid API|\n|**Jina AI**|`jina-embeddings-v3`|Strong multilingual and long-context support|Freemium / Paid|\n|**Hugging Face**|`BGE-M3` (BAAI)|Open-weight, excellent for local/hybrid search|Free (Self-hosted)|\n## 5. Vector Databases and Retrieval Infrastructure\nRelational databases are optimized for exact matches and complex joins. Vector databases are optimized for Approximate Nearest Neighbor (ANN) search across millions of high-dimensional vectors.\n* **Vector Indexing (HNSW):** Most production vector DBs use Hierarchical Navigable Small World (HNSW) graphs. This algorithm creates multi-layered maps of the data, allowing the database to skip irrelevant vectors and find the closest matches in milliseconds.\n* **Metadata Filtering:** In production, you rarely search the entire database. You search for vectors where `tenant\\_id = X` and `access\\_level = Y`. Vector DBs combine scalar metadata filtering with vector similarity search.\n* **Multitenancy:** Enterprise systems must isolate data logically (via metadata payloads) or physically (via separate collections/namespaces) to prevent cross-tenant data leaks.\n**> Crucial Distinction:\n**> Vector similarity is not truth. A vector match means the text is\n*> semantically related\n*> to the query, not necessarily that the text is factually accurate or answers the user's specific question.\n### Vector Database Comparison\n|Database|Type|Best For|Limitations|\n|**FAISS**|Library|In-memory local search, massive batch processing|Not a database; no native persistence or distributed scaling|\n|**Chroma**|Open Source|Local development, simple Python prototypes|Struggles with massive scale and complex distributed production loads|\n|**pgvector**|Postgres Ext.|Teams already using Postgres, hybrid SQL/Vector|HNSW tuning is complex; slower at massive scale than dedicated DBs|\n|**Qdrant**|Open Source|High-performance production, Rust-based, filtering|Requires dedicated infrastructure or managed cloud|\n|**Milvus**|Open Source|Massive, distributed enterprise-scale deployments|Complex Kubernetes deployment and operational overhead|\n|**Pinecone**|Managed (SaaS)|Teams wanting zero-ops, serverless vector search|Proprietary, data leaves your VPC, can become expensive at scale|\nWhen to use what? Use **Chroma** or **FAISS** for local Jupyter notebooks. Use **pgvector** if your dataset is under a few million rows and you already pay for a managed Postgres instance. Use **Qdrant** or **Milvus** when building dedicated, high-throughput production retrieval systems. For a deeper look at chunking strategies and RAG implementation and retrieval engineering, it is critical to evaluate retrieval independently of generation.\n## 6. Retrieval-Augmented Generation (RAG) and Agentic RAG\nLLMs suffer from knowledge cutoffs and hallucinations regarding private data. RAG solves this by retrieving relevant context from a vector database and injecting it into the LLM's prompt before generation.\n### The RAG Pipeline\n1. **Ingestion & Parsing:** Extracting text from PDFs, HTML, or DOCX files.\n2. **Chunking:** Splitting documents into semantic or fixed-size blocks. Poor chunking destroys context.\n3. **Metadata Extraction:** Tagging chunks with source URLs, dates, and author data.\n4. **Embedding & Storage:** Converting chunks to vectors and saving them in the DB.\n5. **Retrieval:** Searching the DB with the user's query.\n6. **Reranking:** Using a Cross-Encoder model to score the top 50 retrieved chunks and select the absolute best 5 for the prompt.\n7. **Generation:** The LLM answers using *only* the provided context.\n**Common RAG Mistakes:** Missing authorization filters (User A retrieves User B's private document chunks), and failing to evaluate retrieval separately from answer quality. More context does not automatically produce better answers; irrelevant context confuses the model and increases token costs.\n### Agentic RAG vs. Traditional RAG\nNot all RAG systems are agents.\n* **Traditional RAG:** A deterministic pipeline. User asks a question -> System retrieves 5 chunks -> LLM generates an answer.\n* **Agentic RAG:** The LLM acts as an autonomous router. It analyzes the user's intent, decides *which* database to query, evaluates the returned data, and if the evidence is insufficient, it autonomously rewrites the query and searches again.\nAgentic RAG solves complex, multi-hop questions. However, iterative retrieval introduces severe trade-offs: multiplied latency, exponential token costs, and the risk of the agent entering an infinite loop of useless searches.\n## 7. AI Agents, LangChain, and LangGraph\nAn AI agent is an LLM embedded inside an execution loop with access to memory and external tools. An LLM is not necessarily an AI agent, and an AI agent is not simply a chatbot with a system prompt.\n* **Chatbot:** Waits for user input, generates text.\n* **Automated Workflow:** Follows a rigid, deterministic DAG (Directed Acyclic Graph) defined by a developer. An automated workflow is not automatically an agent.\n* **AI Agent:** Given a high-level goal, it plans a sequence of steps, executes tools, observes the results, handles errors, and decides when the goal is achieved.\nWhen designing multi-step reasoning, hands-on AI agent engineering articles emphasize the importance of state management. A major challenge in multi-tool agents is handling conflicting results from AI agent tools, which requires robust fallback logic and human-in-the-loop escalations. Adding more agents to a system does not automatically improve it; multi-agent systems introduce massive complexity and debugging nightmares.\n### LangChain vs. LangGraph\nLangChain and LangGraph are frequently confused, but they serve fundamentally different architectural purposes. LangChain and LangGraph should not be treated as identical technologies.\n* **LangChain:** A library of integrations. It provides document loaders, vector store connectors, and basic chain abstractions. It relies on DAGs and struggles with complex loops or long-running state persistence.\n* **LangGraph:** A state-machine orchestration engine built on top of LangChain concepts. It models your application as a cyclic graph of Nodes and Edges. It maintains persistent state, allows agents to loop and self-correct, and supports checkpointing (pausing execution for human approval and resuming days later).\n**Decision Matrix:** If your application is a straight line from Input -> Retrieve -> Generate, use basic code or LangChain. If your application requires loops, branching logic, error recovery, and human oversight, you must use LangGraph.\n## 8. Model Context Protocol (MCP)\nThe **Model Context Protocol (MCP)** is an open standard that standardizes how AI applications connect to external data sources and tools. Before MCP, every AI framework had its own proprietary way of defining and executing \"tools.\"\n**MCP Architecture:**\n* **MCP Host:** The AI application (e.g., Claude Desktop, an IDE, or a custom agent).\n* **MCP Client:** The protocol layer inside the Host that maintains connections to servers.\n* **MCP Server:** A lightweight service that exposes specific capabilities (Tools, Resources, Prompts) via the protocol.\n**> Crucial Distinction:\n**> MCP is not an AI model or an agent framework. It is a transport and discovery protocol. Function calling and MCP solve related but different integration problems; function calling is how a model requests a tool, while MCP is how the application discovers and connects to the tool server.\nReviewing MCP integrations and tool-governance patterns helps clarify how to expose local resources safely. In enterprise environments, putting authorization boundaries around AI tool calls ensures agents don't access unauthorized data, even if the MCP server exposes the tool. MCP does not bypass security; it requires strict trust management and tool permission boundaries.\n## 9. AI Automation with n8n\n**n8n** is a visual workflow automation platform that has heavily invested in AI nodes. It allows developers to connect webhooks, APIs, and databases to LLMs without writing boilerplate backend code.\n* **AI Nodes:** n8n provides visual nodes for LLM chains, vector store retrieval, memory management, and tool execution.\n* **Orchestration:** It excels at event-driven AI. For example: *Webhook receives email -> Extract text -> Embed -> Store in Pinecone -> Trigger Slack Alert.*\n* **Licensing Distinction:** n8n is \"fair-code\" (Sustainable Use License). It is free to self-host for internal business use, but you cannot resell it as a competing SaaS product. It is not strictly OSI open-source.\nExploring n8n AI automation workflows shows how to connect triggers to LLMs visually. However, n8n is an orchestration platform, not a replacement for every backend service. If your AI logic requires complex graph state management (LangGraph) or heavy custom code, n8n becomes a bottleneck. Use n8n for integrations, routing, and business logic automation.\n## 10. Production AI Engineering\nMoving from prototype to production requires implementing the \"boring\" engineering disciplines: Observability, Evaluation, and Guardrails. A successful prototype is not necessarily production-ready.\n### Observability and Tracing\nYou cannot debug an LLM using standard `print()` statements. You need distributed tracing to see the exact prompt, the retrieved context, the tool calls, and the latency of every step.\n* **Langfuse:** The leading open-source LLM engineering platform for tracing, prompt management, and cost tracking.\n* **Arize Phoenix:** Excellent for deep observability, evaluating embeddings, and detecting drift in production data.\n### Evaluation (Eval)\nHow do you know if your RAG system is working?\n* **Ragas:** Specifically evaluates RAG pipelines (Context Precision, Context Recall, Faithfulness).\n* **Promptfoo:** A CLI tool for red-teaming models, testing prompt variations, and asserting JSON schema compliance.\n* **DeepEval:** An open-source framework for writing unit tests for LLM outputs.\n### Resilience and Guardrails\n* **Semantic Caching:** Caching vector embeddings of user queries to return instant, free responses to repetitive questions.\n* **Provider Failover:** For high-availability setups, building resilient multi-provider AI systems is a standard requirement to survive API outages.\n* **Guardrails:** Frameworks like NeMo Guardrails that intercept user inputs and model outputs to block PII leakage, toxic language, or off-topic hallucinations.\n## 11. Practical Architecture Scenarios\n### Scenario 1: A Basic AI Chatbot\n* **Architecture:** Frontend UI -> API Gateway -> OpenAI/Anthropic API -> Response.\n* **Reality Check:** You do not need a vector database, LangChain, or an agent framework. A simple Python/Node.js HTTP wrapper with a system prompt is sufficient.\n### Scenario 2: An AI Assistant for Private Company Documents\n* **Architecture:** Document Ingestion (LlamaIndex) -> Chunking -> Embeddings (Voyage AI) -> Vector DB (Qdrant). User Query -> Hybrid Search -> Reranker -> LLM Generation.\n* **Reality Check:** This is standard RAG. The hardest part is not the LLM; it is the document parsing (handling complex PDF tables) and strict metadata filtering for user access control.\n### Scenario 3: An AI Agent Using External Systems\n* **Architecture:** User Goal -> LangGraph Agent -> MCP Client -> MCP Servers (CRM, SQL Database, Jira).\n* **Reality Check:** Requires robust state management.",
       "signal_score": 11.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
@@ -212,28 +212,15 @@
       }
     },
     {
-      "id": "2b64433b8716",
+      "id": "9b3058145d81",
       "source": "exa_news",
-      "title": "Ex-Googlers' new Apache 2.0 model Ripple-65B Preview claims the U.S. open coding lead on two major benchmarks",
-      "url": "https://venturebeat.com/technology/ex-googlers-new-apache-2-0-model-ripple-65b-preview-claims-the-u-s-open-coding-lead-on-two-major-benchmarks",
-      "published_at": "2026-11-05T00:55:41.000Z",
-      "excerpt": "There's another American victory worth paying attention to today: a new, open weights AI model that its creators claim scores the higher on coding performance on two third-party benchmarks compared to any other open model from the U.S.\n\nIt's called Ripple-65B Preview, and is the work of the lesser-known startup Ricursive Intelligence, which notes that it takes the lead on Terminal-Bench 2.1 and SWE-bench Pro v2.0 Hard, two of the leading benchmarks used to measure performance at writing code in a terminal environment and difficult software engineering tasks, respectively (the latter just introduced back in September).\n\nRipple-65B Preview is available now for download on Hugging Face and via selected third-party application programming interface (API) partners including Together AI, GMI Cloud, and OpenRouter, with Fireworks support expected soon as well. \n\nOpenRouter’s GMICloud endpoint charges $0.20 per million input tokens and $0.60 per million output tokens.\n\n...\n\nRipple contains 65 billion parameters, the numerical values a model learns during training. Ricursive trained it from scratch on 12 trillion tokens, units of text that can represent words, word fragments or punctuation.\n\nThe company emphasized tasks in which a model takes multiple steps and uses software tools to complete a job. Its launch materials reported the following results:\n\n| Benchmark | Ripple-65B Preview (65B) | Nvidia Nemotron 3 Ultra (550B) | Thinking Machines Inkling (975B) | Meta Muse Spark Open (816B) | Reflection Beam (501B) |\n| --- | --- | --- | --- | --- | --- |\n| Terminal-Bench 2.1 | 80.5 | 56.4 | 63.8 | 76.4 | 80.1 |\n| SWE-bench Pro v2.0 Hard | 79.1 | 30.7 | 39.6 | 72.4 | 76.5 |\n| DeepSWE 1.1 | 44.3 | 0.6 | 5.0 | 60.0 | 43.3 |\n| HMMT February 2026 | 90.5 | 80.3 | 86.3 | 93.9 | 93.9 |\n| FORTRESS Adversarial | 83.8 | 79.3 | 78.0 | 94.2 | 92.1 |\n| AutomationBench, public | 36.4 | 8.4 | 14.6 | 42.4 | 39.3 |\n\nOn Terminal-Bench, Ricursive placed Ripple just ahead of Reflection’s Beam at 80.1, followed by Meta’s Muse Spark Open at 76.4, Thinking Machines’ Inkling at 63.8 and Nvidia’s Nemotron 3 Ultra at 56.4. Ripple’s advantage over Beam is approximately 0.4 percentage points using those rounded figures.",
+      "title": "Leveling the Playing Field: Building a 100% Offline Kubernetes Docs RAG Exam Assistant with Web AI, Gemma 4, and WebGPU - DEV Community",
+      "url": "https://dev.to/gde/leveling-the-playing-field-building-a-100-offline-kubernetes-docs-rag-exam-assistant-with-web-ai-53bi",
+      "published_at": "2026-11-04T13:56:06.000Z",
+      "excerpt": "In this article, we'll walk through the architecture and implementation of Kubernetes WebAI RAG—an open-source, 100% offline Retrieval-Augmented Generation (RAG) system running entirely inside the browser using Gemma 4 E2B, EmbeddingGemma, LiteRT-LM, TensorFlow.js, and WebGPU.",
       "signal_score": 10.0,
       "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 5
-      }
-    },
-    {
-      "id": "1b8db94f9ad4",
-      "source": "exa_news",
-      "title": "NVIDIA Boosts Ling-3.0-flash Throughput 42.5% On DGX Spark - Dataconomy",
-      "url": "https://dataconomy.com/2026/11/04/nvidia-boosts-ling-30-flash-throughput-425-on-dgx-spark",
-      "published_at": "2026-11-04T10:26:04.000Z",
-      "excerpt": "NVIDIA said three software optimizations raised decode throughput for Ant Group inclusionAI’s Ling-3.0-flash model by 42.5% on a single DGX Spark desktop system.\n\nTests across all 1,319 GSM8K questions increased throughput to 53.89 tokens per second from 37.81 tokens per second, while accuracy changed to 96.82% from 96.89%, a statistically undetectable difference, NVIDIA said.\n\nThe test used Ling-3.0-flash-fp4, a mixture-of-experts model with 124 billion total parameters and 5.1 billion active parameters per token. The model has a native 256,000-token context window.\n\nDGX Spark uses NVIDIA’s GB10 Grace Blackwell Superchip and has 128 GB of unified memory and 273 GB/s of memory bandwidth. NVIDIA rates the system for inference on models with as many as 200 billion parameters and says it can deliver up to 1 petaFLOP of sparse FP4 computing performance.\n\nNVIDIA profiled the model at batch size one and found decoding was constrained by memory reads, particularly in mixture-of-experts computation and the language-model output head. The baseline followed the official W4A8 recipe, using FlashInfer MXFP4 MoE kernels, CUTLASS dense GEMM and an FP32 language-model head.\n\n...\n\nThe first change replaced FlashInfer’s MoE backend with Humming, an independent kernel library that compiles kernels at runtime for specific matrix shapes, data types and GPUs. NVIDIA said the change supported the model’s narrow 768-wide expert layer and increased throughput by 9.3% to 39.45 tokens per second.\n\nThe second change applied FP8 quantization to the language-model head at load time. The head is a 157,184-by-2,560 BF16 matrix, and NVIDIA said FP8 halves the memory reads required for that layer. Humming combined with the FP8 head reached 43.94 tokens per second, up 21.7% from baseline.\n\nThe third change used multi-token prediction speculative decoding through Ling-3.0-flash’s built-in NEXTN prediction layer, eliminating the need for a separate draft model. On the synthetic test, 3.90 tokens were accepted per round and throughput rose to 102.88 tokens per second, a 185.1% increase from baseline.\n\n...\n\nWith all three changes enabled on GSM8K, time per output token fell to 18.56 milliseconds from 26.45 milliseconds. Mean latency declined 24.5% to 11.49 seconds from 15.21 seconds.",
-      "signal_score": 10.0,
-      "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
+        "query": "latest LLM agents RAG inference open source developer tool",
         "rank": 5
       }
     },
@@ -243,11 +230,63 @@
       "title": "Together Compiler: Continuous Compilation for AI inference",
       "url": "https://www.together.ai/blog/together-compiler-continuous-compilation-for-ai-inference",
       "published_at": "2026-11-04T00:00:00.000Z",
-      "excerpt": "Published 11/4/2026\n\n# Together Compiler: Continual Compilation for AI inference\n\n- Authors Reyna Abhyankar, Dylan Lim, and Simran Arora\n- Table of contents 40+ Models Chosen for Production...40+ Models Chosen for Production...40+ Models Chosen for Production...\n- Links in this article Polymorphic Inference Paper\n\nAI inference workloads are dynamic. There are thousands of regimes spanning new models, hardware platforms, customers, use cases, and traffic shapes. It’s no longer scalable to optimize each of these regimes by hand.\n\n...\n\nAgents are a great fit for this problem, in theory. They can adapt to new workloads and search over the space of possible optimizations without relying on fixed rules or heuristics that plague human experts and traditional machine learning compilers. However, today’s agentic systems are bottlenecked by the speed of experimentation.\n\n### We introduce Together Compiler (TKCC), the first truly continual RSI system that leverages high-throughput agents to optimize to diverse inference workloads.\n\nIn less than 24 hours, TKCC achieves up to 2.6x higher TPS across frontier open source models (Kimi K3, GLM 5.3, MiniMax M3.1-Flash, DeepSeek v4.1-Flash), sets the state-of-the-art on SemiAnalysis’ InferenceX benchmark for low-latency with 1111 TPS on MiniMax M3.1-Flash and 1205 TPS on DeepSeek v4.1-Flash, and outperforms available open-source megakernels by 1.7x on their workhorse Llama 1B batch size 1 setting. Furthermore, TKCC generalizes to domains beyond language model inference (weather modeling, PDE, time-series, and biology). This performance boost is enabled by TKCC’s 252x higher experiment throughput compared to baseline agentic RSI performance optimization systems. Together Compiler is serving trillions of tokens today.\n\n...\n\n## Overview of Together Compiler\n\nTKCC takes as input the traffic shape, model, and hardware. TKCC uses agents to generate a series of optimizations for an inference engine. \n\nFigure 1: Together Compiler recompiles as traffic drifts, with agents, a persistent engine and an ensemble in a loop.\n\n### The core insights in TKCC are as follows:\n\n1. TKCC maximizes experimentation throughput and minimizes GPU idle time during agent optimization\n\n‍ Most existing agentic inference optimization systems require agents to launch and teardown engines like VLLM, SGLang, or TRT-LLM to test each new experiment. However, engine start times are tens of minutes, significantly impeding experimentation throughput (see table below). Instead, TKCC proposes a new paradigm of “persistent engines” where the engine starts up once and can hot-reload any candidate forward pass, without any restarts. To ensure that the persistent engines constantly have new optimizations to test, TKCC spawns multiple agents that continually generate ideas and communicate via a message board to parallelize their efforts.\n\n...\n\nWe select popular open-source code bases across weather modeling, PDE, time-series, and biology. We show the geometric mean speedups of TKCC over simply using Claude Code with the /goal command, illustrating that the principles of TKCC generalize across domains. We have been using TKCC as a general purpose AI compiler beyond LLM inference.",
+      "excerpt": "# Together Compiler: Continual Compilation for AI\n\n...\n\n### We introduce Together Compiler (TKCC), the first truly continual RSI system that leverages high-throughput agents to optimize to diverse inference workloads.\n\nIn less than 24 hours, TKCC achieves up to 2.6x higher TPS across frontier open source models (Kimi K3, GLM 5.3, MiniMax M3.1-Flash, DeepSeek v4.1-Flash), sets the state-of-the-art on SemiAnalysis’ InferenceX benchmark for low-latency with 1111 TPS on MiniMax M3.1-Flash and 1205 TPS on DeepSeek v4.1-Flash, and outperforms available open-source megakernels by 1.7x on their workhorse Llama 1B batch size 1 setting. Furthermore, TKCC generalizes to domains beyond language model inference (weather modeling, PDE, time-series, and biology). This performance boost is enabled by TKCC’s 252x higher experiment throughput compared to baseline agentic RSI performance optimization systems. Together Compiler is serving trillions of tokens today.\n\n...\n\nTKCC takes as input the traffic shape, model, and hardware. TKCC uses agents to generate a series of optimizations for an inference engine.\n\n...\n\n1. TKCC maximizes experimentation throughput and minimizes GPU idle time during agent optimization\n\n‍ Most existing agentic inference optimization systems require agents to launch and teardown engines like VLLM, SGLang, or TRT-LLM to test each new experiment. However, engine start times are tens of minutes, significantly impeding experimentation throughput (see table below). Instead, TKCC proposes a new paradigm of “persistent engines” where the engine starts up once and can hot-reload any candidate forward pass, without any restarts. To ensure that the persistent engines constantly have new optimizations to test, TKCC spawns multiple agents that continually generate ideas and communicate via a message board to parallelize their efforts.",
+      "signal_score": 10.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 5
+      }
+    },
+    {
+      "id": "56a79565a53e",
+      "source": "exa_news",
+      "title": "Teel: Parallel Execution for Python Agents, No Async | AI21",
+      "url": "https://www.ai21.com/blog/teel-turbo-efficient-execution-library",
+      "published_at": "2026-11-05T06:57:11.000Z",
+      "excerpt": "In Brief\n\nTeel is an open source Python runtime that overlaps independent IO-bound calls in code you wrote sequentially. No `async`, no `await`, no `futures`, no `gather`. Mark expensive functions with `@cacheable`, mark orchestration with `@jit`, and a magic shadow interpreter reads ahead through your bytecode, finds calls whose arguments are already known, and dispatches them on background threads before the main thread arrives. On Princeton’s Tree of Thoughts, unmodified: 83% less runtime on average, and 8.07x on the longest run. 19% faster on average than LLM-generated `async` JavaScript inside a Deep Agents coding agent. Check the repo: github.com/AI21Labs/teel",
       "signal_score": 9.0,
       "community_metrics": {
         "query": "latest LLM agents RAG inference open source developer tool",
         "rank": 6
+      }
+    },
+    {
+      "id": "993e72f0bf37",
+      "source": "exa_news",
+      "title": "Intel offers Day-0 dupport for Meta's Muse Spark open data center silicon built for 816B scale",
+      "url": "https://www.dqindia.com/semiconductors/intel-offers-day-0-dupport-for-metas-muse-spark-open-data-center-silicon-built-for-816b-scale-12770975",
+      "published_at": "2026-11-05T22:00:37.000Z",
+      "excerpt": "Meta’s official open-weight release of Muse Spark Open, an 816 billion-parameter any-to-text model, represents a major milestone in multimodal AI and the most capable U.S. open-weights model released to date.\n\nDeploying an 816 billion-parameter architecture requires extreme memory efficiency and hardware-level low-precision acceleration. Intel has enabled day-0 support across Intel Xeon® processors and Intel data center GPU platforms, Intel GPU D-series, through targeted low-bit model quantization.\n\n...\n\nMuse Spark Open has been tested and is running on the upcoming Intel GPU D-series, today. This early work reflects Intel’s commitment to day-0 support for emerging AI models and gives customers an early path to begin evaluating Muse Spark Open on Intel silicon.\n\nMuse Spark Open inference was running on four Intel GPU D-series GPUs. Each GPU provides 160 GB of memory, offering sufficient capacity to run Muse Spark Open across four GPUs.\n\n...\n\nSoftware support and enablement Intel’s Upstreaming First software strategy helps enterprise AI engineering teams deploy both quantized variants using standard open-source tools.\n\nFull upstream support for compressed tensors, such as MXFP4, and GPTQ (INT4 WOQ) in mainline vLLM enables hardware-accelerated matrix execution, continuous batching and PagedAttention across multinode deployments. Native upstream integration for microscaling (MX) execution and Intel XPU-optimized kernels in SGLang drives high-throughput continuous batching and low-bit inference for complex, multiturn agentic workflows.\n\nTo maximize efficiency on Intel silicon without sacrificing accuracy, Intel quantized MXFP4 and INT4 variants directly from Muse Spark Open’s original BF16 weights using vLLM’s native quantization tool, llm-compressor, powered by the AutoRound quantization algorithm.\n\nIntel’s AutoRound algorithm optimizes rounding and clipping-range parameters layer by layer, helping preserve Muse Spark Open’s fine-grained reasoning capabilities even at ultra-low bit widths.\n\nThe MXFP4 weights, in compressed-tensors format, target Intel GPU D-series GPUs to use native hardware acceleration, while the INT4 weights, in GPTQ format, support Xeon processors in weight-only quantization mode to minimize memory footprint and latency.",
+      "signal_score": 9.0,
+      "community_metrics": {
+        "query": "AI systems GPU serving quantization research release",
+        "rank": 6
+      }
+    },
+    {
+      "id": "cde63fd8e3f2",
+      "source": "exa_news",
+      "title": "Together AI Releases Together Compiler: Agents Make Inference Up to 2.6x Faster - MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/11/05/together-ai-together-compiler-continual-compilation-ai-inference",
+      "published_at": "2026-11-05T08:02:58.000Z",
+      "excerpt": "November 5, 2026\n\nTogether AI has introduced Together Compiler (TKCC), an agent-driven system that keeps re-optimizing inference as production traffic changes. Together Compiler already runs on several of Together’s serverless endpoints. The core claim for developers: an engine tuned once goes stale, so tuning should never stop.\n\n## TL;DR\n\n- System: It is an optimization system, tested on Kimi K3, GLM 5.3, MiniMax M3.1 Flash, DeepSeek v4.1 Flash and Llama 1B.\n- Runs on: NVIDIA B200, B300, GB300, H100, AMD MI355X and AWS Trainium2. Each run used at most 2 nodes per model.\n- Performance: Up to 2.6x higher TPS than the best published InferenceX configurations, in under 24 hours per setting.\n- Best: 1,111 P90 TPS per user on MiniMax M3.1 Flash (B200, batch size 1), 1.8x over the 633 TPS baseline.\n- Worst: GLM 5.3 on MI355X moved only from 463 to 480 TPS (about 4%).\n\n...\n\nTogether Compiler is a continual compilation loop from Together AI that uses coding agents to rewrite a model’s forward pass. It takes a server launch command, a traffic profile and a hardware configuration. Agents propose faster forward passes, and a persistent engine measures each one. The winning code ships into the serving engine. When traffic drifts, the loop runs again.\n\n...\n\n## Benchmarks: how fast is Together Compiler?\n\nOn SemiAnalysis InferenceX‘s AgentX workload, Together Compiler beat the best open configurations by up to 2.6x TPS. Each setting ran under 24 hours on at most 2 nodes.\n\nBatch size 1, P90 TPS per user (Together Compiler vs InferenceX best, self-reported):\n\n- MiniMax M3.1 Flash (B200): 1,111 vs 633\n- DeepSeek v4.1 Flash (GB300): 1,205 vs 943\n- GLM 5.3 (B200): 417 vs 329\n- Kimi K3 (GB300): 450 vs 423\n- GLM 5.3 (MI355X): 480 vs 463\n\nFor MiniMax, the cost model picked TP8 over the baseline’s TP4. That halves each GPU’s weight traffic in memory-bound decode.",
+      "signal_score": 8.0,
+      "community_metrics": {
+        "query": "latest technical AI model infrastructure release benchmark developer",
+        "rank": 7
+      }
+    },
+    {
+      "id": "ab3c7605854d",
+      "source": "exa_news",
+      "title": "Box taps Nvidia’s Nemotron for new agent-first content retrieval system | TechCrunch",
+      "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system",
+      "published_at": "2026-11-05T14:00:00.000Z",
+      "excerpt": "At its developer conference on Thursday, Box showed off a new feature that will build Nvidia’s Nemotron embedding system into the core of its product. \n\nCalled Box Content Retrieval, the new feature allows agents to answer queries far more effectively by relying on the embedded metadata created by Nemotron. \n\nBox says the upshot for users is faster, more accurate, and less expensive queries. Nvidia’s VP of generative AI software, Kari Briski, told TechCrunch that she expects queries to be answered four times faster, with 20% fewer errors and 90% fewer tokens used.\n\n...\n\nThe feature is an implementation of Nvidia’s Nemotron Embed project, which offers open-weight embedding models to improve automated retrieval systems. Major labs have often overlooked such models, which use LLMs to pre-process data so it can be better used by agents. The sector has been a focus for Nvidia’s open source model project, with its recent Nemotron release in July topping the RTEB benchmark, which measures retrieval quality.",
+      "signal_score": 8.0,
+      "community_metrics": {
+        "query": "latest LLM agents RAG inference open source developer tool",
+        "rank": 7
       }
     },
     {
@@ -256,46 +295,7 @@
       "title": "Open-source AI this week: Humming kernels and vLLM on TPUs",
       "url": "https://thelatentdaily.com/articles/open-source-ai-this-week-humming-kernels-vllm-torchtpu",
       "published_at": "2026-11-04T04:30:00.000Z",
-      "excerpt": "vLLM shipped Humming, a quantized-kernel library built with Ant Group, and vllm-torchtpu, a Google Cloud TPU backend, alongside day-0 model support.\n\n...\n\nThe vLLM project, the open-source engine many teams use to serve language models, shipped two notable pieces of infrastructure over the past two weeks: Humming, a library of fast kernels for quantized models built with Ant Group, and `vllm-torchtpu`, a backend that runs vLLM on Google Cloud TPUs. It also kept up its habit of day-0 support for new models, including Mistral Large 4 on October 29. This edition covers what each release does, the numbers the maintainers published, and the caveats.\n\n## Humming: one description of quantization, many fast kernels\n\nQuantization shrinks a model’s weights, and sometimes its activations, to fewer bits so it fits in less memory and runs faster. The catch is that every format needs a matching GPU kernel, and writing them one by one does not scale. Humming, announced October 21, separates the description of a quantized computation from the choice of how to execute it. A unified representation turns different export formats into one description of weights, scales and zero points, and kernels are compiled just in time from shared CUDA components.\n\n...\n\nPer the project’s post, it supports weight-and-activation combinations from W4A16 to W4A4, formats such as INT4, MXFP4, MXINT4 and NVFP4, and NVIDIA GPUs from Turing onward, plus T-Head’s Zhenwu 810E. The authors credit engineers from Ant Group and the vLLM community.\n\nThe reported results are community microbenchmarks, with baselines that vary by chart:\n\n- Dense W4A16 matches or beats vLLM’s Marlin kernels in most tested settings, with larger gains on some B300 cases.\n- For mixture-of-experts layers, MXFP4 reaches about twice Marlin on H20 and H200 at medium and large batches.\n- In one end-to-end test on DeepSeek-V4.1-Flash with eight H20 GPUs, switching from Marlin W4A16 to Humming W4A8 raised output throughput by 14% to 43% and cut mean time to first token by about 25% to 32%.\n\n...\n\nMarlin is the established open kernel for 4-bit weights in vLLM; Humming targets a wider range of formats and GPU generations rather than one format. The honest reading is “promising, verify on your hardware.” The post itself notes limits: autotuning is not yet available so heuristics may miss the best configuration on some workloads, the end-to-end test covers one model on one setup, and it names no license in the text we reviewed, so check the repository before adopting. For background, see our quantization explainer.\n\n## vllm-torchtpu: vLLM on Google TPUs\n\nAnnounced October 20, `vllm-torchtpu` is an out-of-tree platform plugin that vLLM detects automatically once installed. It builds on Google’s TorchTPU stack and comes from a partnership between Inferact and Google. The goal is to keep the same CLI, OpenAI-compatible server, scheduler and KV cache manager that users have on GPUs, so most supported models should serve on TPU without model-code changes.\n\nKey details from the post:\n\n- TPU v7x (Ironwood) is the recommended target and is tested in continuous integration on every pull request; v6e, v5e and v5p are experimental.\n- Custom Pallas kernels cover attention variants, fused mixture-of-experts and quantized matrix multiplies in FP8, INT8, MXFP4 and NVFP4.\n- All six of vLLM’s parallelism dimensions work across multi-host TPU slices, and the backend supports KV cache offloading to host memory and disaggregated prefill and decode.\n- Installation is `pip install vllm-torchtpu` on a Cloud TPU VM with Python 3.12; the first start compiles graphs, which can take minutes.\n\n...\n\n- Humming is a quantized-kernel library from Ant Group and the vLLM community, available in vLLM 0.29.0.\n- Maintainer benchmarks show up to roughly 2x over Marlin on some mixture-of-experts layers, with caveats.\n- `vllm-torchtpu` runs vLLM on Google Cloud TPUs, with v7x as the supported target.\n- No TPU performance numbers have been published yet.\n- Validate vendor and community benchmarks on your own workload.",
-      "signal_score": 9.0,
-      "community_metrics": {
-        "query": "AI systems GPU serving quantization research release",
-        "rank": 6
-      }
-    },
-    {
-      "id": "1aed0d525704",
-      "source": "exa_news",
-      "title": "Baidu Releases ERNIE 5.5 Flash Base for Further Training – Unite.AI",
-      "url": "https://www.unite.ai/baidu-releases-ernie-5-5-flash-base-for-further-training",
-      "published_at": "2026-11-05T14:40:32.000Z",
-      "excerpt": "Baidu’s ERNIE Team announced ERNIE-5.5-Flash-Base on November 5, 2026, releasing downloadable weights for a text-only mixture-of-experts model with 280 billion total parameters and 14 billion activated per token. The checkpoint ends pre-training, before mid-training or post-training, giving developers a common starting point for domain adaptation, instruction tuning and reinforcement-learning research.\n\nThe release also provides a fixed baseline for controlled comparisons of training methods. Baidu said a post-trained ERNIE 5.5 Flash model will follow this base version.\n\n...\n\n## Baidu’s Benchmark Results\n\nBaidu evaluated ERNIE against the publicly released DeepSeek-V4-Flash-Base, Hy3-preview-Base and MiMo-V2.5-Base checkpoints with the same harness, prompts and few-shot examples, and the same LLM judge for free-form question answering. Selected results from its table show where the model leads and where it trails:\n\n| Benchmark | ERNIE 5.5 Flash | DeepSeek V4 Flash | Hy3 preview | MiMo V2.5 |\n| --- | --- | --- | --- | --- |\n| MMLU, five-shot EM | 93.3 | 89.4 | 87.5 | 87.6 |\n| HumanEval+, one-shot Pass@1 | 82.3 | 69.5 | 78.0 | 74.4 |\n| FullStackBench, one-shot Pass@1 | 54.6 | 43.3 | 56.7 | 54.1 |\n| InfiniteBench, zero-shot average | 46.5 | 48.0 | 33.0 | 46.7 |\n\nBaidu’s comparison is task-dependent rather than a clean sweep: ERNIE leads the MMLU and HumanEval+ results shown, while Hy3 leads FullStackBench and DeepSeek leads InfiniteBench. The table supports strong exam and coding showings within Baidu’s evaluation while preserving those exceptions.\n\n...\n\nDownloads are available in FP8 and BF16 safetensors formats. The model card documents production serving with SGLang and vLLM through the completions API, matching the checkpoint’s base-model status. NVIDIA’s Megatron Bridge recipe adds a supervised fine-tuning workflow covering data preparation, training and export back to Hugging Face format. Its full-model recipe uses 16 nodes with four GB300 GPUs per node. NVIDIA validates the recipes on Blackwell GB200 and GB300 systems; the components support Hopper, but Hopper is not validated.",
-      "signal_score": 8.0,
-      "community_metrics": {
-        "query": "latest technical AI model infrastructure release benchmark developer",
-        "rank": 7
-      }
-    },
-    {
-      "id": "75ad2f18cd4b",
-      "source": "exa_news",
-      "title": "Introducing AgentEnv: An Open-Source Framework for Building RL Environments | Scale Labs",
-      "url": "https://labs.scale.com/blog/introducing-agentenv",
-      "published_at": "2026-11-05T10:28:03.000Z",
-      "excerpt": "10/5/2026\n\n# Introducing AgentEnv: An Open-Source Framework for Building RL Environments\n\nBy Edgar Arakelyan, Tejas Polakam, Yzabelle Go\n\nAn agent is only as good as the world it operates in, and building worlds that are realistic, accurate, and scalable all at once is the hard part of scaling RL. Every RL environment Scale builds runs on AgentEnv. Today we're open-sourcing it.\n\n...\n\nMost tools for agent training start from the task and build a world around it. AgentEnv’s philosophy starts from the world first, so one Environment can host many Tasks and many agents. AgentEnv is built on two core principles\n\nBuilding blocks: What an Environment is made of. An Environment is built from versioned composable blocks: Environments like Slack or Gmail, an Artifact of data that populates them, and Rules (the clock, triggers, and roles) that govern how it behaves.\n\nInteroperability: What an Environment works with. An Environment doesn't assume anything about who or what runs it. Any agent can connect to it, any sandbox can host it, and your cloud can run it, all through open protocols instead of custom glue.\n\n...\n\n#### Designed for Interoperability\n\nAgent Agnostic. An Environment's card tells an agent which tools it serves and how to reach them, over MCP, REST or a generated CLI. An agent's Agent Card, from the open A2A protocol, does the same in the other direction.\n\nPair any Environment Card with any Agent Card and the agent can start work, with no custom wiring. The same Task runs unchanged and consistent on Claude Code, OpenAI's agents, or any of your own custom agents.\n\n...\n\nIn the future, we will be adding\n\n...\n\nA Task is constructed as a DAG of AgentEnv steps. Each step represents a primitive action on an Agent, the Environment and more, like setting up the world, loading data, setting the clock, bringing in an agent, handing it the work, collecting what it made, grading the result with a rubric or a strict check.\n\n...\n\n### What comes out of the box\n\nAgentEnv ships 48 built-in step types, covering everything from deploying an Environment to setting its Rules of the World to grading trajectories. Most RL Tasks can be built from these alone, with no new code. For the rest, you can add your own steps as plugins.",
-      "signal_score": 8.0,
-      "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
-        "rank": 7
-      }
-    },
-    {
-      "id": "3d088740bf2b",
-      "source": "exa_news",
-      "title": "4-Bit Quantization Drops Video Quality on AMD GPUs",
-      "url": "https://aidailypost.com/news/quark-full-w4a4-00161-vbench-gap",
-      "published_at": "2026-11-04T18:42:28.000Z",
-      "excerpt": "By AI Daily Post Edited by Brian Petersen, Editor-in-Chief November 4, 2026 • 4 min read \n\nAMD's ROCm team ran a quantization experiment on Wan2.2-T2V-A14B, a large diffusion transformer used for text-to-video generation, and found that shrinking every layer to 4-bit weights and 4-bit activations produces a visible quality drop, even when the VBench score looks close to the full-precision BF16 baseline. Full W4A4 MXFP4 quantization scored 0.8520 on VBench overall. That's a small numerical gap from BF16, but the blog's authors say the gap shows up clearly in the generated video itself.\n\nThe fix they tested isn't quantizing everything the same way. Using AMD Quark, the team evaluated each transformer block individually and promoted only the blocks sensitive to precision loss from W4A4 to W4A8, leaving the rest on the cheaper 4-bit path. That calibration-driven mix pushed the score to 0.8648. A separate test quantizing the entire model to W4A8 using round-to-nearest (RTN) hit 0.8658, the highest quantized score measured in the study, suggesting FP8 activations applied model-wide can close most of the quality loss on their own.\n\nAll the W4A8 figures here come from quantize-dequantize emulation, not live hardware execution, so this is a quality study rather than a speed benchmark. Native W4A8 runs are supported starting in AMD Quark 0.13.\n\n> The safest reading is that full W4A8 and fixed-rotation/SmoothQuant-selected W4A8 are both near-BF16 quality, while the selected policy is the more practical current path because it uses W4A8 only where calibration indicates a benefit.\n> \n> Quark Mixed-Precision Quantization for Wan2.2 Video Generation on AMD Instinct GPUs - AMD ROCm AI Blog",
+      "excerpt": "The vLLM project, the open-source engine many teams use to serve language models, shipped two notable pieces of infrastructure over the past two weeks: Humming, a library of fast kernels for quantized models built with Ant Group, and `vllm-torchtpu`, a backend that runs vLLM on Google Cloud TPUs. It also kept up its habit of day-0 support for new models, including Mistral Large 4 on October 29. This edition covers what each release does, the numbers the maintainers published, and the caveats.\n\n...\n\nQuantization shrinks a model’s weights, and sometimes its activations, to fewer bits so it fits in less memory and runs faster. The catch is that every format needs a matching GPU kernel, and writing them one by one does not scale. Humming, announced October 21, separates the description of a quantized computation from the choice of how to execute it. A unified representation turns different export formats into one description of weights, scales and zero points, and kernels are compiled just in time from shared CUDA components.\n\n...\n\nPer the project’s post, it supports weight-and-activation combinations from W4A16 to W4A4, formats such as INT4, MXFP4, MXINT4 and NVFP4, and NVIDIA GPUs from Turing onward, plus T-Head’s Zhenwu 810E. The authors credit engineers from Ant Group and the vLLM community.\n\nThe reported results are community microbenchmarks, with baselines that vary by chart:\n\n- Dense W4A16 matches or beats vLLM’s Marlin kernels in most tested settings, with larger gains on some B300 cases.\n- For mixture-of-experts layers, MXFP4 reaches about twice Marlin on H20 and H200 at medium and large batches.\n- In one end-to-end test on DeepSeek-V4.1-Flash with eight H20 GPUs, switching from Marlin W4A16 to Humming W4A8 raised output throughput by 14% to 43% and cut mean time to first token by about 25% to 32%.\n\n...\n\nThe honest reading is “promising, verify on your hardware.” The post itself notes limits: autotuning is not yet available so heuristics may miss the best configuration on some workloads, the end-to-end test covers one model on one setup, and it names no license in the text we reviewed, so check the repository before adopting.\n\n...\n\nAnnounced October 20, `vllm-torchtpu` is an out-of-tree platform plugin that vLLM detects automatically once installed. It builds on Google’s TorchTPU stack and comes from a partnership between Inferact and Google. The goal is to keep the same CLI, OpenAI-compatible server, scheduler and KV cache manager that users have on GPUs, so most supported models should serve on TPU without model-code changes.\n\nKey details from the post:\n\n- TPU v7x (Ironwood) is the recommended target and is tested in continuous integration on every pull request; v6e, v5e and v5p are experimental.\n- Custom Pallas kernels cover attention variants, fused mixture-of-experts and quantized matrix multiplies in FP8, INT8, MXFP4 and NVFP4.\n- All six of vLLM’s parallelism dimensions work across multi-host TPU slices, and the backend supports KV cache offloading to host memory and disaggregated prefill and decode.\n- Installation is `pip install vllm-torchtpu` on a Cloud TPU VM with Python 3.12; the first start compiles graphs, which can take minutes.",
       "signal_score": 8.0,
       "community_metrics": {
         "query": "AI systems GPU serving quantization research release",
@@ -303,12 +303,12 @@
       }
     },
     {
-      "id": "a8bd5ba56d5f",
+      "id": "38dc7a51c3fa",
       "source": "exa_news",
-      "title": "Introducing Physical-Engineering’s Last Exam for agents",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-physical-engineerings-last-exam-for-agents",
-      "published_at": "2026-11-03T00:00:00.000Z",
-      "excerpt": "November 3, 2026\n\nAuthors: Burak Gokturk, VP Research & Development; Rujun Han, Research Scientist; George Lee, Product Manager.\n\nToday, the Google AI & Infrastructure team is announcing Physical-Engineering's Last Exam (PLE), a new benchmark and open competition, developed in collaboration with Mercor, and built to test a frontier model’s ability to complete tasks in mechanical, electrical, civil and structural engineering. \n\nTo help the research community measure and improve how agents handle physical engineering work, we are releasing 29 public tasks, their grading tools, and an open competition leaderboard at ple-bench.com.\n\n...\n\nPLE closes this evaluation gap with 85 long-horizon tasks across four core disciplines: mechanical (30 tasks), electrical (27 tasks), civil (18 tasks), and structural (10 tasks) engineering.\n\nClose this modal\n\nInstead of answering a single prompt, an agent works inside a containerized project folder — built on Mercor’s Archipelago environment — that mirrors what a practicing engineer receives on the job. Each task holds an average of 61 files (5,170 total files across the benchmark), including PDFs, spreadsheets, emails, 2D CAD drawings, 3D BIM models, and document revisions. The agent must reason through these files, find the governing building codes and physical limits, run calculations, and generate production-ready deliverables that a licensed reviewer would review and approve.\n\n...\n\n### All frontier models score below 50%\n\nWe tested 14 frontier models on PLE using seven publicly available agent harnesses (Antigravity, Claude Code, Codex, Hermes, OpenCode, OpenHands, and Pi). Because PLE evaluates both code compliance and cost efficiency, agents only earn points if their design passes every hard safety check first. Our baseline results show a wide gap between current models and real-world engineering requirements:\n\n- High headroom: All frontier models score below 50% on our private test set, with the highest-performing model on its native harness reaching a mean score of 48.3%.\n- Hard safety gates: While the top-scoring agent configuration satisfied 91% of individual constraints on co-authored tasks, only 41.3% of its deliverables passed every hard safety and feasibility check required.\n- Model vs. harness impact: Choice of model drives performance far more than the harness (up to a 50-point spread across models, versus a median 3-point spread across harnesses for the same model), though harnesses significantly affect run cost.",
+      "title": "Baidu Releases ERNIE 5.5 Flash Base: A 280B MoE Base Model With 14B Active Parameters - MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/11/05/baidu-ernie-5-5-flash-base-280b-moe",
+      "published_at": "2026-11-05T21:33:00.000Z",
+      "excerpt": "# Baidu Releases ERNIE 5.5 Flash Base: A 280B MoE Base Model With 14B Active Parameters\n\nBy\n\nMichal Sutter\n\nNovember 5, 2026\n\nBaidu has released ERNIE 5.5 Flash Base, the raw pre-training checkpoint of its new sparse Mixture-of-Experts language model. ERNIE 5.5 Flash Base is a 280B-parameter text model from Baidu that activates 14B parameters per token. The weights stop at the end of pre-training, with no mid- or post-training applied. This as a clean starting point for teams that want to compare fine-tuning, instruction tuning or RL methods from one checkpoint.\n\n## TL;DR\n\n- Size: 280B total, 14B active per token; 128K training context, 1M for fine-tuning and inference.\n- Runs on: Multi-GPU servers. Baidu’s reference configs use 4-way parallelism in SGLang and vLLM. GPU model and VRAM not disclosed. FP8 and BF16 weights.\n- Performance: Best score on 24 of 30 base-model benchmarks in Baidu’s unified pipeline (self-reported).\n- Best: MMLU-Pro 78.4, ahead of DeepSeek-V4-Flash-Base at 69.2.\n- Worst: HELMET-Rerank 56.2, behind DeepSeek-V4-Flash-Base at 60.0.\n\n...\n\n## How does ERNIE 5.5 Flash Base perform on benchmarks?\n\nBaidu team evaluated all 4 models with the same pipeline, prompts and few-shot settings. All figures below are self-reported by Baidu.\n\n- Exams: MMLU 93.3, MMLU-Redux 94.1, MMLU-Pro 78.4.\n- Knowledge: SimpleQA 34.1, versus 29.1 for DeepSeek-V4-Flash-Base.\n- STEM and reasoning: GPQA 60.2, MGSM 87.0, BBH direct 77.1.\n- Code: HumanEval+ 82.3, MBPP+ 81.5, LiveCodeBench 40.1.\n- Long context: RepoQA 91.7, LongBench-v2 48.7, HELMET-ICL 85.9.\n\nIt loses on 6 tasks. DeepSeek-V4-Flash-Base leads on ChineseSimpleQA, INCLUDE-lite, HELMET-Rerank and InfiniteBench. Hy3-preview-Base leads on BBH CoT and FullStackBench.\n\n...\n\n## How do you deploy ERNIE 5.5 Flash Base?\n\nWeights are on Hugging Face and ModelScope, in FP8 and BF16. Baidu documents serving with SGLang and vLLM. The SGLang example uses `--tp 4`. The vLLM path needs version 0.32.0 plus the vLLM-ERNIE plugin. Both servers accept up to 1,048,576 tokens. As a base model, it runs through the completions endpoint, not chat.\n\nTraining ran on FlashMask-4, a kernel for SM90 and SM100 GPUs. On SM100, Baidu team reports up to 175% faster forward and 74% faster backward than FlashAttention-4 MaskMod.",
       "signal_score": 7.0,
       "community_metrics": {
         "query": "latest technical AI model infrastructure release benchmark developer",
@@ -316,256 +316,45 @@
       }
     },
     {
-      "id": "81127bef6b72",
+      "id": "1b8db94f9ad4",
       "source": "exa_news",
-      "title": "Unified Brain Replaces Turn-Based LLM Agents with SQLite",
-      "url": "https://emergent.sh/news/unified-brain-replaces-turn-based-llm-agents",
-      "published_at": "2026-11-03T19:40:53.000Z",
-      "excerpt": "#### 💡 TL;DR\n\n- DevLoops.ai released Unified Brain, an open-source framework that replaces conventional turn-based LLM agent communication with SQLite coordination.\n- The system uses System One reasoning models and database-backed state management to eliminate sequential bottlenecks in multi-agent workflows.\n- Unified Brain enables parallel agent execution and deterministic state tracking, addressing reliability issues in traditional agentic architectures.\n\nDevLoops.ai has open-sourced Unified Brain, a framework that fundamentally rethinks how multiple LLM agents coordinate work. Instead of sequential turn-based communication where agents wait for each other to respond, the system uses SQLite as a shared coordination layer paired with System One reasoning models to enable parallel execution and deterministic state management.\n\n...\n\nTraditional LLM agent frameworks treat inter-agent communication like a chat conversation, with one agent speaking and others waiting. Unified Brain replaces this model with a database-centric architecture where agents query and update shared state through SQLite transactions. Each agent operates as an independent process that reads work items from the database, executes reasoning steps, and commits results atomically.\n\nThe framework leverages System One models, fast reasoning systems optimized for rapid inference, to handle coordination logic. This separation allows computationally expensive reasoning to happen in parallel across agents while the lightweight coordination layer manages task distribution and state synchronization through SQL queries.\n\n## Release Date and Availability\n\nUnified Brain was officially launched on November 3, 2026, with full source code available on GitHub under an open-source license. The initial release includes core coordination primitives, example agent implementations, and documentation for integrating custom reasoning models. DevLoops.ai positioned the launch as a community-driven effort to advance practical multi-agent system design.\n\n...\n\nThe system uses SQLite's Write-Ahead Logging mode to support concurrent reads while maintaining ACID properties for state updates. Agents register tasks as database rows with status fields, and the coordination engine assigns work based on agent capabilities and current load. Failed tasks automatically retry with exponential backoff, and the database serves as an audit log for debugging agent behavior.\n\n- Atomic state transitions prevent race conditions in task assignment\n- SQL-based work queues eliminate custom message brokers\n- Transaction logs enable deterministic replay of agent execution sequences\n- Pluggable reasoning backends support both local and API-based models",
+      "title": "NVIDIA Boosts Ling-3.0-flash Throughput 42.5% On DGX Spark - Dataconomy",
+      "url": "https://dataconomy.com/2026/11/04/nvidia-boosts-ling-30-flash-throughput-425-on-dgx-spark",
+      "published_at": "2026-11-04T10:26:04.000Z",
+      "excerpt": "NVIDIA said three software optimizations raised decode throughput for Ant Group inclusionAI’s Ling-3.0-flash model by 42.5% on a single DGX Spark desktop system.\n\nTests across all 1,319 GSM8K questions increased throughput to 53.89 tokens per second from 37.81 tokens per second, while accuracy changed to 96.82% from 96.89%, a statistically undetectable difference, NVIDIA said.\n\nThe test used Ling-3.0-flash-fp4, a mixture-of-experts model with 124 billion total parameters and 5.1 billion active parameters per token. The model has a native 256,000-token context window.\n\n...\n\nThe first change replaced FlashInfer’s MoE backend with Humming, an independent kernel library that compiles kernels at runtime for specific matrix shapes, data types and GPUs. NVIDIA said the change supported the model’s narrow 768-wide expert layer and increased throughput by 9.3% to 39.45 tokens per second.\n\nThe second change applied FP8 quantization to the language-model head at load time. The head is a 157,184-by-2,560 BF16 matrix, and NVIDIA said FP8 halves the memory reads required for that layer. Humming combined with the FP8 head reached 43.94 tokens per second, up 21.7% from baseline.",
       "signal_score": 7.0,
       "community_metrics": {
-        "query": "latest LLM agents RAG inference open source developer tool",
+        "query": "AI systems GPU serving quantization research release",
         "rank": 8
       }
     }
   ],
   "candidates": [
     {
-      "id": "candidate-2026-11-06-1",
-      "topic": "Private Offline RAG Architectures",
-      "angle": "The necessity and architectural patterns for building completely offline Retrieval-Augmented Generation (RAG) systems to address high API costs and enterprise data privacy concerns.",
-      "audience_pain": "Dealing with high cloud API costs and stringent data privacy requirements for sensitive enterprise data in AI applications.",
-      "why_now": "Multiple articles highlight recent open-source projects enabling 100% offline RAG, running locally or even in the browser, specifically to counter API costs and privacy challenges.",
-      "hook_seed": "Offline RAG: cheaper, private.",
-      "format": "mechanism_explainer",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "9b3058145d81",
-        "d7b7279ac0ec"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 9,
-        "originality": 8,
-        "conversation_potential": 8,
-        "evidence_strength": 9
-      },
-      "score": 8.67
-    },
-    {
-      "id": "candidate-2026-11-06-3",
-      "topic": "Kubernetes as LLM Inference Control Plane",
-      "angle": "How Kubernetes is emerging as the preferred control plane for managing scalable, multi-tenant LLM inference, offering features like token rate limiting, intelligent load balancing, and cost tracking.",
-      "audience_pain": "Scaling, orchestrating, and efficiently managing multiple LLM inference services with features like load balancing and cost tracking in production.",
-      "why_now": "Buoyant's new open-source Kinference project explicitly positions Kubernetes as the control plane for building scalable vLLM inference platforms.",
-      "hook_seed": "K8s: your LLM inference control plane.",
+      "topic": "Why RAG quality often fails before retrieval starts",
+      "angle": "Show how document cleaning and chunk boundaries corrupt otherwise good retrieval.",
+      "audience_pain": "Developers tune prompts while their source chunks are already broken.",
+      "why_now": "Evergreen production failure with high practical value.",
+      "hook_seed": "Your RAG may be failing before retrieval starts.",
       "format": "practical_tips",
       "objective": "share",
       "image_template": "handwritten_poster",
-      "source_ids": [
-        "c74aad6148ea"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 9,
-        "originality": 8,
-        "conversation_potential": 8,
-        "evidence_strength": 9
-      },
-      "score": 8.67
+      "source_ids": [],
+      "score": 6.0,
+      "id": "fallback-1"
     },
     {
-      "id": "candidate-2026-11-06-4",
-      "topic": "New Open-Weight Agentic Models",
-      "angle": "Exploring the emergence and architectural characteristics of specialized open-weight models (like Ripple-65B and Kimi K3.1 Pro) designed specifically for agentic workflows and coding tasks.",
-      "audience_pain": "Selecting effective open-source models for building AI agents, understanding their core capabilities, and comparing performance on agentic benchmarks.",
-      "why_now": "Recent releases like Kimi K3.1 Pro (multimodal, agentic) and Ripple-65B (coding lead) highlight a growing trend in open-weight models optimized for agentic use cases.",
-      "hook_seed": "Open-weight agentic models are here.",
+      "topic": "KV-cache pressure versus GPU utilization",
+      "angle": "Explain why a busy GPU can still deliver poor inference throughput.",
+      "audience_pain": "Teams watch utilization but miss cache pressure and queueing.",
+      "why_now": "Useful mechanism for engineers operating LLM services.",
+      "hook_seed": "High GPU utilization can hide a dying inference service.",
       "format": "mechanism_explainer",
       "objective": "reply",
       "image_template": "handwritten_poster",
-      "source_ids": [
-        "86ef835c3782",
-        "6ee47946cb27",
-        "2b64433b8716",
-        "hn-50380658"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 8,
-        "originality": 8,
-        "conversation_potential": 9,
-        "evidence_strength": 9
-      },
-      "score": 8.67
-    },
-    {
-      "id": "candidate-2026-11-06-5",
-      "topic": "Inference Bottlenecks beyond FLOPs",
-      "angle": "Investigating how factors like software overhead, memory bandwidth (e.g., for KV cache), and architectural efficiency (beyond just raw compute FLOPs) are critical bottlenecks for AI inference performance.",
-      "audience_pain": "Troubleshooting and optimizing slow inference, understanding the true drivers of AI hardware performance beyond theoretical FLOPs, and making informed deployment choices.",
-      "why_now": "NVIDIA's co-design strategy emphasizes maximizing memory value, while vLLM's kernel optimizations and general discussions around inference underscore these non-FLOPs bottlenecks.",
-      "hook_seed": "Not just FLOPs: hidden inference bottlenecks.",
-      "format": "mechanism_explainer",
-      "objective": "follow",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "d595f276ff52",
-        "f0a8df10ad82",
-        "1b8db94f9ad4"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 9,
-        "practical_value": 9,
-        "originality": 8,
-        "conversation_potential": 8,
-        "evidence_strength": 9
-      },
-      "score": 8.67
-    },
-    {
-      "id": "candidate-2026-11-06-10",
-      "topic": "Kimi K3.1 Pro Architecture",
-      "angle": "Deep dive into Kimi K3.1 Pro's hybrid architecture, combining multimodality, Mixture-of-Experts (MoE), and Sparse Attention (DSA) to achieve high performance with a 1M-token context efficiently.",
-      "audience_pain": "Understanding the advanced architectural innovations in cutting-edge open-weight models that enable large context windows and multimodal capabilities.",
-      "why_now": "Moonshot AI's Kimi K3.1 Pro was recently released, with detailed architectural descriptions and day-0 support from major inference engines like vLLM and ATOM.",
-      "hook_seed": "Kimi K3.1 Pro: multimodal, MoE, sparse.",
-      "format": "mechanism_explainer",
-      "objective": "reply",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "86ef835c3782",
-        "6ee47946cb27"
-      ],
-      "scores": {
-        "trend_strength": 9,
-        "audience_relevance": 8,
-        "practical_value": 8,
-        "originality": 9,
-        "conversation_potential": 8,
-        "evidence_strength": 9
-      },
-      "score": 8.5
-    },
-    {
-      "id": "candidate-2026-11-06-7",
-      "topic": "Dynamic Online Quantization",
-      "angle": "Online quantization processes model weights layer by layer during the loading stage, eliminating the need for intermediate disk checkpoints and enabling faster exploration of quantization schemes and dynamic requantization.",
-      "audience_pain": "Streamlining model deployment, achieving faster iteration on quantization strategies, and optimizing memory usage without complex offline pre-processing.",
-      "why_now": "AMD recently introduced online quantization for serving engines like vLLM, ATOM, and SGLang, highlighting its benefits for flexible and efficient model deployment.",
-      "hook_seed": "Quantize models dynamically, no pre-export.",
-      "format": "mechanism_explainer",
-      "objective": "follow",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "036920f78541"
-      ],
-      "scores": {
-        "trend_strength": 8,
-        "audience_relevance": 8,
-        "practical_value": 9,
-        "originality": 9,
-        "conversation_potential": 7,
-        "evidence_strength": 9
-      },
-      "score": 8.33
-    },
-    {
-      "id": "candidate-2026-11-06-6",
-      "topic": "4-bit Quantization Quality Trade-offs",
-      "angle": "While 4-bit quantization significantly reduces model footprint, it can introduce noticeable visual quality degradation in complex tasks like video generation, often requiring selective precision promotion for sensitive layers.",
-      "audience_pain": "Making informed decisions on quantization levels, balancing resource efficiency with the actual output quality requirements of their AI models.",
-      "why_now": "AMD's recent experiment demonstrated that full W4A4 quantization on text-to-video models led to a visible quality drop despite small numerical differences in benchmarks.",
-      "hook_seed": "4-bit quantization: not always perfect.",
-      "format": "practical_tips",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "3d088740bf2b"
-      ],
-      "scores": {
-        "trend_strength": 8,
-        "audience_relevance": 8,
-        "practical_value": 9,
-        "originality": 8,
-        "conversation_potential": 7,
-        "evidence_strength": 9
-      },
-      "score": 8.17
-    },
-    {
-      "id": "candidate-2026-11-06-8",
-      "topic": "Python Train, C++ Serve Workflow",
-      "angle": "Google's XLA Serving Engine (XSE) enables a robust 'Train in Python, Serve in C++' workflow, addressing operational complexities of running Python in production serving environments and improving performance.",
-      "audience_pain": "The challenges of deploying Python-trained machine learning models into production environments that often prefer C++ for its stability, lower overhead, and performance benefits.",
-      "why_now": "Google Open Source Blog announced the launch of XLA Serving Engine (XSE), specifically designed to bridge the gap between Python development and C++ production serving.",
-      "hook_seed": "Python training, C++ serving: XSE is here.",
-      "format": "practical_tips",
-      "objective": "share",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "d0dab9822869"
-      ],
-      "scores": {
-        "trend_strength": 8,
-        "audience_relevance": 8,
-        "practical_value": 9,
-        "originality": 8,
-        "conversation_potential": 7,
-        "evidence_strength": 9
-      },
-      "score": 8.17
-    },
-    {
-      "id": "candidate-2026-11-06-2",
-      "topic": "Dynamic AI Inference Optimization",
-      "angle": "The concept and benefits of continual/adaptive compilation for AI inference, where an agent-driven system optimizes performance in real-time based on changing production workloads for up to 2.6x higher TPS.",
-      "audience_pain": "Optimizing AI inference performance, reducing latency, and increasing throughput for dynamic and varied production workloads.",
-      "why_now": "Together AI recently launched 'Together Compiler' which focuses on this approach to address the dynamic nature of AI inference workloads.",
-      "hook_seed": "Inference too slow? Try continual compilation.",
-      "format": "mechanism_explainer",
-      "objective": "follow",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "45f4b2343014"
-      ],
-      "scores": {
-        "trend_strength": 8,
-        "audience_relevance": 8,
-        "practical_value": 8,
-        "originality": 9,
-        "conversation_potential": 7,
-        "evidence_strength": 8
-      },
-      "score": 8.0
-    },
-    {
-      "id": "candidate-2026-11-06-9",
-      "topic": "Building Realistic Agent Environments",
-      "angle": "Open-source frameworks like AgentEnv aim to standardize the creation of realistic, accurate, and scalable reinforcement learning (RL) environments, adopting a 'world-first' philosophy.",
-      "audience_pain": "The significant difficulty and complexity involved in building robust, high-fidelity testing and training environments for developing and evaluating AI agents.",
-      "why_now": "Scale Labs recently open-sourced AgentEnv, highlighting its structured approach to environment design, coinciding with new agent benchmarks like PLE.",
-      "hook_seed": "Scale your agents with realistic environments.",
-      "format": "practical_tips",
-      "objective": "follow",
-      "image_template": "handwritten_poster",
-      "source_ids": [
-        "75ad2f18cd4b"
-      ],
-      "scores": {
-        "trend_strength": 8,
-        "audience_relevance": 8,
-        "practical_value": 8,
-        "originality": 9,
-        "conversation_potential": 7,
-        "evidence_strength": 8
-      },
-      "score": 8.0
+      "source_ids": [],
+      "score": 5.5,
+      "id": "fallback-2"
     }
   ]
 }
